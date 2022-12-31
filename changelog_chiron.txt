@@ -1,0 +1,565 @@
+====================
+     2022-12-31    
+====================
+* build/make
+b1d54d82a build: Always use release-keys [Pranav Vashi]
+
+* frameworks/base
+c661a33cf916 build: Don't check for fingerprint mismatch [Dan Cartier]
+
+* hardware/interfaces
+7a059e202 Revert "audio: use binder threadpool" [anrui2032]
+afe75880b Revert "Audio: Load Bluetooth AIDL HAL" [anrui2032]
+
+* packages/apps/CarrierConfig
+1cd3f2b Override name of Mainland China carriers [cjybyjk]
+
+* packages/modules/Bluetooth
+3496ca860b legacy: Split header for hci legacy definitions [Christian Hoffmann]
+
+* packages/services/Telephony
+bc6801d26 Add support for multi-language carrier name override [cjybyjk]
+
+* device/xiaomi/msm8998-common
+3e11f38 msm8998-common: sepolicy: Fix cnd denial [0ranko0P]
+245abf6 msm8998-common: rootdir: Switch zRAM compression alg to Zstandard [iusmac]
+
+* vendor/extra
+3474aa1 Point to my server [Nanhumly]
+
+* kernel/xiaomi/msm8998
+40129604bdd8 {chiron,sagit}_defconfig: Switch zRAM compression alg to Zstandard [iusmac]
+5cd338e00c82 lib: zstd: Upstream codebase to v1.5.3 (dev branch) [iusmac]
+91d66feddd6c crypto/zstd.c: ZSTD_DEF_LEVEL switch to 1 [Sultan Alsawaf]
+04242ec6f27c lib: zstd: Workaround duplicate symbols [iusmac]
+9e4a4eff646a lib: zstd: Fix unknown type name `size_t` [iusmac]
+156997b11d39 lib: zstd: Upgrade to latest upstream zstd version pre-1.5.2 [tarsin]
+763668202222 lib: zstd: Fix attribute declaration [Cyber Knight]
+fbebd2bd03ca lib: zstd: Don't add -O3 to cflags [Nick Terrell]
+1fb0edcef3c1 lib: zstd: Don't inline functions in zstd_opt.c [Nick Terrell]
+a7075564137c lib: zstd: Fix unused variable warning [Nick Terrell]
+b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical [Nathan Chancellor]
+7c88fb278836 lib: zstd: Upgrade to latest upstream zstd version 1.4.10 [Nick Terrell]
+eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
+
+====================
+     2022-12-30    
+====================
+* frameworks/base
+202ef84d307b IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
+
+* packages/apps/Settings
+1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
+
+* device/xiaomi/msm8998-common
+df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
+69f90f1 msm8998-common: Add GPS configuration for China [Paul Keith]
+69ea3dc msm8998-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
+
+====================
+     2022-12-29    
+====================
+* lineage/mirror
+1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC [Tim Schumacher]
+
+* lineage/website
+0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
+
+* lineage/wiki
+1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
+
+* vendor/extra
+8526dc8 Fix changelog url [Nanhumly]
+
+====================
+     2022-12-28    
+====================
+* build/make
+dd97cd639 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
+
+* frameworks/base
+8658042a3c1c SystemUI: Align QS header with status bar [cjh1249131356]
+
+* packages/apps/DeskClock
+8f482b0c8 DeskClock: Timer Setup: Add double-zero button [Michael W]
+da8bf5fc7 DeskClock: Redesign Timer input [Michael W]
+
+* packages/apps/Etar
+b332cffd Override androidx.startup.InitializationProvider authority name [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+26819f1 msm8998-common: move UpdaterOverlay to another repo [Nanhumly]
+
+* vendor/extra
+86b3574 init [Nanhumly]
+
+====================
+     2022-12-27    
+====================
+* kernel/xiaomi/msm8998
+f984782da348 dts: xiaomi: msm8998: Remove verify flag [Nanhumly]
+
+====================
+     2022-12-26    
+====================
+* packages/apps/Aperture
+4ebad08 Revert "Retain launcher icon on migration from Camera2" [LuK1337]
+c232812 Aperture: Implement preview blurring during rebind [Sebastiano Barezzi]
+
+* packages/apps/DeskClock
+cfe1f215d DeskClock: Make expand and collapse animations faster [Michael W]
+98d11bb38 DeskClock: Fix collapsing animation [Michael W]
+c37a5cab8 DeskClock: Fix adding alarms after deletion [Michael W]
+
+* device/xiaomi/msm8998-common
+b31cad4 msm8998-common: Relax WiFi re-association RSSI thresholds. [Sultanxda]
+01f9294 msm8998-common: Undefine BOARD_HAS_QCOM_WLAN. [Alexander Koskovich]
+b0cd0d4 msm8998-common: init: Remove WiFi fwpath setup [Georg Veichtlbauer]
+6bd9abf msm8998-common: wifi: smarter decisions on whether to use a 2- or 5Ghz AP [Alex Naidis]
+49f002c msm8998-common: wifi: Disable WLAN Firmware loggings [Panchajanya1999]
+9489e81 msm8998-common: Update Wifi PowerSaveOffload [Georg Veichtlbauer]
+ae7831d msm8998-common: wifi: enable QPower and Deep sleep at the same time [Alex Naidis]
+db751d6 msm8998-common: rootdir: Add offline charging LED indicator [Ramii Ahmed]
+
+====================
+     2022-12-25    
+====================
+* lineage/website
+d0f6e14 Fix font-weight for <strong> [LuK1337]
+56b8dea Update docker image version [LuK1337]
+
+* device/xiaomi/msm8998-common
+4c627eb msm8998-common: Do not hardcode ZRAM size [0ranko0P]
+17ffcbb msm8998-common: Add Entries For Mapper 3.0 And 4.0 In Manifest [faham1997]
+bd327ac msm8998-common: Disable IMS logs in user product [0ranko0P]
+63c372e msm8998-common: ueventd: Give proper permissions for /dev/diag [Haran Govindan]
+90c1f42 msm8998-common: ueventd: Add missing permissions for fpc sysfs node [Nanhumly]
+d2e9c6d msm8998-common: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
+4395f89 msm8998-common: sepolicy: Resolve vmallocinfo denial [Arne Coucheron]
+416cd07 msm8998-common: sepolicy: Allow system_app to access zram sysfs nodes [Kevin F. Haggerty]
+54a8589 msm8998-common: sepolicy: Allow system_app to read /proc/pagetypeinfo [Kevin F. Haggerty]
+6ab75ed msm8998-common: Fix sepolicy denials for imsdatadaemon [Dheeraj Shetty]
+fccf79c msm8998-common: Enable zram writeback job scheduler [Minchan Kim]
+c14f666 msm8998-common: fstab: correct zram parameter names [Minchan Kim]
+960401f msm8998-common: Enable zram writeback [Minchan Kim]
+73769e3 msm8998-common: rootdir: set zram size to 50% of total ram [Angga Satya Putra]
+8a1b618 msm8998-common: rootdir: change zram swappiness [Minchan Kim]
+3e1aeb0 msm8998-common: rootdir: tune zram performance [Wei Wang]
+edda55e msm8998-common: rootdir: enable zram on boot_complete [Wei Wang]
+
+* kernel/xiaomi/msm8998
+80ac13c9701e {chiron,sagit}_defconfig: Use lz4 for zram compression [Subhajeet Muhuri]
+
+====================
+     2022-12-24    
+====================
+* lineage/crowdin
+6dc472d config: lineage-20.0: Add device/oneplus/sm8150-common/camera_helper [Michael Bestas]
+
+* lineage/mirror
+1485cbd Updated aosp-minimal to 23-Dec-2022 13:01 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+80aa922 Aperture: Use .next() where possible [Sebastiano Barezzi]
+0b3c1f0 Aperture: Drop non working multi-camera logical camera check [Sebastiano Barezzi]
+cd4fcd5 Aperture: Logical zoom ratios support [Sebastiano Barezzi]
+
+* device/xiaomi/msm8998-common
+ffa98a4 msm8998-common: Add unofficial OTA update support [Nanhumly]
+
+* kernel/xiaomi/msm8998
+20060fddd121 {chiron,sagit}_defconfig: Enable CONFIG_NTFS_RW [hridaya]
+19a07aee7357 {chiron,sagit}_defconfig: Enable CONFIG_NTFS_FS [sbwml]
+d617cd3c6330 {chiron,sagit}_defconfig: Enable CONFIG_EXFAT_FS [sbwml]
+376b891128b7 fs: Expose exFAT for build [sbwml]
+2cac8fe790e8 fs: Add linux-exfat 5.10.1 [sbwml]
+
+====================
+     2022-12-23    
+====================
+* build/make
+627731538 Remove fs utilities from init_boot module list [Kelvin Zhang]
+
+* external/e2fsprogs
+9b8f6573 Mark e2fsck/resize2fs/tune2fs as `recovery_available` [Michael Bestas]
+
+* lineage/crowdin
+dd41025 config: lineage-20.0: Add DocumentsUI [Michael Bestas]
+
+* lineage/mirror
+d7ba808 Updated aosp-minimal to 22-Dec-2022 13:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+349e17a best-caf-kernel: return 0 if no tags are found [Timi Rautamäki]
+
+* packages/apps/Aperture
+2316d25 Aperture: Animate secondaryTopBarLayout visibility [Timi Rautamäki]
+62a285a Aperture: Allow setting flash mode during video recording [Sebastiano Barezzi]
+
+* packages/apps/DocumentsUI
+ea54cfc1a DocumentsUI: add icons for shortcuts [Timi Rautamäki]
+163cdeb59 DocumentsUI: add feature for adding shortcuts to launcher [Timi Rautamäki]
+
+====================
+     2022-12-22    
+====================
+* packages/apps/DeskClock
+42067fb6e Update Deskclock to use USE_EXACT_ALARM [Suprabh Shukla]
+6c3aad824 DeskClock: Don't require READ_PHONE_STATE permission [Michael W]
+8e5748227 DeskClock: Get rid of reflection [Michael W]
+2cd2bbccd DeskClock: Remove MediaPlayerPlaybackDelegate [Michael W]
+
+* device/xiaomi/chiron
+95a8404 chiron: Set a default Settings.Global.DEVICE_NAME [LuK1337]
+667f4e7 chiron: overlay: switch to vector drawable for rounded corners [Chenyang Zhong]
+394fa15 chiron: Set BT device name via sysprop [Nanhumly]
+0e39df8 chiron: vendor_prop.mk -> vendor.prop [Nanhumly]
+e29b791 chiron: Set target screen density to 480 [Col_or]
+56dbccb chiron: Add a status bar overlay [Col_or]
+3527de3 chiron: sepolicy: Remove binder_in_vendor_violators attribute Change-Id: Idde8c9a51d80072dd1da9fc3325fe10e0be80cef [mikeNG]
+
+* device/xiaomi/msm8998-common
+d6ed2c7 msm8998-common: ueventd: Set permissions for KGSL sysfs node [Mohammed Mirza Mandayappurath Manzoor]
+6b8bb63 msm8998-common: Move qti_whitelist.xml to /system_ext [Michael Bestas]
+5b59667 msm8998-common: Migrate vendor.camera.aux.packagelist to sdk overlay [LuK1337]
+6fa5f54 msm8998-common: audio: fix VTS [Alexander Martinz]
+3cc8f97 msm8998-common: Enable zygote critical window [Woody Lin]
+58d7fbe msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop [Bruno Martins]
+29156c3 msm8998-common: Do not block binder thread on incoming calls [Danny Trunk]
+508c215 msm8998-common: Remove references to a2dp module [Aaron Kling]
+203f484 msm8998-common: wifi: Configure correct overlay configuration. [Les Lee]
+e32bdb9 msm8998-common: AOSP WFD doesn't support protected Wi-Fi Display buffers [Nolen Johnson]
+a601e6c msm8998-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+01b34f9 msm8998-common: Fix PowerOffAlarm [Georg Veichtlbauer]
+2eb0f10 msm8998-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+14453be msm8998-common: Drop default DRM service [Bruno Martins]
+140eba2 msm8998-common: switch to threaded Skia render engine backend [Timi Rautamäki]
+26568e8 msm8998-common: Unpin updatable-media from memory [Santiago Seifert]
+560b264 msm8998-common: Preopt SystemUI for AOSP builds. [Jiakai Zhang]
+ffdc688 msm8998-common: Add a system property for System UI compiler filter. [Jiakai Zhang]
+0e3cd4a msm8998-common: Remove bdroid_buildcfg.h [Michael Bestas]
+8ab3d17 msm8998-common: Drop component overrides [Bruno Martins]
+a42e544 msm8998-common: bluetooth: Undefine BTM_DEF_LOCAL_NAME [Bruno Martins]
+2c2d4b2 msm8998-common: overlay: Remove BT related configs [Bruno Martins]
+a9bf158 msm8998-common: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
+c15f1be msm8998-common: Move BT profiles props to vendor [Alexander Koskovich]
+7c97d6c msm8998-common: releasetools: Make re.search work on python3 [Alessandro Astone]
+13994b0 msm8998-common: doze: Fix compilation for QPR1 merge [Bruno Martins]
+54d20f9 msm8998-common: Build common libpiex_shim [Nanhumly]
+6577ea6 msm8998-common: vndk: Add packagemanager_aidl-cpp [Nanhumly]
+bff4d5a msm8998-common: Build android.hardware.wifi.hostapd@1.0 [Nanhumly]
+aa0f694 msm8998-common: Switch BtAudio to AIDL [Josh Wu]
+f54dc21 msm8998-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
+4570ed3 msm8998-common: Disable LE audio related profiles [Alice Kuo]
+90d6bc7 msm8998-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+455e55a msm8998-common: Set default the Bluetooth class of device [Sal Savage]
+d7e1b19 msm8998-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+72e58e4 msm8998-common: Enable bluetooth profiles with product.prop [Sal Savage]
+996259f msm8998-common: Clean up some non-existent packages [Nanhumly]
+5e88df1 msm8998-common: ims: Move to hardware/lineage/compat [Nanhumly]
+
+* vendor/xiaomi/chiron
+f208e73 Import chiron from lineage-19.1 (a76da06f) [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+62aafe4 msm8998-common: Fix PowerOffAlarm [Georg Veichtlbauer]
+
+* kernel/xiaomi/msm8998
+eabd741cc81c {chiron,sagit}_defconfig: Enable ZRAM-writeback [stic-server-open]
+7d5a33f3b329 UPSTREAM: drivers: zram: move backing_dev under macro ZRAM_WRITEBACK [Yue Hu]
+6026f9a17653 UPSTREAM: drivers: zram: fix idle/writeback string compare [Minchan Kim]
+4728467181ca UPSTREAM: drivers: zram: idle writeback fixes and cleanup [Minchan Kim]
+e1e7f58b9178 UPSTREAM: drivers: zram: writeback throttle [Minchan Kim]
+4258418dffab UPSTREAM: drivers: zram: add bd_stat statistics [Minchan Kim]
+fe6b81c2cd67 BACKPORT: drivers: zram: support idle/huge page writeback [Minchan Kim]
+c8840600a28f UPSTREAM: drivers: zram: introduce ZRAM_IDLE flag [Minchan Kim]
+96e6a6815b75 BACKPORT: drivers: zram: refactor flags and writeback stuff [Minchan Kim]
+6308bf94f064 UPSTREAM: drivers: zram: fix lockdep warning of free block handling [Minchan Kim]
+8dca032241f9 BACKPORT: drivers: block-zram: fix double free backing device [Minchan Kim]
+51ff97d6d86d wireguard: version: bump [Jason A. Donenfeld]
+23dee7c28cf1 compat: handle backported rng and blake2s [Jason A. Donenfeld]
+ae9423c1a684 qemu: set panic_on_warn=1 from cmdline [Jason A. Donenfeld]
+9e52f3d7bcb1 qemu: use vports on arm [Jason A. Donenfeld]
+ee342f4df9bf device: check for metadata_dst with skb_valid_dst() [Nikolay Aleksandrov]
+77654562eba6 qemu: enable ACPI for SMP [Jason A. Donenfeld]
+97c3f0065281 socket: ignore v6 endpoints when ipv6 is disabled [Jason A. Donenfeld]
+40aadace06b1 socket: free skb in send6 when ipv6 is disabled [Wang Hai]
+de43b200f7a8 queueing: use CFI-safe ptr_ring cleanup function [Jason A. Donenfeld]
+8238f9c9d922 crypto: curve25519-x86_64: use in/out register constraints more precisely [Jason A. Donenfeld]
+cada199c7e8c compat: drop Ubuntu 14.04 [Jason A. Donenfeld]
+23137df319e7 fixup! compat: redefine version constants for sublevel>=256 [Jason A. Donenfeld]
+978eb5a897a7 wireguard: version: bump [Jason A. Donenfeld]
+0ffcfda3e805 Makefile: strip prefixed v from version.h [Jason A. Donenfeld]
+2055a5d937c3 crypto: curve25519-x86_64: solve register constraints with reserved registers [Mathias Krause]
+a7f73887bd8d compat: udp_tunnel: don't take reference to non-init namespace [Jason A. Donenfeld]
+1dd7439835f3 compat: siphash: use _unaligned version by default [Arnd Bergmann]
+334fd6cf0153 ratelimiter: use kvcalloc() instead of kvzalloc() [Gustavo A. R. Silva]
+0eb5a5d4c5e5 receive: drop handshakes if queue lock is contended [Jason A. Donenfeld]
+b0bd13b5867e receive: use ring buffer for incoming handshakes [Jason A. Donenfeld]
+349e5e54cf7e device: reset peer src endpoint when netns exits [Jason A. Donenfeld]
+6bd1f19588af main: rename 'mod_init' & 'mod_exit' functions to be module-specific [Randy Dunlap]
+0ce98a85e231 netns: actually test for routing loops [Jason A. Donenfeld]
+6cd31213c335 compat: update for RHEL 8.5 [Peter Georg]
+902e2ddde91c compat: account for grsecurity backports and changes [Mathias Krause]
+bb1661e92fac compat: account for latest c8s backports [Jason A. Donenfeld]
+5869b7c4debf msm: mdss: Import Xiaomi Mi board changes [dianlujitao]
+22c2dd3b498a fpc1268: update from sagit-p-oss [Arian]
+
+====================
+     2022-12-21    
+====================
+* bootable/recovery
+35d6342d Remove error messages from LoadLocalizedBitmap [Michael Bestas]
+b948f784 recovery: fix applying updates [Alexander Martinz]
+
+* device/qcom/sepolicy_vndr-legacy-um
+661d5770 sdm845: label vbmeta_vendor_[ab] [Alexander Martinz]
+98f800ce sdm845: label metadata partition [Alexander Martinz]
+
+* lineage/hudson
+a53a7fd hudson: Re-add nx563j and promote it to 19.1 [Cyborg2017]
+
+* lineage/mirror
+9cf26f9 Updated aosp-minimal to 20-Dec-2022 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+bb538474 wiki: nx563j: Switch to Lineage Recovery [Cyborg2017]
+7c51b359 wiki: devices: Add maintainers for nx563j [Cyborg2017]
+2349e011 wiki: devices: promote nx563j to 19.1 [Cyborg2017]
+5cc4966a wiki: devices: Add Nubia Z18 Mini (nx611j) [Cyborg2017]
+
+* device/xiaomi/msm8998-common
+a95d12e msm8998-common: Removed audio A2dp from msm8998.mk Bug: 220306859 Test: atest Tag: #feature Change-Id: I300369d36399ffb558b98bafc2478b872d09faba [Etienne Ruffieux]
+d95478c msm8998-common: doze: Treat ProximitySensor values as int [Arian]
+79746e4 msm8998-common: add nodes to hide Magisk in banking apps [xdevs23]
+cdaafbe msm8998-common: Drop WIFI_DRIVER_FW_PATH_* [Georg Veichtlbauer]
+f23756c msm8998-common: Defer triggering WiFi load to HAL [Georg Veichtlbauer]
+768209e msm8998-common: Tell vold we are done when we are actually done [Georg Veichtlbauer]
+c5e1515 msm8998-common: rootdir: fstab: allow f2fs filesystem for cache [Jaegeuk Kim]
+3d2c07b msm8998-common: Support F2FS [pavanpaps]
+
+* vendor/xiaomi/msm8998-common
+52f1d90 msm8998-common: Use GetPreviewImageData shim for libMiCameraHal.so [Nanhumly]
+
+* kernel/xiaomi/msm8998
+2807a6545e69 BACKPORT: usb: gadget: rndis: prevent integer overflow in rndis_set_response() [Dan Carpenter]
+fc35f3f4b26b FROMGIT: arm64: fix oops in concurrently setting insn_emulation sysctls [haibinzhang (张海斌)]
+d12455d1139d FROMLIST: binder: fix UAF of ref->proc caused by race condition [Carlos Llamas]
+009721077c92 ANDROID: selinux: modify RTM_GETNEIGH{TBL} [Bram Bonné]
+31fd0eb063b7 UPSTREAM: usb: gadget: clear related members when goto fail [Hangyu Hua]
+08ef00885c6a UPSTREAM: usb: gadget: don't release an existing dev->buf [Hangyu Hua]
+d6d8a336d442 UPSTREAM: USB: gadget: validate interface OS descriptor requests [Szymon Heidrich]
+9fede37533f2 UPSTREAM: usb: gadget: rndis: check size of RNDIS_MSG_SET command [Greg Kroah-Hartman]
+2037cd539ee9 ion: Do not 'put' ION handle until after its final use [Lee Jones]
+007f2ceca32d fixup! BACKPORT: treewide: Fix function prototypes for module_param_call() [Nolen Johnson]
+8b0466304373 arm64/efi: Mark __efistub_stext_offset as an absolute symbol explicitly [Nathan Chancellor]
+617217ab7ba6 arm64: kernel: do not need to reset UAO on exception entry [Vladimir Murzin]
+d379f51ed8db Kbuild: do not emit debug info for assembly with LLVM_IAS=1 [Nick Desaulniers]
+7582d043c28d qcacld-3.0: Add time slice duty cycle in wifi_interface_info [Yu Ouyang]
+befb114db4f4 qcacmn: Add time slice duty cycle attribute into QCA vendor command [Yu Ouyang]
+5bdd43a2d6d6 qcacld-3.0: Use field-by-field assignment for FW stats [Min Liu]
+5390659211ba ext4: enable quota enforcement based on mount options [Jan Kara]
+5e951c4a613d ext4: adds project ID support [Li Xi]
+059238fb08c7 ext4: add project quota support [Li Xi]
+01e0cc550578 drivers: qcacld-3.0: Remove in_compat_syscall() redefinition [Bruno Martins]
+ef5ee9e6cca1 arm64: link with -z norelro regardless of CONFIG_RELOCATABLE [Nick Desaulniers]
+531398c5f5e6 arm64: relocatable: fix inconsistencies in linker script and options [Ard Biesheuvel]
+eab1de8bb1c3 arm64: prevent regressions in compressed kernel image size when upgrading to binutils 2.27 [Nick Desaulniers]
+d6412fa65d13 arm64: kernel: force ET_DYN ELF type for CONFIG_RELOCATABLE=y [Ard Biesheuvel]
+b6a124cb5ece arm64: build with baremetal linker target instead of Linux when available [Olof Johansson]
+8561be0ba41e arm64: add endianness option to LDFLAGS instead of LD [Masahiro Yamada]
+b465141f1f16 arm64: Set UTS_MACHINE in the Makefile [Michal Marek]
+7ee961a1e948 kbuild: clear LDFLAGS in the top Makefile [Masahiro Yamada]
+657a98217f91 kbuild: use HOSTLDFLAGS for single .c executables [Robin Jarry]
+52a3f4793af7 BACKPORT: arm64: Change .weak to SYM_FUNC_START_WEAK_PI for arch/arm64/lib/mem*.S [Fangrui Song]
+254f1578b288 BACKPORT: crypto: arm64/aes-ce-cipher - move assembler code to .S file [Ard Biesheuvel]
+f9e91948ee3a BACKPORT: arm64: Remove reference to asm/opcodes.h [Marc Zyngier]
+3da675fabd9c BACKPORT: arm64: kprobe: protect/rename few definitions to be reused by uprobe [Pratyush Anand]
+f183012716fe BACKPORT: arm64: Delete the space separator in __emit_inst [Fangrui Song]
+4065f87dfc55 BACKPORT: arm64: Get rid of asm/opcodes.h [Marc Zyngier]
+1864fffc97e5 BACKPORT: arm64: Fix minor issues with the dcache_by_line_op macro [Will Deacon]
+6e1f224b9493 BACKPORT: crypto: arm64/aes-modes - get rid of literal load of addend vector [Ard Biesheuvel]
+ddd8cec3d757 BACKPORT: arm64: vdso: remove commas between macro name and arguments [Jian Cai]
+7fe99bd8efe2 BACKPORT: kbuild: support LLVM=1 to switch the default tools to Clang/LLVM [Masahiro Yamada]
+4a789ffb0242 BACKPORT: kbuild: replace AS=clang with LLVM_IAS=1 [Masahiro Yamada]
+fbb02fd6b145 BACKPORT: Documentation/llvm: fix the name of llvm-size [Fangrui Song]
+4092c271e0d3 BACKPORT: Documentation/llvm: add documentation on building w/ Clang/LLVM [Nick Desaulniers]
+5a1b36dab694 BACKPORT: ANDROID: ftrace: fix function type mismatches [Sami Tolvanen]
+e20c688bc35a BACKPORT: ANDROID: fs: logfs: fix filler function type [Sami Tolvanen]
+b0360069d1e7 BACKPORT: ANDROID: fs: gfs2: fix filler function type [Sami Tolvanen]
+a405ddf25ecc BACKPORT: ANDROID: fs: exofs: fix filler function type [Sami Tolvanen]
+5a874ab18969 BACKPORT: ANDROID: fs: afs: fix filler function type [Sami Tolvanen]
+e1e721ffd61d BACKPORT: drivers/perf: arm_pmu: fix function type mismatch [Sami Tolvanen]
+1250975964d9 BACKPORT: dummycon: fix function types [Sami Tolvanen]
+9e33c7aaa5f9 BACKPORT: fs: nfs: fix filler function type [Sami Tolvanen]
+8ecafc191a38 BACKPORT: mm: fix filler function type mismatch [Sami Tolvanen]
+bc84aeb36a39 BACKPORT: mm: fix drain_local_pages function type [Sami Tolvanen]
+61dcc226bcd6 BACKPORT: vfs: pass type instead of fn to do_{loop,iter}_readv_writev() [Miklos Szeredi]
+9b1809739bc3 BACKPORT: module: Do not paper over type mismatches in module_param_call() [Kees Cook]
+fc32df0b093f BACKPORT: treewide: Fix function prototypes for module_param_call() [Kees Cook]
+8db5e610cf05 BACKPORT: module: Prepare to convert all module_param_call() prototypes [Kees Cook]
+261a6a6efcd9 BACKPORT: kbuild: fix --gc-sections [Sami Tolvanen]
+472209b2663f BACKPORT: kbuild: record needed exported symbols for modules [Nicolas Pitre]
+0f10de31b737 BACKPORT: kbuild: Allow to specify composite modules with modname-m [Michal Marek]
+200604b954f5 BACKPORT: kbuild: add arch specific post-link Makefile [Nicholas Piggin]
+800157f5c364 BACKPORT: arm64: add a workaround for GNU gold with ARM64_MODULE_PLTS [Sami Tolvanen]
+7fc39eaf5f11 BACKPORT: arm64: explicitly pass --no-fix-cortex-a53-843419 to GNU gold [Sami Tolvanen]
+3d4015ef3a04 BACKPORT: arm64: errata: Pass --fix-cortex-a53-843419 to ld if workaround enabled [Will Deacon]
+7f007097663f BACKPORT: kbuild: add __ld-ifversion and linker-specific macros [Sami Tolvanen]
+a1bc9fa22fd7 BACKPORT: kbuild: add ld-name macro [Sami Tolvanen]
+5d3d898064ae BACKPORT: arm64: keep .altinstructions and .altinstr_replacement [Sami Tolvanen]
+501453652ceb BACKPORT: kbuild: add __cc-ifversion and compiler-specific variants [Sami Tolvanen]
+c27f752bc5ff BACKPORT: FROMLIST: kbuild: add clang-version.sh [Sami Tolvanen]
+ffa705b769ae BACKPORT: FROMLIST: kbuild: fix LD_DEAD_CODE_DATA_ELIMINATION [Sami Tolvanen]
+80e96f2a45de BACKPORT: kbuild: thin archives make default for all archs [Nicholas Piggin]
+af881f0f006d BACKPORT: kbuild: allow archs to select link dead code/data elimination [Nicholas Piggin]
+69b180d694c4 BACKPORT: kbuild: allow architectures to use thin archives instead of ld -r [Stephen Rothwell]
+6cd00c40e069 drivers/usb/serial/console.c: remove superfluous serial->port condition [Dan Aloni]
+4b871f467176 drivers/firmware/efi/libstub.c: prevent a relocation [Dan Aloni]
+30199c9f98cd UPSTREAM: pidfd: fix a poll race when setting exit_state [Suren Baghdasaryan]
+719c29b47843 BACKPORT: arch: wire-up pidfd_open() [Christian Brauner]
+c76fc6ca2c20 BACKPORT: pid: add pidfd_open() [Christian Brauner]
+d382985b8e56 UPSTREAM: pidfd: add polling support [Joel Fernandes (Google)]
+b2b1d24229ea UPSTREAM: signal: improve comments [Christian Brauner]
+8b386e793f09 UPSTREAM: fork: do not release lock that wasn't taken [Christian Brauner]
+e77d0ab872f0 BACKPORT: signal: support CLONE_PIDFD with pidfd_send_signal [Christian Brauner]
+4916353f0e19 BACKPORT: clone: add CLONE_PIDFD [Christian Brauner]
+6b2cffd537ad UPSTREAM: Make anon_inodes unconditional [David Howells]
+e2a0c43df8ef UPSTREAM: signal: use fdget() since we don't allow O_PATH [Christian Brauner]
+eae055bc2a66 UPSTREAM: signal: don't silently convert SI_USER signals to non-current pidfd [Jann Horn]
+8a7416bd05c7 BACKPORT: signal: add pidfd_send_signal() syscall [Christian Brauner]
+5b9e8d7683df compat: add in_compat_syscall to ask whether we're in a compat syscall [Andy Lutomirski]
+3bdf76241100 f2fs: gc: Fast-forward to https://github.com/arter97/android_kernel_realme_sdm710/commit/6ea19a5eae17aa37210346eab93acfff1e000b1e [celtare21]
+48f5ad93a916 f2fs: gc: Replace f2fs_info with pr_info_ratelimited [celtare21]
+4261cd2fc1a5 f2fs: gc: Increse DEF_GC_THREAD_NOGC_SLEEP_TIME to 4 hours [celtare21]
+35f22f4357ca f2fs: Revert last wakelock patchset for rapid GC [celtare21]
+b29861f3f4ed f2fs: Set cp_interval to 30 secs and make it no-op [celtare21]
+6ea9442daea4 writeback: hardcode dirty_expire_centisecs=3000 (30s) [Park Ju Hyung]
+fa5bec2c8283 fs: default to noatime [arter97]
+929c591b64c1 fs: drop_caches: expose mm_drop_caches() [Park Ju Hyung]
+8e7e832f169f mm, memcg: use consistent gfp flags during readahead [Michal Hocko]
+67cf815942f2 {chiron,sagit}_defconfig: Enable F2FS [NurKeinNeid]
+21a2a428bf69 f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
+2c2a5c40cea2 f2fs: Fix absolute jiffy duration in write uncongestion timeout [Danny Lin]
+66bc2b500126 f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
+05d3624bfe1c f2fs: unlock wakelock properly when f2fs_stop_rapid_gc() is called [Park Ju Hyung]
+178e72bdfc7b f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
+31e1b250cf4f f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
+d5e2bee76428 f2fs: mark gc_threads() functions as static [Park Ju Hyung]
+82df5c773166 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
+29eb672634a0 f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
+349f179db672 f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
+675d2172a336 f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
+256828357506 f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages() [Park Ju Hyung]
+cfe3d0c96aa1 f2fs: rename /sys/fs/f2fs [Park Ju Hyung]
+f6c763c2fcfd f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
+c38c7dca799e f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
+00d17456371a f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
+a2744b91bc46 f2fs: fix rapid GC breakage from merge 4e87f7d2befb8 [Park Ju Hyung]
+125ee7afbed0 f2fs/rapid_gc: do not wait until all invalid blocks are discarded [Park Ju Hyung]
+75c08ab6ae6b f2fs: implement rapid GC for Android [Park Ju Hyung]
+842998fd95bd f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
+
+====================
+     2022-12-20    
+====================
+* lineage/hudson
+0a20d94 hudson: add Nubia Z18 Mini (nx611j) [Cyborg2017]
+
+* packages/inputmethods/LatinIME
+fd6b444ca LatinIME: Theme swipe elements with Material You styling [Lyrthras]
+
+* device/xiaomi/msm8998-common
+15ea687 msm8998-common: rootdir: remove mounting of debugfs [Abhiprayah Tiwari]
+0d4c9ee msm8998-common: Drop custom APM flag [Bruno Martins]
+8b8bd65 msm8998-common: Remove BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED [Sebastiano Barezzi]
+65a9ee4 msm8998-common: Bring RIL groups in line with AOSP [Georg Veichtlbauer]
+e1fdc58 msm8998-common: Drop MMS user agent overlays [Sebastiano Barezzi]
+c234e72 msm8998-common: overlay: Update deprecated screen power items [Georg Veichtlbauer]
+bb2bbf0 msm8998-common: Move to *.prop [Nanhumly]
+c2cec76 msm8998-common: properties: Disable debug.sf.enable_hwc_vds [Adithya R]
+65e02cf msm8998-common: Force triple frame buffers [Sultan Alsawaf]
+a117691 msm8998-common: Add required GPU props [Lunarixus]
+
+* vendor/xiaomi/msm8998-common
+daf7df4 Import msm8998-common from lineage-19.1 (25e5f96f) [Nanhumly]
+
+* kernel/xiaomi/msm8998
+35c2838d2dbf bpf: Add new cgroup attach type to enable sock modifications [David Ahern]
+8d7fe5b9466b cmdline: Clean up dead code [Pranav Vashi]
+3699723efa34 cmdline: extend replace for veritymode 'enforcing' SafetyNet [tbalden]
+cc272b17cc5f cmdline: replace instead of remove for SafetyNet CTS pass [tbalden]
+efd5b383e8ca proc: cmdline: Patch vbmeta device state flag for SafetyNet [Danny Lin]
+7ca2f65c32d5 proc: cmdline: Patch SafetyNet flags [Sultan Alsawaf]
+699c2d793fef cert host tools: Stop complaining about deprecated OpenSSL functions [Linus Torvalds]
+1339150b83b5 bpf: fix overflow in prog accounting [Daniel Borkmann]
+a80d4fff6e32 bpf: Make sure mac_header was set before using it [Eric Dumazet]
+241e88402a6c bpf: Enlarge offset check value to INT_MAX in bpf_skb_{load,store}_bytes [Liu Jian]
+2d94fbbf0032 ebpf: allow bpf_get_current_uid_gid_proto also for networking [Roberto Sartori]
+a5be6cfc51a7 bpf: avoid false sharing of map refcount with max_entries [Daniel Borkmann]
+2013d434488e net: remove hlist_nulls_add_tail_rcu() [Eric Dumazet]
+ebcc08e10d0b udp: get rid of SLAB_DESTROY_BY_RCU allocations [Eric Dumazet]
+7e421a136be4 udp: no longer use SLAB_DESTROY_BY_RCU [Eric Dumazet]
+247f1d09f125 inet: refactor inet[6]_lookup functions to take skb [Craig Gallek]
+8f01c8068b42 soreuseport: fix initialization race [Craig Gallek]
+4d5f7b82e408 soreuseport: Fix TCP listener hash collision [Craig Gallek]
+cff47c7dffab inet: Fix missing return value in inet6_hash [Craig Gallek]
+ce247fdc24f6 soreuseport: fast reuseport TCP socket selection [Craig Gallek]
+fbd4e6755635 inet: create IPv6-equivalent inet_hash function [Craig Gallek]
+9a4d862ced31 sock: struct proto hash function may error [Craig Gallek]
+ec81f4f224d9 cgroup: Fix sock_cgroup_data on big-endian. [Cong Wang]
+1f4d5f32a353 selinux: always allow mounting submounts [Ondrej Mosnacek]
+d9748313e3ca userns: Don't fail follow_automount based on s_user_ns [Eric W. Biederman]
+a35939c54f3b fs: Better permission checking for submounts [Eric W. Biederman]
+6325e80a5c82 mnt: Move the FS_USERNS_MOUNT check into sget_userns [Eric W. Biederman]
+7a3718165c47 locks: sprinkle some tracepoints around the file locking code [Jeff Layton]
+a52f24796081 locks: rename __posix_lock_file to posix_lock_inode [Jeff Layton]
+1bdee5c42c7c autofs:  Fix automounts by using current_real_cred()->uid [Eric W. Biederman]
+74d8f6f8d41d fs: Call d_automount with the filesystems creds [Eric W. Biederman]
+034d14308bbe UPSTREAM: kernfs: Check KERNFS_HAS_RELEASE before calling kernfs_release_file() [Vaibhav Jain]
+cb4f3d62ac64 UPSTREAM: kernfs: fix locking around kernfs_ops->release() callback [Tejun Heo]
+9f278e858569 UPSTREAM: cgroup, bpf: remove unnecessary #include [Alexei Starovoitov]
+e8fbc88e78c8 kernfs: kernfs_sop_show_path: don't return 0 after seq_dentry call [Serge E. Hallyn]
+1fb4b1dc7563 cgroup: Make rebind_subsystems() disable v2 controllers all at once [Waiman Long]
+ba5989fe5cb9 cgroup: fix sock_cgroup_data initialization on earlier compilers [Tejun Heo]
+9285f3849a70 samples/bpf: fix bpf_perf_event_output prototype [Adam Barth]
+4774e7bdf7ba net: gso: Fix skb_segment splat when splitting gso_size mangled skb having linear-headed frag_list [Shmulik Ladkani]
+77f7ab9dab58 sk_buff: allow segmenting based on frag sizes [Marcelo Ricardo Leitner]
+77bdeb69591f ip_tunnel, bpf: ip_tunnel_info_opts_{get, set} depends on CONFIG_INET [Daniel Borkmann]
+38ad1a152a70 bpf: udp: ipv6: Avoid running reuseport's bpf_prog from __udp6_lib_err [Martin KaFai Lau]
+6f3399c3130a soreuseport: add compat case for setsockopt SO_ATTACH_REUSEPORT_CBPF [Helge Deller]
+02362202b5b0 soreuseport: change consume_skb to kfree_skb in error case [Craig Gallek]
+1c7d0763402b ipv6: Fix SO_REUSEPORT UDP socket with implicit sk_ipv6only [Martin KaFai Lau]
+30881ce7133d soreuseport: fix ordering for mixed v4/v6 sockets [Craig Gallek]
+3001507ebe6c soreuseport: fix NULL ptr dereference SO_REUSEPORT after bind [Craig Gallek]
+ef29fdaf7df9 bpf: do not blindly change rlimit in reuseport net selftest [Eric Dumazet]
+2366e057064e bpf: fix rlimit in reuseport net selftest [Daniel Borkmann]
+66748d0196d0 soreuseport: Fix reuseport_bpf testcase on 32bit architectures [Helge Deller]
+fb0b42029011 udp: fix potential infinite loop in SO_REUSEPORT logic [Eric Dumazet]
+b3b43e03d559 soreuseport: BPF selection functional test for TCP [Craig Gallek]
+28149a581852 soreuseport: pass skb to secondary UDP socket lookup [Craig Gallek]
+fe19bbffc8a9 soreuseport: BPF selection functional test [Craig Gallek]
+4a5d97f21778 soreuseport: fix mem leak in reuseport_add_sock() [Eric Dumazet]
+29c6dc04c576 {chiron,sagit}_defconfig: enable CONFIG_NETFILTER_XT_MATCH_QTAGUID [Roberto Sartori]
+16e8e2b9069f netfilter: Kconfig: add place holder for NETFILTER_XT_MATCH_QTAGUID [Roberto Sartori]
+c47b46725dc0 touchscreen: ft5x46: Fix va_start undefined behavior [Angga Satya Putra]
+fb3beb645fc7 touchscreen: ft5x46: Drop useless hwinfo include [Arian]
+9de8628c8f52 touchscreen: Import ft5x46 [Arian]
+236a82818513 dts: xiaomi: msm8998: Add ft8716 panel [Arian]
+
+====================
+     2022-12-19    
+====================
+* packages/apps/Aperture
+4a95bbd Aperture: Ignore fling events within 0.5s of last scale event [LuK1337]
+
+====================
+     2022-12-18    
+====================
+* packages/apps/Aperture
+1d25fe0 Aperture: Update com.google.android.material to 1.8.0-beta01 [LuK1337]
+8c16842 Aperture: Fix constraints in secondaryTopBarLayout [LuK1337]
+
