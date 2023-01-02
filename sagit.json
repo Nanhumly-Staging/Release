@@ -1,13 +1,28 @@
 {
   "response": [
     {
-      "datetime": 1672462697,
-      "filename": "lineage-20.0-20221231-UNOFFICIAL-sagit.zip",
-      "id": "0ad2e1ebd32c6ad4ef340e32210dcbd41e75a649396a31c1a46a25f731c8e2e1",
-      "romtype": "UNOFFICIAL",
-      "size": 845879292,
-      "url": "https://down.warbler.cc/d/XiaoMi-6/LineageOS/20.0/lineage-20.0-20221231-UNOFFICIAL-sagit.zip",
-      "version": "20.0"
+        "maintainer": "Nanhumly",
+        "oem": "Xiaomi",
+        "device": "XiaoMi-6",
+        "filename": "crDroidAndroid-13.0-20230102-sagit-v9.0.zip",
+        "download": "https://down.warbler.cc/d/XiaoMi-6/crDroid/crDroidAndroid-13.0-20230102-sagit-v9.0.zip",
+        "timestamp": 1672642774,
+        "md5": "b30b59705968557ac676c7e485a5f235",
+        "sha256": "f38b68699830927f9b63fcb28e3445eb873612bbfd8b80ab62166d22aded2560",
+        "size": 948802544,
+        "version": "9.0",
+        "buildtype": "Weekly",
+        "forum": "",
+        "gapps": "https://wiki.lineageos.org/gapps",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "https://www.paypal.com/paypalme/burgucn",
+        "telegram": "https://t.me/Nanhumly",
+        "dt": "https://github.com/Nanhumly-Staging/android_device_xiaomi_sagit",
+        "common-dt": "https://github.com/Nanhumly-Staging/android_device_xiaomi_msm8998-common",
+        "kernel": "https://github.com/Nanhumly-Staging/android_kernel_xiaomi_msm8998"
     }
   ]
 }
