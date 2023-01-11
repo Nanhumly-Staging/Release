@@ -1,4 +1,177 @@
 ====================
+     2023-01-11    
+====================
+* android
+8cd7f28 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
+
+* frameworks/base
+84df9b94afd0 build: Don't check for fingerprint mismatch [Dan Cartier]
+e64fef0d8a56 fwb: Disable some debug/log/trace [1582130940]
+ffb8a9b188cc fwb: Only enable some features on eng build [1582130940]
+acda266938aa SystemUI: Re-designed caffeine tile icon [Andrew Fluck]
+380bb1285872 base: Add support for Lockscreen clock fonts [El Dainosor]
+ffac5a8a41fc Revert "SystemUI: Match lockscreen clock font with system" [Pranav Vashi]
+8f81205ae0be create different pendingintent via appwidgetId [Wen Zhang]
+be3e67c2731a Calculate apk size multiple times [wu di]
+d9e7c746a54e vibrator: fix log format and level issue [shenyanfeng]
+21b1d553b38d Dynamic broadcast receivers that are not exported need to be filtered in checkBroadcastFromSystem [gang.huang]
+3562c84914f7 graphics: Override system fonts with user-selected overlays [Danny Lin]
+7b4ac7cf1051 styles: Use user fonts for Material UI themes [Danny Lin]
+
+* packages/apps/CarrierConfig
+50b066f Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Launcher3
+43482bbd4b Launcher3: InfoBottomSheet: Fix NPE with AppTransitionManager [DennySPb]
+
+* packages/apps/crDroidSettings
+90b2c73 crdroid: Add support for Lockscreen clock fonts [El Dainosor]
+
+* packages/services/Telephony
+2db40e0f7 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/crDroidOTA
+3b52058 spes: Updated from 11.01.23 (9.1) [Jabiyeff]
+bdcdea4 surya: Set buildtype to monthly [GtrCraft]
+57aa416 surya: Add 11/01 build [GtrCraft]
+5b58090 violet: January Update [Jash Vakharia]
+f4d858b miatoll: January Update [popoA3M]
+1612d88 vayu: Update [Pranav Vashi]
+b5669f8 raphael: update to 9.1 [firebird11]
+272870d lmi: update to crDroidAndroid-13.0-20230110-lmi-v9.1 [¨raystef66¨]
+372b8b7 alioth: update to crDroidAndroid-13.0-20230110-alioth-v9.1 [¨raystef66¨]
+
+* vendor/lineage
+6b4bcbe1 backuptool: Unmount v3 partitions during backup [TheHitMan7]
+4c755d26 overlay: Make config_defaultQrCodeComponent untranslatable [LuK1337]
+c3a8e397 overlay: Set config_clockFontFamily to empty string [LuK1337]
+2bb5e56f config: common: Re-enable rsync [Nolen Johnson]
+0b3dee66 crdroid: Minimize debug info [Pranav Vashi]
+9613f32c overlay: Set default status bar height to 28dp [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
+525c593 Revert "msm8998-common: dsds: restart qcrild on data switch" [Nanhumly]
+a8be56d Partially revert "msm8998-common: Update RIL manifest entries" [Nanhumly]
+
+* vendor/extra
+76df415 SystemUI: Disable the privacy indicator on the status bar [Nanhumly]
+
+====================
+     2023-01-10    
+====================
+* android
+98698f2 lineage: Re-enable rsync [DroidFreak32]
+
+* bionic
+d349434ab Nullability check for syslog module. [zijunzhao]
+b900c737b Nullability check for malloc module. [zijunzhao]
+9eb80e63c Nullability check for langinfo module. [zijunzhao]
+c6a3e169c linker: Fix memory leak for reserved memory [huangchaochao]
+955fbd1a6 Nullability check for time module. [zijunzhao]
+
+* build/soong
+ae815f603 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
+dadb5aeff java_sdk_library_import: Copy all prebuilt properties to child modules [Paul Duffin]
+8fa3a2efe Tag apex_set's 'set' config with `android:"path"` [Pranav Gupta]
+
+* frameworks/av
+796da5c766 Fix potential memory leaks [Chih-Hung Hsieh]
+2965c33165 libmediautils_fuzzer_service_utilities : Resolve timeout [Akshata Kadam]
+649d9dd1e1 CCodecConfig: round frame rate instead of truncating to increase the accuracy [Dichen Zhang]
+184d6ffd64 Suppress sizeof warnings on unusual malloc [Chih-Hung Hsieh]
+41d2bd3ba7 Fix crash when callback thread late launched after stream close. [Kuowei Li]
+e7df063ee1 C2BqBuffer: Clear a cached buffer if reallocation is needed [Sungtak Lee]
+
+* frameworks/base
+1df0f777998f base: dont call roundStorageSize on Storage API for getting sizes [maxwen]
+349ccf79f94e Fix black screen issue due to wallpaper decoding exceptions [Weijie Wang]
+
+* frameworks/native
+4b6fe4f0c8 installd: explicitly specify capabilities [Nikita Ioffe]
+
+* packages/apps/Aperture
+d8c5221 Automatic translation import [Michael Bestas]
+
+* packages/apps/AudioFX
+db29c41 Automatic translation import [Michael Bestas]
+
+* packages/apps/DocumentsUI
+ec06fd02f Automatic translation import [Michael Bestas]
+
+* packages/apps/Eleven
+11519b4 Automatic translation import [Michael Bestas]
+
+* packages/apps/Etar
+b650bf79 Automatic translation import [Michael Bestas]
+
+* packages/apps/FlipFlap
+db18739 Automatic translation import [Michael Bestas]
+
+* packages/apps/Jelly
+6f2489a Automatic translation import [Michael Bestas]
+
+* packages/apps/Recorder
+be505b3 Automatic translation import [Michael Bestas]
+
+* packages/apps/crDroidSettings
+dc10b0d crdroid: Import Wi-Fi standard icon [Pranav Vashi]
+
+* packages/providers/DownloadProvider
+be3cdfc6 Automatic translation import [Michael Bestas]
+
+* packages/resources/devicesettings
+93542da Automatic translation import [Michael Bestas]
+
+* system/core
+7b8ff0a2b Fix the cgroup v2 thread path [Bart Van Assche]
+
+* vendor/addons
+0d4726a addons: Copy all fonts for lockscreen clock font [Pranav Vashi]
+
+* vendor/crDroidOTA
+064c85d hotdog: Update 20230110 [ShevT]
+4c61502 begonia: 10-01-2023 update [DarkJoker360]
+cc67636 rosy: Update 2023-01-10 [Aditya Eka Pranata]
+69f2f09 sweet: Update [Pranav Vashi]
+a0790f0 munch: 9th Jan, 2023 update [Akash Kakkar]
+
+* vendor/crowdin
+db63991 Automatic translation import [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+24e05dd Automatic translation import [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+5febf0b msm8998-common: Update RIL manifest entries [Georg Veichtlbauer]
+32e85e2 msm8998-common: sepolicy: Address more denials [Nanhumly]
+8ea722c msm8998-common: sepolicy: Address wifi denials [Nanhumly]
+0d932f8 msm8998-common: sepolicy: Allow hal_wifi_default write to proc_net [palaych]
+dff44b1 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
+40dba77 msm8998-common: Add IMS RTP service to manifest [Georg Veichtlbauer]
+a30db70 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
+0ad1df9 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
+f8228c3 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
+d50fb0b msm8998-common: dsds: restart qcrild on data switch [ZeeLog]
+7867245 msm8998-common: Add missing libxml [Nanhumly]
+8475d1c msm8998-common: Update CNE blobs [Georg Veichtlbauer]
+9660d7e msm8998-common: update QRTR from cheeseburger [Nanhumly]
+334e3d3 msm8998-common: Update the IMS UCE and CM HAL versions to 2.0 [Pavan Kumar M]
+f497562 msm8998-common: switch to QCRIL [Timi Rautamäki]
+0dc1202 msm8998-common: update QMI, Radio, IMS from sld_sprout [enesykaya]
+
+* vendor/xiaomi/msm8998-common
+8d9f677 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
+a2ea053 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
+7580c10 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
+628f421 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
+aedbe44 msm8998-common: Add missing libxml [Nanhumly]
+e7a986c msm8998-common: Update CNE blobs [Nanhumly]
+6c713c8 msm8998-common: update QRTR from cheeseburger [Nanhumly]
+53bf4ed msm8998-common: switch to QCRIL [Nanhumly]
+bf7917d msm8998-common: update QMI, Radio, IMS from sld_sprout [Nanhumly]
+
+====================
      2023-01-09    
 ====================
 * android
@@ -17,7 +190,9 @@ ad4de7804 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 c4be17a73d Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
 * frameworks/base
-ffa5c313e447 build: Don't check for fingerprint mismatch [Dan Cartier]
+7bafc9e4dd62 KeyguardIndication: Set wakelock on doze only when required [Pranav Vashi]
+8744588033a4 base: Refactor Wi-Fi standard icons [Adithya R]
+1c751579ac4d base: Import Wi-Fi standard icon [1/2] [ReallySnow]
 1dfbdb2efc6c New Crowdin updates (#929) [Lup Gabriel]
 be0afd6cd44d Update Crowdin configuration file [Lup Gabriel]
 f6b9dbe6a23d VolumePanel: Change bg tint for inactive rows [Arian]
@@ -758,9 +933,6 @@ d9f7e3b1a334 base: Add stub files [Pranav Vashi]
 * hardware/interfaces
 6a163aaec Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
-* packages/apps/CarrierConfig
-a26ef25 Override name of Mainland China carriers [cjybyjk]
-
 * packages/apps/DeskClock
 208f6a68a Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
@@ -787,6 +959,7 @@ e8d8ea43ac Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 40ba57f New Crowdin updates (#44) [Lup Gabriel]
 
 * packages/apps/crDroidSettings
+90b9bdc crdroid: Improve CustomSeekBarPreference drawables [pri0818]
 d9ee397 New Crowdin updates (#1005) [Lup Gabriel]
 
 * packages/inputmethods/LatinIME
@@ -797,9 +970,6 @@ a71bd8c5c8 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
 * packages/services/Telecomm
 b8ef7992b Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
-
-* packages/services/Telephony
-8582891d8 Add support for multi-language carrier name override [cjybyjk]
 
 * system/core
 da8118caa Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
@@ -813,12 +983,18 @@ c2c9c053 Merge tag 'android-13.0.0_r20' of https://android.googlesource.com/plat
 * vendor/crDroidOTA
 41ce0e4 beryllium/guacamole/lemonades: update to build 20230108 [Lup Gabriel]
 
+* vendor/lineage
+98d1898e crdroid: Bump to version 9.1 [Pranav Vashi]
+
 ====================
      2023-01-08    
 ====================
 * frameworks/opt/telephony
 cfb852b7f2 telephony: Use case insensitive check for plmn-spn [Adithya R]
 cf6eb30fc6 telephony: Check for LTE_CA in physical channel config [Adithya R]
+
+* hardware/qcom-caf/sm8350/audio
+d09ec9c6b audio_extn: Allow skipping compilation of audio HAL extensions [Bruno Martins]
 
 * packages/apps/Aperture
 2b5de18 Aperture: Force portrait when launched from locked keyguard [LuK1337]
@@ -840,13 +1016,11 @@ eee3263 munch: 4th January update [Akash Kakkar]
 ====================
      2023-01-07    
 ====================
-* packages/apps/Aperture
-c313c1b Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337]
-
 ====================
      2023-01-06    
 ====================
 * packages/apps/Aperture
+c313c1b Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337]
 785ac30 Aperture: Dedup some permissions stuff [Sebastiano Barezzi]
 
 ====================
@@ -867,129 +1041,4 @@ e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
 05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
 09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
 01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-
-* vendor/xiaomi/msm8998-common
-350e1d3 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-7844985 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-
-====================
-     2023-01-04    
-====================
-* android
-4a4b20e manifest: January 2023 Security update [Michael Bestas]
-
-* build/make
-5ed2e756a Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* build/soong
-d9a29083e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* frameworks/av
-24d5bc6981 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* frameworks/base
-998612512c78 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* frameworks/opt/telephony
-17acd33b98 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/google/graphics/common
-55b2e6f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/google/pixel
-1c37923 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/interfaces
-7c8b1cd37 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/apps/Launcher3
-b421b38f64 Launcher3: Add toggle to show/hide app drawer search bar [StarkDroid]
-f8c6d741bc Launcher3: Fix rtl layout error [Leonardo Hvang]
-
-* packages/apps/Settings
-a87b10c7c2 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/modules/Bluetooth
-bb73b0df57 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/modules/Wifi
-ebfbe967c5 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/providers/MediaProvider
-956e89047 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/services/Telecomm
-fb06c655d Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/services/Telephony
-95f0e55a3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/core
-0a95e1649 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/security
-29becc3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/sepolicy
-cff2a8a58 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* vendor/crDroidOTA
-1d6a728 raphael: 03-01-23 [firebird11]
-
-* vendor/crowdin
-9459431 Updates for qpr1 [Michael Bestas]
-
-* device/xiaomi/sagit
-bd3022f sagit: Change default wifi ssid to "MI 6" [Arian]
-66a09b3 sagit: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
-5ccb037 sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
-eebf7ff sagit: Disallow aux cam usage for Zoom [jabashque]
-f9d3cb4 sagit: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
-d9a8f09 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
-0be0e92 sagit: Sort blobs list [Michael Bestas]
-f334a57 sagit: Migrate to vendor.prop [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
-f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
-3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
-c4e606e msm8998-common: Sort blobs list [Michael Bestas]
-ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
-16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
-aa80d12 msm8998-common: rootdir: Adjust userdata and cache f2fs mount options [stic-server-open]
-
-* vendor/xiaomi/sagit
-810f71c sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
-
-* vendor/xiaomi/msm8998-common
-59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
-1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
-ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
-
-====================
-     2023-01-03    
-====================
-* packages/apps/Aperture
-b4af850 Aperture: Ask for GPS permission only on the first launch [LuK1337]
-d3755e4 Aperture: Make sure grant results is not empty [TheScarastic]
-51a756a Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337]
-
-* packages/apps/Etar
-dffa3aca remove duplicated check for allowed reminders and availability [Jonas Häusler]
-362b9bd6 Fix drawing of all-day events #1287. [Robert Zenz]
-5ddf4ff3 New version 1.0.33 [Jochen Sprickerhof]
-1e3e8f1d Add aarGen dependency to app build [Jochen Sprickerhof]
-c32d7a96 New version 1.0.31 [Gitsaibot]
-
-* vendor/crDroidOTA
-cf11d5c miatoll: Update [Pratyay Borborah]
-e1c7a97 miatoll: change maintainer (#403) [Pratyay Borborah]
-7643b88 raphael: Redmi [Lup Gabriel]
-e124f21 violet: Redmi [Lup Gabriel]
-
-* device/xiaomi/msm8998-common
-bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard" [Nanhumly]
-
-* kernel/xiaomi/msm8998
-6a3046fcf7fc Merge remote-tracking branch 'msm8998/lineage-20' into lineage-20 [Michael Bestas]
 
