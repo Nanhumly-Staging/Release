@@ -7,27 +7,6 @@
 * build/make
 0dd64103f build: Always use release-keys [Pranav Vashi]
 
-* device/xiaomi/msm8998-common
-3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
-525c593 Revert "msm8998-common: dsds: restart qcrild on data switch" [Nanhumly]
-a8be56d Partially revert "msm8998-common: Update RIL manifest entries" [Nanhumly]
-5febf0b msm8998-common: Update RIL manifest entries [Georg Veichtlbauer]
-32e85e2 msm8998-common: sepolicy: Address more denials [Nanhumly]
-8ea722c msm8998-common: sepolicy: Address wifi denials [Nanhumly]
-0d932f8 msm8998-common: sepolicy: Allow hal_wifi_default write to proc_net [palaych]
-dff44b1 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
-40dba77 msm8998-common: Add IMS RTP service to manifest [Georg Veichtlbauer]
-a30db70 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
-0ad1df9 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
-f8228c3 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
-d50fb0b msm8998-common: dsds: restart qcrild on data switch [ZeeLog]
-7867245 msm8998-common: Add missing libxml [Nanhumly]
-8475d1c msm8998-common: Update CNE blobs [Georg Veichtlbauer]
-9660d7e msm8998-common: update QRTR from cheeseburger [Nanhumly]
-334e3d3 msm8998-common: Update the IMS UCE and CM HAL versions to 2.0 [Pavan Kumar M]
-f497562 msm8998-common: switch to QCRIL [Timi Rautamäki]
-0dc1202 msm8998-common: update QMI, Radio, IMS from sld_sprout [enesykaya]
-
 * frameworks/base
 ec72d5408dc0 build: Don't check for fingerprint mismatch [Dan Cartier]
 
@@ -39,41 +18,6 @@ f337338 Override name of Mainland China carriers [cjybyjk]
 
 * vendor/lineage
 5924e840 config: common: Re-enable rsync [Nolen Johnson]
-
-* device/xiaomi/msm8998-common
-3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
-525c593 Revert "msm8998-common: dsds: restart qcrild on data switch" [Nanhumly]
-a8be56d Partially revert "msm8998-common: Update RIL manifest entries" [Nanhumly]
-5febf0b msm8998-common: Update RIL manifest entries [Georg Veichtlbauer]
-32e85e2 msm8998-common: sepolicy: Address more denials [Nanhumly]
-8ea722c msm8998-common: sepolicy: Address wifi denials [Nanhumly]
-0d932f8 msm8998-common: sepolicy: Allow hal_wifi_default write to proc_net [palaych]
-dff44b1 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
-40dba77 msm8998-common: Add IMS RTP service to manifest [Georg Veichtlbauer]
-a30db70 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
-0ad1df9 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
-f8228c3 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
-d50fb0b msm8998-common: dsds: restart qcrild on data switch [ZeeLog]
-7867245 msm8998-common: Add missing libxml [Nanhumly]
-8475d1c msm8998-common: Update CNE blobs [Georg Veichtlbauer]
-9660d7e msm8998-common: update QRTR from cheeseburger [Nanhumly]
-334e3d3 msm8998-common: Update the IMS UCE and CM HAL versions to 2.0 [Pavan Kumar M]
-f497562 msm8998-common: switch to QCRIL [Timi Rautamäki]
-0dc1202 msm8998-common: update QMI, Radio, IMS from sld_sprout [enesykaya]
-
-* vendor/extra
-0af3031 SystemUI: Disable the privacy indicator on the status bar [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-8d9f677 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
-a2ea053 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
-7580c10 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
-628f421 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
-aedbe44 msm8998-common: Add missing libxml [Nanhumly]
-e7a986c msm8998-common: Update CNE blobs [Nanhumly]
-6c713c8 msm8998-common: update QRTR from cheeseburger [Nanhumly]
-53bf4ed msm8998-common: switch to QCRIL [Nanhumly]
-bf7917d msm8998-common: update QMI, Radio, IMS from sld_sprout [Nanhumly]
 
 * device/xiaomi/msm8998-common
 3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
@@ -126,9 +70,6 @@ b5e83c1f overlay: Set default status bar height to 28dp [Michael Bestas]
 ====================
      2023-01-08    
 ====================
-* device/xiaomi/msm8998-common
-6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
-
 * hardware/qcom-caf/sm8350/audio
 d09ec9c6b audio_extn: Allow skipping compilation of audio HAL extensions [Bruno Martins]
 
@@ -138,9 +79,6 @@ d09ec9c6b audio_extn: Allow skipping compilation of audio HAL extensions [Bruno 
 
 * packages/apps/LineageParts
 dca39af Regenerate contributors cloud (2023-01-03) [Kevin F. Haggerty]
-
-* device/xiaomi/msm8998-common
-6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
 
 * device/xiaomi/msm8998-common
 6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
@@ -169,29 +107,6 @@ bf20ee10 vars: January 2023 Security Update [Michael Bestas]
 ====================
      2023-01-05    
 ====================
-* device/xiaomi/msm8998-common
-f3ba3e1 msm8998-common: Don't explicitly build android.hidl.allocator@1.0 [Arian]
-cbc5111 msm8998-common: Don't explicitly build fs_config_files [Arian]
-8d17880 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-819de3b msm8998-common: Move to common Xiaomi light AIDL [Sebastiano Barezzi]
-c67639d msm8998-common: Move to common Xiaomi fingerprint HIDL [Sebastiano Barezzi]
-b80da5d msm8998-common: Move to common IFAAService [Sebastiano Barezzi]
-7261c9f msm8998-common: Add hardware/xiaomi to Soong namespaces [Sebastiano Barezzi]
-849804e msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-66aa07e msm8998-common: Add hardware/xiaomi to lineage.dependencies [Sebastiano Barezzi]
-e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
-70d3a8e msm8998-common: Fixed status bar glitch for apps that access internal resource dimen [shawnlin]
-05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
-09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
-01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
-
-* external/rsync
-75f3eed8 rsync: Regenerate configs [DroidFreak32]
-8e5f359c rsync: Add a script to substitute known working configs [DroidFreak32]
-b24702fd rsync: Ignore git-version.h [DroidFreak32]
-f2f9b750 rsync: Migrate to Android.bp [DroidFreak32]
-
 * lineage/hudson
 465f261 hudson: Add Xiaomi SM8350 family to lineage-19.1 weekly builds [Arian]
 
@@ -213,38 +128,10 @@ e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
 05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
 09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
 01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
 
 * vendor/xiaomi/msm8998-common
 350e1d3 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
 7844985 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
-1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
-ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
-
-* device/xiaomi/msm8998-common
-f3ba3e1 msm8998-common: Don't explicitly build android.hidl.allocator@1.0 [Arian]
-cbc5111 msm8998-common: Don't explicitly build fs_config_files [Arian]
-8d17880 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-819de3b msm8998-common: Move to common Xiaomi light AIDL [Sebastiano Barezzi]
-c67639d msm8998-common: Move to common Xiaomi fingerprint HIDL [Sebastiano Barezzi]
-b80da5d msm8998-common: Move to common IFAAService [Sebastiano Barezzi]
-7261c9f msm8998-common: Add hardware/xiaomi to Soong namespaces [Sebastiano Barezzi]
-849804e msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-66aa07e msm8998-common: Add hardware/xiaomi to lineage.dependencies [Sebastiano Barezzi]
-e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
-70d3a8e msm8998-common: Fixed status bar glitch for apps that access internal resource dimen [shawnlin]
-05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
-09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
-01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
-
-* vendor/xiaomi/msm8998-common
-350e1d3 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-7844985 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
-1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
-ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
 
 ====================
      2023-01-04    
@@ -258,24 +145,11 @@ ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen
 * build/soong
 d9a29083e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
 
-* device/xiaomi/msm8998-common
-f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
-3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
-c4e606e msm8998-common: Sort blobs list [Michael Bestas]
-ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
-16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
-aa80d12 msm8998-common: rootdir: Adjust userdata and cache f2fs mount options [stic-server-open]
-bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard" [Nanhumly]
-
-* device/xiaomi/sagit
-bd3022f sagit: Change default wifi ssid to "MI 6" [Arian]
-66a09b3 sagit: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
-5ccb037 sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
-eebf7ff sagit: Disallow aux cam usage for Zoom [jabashque]
-f9d3cb4 sagit: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
-d9a8f09 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
-0be0e92 sagit: Sort blobs list [Michael Bestas]
-f334a57 sagit: Migrate to vendor.prop [Michael Bestas]
+* external/rsync
+75f3eed8 rsync: Regenerate configs [DroidFreak32]
+8e5f359c rsync: Add a script to substitute known working configs [DroidFreak32]
+b24702fd rsync: Ignore git-version.h [DroidFreak32]
+f2f9b750 rsync: Migrate to Android.bp [DroidFreak32]
 
 * frameworks/av
 24d5bc6981 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
@@ -294,35 +168,6 @@ f334a57 sagit: Migrate to vendor.prop [Michael Bestas]
 
 * hardware/interfaces
 7c8b1cd37 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-5ce2b8052a9e {chiron,sagit}_defconfig: Switch zram compression alg to lz4 [Nanhumly]
-36b209dd5594 Merge pull request #1 from sticpaper/lineage-20.0 [Sean Hemming]
-1d611fcef8dd defconfig: xiaomi: Remove duplicate F2FS config changes [stic-server-open]
-17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
-103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
-bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
-1bab22fb1f1d fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
-f64cded02c6d f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
-f71b77fa7195 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
-098e787d8b63 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
-b251dbf71fea fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
-b4af8d8ee7cc fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
-e0dc65d6a528 fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
-367371432da9 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
-02b52b3d1393 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
-e97df3f8fb9c fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
-c6f12a790415 fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
-e272252efd34 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
-a119700593c1 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
-f6702a20659b fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
-e26c98a72af8 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
-5bcd1b21e336 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
-e0df801a129e fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
-c8c85742f076 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
-2094980493f7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
-d8782844e5a8 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
-0725a268e201 f2fs: mm-drop_caches: expose mm_drop_caches() [Park Ju Hyung]
 
 * lineage/crowdin
 f91a5bc config: lineage-20.0_aosp: Update for qpr1 [Michael Bestas]
@@ -378,6 +223,7 @@ d9a8f09 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
 f334a57 sagit: Migrate to vendor.prop [Michael Bestas]
 
 * device/xiaomi/msm8998-common
+172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
 f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
 3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
 c4e606e msm8998-common: Sort blobs list [Michael Bestas]
@@ -389,193 +235,19 @@ bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandar
 * vendor/xiaomi/sagit
 810f71c sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
 
-* kernel/xiaomi/msm8998
-5ce2b8052a9e {chiron,sagit}_defconfig: Switch zram compression alg to lz4 [Nanhumly]
-36b209dd5594 Merge pull request #1 from sticpaper/lineage-20.0 [Sean Hemming]
-1d611fcef8dd defconfig: xiaomi: Remove duplicate F2FS config changes [stic-server-open]
-17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
-103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
-bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
-1bab22fb1f1d fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
-f64cded02c6d f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
-f71b77fa7195 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
-098e787d8b63 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
-b251dbf71fea fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
-b4af8d8ee7cc fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
-e0dc65d6a528 fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
-367371432da9 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
-02b52b3d1393 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
-e97df3f8fb9c fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
-c6f12a790415 fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
-e272252efd34 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
-a119700593c1 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
-f6702a20659b fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
-e26c98a72af8 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
-5bcd1b21e336 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
-e0df801a129e fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
-c8c85742f076 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
-2094980493f7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
-d8782844e5a8 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
-0725a268e201 f2fs: mm-drop_caches: expose mm_drop_caches() [Park Ju Hyung]
-
-* device/xiaomi/sagit
-bd3022f sagit: Change default wifi ssid to "MI 6" [Arian]
-66a09b3 sagit: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
-5ccb037 sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
-eebf7ff sagit: Disallow aux cam usage for Zoom [jabashque]
-f9d3cb4 sagit: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
-d9a8f09 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
-0be0e92 sagit: Sort blobs list [Michael Bestas]
-f334a57 sagit: Migrate to vendor.prop [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
-3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
-c4e606e msm8998-common: Sort blobs list [Michael Bestas]
-ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
-16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
-aa80d12 msm8998-common: rootdir: Adjust userdata and cache f2fs mount options [stic-server-open]
-bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard" [Nanhumly]
-
-* vendor/xiaomi/sagit
-810f71c sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
+* vendor/xiaomi/msm8998-common
+59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
+1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
+ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
 
 * kernel/xiaomi/msm8998
 5ce2b8052a9e {chiron,sagit}_defconfig: Switch zram compression alg to lz4 [Nanhumly]
 36b209dd5594 Merge pull request #1 from sticpaper/lineage-20.0 [Sean Hemming]
 1d611fcef8dd defconfig: xiaomi: Remove duplicate F2FS config changes [stic-server-open]
-17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
-103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
-bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
-1bab22fb1f1d fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
-f64cded02c6d f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
-f71b77fa7195 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
-098e787d8b63 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
-b251dbf71fea fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
-b4af8d8ee7cc fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
-e0dc65d6a528 fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
-367371432da9 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
-02b52b3d1393 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
-e97df3f8fb9c fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
-c6f12a790415 fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
-e272252efd34 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
-a119700593c1 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
-f6702a20659b fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
-e26c98a72af8 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
-5bcd1b21e336 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
-e0df801a129e fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
-c8c85742f076 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
-2094980493f7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
-d8782844e5a8 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
-0725a268e201 f2fs: mm-drop_caches: expose mm_drop_caches() [Park Ju Hyung]
 
 ====================
      2023-01-03    
 ====================
-* kernel/xiaomi/msm8998
-564a407f1fb2 f2fs: avoid needless checkpoint during fsync [liuchao12]
-9dd62f46bdc6 f2fs: enable fstrim to issue discard while using discard option [liuchao12]
-cb61a69cebed f2fs: Stop trim mechanism after receiving SIGUSR1 signal [xiongping1]
-a86bdf601770 f2fs: merge backport-tree from android_xiaomi_msm8998_kernel [stic-server-open]
-a4b8c3930e7a f2fs: obsolete unused MAX_DISCARD_BLOCKS [Chao Yu]
-f31d532035a9 f2fs: set checkpoint_merge by default [Jaegeuk Kim]
-7debe227adf6 f2fs: add ckpt_thread_ioprio sysfs node [Daeho Jeong]
-7173339958a1 f2fs: don't grab superblock freeze for flush/ckpt thread [Jaegeuk Kim]
-330fec0eed28 f2fs: introduce checkpoint_merge mount option [Daeho Jeong]
-37fe77394955 f2fs: deprecate f2fs_trace_io code [Jaegeuk Kim]
-d7a6ff9a7610 f2fs: remove unused stat_{inc, dec}_atomic_write [Jack Qiu]
-ae799ca29813 f2fs: use kmem_cache pool during inline xattr lookups [Chao Yu]
-da5827c318df f2fs: introduce DEFAULT_IO_TIMEOUT [Chao Yu]
-594b20de727e f2fs: don't leak filename in f2fs_try_convert_inline_dir() [Eric Biggers]
-51ec55f3c7ea f2fs: remove blk_plugging in block_operations [Jaegeuk Kim]
-31bda3322694 f2fs: fix checkpoint=disable:%u%% [Jaegeuk Kim]
-fdfe7c04fde7 f2fs: delete DIO read lock [DongDongJu]
-ea66015cf5e0 f2fs: xattr.h: Replace zero-length array with flexible-array member [Gustavo A. R. Silva]
-6103b25351bb f2fs: skip GC when section is full [Jaegeuk Kim]
-eaddd1ca14f7 f2fs: fix the panic in do_checkpoint() [Sahitya Tummala]
-d0946da4ac75 f2fs: fix to wait all node page writeback [Chao Yu]
-33922229b033 f2fs: Add f2fs stats to sysfs [Hridya Valsaraju]
-5f0c00992fa4 f2fs: delete duplicate information on sysfs nodes [Hridya Valsaraju]
-6e9b6e47b6fd f2fs: change to use rwsem for gc_mutex [Chao Yu]
-35446a75def3 f2fs: code cleanup for f2fs_statfs_project() [Chengguang Xu]
-520e7145e126 f2fs: fix miscounted block limit in f2fs_statfs_project() [Chengguang Xu]
-8e06806d660f f2fs: remove unneeded check for error allocating bio_post_read_ctx [Eric Biggers]
-492985053aae f2fs: convert inline_dir early before starting rename [Jaegeuk Kim]
-de504b8912d0 f2fs: fix memleak of kobject [Chao Yu]
-63ff1f93245a f2fs: fix to add swap extent correctly [Chao Yu]
-d48730662993 f2fs: run fsck when getting bad inode during GC [Jaegeuk Kim]
-6930cd60ed40 f2fs: free sysfs kobject [Jaegeuk Kim]
-f8dd8f4d99e4 f2fs: declare nested quota_sem and remove unnecessary sems [Jaegeuk Kim]
-56b5f17429f1 f2fs: don't put new_page twice in f2fs_rename [Jaegeuk Kim]
-f422da298e52 f2fs: set I_LINKABLE early to avoid wrong access by vfs [Jaegeuk Kim]
-d914699990ce f2fs: introduce private bioset [Chao Yu]
-0fe156752b63 f2fs: cleanup duplicate stats for atomic files [Sahitya Tummala]
-d0e1da68daea f2fs: set GFP_NOFS when moving inline dentries [Jaegeuk Kim]
-8440d9dce740 f2fs: should avoid recursive filesystem ops [Jaegeuk Kim]
-ba644ac7ed9f f2fs: keep quota data on write_begin failure [Jaegeuk Kim]
-f6d354854477 f2fs: call f2fs_balance_fs outside of locked page [Jaegeuk Kim]
-b15767eed363 f2fs: preallocate DIO blocks when forcing buffered_io [Jaegeuk Kim]
-20bd306f3dbd f2fs: stop GC when the victim becomes fully valid [Jaegeuk Kim]
-2f2ba34068d9 f2fs: expose main_blkaddr in sysfs [Jaegeuk Kim]
-e65853fbfda6 f2fs: choose hardlimit when softlimit is larger than hardlimit in f2fs_statfs_project() [Chengguang Xu]
-29df78eda54c f2fs: Fix deadlock in f2fs_gc() context during atomic files handling [Sahitya Tummala]
-fe1884c78d56 f2fs: show f2fs instance in printk_ratelimited [Chao Yu]
-f84340758400 f2fs: fix potential overflow [Chao Yu]
-25c1701973df f2fs: fix to update dir's i_pino during cross_rename [Chao Yu]
-9e62e2e19035 f2fs: support aligned pinned file [Jaegeuk Kim]
-0f61c1b232be f2fs: fix to avoid memory leakage in f2fs_listxattr [Randall Huang]
-dc2561c6c8ed f2fs: avoid kernel panic on corruption test [Jaegeuk Kim]
-ce2ebc485580 f2fs: fix wrong description in document [Chao Yu]
-186c9f2abe32 f2fs: cache global IPU bio [Chao Yu]
-8912e5848073 f2fs: check total_segments from devices in raw_super [Qiuyang Sun]
-67dde4703816 f2fs: update multi-dev metadata in resize_fs [Qiuyang Sun]
-04eb948959c0 f2fs: mark recovery flag correctly in read_raw_super_block() [Chengguang Xu via Linux-f2fs-devel]
-36cfa7aa8571 f2fs: fix to update time in lazytime mode [Chao Yu]
-41f8af54116a f2fs: add a condition to detect overflow in f2fs_ioc_gc_range() [Sahitya Tummala]
-c1aa8cf59453 f2fs: fix to add missing F2FS_IO_ALIGNED() condition [Chao Yu]
-e3dd8cda841b f2fs: fix to fallback to buffered IO in IO aligned mode [Chao Yu]
-9029409a316c f2fs: fix to handle error path correctly in f2fs_map_blocks [Chao Yu]
-cff09f9fcc5b f2fs: fix extent corrupotion during directIO in LFS mode [Chao Yu]
-0fef6320bac7 f2fs: Add a small clarification to CONFIG_FS_F2FS_FS_SECURITY [Lockywolf]
-e90c499db66d f2fs: fix inode rwsem regression [Goldwyn Rodrigues]
-b717478d3ed7 f2fs: fix to avoid accessing uninitialized field of inode page in is_alive() [Chao Yu]
-1b160da6e151 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-a8f64fee7e45 f2fs: convert inline_data in prior to i_size_write [Jaegeuk Kim]
-3b4bc3e39ee3 f2fs: fix error path of f2fs_convert_inline_page() [Chao Yu]
-ea31edc61141 f2fs: add missing documents of reserve_root/resuid/resgid [Chao Yu]
-adcb31675503 f2fs: fix flushing node pages when checkpoint is disabled [Jaegeuk Kim]
-0c0285883ed4 f2fs: enhance f2fs_is_checkpoint_ready()'s readability [Chao Yu]
-61aaa15ca500 f2fs: clean up __bio_alloc()'s parameter [Chao Yu]
-e5a670ab1b15 f2fs: fix wrong error injection path in inc_valid_block_count() [Chao Yu]
-8bb3467465a5 f2fs: fix to writeout dirty inode during node flush [Chao Yu]
-6e87e7e67989 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-04e948ef1528 f2fs: allocate memory in batch in build_sit_info() [Chao Yu]
-c73290a7afa5 f2fs: fix to avoid data corruption by forbidding SSR overwrite [Chao Yu]
-2e8e926bd62f f2fs: cleanup the code in build_sit_entries. [Lihong Kou]
-8ee921a8c983 f2fs: fix wrong available node count calculation [Chao Yu]
-731764f4d41d f2fs: remove duplicate code in f2fs_file_write_iter [Lihong Kou]
-f7bd03c5f462 f2fs: fix to migrate blocks correctly during defragment [Chao Yu]
-62925589a80a f2fs: use wrapped f2fs_cp_error() [Chao Yu]
-5bea7a5808ec f2fs: fix to use more generic EOPNOTSUPP [Chao Yu]
-fd200a81083b f2fs: use wrapped IS_SWAPFILE() [Chao Yu]
-492c35b773fb f2fs: fix to avoid call kvfree under spinlock [Chao Yu]
-db2fdb9fea96 f2fs: Remove unnecessary checks of SM_I(sbi) in update_general_status() [Jia-Ju Bai]
-0b9c625263c5 f2fs: disallow direct IO in atomic write [Chao Yu]
-9efbaa5f7f82 f2fs: fix to handle quota_{on,off} correctly [Chao Yu]
-2fe3912a1ffd f2fs: fix to detect cp error in f2fs_setxattr() [Chao Yu]
-a76d4d22acb2 f2fs: fix to spread f2fs_is_checkpoint_ready() [Chao Yu]
-2624e78819f2 f2fs: support fiemap() for directory inode [Chao Yu]
-17052e856b3d f2fs: fix to avoid discard command leak [Chao Yu]
-2737de7e79e3 f2fs: disallow switching io_bits option during remount [Chao Yu]
-3d6916da1aa9 f2fs: fix panic of IO alignment feature [Chao Yu]
-36f3a3df4b9f f2fs: introduce {page,io}_is_mergeable() for readability [Chao Yu]
-aa4d1aff8f55 f2fs: fix livelock in swapfile writes [Jaegeuk Kim]
-ead47703dbe0 mm: export add_swap_extent() (note: f2fs-backport merge) [Omar Sandoval]
-bbfaf638a4fb f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree [stic-server-open]
-
-* lineage/hudson
-9a63fd1 hudson: Promote tama to 20 [Danny Trunk]
-
 * lineage/wiki
 6237d41e wiki: devices: Fixup GPU model for lavender [Aaradhay]
 
@@ -595,107 +267,30 @@ c32d7a96 New version 1.0.31 [Gitsaibot]
 3c1a3961 charger: Ensure every generated image is 8-bit [Luca Stefani]
 
 * kernel/xiaomi/msm8998
-564a407f1fb2 f2fs: avoid needless checkpoint during fsync [liuchao12]
-9dd62f46bdc6 f2fs: enable fstrim to issue discard while using discard option [liuchao12]
-cb61a69cebed f2fs: Stop trim mechanism after receiving SIGUSR1 signal [xiongping1]
-a86bdf601770 f2fs: merge backport-tree from android_xiaomi_msm8998_kernel [stic-server-open]
-a4b8c3930e7a f2fs: obsolete unused MAX_DISCARD_BLOCKS [Chao Yu]
-f31d532035a9 f2fs: set checkpoint_merge by default [Jaegeuk Kim]
-7debe227adf6 f2fs: add ckpt_thread_ioprio sysfs node [Daeho Jeong]
-7173339958a1 f2fs: don't grab superblock freeze for flush/ckpt thread [Jaegeuk Kim]
-330fec0eed28 f2fs: introduce checkpoint_merge mount option [Daeho Jeong]
-37fe77394955 f2fs: deprecate f2fs_trace_io code [Jaegeuk Kim]
-d7a6ff9a7610 f2fs: remove unused stat_{inc, dec}_atomic_write [Jack Qiu]
-ae799ca29813 f2fs: use kmem_cache pool during inline xattr lookups [Chao Yu]
-da5827c318df f2fs: introduce DEFAULT_IO_TIMEOUT [Chao Yu]
-594b20de727e f2fs: don't leak filename in f2fs_try_convert_inline_dir() [Eric Biggers]
-51ec55f3c7ea f2fs: remove blk_plugging in block_operations [Jaegeuk Kim]
-31bda3322694 f2fs: fix checkpoint=disable:%u%% [Jaegeuk Kim]
-fdfe7c04fde7 f2fs: delete DIO read lock [DongDongJu]
-ea66015cf5e0 f2fs: xattr.h: Replace zero-length array with flexible-array member [Gustavo A. R. Silva]
-6103b25351bb f2fs: skip GC when section is full [Jaegeuk Kim]
-eaddd1ca14f7 f2fs: fix the panic in do_checkpoint() [Sahitya Tummala]
-d0946da4ac75 f2fs: fix to wait all node page writeback [Chao Yu]
-33922229b033 f2fs: Add f2fs stats to sysfs [Hridya Valsaraju]
-5f0c00992fa4 f2fs: delete duplicate information on sysfs nodes [Hridya Valsaraju]
-6e9b6e47b6fd f2fs: change to use rwsem for gc_mutex [Chao Yu]
-35446a75def3 f2fs: code cleanup for f2fs_statfs_project() [Chengguang Xu]
-520e7145e126 f2fs: fix miscounted block limit in f2fs_statfs_project() [Chengguang Xu]
-8e06806d660f f2fs: remove unneeded check for error allocating bio_post_read_ctx [Eric Biggers]
-492985053aae f2fs: convert inline_dir early before starting rename [Jaegeuk Kim]
-de504b8912d0 f2fs: fix memleak of kobject [Chao Yu]
-63ff1f93245a f2fs: fix to add swap extent correctly [Chao Yu]
-d48730662993 f2fs: run fsck when getting bad inode during GC [Jaegeuk Kim]
-6930cd60ed40 f2fs: free sysfs kobject [Jaegeuk Kim]
-f8dd8f4d99e4 f2fs: declare nested quota_sem and remove unnecessary sems [Jaegeuk Kim]
-56b5f17429f1 f2fs: don't put new_page twice in f2fs_rename [Jaegeuk Kim]
-f422da298e52 f2fs: set I_LINKABLE early to avoid wrong access by vfs [Jaegeuk Kim]
-d914699990ce f2fs: introduce private bioset [Chao Yu]
-0fe156752b63 f2fs: cleanup duplicate stats for atomic files [Sahitya Tummala]
-d0e1da68daea f2fs: set GFP_NOFS when moving inline dentries [Jaegeuk Kim]
-8440d9dce740 f2fs: should avoid recursive filesystem ops [Jaegeuk Kim]
-ba644ac7ed9f f2fs: keep quota data on write_begin failure [Jaegeuk Kim]
-f6d354854477 f2fs: call f2fs_balance_fs outside of locked page [Jaegeuk Kim]
-b15767eed363 f2fs: preallocate DIO blocks when forcing buffered_io [Jaegeuk Kim]
-20bd306f3dbd f2fs: stop GC when the victim becomes fully valid [Jaegeuk Kim]
-2f2ba34068d9 f2fs: expose main_blkaddr in sysfs [Jaegeuk Kim]
-e65853fbfda6 f2fs: choose hardlimit when softlimit is larger than hardlimit in f2fs_statfs_project() [Chengguang Xu]
-29df78eda54c f2fs: Fix deadlock in f2fs_gc() context during atomic files handling [Sahitya Tummala]
-fe1884c78d56 f2fs: show f2fs instance in printk_ratelimited [Chao Yu]
-f84340758400 f2fs: fix potential overflow [Chao Yu]
-25c1701973df f2fs: fix to update dir's i_pino during cross_rename [Chao Yu]
-9e62e2e19035 f2fs: support aligned pinned file [Jaegeuk Kim]
-0f61c1b232be f2fs: fix to avoid memory leakage in f2fs_listxattr [Randall Huang]
-dc2561c6c8ed f2fs: avoid kernel panic on corruption test [Jaegeuk Kim]
-ce2ebc485580 f2fs: fix wrong description in document [Chao Yu]
-186c9f2abe32 f2fs: cache global IPU bio [Chao Yu]
-8912e5848073 f2fs: check total_segments from devices in raw_super [Qiuyang Sun]
-67dde4703816 f2fs: update multi-dev metadata in resize_fs [Qiuyang Sun]
-04eb948959c0 f2fs: mark recovery flag correctly in read_raw_super_block() [Chengguang Xu via Linux-f2fs-devel]
-36cfa7aa8571 f2fs: fix to update time in lazytime mode [Chao Yu]
-41f8af54116a f2fs: add a condition to detect overflow in f2fs_ioc_gc_range() [Sahitya Tummala]
-c1aa8cf59453 f2fs: fix to add missing F2FS_IO_ALIGNED() condition [Chao Yu]
-e3dd8cda841b f2fs: fix to fallback to buffered IO in IO aligned mode [Chao Yu]
-9029409a316c f2fs: fix to handle error path correctly in f2fs_map_blocks [Chao Yu]
-cff09f9fcc5b f2fs: fix extent corrupotion during directIO in LFS mode [Chao Yu]
-0fef6320bac7 f2fs: Add a small clarification to CONFIG_FS_F2FS_FS_SECURITY [Lockywolf]
-e90c499db66d f2fs: fix inode rwsem regression [Goldwyn Rodrigues]
-b717478d3ed7 f2fs: fix to avoid accessing uninitialized field of inode page in is_alive() [Chao Yu]
-1b160da6e151 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-a8f64fee7e45 f2fs: convert inline_data in prior to i_size_write [Jaegeuk Kim]
-3b4bc3e39ee3 f2fs: fix error path of f2fs_convert_inline_page() [Chao Yu]
-ea31edc61141 f2fs: add missing documents of reserve_root/resuid/resgid [Chao Yu]
-adcb31675503 f2fs: fix flushing node pages when checkpoint is disabled [Jaegeuk Kim]
-0c0285883ed4 f2fs: enhance f2fs_is_checkpoint_ready()'s readability [Chao Yu]
-61aaa15ca500 f2fs: clean up __bio_alloc()'s parameter [Chao Yu]
-e5a670ab1b15 f2fs: fix wrong error injection path in inc_valid_block_count() [Chao Yu]
-8bb3467465a5 f2fs: fix to writeout dirty inode during node flush [Chao Yu]
-6e87e7e67989 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-04e948ef1528 f2fs: allocate memory in batch in build_sit_info() [Chao Yu]
-c73290a7afa5 f2fs: fix to avoid data corruption by forbidding SSR overwrite [Chao Yu]
-2e8e926bd62f f2fs: cleanup the code in build_sit_entries. [Lihong Kou]
-8ee921a8c983 f2fs: fix wrong available node count calculation [Chao Yu]
-731764f4d41d f2fs: remove duplicate code in f2fs_file_write_iter [Lihong Kou]
-f7bd03c5f462 f2fs: fix to migrate blocks correctly during defragment [Chao Yu]
-62925589a80a f2fs: use wrapped f2fs_cp_error() [Chao Yu]
-5bea7a5808ec f2fs: fix to use more generic EOPNOTSUPP [Chao Yu]
-fd200a81083b f2fs: use wrapped IS_SWAPFILE() [Chao Yu]
-492c35b773fb f2fs: fix to avoid call kvfree under spinlock [Chao Yu]
-db2fdb9fea96 f2fs: Remove unnecessary checks of SM_I(sbi) in update_general_status() [Jia-Ju Bai]
-0b9c625263c5 f2fs: disallow direct IO in atomic write [Chao Yu]
-9efbaa5f7f82 f2fs: fix to handle quota_{on,off} correctly [Chao Yu]
-2fe3912a1ffd f2fs: fix to detect cp error in f2fs_setxattr() [Chao Yu]
-a76d4d22acb2 f2fs: fix to spread f2fs_is_checkpoint_ready() [Chao Yu]
-2624e78819f2 f2fs: support fiemap() for directory inode [Chao Yu]
-17052e856b3d f2fs: fix to avoid discard command leak [Chao Yu]
-2737de7e79e3 f2fs: disallow switching io_bits option during remount [Chao Yu]
-3d6916da1aa9 f2fs: fix panic of IO alignment feature [Chao Yu]
-36f3a3df4b9f f2fs: introduce {page,io}_is_mergeable() for readability [Chao Yu]
-aa4d1aff8f55 f2fs: fix livelock in swapfile writes [Jaegeuk Kim]
-ead47703dbe0 mm: export add_swap_extent() (note: f2fs-backport merge) [Omar Sandoval]
-bbfaf638a4fb f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree [stic-server-open]
-
-* kernel/xiaomi/msm8998
+17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
+103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
+bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
+1bab22fb1f1d fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
+f64cded02c6d f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
+f71b77fa7195 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
+098e787d8b63 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
+b251dbf71fea fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
+b4af8d8ee7cc fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
+e0dc65d6a528 fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
+367371432da9 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
+02b52b3d1393 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
+e97df3f8fb9c fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
+c6f12a790415 fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
+e272252efd34 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
+a119700593c1 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
+f6702a20659b fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
+e26c98a72af8 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
+5bcd1b21e336 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
+e0df801a129e fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
+c8c85742f076 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
+2094980493f7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
+d8782844e5a8 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
+0725a268e201 f2fs: mm-drop_caches: expose mm_drop_caches() [Park Ju Hyung]
 564a407f1fb2 f2fs: avoid needless checkpoint during fsync [liuchao12]
 9dd62f46bdc6 f2fs: enable fstrim to issue discard while using discard option [liuchao12]
 cb61a69cebed f2fs: Stop trim mechanism after receiving SIGUSR1 signal [xiongping1]
@@ -799,6 +394,9 @@ bbfaf638a4fb f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree 
 ====================
      2023-01-02    
 ====================
+* lineage/hudson
+9a63fd1 hudson: Promote tama to 20 [Danny Trunk]
+
 * lineage/wiki
 339b16d2 wiki: devices: add Demon000 as a dubai maintainer [Marc Bourgoin]
 eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
@@ -835,25 +433,6 @@ a0e4afb8 X_X [Nolen Johnson]
 ====================
      2022-12-31    
 ====================
-* device/xiaomi/msm8998-common
-3e11f38 msm8998-common: sepolicy: Fix cnd denial [0ranko0P]
-245abf6 msm8998-common: rootdir: Switch zRAM compression alg to Zstandard [iusmac]
-
-* kernel/xiaomi/msm8998
-40129604bdd8 {chiron,sagit}_defconfig: Switch zRAM compression alg to Zstandard [iusmac]
-5cd338e00c82 lib: zstd: Upstream codebase to v1.5.3 (dev branch) [iusmac]
-91d66feddd6c crypto/zstd.c: ZSTD_DEF_LEVEL switch to 1 [Sultan Alsawaf]
-04242ec6f27c lib: zstd: Workaround duplicate symbols [iusmac]
-9e4a4eff646a lib: zstd: Fix unknown type name `size_t` [iusmac]
-156997b11d39 lib: zstd: Upgrade to latest upstream zstd version pre-1.5.2 [tarsin]
-763668202222 lib: zstd: Fix attribute declaration [Cyber Knight]
-fbebd2bd03ca lib: zstd: Don't add -O3 to cflags [Nick Terrell]
-1fb0edcef3c1 lib: zstd: Don't inline functions in zstd_opt.c [Nick Terrell]
-a7075564137c lib: zstd: Fix unused variable warning [Nick Terrell]
-b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical [Nathan Chancellor]
-7c88fb278836 lib: zstd: Upgrade to latest upstream zstd version 1.4.10 [Nick Terrell]
-eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
-
 * lineage/hudson
 5205533 A Fair crack at android 13 [Michael Bestas]
 eacb600 X_X [Nolen Johnson]
@@ -883,36 +462,9 @@ b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical
 7c88fb278836 lib: zstd: Upgrade to latest upstream zstd version 1.4.10 [Nick Terrell]
 eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
 
-* device/xiaomi/msm8998-common
-3e11f38 msm8998-common: sepolicy: Fix cnd denial [0ranko0P]
-245abf6 msm8998-common: rootdir: Switch zRAM compression alg to Zstandard [iusmac]
-
-* vendor/extra
-3474aa1 Point to my server [Nanhumly]
-
-* kernel/xiaomi/msm8998
-40129604bdd8 {chiron,sagit}_defconfig: Switch zRAM compression alg to Zstandard [iusmac]
-5cd338e00c82 lib: zstd: Upstream codebase to v1.5.3 (dev branch) [iusmac]
-91d66feddd6c crypto/zstd.c: ZSTD_DEF_LEVEL switch to 1 [Sultan Alsawaf]
-04242ec6f27c lib: zstd: Workaround duplicate symbols [iusmac]
-9e4a4eff646a lib: zstd: Fix unknown type name `size_t` [iusmac]
-156997b11d39 lib: zstd: Upgrade to latest upstream zstd version pre-1.5.2 [tarsin]
-763668202222 lib: zstd: Fix attribute declaration [Cyber Knight]
-fbebd2bd03ca lib: zstd: Don't add -O3 to cflags [Nick Terrell]
-1fb0edcef3c1 lib: zstd: Don't inline functions in zstd_opt.c [Nick Terrell]
-a7075564137c lib: zstd: Fix unused variable warning [Nick Terrell]
-b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical [Nathan Chancellor]
-7c88fb278836 lib: zstd: Upgrade to latest upstream zstd version 1.4.10 [Nick Terrell]
-eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
-
 ====================
      2022-12-30    
 ====================
-* device/xiaomi/msm8998-common
-df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
-69f90f1 msm8998-common: Add GPS configuration for China [Paul Keith]
-69ea3dc msm8998-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
-
 * frameworks/base
 202ef84d307b IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
 
@@ -921,14 +473,6 @@ df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89x
 
 * packages/apps/Settings
 1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
-
-* device/xiaomi/msm8998-common
-df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
-69f90f1 msm8998-common: Add GPS configuration for China [Paul Keith]
-69ea3dc msm8998-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
 
 * device/xiaomi/msm8998-common
 df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
@@ -949,9 +493,6 @@ f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89x
 
 * lineage/wiki
 1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
-
-* vendor/extra
-8526dc8 Fix changelog url [Nanhumly]
 
 * vendor/extra
 8526dc8 Fix changelog url [Nanhumly]
