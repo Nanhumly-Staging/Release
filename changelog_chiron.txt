@@ -1,24 +1,78 @@
 ====================
-     2023-01-09    
+     2023-01-11    
 ====================
+* android
+98698f2 lineage: Re-enable rsync [DroidFreak32]
+
 * build/make
-88de71d0a build: Always use release-keys [Pranav Vashi]
+0dd64103f build: Always use release-keys [Pranav Vashi]
 
 * frameworks/base
-cc860d9440eb build: Don't check for fingerprint mismatch [Dan Cartier]
+ec72d5408dc0 build: Don't check for fingerprint mismatch [Dan Cartier]
 
 * packages/apps/CarrierConfig
-58cd895 Override name of Mainland China carriers [cjybyjk]
+f337338 Override name of Mainland China carriers [cjybyjk]
 
 * packages/services/Telephony
-16b52aaf3 Add support for multi-language carrier name override [cjybyjk]
+4cebb9f04 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/lineage
+5924e840 config: common: Re-enable rsync [Nolen Johnson]
 
 * device/xiaomi/msm8998-common
-6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
+3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
+525c593 Revert "msm8998-common: dsds: restart qcrild on data switch" [Nanhumly]
+a8be56d Partially revert "msm8998-common: Update RIL manifest entries" [Nanhumly]
+5febf0b msm8998-common: Update RIL manifest entries [Georg Veichtlbauer]
+32e85e2 msm8998-common: sepolicy: Address more denials [Nanhumly]
+8ea722c msm8998-common: sepolicy: Address wifi denials [Nanhumly]
+0d932f8 msm8998-common: sepolicy: Allow hal_wifi_default write to proc_net [palaych]
+dff44b1 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
+40dba77 msm8998-common: Add IMS RTP service to manifest [Georg Veichtlbauer]
+a30db70 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
+0ad1df9 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
+f8228c3 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
+d50fb0b msm8998-common: dsds: restart qcrild on data switch [ZeeLog]
+7867245 msm8998-common: Add missing libxml [Nanhumly]
+8475d1c msm8998-common: Update CNE blobs [Georg Veichtlbauer]
+9660d7e msm8998-common: update QRTR from cheeseburger [Nanhumly]
+334e3d3 msm8998-common: Update the IMS UCE and CM HAL versions to 2.0 [Pavan Kumar M]
+f497562 msm8998-common: switch to QCRIL [Timi Rautamäki]
+0dc1202 msm8998-common: update QMI, Radio, IMS from sld_sprout [enesykaya]
 
+* vendor/extra
+0af3031 SystemUI: Disable the privacy indicator on the status bar [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+8d9f677 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
+a2ea053 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
+7580c10 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
+628f421 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
+aedbe44 msm8998-common: Add missing libxml [Nanhumly]
+e7a986c msm8998-common: Update CNE blobs [Nanhumly]
+6c713c8 msm8998-common: update QRTR from cheeseburger [Nanhumly]
+53bf4ed msm8998-common: switch to QCRIL [Nanhumly]
+bf7917d msm8998-common: update QMI, Radio, IMS from sld_sprout [Nanhumly]
+
+====================
+     2023-01-10    
+====================
+* build/soong
+dadb5aeff java_sdk_library_import: Copy all prebuilt properties to child modules [Paul Duffin]
+8fa3a2efe Tag apex_set's 'set' config with `android:"path"` [Pranav Gupta]
+
+* vendor/lineage
+b5e83c1f overlay: Set default status bar height to 28dp [Michael Bestas]
+
+====================
+     2023-01-09    
+====================
 ====================
      2023-01-08    
 ====================
+* hardware/qcom-caf/sm8350/audio
+d09ec9c6b audio_extn: Allow skipping compilation of audio HAL extensions [Bruno Martins]
+
 * packages/apps/Aperture
 2b5de18 Aperture: Force portrait when launched from locked keyguard [LuK1337]
 6198c88 Aperture: Overlap lockscreen only when the app is launched from it [Sebastiano Barezzi]
@@ -26,9 +80,15 @@ cc860d9440eb build: Don't check for fingerprint mismatch [Dan Cartier]
 * packages/apps/LineageParts
 dca39af Regenerate contributors cloud (2023-01-03) [Kevin F. Haggerty]
 
+* device/xiaomi/msm8998-common
+6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
+
 ====================
      2023-01-07    
 ====================
+* lineage/hudson
+2c871ad hudson: Promote surya to 20 [Willy Gardiol]
+
 * packages/apps/Aperture
 c313c1b Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337]
 
@@ -75,12 +135,6 @@ e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
 05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
 09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
 01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
-f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
-3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
-c4e606e msm8998-common: Sort blobs list [Michael Bestas]
-ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
-16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
 
 * vendor/xiaomi/chiron
 27cbbf2 chiron: Switch to OSS libnotifyaudiohal [Nanhumly]
@@ -89,9 +143,6 @@ ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
 * vendor/xiaomi/msm8998-common
 350e1d3 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
 7844985 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
-1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
-ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
 
 ====================
      2023-01-04    
@@ -104,6 +155,12 @@ ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen
 
 * build/soong
 d9a29083e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
+
+* external/rsync
+75f3eed8 rsync: Regenerate configs [DroidFreak32]
+8e5f359c rsync: Add a script to substitute known working configs [DroidFreak32]
+b24702fd rsync: Ignore git-version.h [DroidFreak32]
+f2f9b750 rsync: Migrate to Android.bp [DroidFreak32]
 
 * frameworks/av
 24d5bc6981 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
@@ -167,13 +224,47 @@ cff2a8a58 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android
 9459431 Updates for qpr1 [Michael Bestas]
 
 * device/xiaomi/msm8998-common
+172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
+f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
+3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
+c4e606e msm8998-common: Sort blobs list [Michael Bestas]
+ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
+16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
 aa80d12 msm8998-common: rootdir: Adjust userdata and cache f2fs mount options [stic-server-open]
 bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard" [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
+1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
+ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
 
 * kernel/xiaomi/msm8998
 5ce2b8052a9e {chiron,sagit}_defconfig: Switch zram compression alg to lz4 [Nanhumly]
 36b209dd5594 Merge pull request #1 from sticpaper/lineage-20.0 [Sean Hemming]
 1d611fcef8dd defconfig: xiaomi: Remove duplicate F2FS config changes [stic-server-open]
+
+====================
+     2023-01-03    
+====================
+* lineage/wiki
+6237d41e wiki: devices: Fixup GPU model for lavender [Aaradhay]
+
+* packages/apps/Aperture
+b4af850 Aperture: Ask for GPS permission only on the first launch [LuK1337]
+d3755e4 Aperture: Make sure grant results is not empty [TheScarastic]
+51a756a Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337]
+
+* packages/apps/Etar
+dffa3aca remove duplicated check for allowed reminders and availability [Jonas Häusler]
+362b9bd6 Fix drawing of all-day events #1287. [Robert Zenz]
+5ddf4ff3 New version 1.0.33 [Jochen Sprickerhof]
+1e3e8f1d Add aarGen dependency to app build [Jochen Sprickerhof]
+c32d7a96 New version 1.0.31 [Gitsaibot]
+
+* vendor/lineage
+3c1a3961 charger: Ensure every generated image is 8-bit [Luca Stefani]
+
+* kernel/xiaomi/msm8998
 17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
 103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
 bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
@@ -299,32 +390,11 @@ ead47703dbe0 mm: export add_swap_extent() (note: f2fs-backport merge) [Omar Sand
 bbfaf638a4fb f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree [stic-server-open]
 
 ====================
-     2023-01-03    
+     2023-01-02    
 ====================
 * lineage/hudson
 9a63fd1 hudson: Promote tama to 20 [Danny Trunk]
 
-* lineage/wiki
-6237d41e wiki: devices: Fixup GPU model for lavender [Aaradhay]
-
-* packages/apps/Aperture
-b4af850 Aperture: Ask for GPS permission only on the first launch [LuK1337]
-d3755e4 Aperture: Make sure grant results is not empty [TheScarastic]
-51a756a Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337]
-
-* packages/apps/Etar
-dffa3aca remove duplicated check for allowed reminders and availability [Jonas Häusler]
-362b9bd6 Fix drawing of all-day events #1287. [Robert Zenz]
-5ddf4ff3 New version 1.0.33 [Jochen Sprickerhof]
-1e3e8f1d Add aarGen dependency to app build [Jochen Sprickerhof]
-c32d7a96 New version 1.0.31 [Gitsaibot]
-
-* vendor/lineage
-3c1a3961 charger: Ensure every generated image is 8-bit [Luca Stefani]
-
-====================
-     2023-01-02    
-====================
 * lineage/wiki
 339b16d2 wiki: devices: add Demon000 as a dubai maintainer [Marc Bourgoin]
 eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
@@ -358,6 +428,16 @@ a0e4afb8 X_X [Nolen Johnson]
 * packages/apps/DeskClock
 349682458 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent [Michael Bestas]
 
+====================
+     2022-12-31    
+====================
+* lineage/hudson
+5205533 A Fair crack at android 13 [Michael Bestas]
+eacb600 X_X [Nolen Johnson]
+
+* packages/modules/Bluetooth
+3496ca860b legacy: Split header for hci legacy definitions [Christian Hoffmann]
+
 * device/xiaomi/msm8998-common
 3e11f38 msm8998-common: sepolicy: Fix cnd denial [0ranko0P]
 245abf6 msm8998-common: rootdir: Switch zRAM compression alg to Zstandard [iusmac]
@@ -381,22 +461,6 @@ b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical
 eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
 
 ====================
-     2022-12-31    
-====================
-* lineage/hudson
-5205533 A Fair crack at android 13 [Michael Bestas]
-eacb600 X_X [Nolen Johnson]
-
-* packages/modules/Bluetooth
-3496ca860b legacy: Split header for hci legacy definitions [Christian Hoffmann]
-
-* device/xiaomi/msm8998-common
-df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
-
-* vendor/xiaomi/msm8998-common
-f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
-
-====================
      2022-12-30    
 ====================
 * frameworks/base
@@ -409,8 +473,12 @@ f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89x
 1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
 
 * device/xiaomi/msm8998-common
+df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
 69f90f1 msm8998-common: Add GPS configuration for China [Paul Keith]
 69ea3dc msm8998-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
 
 ====================
      2022-12-29    
@@ -426,42 +494,4 @@ f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89x
 
 * vendor/extra
 8526dc8 Fix changelog url [Nanhumly]
-
-====================
-     2022-12-28    
-====================
-* build/make
-dd97cd639 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
-
-* frameworks/base
-8658042a3c1c SystemUI: Align QS header with status bar [cjh1249131356]
-
-* packages/apps/DeskClock
-8f482b0c8 DeskClock: Timer Setup: Add double-zero button [Michael W]
-da8bf5fc7 DeskClock: Redesign Timer input [Michael W]
-
-* packages/apps/Etar
-b332cffd Override androidx.startup.InitializationProvider authority name [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-26819f1 msm8998-common: move UpdaterOverlay to another repo [Nanhumly]
-
-* vendor/extra
-86b3574 init [Nanhumly]
-
-====================
-     2022-12-27    
-====================
-* device/xiaomi/msm8998-common
-b31cad4 msm8998-common: Relax WiFi re-association RSSI thresholds. [Sultanxda]
-01f9294 msm8998-common: Undefine BOARD_HAS_QCOM_WLAN. [Alexander Koskovich]
-b0cd0d4 msm8998-common: init: Remove WiFi fwpath setup [Georg Veichtlbauer]
-6bd9abf msm8998-common: wifi: smarter decisions on whether to use a 2- or 5Ghz AP [Alex Naidis]
-49f002c msm8998-common: wifi: Disable WLAN Firmware loggings [Panchajanya1999]
-9489e81 msm8998-common: Update Wifi PowerSaveOffload [Georg Veichtlbauer]
-ae7831d msm8998-common: wifi: enable QPower and Deep sleep at the same time [Alex Naidis]
-db751d6 msm8998-common: rootdir: Add offline charging LED indicator [Ramii Ahmed]
-
-* kernel/xiaomi/msm8998
-f984782da348 dts: xiaomi: msm8998: Remove verify flag [Nanhumly]
 
