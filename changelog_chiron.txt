@@ -1,497 +1,314 @@
 ====================
-     2023-01-11    
+     2023-02-14    
 ====================
-* android
-98698f2 lineage: Re-enable rsync [DroidFreak32]
-
 * build/make
-0dd64103f build: Always use release-keys [Pranav Vashi]
+dfaf5e530 build: Always use release-keys [Pranav Vashi]
 
 * frameworks/base
-ec72d5408dc0 build: Don't check for fingerprint mismatch [Dan Cartier]
+d8a4f6986681 build: Don't check for fingerprint mismatch [Dan Cartier]
+72ea30c5143f Automatic translation import [Michael Bestas]
+1aadc86adeb1 Include LineageSettings in settings dump [Tommy Webb]
 
-* packages/apps/CarrierConfig
-f337338 Override name of Mainland China carriers [cjybyjk]
+* frameworks/native
+e9c2c24b91 Remove BLASTBufferQueue debug log line [Tommy Webb]
 
-* packages/services/Telephony
-4cebb9f04 Add support for multi-language carrier name override [cjybyjk]
-
-* vendor/lineage
-5924e840 config: common: Re-enable rsync [Nolen Johnson]
-
-* device/xiaomi/msm8998-common
-3a1d60c Revert "msm8998-common: Move to common Xiaomi light AIDL" [Nanhumly]
-525c593 Revert "msm8998-common: dsds: restart qcrild on data switch" [Nanhumly]
-a8be56d Partially revert "msm8998-common: Update RIL manifest entries" [Nanhumly]
-5febf0b msm8998-common: Update RIL manifest entries [Georg Veichtlbauer]
-32e85e2 msm8998-common: sepolicy: Address more denials [Nanhumly]
-8ea722c msm8998-common: sepolicy: Address wifi denials [Nanhumly]
-0d932f8 msm8998-common: sepolicy: Allow hal_wifi_default write to proc_net [palaych]
-dff44b1 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
-40dba77 msm8998-common: Add IMS RTP service to manifest [Georg Veichtlbauer]
-a30db70 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
-0ad1df9 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
-f8228c3 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
-d50fb0b msm8998-common: dsds: restart qcrild on data switch [ZeeLog]
-7867245 msm8998-common: Add missing libxml [Nanhumly]
-8475d1c msm8998-common: Update CNE blobs [Georg Veichtlbauer]
-9660d7e msm8998-common: update QRTR from cheeseburger [Nanhumly]
-334e3d3 msm8998-common: Update the IMS UCE and CM HAL versions to 2.0 [Pavan Kumar M]
-f497562 msm8998-common: switch to QCRIL [Timi Rautamäki]
-0dc1202 msm8998-common: update QMI, Radio, IMS from sld_sprout [enesykaya]
-
-* vendor/extra
-0af3031 SystemUI: Disable the privacy indicator on the status bar [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-8d9f677 msm8998-common: Drop most 32bit RIL blobs [Georg Veichtlbauer]
-a2ea053 msm8998-common: Patch lib-imsvideocodec [Georg Veichtlbauer]
-7580c10 msm8998-common: Add missing IMS lib [Georg Veichtlbauer]
-628f421 msm8998-common: Remove IMS vendor libs from system_ext [Georg Veichtlbauer]
-aedbe44 msm8998-common: Add missing libxml [Nanhumly]
-e7a986c msm8998-common: Update CNE blobs [Nanhumly]
-6c713c8 msm8998-common: update QRTR from cheeseburger [Nanhumly]
-53bf4ed msm8998-common: switch to QCRIL [Nanhumly]
-bf7917d msm8998-common: update QMI, Radio, IMS from sld_sprout [Nanhumly]
-
-====================
-     2023-01-10    
-====================
-* build/soong
-dadb5aeff java_sdk_library_import: Copy all prebuilt properties to child modules [Paul Duffin]
-8fa3a2efe Tag apex_set's 'set' config with `android:"path"` [Pranav Gupta]
-
-* vendor/lineage
-b5e83c1f overlay: Set default status bar height to 28dp [Michael Bestas]
-
-====================
-     2023-01-09    
-====================
-====================
-     2023-01-08    
-====================
-* hardware/qcom-caf/sm8350/audio
-d09ec9c6b audio_extn: Allow skipping compilation of audio HAL extensions [Bruno Martins]
-
-* packages/apps/Aperture
-2b5de18 Aperture: Force portrait when launched from locked keyguard [LuK1337]
-6198c88 Aperture: Overlap lockscreen only when the app is launched from it [Sebastiano Barezzi]
-
-* packages/apps/LineageParts
-dca39af Regenerate contributors cloud (2023-01-03) [Kevin F. Haggerty]
-
-* device/xiaomi/msm8998-common
-6932aa3 msm8998-common: Explicitly disable AVB [Nolen Johnson]
-
-====================
-     2023-01-07    
-====================
-* lineage/hudson
-2c871ad hudson: Promote surya to 20 [Willy Gardiol]
-
-* packages/apps/Aperture
-c313c1b Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337]
-
-====================
-     2023-01-06    
-====================
-* lineage/wiki
-d8afec0b wiki: devices: Add Xiaomi sm8350 devices (lisa, renoir, haydn) [Giovanni Ricca]
-
-* packages/apps/Aperture
-785ac30 Aperture: Dedup some permissions stuff [Sebastiano Barezzi]
-
-* vendor/lineage
-bf20ee10 vars: January 2023 Security Update [Michael Bestas]
-
-====================
-     2023-01-05    
-====================
-* lineage/hudson
-465f261 hudson: Add Xiaomi SM8350 family to lineage-19.1 weekly builds [Arian]
-
-* lineage/wiki
-e8977896 wiki: add firmware requirement warning for motorola sm7250 [Andrew Hexen]
-
-* device/xiaomi/chiron
-cda2a66 chiron: Switch to OSS libnotifyaudiohal [Michael Bestas]
-d93ff72 chiron: Change default wifi ssid to "Mi MIX 2" [Arian]
-cd7ac4b chiron: Remove libpowermanager dependency on libgf_hal.so [Arian]
-434eda6 chiron: Sort blobs list [Michael Bestas]
-afd7884 chiron: Migrate to vendor.prop [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-f3ba3e1 msm8998-common: Don't explicitly build android.hidl.allocator@1.0 [Arian]
-cbc5111 msm8998-common: Don't explicitly build fs_config_files [Arian]
-8d17880 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-819de3b msm8998-common: Move to common Xiaomi light AIDL [Sebastiano Barezzi]
-c67639d msm8998-common: Move to common Xiaomi fingerprint HIDL [Sebastiano Barezzi]
-b80da5d msm8998-common: Move to common IFAAService [Sebastiano Barezzi]
-7261c9f msm8998-common: Add hardware/xiaomi to Soong namespaces [Sebastiano Barezzi]
-849804e msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-66aa07e msm8998-common: Add hardware/xiaomi to lineage.dependencies [Sebastiano Barezzi]
-e234a1a fixup! msm8998-common: Switch BtAudio to AIDL [Nanhumly]
-70d3a8e msm8998-common: Fixed status bar glitch for apps that access internal resource dimen [shawnlin]
-05f77e3 msm8998-common: Set status_bar_height to 32dp [LiMee233]
-09269e1 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
-01202ea msm8998-common: Bringup camera without vndk-ext [Arian]
-
-* vendor/xiaomi/chiron
-27cbbf2 chiron: Switch to OSS libnotifyaudiohal [Nanhumly]
-65afcb9 chiron: Remove libpowermanager dependency on libgf_hal.so [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-350e1d3 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
-7844985 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
-
-====================
-     2023-01-04    
-====================
-* android
-4a4b20e manifest: January 2023 Security update [Michael Bestas]
-
-* build/make
-5ed2e756a Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* build/soong
-d9a29083e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* external/rsync
-75f3eed8 rsync: Regenerate configs [DroidFreak32]
-8e5f359c rsync: Add a script to substitute known working configs [DroidFreak32]
-b24702fd rsync: Ignore git-version.h [DroidFreak32]
-f2f9b750 rsync: Migrate to Android.bp [DroidFreak32]
-
-* frameworks/av
-24d5bc6981 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* frameworks/base
-998612512c78 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* frameworks/opt/telephony
-17acd33b98 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/google/graphics/common
-55b2e6f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/google/pixel
-1c37923 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* hardware/interfaces
-7c8b1cd37 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* lineage/crowdin
-f91a5bc config: lineage-20.0_aosp: Update for qpr1 [Michael Bestas]
+* lineage-sdk
+38653151 Automatic translation import [Michael Bestas]
 
 * lineage/scripts
-aacffc6 update-device-vars: Add a sleep to avoid 429: Too Many Requests [Chirayu Desai]
+3508ae0 device-deps-regenerator: blacklist -> ignorelist [Michael Bestas]
+212e53c device-deps-regenerator: Add gs201 common device repos to blacklist [Michael Bestas]
+636fead device-deps-regenerator: Handle deps set in _hardware_ repos [Michael Bestas]
+d8eb1bc device-deps-regenerator: Remove cm.dependencies support [Michael Bestas]
+b35a287 device-deps-regenerator: Add 20 branches [Michael Bestas]
 
 * lineage/wiki
-c617afc1 tama: Promote to 20 [Danny Trunk]
-33a7a5c0 wiki: Add custom FW update guide for OPlus devices [LuK1337]
-
-* packages/apps/LineageParts
-635ac7b LineageParts: Change text color of notification light speed settings [Arian]
-
-* packages/apps/Settings
-a87b10c7c2 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/modules/Bluetooth
-bb73b0df57 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/modules/Wifi
-ebfbe967c5 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/providers/MediaProvider
-956e89047 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/services/Telecomm
-fb06c655d Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* packages/services/Telephony
-95f0e55a3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/core
-0a95e1649 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/security
-29becc3 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* system/sepolicy
-cff2a8a58 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas]
-
-* vendor/crowdin
-9459431 Updates for qpr1 [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-172bf79 msm8998-common: Drop vndk-ext and friends [Arian]
-f3c98cb msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
-3e64656 msm8998-common: overlay-lineage: Drop config_cameraAuxPackageAllowList [Nanhumly]
-c4e606e msm8998-common: Sort blobs list [Michael Bestas]
-ed2c348 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
-16f0c50 msm8998-common: Synchronize the latest official tree changes [Nanhumly]
-aa80d12 msm8998-common: rootdir: Adjust userdata and cache f2fs mount options [stic-server-open]
-bd86ba2 Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard" [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-59e65a5 msm8998-common: Reextract lib-imsvideocodec.so [Arian]
-1269148 msm8998-common: Bringup camera without vndk-ext [Arian]
-ee9e3de msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
-
-* kernel/xiaomi/msm8998
-5ce2b8052a9e {chiron,sagit}_defconfig: Switch zram compression alg to lz4 [Nanhumly]
-36b209dd5594 Merge pull request #1 from sticpaper/lineage-20.0 [Sean Hemming]
-1d611fcef8dd defconfig: xiaomi: Remove duplicate F2FS config changes [stic-server-open]
-
-====================
-     2023-01-03    
-====================
-* lineage/wiki
-6237d41e wiki: devices: Fixup GPU model for lavender [Aaradhay]
+1c8f3928 wiki: Fix a few device image offenders [Michael W]
 
 * packages/apps/Aperture
-b4af850 Aperture: Ask for GPS permission only on the first launch [LuK1337]
-d3755e4 Aperture: Make sure grant results is not empty [TheScarastic]
-51a756a Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337]
+006c733 Automatic translation import [Michael Bestas]
 
-* packages/apps/Etar
-dffa3aca remove duplicated check for allowed reminders and availability [Jonas Häusler]
-362b9bd6 Fix drawing of all-day events #1287. [Robert Zenz]
-5ddf4ff3 New version 1.0.33 [Jochen Sprickerhof]
-1e3e8f1d Add aarGen dependency to app build [Jochen Sprickerhof]
-c32d7a96 New version 1.0.31 [Gitsaibot]
+* packages/apps/AudioFX
+bb65196 Automatic translation import [Michael Bestas]
 
-* vendor/lineage
-3c1a3961 charger: Ensure every generated image is 8-bit [Luca Stefani]
-
-* kernel/xiaomi/msm8998
-17cc20619be9 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
-103ca0d321ee ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
-bffb55d749c1 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
-1bab22fb1f1d fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
-f64cded02c6d f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
-f71b77fa7195 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
-098e787d8b63 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
-b251dbf71fea fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
-b4af8d8ee7cc fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
-e0dc65d6a528 fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
-367371432da9 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
-02b52b3d1393 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
-e97df3f8fb9c fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
-c6f12a790415 fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
-e272252efd34 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
-a119700593c1 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
-f6702a20659b fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
-e26c98a72af8 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
-5bcd1b21e336 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
-e0df801a129e fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
-c8c85742f076 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
-2094980493f7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
-d8782844e5a8 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
-0725a268e201 f2fs: mm-drop_caches: expose mm_drop_caches() [Park Ju Hyung]
-564a407f1fb2 f2fs: avoid needless checkpoint during fsync [liuchao12]
-9dd62f46bdc6 f2fs: enable fstrim to issue discard while using discard option [liuchao12]
-cb61a69cebed f2fs: Stop trim mechanism after receiving SIGUSR1 signal [xiongping1]
-a86bdf601770 f2fs: merge backport-tree from android_xiaomi_msm8998_kernel [stic-server-open]
-a4b8c3930e7a f2fs: obsolete unused MAX_DISCARD_BLOCKS [Chao Yu]
-f31d532035a9 f2fs: set checkpoint_merge by default [Jaegeuk Kim]
-7debe227adf6 f2fs: add ckpt_thread_ioprio sysfs node [Daeho Jeong]
-7173339958a1 f2fs: don't grab superblock freeze for flush/ckpt thread [Jaegeuk Kim]
-330fec0eed28 f2fs: introduce checkpoint_merge mount option [Daeho Jeong]
-37fe77394955 f2fs: deprecate f2fs_trace_io code [Jaegeuk Kim]
-d7a6ff9a7610 f2fs: remove unused stat_{inc, dec}_atomic_write [Jack Qiu]
-ae799ca29813 f2fs: use kmem_cache pool during inline xattr lookups [Chao Yu]
-da5827c318df f2fs: introduce DEFAULT_IO_TIMEOUT [Chao Yu]
-594b20de727e f2fs: don't leak filename in f2fs_try_convert_inline_dir() [Eric Biggers]
-51ec55f3c7ea f2fs: remove blk_plugging in block_operations [Jaegeuk Kim]
-31bda3322694 f2fs: fix checkpoint=disable:%u%% [Jaegeuk Kim]
-fdfe7c04fde7 f2fs: delete DIO read lock [DongDongJu]
-ea66015cf5e0 f2fs: xattr.h: Replace zero-length array with flexible-array member [Gustavo A. R. Silva]
-6103b25351bb f2fs: skip GC when section is full [Jaegeuk Kim]
-eaddd1ca14f7 f2fs: fix the panic in do_checkpoint() [Sahitya Tummala]
-d0946da4ac75 f2fs: fix to wait all node page writeback [Chao Yu]
-33922229b033 f2fs: Add f2fs stats to sysfs [Hridya Valsaraju]
-5f0c00992fa4 f2fs: delete duplicate information on sysfs nodes [Hridya Valsaraju]
-6e9b6e47b6fd f2fs: change to use rwsem for gc_mutex [Chao Yu]
-35446a75def3 f2fs: code cleanup for f2fs_statfs_project() [Chengguang Xu]
-520e7145e126 f2fs: fix miscounted block limit in f2fs_statfs_project() [Chengguang Xu]
-8e06806d660f f2fs: remove unneeded check for error allocating bio_post_read_ctx [Eric Biggers]
-492985053aae f2fs: convert inline_dir early before starting rename [Jaegeuk Kim]
-de504b8912d0 f2fs: fix memleak of kobject [Chao Yu]
-63ff1f93245a f2fs: fix to add swap extent correctly [Chao Yu]
-d48730662993 f2fs: run fsck when getting bad inode during GC [Jaegeuk Kim]
-6930cd60ed40 f2fs: free sysfs kobject [Jaegeuk Kim]
-f8dd8f4d99e4 f2fs: declare nested quota_sem and remove unnecessary sems [Jaegeuk Kim]
-56b5f17429f1 f2fs: don't put new_page twice in f2fs_rename [Jaegeuk Kim]
-f422da298e52 f2fs: set I_LINKABLE early to avoid wrong access by vfs [Jaegeuk Kim]
-d914699990ce f2fs: introduce private bioset [Chao Yu]
-0fe156752b63 f2fs: cleanup duplicate stats for atomic files [Sahitya Tummala]
-d0e1da68daea f2fs: set GFP_NOFS when moving inline dentries [Jaegeuk Kim]
-8440d9dce740 f2fs: should avoid recursive filesystem ops [Jaegeuk Kim]
-ba644ac7ed9f f2fs: keep quota data on write_begin failure [Jaegeuk Kim]
-f6d354854477 f2fs: call f2fs_balance_fs outside of locked page [Jaegeuk Kim]
-b15767eed363 f2fs: preallocate DIO blocks when forcing buffered_io [Jaegeuk Kim]
-20bd306f3dbd f2fs: stop GC when the victim becomes fully valid [Jaegeuk Kim]
-2f2ba34068d9 f2fs: expose main_blkaddr in sysfs [Jaegeuk Kim]
-e65853fbfda6 f2fs: choose hardlimit when softlimit is larger than hardlimit in f2fs_statfs_project() [Chengguang Xu]
-29df78eda54c f2fs: Fix deadlock in f2fs_gc() context during atomic files handling [Sahitya Tummala]
-fe1884c78d56 f2fs: show f2fs instance in printk_ratelimited [Chao Yu]
-f84340758400 f2fs: fix potential overflow [Chao Yu]
-25c1701973df f2fs: fix to update dir's i_pino during cross_rename [Chao Yu]
-9e62e2e19035 f2fs: support aligned pinned file [Jaegeuk Kim]
-0f61c1b232be f2fs: fix to avoid memory leakage in f2fs_listxattr [Randall Huang]
-dc2561c6c8ed f2fs: avoid kernel panic on corruption test [Jaegeuk Kim]
-ce2ebc485580 f2fs: fix wrong description in document [Chao Yu]
-186c9f2abe32 f2fs: cache global IPU bio [Chao Yu]
-8912e5848073 f2fs: check total_segments from devices in raw_super [Qiuyang Sun]
-67dde4703816 f2fs: update multi-dev metadata in resize_fs [Qiuyang Sun]
-04eb948959c0 f2fs: mark recovery flag correctly in read_raw_super_block() [Chengguang Xu via Linux-f2fs-devel]
-36cfa7aa8571 f2fs: fix to update time in lazytime mode [Chao Yu]
-41f8af54116a f2fs: add a condition to detect overflow in f2fs_ioc_gc_range() [Sahitya Tummala]
-c1aa8cf59453 f2fs: fix to add missing F2FS_IO_ALIGNED() condition [Chao Yu]
-e3dd8cda841b f2fs: fix to fallback to buffered IO in IO aligned mode [Chao Yu]
-9029409a316c f2fs: fix to handle error path correctly in f2fs_map_blocks [Chao Yu]
-cff09f9fcc5b f2fs: fix extent corrupotion during directIO in LFS mode [Chao Yu]
-0fef6320bac7 f2fs: Add a small clarification to CONFIG_FS_F2FS_FS_SECURITY [Lockywolf]
-e90c499db66d f2fs: fix inode rwsem regression [Goldwyn Rodrigues]
-b717478d3ed7 f2fs: fix to avoid accessing uninitialized field of inode page in is_alive() [Chao Yu]
-1b160da6e151 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-a8f64fee7e45 f2fs: convert inline_data in prior to i_size_write [Jaegeuk Kim]
-3b4bc3e39ee3 f2fs: fix error path of f2fs_convert_inline_page() [Chao Yu]
-ea31edc61141 f2fs: add missing documents of reserve_root/resuid/resgid [Chao Yu]
-adcb31675503 f2fs: fix flushing node pages when checkpoint is disabled [Jaegeuk Kim]
-0c0285883ed4 f2fs: enhance f2fs_is_checkpoint_ready()'s readability [Chao Yu]
-61aaa15ca500 f2fs: clean up __bio_alloc()'s parameter [Chao Yu]
-e5a670ab1b15 f2fs: fix wrong error injection path in inc_valid_block_count() [Chao Yu]
-8bb3467465a5 f2fs: fix to writeout dirty inode during node flush [Chao Yu]
-6e87e7e67989 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
-04e948ef1528 f2fs: allocate memory in batch in build_sit_info() [Chao Yu]
-c73290a7afa5 f2fs: fix to avoid data corruption by forbidding SSR overwrite [Chao Yu]
-2e8e926bd62f f2fs: cleanup the code in build_sit_entries. [Lihong Kou]
-8ee921a8c983 f2fs: fix wrong available node count calculation [Chao Yu]
-731764f4d41d f2fs: remove duplicate code in f2fs_file_write_iter [Lihong Kou]
-f7bd03c5f462 f2fs: fix to migrate blocks correctly during defragment [Chao Yu]
-62925589a80a f2fs: use wrapped f2fs_cp_error() [Chao Yu]
-5bea7a5808ec f2fs: fix to use more generic EOPNOTSUPP [Chao Yu]
-fd200a81083b f2fs: use wrapped IS_SWAPFILE() [Chao Yu]
-492c35b773fb f2fs: fix to avoid call kvfree under spinlock [Chao Yu]
-db2fdb9fea96 f2fs: Remove unnecessary checks of SM_I(sbi) in update_general_status() [Jia-Ju Bai]
-0b9c625263c5 f2fs: disallow direct IO in atomic write [Chao Yu]
-9efbaa5f7f82 f2fs: fix to handle quota_{on,off} correctly [Chao Yu]
-2fe3912a1ffd f2fs: fix to detect cp error in f2fs_setxattr() [Chao Yu]
-a76d4d22acb2 f2fs: fix to spread f2fs_is_checkpoint_ready() [Chao Yu]
-2624e78819f2 f2fs: support fiemap() for directory inode [Chao Yu]
-17052e856b3d f2fs: fix to avoid discard command leak [Chao Yu]
-2737de7e79e3 f2fs: disallow switching io_bits option during remount [Chao Yu]
-3d6916da1aa9 f2fs: fix panic of IO alignment feature [Chao Yu]
-36f3a3df4b9f f2fs: introduce {page,io}_is_mergeable() for readability [Chao Yu]
-aa4d1aff8f55 f2fs: fix livelock in swapfile writes [Jaegeuk Kim]
-ead47703dbe0 mm: export add_swap_extent() (note: f2fs-backport merge) [Omar Sandoval]
-bbfaf638a4fb f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree [stic-server-open]
-
-====================
-     2023-01-02    
-====================
-* lineage/hudson
-9a63fd1 hudson: Promote tama to 20 [Danny Trunk]
-
-* lineage/wiki
-339b16d2 wiki: devices: add Demon000 as a dubai maintainer [Marc Bourgoin]
-eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
-9543ec0d Rename Snapdragon 778 to 778G [Arian]
-
-* packages/apps/Aperture
-619ccc5 Aperture: Keep screen on while in CameraActivity [LuK1337]
-
-====================
-     2023-01-01    
-====================
-* lineage/hudson
-dc6850f Reduce experimental targets list [LuK1337]
-
-* lineage/website
-829460e www: Don't link to crowdin directly [Michael W]
-19b0093 blog: Changelog-27: Fix indentation in Recorder app changelog [LuK1337]
-1d96fda blog: Changelog-27: Fix stray `)` character [LuK1337]
-c1d9ada Changelog 27 [Nolen Johnson]
-
-* lineage/wiki
-6825f99a wiki: Replace universal adb drivers [Michael W]
-fbd46fea wiki: Add trailing zero to branch names treewide [LuK1337]
-0263845d devices: Use separate bootloader unlock guide for FP3/FP4 [Michael Bestas]
-a58fe629 devices: Add Fairphone 4 [Michael Bestas]
-235a0614 Initial batch of 20 promotions [Nolen Johnson]
-a0e4afb8 X_X [Nolen Johnson]
-61dae577 wiki: Get jquery from a CDN [Michael W]
-7f2c3d00 wiki: contributors: Regenerate list [Michael W]
+* packages/apps/CarrierConfig
+38bd1a5 Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/DeskClock
-349682458 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent [Michael Bestas]
+943a2dcdc Automatic translation import [Michael Bestas]
 
-====================
-     2022-12-31    
-====================
-* lineage/hudson
-5205533 A Fair crack at android 13 [Michael Bestas]
-eacb600 X_X [Nolen Johnson]
+* packages/apps/Dialer
+eadac53a5 Automatic translation import [Michael Bestas]
 
-* packages/modules/Bluetooth
-3496ca860b legacy: Split header for hci legacy definitions [Christian Hoffmann]
+* packages/apps/DocumentsUI
+67a7b0154 Automatic translation import [Michael Bestas]
 
-* device/xiaomi/msm8998-common
-3e11f38 msm8998-common: sepolicy: Fix cnd denial [0ranko0P]
-245abf6 msm8998-common: rootdir: Switch zRAM compression alg to Zstandard [iusmac]
+* packages/apps/Eleven
+cdab07b Automatic translation import [Michael Bestas]
 
-* vendor/extra
-3474aa1 Point to my server [Nanhumly]
+* packages/apps/Etar
+35931d5f Automatic translation import [Michael Bestas]
 
-* kernel/xiaomi/msm8998
-40129604bdd8 {chiron,sagit}_defconfig: Switch zRAM compression alg to Zstandard [iusmac]
-5cd338e00c82 lib: zstd: Upstream codebase to v1.5.3 (dev branch) [iusmac]
-91d66feddd6c crypto/zstd.c: ZSTD_DEF_LEVEL switch to 1 [Sultan Alsawaf]
-04242ec6f27c lib: zstd: Workaround duplicate symbols [iusmac]
-9e4a4eff646a lib: zstd: Fix unknown type name `size_t` [iusmac]
-156997b11d39 lib: zstd: Upgrade to latest upstream zstd version pre-1.5.2 [tarsin]
-763668202222 lib: zstd: Fix attribute declaration [Cyber Knight]
-fbebd2bd03ca lib: zstd: Don't add -O3 to cflags [Nick Terrell]
-1fb0edcef3c1 lib: zstd: Don't inline functions in zstd_opt.c [Nick Terrell]
-a7075564137c lib: zstd: Fix unused variable warning [Nick Terrell]
-b9179cc5d6a9 lib: zstd: Add cast to silence clang's -Wbitwise-instead-of-logical [Nathan Chancellor]
-7c88fb278836 lib: zstd: Upgrade to latest upstream zstd version 1.4.10 [Nick Terrell]
-eacfe82e7010 lib: zstd: Add kernel-specific API [Nick Terrell]
+* packages/apps/FlipFlap
+e09235c Automatic translation import [Michael Bestas]
 
-====================
-     2022-12-30    
-====================
-* frameworks/base
-202ef84d307b IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
+* packages/apps/Jelly
+7f72e28 Automatic translation import [Michael Bestas]
 
-* packages/apps/Aperture
-8508621 Aperture: Ask for GPS permissions on first launch and enable if granted [Chirayu Desai]
+* packages/apps/LineageParts
+f893daa Automatic translation import [Michael Bestas]
+
+* packages/apps/Recorder
+21ad3da Automatic translation import [Michael Bestas]
 
 * packages/apps/Settings
-1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
+fe00b54935 Automatic translation import [Michael Bestas]
 
-* device/xiaomi/msm8998-common
-df8e98f msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
-69f90f1 msm8998-common: Add GPS configuration for China [Paul Keith]
-69ea3dc msm8998-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
+* packages/apps/SetupWizard
+6a4d8ba Automatic translation import [Michael Bestas]
 
-* vendor/xiaomi/msm8998-common
-f47ca61 msm8998-common: update Time services blobs from LA.UM.9.6.2.r1-04100-89xx.0. [Hadad]
+* packages/apps/Trebuchet
+4ca5f8afba Automatic translation import [Michael Bestas]
+
+* packages/apps/Updater
+304b45b Automatic translation import [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+a0efe97b6 Automatic translation import [Michael Bestas]
+
+* packages/resources/devicesettings
+080152a Automatic translation import [Michael Bestas]
+
+* packages/services/Telephony
+273dd31a5 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/crowdin
+a699b1d Automatic translation import [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+dcca002 Automatic translation import [Michael Bestas]
 
 ====================
-     2022-12-29    
+     2023-02-13    
 ====================
-* lineage/mirror
-1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC [Tim Schumacher]
+* android
+620e51c manifest: February 2023 Security update [Michael Bestas]
 
-* lineage/website
-0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
+* frameworks/av
+4e4fd6dd5c fixup! audioflinger: Fix audio for WifiDisplay [Michael Bestas]
+
+* vendor/lineage
+d9d76b35 vars: Update floral to TP1A.221005.002.B2 [Michael Bestas]
+d6209a2d vars: February 2023 Security update [Michael Bestas]
+
+====================
+     2023-02-12    
+====================
+* lineage/hudson
+4dadd7b Regenerate device dependency mappings [Michael Bestas]
+413ddf3 When life gives you lemons [Michael Bestas]
 
 * lineage/wiki
-1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
+569674fc wiki: templates: Add a note for OEM Unlock on Motorola devices [Marc Bourgoin]
+04f664c9 wiki: Add OnePlus 9R (lemonades) [Michael Bestas]
 
-* vendor/extra
-8526dc8 Fix changelog url [Nanhumly]
+* packages/apps/DeskClock
+1094c2815 DeskClock: Remove FAB from ExpiredTimersActivity [Michael W]
+
+====================
+     2023-02-11    
+====================
+* lineage/mirror
+9f39897 Updated lineage-minimal to 10-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+639deb30 wiki: a52q/a72q: Add firmware upgrade instructions [Simon1511]
+
+* packages/apps/Aperture
+eadaf72 Aperture: Add Google Lens icon [LuK1337]
+
+====================
+     2023-02-10    
+====================
+* external/tinycompress
+d155968 tinycompress: plugin: Set codec params in SETUP state [Ritu Sharma]
+
+* lineage/mirror
+46e7adb Updated aosp-minimal to 09-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+0a66ff74 wiki: gtowifi: add required bootloader [Han Sol Jin]
+
+* packages/apps/DeskClock
+aec45ba3f DeskClock: Dynamic icon [Asher Simonds]
+
+* vendor/lineage
+1cc1c8a0 qcom: set TARGET_USES_QCOM_AUDIO_AR for the UM 5.10 family [SGCMarkus]
+22eb16e2 qcom: Include vendor/qcom/opensource/display namespace only for <5.10 platforms [SGCMarkus]
+27409112 qcom: Add taro platform [Arian]
+8f5abd2a overlay: Set calendar component name [Michael Bestas]
+3f2102da overlay: Set clock component name [Michael Bestas]
+
+====================
+     2023-02-09    
+====================
+* android
+8f35efa manifest: Switch to our fork of frameworks/libs/systemui [Michael Bestas]
+
+* lineage/hudson
+3098fc9 hudson: ship berlna [Andrew Hexen]
+
+* lineage/mirror
+76dca64 Updated to 08-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+2c5c73c1 wiki: Add Motorola Edge 2021 (berlna) [Andrew Hexen]
+67b79ef9 wiki: devices: Update berlin specifications [Andrew Hexen]
+
+* vendor/qcom/opensource/interfaces
+e0f8d46 interfaces: Add perf 2.3 interface [Arian]
+
+====================
+     2023-02-08    
+====================
+* build/make
+ff39732ff Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* frameworks/av
+6f38b4dda3 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* frameworks/base
+92967d26da88 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* frameworks/native
+9f7a73fb8d Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* hardware/interfaces
+aa8618f44 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* lineage/mirror
+541dbd4 Updated to 07-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3d72a370 wiki: gtowifi: add sanity checks for later revision models [Han Sol Jin]
+
+* packages/apps/Aperture
+5003810 Aperture: Redo settings appbar using M3 guidelines [Sebastiano Barezzi]
+a290b23 Aperture: Reformat code [LuK1337]
+c02cafd Aperture: Add support for Assistant actions [Alexander Martinz]
+d5ed0c1 Aperture: Use ?attr/isLightTheme for light status bar [Sebastiano Barezzi]
+
+* packages/apps/EmergencyInfo
+ba2b6b8 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* packages/apps/Settings
+4bdfb6b330 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* packages/modules/Bluetooth
+57f7bb3577 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* packages/modules/Permission
+0a96343df Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+* packages/services/Telecomm
+1df839f94 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas]
+
+====================
+     2023-02-07    
+====================
+* lineage/hudson
+a18ebf8 hudson: build gtowifi [Han Sol Jin]
+d2dfcd0 hudson: Add Xperia 5 II [kyasu]
+
+* lineage/wiki
+ae29bc40 wiki: dubai: add dtbo to installation instructions [Marc Bourgoin]
+f076f0e5 wiki: Add boot+vbmeta flashing to OnePlus 7 series devices [LuK1337]
+3676d9b3 devices: Import gtowifi [Han Sol Jin]
+ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
+
+====================
+     2023-02-06    
+====================
+* hardware/qcom-caf/msm8953/audio
+550559a89f audio: hal: msm8974: Add support for msm8917-sku5-snd-card [me-cafebabe]
+43db6a413e audio: hal: msm8974: Allow to override mixer file name with prop [me-cafebabe]
+d5d1085af5 audio: hal: msm8974: msm8952-mtp/sku(m/1/2) switch to internal_codec [MrArtemSid]
+f3de73c950 audio: Add support for msm8920-sku7-snd-card [MrArtemSid]
+
+* lineage/mirror
+85b5c4e Updated to 05-Feb-2023 18:37 UTC [Kevin F. Haggerty]
+f66a28b Updated to 05-Feb-2023 17:49 UTC [Kevin F. Haggerty]
+6544c84 Updated to 05-Feb-2023 15:56 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+c624d30e wiki: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
+
+* packages/apps/Aperture
+8361807 Aperture: Fix photo -> video shutter button color transition [Sebastiano Barezzi]
+c9a4dc6 Aperture: Make video duration text more readable [LuK1337]
+2fe339d Aperture: Use M3 colors for shutter button [Giovanni Ricca]
+
+====================
+     2023-02-05    
+====================
+* lineage/hudson
+f623e7b hudson: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
+
+* lineage/mirror
+339e1eb Updated to 04-Feb-2023 18:45 UTC [Kevin F. Haggerty]
+93be86a Updated to 04-Feb-2023 18:06 UTC [Kevin F. Haggerty]
+49f6746 Updated to 04-Feb-2023 17:30 UTC [Kevin F. Haggerty]
+
+* packages/apps/DeskClock
+17ce632ff DeskClock: Hide settings if unavailable [Michael W]
+95071858b DeskClock: Use getDefaultSensor() instead of getSensorList() [Michael W]
+09c00e395 DeskClock: Don't duplicate code [Michael W]
+0137eb8cc DeskClock: Check for accelerometer instead of orientation [Michael W]
+
+* packages/modules/Bluetooth
+e7f12ea3db gd: hci: Ignore unexpected status events [Peter Cai]
+f5d0da4869 Additionally check le_set_event_mask command resturn status with UNSUPPORTED_LMP_OR_LL_PARAMETER [tzu-hsien.huang]
+
+====================
+     2023-02-04    
+====================
+====================
+     2023-02-03    
+====================
+* lineage/hudson
+e8a5ef8 Revert "Revert "hudson: Promote bq msm8953 devices to 20"" [Jose P]
+
+* lineage/mirror
+971597f Updated aosp-minimal to 02-Feb-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+74ecaa1d Revert "devices: Unship bq/msm8953" [Jose P]
+
+====================
+     2023-02-02    
+====================
+* lineage-sdk
+5bd11e30 sdk: Kill app: Actually kill app [Michael W]
+
+* packages/apps/Aperture
+8bc073f Aperture: Fix lint error in string containing '%' sign [LuK1337]
+cc51ebb Aperture: Remove unused string [LuK1337]
+
+====================
+     2023-02-01    
+====================
+* lineage/hudson
+5dd6df3 Revert "hudson: Promote bq msm8953 devices to 20" [Nolen Johnson]
+
+* lineage/mirror
+13005e4 Updated to 01-Feb-2023 02:25 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+419b6f30 devices: Unship bq/msm8953 [Nolen Johnson]
+
+* packages/apps/Aperture
+d2bb840 Aperture: Add ripple animation for QR CardView [LuK1337]
+af8d7de Aperture: Add Wi-Fi QR handling [Sebastiano Barezzi]
+abf6bb5 Aperture: Use @android:color/{black,white} [LuK1337]
+1abba95 Aperture: Set navigation bar color to black [LuK1337]
 
