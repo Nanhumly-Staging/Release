@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1679630168,
-      "filename": "lineage-20.0-20230324-UNOFFICIAL-GAPPS-sagit.zip",
-      "id": "e50e27441ca33b067031845a64eb3c1434504085e38467afa17f0fa8752ca541",
+      "datetime": 1681746238,
+      "filename": "lineage-20.0-20230417-UNOFFICIAL-GAPPS-sagit.zip",
+      "id": "8c2be8035c3b3a871b7bb237a37f9536f0e97bd78e751e041014b84d9226060c",
       "romtype": "UNOFFICIAL",
-      "size": 1228002032,
-      "url": "https://down.warbler.cc/d/XiaoMi-6/LineageOS/20.0/Gapps/lineage-20.0-20230324-UNOFFICIAL-GAPPS-sagit.zip",
+      "size": 1225221280,
+      "url": "https://down.warbler.cc/d/XiaoMi-6/LineageOS/20.0/Gapps/lineage-20.0-20230417-UNOFFICIAL-GAPPS-sagit.zip",
       "version": "20.0"
     }
   ]
