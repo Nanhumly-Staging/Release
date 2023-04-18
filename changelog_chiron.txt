@@ -1,541 +1,269 @@
 ====================
-     2023-03-24    
+     2023-04-18    
 ====================
 * build/make
-152f48516 build: Always use release-keys [Pranav Vashi]
+ddb6a595d build: Always use release-keys [Pranav Vashi]
+
+* external/e2fsprogs
+1a200621 e2fsck: Loosen fscrypt_policy struct size check [LuK1337]
 
 * frameworks/base
-c1eaca511af3 build: Don't check for fingerprint mismatch [Dan Cartier]
-f0a3206c661c Apply monet to fingerprint authentication ripple animation [SagarMakhar]
-47d0eb865158 SystemUI: Follow light/dark theme in new QS footer actions [Tim Zimmermann]
-337589eea76f SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-24865069aa21 Automatic translation import [Michael Bestas]
+80428accdfed build: Don't check for fingerprint mismatch [Dan Cartier]
 
-* lineage-sdk
-8eb16e55 Automatic translation import [Michael Bestas]
+* lineage/mirror
+76a502e Updated lineage-minimal to 17-Apr-2023 12:01 UTC [Tim Schumacher]
+cde7a21 Updated to 17-Apr-2023 12:01 UTC [Tim Schumacher]
 
-* packages/apps/Aperture
-b382a88 Automatic translation import [Michael Bestas]
-
-* packages/apps/Backgrounds
-0dc1e51 Automatic translation import [Michael Bestas]
-
-* packages/apps/Camera2
-930eb893f Automatic translation import [Michael Bestas]
+* lineage/wiki
+75b9bab7 devices: Fix maintainers list for F(x)tec Pro^1 X [Sean McCreary]
 
 * packages/apps/CarrierConfig
-7f1a388 Override name of Mainland China carriers [cjybyjk]
+02b83f7 Override name of Mainland China carriers [cjybyjk]
 
-* packages/apps/DeskClock
-b2d7e2750 Automatic translation import [Michael Bestas]
+* packages/services/Telephony
+9837e4aa2 Add support for multi-language carrier name override [cjybyjk]
 
-* packages/apps/Dialer
-cb85765ff Automatic translation import [Michael Bestas]
+* device/xiaomi/msm8998-common
+e1c2836 msm8998-common: Build Xiaomi sensors impl [Sebastiano Barezzi]
+0c9793f msm8998-common: Drop doze related features [Sebastiano Barezzi]
+55fbcb5 msm8998-common: overlay: Set config_dozePulsePickup to false [Nanhumly]
+0d3070c msm8998-common: overlay: Disable VoWiFi for China carrier [LynnrinChan]
+61503f1 Revert "msm8998-common: Switch to Skia OpenGL ui renderer" [Nanhumly]
+208b855 Revert "msm8998-common: Enable ro.hwui.render_ahead and set it to 20 frames" [Nanhumly]
 
-* packages/apps/DocumentsUI
-9266bb7d7 Automatic translation import [Michael Bestas]
+====================
+     2023-04-17    
+====================
+* external/chromium-webview/patches
+7455e7f Update Chromium Webview to 112.0.5615.101 [Kevin F. Haggerty]
 
-* packages/apps/Eleven
-58686f2 Automatic translation import [Michael Bestas]
+* external/chromium-webview/prebuilt/arm
+f451a85 Update Chromium Webview arm prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
 
-* packages/apps/Etar
-9c02b466 Automatic translation import [Michael Bestas]
+* external/chromium-webview/prebuilt/arm64
+ebac9db Update Chromium Webview arm64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
 
-* packages/apps/FlipFlap
-a83f2a0 Automatic translation import [Michael Bestas]
+* external/chromium-webview/prebuilt/x86
+77c3db4 Update Chromium Webview x86 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
 
-* packages/apps/Jelly
-e91ead6 Automatic translation import [Michael Bestas]
+* external/chromium-webview/prebuilt/x86_64
+1e7c6f7 Update Chromium Webview x86_64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
 
-* packages/apps/LineageParts
-06765db Automatic translation import [Michael Bestas]
+* frameworks/base
+ac20891e0096 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
-* packages/apps/Recorder
-5b1b693 Automatic translation import [Michael Bestas]
+* lineage/mirror
+42d9c95 Updated to 16-Apr-2023 16:26 UTC [Kevin F. Haggerty]
+8f9f193 Updated to 16-Apr-2023 15:49 UTC [Kevin F. Haggerty]
+40a831c Updated to 16-Apr-2023 15:09 UTC [Kevin F. Haggerty]
 
-* packages/apps/Settings
-b2fd24899b Settings: Fixup start padding for battery usage graph [Adithya R]
-89d6b2734c Automatic translation import [Michael Bestas]
+* lineage/scripts
+461868b build-webview: Update default webview to 112.0.5615.101 [Kevin F. Haggerty]
+
+* vendor/lineage
+4d99166a vars: April 2023 Security update [Michael Bestas]
+
+====================
+     2023-04-16    
+====================
+* device/qcom/sepolicy_vndr-legacy-um
+e52af6e4 bengal: Correct sysfs_wakeup paths [Michael Bestas]
+
+====================
+     2023-04-15    
+====================
+* lineage/charter
+4d4be1c exemptions: Android 13 FDE exemption for custom keymaster implementations [Nolen Johnson]
+
+* lineage/mirror
+72ca09e Updated aosp-minimal to 14-Apr-2023 12:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+e39ddd52 overlay: Move default status bar height to no-rro [Sebastiano Barezzi]
+
+====================
+     2023-04-14    
+====================
+* android
+8d68725 Move Trebuchet to default.xml [Michael Bestas]
+d489e68 manifest: April 2023 Security update [Michael Bestas]
+
+* kernel/configs
+02e3cb8 Add .gitupstream file [Michael Bestas]
+
+* lineage/hudson
+ff029fd The XDA phone finally lives [Nolen Johnson]
+
+* lineage/wiki
+6ffecd2e devices: Add F(x)tec Pro^1 X [Nolen Johnson]
 
 * packages/apps/SetupWizard
-78b01d5 Automatic translation import [Michael Bestas]
-
-* packages/apps/ThemePicker
-b802039e Automatic translation import [Michael Bestas]
-
-* packages/apps/Trebuchet
-d4f81d3f25 Automatic translation import [Michael Bestas]
+f85129e FinishActivity: prevent jumping layout when finishing [Alexander Martinz]
 
 * packages/apps/Updater
-e83f74a Automatic translation import [Michael Bestas]
-
-* packages/inputmethods/LatinIME
-b7aee515e Fix spellcheck on sentence end [icburns]
-60285ccac Automatic translation import [Michael Bestas]
-
-* packages/resources/devicesettings
-146952e Automatic translation import [Michael Bestas]
-
-* packages/services/Telephony
-0e894f56c Add support for multi-language carrier name override [cjybyjk]
-
-* vendor/qcom/opensource/fm-commonsys
-3605f79 Automatic translation import [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-0c8bbc6 msm8998-common: overlay: Global use of MIUI captive portal server [Nanhumly]
-4815593 msm8998-common: Remove unneeded NFC packages [Georg Veichtlbauer]
-
-====================
-     2023-03-23    
-====================
-* frameworks/native
-94dd1b1bda inputflinger: allow disabling input devices via idc [Billy Laws]
-
-* lineage/crowdin
-de63b5e config: lineage-20.0: Add ThemesStub [Michael Bestas]
-
-====================
-     2023-03-22    
-====================
-* frameworks/base
-741dcffec14c fixup! Keyguard: Add option to scramble pin layout when unlocking (2/2). [Tommy Webb]
-698c61306ab0 Adapt tuner prefs to S settings style & cleanup [SagarMakhar]
-4d189514d19a Remove wtf if no display nits mapping exists [Alistair Delva]
-
-* lineage/mirror
-da4ecba Updated aosp-minimal to 21-Mar-2023 13:01 UTC [Tim Schumacher]
-
-* packages/apps/ThemePicker
-a76cd30b Remove custom themes stub from package query allowlist [Michael Bestas]
-d7a85a95 stub: Import extra color bundles from TQ1A.221205.011 [Michael Bestas]
-
-* packages/overlays/Lineage
-292b54e Remove themes stub [Michael Bestas]
-
-* vendor/lineage
-3450d31d Switch to AOSP themes stub package [Michael Bestas]
-5ae7551a Revert "config: Build NavigationBarMode2ButtonOverlay" [Chirayu Desai]
-d51e91e8 overlay: Relocate config_displayLightSensorType to no-rro [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-e1cf094 msm8998-common: rootdir: Drop no longer uses sys.io.scheduler property [ZhaoYueNan]
-cee637a msm8998-common: Deduplicate handheld_core_hardware.xml copy rule [Bruno Martins]
-
-====================
-     2023-03-21    
-====================
-* android
-9c62a9d manifest: gs101 March 2023 Quarterly Platform Release and Security update [Michael Bestas]
-
-* frameworks/base
-add72c32304f fixup! Show the vibrate icon in the Status Bar by default [Michael Bestas]
-eda205d83f9c SystemUI: Bring in drawable for statusbar firewall toggle [Michael Bestas]
-244a79c8e018 Implement firewall status bar indicator [Oliver Scott]
-526e913c0be3 SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
-f85526846209 SystemUI: Make edit button click ripple effect rounded [DarkJoker360]
-2c9148b7ac6c SystemUI: Show the alarm icon on QS as well [Ido Ben-Hur]
-
-* packages/apps/Jelly
-bfd3939 Jelly: Stop using restricted APIs [Sebastiano Barezzi]
-d4f1297 Jelly: Use Java 1.8 for Gradle builds [Sebastiano Barezzi]
-9980294 Jelly: Upgrade AGP + dependencies [Sebastiano Barezzi]
-f4328af Jelly: Fix "Missing PendingIntent mutability flag" warning [Sebastiano Barezzi]
-9f234ca Jelly: Fix Kotlin style warnings [Sebastiano Barezzi]
-e944bf6 Jelly: Remove unused symbols [Sebastiano Barezzi]
-b51cbc7 Jelly: Fix warnings [Michael W]
-
-* packages/apps/Settings
-99c7af06da Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+bfbc440 Updater: Show the correct percentage during package installation [Tommaso Fonda]
 
 * packages/modules/Bluetooth
-c05bc8c8b0 Add property to disable APCF extended features [me-cafebabe]
+957b6985fc Add system properties to config audio codec priority [Vance Yu]
+2dd34269e4 audio_hal/aidl: Don't fallback to SW encoding when HW is supported [Hans Månsson]
 
 * system/sepolicy
-489e14e9e Add property to disable APCF extended features [me-cafebabe]
-
-* vendor/lineage
-6aaeca36 vars: Pixel 6, 6a: March 2023 Security update [Chirayu Desai]
+7d29eba63 Label system properties to config audio codec priority [Michael Bestas]
 
 ====================
-     2023-03-20    
+     2023-04-13    
 ====================
-* android
-757f405 manifest: March 2023 Quarterly Platform Release and Security update [Michael Bestas]
-
-* lineage-sdk
-9f63a522 Fix FINGERPRINT_WAKE_UNLOCK migration for devices not supporting it [Michael Bestas]
-
-* lineage/hudson
-c0b9474 The device where Aperture took its first steps finally gets a Tiramisù [Sebastiano Barezzi]
-
-* packages/apps/LineageParts
-d2ed9ba Temporarily hide status bar brightness control setting [Michael Bestas]
-cbf59a0 Temporary changes for volume_link_notification removal [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-7531826c03db kbuild: handle libs-y archives separately from built-in.o archives [Nicholas Piggin]
-218053c7abe5 kbuild: thin archives use P option to ar [Nicholas Piggin]
-b80b47c14480 kbuild: thin archives for multi-y targets [Nicholas Piggin]
-4f0883188af9 kbuild: thin archives final link close --whole-archives option [Nicholas Piggin]
-e55f34077e7e kbuild: minor improvement for thin archives build [Nicholas Piggin]
+* lineage/mirror
+1fa7298 Updated aosp-minimal to 11-Apr-2023 12:01 UTC [Tim Schumacher]
 
 ====================
-     2023-03-19    
+     2023-04-12    
 ====================
-* vendor/lineage
-f8663e24 overlay: Set config_displayLightSensorType to android.sensor.light [LuK1337]
-
-====================
-     2023-03-18    
-====================
-* frameworks/base
-5cb55b05cc5f Revert "Revert "SystemUI: Bring back good ol' circle battery style"" [Bruno Martins]
-
-* frameworks/native
-f2af55cc77 SF: Fix display on Pixel 4 [Chirayu Desai]
-
-* packages/apps/Trebuchet
-0a087e69b9 fixup! Trebuchet: allow disabling workspace edit [Michael Bestas]
-e3f418d55d fixup! Fix All Apps header protection and spacing again [Tommy Webb]
-bd8d54f369 fixup! Trebuchet: implement hidden & protected apps [Michael Bestas]
-fa9254be36 fixup! Trebuchet: add toggle for desktop and drawer labels [Michael Bestas]
-656758c77a fixup! QuickStep: Google Feed integration [Michael Bestas]
-f42b0019ef fixup! Don't discard custom grid on config changes [Michael Bestas]
-3803d3a4a7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-912a94e msm8998-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
-
-* vendor/xiaomi/msm8998-common
-ef798ac msm8998-common: Remove aptX(HD) encoder shared libs [Nanhumly]
-
-====================
-     2023-03-17    
-====================
-* lineage/wiki
-59f1501b gtowifi: clear up confusion about bootloader versions after unlock [Han Sol Jin]
-
-====================
-     2023-03-16    
-====================
-* device/lineage/sepolicy
-d305fba sepolicy: Allow recovery to read to all sdcard filesystems [SamarV-121]
-3ca9cd1 sepolicy: Grant neccesary ioctls to recovery for external sd [SamarV-121]
-1f24f04 sepolicy: Allow recovery to read sysfs_perdev_minors [SamarV-121]
-
-* frameworks/base
-67fde062536d fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas]
-2919024ab00a Revert "SystemUI: Port statusbar brightness control" [Michael Bestas]
-6a55b9db8b98 fixup! Implement edge long swipe gesture [Michael Bestas]
-90b341ae8ded fixup! SystemUI: Calculate paged QS tiles height properly [Michael Bestas]
-22901ca643be fixup! SystemUI: Add API for runtime taskbar config [Michael Bestas]
-544114a9a490 fixup! SystemUI: Allow to enable Lockscreen Media Art [Michael Bestas]
-b1b890a0d944 fixup! udfps: Restore illumination dot for global hbm [Michael Bestas]
-75e7f916bd96 fixup! SystemUI: Add heads up tile [Michael Bestas]
-3a837fab8499 fixup! SystemUI: Add AOD QS tile [Michael Bestas]
-e33699a6fd9e Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+* hardware/qcom-caf/wlan
+79ccbda wcnss-service: Remove setup_wlan_driver_ath_prop() [Michael Bestas]
+ccf7898 Reading the serialno property is forbidden [Tim Kryger]
+405fcce wcnss_service: Deal with mdm-detect too [Steve Kondik]
+0f9526e wcnss: Build and dlopen wcnss_qmi_client as a shared library [Ethan Chen]
 
 * lineage/mirror
-3c88645 Updated lineage-minimal to 15-Mar-2023 13:01 UTC [Tim Schumacher]
-
-====================
-     2023-03-15    
-====================
-* android
-d49b6e3 manifest: Sync x86_64 webview prebuilts again [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-452f938 Update Chromium Webview arm prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-8b850a5 Update Chromium Webview arm64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-7e01edf Update Chromium Webview x86 prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-0389a88 Update Chromium Webview x86_64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
-
-* frameworks/base
-0b34a54d6328 Revert "SystemUI: Bring back good ol' circle battery style" [Michael Bestas]
-3e9e847b230c Revert "Save user preferred resolution into persistent data store" [Michael Bestas]
-
-* lineage-sdk
-dc0c1d8a Migrate FINGERPRINT_WAKE_UNLOCK to the new AOSP setting [Michael Bestas]
-
-* lineage/mirror
-2ee03ea Updated aosp-minimal to 14-Mar-2023 13:01 UTC [Tim Schumacher]
-9bf3f98 Updated to 14-Mar-2023 10:09 UTC [Kevin F. Haggerty]
-e8bc699 Updated to 14-Mar-2023 09:51 UTC [Kevin F. Haggerty]
+fc0f305 Updated to 12-Apr-2023 00:17 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
-489e0b18 wiki: templates: build: Webview now uses git-lfs [Nolen Johnson]
-9cb733b0 wiki: Fix broken title in search results [Michael W]
-2fdbf9cb wiki: templates: Enable git-lfs in repo init [Kevin F. Haggerty]
-
-* packages/apps/Backgrounds
-c2e1614 Revert "Backgrounds: Update resource name to match AOSP changes in WallpaperPicker2" [Michael Bestas]
-
-* packages/apps/Settings
-d3104db329 Revert "Settings: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas]
-
-* system/logging
-373d54e7 fixup! liblog: Always report as debuggable when building userdebug/eng [Michael Bestas]
-
-* vendor/lineage
-eb24a598 vars: Use merge method instead of squash [Michael Bestas]
-e5a041ed vars: March 2023 Quarterly Platform Release and Security update [Chirayu Desai]
-
-* kernel/xiaomi/msm8998
-15a5ce0f32db Merge tag 'LA.UM.7.2.c25-07700-sdm660.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into lineage-20.0 [Nanhumly]
+6099a371 wiki: resurrect Samsung S9/S9+/N9 Exynos9810 devices [baddar90]
+2189cdd7 oplus8350: Remove vm-bootsys from firmware update instructions [Bruno Martins]
 
 ====================
-     2023-03-14    
+     2023-04-11    
 ====================
-* bootable/recovery
-58e86508 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
 * build/make
-083e8a7f5 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* build/soong
-28fecae84 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* device/google/atv
-d8e63ed Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* external/android-nn-driver
-239af54 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* external/cldr
-7518f371 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* external/icu
-a235bfd36 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* external/setupcompat
-a096db1 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* external/wpa_supplicant_8
-54182a1b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+e02d08607 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * frameworks/av
-1573aa2767 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* frameworks/base
-4f48f5993e2d Revert "frameworks: Add unlinked ringtone and notification volumes" [Michael Bestas]
-4a34800406b2 Revert "Keyguard: Allow disabling fingerprint wake-and-unlock" [Michael Bestas]
-202c2c0e6320 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas]
-943708cbc0b7 Revert "SystemUI: Import Pixel display interfaces" [Michael Bestas]
-c165e4cec2ce Revert "SystemUI: Add display mode provider for UDFPS on Pixel devices" [Michael Bestas]
-9566dc54533c Revert "udfps: Implement default udfps display mode provider" [Michael Bestas]
-fbb73c796c91 Revert "SystemUI: Fix QS status font weight mismatch in dark mode" [Michael Bestas]
-74985ea28359 Revert "SystemUI: ic_brightness_*: drawables get surface color" [Michael Bestas]
-
-* frameworks/libs/systemui
-c95400c Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+1fea28193f Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * frameworks/native
-18b2ed6811 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-f3028e42a5 Revert "Remove BLASTBufferQueue debug log line" [Michael Bestas]
-
-* frameworks/opt/telephony
-be016951b9 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* hardware/google/gchips
-5ff4c71 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* hardware/google/graphics/common
-0af754a Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+b3dfccb205 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * hardware/google/pixel
-2c9368a Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+5b75a7d Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
-* hardware/google/pixel-sepolicy
-498d82b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* hardware/interfaces
-091da41ca Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* hardware/libhardware
-0eb202d7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* hardware/qcom/wlan
-5d9edb7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* libcore
-2a7d66adbcd Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* lineage/hudson
-52f8531 Revert "[TEMP] Revert "hudson: Ship vela"" [0xCAFEBABE]
+* lineage/charter
+9702630 charter: Specify maintainers must own their devices [Michael W]
 
 * lineage/mirror
-0ca7451 Updated aosp-minimal to 13-Mar-2023 13:01 UTC [Tim Schumacher]
+9a74ce6 Updated aosp-minimal to 10-Apr-2023 12:01 UTC [Tim Schumacher]
 
-* lineage/wiki
-621ef2aa Revert "[TEMP] wiki: devices: Unship vela for now" [0xCAFEBABE]
+* lineage/scripts
+cc6f2a9 build-webview: Update default webview to 112.0.5615.48 [Kevin F. Haggerty]
 
 * packages/apps/Aperture
-423e6b8 Aperture: Upgrade AGP to 7.4.2 [Sebastiano Barezzi]
-582b552 Aperture: Comply with Camera Intents tests [Sebastiano Barezzi]
-
-* packages/apps/Car/Settings
-fbb179ea2 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/CellBroadcastReceiver
-af755e7c Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/Contacts
-9e9460621 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/DocumentsUI
-abab7d558 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/EmergencyInfo
-224f182 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/Nfc
-ee09c18a Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+a5741ab Aperture: Add toggle for FFC horizontal flip [LuK1337]
 
 * packages/apps/Settings
-396c09eb63 Revert "Settings: Add switch for linked ring and media notification volumes" [Michael Bestas]
-d4f599fb18 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/SettingsIntelligence
-c827f3e Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/ThemePicker
-1e72da62 Add new priv-app permission added in QPR2 [Michael Bestas]
-3067ded9 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+ca256cde4a Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * packages/apps/Trebuchet
-70e0e62704 Revert "Fix Personal/Work profile tab colors in All Apps" [Michael Bestas]
-
-* packages/apps/TvSettings
-76aa05f9b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-fa1a3ff7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+1ec394da5e Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * packages/modules/Bluetooth
-4ced7fa2e1 fixup! bluetooth: abandon app local certificate [Michael Bestas]
-be9e5b3fa8 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/modules/Connectivity
-52160b9e7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/modules/Permission
-24f8c7caf Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/modules/Virtualization
-48e1951 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+765595a93e Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * packages/modules/Wifi
-5a636afb98 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/modules/common
-62839e3 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/providers/ContactsProvider
-41edc608 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/providers/DownloadProvider
-2ef2bc19 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+b7ca9669be Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * packages/providers/MediaProvider
-380346757 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-5ea810bf Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/screensavers/PhotoTable
-d5a7313 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/services/Mms
-0cb2b83 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+1cde08432 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * packages/services/Telecomm
-e6ffc3190 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/services/Telephony
-512b850d8 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* packages/wallpapers/LivePicker
-6d504c2 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/apex
-769a5fe1 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/core
-a5808669b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/libhidl
-e4f4132 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/logging
-ccc0aa19 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/media
-b9a65d5f Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
-
-* system/memory/lmkd
-f0efa13 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+e585f266c Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 * system/sepolicy
-a275dd117 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas]
+3e8f36f78 Merge tag 'android-13.0.0_r41' into staging/lineage-20.0_merge-android-13.0.0_r41 [Michael Bestas]
 
 ====================
-     2023-03-13    
+     2023-04-10    
+====================
+* device/qcom/sepolicy_vndr-legacy-um
+b7dd1e17 sepolicy: Allow qti_init_shell to set proc_watermark_scale_factor. [Quallenauge]
+42c32852 Sepolicy:Add rules for init-qti-dcvs-sh [Saikumar Vutukuri]
+f98c9bae sepolicy_vndr: Allow getprop for persist.debug.trace property [Naman Jain]
+04b5abe0 legacy/qva: label extcon files [JohnnLee]
+fee38be8 generic: Label more discard_max_bytes sysfs [Michael Bestas]
+
+* lineage-sdk
+4b44a960 sdk: Escape network SSID and name when writing profiles.xml [Joe Feise]
+
+* system/core
+11e4b5a83 init: Make an error message more informative [Bart Van Assche]
+
+====================
+     2023-04-09    
+====================
+* android
+3418dab lineage: Track the FMRadio App and dependencies [Nolen Johnson]
+
+* bootable/recovery
+4e4526fc recovery: Allow custom bootloader msg offset in block misc [Alessandro Astone]
+cb765605 recovery: wipe bootloader message from index 0 when using custom offsets [Alessandro Astone]
+
+* lineage/hudson
+a1623a8 hudson: add Samsung S9/S9+/N9 Exynos9810 devices [baddar90]
+
+* lineage/wiki
+b0b5a7df devices: wade: Update required version to 12 [Nolen Johnson]
+
+* vendor/lineage
+1a6d8417 soong: Bring bootloader_message_offset back [Nolen Johnson]
+cbf5989f overlay: Disable immersive mode confirmation [Arian]
+
+====================
+     2023-04-08    
+====================
+====================
+     2023-04-07    
 ====================
 * frameworks/base
-0c2cadbd7823 SystemUI: Update string for add tiles with one click [mydongistiny]
-6150a1492949 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
-e0e6ca77cdfd Toast app icon display is inconsistent for system apps [Edward Savage-Jones]
-e3c78f56e93d SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
-90d682654818 Remove sensitive info from SUPL requests [Tommy Webb]
-
-* lineage/wiki
-6ac5a54d wiki: Fix avicii current_branch [KakatkarAkshay]
-
-====================
-     2023-03-12    
-====================
-* lineage/crowdin
-4038d83 crowdin: Add --generate_wiki_list [Michael W]
-
-* lineage/wiki
-dc1b129f wiki: Regenerate proofreaders [Michael W]
-fcdc3931 wiki: Add missing 18.1 to the contributors page [razorloves]
-
-====================
-     2023-03-11    
-====================
-* external/chromium-webview/prebuilt/arm
-04f0646 Import Chromium Webview arm prebuilt 109.0.5414.118 [Chirayu Desai]
-dc64f47 Set up lfs [Michael Bestas]
-16e2b4d Initial empty repository [Michael Bestas]
-
-* external/chromium-webview/prebuilt/arm64
-9bd56e2 Import Chromium Webview arm64 prebuilt 109.0.5414.118 [Chirayu Desai]
-d158282 Set up lfs [Michael Bestas]
-91aa269 Initial empty repository [Michael Bestas]
-
-* external/chromium-webview/prebuilt/x86
-5d72e0f Import Chromium Webview x86 prebuilt 109.0.5414.118 [Michael Bestas]
-7006589 Set up lfs [Michael Bestas]
-4f6df39 Initial empty repository [Michael Bestas]
-
-* external/chromium-webview/prebuilt/x86_64
-3fad6d5 Update Chromium Webview x86_64 prebuilt to 109.0.5414.118 [Kevin F. Haggerty]
-dc62a3e Set up lfs [Michael Bestas]
-91aa269 Initial empty repository [Michael Bestas]
+ad4f07544b81 InputDevices: Fix Hungarian language overlay [Sean McCreary]
+721d693729d5 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
 
 * lineage/mirror
-5cc6076 Updated to 10-Mar-2023 22:28 UTC [Kevin F. Haggerty]
-9559de7 Updated aosp-minimal to 10-Mar-2023 13:02 UTC [Tim Schumacher]
-bf33b2a Updated to 10-Mar-2023 13:01 UTC [Tim Schumacher]
+6f4679e Updated to 06-Apr-2023 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-4abd65dd wiki: Apply required changes for reviving avicii to 20 [MajorP93]
+47fcaf4f wiki: Add boot_stack instructions to tensor Pixels [Michael Bestas]
+
+* packages/apps/FMRadio
+3c2651f FMRadio: Update the app icon for Android 13 [Asher Simonds]
+ff64fb9 jni: Fix unused variable/function/parameter errors [Michael Bestas]
+0651b02 FMRadio: Add `BOARD_HAVE_MTK_FM` guard [Matsvei Niaverau]
+96a4ba4 FMRadio: FmNative: Add method declarations for MTK fmjni [Ash Blake]
+ab81663 FMRadio: Recognize MTK short antenna availability [Ash Blake]
+
+====================
+     2023-04-06    
+====================
+* lineage/hudson
+0a55893 hudson: Peter Parker is here. [Rohan Hasabe]
+
+* lineage/wiki
+064188e3 wiki: devices: Replace parker images [razorloves]
+6962b936 wiki: Add Motorola One Zoom (parker) [Rohan Hasabe]
+
+* packages/apps/FMRadio
+8dad7e4 FMRadio: Bring in the new icon [Michael W]
+851fc7e FMRadio: Add exported flags in manifest [Michael Bestas]
+cea975b FMRadio: Uprev target/min SDK [Michael W]
+
+====================
+     2023-04-05    
+====================
+* frameworks/base
+75a8e54af67e fixup! SystemUI: Make clock & battery clickable again^2 [Michael W]
+
+* lineage/mirror
+e9e6631 Updated aosp-minimal to 04-Apr-2023 12:01 UTC [Tim Schumacher]
+01b590c Updated to 04-Apr-2023 11:50 UTC [Kevin F. Haggerty]
+
+* kernel/xiaomi/msm8998
+9da121a79cce ANDROID: usb: f_accessory: Check buffer size when initialised via composite [Lee Jones]
 
