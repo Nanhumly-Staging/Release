@@ -1,4 +1,91 @@
 ====================
+     2023-04-20    
+====================
+* android
+194f3a5 manifest: Track clang 17.0.0 [Pranav Vashi]
+
+* external/sqlite
+dca2515 sqlite: Tune flags according to docs [Andrzej Perczak]
+ab722f6 sqlite: Update to version 3.41.2 [Andrzej Perczak]
+
+* frameworks/base
+ac3434da2d97 build: Don't check for fingerprint mismatch [Dan Cartier]
+2f381eeae9c6 SystemUI: Handle more exceptions for firewall [Pranav Vashi]
+0e408f37c6e4 Revert "InsetsStateController: Replace ArrayMap with HashMap for performance" [Pranav Vashi]
+35638c2e4627 Fixed process can't start because of mPendingStart is true problem [Dezhi Huang]
+
+* packages/apps/CarrierConfig
+f9b0f14 Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Launcher3
+00da57eb0a Revert "Launcher3: Enable SHOW_DOT_PAGINATION" [DarkJoker360]
+
+* packages/services/Telephony
+559059005 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/crDroidOTA
+7e45859 Cheetah: April 19th [osm1019]
+45d8fb9 munch: 19th April [Akash Kakkar]
+df3f31a courbet: 19/4/2023 [Golbinex]
+3e22880 vayu: Update [Pranav Vashi]
+
+* device/xiaomi/chiron
+d2c60e3 chiron: overlay: Switch to vector drawable for rounded corners [Chenyang Zhong]
+
+====================
+     2023-04-19    
+====================
+* device/qcom/sepolicy_vndr-legacy-um
+f1805b55 Revert "Add sepolicy rules to run imsdaemon on bengal" [Michael Bestas]
+3039e5a0 bengal: Label discard_max_bytes sysfs [Michael Bestas]
+
+* frameworks/base
+2a06723af3bc wm: Prevent NPE for springanimation [Pranav Vashi]
+7ff4b0ffc067 Add a suspension check to SuspendedAppActivity [Jeongsik Mun]
+8e5ffcbf195a PixelPropsUtils: Don't spoof fewer apps [jhenrique09]
+0aecfe071507 PixelPropsUtils: Simplify GoogleCamera whitelisting [jhenrique09]
+b7c7c34e05dd PixelPropsUtils: Consolidate google app check [Pranav Vashi]
+fccc902fd9fd PixelPropsUtils: Spoof user build [jhenrique09]
+9216e0fdd283 base: Add switch to unlink ringtone and notifications volume [1/2] [Pranav Vashi]
+7517d48840b4 NetworkTraffic: Simplify stats calc to prevent issues [Pranav Vashi]
+9b779bfdaff3 Revert "NetworkTraffic: Handle flooding network requests" [Pranav Vashi]
+521293bd58b4 Revert "SystemUI: Rework media art filter" [DarkJoker360]
+
+* packages/apps/Launcher3
+d1c85b26f3 Launcher3: Specify the component name to start the picker [Luca Stefani]
+
+* packages/apps/Settings
+2abea16ff6 Settings: Add switch to unlink ringtone and notifications volume [2/2] [Pranav Vashi]
+
+* packages/apps/crDroidSettings
+94a12f1 crdroid: Add string for linking ring and notification volumes [Pranav Vashi]
+
+* prebuilts/clang/host/linux-x86/clang-latest
+9b3d16b clang 17.0.0 (based on r487747) [Pranav Vashi]
+
+* system/sepolicy
+c842339cd Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
+
+* vendor/crDroidOTA
+5d1b9e9 vayu: Update [Pranav Vashi]
+be290dd hotdogg: 19-04-2023 update [DarkJoker360]
+be3ebee exynos9820: 2023-04-18 / 2023-04-19 (#431) [Tim Zimmermann]
+5ae1598 hotdogb update [frazerecho]
+7e8a364 kebab: update to 9.4 [SENSEIIIII]
+d300d99 instantnoodle: update to 9.4 [SENSEIIIII]
+261fed7 instantnoodlep: update to 9.4 [SENSEIIIII]
+fa78438 beyond1lte: 2023-04-18 (#430) [Tim Zimmermann]
+9865c06 munch: 18th April update [Akash Kakkar]
+7958eaf Raphael [firebird11]
+c6bb75a cepheus: update to crDroidAndroid-13.0-20230418-cepheus-v9.4 [¨raystef66¨]
+27afaff lmi: update to crDroidAndroid-13.0-20230418-lmi-v9.4 [¨raystef66¨]
+b89753a alioth: update to crDroidAndroid-13.0-20230418-alioth-v9.4 [¨raystef66¨]
+
+* device/xiaomi/msm8998-common
+7f00003 Merge remote-tracking branch 'origin/lineage-20.0' into 13.0 [Nanhumly]
+4455ed6 msm8998-common: Set correct manufacturer [Adithya R]
+
+====================
      2023-04-18    
 ====================
 * art
@@ -14,17 +101,24 @@ c2e1ea1d1 Nullability check for ipc module. [zijunzhao]
 a85f680ba Nullability check for sendfile module. [zijunzhao]
 9a3ba4835 Nullability check for random module. [zijunzhao]
 
+* external/e2fsprogs
+1a200621 e2fsck: Loosen fscrypt_policy struct size check [LuK1337]
+
+* external/setupcompat
+05ffca0 Merge 'lineage-20.0' into 13.0 [Andrzej Perczak]
+
 * frameworks/base
-376bb807f7a3 build: Don't check for fingerprint mismatch [Dan Cartier]
-521293bd58b4 Revert "SystemUI: Rework media art filter" [DarkJoker360]
 da034cc0764f Fix com.android.server.wm.TaskFpsCallbackController#unregisterListener method NEVER works [Rikka]
 8739006a7bee Do not crash webview if its group creation fails due to a dead process [Suren Baghdasaryan]
+15086eb6fee1 NotificationMenuRow: fix logspam [tejasvp25]
+b64787fec3fa BatteryStatsImpl: Avoid dividing by 0.0 in updateWifiState. [Shumao Hou]
+113499f56a50 Revert "InternetDialog: Require unlocking to turn on hotspot" [Pranav Vashi]
 
-* packages/apps/CarrierConfig
-96e13a6 Override name of Mainland China carriers [cjybyjk]
+* packages/apps/Settings
+cc310944e2 Settings: Add a toggle to force LTE_CA [1/2] [DarkJoker360]
 
-* packages/services/Telephony
-6e450dbae Add support for multi-language carrier name override [cjybyjk]
+* packages/apps/crDroidSettings
+651ba83 crdroid: Add a toggle to force LTE_CA [2/2] [ShevT]
 
 * vendor/crDroidOTA
 1d1d9eb miatoll: Update [popoA3M]
@@ -34,10 +128,22 @@ ca73584 ota: Hello world, davinci! [Andrzej Perczak]
 23130ea picasso: Update to crDroid 9.4 17-04 [masemoel]
 cc97678 Update S9 and S9+ to crDroid 9.4! [JeyKul]
 489fd0d walleye: crDroid 9.4 update fix [Ionut Gherman]
+036ba9a chiron: Update to crDroid 9.4 (April 2023 ASB) [Santiago García Mantiñán]
+98d2985 hotdog: Fix date [ShevT]
+2bdf78c walleye: crDroid 9.4 update [Ionut Gherman]
+72a1fa7 taimen: crDroid 9.4 update [Ionut Gherman]
+ae50caa hotdog: Update 20230417 [ShevT]
+6a1eb58 beryllium/guacamole/lemonades: update to build 20230417 [Lup Gabriel]
+012c2b8 begonia: 17-04-2023 update [DarkJoker360]
+903c78e surya: Add 17/04 build [GtrCraft]
 
 * device/xiaomi/msm8998-common
-7f00003 Merge remote-tracking branch 'origin/lineage-20.0' into 13.0 [Nanhumly]
-4455ed6 msm8998-common: Set correct manufacturer [Adithya R]
+e1c2836 msm8998-common: Build Xiaomi sensors impl [Sebastiano Barezzi]
+0c9793f msm8998-common: Drop doze related features [Sebastiano Barezzi]
+55fbcb5 msm8998-common: overlay: Set config_dozePulsePickup to false [Nanhumly]
+0d3070c msm8998-common: overlay: Disable VoWiFi for China carrier [LynnrinChan]
+61503f1 Revert "msm8998-common: Switch to Skia OpenGL ui renderer" [Nanhumly]
+208b855 Revert "msm8998-common: Enable ro.hwui.render_ahead and set it to 20 frames" [Nanhumly]
 
 ====================
      2023-04-17    
@@ -55,8 +161,20 @@ f07c690 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 * build/make
 fe0dfaecc Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
-* external/e2fsprogs
-1a200621 e2fsck: Loosen fscrypt_policy struct size check [LuK1337]
+* external/chromium-webview/patches
+7455e7f Update Chromium Webview to 112.0.5615.101 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+f451a85 Update Chromium Webview arm prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+ebac9db Update Chromium Webview arm64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+77c3db4 Update Chromium Webview x86 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+1e7c6f7 Update Chromium Webview x86_64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
 
 * frameworks/av
 834153421e C2SoftMpeg4Enc: Add support for levels in mpeg4/h263 encoder [Ram Mohan]
@@ -179,9 +297,6 @@ ca40bc7c99 camera: Don't segfault if we get a NULL parameter [Steve Kondik]
 c3a9634838 stagefright: add changes related to high-framerates in CameraSource [Paras Nagda]
 
 * frameworks/base
-15086eb6fee1 NotificationMenuRow: fix logspam [tejasvp25]
-b64787fec3fa BatteryStatsImpl: Avoid dividing by 0.0 in updateWifiState. [Shumao Hou]
-113499f56a50 Revert "InternetDialog: Require unlocking to turn on hotspot" [Pranav Vashi]
 d84b41a8c7d8 allow toggling VoWiFi while roaming by default [r3g_5z]
 6c44400c1fcf Fix NPE when store brightness and displayDevice is null [Shen Lin]
 f571b82d8775 ManifestConfigSource: disable debug mode [Steven Moreland]
@@ -1183,7 +1298,6 @@ e4a577a stats: Mod version switched to crdroid version [Pranav Vashi]
 4053a37 Fix errorprone warnings that should be errors [Cole Faust]
 
 * packages/apps/Settings
-cc310944e2 Settings: Add a toggle to force LTE_CA [1/2] [DarkJoker360]
 89fcf4a300 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
 * packages/apps/SetupWizard
@@ -1213,9 +1327,6 @@ d8e12e7 Updater: Change package name to avoid conflict [Pranav Vashi]
 8deb6ca Updater: add support for local updates [Joey]
 c19d50c Ship as crDroid based on LOS [Pranav Vashi]
 
-* packages/apps/crDroidSettings
-651ba83 crdroid: Add a toggle to force LTE_CA [2/2] [ShevT]
-
 * packages/modules/Wifi
 a93b8e2abf Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
@@ -1232,16 +1343,9 @@ e14ac1d10 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 a8c54a429 Merge 'lineage-20.0' into 13.0 [Pranav Vashi]
 
 * vendor/crDroidOTA
-036ba9a chiron: Update to crDroid 9.4 (April 2023 ASB) [Santiago García Mantiñán]
-98d2985 hotdog: Fix date [ShevT]
-2bdf78c walleye: crDroid 9.4 update [Ionut Gherman]
-72a1fa7 taimen: crDroid 9.4 update [Ionut Gherman]
-ae50caa hotdog: Update 20230417 [ShevT]
-6a1eb58 beryllium/guacamole/lemonades: update to build 20230417 [Lup Gabriel]
-012c2b8 begonia: 17-04-2023 update [DarkJoker360]
-903c78e surya: Add 17/04 build [GtrCraft]
 077e4c4 vayu: Update [Pranav Vashi]
 7a2ab56 sweet: Update changelog [Pranav Vashi]
+b84183b RM6785: update v9.4 [SriBalaji]
 
 * vendor/lineage
 c4059ef2 crdroid: Bump to version 9.4 [Pranav Vashi]
@@ -1290,32 +1394,9 @@ fe4f5016 crdroid: Generate OTA json at build time [Lup Gabriel]
 00707f4f crdroid: Add changelog script [Pranav Vashi]
 4d99166a vars: April 2023 Security update [Michael Bestas]
 
-* device/xiaomi/msm8998-common
-e1c2836 msm8998-common: Build Xiaomi sensors impl [Sebastiano Barezzi]
-0c9793f msm8998-common: Drop doze related features [Sebastiano Barezzi]
-55fbcb5 msm8998-common: overlay: Set config_dozePulsePickup to false [Nanhumly]
-0d3070c msm8998-common: overlay: Disable VoWiFi for China carrier [LynnrinChan]
-61503f1 Revert "msm8998-common: Switch to Skia OpenGL ui renderer" [Nanhumly]
-208b855 Revert "msm8998-common: Enable ro.hwui.render_ahead and set it to 20 frames" [Nanhumly]
-
 ====================
      2023-04-16    
 ====================
-* external/chromium-webview/patches
-7455e7f Update Chromium Webview to 112.0.5615.101 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-f451a85 Update Chromium Webview arm prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-ebac9db Update Chromium Webview arm64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-77c3db4 Update Chromium Webview x86 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-1e7c6f7 Update Chromium Webview x86_64 prebuilt to 112.0.5615.101 [Kevin F. Haggerty]
-
 * packages/apps/Launcher3
 b65d59f60f Launcher3: Enable SHOW_DOT_PAGINATION [TimoDo]
 38084a8330 Launcher3: Update themed icon map on enabling themed icons [Pranav Vashi]
@@ -1325,8 +1406,10 @@ afb9d8b addons: Clean up themed icons [Pranav Vashi]
 0c26efe addons: Update themed icons [Pranav Vashi]
 
 * vendor/crDroidOTA
-b84183b RM6785: update v9.4 [SriBalaji]
 cd62dd4 beryllium/guacamole/lemonades: update to build 20230416 [Lup Gabriel]
+9974ae9 cepheus: update to crDroidAndroid-13.0-20230415-cepheus-v9.3 [¨raystef66¨]
+6f7625d lmi: update to crDroidAndroid-13.0-20230415-lmi-v9.3 [¨raystef66¨]
+0ca3f47 alioth: update to crDroidAndroid-13.0-20230415-alioth-v9.3 [¨raystef66¨]
 
 ====================
      2023-04-15    
@@ -1357,13 +1440,22 @@ ef79d28 Eleven: Request MANAGE_EXTERNAL_STORAGE permission [DarkJoker360]
 915500463d Launcher3: Fix crash in SurfaceTransactionApplier [Shen Lin]
 25a0ae85e6 Launcher3: Fix monkey crash in createSurfaceParams [Anle Pan]
 b2ae0916b1 fixup! Launcher3: Vibrate on double tap to sleep [Pranav Vashi]
+567435ab9a Merge pull request #336 from awakened1712/crdroid-13-pr [Pranav Vashi]
+cdc93406ce New Crowdin updates (#337) [Lup Gabriel]
+
+* packages/apps/crDroidSettings
+493e054 New Crowdin updates (#1045) [Lup Gabriel]
+
+* packages/modules/Connectivity
+32e990ed8 Keep UID in lockdown when present in any range [Tommy Webb]
+5ac3debb1 Expose new isUidCurrentlyDisallowedByPolicy [Tommy Webb]
+66dd1eac3 Set allowed UIDs for networks based on policies [Tommy Webb]
+cf69bb3ea Always drop non-VPN ingress in lockdown mode [Oliver Scott]
 
 * vendor/crDroidOTA
-9974ae9 cepheus: update to crDroidAndroid-13.0-20230415-cepheus-v9.3 [¨raystef66¨]
-6f7625d lmi: update to crDroidAndroid-13.0-20230415-lmi-v9.3 [¨raystef66¨]
-0ca3f47 alioth: update to crDroidAndroid-13.0-20230415-alioth-v9.3 [¨raystef66¨]
 81be3ee sweet: Update [Pranav Vashi]
 f444153 venus/mars: Updated on Apr 15, 2023 [Flower sea]
+2488945 beryllium/guacamole/lemonades: update to build 20230414 [Lup Gabriel]
 
 * vendor/lineage
 e39ddd52 overlay: Move default status bar height to no-rro [Sebastiano Barezzi]
@@ -1378,54 +1470,16 @@ d489e68 manifest: April 2023 Security update [Michael Bestas]
 * kernel/configs
 02e3cb8 Add .gitupstream file [Michael Bestas]
 
-* packages/apps/Launcher3
-567435ab9a Merge pull request #336 from awakened1712/crdroid-13-pr [Pranav Vashi]
-cdc93406ce New Crowdin updates (#337) [Lup Gabriel]
-
 * packages/apps/SetupWizard
 f85129e FinishActivity: prevent jumping layout when finishing [Alexander Martinz]
 
-* packages/apps/crDroidSettings
-493e054 New Crowdin updates (#1045) [Lup Gabriel]
+* packages/apps/Updater
+bfbc440 Updater: Show the correct percentage during package installation [Tommaso Fonda]
 
 * packages/modules/Bluetooth
 957b6985fc Add system properties to config audio codec priority [Vance Yu]
 2dd34269e4 audio_hal/aidl: Don't fallback to SW encoding when HW is supported [Hans Månsson]
 
-* packages/modules/Connectivity
-32e990ed8 Keep UID in lockdown when present in any range [Tommy Webb]
-5ac3debb1 Expose new isUidCurrentlyDisallowedByPolicy [Tommy Webb]
-66dd1eac3 Set allowed UIDs for networks based on policies [Tommy Webb]
-cf69bb3ea Always drop non-VPN ingress in lockdown mode [Oliver Scott]
-
-* vendor/crDroidOTA
-2488945 beryllium/guacamole/lemonades: update to build 20230414 [Lup Gabriel]
-
-====================
-     2023-04-13    
-====================
-* packages/apps/Launcher3
-0926c7cc7b Launcher3: PageIndicatorDots: null pointer Exception [Harsh]
-
-* packages/apps/Updater
-bfbc440 Updater: Show the correct percentage during package installation [Tommaso Fonda]
-
-* vendor/crDroidOTA
-e397c69 munch: 13 April update [Akash Kakkar]
-
-====================
-     2023-04-12    
-====================
-* hardware/qcom-caf/wlan
-79ccbda wcnss-service: Remove setup_wlan_driver_ath_prop() [Michael Bestas]
-ccf7898 Reading the serialno property is forbidden [Tim Kryger]
-405fcce wcnss_service: Deal with mdm-detect too [Steve Kondik]
-0f9526e wcnss: Build and dlopen wcnss_qmi_client as a shared library [Ethan Chen]
-
-* packages/apps/Launcher3
-c7efd38216 Launcher3: Adjust QSB width to align with hotseat [Phạm Tiên Sinh]
-
-* vendor/crDroidOTA
-3340581 venus/mars: Update gapps address [Flower sea]
-8f0ea61 Cheetah Initial 9.3 release (#426) [osm1019]
+* system/sepolicy
+7d29eba63 Label system properties to config audio codec priority [Michael Bestas]
 
