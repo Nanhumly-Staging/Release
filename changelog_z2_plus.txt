@@ -1,0 +1,84 @@
+====================
+     2023-05-20    
+====================
+* device/zuk/msm8996-common
+32c6619 msm8996-common: Explicitly disable AVB [Nolen Johnson]
+fbb875e msm8996-common: Remove verity support [Roberto Sartori]
+e201b26 msm8996-common: Don't pin camera app in memory [Danny Lin]
+aa111f4 msm8996-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
+34736d4 msm8996-common: Do not hardcode ZRAM size [0ranko0P]
+2470791 msm8996-common: Remove max ZRAM compression streams setting [Georg Veichtlbauer]
+ad061fa msm8996-common: Enable zram writeback job scheduler [Minchan Kim]
+4734908 msm8996-common: fstab: correct zram parameter names [Minchan Kim]
+904e95d msm8996-common: Enable zram writeback [Minchan Kim]
+d2eb226 msm8996-common: Remove F2FS encryptable flag [Nanhumly]
+523fd6b Revert "msm8996-common: Drop F2FS support" [Nanhumly]
+9f73531 msm8996-common: Sort vendor.prop [Nanhumly]
+f46fe1b msm8996-common: Call my extra directory [Nanhumly]
+1591925 msm8996-common: Stop explicitely building netutils-wrapper-1.0 [Sebastiano Barezzi]
+b083fc9 msm8996-common: Don't build vndk_package [Luca Stefani]
+95d3330 msm8996-common: Nuke deprecated bluetooth flag [Erfan Abdi]
+d7e2264 msm8996-common: Remove obsolete TARGET_BOARD_PLATFORM_GPU [Arne Coucheron]
+
+* kernel/zuk/msm8996
+82ca8198c2f6 kerneltree: Add empty Android.mk file to avoid conflict [AmeChanRain]
+fd2e0888a1e7 configs: Enable necessary configs for KernelSU [F-19-F]
+a4c0902f3695 security: selinux: allow init exec (kernelsu:ksud) under nosuid [F-19-F]
+a7610558ed85 drivers: Add KernelSU kbuild and Makefile into kernel source tree [stic-server-open]
+d091fbf5fc39 kerneltree: Import KernelSU [Nanhumly]
+9900738f8607 configs: Enable ZRAM-writeback [stic-server-open]
+19e590de6efa UPSTREAM: drivers: zram: move backing_dev under macro ZRAM_WRITEBACK [Yue Hu]
+27ea4c66ee87 UPSTREAM: drivers: zram: fix idle/writeback string compare [Minchan Kim]
+27e2bdf8063b UPSTREAM: drivers: zram: idle writeback fixes and cleanup [Minchan Kim]
+0dffd209edb7 UPSTREAM: drivers: zram: writeback throttle [Minchan Kim]
+88ecf4f023d2 UPSTREAM: drivers: zram: add bd_stat statistics [Minchan Kim]
+8a1e14fced0b BACKPORT: drivers: zram: support idle/huge page writeback [Minchan Kim]
+715626ba278c UPSTREAM: drivers: zram: introduce ZRAM_IDLE flag [Minchan Kim]
+51d8ce8086e4 BACKPORT: drivers: zram: refactor flags and writeback stuff [Minchan Kim]
+2cce734a59c1 UPSTREAM: drivers: zram: fix lockdep warning of free block handling [Minchan Kim]
+f629d7a2e82a BACKPORT: drivers: block-zram: fix double free backing device [Minchan Kim]
+c63108649391 configs: Drop -lineage identifier from kernel [Georg Veichtlbauer]
+
+====================
+     2023-05-19    
+====================
+* device/zuk/msm8996-common
+4f53097 msm8996-common: Drop mediaextractor seccomp policy [Bruno Martins]
+57b149d msm8996-common: Replace BOARD_CHARGER_DISABLE_INIT_BLANK with ro.charger.disable_init_blank [Yifan Hong]
+
+====================
+     2023-05-18    
+====================
+====================
+     2023-05-17    
+====================
+====================
+     2023-05-16    
+====================
+====================
+     2023-05-15    
+====================
+====================
+     2023-05-14    
+====================
+====================
+     2023-05-13    
+====================
+====================
+     2023-05-12    
+====================
+====================
+     2023-05-11    
+====================
+====================
+     2023-05-10    
+====================
+====================
+     2023-05-09    
+====================
+====================
+     2023-05-08    
+====================
+====================
+     2023-05-07    
+====================
