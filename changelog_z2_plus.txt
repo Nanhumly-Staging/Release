@@ -1,17 +1,59 @@
 ====================
+     2023-05-22    
+====================
+* build/make
+ba98ab84a build: Always use release-keys [Pranav Vashi]
+
+* frameworks/base
+59c5d28568c3 build: Don't check for fingerprint mismatch [Dan Cartier]
+
+* lineage/scripts
+404285d key-migration: fix migration.sh for Android 12/13 [kxxt]
+
+* lineage/wiki
+2c9b8f4f wiki: mata: Correct the bluetooth specification [Tommaso Fonda]
+96b639d9 wiki: Fix post title on fw_update pages [razorloves]
+
+* packages/apps/CarrierConfig
+7291df8 Override name of Mainland China carriers [cjybyjk]
+
+* packages/services/Telephony
+e34680908 Add support for multi-language carrier name override [cjybyjk]
+
+* device/zuk/msm8996-common
+e6e6642 msm8996-common: Disable the Significant Motion Detector [dianlujitao]
+
+====================
+     2023-05-21    
+====================
+* lineage/hudson
+24a01c9 hudson: Promote gta4xl Family to 20 [Tim Zimmermann]
+dc2c5e3 Regenerate device dependency mappings [LineageOS Infra]
+4e58d02 What's everyone's favorite essential oil? [Nolen Johnson]
+
+* lineage/wiki
+5765c266 wiki: devices: Promote gta4xl Family to 20 [Tim Zimmermann]
+0d782181 devices: Promote the Essential Phone [Nolen Johnson]
+
+* device/zuk/msm8996-common
+e0384be msm8996-common: Remove duplicate SIP+VoIP permission [Timi Rautamäki]
+857c46d msm8996-common: rootdir: Drop no longer uses sys.io.scheduler property [ZhaoYueNan]
+01bbbdb msm8996-common: Move ueventd.qcom.rc to /vendor/etc [Albert Tang]
+db19f03 msm8996-common: Explicitly disable AVB [Nolen Johnson]
+759cd7a msm8996-common: Remove verity support [Roberto Sartori]
+155a945 msm8996-common: Don't pin camera app in memory [Danny Lin]
+8cffe51 msm8996-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
+331a717 msm8996-common: Do not hardcode ZRAM size [0ranko0P]
+9764892 msm8996-common: Remove max ZRAM compression streams setting [Georg Veichtlbauer]
+e9da1ce msm8996-common: Enable zram writeback job scheduler [Minchan Kim]
+730dd70 msm8996-common: fstab: correct zram parameter names [Minchan Kim]
+a93a8ee msm8996-common: Enable zram writeback [Minchan Kim]
+1f9a3fd msm8996-common: Remove F2FS encryption flag [Nanhumly]
+
+====================
      2023-05-20    
 ====================
 * device/zuk/msm8996-common
-32c6619 msm8996-common: Explicitly disable AVB [Nolen Johnson]
-fbb875e msm8996-common: Remove verity support [Roberto Sartori]
-e201b26 msm8996-common: Don't pin camera app in memory [Danny Lin]
-aa111f4 msm8996-common: Jelly: Default homepage and search engine changed to Bing [Nanhumly]
-34736d4 msm8996-common: Do not hardcode ZRAM size [0ranko0P]
-2470791 msm8996-common: Remove max ZRAM compression streams setting [Georg Veichtlbauer]
-ad061fa msm8996-common: Enable zram writeback job scheduler [Minchan Kim]
-4734908 msm8996-common: fstab: correct zram parameter names [Minchan Kim]
-904e95d msm8996-common: Enable zram writeback [Minchan Kim]
-d2eb226 msm8996-common: Remove F2FS encryptable flag [Nanhumly]
 523fd6b Revert "msm8996-common: Drop F2FS support" [Nanhumly]
 9f73531 msm8996-common: Sort vendor.prop [Nanhumly]
 f46fe1b msm8996-common: Call my extra directory [Nanhumly]
@@ -42,6 +84,9 @@ c63108649391 configs: Drop -lineage identifier from kernel [Georg Veichtlbauer]
 ====================
      2023-05-19    
 ====================
+* device/lineage/sepolicy
+f5df12b sepolicy: common: Add rules for FM Radio app properties [me-cafebabe]
+
 * device/zuk/msm8996-common
 4f53097 msm8996-common: Drop mediaextractor seccomp policy [Bruno Martins]
 57b149d msm8996-common: Replace BOARD_CHARGER_DISABLE_INIT_BLANK with ro.charger.disable_init_blank [Yifan Hong]
@@ -49,36 +94,185 @@ c63108649391 configs: Drop -lineage identifier from kernel [Georg Veichtlbauer]
 ====================
      2023-05-18    
 ====================
+* external/chromium-webview/patches
+d11ed57 Update Chromium Webview to 113.0.5672.132 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+f4b7cc9 Update Chromium Webview arm prebuilt to 113.0.5672.132 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+0882618 Update Chromium Webview arm64 prebuilt to 113.0.5672.132 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+aebf91a Update Chromium Webview x86 prebuilt to 113.0.5672.132 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+a875959 Update Chromium Webview x86_64 prebuilt to 113.0.5672.132 [Kevin F. Haggerty]
+
+* lineage-sdk
+d5e7962c sdk: remove aar target [Joey]
+
+* lineage/wiki
+b18fcc0d pages: sdk: Stop building AAR version [Nolen Johnson]
+
+* packages/apps/FMRadio
+244a7df FMRadio: Generalize Built-In FM Antenna support [me-cafebabe]
+
+* packages/apps/LineageParts
+cfc8f8c LineageParts: Add proper offset for trigger pager [TheScarastic]
+
 ====================
      2023-05-17    
 ====================
+* external/unrar
+45b4c78 unrar: Move to /system_ext [Nolen Johnson]
+
+* lineage/hudson
+6b065d3 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+a95b538 Updated aosp-minimal to 17-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+ee1036d build-webview: Update default webview to 113.0.5672.132 [Kevin F. Haggerty]
+
+* vendor/lineage
+9fd8e21b apn: Update mcc525 [Nicholas Lim]
+b9d44c56 vars: Pixel 7a [Chirayu Desai]
+
 ====================
      2023-05-16    
 ====================
+* external/rsync
+cdb7e988 rsync: Move to /system_ext [Nolen Johnson]
+
+* external/zstd
+e6a035a8 zstd: Move to /system_ext [Nolen Johnson]
+
+* lineage/mirror
+80eb1da Updated aosp-minimal to 16-May-2023 12:01 UTC [Tim Schumacher]
+
 ====================
      2023-05-15    
 ====================
+* frameworks/base
+ec54181d2a18 Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+de31e7f Regenerate device dependency mappings [LineageOS Infra]
+75f3801 hudson: Stop mentioning lmipro [Sebastiano Barezzi]
+
+* lineage/mirror
+b4913fd Updated lineage-minimal to 15-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+5dd4b42b wiki: devices: Drop lmipro [Sebastiano Barezzi]
+
+* packages/apps/Aperture
+78e3fca Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+5dd78e887 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+2a7cb7c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+54fec352 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+7e69db40 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+f2f22885f9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+9ddb4f1 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+5d2b547f9 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+13e8e77 Automatic translation import [LineageOS Infra]
+
 ====================
      2023-05-14    
 ====================
+* frameworks/native
+34602f665f libgui: reset buffer count to max slots instead of returning BAD_VALUE. [Rajat Yadav]
+
+* lineage/mirror
+331e685 Updated to 14-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+48be0c7a wiki: Fix 'Manually upgrading...' text indentation [LuK1337]
+
 ====================
      2023-05-13    
 ====================
+* lineage/hudson
+c67e54f Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+59dba5e Updated aosp-minimal to 13-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+c4828f6a wiki: Restore TOC logic [Michael W]
+
 ====================
      2023-05-12    
 ====================
+* android
+818f2ec lineage: Bring back unrar [DroidFreak32]
+cd13b15 Track external/zstd [DroidFreak32]
+
+* external/openssh
+e6133bc9 Merge commit 'abcaa080a6f53c70e70d21b22ad704df5f810b95' of https://android.googlesource.com/platform/external/openssh into lineage-20.0 [DroidFreak32]
+
+* external/rsync
+c0199507 rsync: Enable support for zstd compression [DroidFreak32]
+
+* lineage/hudson
+803bc1b Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+5de63c0 Updated to 12-May-2023 13:41 UTC [Kevin F. Haggerty]
+3545627 Updated to 12-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+be5ed7c4 wiki: Sync committers/reviewers table with Gerrit [LuK1337]
+
+* vendor/lineage
+055bec9f config: common-full: unrar undead [DroidFreak32]
+dcf0e889 config: common-full: Build zstd cmdline tools [DroidFreak32]
+
 ====================
      2023-05-11    
 ====================
+* device/qcom/sepolicy_vndr-legacy-um
+181fd5be bengal: Label emmc discard_max_bytes sysfs [Michael Bestas]
+be8afb70 qva: label bengal extcon [Michael Bestas]
+
+* lineage/mirror
+fbd1b8c Updated aosp-minimal to 11-May-2023 12:01 UTC [Tim Schumacher]
+
 ====================
      2023-05-10    
 ====================
+* external/unrar
+0a7aa44 unrar: Re-Enable Volume and Crypt modules [DroidFreak32]
+17930f6 unrar: Add support for Android [DroidFreak32]
+
+* lineage/mirror
+c736b27 Updated aosp-minimal to 10-May-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3b00b933 wiki: Drop therubyracer, use Ruby 3.0 [Albert Tang]
+
 ====================
      2023-05-09    
 ====================
-====================
-     2023-05-08    
-====================
-====================
-     2023-05-07    
-====================
+* lineage/wiki
+4b12a8a1 wiki: devices: Update device picture for Mi439 [me-cafebabe]
+ae730ca8 wiki: devices: Update device picture for Mi8917 & Mi8937 [me-cafebabe]
+

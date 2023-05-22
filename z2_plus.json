@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1684588707,
-      "filename": "lineage-20.0-20230520-UNOFFICIAL-z2_plus.zip",
-      "id": "2708d1f66db43f9edd18df92a8e3d64eba98186ad7d450aef572d9ba2c71a47f",
+      "datetime": 1684761040,
+      "filename": "lineage-20.0-20230522-UNOFFICIAL-z2_plus.zip",
+      "id": "eb2e38bacb30d47484b26928e44b035d01fbbdc6e4ea0e12d77c10b178f4f2a6",
       "romtype": "UNOFFICIAL",
-      "size": 787204316,
-      "url": "https://down.warbler.cc/d/Zuk-Z2/LineageOS/20.0/lineage-20.0-20230520-UNOFFICIAL-z2_plus.zip",
+      "size": 787753466,
+      "url": "https://down.warbler.cc/d/Zuk-Z2/LineageOS/20.0/lineage-20.0-20230522-UNOFFICIAL-z2_plus.zip",
       "version": "20.0"
     }
   ]
