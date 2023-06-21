@@ -1,721 +1,616 @@
 ====================
-     2023-05-05    
-====================
-* build/make
-1302d5f47 build: Always use release-keys [Pranav Vashi]
-
-* frameworks/base
-c5849c46109e build: Don't check for fingerprint mismatch [Dan Cartier]
-
-* lineage/mirror
-9a89738 Updated aosp-minimal to 04-May-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-9fd7533e wiki: Improve guides [Michael W]
-83c1143f wiki: Add cache busting [Michael W]
-7dc19680 devices: Properly split kane, kiev and nairo variants model numbers [Nolen Johnson]
-
-* packages/apps/CarrierConfig
-fa161a2 Override name of Mainland China carriers [cjybyjk]
-
-* packages/services/Telephony
-1fe297061 Add support for multi-language carrier name override [cjybyjk]
-
-* vendor/lineage
-4d850217 vars: Update kernels for May security update [Michael Bestas]
-72613567 vars: Drop unused prev_* vars [Michael Bestas]
-f0331425 vars: May 2023 Security update [Michael Bestas]
-16370640 vars: Add some vars to remove hardcoding in scripts [Chirayu Desai]
-
-* device/xiaomi/msm8998-common
-a3290f7 Revert "msm8998-common: Enable TARGET_USES_OLD_MNC_FORMAT" [Georg Veichtlbauer]
-
-* kernel/xiaomi/msm8998
-092f6552c544 Revert "{chiron,sagit}_defconfig: enable CONFIG_NETFILTER_XT_MATCH_QTAGUID" [Nanhumly]
-d47922d2ee1f Revert "netfilter: Kconfig: add place holder for NETFILTER_XT_MATCH_QTAGUID" [Nanhumly]
-4425fbc89291 Merge tag 'LA.UM.7.2.c25-07900-sdm660.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into lineage-20.0 [Nanhumly]
-
-====================
-     2023-05-04    
-====================
-* hardware/qcom-caf/msm8953/audio
-07ed74d94a audio-hal: AudioEffect reply overflow [Lakshman Chaluvaraju]
-
-* lineage/mirror
-d85b8b6 Updated aosp-minimal to 03-May-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-d429bf89 wiki: Use Homebrew for installing adb on macOS [LuK1337]
-e46a830c wiki: dre: Switch to oplus fastbootd instructions [Albert Tang]
-
-* vendor/lineage
-d7fa6a32 lineage: Fix SDK Addon build on x86/x86_64 targets [DroidFreak32]
-
-* device/xiaomi/msm8998-common
-1fed24f msm8998-common: Update ISap HAL to version 1.2 [Nanhumly]
-
-====================
-     2023-05-03    
+     2023-06-21    
 ====================
 * android
-8f033d9 manifest: May 2023 Security update [Michael Bestas]
+1b16713 manifest: Track our contexthub [Nolen Johnson]
 
-* hardware/qcom-caf/msm8996/audio
-7c22b52908 audio-hal: AudioEffect reply overflow [Lakshman Chaluvaraju]
-
-* lineage/hudson
-551345d updater: Stop opting g6 out of lineage recovery [Nolen Johnson]
-28f24ac "Like a G6", or in this case, an actual G6 [Nolen Johnson]
-b800beb Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-97d77ac5 devices: Revive the LGE G6 family and split variant [Nolen Johnson]
-dc4ba4c2 wiki: Split miatoll [Michael W]
-7df631bc wiki: Split alioth [Michael W]
-a30fcfd6 wiki: Split nairo [Michael W]
-0f3a8451 wiki: Split Mi439 [Michael W]
-bd8c0b41 wiki: Split Mi8917 [Michael W]
-47601a60 wiki: Split Mi8937 [Michael W]
-e59d4833 wiki: Split haydn [Michael W]
-8fc96750 wiki: Split onclite [Michael W]
-119dd93f wiki: Split tomato [Michael W]
-ed2b463c wiki: Split espresso3g [Michael W]
-7572b463 wiki: Split espressowifi [Michael W]
-b0dfa943 wiki: Split r5 [Michael W]
-9e7db780 wiki: Split cancro [Michael W]
-c53349e0 wiki: Split clark [Michael W]
-1b48367e wiki: Split ido [Michael W]
-cbccbec6 wiki: Split davinci [Michael W]
-cebbe553 wiki: Split A6020 [Michael W]
-52a484ec wiki: Split quill_tab [Michael W]
-1e2a201f wiki: Split quill [Michael W]
-036e4ea2 wiki: Split umts_spyder [Michael W]
-036b55c1 wiki: Split find7 [Michael W]
-3fd831e3 wiki: Split spyder [Michael W]
-7bcefef5 wiki: Split cherry [Michael W]
-5b75c451 wiki: Split vegetalte [Michael W]
-c5a5f32c wiki: Split Z00T [Michael W]
-413b834b wiki: Split porg_tab [Michael W]
-855753ff wiki: Split porg [Michael W]
-24c92f9b wiki: Split zl1 [Michael W]
-bf52dc18 wiki: Split oneplus3 [Michael W]
-5525e261 wiki: Split kane [Michael W]
-7f17804f wiki: Split kiev [Michael W]
-9de9f779 wiki: Split nio [Michael W]
-94bf55b6 wiki: Split pyxis [Michael W]
-ec0a154c wiki: Split ginkgo [Michael W]
-d6d5d833 wiki: Split lmi [Michael W]
-cea3a165 wiki: Split lisa [Michael W]
-04ff95a7 wiki: Split foster_tab [Michael W]
-866b498e wiki: Split foster [Michael W]
-6115971d wiki: Split gauguin [Michael W]
-fb7bc480 wiki: Split apollon [Michael W]
-b69eb387 wiki: Improve device info page [Michael W]
-b31323c1 wiki: Prepare for variants [Michael W]
-
-* packages/apps/Aperture
-4f4f41a Revert "Aperture: Set video framerate button enabled only on one place" [LuK1337]
-
-* packages/apps/LineageParts
-214dacb LineageParts: Restrict activities to primary profile only [DroidFreak32]
-
-* kernel/xiaomi/msm8998
-435daee699e5 BACKPORT: power: qpnp-smb2: Report TIME_TO_FULL_NOW and CHARGE_FULL_DESIGN [Anirudh Ghayal]
-e043e8f7eac3 power: qpnp-smbcharger: expose CURRENT_MAX prop via batt psy [Tirupathi Reddy]
-1f5e8dc5aa6d power: qpnp-smbcharger: expose CHARGE_COUNTER prop via batt psy [Ankit Sharma]
-97cba61dd8a6 power: qpnp-smbcharger: Reverse the sign of CURRENT_NOW [Kavya Nunna]
-83cc86041b6e power: qpnp-smb2: Add support for reducing FCC for ESR [Anirudh Ghayal]
-a030ff3c9079 ALSA: control: use counting semaphore as write lock for ELEM_WRITE operation [Takashi Sakamoto]
-577359c5557c ALSA: control: Fix memory corruption risk in snd_ctl_elem_read [Richard Fitzgerald]
-c667d705e92a ALSA: control: code refactoring for ELEM_READ/ELEM_WRITE operations [Takashi Sakamoto]
-f9ad4cae67ec ALSA: pcm: Move rwsem lock inside snd_ctl_elem_read to prevent UAF [Clement Lecigne]
-47077a3cd1aa {chiron,sagit}_defconfig: Enable CFQ group schedule [Rick Yiu]
-4af27285c1bb {chiron,sagit}_defconfig: Disable BFQ [Georg Veichtlbauer]
-
-====================
-     2023-05-02    
-====================
 * build/make
-3367d1705 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
+88c127cc9 build: Always use release-keys [Pranav Vashi]
 
 * frameworks/base
-106dca45f56e Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* frameworks/native
-5a07751162 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* lineage/crowdin
-92cb72c crowdin: Allow passing review message [LuK1337]
-
-* lineage/hudson
-b408e0a device_deps: Motorola SDM660 is not Motorola MSM8898 [Nolen Johnson]
-
-* lineage/scripts
-f6b08b9 aosp-merger: Drop unused prev_* vars [Michael Bestas]
-9ec0cac pixel: Drop prev_build_id and prev_build_number [Chirayu Desai]
-795e2a8 pixel: Remove hardcoded version from get-new-devices.py [Chirayu Desai]
-c32092b pixel: Always write full build desc and fingerprint [Chirayu Desai]
-
-* packages/apps/Aperture
-672a3c7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Eleven
-c7552c0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-69e73593ea Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* packages/apps/SetupWizard
-9471070 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Trebuchet
-1c61145d60 Automatic translation import [LineageOS Infra]
-
-* packages/modules/Bluetooth
-ec322f2384 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-185c6291 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* packages/services/Telecomm
-ccbfa318b Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas]
-
-* vendor/crowdin
-a580c03 Automatic translation import [LineageOS Infra]
-
-====================
-     2023-05-01    
-====================
-* lineage/hudson
-62ba37b hudson: Add Xperia 5 III (pdx214) [kyasu]
-0585f90 Gotta love the lengths people go to to run Lineage [Nolen Johnson]
-
-* lineage/wiki
-dac2a1f1 wiki: Add Xperia 5 III (pdx214) [kyasu]
-98858cea wiki: Add Xperia 1 III (pdx215) [Luofan Chen]
-4de36d44 templates: fastboot_sony: Move before_recovery_install to after unlocking [Luofan Chen]
-ae0f9fce devices: Import us996d [Nolen Johnson]
-
-====================
-     2023-04-30    
-====================
-* lineage/crowdin
-5e77bbb config: lineage-20.0: Add hardware/mediatek/BesLoudness [nift4]
-
-* lineage/hudson
-872c324 hudson: Add Xperia 1 III (pdx215) [Luofan Chen]
-
-* lineage/wiki
-990239fc wiki: FAQ: Add download images question [Michael W]
-c4211e15 wiki: Remove devrel@ from FAQ [LuK1337]
-
-* device/xiaomi/msm8998-common
-5c6aed0 msm8998-common: sepolicy: Allow rild to communicate with qtidataservices [Nanhumly]
-
-====================
-     2023-04-29    
-====================
-* lineage/wiki
-1bf4b5df wiki: signing_builds: APEXes signing instructions [Gérard Parat]
-
-* device/xiaomi/msm8998-common
-66ff9dc msm8998-common: overlay: Disable carrier video calls [Nanhumly]
-
-* kernel/xiaomi/msm8998
-2d9b349303d4 treewide: Resolve Clang 16+ compiler warnings [ederekun]
-ee3b289c9f0d staging: qcacld-3.0: Explicitly define size for array mdie [Nicholas Magill]
-7c1825864c3d treewide: Fix -Wstrict-prototypes errors [Nanhumly]
-c542723cf985 {chiron,sagit}_defconfig: Enable CONFIG_IP_NF_TARGET_TTL [NurKeinNeid]
-a21b1f2d533f {chiron,sagit}_defconfig: Use Westwood+ TCP congestion algorithm by default [Sultan Alsawaf]
-dc71097af115 tcp_westwood: fix tcp_westwood_info() style mistakes [chun Long]
-424099688447 tcp_output: set initial TCP window size to 64K (speed improvement) [andip71]
-88670be45d7c tcp: introduce tcp_jiffies32 [Eric Dumazet]
-86c4488ed37a tcp_westwood: use tcp_jiffies32 instead of tcp_time_stamp [Eric Dumazet]
-bbf33e8e1f85 tcp_westwood: tune up a bit [Yaroslav Furman]
-d59e8a363c59 tcp_westwood: make 'rtt_min' and 'init_rtt' tunables and remove HZ dependency [Yaroslav Furman]
-f7272b277f65 tcp_westwood : Bump minimum RTT and lower initial RTT duration [Harsh Shandilya]
-e86693fd9bdc {chiron,sagit}_defconfig: make SLMK more agressive [Yaroslav Furman]
-469649f99b6c {chiron,sagit}_defconfig: Use Simple LMK [Sultan Alsawaf]
-cfd10726a616 simple_lmk: Thaw victims upon killing them [Sultan Alsawaf]
-60ee6b6818a4 simple_lmk: Make the reclaim thread freezable [Sultan Alsawaf]
-37f63dfbb1ef simple_lmk: Be extra paranoid if tasks can have no pages [Sultan Alsawaf]
-311fa0dd6569 mm: Increment kswapd_waiters for throttled direct reclaimers [Sultan Alsawaf]
-e63c65a069e8 buffer: eliminate the need to call free_more_memory() in __getblk_slow() [Jens Axboe]
-26bb4a228014 buffer: grow_dev_page() should use __GFP_NOFAIL for all cases [Jens Axboe]
-37bf677fa06a buffer: have alloc_page_buffers() use __GFP_NOFAIL [Jens Axboe]
-91b30a66c52e mm: vmpressure: Fix rampant inaccuracies caused by stale data usage [Sultan Alsawaf]
-c3c6529f3c4e mm: vmpressure: Fix a race that would erroneously clear accumulated data [Sultan Alsawaf]
-515136fb46ec mm: vmpressure: Ignore costly-order allocations for direct reclaim too [Sultan Alsawaf]
-a2fc3e67739b simple_lmk: Optimize victim finder to eliminate hard-coded adj ranges [Sultan Alsawaf]
-1236b2a9275f simple_lmk: Cacheline-align the victims array and mm_free_lock on SMP [Sultan Alsawaf]
-24b6ac623187 simple_lmk: Pass a custom swap function to sort() [Sultan Alsawaf]
-c8adeccd30a0 simple_lmk: Skip victim reduction when all victims need to be killed [Sultan Alsawaf]
-b89cb690eb62 simple_lmk: Use MIN_FREE_PAGES wherever pages_needed is used [Sultan Alsawaf]
-4a47bd7d5a24 simple_lmk: Don't block in simple_lmk_mm_freed() on mm_free_lock [Sultan Alsawaf]
-2d480849e77a mm: vmpressure: Don't export tunables to userspace [Sultan Alsawaf]
-2b0401fb58b6 simple_lmk: Update Kconfig description for VM pressure change [Sultan Alsawaf]
-532ec3b4f36a simple_lmk: Add !PSI dependency [Sultan Alsawaf]
-59fce3a243ab simple_lmk: Print a message when the timeout is reached [Sultan Alsawaf]
-507061ee3d43 VFS: use synchronize_rcu_expedited() in namespace_unlock() [NeilBrown]
-65c1442541b6 simple_lmk: Remove unnecessary clean-up when timeout is reached [Sultan Alsawaf]
-83e78ba5fdef simple_lmk: Hold an RCU read lock instead of the tasklist read lock [Sultan Alsawaf]
-db930b046816 mm: Don't stop kswapd on a per-node basis when there are no waiters [Sultan Alsawaf]
-b07a1df70d79 simple_lmk: Consider all positive adjs when finding victims [Sultan Alsawaf]
-2cb998f0b17b mm: vmpressure: Ignore allocation orders above PAGE_ALLOC_COSTLY_ORDER [Sultan Alsawaf]
-022587ac4c59 mm: Don't warn on page allocation failures for OOM-killed processes [Sultan Alsawaf]
-c74f96c688a3 mm: vmpressure: Don't cache the window size [Sultan Alsawaf]
-adce6d08b228 mm: vmpressure: Interpret zero scanned pages as 100% pressure [Sultan Alsawaf]
-7f4efe885ad3 mm: vmpressure: Don't exclude any allocation types [Sultan Alsawaf]
-3635f3c633aa mm: vmpressure: Make local functions and global variables static [Sultan Alsawaf]
-a4f84d7c005a simple_lmk: Update adj targeting for Android 10 [Sultan Alsawaf]
-90ea9227f21d simple_lmk: Use vmpressure notifier to trigger kills [Sultan Alsawaf]
-f08ba298a43c mm: Stop kswapd early when nothing's waiting for it to free pages [Sultan Alsawaf]
-bdb4fed2cebb simple_lmk: Include swap memory usage in the size of victims [Sultan Alsawaf]
-39f32b901816 simple_lmk: Relax memory barriers and clean up some styling [Sultan Alsawaf]
-0cd0ff4c332a simple_lmk: Place victims onto SCHED_RR [Sultan Alsawaf]
-dbb9368effae simple_lmk: Add a timeout to stop waiting for victims to die [Sultan Alsawaf]
-daf331f14ef4 simple_lmk: Ignore tasks that won't free memory [Sultan Alsawaf]
-52ae709bc15d simple_lmk: Simplify tricks used to speed up the death process [Sultan Alsawaf]
-e442c8b38c32 simple_lmk: Report mm as freed as soon as exit_mmap() finishes [Sultan Alsawaf]
-e8c6cac2a123 cpuset, mm: fix TIF_MEMDIE check in cpuset_change_task_nodemask [Michal Hocko]
-8c631fe7beda freezer, oom: check TIF_MEMDIE on the correct task [Michal Hocko]
-cb8ffc1258cd simple_lmk: Mark victim thread group with TIF_MEMDIE [Sultan Alsawaf]
-3cffab70dedd simple_lmk: Disable OOM killer when Simple LMK is enabled [Sultan Alsawaf]
-7459e83116f6 simple_lmk: Print a message when there are no processes to kill [Sultan Alsawaf]
-e2dbb7f654e2 simple_lmk: Remove compat cruft not specific to 4.4 [Sultan Alsawaf]
-4c9481c87851 simple_lmk: Update copyright to 2020 [Sultan Alsawaf]
-dacbaa342bfd simple_lmk: Don't queue up new reclaim requests during reclaim [Sultan Alsawaf]
-b4772b5e4c47 simple_lmk: Increase default minfree value [Sultan Alsawaf]
-c2da2f4ae66a simple_lmk: Clean up some code style nitpicks [Sultan Alsawaf]
-946dfa86a796 simple_lmk: Make reclaim deterministic [Sultan Alsawaf]
-8d38929eaa13 simple_lmk: Fix broken multicopy atomicity for victims_to_kill [Sultan Alsawaf]
-89d29dac34f1 simple_lmk: Use proper atomic_* operations where needed [Sultan Alsawaf]
-89786f957e88 simple_lmk: Remove kthread_should_stop() exit condition [Sultan Alsawaf]
-9818bde18b95 simple_lmk: Fix pages_found calculation [Sultan Alsawaf]
-85d1cefa253d simple_lmk: Introduce Simple Low Memory Killer for Android [Sultan Alsawaf]
-02c205e44d94 zram: Move default compression algorithm choice to Kconfig [Nathan Chancellor]
-
-====================
-     2023-04-28    
-====================
-* lineage/mirror
-4751831 Updated aosp-minimal to 27-Apr-2023 12:01 UTC [Tim Schumacher]
-
-* vendor/qcom/opensource/fm-commonsys
-ef61811 FM2: Slight design adjustments [Michael W]
-
-* kernel/xiaomi/msm8998
-4b243654327d BACKPORT: cgroup: Remove unused cgrp variable [Shaokun Zhang]
-d972b9ea0d2d BACKPORT: cgroup: freezer: call cgroup_enter_frozen() with preemption disabled in ptrace_stop() [Oleg Nesterov]
-86210d7772c2 BACKPORT: cgroup: freezer: fix frozen state inheritance [Roman Gushchin]
-3f53a32955b2 BACKPORT: signal: unconditionally leave the frozen state in ptrace_stop() [Roman Gushchin]
-fd97bdd0ca38 BACKPORT: cgroup: cgroup v2 freezer [Roman Gushchin]
-4eed74adf8bc sched/headers: Make all include/linux/sched/*.h headers build standalone [Ingo Molnar]
-b919b91a5ae9 BACKPORT: cgroup: implement __cgroup_task_count() helper [Roman Gushchin]
-81b01c85ea77 BACKPORT: cgroup: rename freezer.c into legacy_freezer.c [Roman Gushchin]
-bfd416a4f0aa BACKPORT: cgroup: remove extra cgroup_migrate_finish() call [Shakeel Butt]
-a2d501495c96 BACKPORT: cgroup: saner refcounting for cgroup_root [Al Viro]
-3627588e625b BACKPORT: cgroup: Add named hierarchy disabling to cgroup_no_v1 boot param [Tejun Heo]
-5b0484505058 BACKPORT: cgroup: remove unnecessary unlikely() [Yangtao Li]
-327b0c30fe85 BACKPORT: cgroup: Simplify cgroup_ancestor [Andrey Ignatov]
-039ab00c3737 BACKPORT: cgroup: Explicitly remove core interface files [Tejun Heo]
-2e79d4a77ae4 BACKPORT: cgroup: Update documentation reference [Matt Roper]
-cabc56d799e0 BACKPORT: cgroup: make cgroup.threads delegatable [Roman Gushchin]
-72ad3264b28f BACKPORT: string: drop __must_check from strscpy() and restore strscpy() usages in cgroup [Tejun Heo]
-e70c3e6147fe BACKPORT: cgroup: use strlcpy() instead of strscpy() to avoid spurious warning [Arnd Bergmann]
-d80c55d3b6cc BACKPORT: cgroup: avoid copying strings longer than the buffers [Ma Shimiao]
-0b447fd4281a BACKPORT: cgroup: export list of cgroups v2 features using sysfs [Roman Gushchin]
-41ee9b665746 BACKPORT: cgroup: export list of delegatable control files using sysfs [Roman Gushchin]
-33b0567faee2 BACKPORT: cgroup: statically initialize init_css_set->dfl_cgrp [Tejun Heo]
-d9169aa2145d FROMGIT: cgroup: Use separate src/dst nodes when preloading css_sets for migration [Tejun Heo]
-6ab52e682c20 cgroup/cpuset: Remove cpus_allowed/mems_allowed setup in cpuset_init_smp() [Waiman Long]
-3327af38da59 cgroup: Use open-time cgroup namespace for process migration perm checks [Tejun Heo]
-5ec028677329 cgroup: Allocate cgroup_file_ctx for kernfs_open_file->priv [Tejun Heo]
-b0a5409595c1 cgroup: Use open-time credentials for process migraton perm checks [Tejun Heo]
-ffac535cfe61 cgroup/cpuset: Fix a race between cpuset_attach() and cpu hotplug [Zhang Qiao]
-a30008ffe8f0 cgroup-v1: Require capabilities to set release_agent [Eric W. Biederman]
-612e7e183b17 cgroup1: don't call release_agent when it is "" [Tycho Andersen]
-986ee92441e2 cgroup-v1: cgroup_pidlist_next should update position index [Vasily Averin]
-5a420ba79a67 cgroup: cgroup_procs_next should increase position index [Vasily Averin]
-5e4ebf50a54f UPSTREAM: cgroup: Iterate tasks that did not finish do_exit() [Michal Koutný]
-9cc7392baf4a cgroup: Prevent double killing of css when enabling threaded cgroup [Michal Koutný]
-dded1adddef5 cgroup: Fix css_task_iter_advance_css_set() cset skip condition [Tejun Heo]
-64df9160877f cgroup: css_task_iter_skip()'d iterators must be advanced before accessed [Tejun Heo]
-bb14ec2caa04 cgroup: Include dying leaders with live threads in PROCS iterations [Tejun Heo]
-fdcd3b13c27d cgroup: Implement css_task_iter_skip() [Tejun Heo]
-3e72f20135fa cgroup: Call cgroup_release() before __exit_signal() [Tejun Heo]
-513f1452d2f2 cpuset: restore sanity to cpuset_cpus_allowed_fallback() [Joel Savitz]
-ca0fc6386108 cgroup: protect cgroup->nr_(dying_)descendants by css_set_lock [Roman Gushchin]
-58bde35f24c1 cgroup/pids: turn cgroup_subsys->free() into cgroup_subsys->release() to fix the accounting [Oleg Nesterov]
-53381a26b810 fix cgroup_do_mount() handling of failure exits [Al Viro]
-90ca77ce0068 cpuset: Restore tasks affinity while moving across cpusets [Pavankumar Kondeti]
-7c9b9fef0f58 cgroup: fix parsing empty mount option string [Ondrej Mosnacek]
-da1846f4c799 cgroup: fix CSS_TASK_ITER_PROCS [Tejun Heo]
-ec9079604e24 cgroup: Fix dom_cgrp propagation when enabling threaded mode [Tejun Heo]
-f4dec4394c1a cgroup: fix rule checking for threaded mode switching [Tejun Heo]
-0c11b8176484 cgroup: fix css_task_iter crash on CSS_TASK_ITER_PROC [Tejun Heo]
-08b0d9e45dee cgroup: Reinit cgroup_taskset structure before cgroup_migrate_execute() returns [Waiman Long]
-2a47dddd82dc cgroup: revert fa06235b8eb0 ("cgroup: reset css on destruction") [Roman Gushchin]
-0df1393ed960 mm, memcg: reset memory.low during memcg offlining [Roman Gushchin]
-706301189187 cpuset: Allow v2 behavior in v1 cgroup [Waiman Long]
-51ef29944806 cgroup: Add mount flag to enable cpuset to use v2 behavior in v1 cgroup [Waiman Long]
-be2c4922bd1e cgroup: remove unneeded checks [Dan Carpenter]
-d95d80b1f4b1 cgroup: misc changes [Tejun Heo]
-1abd7b90422f cgroup: short-circuit cset_cgroup_from_root() on the default hierarchy [Tejun Heo]
-12282f8d10f2 cgroup: re-use the parent pointer in cgroup_destroy_locked() [Roman Gushchin]
-7eba9760cd2d cgroup: add cgroup.stat interface with basic hierarchy stats [Roman Gushchin]
-d7d7fd7f5109 cgroup: implement hierarchy limits [Roman Gushchin]
-9652a6e74cbe cgroup: keep track of number of descent cgroups [Roman Gushchin]
-adea87ff4dad cgroup: add comment to cgroup_enable_threaded() [Tejun Heo]
-73d14bf66bbc cgroup: remove unnecessary empty check when enabling threaded mode [Tejun Heo]
-ec3b97294655 cgroup: fix error return value from cgroup_subtree_control() [Tejun Heo]
-7cd02a40b3b9 cgroup: update debug controller to print out thread mode information [Waiman Long]
-2cb7e4a2e778 cgroup: implement cgroup v2 thread support [Tejun Heo]
-b3063231e797 cgroup: implement CSS_TASK_ITER_THREADED [Tejun Heo]
-0d96636f114b cgroup: introduce cgroup->dom_cgrp and threaded css_set handling [Tejun Heo]
-55180f05422b cgroup: add @flags to css_task_iter_start() and implement CSS_TASK_ITER_PROCS [Tejun Heo]
-1a4193f8bf34 cgroup: reorganize cgroup.procs / task write path [Tejun Heo]
-eea7dba41d45 cgroup: replace css_set walking populated test with testing cgrp->nr_populated_csets [Tejun Heo]
-99e08cb7b352 cgroup: distinguish local and children populated states [Tejun Heo]
-6a6d1ec53ca2 cgroup: remove now unused list_head @pending in cgroup_apply_cftypes() [Tejun Heo]
-a8c9a4050a2f cgroup: update outdated cgroup.procs documentation [Tejun Heo]
-b8f033deb7f6 cgroup: create dfl_root files on subsys registration [Tejun Heo]
-9139d55dd7bc cgroup: don't call migration methods if there are no tasks to migrate [Tejun Heo]
-b3c69727366c cgroup: implement "nsdelegate" mount option [Tejun Heo]
-183a21fe11f2 cgroup: restructure cgroup_procs_write_permission() [Tejun Heo]
-d57f45f33261 cgroup: "cgroup.subtree_control" should be writeable by delegatee [Tejun Heo]
-6b6f770bef8d cgroup: fix lockdep warning in debug controller [Tejun Heo]
-41d9ac5516ac cgroup: refactor cgroup_masks_read() in the debug controller [Tejun Heo]
-3f744f1f5a7e cgroup: make debug an implicit controller on cgroup2 [Tejun Heo]
-87cd708e66a4 cgroup: Make debug cgroup support v2 and thread mode [Waiman Long]
-46550a328c2b cgroup: Make Kconfig prompt of debug cgroup more accurate [Waiman Long]
-e234813c8104 cgroup: Move debug cgroup to its own file [Waiman Long]
-98b85684bd54 cgroup: Keep accurate count of tasks in each css_set [Waiman Long]
-20e0fdce39f2 cgroup: Prevent kill_css() from being called more than once [Waiman Long]
-03c801bf806a cgroup: avoid attaching a cgroup root to two different superblocks, take 2 [Zefan Li]
-54caa02db2ba cgroup: move cgroup_subsys_state parent field for cache locality [Todd Poynor]
-8c37401baa39 cpuset: Remove cpuset_update_active_cpus()'s parameter. [Rakib Mullick]
-7630139855eb cgroup: switch to BUG_ON() [Nicholas Mc Guire]
-0df3c4377f35 cgroup: drop duplicate header nsproxy.h [Geliang Tang]
-648329a039b6 cgroups: censor kernel pointer in debug files [Kees Cook]
-a1cff7ef63a9 cgroup/pids: remove spurious suspicious RCU usage warning [Tejun Heo]
-480a023db650 kernel: convert css_set.refcount from atomic_t to refcount_t [Elena Reshetova]
-71c603ffbf9a kernel: convert cgroup_namespace.count from atomic_t to refcount_t [Elena Reshetova]
-0708b0042eb3 cgroup: Fix indenting in PID controller documentation [Tobias Klauser]
-bb129fe1f5cc {chiron,sagit}_defconfig: Update cgroup config [Huexxx]
-3fedc380d856 {chiron,sagit}_defconfig: Enable CONFIG_BLK_CGROUP [Nanhumly]
-97195ec37644 rdmacg: Fixed uninitialized current resource usage [Parav Pandit]
-a0a2cfa0b747 rdmacg: Added documentation for rdmacg [Parav Pandit]
-e096ba896793 rdmacg: Added rdma cgroup controller [Parav Pandit]
-214bcdf28655 cgroup: drop the matching uid requirement on migration for cgroup v2 [Tejun Heo]
-26d9efd23de8 cgroup, perf_event: make perf_event controller work on cgroup2 hierarchy [Tejun Heo]
-e41f6fb3b5b9 cgroup: misc cleanups [Tejun Heo]
-35b6c8d85039 cgroup: call subsys->*attach() only for subsystems which are actually affected by migration [Tejun Heo]
-f699901f578e cgroup: track migration context in cgroup_mgctx [Tejun Heo]
-414bc5d06c2b cgroup: cosmetic update to cgroup_taskset_add() [Tejun Heo]
-118cb692a183 cgroup: Add missing cgroup-v2 PID controller documentation. [Hans Ragas]
-5aac2152212c cgroup: fix a comment typo [Geliang Tang]
-3156be02c215 cgroup: fix RCU related sparse warnings [Tejun Heo]
-374cf88d656f cgroup: move namespace code to kernel/cgroup/namespace.c [Tejun Heo]
-3b17e8052203 cgroup: rename functions for consistency [Tejun Heo]
-2a548d9f46ae cgroup: move v1 mount functions to kernel/cgroup/cgroup-v1.c [Tejun Heo]
-78f33c4cbd4f cgroup: separate out cgroup1_kf_syscall_ops [Tejun Heo]
-8eb27466880a cgroup: refactor mount path and clearly distinguish v1 and v2 paths [Tejun Heo]
-95b143169c96 cgroup: move cgroup v1 specific code to kernel/cgroup/cgroup-v1.c [Tejun Heo]
-f015ceda02bb cgroup: move cgroup files under kernel/cgroup/ [Tejun Heo]
-84949b78b810 cgroup: reorder css_set fields [Tejun Heo]
-f9965c70ab2f cgroup: remove cgroup_pid_fry() and friends [Tejun Heo]
-e24daa18e72d cgroup: reimplement reading "cgroup.procs" on cgroup v2 [Tejun Heo]
-f940091574f3 kernfs: make kernfs_open_file->mmapped a bitfield [Tejun Heo]
-70431b83a84e cpuset: fix error handling regression in proc_cpuset_show() [Tejun Heo]
-e4fdeeff96eb cpuset: fix non static symbol warning [Wei Yongjun]
-a6c445270953 mnt: Add a per mount namespace limit on the number of mounts [Eric W. Biederman]
-efb1390aa085 netns: move {inc,dec}_net_namespaces into #ifdef [Arnd Bergmann]
-47b379a2d9e7 nsfs: Simplify __ns_get_path [Eric W. Biederman]
-08e624331f26 tools/testing: add a test to check nsfs ioctl-s [Andrey Vagin]
-e66a16f19b34 nsfs: add ioctl to get a parent namespace [Andrey Vagin]
-9f711a39cd77 nsfs: add ioctl to get an owning user namespace for ns file descriptor [Andrey Vagin]
-5e9d98ba31b6 mm: Rename SLAB_DESTROY_BY_RCU to SLAB_TYPESAFE_BY_RCU [Paul E. McKenney]
-bab5d13c6698 devpts: Remove unused variable `devpts_mnt` [Nanhumly]
-e9e79e7b3563 devpts: Change the owner of /dev/pts/ptmx to the mounter of /dev/pts [Eric W. Biederman]
-d2c2b6bffe17 devpts: Remove sync_filesystems [Eric W. Biederman]
-aba82b4ab265 devpts: Make devpts_kill_sb safe if fsi is NULL [Eric W. Biederman]
-06cd6b76ddd0 devpts: Simplify devpts_mount by using mount_nodev [Eric W. Biederman]
-a39650e0677e devpts: Move the creation of /dev/pts/ptmx into fill_super [Eric W. Biederman]
-f225d5bebe62 devpts: Move parse_mount_options into fill_super [Eric W. Biederman]
-b1608f44a226 devpts: return NULL pts 'priv' entry for non-devpts nodes [Linus Torvalds]
-ff9860cdc2b8 devpts: Make each mount of devpts an independent filesystem. [Eric W. Biederman]
-df88be5e923c devpts: more pty driver interface cleanups [Linus Torvalds]
-bbacb8536bde userns: When the per user per user namespace limit is reached return ENOSPC [Eric W. Biederman]
-146dc3bc84be userns; Document per user per user namespace limits. [Eric W. Biederman]
-803432f05014 mntns: Add a limit on the number of mount namespaces. [Eric W. Biederman]
-0d211f9782c2 netns: Add a limit on the number of net namespaces [Eric W. Biederman]
-57c043ea242f cgroupns: Add a limit on the number of cgroup namespaces [Eric W. Biederman]
-bdeecaa0c47a ipcns: Add a  limit on the number of ipc namespaces [Eric W. Biederman]
-8fb91840d686 ipc: Initialize ipc_namespace->user_ns early. [Eric W. Biederman]
-e727f8b6f9e6 utsns: Add a limit on the number of uts namespaces [Eric W. Biederman]
-62613ec97f58 pidns: Add a limit on the number of pid namespaces [Eric W. Biederman]
-f95ca229b62e userns: Generalize the user namespace count into ucount [Eric W. Biederman]
-2d622d266398 userns: Make the count of user namespaces per user [Eric W. Biederman]
-e15216e97164 userns: Add a limit on the number of user namespaces [Eric W. Biederman]
-372eeb401fc0 userns: Add per user namespace sysctls. [Eric W. Biederman]
-bd99cb8b1376 userns: Free user namespaces in process context [Eric W. Biederman]
-f39dd66e38da sysctl: Stop implicitly passing current into sysctl_table_root.lookup [Eric W. Biederman]
-a083bc0ca157 cgroup: Use lld instead of ld when printing pids controller events_limit [Kenny Yu]
-0dc4402801ca cgroup: Add pids controller event when fork fails because of pid limit [Kenny Yu]
-913af74b4480 cpuset: use static key better and convert to new API [Vlastimil Babka]
-ff359e2bd4c4 include/linux/nodemask.h: create next_node_in() helper [Andrew Morton]
-0a77b3616a31 Documentation: cgroup v2: Trivial heading correction. [Parav Pandit]
-ff7bbfa7ad76 cgroup: Trivial correction to reflect controller. [Parav Pandit]
-2833e0d6cfe6 cgroup: remove stale item in cgroup-v1 document INDEX file. [Haosdent Huang]
-680bbd39e0c3 cgroup: convert cgroup_subsys flag fields to bool bitfields [Tejun Heo]
-cfa06a4c69d7 cgroup: document cgroup_no_v1= [Johannes Weiner]
-b4e09d167004 kernel/Makefile: remove the useless CFLAGS_REMOVE_cgroup-debug.o [Li Bin]
-51ec428e9c00 cgroup: rename cgroup documentations [Tejun Heo]
-75a8a3bb321c cgroup: Remove resource_counter.txt in Documentation/cgroup-legacy/00-INDEX. [Yuan Sun]
-63ad0bb89148 cgroup: Fix uninitialized variable warning [Ross Zwisler]
-1acdd2f149a0 cgroup: put controller Kconfig options in meaningful order [Huexxx]
-401a0cb48e0c cgroup: clean up the kernel configuration menu nomenclature [Johannes Weiner]
-5461d3ac6206 cgroup_pids: fix a typo. [Rami Rosen]
-00249c372698 cpuset: Replace all instances of time_t with time64_t [Arnd Bergmann]
-87aa27cce5b2 Revert "cgroup: refactor allow_attach function into common code" [Huexxx]
-4515138b5f58 Revert "cgroup: Add generic cgroup subsystem permission checks" [Huexxx]
-
-====================
-     2023-04-27    
-====================
-* lineage/hudson
-b4f33cc Should've stayed, were there signs I ignored? [Arian]
-45da236 hudson: Promote dre to 20 [Albert Tang]
-262bfb1 devices: Support Y3 along with Redmi 7 [Dhina17]
-7e6de70 hudson: add Nubia Red Magic (nx609j) [Cyborg2017]
-
-* lineage/wiki
-8f0f9e24 wiki: Fix dimensions of some devices [Miroslav Lichvar]
-45d4a6d4 wiki: devices: Promote dre to 20 [Albert Tang]
-52814157 wiki: devices: Add Nubia Red Magic (nx609j) [Cyborg2017]
-0ab19f7b wiki: devices: Promote xiaomi sm8350 family to 20 [Arian]
-
-====================
-     2023-04-26    
-====================
-* frameworks/base
-d35e44d4d9d3 DozeSensors: only use proximity sensor if supported [Demon000]
-
-* lineage/mirror
-c2e49f8 Updated aosp-minimal to 25-Apr-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-77333603 devices: Support Y3 along with Redmi 7 [Dhina17]
-
-* packages/apps/Aperture
-5e225d9 Aperture: Use gradient background for exposure slider [Luca Stefani]
-d0be461 Aperture: Set video framerate button enabled only on one place [Sebastiano Barezzi]
-29a6b08 Aperture: Allow muting microphone during ongoing recording [LuK1337]
-ca59c07 Aperture: Reorganize code files/packages [Sebastiano Barezzi]
-98d2600 Aperture: Stop parsing sensor informations [Sebastiano Barezzi]
-8067e1d Aperture: Remove unused import [Sebastiano Barezzi]
-25b2c96 Aperture: Set `movementMethod` to null when actions are present [LuK1337]
-2ff7e0d Aperture: Fix crash on malformed Wi-Fi QR code [Sebastiano Barezzi]
-
-* kernel/xiaomi/msm8998
-512cbdc024b2 binder: Fix incompatible pointer types [Jeferson]
-ae5b3fa12d80 binder: fix freeze race [Li Li]
-608ef77e93c9 binder: use atomic_inc for atomic variable incrementation [Panchajanya1999]
-1c428e757725 binder: Add invalid handle info in user error log [Ramji Jiyani]
-98d8397a9cfe binder: Return EFAULT if we fail BINDER_ENABLE_ONEWAY_SPAM_DETECTION [Luca Stefani]
-204f99257977 binder: tell userspace to dump current backtrace when detected oneway spamming [Hang Lu]
-d7763b08f6ac binder: fix the missing BR_FROZEN_REPLY in binder_return_strings [Hang Lu]
-01d9320567e7 binder: BINDER_GET_FROZEN_INFO ioctl [Marco Ballesio]
-707682f1da92 binder: BINDER_FREEZE ioctl [Marco Ballesio]
-2a78bef58b8d binder: change error code from postive to negative in binder_transaction [Zhang Qilong]
-ded39cfe617d binder: use EINTR for interrupted wait for work [Marco Ballesio]
-af1bff72a8a0 binder: binder: fix possible UAF when freeing buffer [Anurag Chouhan]
-bb9029117459 binder: make sure fd closes complete [Todd Kjos]
-bce06654f264 binder: Remove leftout debug [Divyanshu-Modi]
-f3411d96aba0 binder: Fix 5.4 binder compilation on 4.4 [Kazuki Hashimoto]
-26c714f9f352 binder: Import from android11-5.4-lts branch at 5fbf84689f11 [Kazuki Hashimoto]
-5bc893d8e07f refcount_t: Introduce a special purpose refcount type [Peter Zijlstra]
-
-====================
-     2023-04-25    
-====================
-* device/qcom/sepolicy-legacy-um
-f587eed5 Merge tag 'LA.UM.11.2.1.r1-03400-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-03400-sdm660.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr
-33fa8778 Merge tag 'LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr-legacy-um
-ba100e5a Merge tag 'LA.UM.9.14.r1-21300-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-21300-LAHAINA.QSSI12.0 [Michael Bestas]
-
-* external/icu
-32739310d DO NOT MERGE Update Android TZDB from 2022g to 2023a [T] [Sorin Basca]
-
-* frameworks/base
-09488b0efce0 Automatic translation import [LineageOS Infra]
-
-* hardware/qcom-caf/msm8998/audio
-7dc584f64f audio-hal: AudioEffect reply overflow [Lakshman Chaluvaraju]
-
-* hardware/qcom-caf/sdm660/audio
-0dd5e3711e audio-hal: AudioEffect reply overflow [Lakshman Chaluvaraju]
-
-* hardware/qcom-caf/sdm660/display
-d5f439c25 Merge tag 'LA.UM.11.2.1.r1-03400-sdm660.0' into staging/lineage-20.0_merge-LA.UM.11.2.1.r1-03400-sdm660.0 [Michael Bestas]
-
-* hardware/qcom-caf/sdm845/audio
-d3b73e96c6 audio-hal: AudioEffect reply overflow [Lakshman Chaluvaraju]
-
-* hardware/qcom-caf/sm8150/audio
-c24e442da6 Merge tag 'LA.UM.9.1.r1-13400-SMxxx0.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.1.r1-13400-SMxxx0.QSSI12.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8150/media
-e409d08d9 Merge tag 'LA.UM.9.1.r1-13400-SMxxx0.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.1.r1-13400-SMxxx0.QSSI12.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8250/audio
-7aafa0bfe8 HAL: Restrict calls to ADM for low-latency and ultra low-latency usecase [Vaibhav Raut]
-871e939f3d HAL: Restrict calls to ADM for low-latency usecase [Narsinga Rao Chella]
-b324a86d33 post_proc: Add bengal to the list [Gagan Malvi]
-afea47fb3d Merge tag 'LA.UM.9.12.r1-15300-SMxx50.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.12.r1-15300-SMxx50.QSSI12.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8350/audio
-6cfd92bf90 Merge tag 'LA.UM.9.14.r1-21300-LAHAINA.QSSI12.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-21300-LAHAINA.QSSI12.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8350/display
-c52f2a277 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
-54ef38c40 Revert "gralloc: Add support for CRC calculation" [Pranav Vashi]
-4d55fc613 Merge tag 'LA.UM.9.14.r1-20000.01-LAHAINA.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/display into lineage-20.0-caf-sm8350 [Michael Bestas]
-
-* hardware/qcom-caf/thermal
-a52a446 Merge tag 'LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/wlan
-00dde61 Merge tag 'LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0 [Michael Bestas]
+24793f585eb1 build: Don't check for fingerprint mismatch [Dan Cartier]
+5a163383ce57 Automatic translation import [LineageOS Infra]
+96b12f340bbd fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi]
 
 * lineage-sdk
-528400a1 Automatic translation import [LineageOS Infra]
+eee2b705 Automatic translation import [LineageOS Infra]
 
-* lineage/crowdin
-617aa27 crowdin: Support lineage-XX branch naming scheme [LuK1337]
-20ebf9d config: lineage-18.1_aosp: Move a few translations to /vendor/crowdin [Michael Bestas]
-48a629d config: Sync hardware/oneplus for 18.1 [LuK1337]
-4491369 crowdin: Add `abandon` gerrit option [LuK1337]
+* lineage/hudson
+59adb35 hudson: Add Redmi Note 10S (rosemary) [Matsvei Niaverau]
+ed12a89 hudson: add Nubia Red Magic Mars (nx619j) [Cyborg2017]
+f4f6662 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+98d5e01 aosp-minimal: tablet time [Chirayu Desai]
+
+* lineage/scripts
+7fe1002 pixel: Avoid re-extracting factory images [Chirayu Desai]
+ee4afeb pixel/all: Print parallel output, prefix with device name [Chirayu Desai]
+c944f91 pixel: Use fbpacktool for unpacking bootloader.img on Tensor pixels [Michael Bestas]
+f3c95a9 fbpacktool: Update to current version [Michael Bestas]
+f9f4739 Import fbpacktool from AOSP [Chirayu Desai]
 
 * lineage/wiki
-c7a9e3da joan/h932: write up and explain file encryption exemption [Han Sol Jin]
+d0bde796 wiki: Add Redmi Note 10S (rosemary) [Matsvei Niaverau]
+a7d7ab77 devices: pstar: Require Android 12 firmware [Nolen Johnson]
+d882f7f4 wiki: add Galaxy A52s 5G and M52 5G [Simon1511]
 
 * packages/apps/Aperture
-5dcb779 Automatic translation import [LineageOS Infra]
+80995a6 Automatic translation import [LineageOS Infra]
 
 * packages/apps/AudioFX
-9a20a91 Automatic translation import [LineageOS Infra]
+01be6ca Automatic translation import [LineageOS Infra]
 
 * packages/apps/Backgrounds
-5d823e1 Automatic translation import [LineageOS Infra]
+9dee265 Automatic translation import [LineageOS Infra]
 
-* packages/apps/Camera2
-ab1299f9b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-0fbe89051 Automatic translation import [LineageOS Infra]
+* packages/apps/CarrierConfig
+0ccbadf Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/DeskClock
-61d8b81a0 Automatic translation import [LineageOS Infra]
+3c45fa601 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Dialer
-ffa14b283 Automatic translation import [LineageOS Infra]
+3b5a4e698 Automatic translation import [LineageOS Infra]
 
 * packages/apps/DocumentsUI
-83ad60bb4 Automatic translation import [LineageOS Infra]
+10e048f1e Automatic translation import [LineageOS Infra]
 
 * packages/apps/Eleven
-5b6d422 Automatic translation import [LineageOS Infra]
+b2cdc1a6 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Etar
-04325e2a Automatic translation import [LineageOS Infra]
+5f5bbe7e Automatic translation import [LineageOS Infra]
 
 * packages/apps/FlipFlap
-055f8f0 Automatic translation import [LineageOS Infra]
+1a09d4b Automatic translation import [LineageOS Infra]
 
 * packages/apps/Jelly
-92ba41f Automatic translation import [LineageOS Infra]
+fe96410 Automatic translation import [LineageOS Infra]
 
 * packages/apps/LineageParts
-4d31ea7 Automatic translation import [LineageOS Infra]
+6e0679c Automatic translation import [LineageOS Infra]
 
 * packages/apps/Messaging
-08d7918 Automatic translation import [LineageOS Infra]
+fa23254 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Profiles
-2c49be5 Automatic translation import [LineageOS Infra]
+b63496c Automatic translation import [LineageOS Infra]
 
 * packages/apps/Recorder
-b76e3a5 Automatic translation import [LineageOS Infra]
+c360821 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Settings
-0958c2539e Automatic translation import [LineageOS Infra]
+5bfc07a965 Automatic translation import [LineageOS Infra]
 
 * packages/apps/SetupWizard
-278e83d Automatic translation import [LineageOS Infra]
+11f7a34 Automatic translation import [LineageOS Infra]
 
 * packages/apps/ThemePicker
-89772022 Automatic translation import [LineageOS Infra]
+b7c5f809 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Trebuchet
-22c53dc708 Automatic translation import [LineageOS Infra]
+63993929a4 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Updater
-85347e7 Automatic translation import [LineageOS Infra]
+3852db1 Automatic translation import [LineageOS Infra]
 
 * packages/inputmethods/LatinIME
-7052f309c Automatic translation import [LineageOS Infra]
+50d0d7bdf Automatic translation import [LineageOS Infra]
 
 * packages/providers/DownloadProvider
-aa6bd80d Automatic translation import [LineageOS Infra]
+af5956b8 Automatic translation import [LineageOS Infra]
 
 * packages/resources/devicesettings
-3214ab7 Automatic translation import [LineageOS Infra]
+1907823 Automatic translation import [LineageOS Infra]
 
-* packages/services/Mms
-46c860d Automatic translation import [LineageOS Infra]
-
-* system/timezone
-5fdf826 DO NOT MERGE Update Android TZDB from 2022g to 2023a [T] [Sorin Basca]
+* packages/services/Telephony
+87998ad6a Add support for multi-language carrier name override [cjybyjk]
 
 * vendor/crowdin
-e5ca6bb Automatic translation import [LineageOS Infra]
+5f1b1c6 Automatic translation import [LineageOS Infra]
 
 * vendor/lineage
-87a54324 vars: Update qcom tags [Michael Bestas]
-b2482bb1 overlay: Convert DocumentsUI RRO to standalone package [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys-intf/display
-918748dd Merge tag 'LA.QSSI.13.0.r1-09800-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-09800-qssi.0 [Michael Bestas]
+8781c974 apn: Add Uno Mobile Italy [Dhina17]
 
 * vendor/qcom/opensource/fm-commonsys
-64b4992 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/power
-58e47e1 Merge tag 'LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0 [Michael Bestas]
+cf80abc Automatic translation import [LineageOS Infra]
 
 ====================
-     2023-04-24    
+     2023-06-20    
 ====================
+* lineage/hudson
+4549c58 hudson: add Galaxy A52s 5G and M52 5G [Simon1511]
+307cbfe Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+4a05e3b Updated lineage-minimal to 19-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+4d4a79dd wiki: devices: Add Nubia Red Magic Mars (nx619j) [Cyborg2017]
+
 ====================
-     2023-04-23    
+     2023-06-19    
 ====================
-* lineage/crowdin
-996ae0c crowdin: Only remove direct children of the root [Michael W]
-8955d69 crowdin: Add logging to cleaning [Michael W]
+* lineage/hudson
+f28f377 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+424c3a5 device-deps-regenerator: Add contexthub to ignorelist [razorloves]
+
+====================
+     2023-06-18    
+====================
+* device/google/contexthub
+6ceb9c74 contexthub-nano: Include headers for 4.4 kernels [Nolen Johnson]
+
+* lineage/mirror
+f1e30c4 Updated to 17-Jun-2023 16:51 UTC [Kevin F. Haggerty]
+068d1d8 Updated to 17-Jun-2023 15:41 UTC [Kevin F. Haggerty]
+35f4b9f Updated to 17-Jun-2023 15:06 UTC [Kevin F. Haggerty]
+68bc0f0 Updated to 17-Jun-2023 14:53 UTC [Kevin F. Haggerty]
+74eaae5 Updated to 17-Jun-2023 14:46 UTC [Kevin F. Haggerty]
+68ecbf0 Updated to 17-Jun-2023 14:23 UTC [Kevin F. Haggerty]
+
+* device/xiaomi/msm8998-common
+c4611a1 msm8998-common: Update DRM (TUI) blobs from LA.UM.10.2.1.r1-03400-sdm660.0 [Kunmun]
+
+* vendor/xiaomi/msm8998-common
+a44bcfd msm8998-common: Update DRM (TUI) blobs from LA.UM.10.2.1.r1-03400-sdm660.0 [Kunmun]
+
+====================
+     2023-06-17    
+====================
+* external/chromium-webview/patches
+acd8a98 Update Chromium Webview to 114.0.5735.131 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+80e30ce Update Chromium Webview arm prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+1a7d42b Update Chromium Webview arm64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+e4645fb Update Chromium Webview x86 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+4c0eb44 Update Chromium Webview x86_64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
+
+* frameworks/base
+8cb0fed963fc fixup! Partially revert "Assume sensors perform prox check" [Michael Bestas]
+2480b567076f fixup! SystemUI: Re-evaluate system theme on UI mode change [Michael Bestas]
+5c28e4ab835e fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas]
+
+* lineage/mirror
+8f9aa50 Updated aosp-minimal to 16-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+66d64cf carriersettings-extractor: Ignore motorola specific configs [Michael Bestas]
+a870640 pixel: Run regen-carriersettings.sh when it exists [Michael Bestas]
+cfd6e2d carriersettings-extractor: Make APNs extract optional [Michael Bestas]
+9a7adaa carriersettings-extractor: Only include gps elements in vendor_no_sim.xml [Michael Bestas]
+4075fcb carriersettings-extractor: Generate vendor_no_sim.xml [Michael Bestas]
+e830e8d carriersettings-extractor: Write mcc=0 mnc=0 config as just carrier_config [Chirayu Desai]
+d927852 carriersettings-extractor: Add missing name element in pbundle_as_map [Michael Bestas]
+ea8804b carriersettings-extractor: Sync tag name [Chirayu Desai]
+e0e53fb carriersettings-extractor: Handle failure gracefully [Chirayu Desai]
+0260b05 carriersettings-extractor: Update README [Michael Bestas]
+8166ecc carriersettings-extractor: Workaround for skip_464xlat field extraction [Michael Bestas]
+b6bdac0 carriersettings-extractor: Update for 13 [Michael Bestas]
+0bdaa22 carriersettings-extractor: Move element extraction to separate function [Michael Bestas]
+26561a8 carriersettings-extractor: Read CarrierSettings protobufs in stages [Chirayu Desai]
+5b27a24 carriersettings-extractor: Update to 12 [Luca Stefani]
+33f9e86 carriersettings-extractor: Always allow modifying APNs [Chirayu Desai]
+b8697e3 carriersettings-extractor: Exclude some values from vendor.xml [Chirayu Desai]
+e1499e0 carriersettings-extractor: Implement argparse, extract files into separate folders [Chirayu Desai]
+ae25298 carriersettings-extractor: Modify for usage in AOSP [Chirayu Desai]
+42c8ecf carriersettings-extractor: Remove unnecessary files, update README [Chirayu Desai]
+37fa6fe Import carriersettings-extractor [Chirayu Desai]
+
+* lineage/wiki
+eadbddac wiki: Remove leftover path_postfix variable [razorloves]
 
 * vendor/lineage
-d0612f57 roomservice: Read all local manifests [LuK1337]
+d7f56a98 vars: Use fbpacktool for unpacking bootloader.img on Tensor pixels [Michael Bestas]
 
 ====================
-     2023-04-22    
+     2023-06-16    
+====================
+* frameworks/base
+7ed5d514b6b2 fixup! SystemUI: add FloatingRotationButton for hw-key devices [Michael Bestas]
+4a4f20e13ab2 fixup! Add support for runtime toggle of navbar [Michael Bestas]
+dca0e345e1cf fixup! Keyguard: don't use large clock on landscape [Michael Bestas]
+
+* lineage/scripts
+0f89078 build-webview: Update default webview to 114.0.5735.131 [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+812c2cfb83 fixup! Hide scrollbar when searching All Apps [Michael Bestas]
+8a69f4ad62 fixup! Fix All Apps header protection and spacing again [Tommy Webb]
+a81c38dd9e Revert "Don't discard custom grid on config changes" [Michael Bestas]
+2c2cc4fdd7 Revert "fixup! Don't discard custom grid on config changes" [Michael Bestas]
+ce0bcfeb03 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/WallpaperPicker2
+87e1441d Add null check for effectsController [Michael Bestas]
+
+====================
+     2023-06-15    
+====================
+* android
+2626bcf manifest: June 2023 Quarterly Platform Release and Security update [Michael Bestas]
+
+* frameworks/base
+9b281e6bf417 fixup! SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds [Michael Bestas]
+89e2e61bf438 fixup! Implement edge long swipe gesture [Michael Bestas]
+9f0f2d7275ae fixup! SystemUI: Add VPN tile [Michael Bestas]
+bee0b867effe fixup! SystemUI: Add Profiles tile [Michael Bestas]
+45e3ad3ec60f SystemUI: Restore wifi and cellular QS tiles [Michael Bestas]
+d5e1aedff5f6 fixup! SystemUI: Add reading mode tile [Michael Bestas]
+1f1bc7b1ff30 fixup! SystemUI: Add powershare QS tile [Michael Bestas]
+dd8e6abe4d5f fixup! SystemUI: Add AOD QS tile [Michael Bestas]
+a87c0c250ff9 fixup! SystemUI: Add USB Tether tile [Michael Bestas]
+fe797e245553 fixup! SystemUI: Add AmbientDisplay tile [Michael Bestas]
+d3617e3961ab fixup! SystemUI: Add Sync tile [Michael Bestas]
+fd4ea765c153 fixup! SystemUI: Add heads up tile [Michael Bestas]
+e0926dba9ff0 fixup! SystemUI: Add caffeine QS tile [Michael Bestas]
+675b3eaf6f38 fixup! SystemUI: Add quick settings pull down with one finger [Michael Bestas]
+bb84e3ce70e6 fixup! camera: Support exposing aux camera to apps [Michael Bestas]
+8bcec894e0ac Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+c182b3466c26 Revert "SystemUI: Make edit button click ripple effect rounded" [Michael Bestas]
+
+* lineage-sdk
+bf6f48ce Update LineageDatabaseHelper for 13 QPR3 [Michael Bestas]
+
+* lineage/wiki
+e62535e9 wiki: ether: Add back ANT+ & IMS note [razorloves]
+7ae02f8e Revert "Use HTML entities for ellipses" [razorloves]
+
+* packages/apps/LineageParts
+c96f154 Update for 13 QPR3 [Michael Bestas]
+
+* packages/apps/Seedvault
+e03ad75 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas]
+90c8a3f Remove androidx.annotation.VisibleForTesting.PRIVATE usage [Michael Bestas]
+
+* packages/apps/Settings
+75db8964d8 fixup! Settings: Hide settings that don't work when taskbar is enabled [Michael Bestas]
+7ef5cc46a8 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+
+* vendor/lineage
+38506299 June 2023 Quarterly Platform Release and Security update [Chirayu Desai]
+
+* device/xiaomi/msm8998-common
+e89b429 msm8998-common: Update DRM (TUI) blobs from LA.UM.9.6.2.r1-04200-89xx.0 [Nanhumly]
+71cdb7c msm8998-common: nfc: Update storage path to /data/vendor/nfc [Marijn Suijten]
+
+====================
+     2023-06-14    
+====================
+* bionic
+7e1668651 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* bootable/recovery
+e3cb6c12 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* build/make
+e99dbe1da Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* build/soong
+396c6159e Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* device/google/atv
+8606ccc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* external/gptfdisk
+7d31ef5 sgdisk: Make sgdisk recovery_available [Nolen Johnson]
+
+* external/icu
+39d6c39f1 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* external/wpa_supplicant_8
+6ba79835 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* frameworks/av
+ba6359980c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* frameworks/base
+1add163b190c Revert "[Status Bar] Append "__external" to external icons." [Michael Bestas]
+81aa92abfc68 Revert "Make the header INVISIBLE when alpha is 0" [Michael Bestas]
+80426c89b91b Revert "Revert "Add dumpsys logs to debug lockscreen stack height"" [Michael Bestas]
+3b76761a1b63 Revert "Strip part of the activity info of another uid if no privilege" [Michael Bestas]
+f50833a95ae5 Revert "Revert change that would detectFp when FP is locked out" [Michael Bestas]
+6cc17f829d4b Revert "SystemUI: Align QS header with status bar" [Michael Bestas]
+f54deb1cbd33 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
+e0531d8b58f4 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
+
+* frameworks/libs/systemui
+cb18bf8 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* frameworks/native
+2586c87598 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* frameworks/opt/telephony
+901eab9135 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/google/gchips
+ccb045d Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/google/graphics/common
+a812259 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/google/pixel
+a1b4713 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/interfaces
+69c80a071 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/qcom/display
+ef09d590fb msm8996: gralloc: check consumer with consumer and producer with producer [Roberto Sartori]
+
+* hardware/qcom/sm7250/display
+322ddd13 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* hardware/qcom/sm8150/display
+7a489c81 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* lineage-sdk
+9a0fe3be sdk: Add static isChargingControlSupported(ctx) method [LuK1337]
+
+* lineage/mirror
+7d14a53 aosp-minimal: June 2023 QPR [Chirayu Desai]
+48e087d Updated aosp-minimal to 13-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+258e142c templates: recovery_install_amlogic_update: Fix typos [razorloves]
+
+* packages/apps/Car/Settings
+a1cefc66b Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/CellBroadcastReceiver
+3d7340ee Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/Contacts
+9b1f80055 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/DocumentsUI
+94b118df7 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/EmergencyInfo
+ba3cf1c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/LineageParts
+b8a16c3 ChargingControl: Don't index settings if it is not supported [Luofan Chen]
+
+* packages/apps/Nfc
+45f13801 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/Settings
+d11b56a34f fixup! Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
+ab0635e614 Merge tag 'android-13.0.0_r52' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+78f8a42291 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
+
+* packages/apps/SettingsIntelligence
+4ef92f4 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/Tag
+2e6b762 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/ThemePicker
+7d7e0881 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/Trebuchet
+9e980ab027 Revert "Trebuchet: Add resource for home screen rotation default" [Michael Bestas]
+
+* packages/apps/TvSettings
+8795f169f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/apps/WallpaperPicker2
+b2c5b543 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/modules/Bluetooth
+28ebbc5c61 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/modules/Connectivity
+137aa2a07 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/modules/Permission
+22a59e9e3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/modules/Wifi
+f6626599ed Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/modules/common
+b13938a Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/providers/BlockedNumberProvider
+5fd5892 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/providers/DownloadProvider
+5d56c386 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/providers/MediaProvider
+9c6a2e77d Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/providers/TelephonyProvider
+4710433c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/services/Mms
+c1db4f5 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/services/Telecomm
+5f4108ef3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/services/Telephony
+21321b57f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* packages/wallpapers/LivePicker
+66c64bc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/core
+be4324e36 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/extras
+5cf17c20 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/media
+41c2d1ab Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/security
+152f7b0 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/sepolicy
+615ae66c9 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+* system/vold
+44775a2 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+
+====================
+     2023-06-13    
+====================
+* lineage/hudson
+a909c68 updater: Correct odroidc4 marketed brand/name [Nolen Johnson]
+
+* lineage/wiki
+ef7df5ed devices: odroidc4: Correct marketing name [Nolen Johnson]
+e0017863 devices: Import devkits of the Amlogic G12-family [Nolen Johnson]
+
+* packages/apps/Aperture
+06a2294 Aperture: Disable lens selector sound effects when busy [LuK1337]
+
+* tools/extract-utils
+561ce19 extract_utils: Remove super.raw after dumping partitions [Michael Bestas]
+7e3eb4d extract_utils: Don't extract multiple times for the same run [Michael Bestas]
+c1ea677 extract_utils: Add option to save extracted content [Michael Bestas]
+40dbd6b extract_utils: Add helper function for carriersettings_extractor.py [Michael Bestas]
+d469bc3 extract_utils: Add helper functions to generate RRO package structure [Michael Bestas]
+d5ad621 extract_utils: Add helper functions for single items [Michael Bestas]
+0f8eccc extract_utils: Add support to generate carriersettings file list [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+c878863 msm8998-common: Adjust the sorting of LiveDisplay [Nanhumly]
+
+====================
+     2023-06-12    
+====================
+* frameworks/base
+f28b2db87ff1 SystemUI: Network traffic with center cutout [1/3] [Wolfram Liebchen]
+
+* lineage-sdk
+95e2d729 Network traffic with center cutout [2/3] [Wolfram Liebchen]
+
+* lineage/hudson
+aa451fe First film was so popular Marvell let us bring in B-heros [Nolen Johnson]
+
+* packages/apps/LineageParts
+0d2767d Network traffic with center cutout [3/3] [Wolfram Liebchen]
+
+* device/xiaomi/msm8998-common
+0207f68 msm8998-common: Build Lineage Health HAL [Michael Bestas]
+16b94e1 msm8998-common: Implement xtra-daemon control via property [Michael Bestas]
+30ea91f msm8998-common: gps: Remove all Wno-error flags [Michael Bestas]
+6773d96 msm8998-common: ueventd: Remove all permissions from /sys/devices/soc0/serial_number [Michael Bestas]
+
+* kernel/xiaomi/msm8998
+43cd3a8dee2c ASoC: msm-pcm-q6-v2: Add dsp buf check [Soumya Managoli]
+4f69ae67d2ee qcacld-3.0: Fix OOB in wma_scan_roam.c [Nagalakshmi]
+
+====================
+     2023-06-11    
+====================
+* lineage/wiki
+ba031bc6 devices: pro1*: Enable offmode charging [Nolen Johnson]
+
+* packages/apps/Aperture
+ce6be9c Aperture: Make use of ResolutionSelector API [LuK1337]
+
+* packages/apps/LineageParts
+c27f22e Regenerate contributors cloud (2023-06-10) [Kevin F. Haggerty]
+
+====================
+     2023-06-10    
+====================
+* device/lineage/sepolicy
+c86fda9 common: Add sepolicy rules for Lineage Health HAL and service [Luofan Chen]
+
+* frameworks/base
+b1f18c6acd85 services: Keep vendor.lineage.* classes [Michael Bestas]
+
+* lineage-sdk
+3ee21021 sdk: Implement Lineage health service [Luofan Chen]
+89941a96 sdk: Extract base class for lineage base feature [Luofan Chen]
+0e290483 sdk: Add requiresService attribute [Luofan Chen]
+738f26ef lineage-sdk: Add settings for charging control [Danny Trunk]
+
+* lineage/hudson
+5f35d04 nio is a much cooler codename tbh [Nolen Johnson]
+
+* lineage/wiki
+0426c2f8 devices: Promote the moto edge 20 pro [Nolen Johnson]
+84822233 devices: Add jro1979 where applicable [Nolen Johnson]
+b8564055 wiki: Add another section for firmware requirement [Michael W]
+592e90b4 wiki: Fix broken step numbering in moto unlock [razorloves]
+44296175 wiki: Fix 'Devices' link on deviceinfo page [razorloves]
+
+* packages/apps/LineageParts
+dcbebe6 LineageParts: Add charging control preferences [Danny Trunk]
+
+* packages/apps/Settings
+4f097bfef6 Settings: Add charging control part [Danny Trunk]
+f009585cea Hide private DNS settings UI unless admin [Tommy Webb]
+41b4ed345a Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+
+* vendor/lineage
+2decc666 soong: Add TARGET_HEALTH_CHARGING_CONTROL related configs [Luofan Chen]
+97f0f8e3 config: device_framework_matrix: Add vendor.lineage.health [Michael Bestas]
+5bd9ed98 config: Copy Lineage health permissions [Luofan Chen]
+
+====================
+     2023-06-09    
+====================
+* device/lineage/sepolicy
+9f339ed Label xtra-daemon control property [Michael Bestas]
+
+* external/chromium-webview/patches
+483f6a8 Update Chromium Webview to 114.0.5735.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+25651a0 Update Chromium Webview arm prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+7422f5f Update Chromium Webview arm64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+03ed985 Update Chromium Webview x86 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+7dd37cf Update Chromium Webview x86_64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
+
+* frameworks/base
+f038fce3d933 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
+
+* lineage/hudson
+08a34fd devices: Make deb match the debx marleting name [Nolen Johnson]
+b3c91cd I _really_ need to stop making promises to XDA users [Nolen Johnson]
+76f6a24 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+55d9e066 devices: Modernize deb page [Nolen Johnson]
+
+* device/xiaomi/msm8998-common
+2110a62 Revert "Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard"" [Marco Zanin]
+
+====================
+     2023-06-08    
 ====================
 * lineage/mirror
-e6bb1ae Updated to 21-Apr-2023 18:40 UTC [Kevin F. Haggerty]
-d9d58e3 Updated to 21-Apr-2023 18:30 UTC [Kevin F. Haggerty]
+47aa55d Updated aosp-minimal to 07-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+997128b1 devices: {deb,flo}x: List new maintainers [Nolen Johnson]
+9c45b8f3 devices: {deb,flo}x: Move repartition script away from AFH and further explain [Nolen Johnson]
+14fdd99a devices: Promote Nexus 7 2013 LTE [Nolen Johnson]
+6a2ef2c9 wiki: Add newer Bluetooth specs [Nicholas Lim]
+3cfd3b20 devices: Update Pixel 7 family boot stack partitions [Nicholas Lim]
+b4e04841 wiki: Specify wade has a recovery partition [althafvly]
 
