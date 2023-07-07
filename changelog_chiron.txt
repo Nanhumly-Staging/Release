@@ -1,20 +1,49 @@
 ====================
-     2023-07-04    
+     2023-07-07    
 ====================
 * frameworks/base
-3712091d81fa build: Don't check for fingerprint mismatch [Dan Cartier]
-92150da62f4e SystemUI: Enable new back gesture affordance [Timo Dorfner]
-b77a77fc6bf0 fixup! base: Add support for parallel space [Adithya R]
-23100985a547 Remove QS data usage feature [Joey Huab]
+343577ef9506 build: Don't check for fingerprint mismatch [Dan Cartier]
 
 * packages/apps/CarrierConfig
-623952f Override name of Mainland China carriers [cjybyjk]
+15854cd Override name of Mainland China carriers [cjybyjk]
 
 * packages/services/Telephony
-dcc04941c Add support for multi-language carrier name override [cjybyjk]
+ef5e9cb26 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/crDroidOTA
+00270bd devon, rhode: validate json properly [Lup Gabriel]
+8bade0e sdm680: Add Motorola G32 and G52 into CrDroid Official (#439) [DHruV PaNDIT]
+1b92799 lavender: HOTFIX v9.6 [ImPrashantt]
 
 * device/xiaomi/msm8998-common
-9c9bf89 Merge remote-tracking branch 'origin/lineage-20.0' into 13.0 [Nanhumly]
+d8a8c06 msm8998-common: Give up smart charging [Nanhumly]
+03d865c msm8998-common: Follow the official method to enable the blur effect [Nanhumly]
+aecf6c0 msm8998-common: overlay: Enable config_performantAuthDefault [Terminator-J]
+
+====================
+     2023-07-06    
+====================
+* vendor/crDroidOTA
+1072e75 courbet: 05/07/2023 [Golbinex]
+34874dc chef: 9.6 update 20230705 [Rushi Ranpise]
+
+====================
+     2023-07-05    
+====================
+* device/lineage/sepolicy
+1ff6546 Merge pull request #20 from Astridxx/13.0 [Lup Gabriel]
+
+* packages/apps/Dialer
+86520eda9 New translations (#64) [Lup Gabriel]
+
+* packages/apps/GameSpace
+2b14818 New translations (#48) [Lup Gabriel]
+
+* packages/apps/crDroidSettings
+dd2079d New Crowdin updates (#1059) [Lup Gabriel]
+
+* vendor/crDroidOTA
+d9fc8a6 gts4lv/gts4lvwifi: 04/07/2023 [Golbinex]
 
 * vendor/xiaomi/msm8998-common
 e6c950c Merge remote-tracking branch 'origin/lineage-20.0' into 13.0 [Nanhumly]
@@ -25,6 +54,24 @@ a934811340c0 simple_lmk: Reduce unnecessary wake ups [Sultan Alsawaf]
 36cb52bb83e5 simple_lmk: Ratelimit the 'no processes available to kill' message [Sultan Alsawaf]
 9431557e43ca simple_lmk: Fix victim scheduling priority elevation [Sultan Alsawaf]
 ce16bf3dcef2 Merge tag 'LA.UM.9.2.c25-02800-SDMxx0.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
+
+====================
+     2023-07-04    
+====================
+* device/lineage/sepolicy
+502405b lineage: Make Health service discoverable by Settings app [Bruno Martins]
+
+* frameworks/base
+92150da62f4e SystemUI: Enable new back gesture affordance [Timo Dorfner]
+b77a77fc6bf0 fixup! base: Add support for parallel space [Adithya R]
+23100985a547 Remove QS data usage feature [Joey Huab]
+
+* vendor/crDroidOTA
+f93dd15 raphael [firebird11]
+0f0c92e oxygen: Update to crDroid v9.6 [sanek-creed]
+
+* device/xiaomi/msm8998-common
+9c9bf89 Merge remote-tracking branch 'origin/lineage-20.0' into 13.0 [Nanhumly]
 
 ====================
      2023-07-03    
@@ -40,14 +87,16 @@ afc2753 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Bare
 a907e1f Remove QS footer data usage [Pranav Vashi]
 
 * vendor/crDroidOTA
-f93dd15 raphael [firebird11]
-0f0c92e oxygen: Update to crDroid v9.6 [sanek-creed]
 5e74538 picasso: Update to crDroid 9.6 02-07 [masemoel]
 101a875 RM6785: update v9.6 [SriBalaji]
+06ae7d4 mojito: Update to v9.6 [Anush02198]
 
 ====================
      2023-07-02    
 ====================
+* android
+a3b2451 manifest: Track clang 17.0.3 [Pranav Vashi]
+
 * external/chromium-webview/patches
 f79c092 Update Chromium Webview to 114.0.5735.196 [Kevin F. Haggerty]
 
@@ -62,6 +111,14 @@ f3d12bc Update Chromium Webview x86 prebuilt to 114.0.5735.196 [Kevin F. Haggert
 
 * external/chromium-webview/prebuilt/x86_64
 0824443 Update Chromium Webview x86_64 prebuilt to 114.0.5735.196 [Kevin F. Haggerty]
+
+* frameworks/av
+c2915985e9 av: Nuplayer: Declare 24Bit Packed & 32Bit support [johnmart19]
+1f9c418c01 av: ACodec: Import support of Pcm32bit channel [johnmart19]
+4d18e4acd1 av: Audio Policy: Increase Max Sample Rate Hz to 384k [johnmart19]
+
+* frameworks/native
+68f1d8e495 Add pending command buffer reset [Huihong Luo]
 
 * lineage-sdk
 2c87bf39 Handle more custom DNS migration [Pranav Vashi]
@@ -113,11 +170,13 @@ d487fb50 Automatic translation import [LineageOS Infra]
 * packages/providers/DownloadProvider
 8b91542e Automatic translation import [LineageOS Infra]
 
+* prebuilts/clang/host/linux-x86/clang-latest
+fb6119a clang 17.0.3 (based on r498229) [Pranav Vashi]
+
 * system/vold
 2711bf7 vold: fix failing to format zero-ed out SD card [nift4]
 
 * vendor/crDroidOTA
-06ae7d4 mojito: Update to v9.6 [Anush02198]
 4c6fea8 rova: Update to cr9.6 [iusmac]
 56e004b hotdogb update [frazerecho]
 ee048ce spes: Updated from 01.07.2023 (9.6) [Jabiyeff]
@@ -131,16 +190,10 @@ f8acdda apollon: Update to build 20230629 [arturo51236]
 ====================
      2023-07-01    
 ====================
-* android
-a3b2451 manifest: Track clang 17.0.3 [Pranav Vashi]
-
 * art
 403f3e7b55 Disable the shared memory optimization for methods in non-zygote mode. [Nicolas Geoffray]
 
 * frameworks/av
-c2915985e9 av: Nuplayer: Declare 24Bit Packed & 32Bit support [johnmart19]
-1f9c418c01 av: ACodec: Import support of Pcm32bit channel [johnmart19]
-4d18e4acd1 av: Audio Policy: Increase Max Sample Rate Hz to 384k [johnmart19]
 40a4ca29c4 Add buffer usage for more consumers [mtk12103]
 bd78f4e0c0 CCodec: clear deadline after component start returns [Wonsik Kim]
 
@@ -162,14 +215,8 @@ ad3bb97a57a0 Refresh layout parameter for bounds change from relayout [Riddle Hs
 b4e379c02dd5 Prevent crash in AccountManager after profile removal. [Dmitry Dementyev]
 acf33c830750 avoid NPE when getPreferredActivitiesInternal [Wen Zhang]
 
-* frameworks/native
-68f1d8e495 Add pending command buffer reset [Huihong Luo]
-
 * packages/apps/crDroidSettings
 fa1d171 Add toggle to enable brightness slider haptic feedback [2/2] [Pranav Vashi]
-
-* prebuilts/clang/host/linux-x86/clang-latest
-fb6119a clang 17.0.3 (based on r498229) [Pranav Vashi]
 
 * vendor/crDroidOTA
 12e003e update river to 9.6 [vulkan-ops]
@@ -179,136 +226,7 @@ da4c183 lmi: update to crDroidAndroid-13.0-20230630-lmi-v9.6 [¨raystef66¨]
 a9b935b cepheus: update to crDroidAndroid-13.0-20230630-cepheus-v9.6 [¨raystef66¨]
 c1ad27f  hotdog: Update 20230630 [ShevT]
 442ff20 ginkgo: Hotfix update [DarkJoker360]
-
-====================
-     2023-06-30    
-====================
-* frameworks/base
-14213d973abf Fix NPE with void android.view.VelocityTracker.clear() [Alex Cruz]
-
-* vendor/crDroidOTA
 d96a7d5 begonia: Hotfix update [DarkJoker360]
 1aa318b crdroidOTA: Update gemini 20230630 [Mohammad Hasan Keramat J]
 80be0c2 chef: 9.6 update 20230630 [Rushi Ranpise]
-18e5850 zippo: Update to v9.6 20230629 [chematelegram]
-b18381e munch: 29th June update [Akash Kakkar]
-d7e209c alioth: update to crDroidAndroid-13.0-20230629-alioth-v9.6 [¨raystef66¨]
-563506a veux: June Patch 29/06/2023 [anant-goel]
-faf95b2 munch: 29th June update [Akash Kakkar]
-50e94c1 cepheus: update to crDroidAndroid-13.0-20230629-cepheus-v9.6 [¨raystef66¨]
-8912e8e begonia: 29-06-2023 update [DarkJoker360]
-7ef626c hotdogg: 29-06-2023 update [DarkJoker360]
-b1f2da5 ginkgo: 29-06-2023 update [DarkJoker360]
-260b572 update crownlte to 9.6 [JeyKul]
-74ac569 a70q: Add 20230629 build! [Haky86]
-7d564e4 sweet: Update [Pranav Vashi]
-e7e0c6c beryllium/guacamole/lemonades: update to build 20230629 [Lup Gabriel]
-38945e3 update starlte to 9.6 [JeyKul]
-aeaf955 Update Star2lte [JeyKul]
-2ae0a2c chime: Add 29/06 build [GtrCraft]
-56ee522 vayu: Update [Pranav Vashi]
-d3d2a77 surya: Add 29/06 build [GtrCraft]
-
-====================
-     2023-06-29    
-====================
-* android
-d81fe65 manifest: Track our new apps fork [DarkJoker360]
-
-* frameworks/base
-cb201d77c8ab KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-8ef305a827b0 PixelPropsUtils: Spoof gms with Pixel 2 [Jayant-Deshmukh]
-ee19f55fb256 core: Enable wake-and-unlock by default if power button is fps [Pranav Vashi]
-5123b9e7d141 Keyguard: Allow user configurable fingerprint wake-and-unlock [Michael Bestas]
-eaf0af5f4dd9 PixelPropUtils: Add more processes for GMS spoof [Pranav Vashi]
-6c2c038c0557 PixelPropsUtils: Do not spoof restore, pixelmigrate and setupwizard [Pranav Vashi]
-9271ca76b716 PixelPropsUtils: Adjust Tensor workaround [someone5678]
-20da740104fa PixelPropsUtils: Switch from POCO F4 to POCO F5 [Joey Huab]
-
-* lineage-sdk
-e6258aa7 ChargingControl: Handle cancel toggle correctly if bypass is not supported [Luofan Chen]
-7f1c3b99 ChargingControl: Add cancel toggle for limit done notification [Luofan Chen]
-9ada9b1b ChargingControl: Reset internal states on settings change [Luofan Chen]
-c2dbc740 ChargingControl: Set a small margin for devices with bypass support [Luofan Chen]
-
-* packages/apps/Jelly
-950988c Jelly: M3 [Sebastiano Barezzi]
-a644d26 Jelly: New URL bar [Sebastiano Barezzi]
-44ab38b Jelly: Remove timestamp based history background color [Sebastiano Barezzi]
-5083615 Jelly: Remove background from empty lists icon [Sebastiano Barezzi]
-6e4b89a Jelly: Use AndroidX preference attributes [Sebastiano Barezzi]
-aaf50f9 Jelly: Don't apply tints directly on icons drawables [Sebastiano Barezzi]
-fb0c39c Jelly: Nuke favicon based accent color change [Sebastiano Barezzi]
-b846fae Jelly: Use camel case for layout IDs [Sebastiano Barezzi]
-5ef8a0f Jelly: Use MaterialToolbar back button [Sebastiano Barezzi]
-1041284 Jelly: Use lazy getters for views [Sebastiano Barezzi]
-a4aa4da Jelly: SettingsActivity: Use the new method for inflating fragments [Sebastiano Barezzi]
-1ed2274 Jelly: SettingsActivity: Use better Kotlin syntax [Sebastiano Barezzi]
-b6afc07 Jelly: SettingsActivity: Rename settings fragment class [Sebastiano Barezzi]
-ba85b55 Jelly: MainActivity: Use better Kotlin syntax [Sebastiano Barezzi]
-757e8c3 Jelly: MainActivity: Rename class attributes' names [Sebastiano Barezzi]
-d60eb1d Jelly: webview: Use better Kotlin syntax [Sebastiano Barezzi]
-0309838 Jelly: webview: Rename class attributes' names [Sebastiano Barezzi]
-59b832a Jelly: utils: Use better Kotlin syntax [Sebastiano Barezzi]
-172cdbb Jelly: ui: Fix secure icon showing [Sebastiano Barezzi]
-17a8a47 Jelly: ui: Use better Kotlin syntax [Sebastiano Barezzi]
-33c650c Jelly: ui: Rename class attributes' names [Sebastiano Barezzi]
-cd7582c Jelly: suggestions: Fix typo [Sebastiano Barezzi]
-1bdfc55 Jelly: suggestions: Use better Kotlin syntax [Sebastiano Barezzi]
-eae9762 Jelly: suggestions: Rename class attributes' names [Sebastiano Barezzi]
-09da4aa Jelly: history: Use better Kotlin syntax [Sebastiano Barezzi]
-0416d6c Jelly: history: Rename class attributes' names [Sebastiano Barezzi]
-b998168 Jelly: favorite: Use better Kotlin syntax [Sebastiano Barezzi]
-d9b4e87 Jelly: favorite: Rename class attributes' names [Sebastiano Barezzi]
-5f49d56 Jelly: Disable Jetifier [Sebastiano Barezzi]
-6b50949 Jelly: Reformat code [Sebastiano Barezzi]
-9094b05 Jelly: Use ?attr/isLightTheme [Sebastiano Barezzi]
-4764c54 Jelly: Rename app theme to Theme.Jelly [Sebastiano Barezzi]
-1333655 Jelly: Move to SPDX license headers [Sebastiano Barezzi]
-c89a447 Jelly: Remove unused import [Sebastiano Barezzi]
-80a748d Jelly: Add newline at the end of files where needed [Sebastiano Barezzi]
-4465010 Jelly: Get rid of wildcard imports [Sebastiano Barezzi]
-f12b272 Jelly: Introduce NoSuggestionProvider [Luca Stefani]
-6209588 Jelly: Use ranges in suggestion provider [Luca Stefani]
-
-* packages/apps/crDroidSettings
-90f768b crdroid: Add nav bar expanded layout [Pranav Vashi]
-
-* vendor/addons
-3824da8 addons: Update themed icons [Pranav Vashi]
-
-* vendor/lineage
-12b0a100 crdroid: Bump to version 9.6 [Pranav Vashi]
-
-====================
-     2023-06-28    
-====================
-* frameworks/av
-99a912605f Reset staticInfo if static meta fetch fails [Jongchan Choi]
-9a0e1c0014 Fix cts fail AudioTrackTest#testPlaybackHeadPositionIncrease [Mingyu Shih]
-eaeadea364 cameraserver: Fix floating point truncation for getUHRMaxJpegBufferSize [Jayant Chowdhary]
-087d4cbe96 Break cyclic binder dependency [Ray Essick]
-33640eb9bc codec2: change to support multiple fences for single output. [Uma Mehta]
-9f82adc9e2 Camera: Increase precapture end timeout [Shuzhen Wang]
-486032e700 libmkvextractor: Remove unused local filed rangeSpecified [utzcoz]
-
-* frameworks/base
-04729b759dfd Fix system reboot in systm_server caused by SensorPrivacyService [Shen Lin]
-2dd7cb73ccc1 Watchdog and sluggishness due to multiple virtual displays created by third party apps [sai.gairuboina-IN009276]
-2c5db34c8fd7 SourceStampVerification Return more specific error code when verification fails [sourabh-nanoti]
-9fa373d358c8 Early return when mA2dp is null (disconnected) to avoid null object reference [Shunkai Yao]
-7d6e406c25ac Increase timeout for UIAutomation [Veena Arvind]
-d97e9bde89fc Respect timeout multiplier in PermissionControllerManager [Prashanth Swaminathan]
-bf388283ef58 Make private, single-assignment fields "final" in android.content. [Mateus Azis]
-4be745b4c835 fix(#Magnification): mis-use non resoure id in resource getter when magnification capability setup [Roy Chou]
-87d3cc57b12f Usb: Fix incorrect mapping of port mode constants [Badhri Jagan Sridharan]
-35c8d6c22359 Revert "ExifInterface: Use FileDescriptors whenever we can." [Ray Essick]
-719285b15400 Revert "Use a ExifInterface ctor with a file descriptor as a parameter" [Ray Essick]
-25e800402007 Fix resource leak caused by TypedArray type [Gao Honghua]
-a595929b1ada Simplify UserHandle.equals [Santiago Seifert]
-d229411a4d4c Ensure ActivityManagerInternal instance is non-null [gang.huang]
-420d427d3a5f Add listener once for volume row animation [Yan Fang1]
-acd54af94a4c Delay tryToRebind if application exit reason is LMK [Vijay Kumar]
-484478c55c5d Device stuck in boot due to ArrayIndexOutOfBoundsException [Arun Goyal]
-7e43687a1705 Sometimes Screen does not wake up while receiving whatsapp video call [Aditya Jadhav]
 
