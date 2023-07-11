@@ -1,556 +1,305 @@
 ====================
-     2023-06-20    
+     2023-07-11    
 ====================
 * android
-1b16713 manifest: Track our contexthub [Nolen Johnson]
+20afbdd pixel: Add felix support [Michael Bestas]
 
 * build/make
-da42c725b build: Always use release-keys [Pranav Vashi]
+1f35378c0 build: Always use release-keys [Pranav Vashi]
 
 * frameworks/base
-b76727f29acb build: Don't check for fingerprint mismatch [Dan Cartier]
-96b12f340bbd fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi]
+b3a2e158ea23 build: Don't check for fingerprint mismatch [Dan Cartier]
 
-* lineage/hudson
-ed12a89 hudson: add Nubia Red Magic Mars (nx619j) [Cyborg2017]
-f4f6662 Regenerate device dependency mappings [LineageOS Infra]
-4549c58 hudson: add Galaxy A52s 5G and M52 5G [Simon1511]
-
-* lineage/scripts
-7fe1002 pixel: Avoid re-extracting factory images [Chirayu Desai]
-ee4afeb pixel/all: Print parallel output, prefix with device name [Chirayu Desai]
-c944f91 pixel: Use fbpacktool for unpacking bootloader.img on Tensor pixels [Michael Bestas]
-f3c95a9 fbpacktool: Update to current version [Michael Bestas]
-f9f4739 Import fbpacktool from AOSP [Chirayu Desai]
+* hardware/lineage/interfaces
+83262c9 fixup! health: Wait for required paths indefinitely [Luofan Chen]
+8fc7605 health: Only select node with RW permission [Luofan Chen]
+38913d0 health: Check access() return value [LuK1337]
+853ae10 health: Wait for required paths indefinitely [LuK1337]
 
 * lineage/wiki
-d882f7f4 wiki: add Galaxy A52s 5G and M52 5G [Simon1511]
+d3fc5f2a wiki: Run `sass-migrator.js division {}` on all scss files [LuK1337]
+34e9cf61 wiki: Update all gems [LuK1337]
 
 * packages/apps/CarrierConfig
-09a2a0f Override name of Mainland China carriers [cjybyjk]
+b4e658b Override name of Mainland China carriers [cjybyjk]
 
 * packages/services/Telephony
-0075e6aa6 Add support for multi-language carrier name override [cjybyjk]
-
-====================
-     2023-06-19    
-====================
-* lineage/hudson
-307cbfe Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-4a05e3b Updated lineage-minimal to 19-Jun-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-424c3a5 device-deps-regenerator: Add contexthub to ignorelist [razorloves]
-
-* lineage/wiki
-4d4a79dd wiki: devices: Add Nubia Red Magic Mars (nx619j) [Cyborg2017]
-
-====================
-     2023-06-18    
-====================
-* lineage/hudson
-f28f377 Regenerate device dependency mappings [LineageOS Infra]
-
-* device/xiaomi/msm8998-common
-c4611a1 msm8998-common: Update DRM (TUI) blobs from LA.UM.10.2.1.r1-03400-sdm660.0 [Kunmun]
-
-* vendor/xiaomi/msm8998-common
-a44bcfd msm8998-common: Update DRM (TUI) blobs from LA.UM.10.2.1.r1-03400-sdm660.0 [Kunmun]
-
-====================
-     2023-06-17    
-====================
-* device/google/contexthub
-6ceb9c74 contexthub-nano: Include headers for 4.4 kernels [Nolen Johnson]
-
-* lineage/mirror
-f1e30c4 Updated to 17-Jun-2023 16:51 UTC [Kevin F. Haggerty]
-068d1d8 Updated to 17-Jun-2023 15:41 UTC [Kevin F. Haggerty]
-35f4b9f Updated to 17-Jun-2023 15:06 UTC [Kevin F. Haggerty]
-68bc0f0 Updated to 17-Jun-2023 14:53 UTC [Kevin F. Haggerty]
-74eaae5 Updated to 17-Jun-2023 14:46 UTC [Kevin F. Haggerty]
-68ecbf0 Updated to 17-Jun-2023 14:23 UTC [Kevin F. Haggerty]
-
-* lineage/wiki
-eadbddac wiki: Remove leftover path_postfix variable [razorloves]
-
-====================
-     2023-06-16    
-====================
-* external/chromium-webview/patches
-acd8a98 Update Chromium Webview to 114.0.5735.131 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-80e30ce Update Chromium Webview arm prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-1a7d42b Update Chromium Webview arm64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-e4645fb Update Chromium Webview x86 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-4c0eb44 Update Chromium Webview x86_64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty]
-
-* frameworks/base
-8cb0fed963fc fixup! Partially revert "Assume sensors perform prox check" [Michael Bestas]
-2480b567076f fixup! SystemUI: Re-evaluate system theme on UI mode change [Michael Bestas]
-5c28e4ab835e fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas]
-
-* lineage/mirror
-8f9aa50 Updated aosp-minimal to 16-Jun-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-66d64cf carriersettings-extractor: Ignore motorola specific configs [Michael Bestas]
-a870640 pixel: Run regen-carriersettings.sh when it exists [Michael Bestas]
-cfd6e2d carriersettings-extractor: Make APNs extract optional [Michael Bestas]
-9a7adaa carriersettings-extractor: Only include gps elements in vendor_no_sim.xml [Michael Bestas]
-4075fcb carriersettings-extractor: Generate vendor_no_sim.xml [Michael Bestas]
-e830e8d carriersettings-extractor: Write mcc=0 mnc=0 config as just carrier_config [Chirayu Desai]
-d927852 carriersettings-extractor: Add missing name element in pbundle_as_map [Michael Bestas]
-ea8804b carriersettings-extractor: Sync tag name [Chirayu Desai]
-e0e53fb carriersettings-extractor: Handle failure gracefully [Chirayu Desai]
-0260b05 carriersettings-extractor: Update README [Michael Bestas]
-8166ecc carriersettings-extractor: Workaround for skip_464xlat field extraction [Michael Bestas]
-b6bdac0 carriersettings-extractor: Update for 13 [Michael Bestas]
-0bdaa22 carriersettings-extractor: Move element extraction to separate function [Michael Bestas]
-26561a8 carriersettings-extractor: Read CarrierSettings protobufs in stages [Chirayu Desai]
-5b27a24 carriersettings-extractor: Update to 12 [Luca Stefani]
-33f9e86 carriersettings-extractor: Always allow modifying APNs [Chirayu Desai]
-b8697e3 carriersettings-extractor: Exclude some values from vendor.xml [Chirayu Desai]
-e1499e0 carriersettings-extractor: Implement argparse, extract files into separate folders [Chirayu Desai]
-ae25298 carriersettings-extractor: Modify for usage in AOSP [Chirayu Desai]
-42c8ecf carriersettings-extractor: Remove unnecessary files, update README [Chirayu Desai]
-37fa6fe Import carriersettings-extractor [Chirayu Desai]
+fb02632e0 Add support for multi-language carrier name override [cjybyjk]
 
 * vendor/lineage
-d7f56a98 vars: Use fbpacktool for unpacking bootloader.img on Tensor pixels [Michael Bestas]
-
-====================
-     2023-06-15    
-====================
-* frameworks/base
-7ed5d514b6b2 fixup! SystemUI: add FloatingRotationButton for hw-key devices [Michael Bestas]
-4a4f20e13ab2 fixup! Add support for runtime toggle of navbar [Michael Bestas]
-dca0e345e1cf fixup! Keyguard: don't use large clock on landscape [Michael Bestas]
-
-* lineage/scripts
-0f89078 build-webview: Update default webview to 114.0.5735.131 [Kevin F. Haggerty]
-
-* lineage/wiki
-e62535e9 wiki: ether: Add back ANT+ & IMS note [razorloves]
-7ae02f8e Revert "Use HTML entities for ellipses" [razorloves]
-
-* packages/apps/Settings
-75db8964d8 fixup! Settings: Hide settings that don't work when taskbar is enabled [Michael Bestas]
-7ef5cc46a8 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
-
-* packages/apps/Trebuchet
-812c2cfb83 fixup! Hide scrollbar when searching All Apps [Michael Bestas]
-8a69f4ad62 fixup! Fix All Apps header protection and spacing again [Tommy Webb]
-a81c38dd9e Revert "Don't discard custom grid on config changes" [Michael Bestas]
-2c2cc4fdd7 Revert "fixup! Don't discard custom grid on config changes" [Michael Bestas]
-ce0bcfeb03 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-87e1441d Add null check for effectsController [Michael Bestas]
+4768246a config: Allow overriding ro.support_one_handed_mode [Michael Bestas]
+4a2439ac vars: July 2023 Security update [Chirayu Desai]
 
 * device/xiaomi/msm8998-common
-e89b429 msm8998-common: Update DRM (TUI) blobs from LA.UM.9.6.2.r1-04200-89xx.0 [Nanhumly]
-71cdb7c msm8998-common: nfc: Update storage path to /data/vendor/nfc [Marijn Suijten]
+4786449 msm8998-common: Drop unneeded IMS VT prop [Nanhumly]
 
 ====================
-     2023-06-14    
+     2023-07-10    
 ====================
-* android
-2626bcf manifest: June 2023 Quarterly Platform Release and Security update [Michael Bestas]
-
-* build/soong
-396c6159e Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* frameworks/base
-9b281e6bf417 fixup! SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds [Michael Bestas]
-89e2e61bf438 fixup! Implement edge long swipe gesture [Michael Bestas]
-9f0f2d7275ae fixup! SystemUI: Add VPN tile [Michael Bestas]
-bee0b867effe fixup! SystemUI: Add Profiles tile [Michael Bestas]
-45e3ad3ec60f SystemUI: Restore wifi and cellular QS tiles [Michael Bestas]
-d5e1aedff5f6 fixup! SystemUI: Add reading mode tile [Michael Bestas]
-1f1bc7b1ff30 fixup! SystemUI: Add powershare QS tile [Michael Bestas]
-dd8e6abe4d5f fixup! SystemUI: Add AOD QS tile [Michael Bestas]
-a87c0c250ff9 fixup! SystemUI: Add USB Tether tile [Michael Bestas]
-fe797e245553 fixup! SystemUI: Add AmbientDisplay tile [Michael Bestas]
-d3617e3961ab fixup! SystemUI: Add Sync tile [Michael Bestas]
-fd4ea765c153 fixup! SystemUI: Add heads up tile [Michael Bestas]
-e0926dba9ff0 fixup! SystemUI: Add caffeine QS tile [Michael Bestas]
-675b3eaf6f38 fixup! SystemUI: Add quick settings pull down with one finger [Michael Bestas]
-bb84e3ce70e6 fixup! camera: Support exposing aux camera to apps [Michael Bestas]
-8bcec894e0ac Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-c182b3466c26 Revert "SystemUI: Make edit button click ripple effect rounded" [Michael Bestas]
-1add163b190c Revert "[Status Bar] Append "__external" to external icons." [Michael Bestas]
-81aa92abfc68 Revert "Make the header INVISIBLE when alpha is 0" [Michael Bestas]
-80426c89b91b Revert "Revert "Add dumpsys logs to debug lockscreen stack height"" [Michael Bestas]
-3b76761a1b63 Revert "Strip part of the activity info of another uid if no privilege" [Michael Bestas]
-f50833a95ae5 Revert "Revert change that would detectFp when FP is locked out" [Michael Bestas]
-6cc17f829d4b Revert "SystemUI: Align QS header with status bar" [Michael Bestas]
-f54deb1cbd33 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
-e0531d8b58f4 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
+* external/setupcompat
+9627624 Don't use card view on tablets/foldables [Michael Bestas]
 
 * lineage-sdk
-bf6f48ce Update LineageDatabaseHelper for 13 QPR3 [Michael Bestas]
+c407667d ChargingControl: Use ServiceManager.waitForDeclaredService() [LuK1337]
+
+* lineage/hudson
+6b0105f hudson: Add Nubia Z18 (nx606j) [Cyborg2017]
+
+* lineage/wiki
+344e10bd templates: recovery_install_amlogic_update: Retailor [Nolen Johnson]
 
 * packages/apps/LineageParts
-c96f154 Update for 13 QPR3 [Michael Bestas]
+5e85ebc LineageParts: Make sure wakelock is held before releasing it [LuK1337]
+f06caa6 LineageParts: Remove unnecessary WakeLock::acquire() call [LuK1337]
 
-* packages/apps/Seedvault
-e03ad75 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas]
-90c8a3f Remove androidx.annotation.VisibleForTesting.PRIVATE usage [Michael Bestas]
+====================
+     2023-07-09    
+====================
+* build/soong
+32f43e728 soong: Properly sort dumpvar additions [Nolen Johnson]
 
-* packages/apps/Settings
-d11b56a34f fixup! Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
-ab0635e614 Merge tag 'android-13.0.0_r52' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-78f8a42291 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas]
+* lineage-sdk
+9ed93717 ChargingControl: No need to log a crash when not supported [Michael W]
 
-* packages/apps/ThemePicker
-7d7e0881 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+* lineage/crowdin
+cdb398f crowdin: Update packages/apps/Updater strings.xml path [LuK1337]
 
-* packages/apps/Trebuchet
-9e980ab027 Revert "Trebuchet: Add resource for home screen rotation default" [Michael Bestas]
+* lineage/wiki
+12172d98 wiki: devices: Add Nubia Z18 (nx606j) [Cyborg2017]
 
-* packages/modules/Bluetooth
-28ebbc5c61 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+* packages/apps/Updater
+185b5de Updater: Don't show delete twice [Michael W]
+613fbac Updater: Fix header margin [Michael W]
+c3093cb Updater: Align with Settings / Materialize [Michael W]
+bf1646f Updater: Handle NumberFormatException [Michael W]
+755560b Updater: Redo project structure [Sebastiano Barezzi]
 
 * vendor/lineage
-38506299 June 2023 Quarterly Platform Release and Security update [Chirayu Desai]
+0415cfd1 config: Let mini be really minimal [Bruno Martins]
+
+* device/xiaomi/sagit
+59df3a0 sagit: Set stock TARGET_PRODUCT and PRODUCT_SYSTEM_NAME [Arian]
 
 ====================
-     2023-06-13    
+     2023-07-08    
 ====================
-* bionic
-7e1668651 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* bootable/recovery
-e3cb6c12 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
 * build/make
-e99dbe1da Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* device/google/atv
-8606ccc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* external/gptfdisk
-7d31ef5 sgdisk: Make sgdisk recovery_available [Nolen Johnson]
-
-* external/icu
-39d6c39f1 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* external/wpa_supplicant_8
-6ba79835 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+cf5e4f710 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas]
 
 * frameworks/av
-ba6359980c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+2a75cd6d2a Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas]
 
-* frameworks/libs/systemui
-cb18bf8 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* frameworks/native
-2586c87598 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* frameworks/opt/telephony
-901eab9135 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/google/gchips
-ccb045d Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/google/graphics/common
-a812259 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/google/pixel
-a1b4713 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/interfaces
-69c80a071 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/qcom/display
-ef09d590fb msm8996: gralloc: check consumer with consumer and producer with producer [Roberto Sartori]
-
-* hardware/qcom/sm7250/display
-322ddd13 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* hardware/qcom/sm8150/display
-7a489c81 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* lineage-sdk
-9a0fe3be sdk: Add static isChargingControlSupported(ctx) method [LuK1337]
-
-* lineage/hudson
-a909c68 updater: Correct odroidc4 marketed brand/name [Nolen Johnson]
+* frameworks/base
+ff380f8605d9 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas]
 
 * lineage/mirror
-7d14a53 aosp-minimal: June 2023 QPR [Chirayu Desai]
-48e087d Updated aosp-minimal to 13-Jun-2023 12:01 UTC [Tim Schumacher]
+7d94ee5 Updated to 07-Jul-2023 12:56 UTC [Kevin F. Haggerty]
+
+* lineage/scripts
+3951b65 pixel: Support wifi only devices [Chirayu Desai]
 
 * lineage/wiki
-258e142c templates: recovery_install_amlogic_update: Fix typos [razorloves]
-ef7df5ed devices: odroidc4: Correct marketing name [Nolen Johnson]
+915bd699 devices: Correct onclite variants info [Dhina17]
 
-* packages/apps/Car/Settings
-a1cefc66b Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/CellBroadcastReceiver
-3d7340ee Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/Contacts
-9b1f80055 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/DocumentsUI
-94b118df7 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/EmergencyInfo
-ba3cf1c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/LineageParts
-b8a16c3 ChargingControl: Don't index settings if it is not supported [Luofan Chen]
-
-* packages/apps/Nfc
-45f13801 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/SettingsIntelligence
-4ef92f4 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/Tag
-2e6b762 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/TvSettings
-8795f169f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-b2c5b543 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/modules/Connectivity
-137aa2a07 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/modules/Permission
-22a59e9e3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+* packages/apps/Settings
+ed01619dff Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas]
 
 * packages/modules/Wifi
-f6626599ed Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/modules/common
-b13938a Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/providers/BlockedNumberProvider
-5fd5892 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/providers/DownloadProvider
-5d56c386 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/providers/MediaProvider
-9c6a2e77d Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-4710433c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/services/Mms
-c1db4f5 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/services/Telecomm
-5f4108ef3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/services/Telephony
-21321b57f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* packages/wallpapers/LivePicker
-66c64bc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/core
-be4324e36 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/extras
-5cf17c20 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/media
-41c2d1ab Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/security
-152f7b0 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/sepolicy
-615ae66c9 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
-
-* system/vold
-44775a2 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas]
+8302866c2d Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas]
 
 ====================
-     2023-06-12    
+     2023-07-07    
 ====================
-* lineage/hudson
-aa451fe First film was so popular Marvell let us bring in B-heros [Nolen Johnson]
-
-* lineage/wiki
-e0017863 devices: Import devkits of the Amlogic G12-family [Nolen Johnson]
-
-* packages/apps/Aperture
-06a2294 Aperture: Disable lens selector sound effects when busy [LuK1337]
-
-* tools/extract-utils
-561ce19 extract_utils: Remove super.raw after dumping partitions [Michael Bestas]
-7e3eb4d extract_utils: Don't extract multiple times for the same run [Michael Bestas]
-c1ea677 extract_utils: Add option to save extracted content [Michael Bestas]
-40dbd6b extract_utils: Add helper function for carriersettings_extractor.py [Michael Bestas]
-d469bc3 extract_utils: Add helper functions to generate RRO package structure [Michael Bestas]
-d5ad621 extract_utils: Add helper functions for single items [Michael Bestas]
-0f8eccc extract_utils: Add support to generate carriersettings file list [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-c878863 msm8998-common: Adjust the sorting of LiveDisplay [Nanhumly]
-
 ====================
-     2023-06-11    
+     2023-07-06    
 ====================
-* frameworks/base
-f28b2db87ff1 SystemUI: Network traffic with center cutout [1/3] [Wolfram Liebchen]
-
-* lineage-sdk
-95e2d729 Network traffic with center cutout [2/3] [Wolfram Liebchen]
-
-* lineage/wiki
-ba031bc6 devices: pro1*: Enable offmode charging [Nolen Johnson]
-
-* packages/apps/Aperture
-ce6be9c Aperture: Make use of ResolutionSelector API [LuK1337]
-
-* packages/apps/LineageParts
-0d2767d Network traffic with center cutout [3/3] [Wolfram Liebchen]
-
-* device/xiaomi/msm8998-common
-0207f68 msm8998-common: Build Lineage Health HAL [Michael Bestas]
-16b94e1 msm8998-common: Implement xtra-daemon control via property [Michael Bestas]
-30ea91f msm8998-common: gps: Remove all Wno-error flags [Michael Bestas]
-6773d96 msm8998-common: ueventd: Remove all permissions from /sys/devices/soc0/serial_number [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-43cd3a8dee2c ASoC: msm-pcm-q6-v2: Add dsp buf check [Soumya Managoli]
-4f69ae67d2ee qcacld-3.0: Fix OOB in wma_scan_roam.c [Nagalakshmi]
-
-====================
-     2023-06-10    
-====================
-* packages/apps/LineageParts
-c27f22e Regenerate contributors cloud (2023-06-10) [Kevin F. Haggerty]
-
-====================
-     2023-06-09    
-====================
-* device/lineage/sepolicy
-c86fda9 common: Add sepolicy rules for Lineage Health HAL and service [Luofan Chen]
-
-* frameworks/base
-b1f18c6acd85 services: Keep vendor.lineage.* classes [Michael Bestas]
-
-* lineage-sdk
-3ee21021 sdk: Implement Lineage health service [Luofan Chen]
-89941a96 sdk: Extract base class for lineage base feature [Luofan Chen]
-0e290483 sdk: Add requiresService attribute [Luofan Chen]
-738f26ef lineage-sdk: Add settings for charging control [Danny Trunk]
+* android
+b54282a pixel: Add tangorpro support [Michael Bestas]
+434bed3 manifest: July 2023 Security update [Michael Bestas]
 
 * lineage/hudson
-5f35d04 nio is a much cooler codename tbh [Nolen Johnson]
+97a757a hudson: Promote Redmi 7/Y3 to 20 [Dhina17]
+5018292 Disable caprip builds for now [Michael Bestas]
 
 * lineage/wiki
-0426c2f8 devices: Promote the moto edge 20 pro [Nolen Johnson]
-84822233 devices: Add jro1979 where applicable [Nolen Johnson]
-b8564055 wiki: Add another section for firmware requirement [Michael W]
-592e90b4 wiki: Fix broken step numbering in moto unlock [razorloves]
-44296175 wiki: Fix 'Devices' link on deviceinfo page [razorloves]
-
-* packages/apps/LineageParts
-dcbebe6 LineageParts: Add charging control preferences [Danny Trunk]
-
-* packages/apps/Settings
-4f097bfef6 Settings: Add charging control part [Danny Trunk]
-f009585cea Hide private DNS settings UI unless admin [Tommy Webb]
-41b4ed345a Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+fa214ad7 wiki: Add descending sort GET params to MTG AFH URL [LuK1337]
 
 * vendor/lineage
-2decc666 soong: Add TARGET_HEALTH_CHARGING_CONTROL related configs [Luofan Chen]
-97f0f8e3 config: device_framework_matrix: Add vendor.lineage.health [Michael Bestas]
-5bd9ed98 config: Copy Lineage health permissions [Luofan Chen]
+6e3be516 vars: Pixel Tablet [Michael Bestas]
 
 ====================
-     2023-06-08    
+     2023-07-05    
 ====================
-* device/lineage/sepolicy
-9f339ed Label xtra-daemon control property [Michael Bestas]
+* lineage/hudson
+06dd02d Regenerate device dependency mappings [LineageOS Infra]
 
-* external/chromium-webview/patches
-483f6a8 Update Chromium Webview to 114.0.5735.61 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-25651a0 Update Chromium Webview arm prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-7422f5f Update Chromium Webview arm64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-03ed985 Update Chromium Webview x86 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-7dd37cf Update Chromium Webview x86_64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty]
-
+====================
+     2023-07-04    
+====================
 * frameworks/base
-f038fce3d933 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
+6cc26342a05a WiredAccessoryManager: Add support for DP audio [LuK1337]
 
 * lineage/hudson
-08a34fd devices: Make deb match the debx marleting name [Nolen Johnson]
-b3c91cd I _really_ need to stop making promises to XDA users [Nolen Johnson]
-76f6a24 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-55d9e066 devices: Modernize deb page [Nolen Johnson]
-997128b1 devices: {deb,flo}x: List new maintainers [Nolen Johnson]
-9c45b8f3 devices: {deb,flo}x: Move repartition script away from AFH and further explain [Nolen Johnson]
-14fdd99a devices: Promote Nexus 7 2013 LTE [Nolen Johnson]
-
-* device/xiaomi/msm8998-common
-2110a62 Revert "Revert "msm8998-common: rootdir: Switch zRAM compression alg to Zstandard"" [Marco Zanin]
-
-====================
-     2023-06-07    
-====================
-* device/qcom/sepolicy-legacy-um
-1d7b129f sepolicy: Allow location read xtra-daemon control property [Michael Bestas]
-
-* device/qcom/sepolicy_vndr
-f0e87707 sepolicy: Allow location read xtra-daemon control property [Michael Bestas]
-1e904223 sepolicy: Restrict access to /sys/devices/soc0/serial_number [Michael Bestas]
-
-* device/qcom/sepolicy_vndr-legacy-um
-3e116552 sepolicy: Allow location read xtra-daemon control property [Michael Bestas]
-b4cb5381 sepolicy: Restrict access to /sys/devices/soc0/serial_number [Michael Bestas]
-
-* frameworks/base
-5602538f7467 GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
-e5a168634761 GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
-99b4499479f9 Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
-5df3442b4903 SystemUI: React to PrivacyConfig changes properly [Tommy Webb]
+54296c2 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-47aa55d Updated aosp-minimal to 07-Jun-2023 12:01 UTC [Tim Schumacher]
+9d524c5 Updated to 03-Jul-2023 14:40 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
-6a2ef2c9 wiki: Add newer Bluetooth specs [Nicholas Lim]
-3cfd3b20 devices: Update Pixel 7 family boot stack partitions [Nicholas Lim]
-b4e04841 wiki: Specify wade has a recovery partition [althafvly]
+4b681a5c wiki: Promote Redmi 7/Y3 to 20 [Dhina17]
+
+* device/xiaomi/msm8998-common
+c66255c msm8998-common: Disable SF composition prediction model on 5.4 and lower [Pullakavi Srinivas]
+
+* kernel/xiaomi/msm8998
+6b73e29a1222 zstd: Merge optimizations from Samsung [DevriesL]
+a934811340c0 simple_lmk: Reduce unnecessary wake ups [Sultan Alsawaf]
+36cb52bb83e5 simple_lmk: Ratelimit the 'no processes available to kill' message [Sultan Alsawaf]
+9431557e43ca simple_lmk: Fix victim scheduling priority elevation [Sultan Alsawaf]
+ce16bf3dcef2 Merge tag 'LA.UM.9.2.c25-02800-SDMxx0.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
+
+====================
+     2023-07-03    
+====================
+* packages/apps/Aperture
+6aa5ea8 Aperture: Make the supported quality list an unordered map [Sebastiano Barezzi]
+2d52dfb Aperture: Frame rates lists should be unordered sets [Sebastiano Barezzi]
+957d8a2 Aperture: Framerate -> frame rate [Sebastiano Barezzi]
+afc2753 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Barezzi]
+5f4883a Aperture: Update CameraX to 1.3.0-beta01 [LuK1337]
+
+====================
+     2023-07-02    
+====================
+* external/chromium-webview/patches
+f79c092 Update Chromium Webview to 114.0.5735.196 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+5ca4dde Update Chromium Webview arm prebuilt to 114.0.5735.196 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+ac72070 Update Chromium Webview arm64 prebuilt to 114.0.5735.196 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+f3d12bc Update Chromium Webview x86 prebuilt to 114.0.5735.196 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+0824443 Update Chromium Webview x86_64 prebuilt to 114.0.5735.196 [Kevin F. Haggerty]
+
+* frameworks/base
+a2909dad5af0 Automatic translation import [LineageOS Infra]
+
+* lineage-sdk
+d487fb50 Automatic translation import [LineageOS Infra]
+
+* lineage/wiki
+1c1464c8 wiki: devices: Add Galaxy F62/M62 [Tim Zimmermann]
+
+* packages/apps/Aperture
+969993e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+243e072 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+514e66281 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+8eec88b75 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+bcc6f18f0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+bc1e6b907 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+72ca7be1 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+4846cdb0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+0e706e4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+92bab79 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+832e397 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+3f1faab Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+5bd0c9e Automatic translation import [LineageOS Infra]
 
 * packages/apps/Settings
-d07f896eb2 AGPS: Mention that it's ignored during user-initiated emergency calls [Chirayu Desai]
-edd4545e44 Settings: Add switch preference for AGPS [juwei]
+c7f007a03b Automatic translation import [LineageOS Infra]
 
 * packages/apps/SetupWizard
-b37d7e5 Enable AGPS by default when google SUW is present [Michael Bestas]
+aff7773 Automatic translation import [LineageOS Infra]
 
-* vendor/lineage
-135cb649 Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
+* packages/apps/ThemePicker
+16a5a3a7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+b4a700d96a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+ae11300 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+8b91542e Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+1ae641b Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/fm-commonsys
+63e405c Automatic translation import [LineageOS Infra]
+
+====================
+     2023-07-01    
+====================
+* lineage/hudson
+b4e4c3e hudson: Add Galaxy F62/M62 (f62) [Tim Zimmermann]
+
+* lineage/scripts
+467bf43 build-webview: Update default webview to 114.0.5735.196 [Kevin F. Haggerty]
+
+* lineage/wiki
+721f534a templates: Update aml-flash-tool install instructions [Bruno Martins]
+
+* system/vold
+2711bf7 vold: fix failing to format zero-ed out SD card [nift4]
+
+====================
+     2023-06-30    
+====================
+* lineage/hudson
+094e8aa Regenerate device dependency mappings [LineageOS Infra]
+d8f49e4 First member of the Moto Bengal Clan [Dhina17]
+6efe957 Say Hi to the Moto khaje clan [Dhina17]
+
+* lineage/mirror
+8725ba2 Updated to 29-Jun-2023 20:27 UTC [Michael Bestas]
+
+* lineage/wiki
+e3972a3f wiki: Add Motorola moto g30 [Dhina17]
+e61b6ff5 wiki: Add Motorola Moto g32/g42/g52 [Dhina17]
+
+====================
+     2023-06-29    
+====================
+====================
+     2023-06-28    
+====================
+* lineage-sdk
+e6258aa7 ChargingControl: Handle cancel toggle correctly if bypass is not supported [Luofan Chen]
+7f1c3b99 ChargingControl: Add cancel toggle for limit done notification [Luofan Chen]
+9ada9b1b ChargingControl: Reset internal states on settings change [Luofan Chen]
+c2dbc740 ChargingControl: Set a small margin for devices with bypass support [Luofan Chen]
+
+* lineage/mirror
+6679bc5 aosp-minimal: Pixel Fold [Chirayu Desai]
 
