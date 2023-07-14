@@ -15,6 +15,7 @@
 c2a2270 sagit: PixelExperience bringup [Nanhumly]
 
 * device/xiaomi/msm8998-common
+4d0e574 msm8998-common: Import legacy usb rules [jro1979oliver]
 dddc07f msm8998-common: Silence clang warnings during kernel compile [arco]
 504caf8 msm8998-common: Switch to source built vendor.qti.hardware.fm@1.0 [Nanhumly]
 eb385bd msm8998-common: Define TARGET_BOOT_ANIMATION_RES to 1080p [Nanhumly]
@@ -158,13 +159,10 @@ df54726cc0d1 Check ACCELEROMETER_ROTATION_ANGLES for current user [Tom Pratt]
 225186fcf803 LockPatternUtils: Make settings getter and setters protected [d34d]
 54ed43a9e6dd base: ApplicationPackageManager: Exclude PE 2021 Midyear from tensor pixel list [someone5678]
 599dea4dba98 base: ApplicationPackageManager: Block Tensor features for Recorder [someone5678]
-d3735a80552d PixelPropsUtils: Update fingerprints for July [jhenrique09]
 
 * manifest
 cace1cf manifest: Track default branch for Connectivity [jhenrique09]
 09d668d manifest: Revert staging changes [jhenrique09]
-d653a97 manifest: Remove felix and tangorpro repositories [jhenrique09]
-5b92997 Merge tag 'android-13.0.0_r63' into thirteen-plus [jhenrique09]
 
 * packages/apps/FaceUnlockService
 a861622 Automatic translation import [jhenrique09]
@@ -172,6 +170,56 @@ a861622 Automatic translation import [jhenrique09]
 * packages/apps/Settings
 6453b42f97 Automatic translation import [Michael Bestas]
 b9c059232b Automatic translation import [jhenrique09]
+
+* packages/apps/TouchGestures
+43f90bc Automatic translation import [jhenrique09]
+
+* packages/apps/Updates
+85e816d Automatic translation import [jhenrique09]
+
+* packages/resources/devicesettings
+fcb20a8 Automatic translation import [jhenrique09]
+
+* system/vold
+e07f635 vold: fix failing to format zero-ed out SD card [nift4]
+
+* vendor/aosp
+3a7f1e19 Revert "DeviceConfig: Speechpacks for gboard smart dictation" [jhenrique09]
+4ab59e72 device_config: Remove obsolete Android 11 permission hub overlays [Danny Lin]
+4f40a6dc SimpleDeviceConfig: Updated v3 manifest to version 3058 [AmbientMusicBot]
+37e43c7a vendor: soong: Add target_alternative_futex_waiters [ShevT]
+efda342a config: Allow overriding ro.support_one_handed_mode [Michael Bestas]
+80a7e89e Revert "vendor: soong: oneplus --> oplus" [Shantanu Sarkar]
+
+* vendor/pixel-framework
+da67e2a SettingsGoogle: Update and fix missing res error [jhenrique09]
+
+====================
+     2023-07-11    
+====================
+* build/make
+24b4f883a Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/build into thirteen [jhenrique09]
+
+* frameworks/av
+80391ecf11 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/frameworks/av into HEAD [jhenrique09]
+
+* frameworks/base
+d3735a80552d PixelPropsUtils: Update fingerprints for July [jhenrique09]
+9600c4fe8e4a Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/frameworks/base into HEAD [jhenrique09]
+110d867a91d8 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
+976a3b426bd4 SystemUI: Prevent NPE when checking for powerbutton FPS [Michael W]
+9d1b69266bf2 SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
+bf72d850e70e SystemUI: Enable explicit media indicator [aswin7469]
+ed0d951785b0 SystemUI: Enable charger plug-in statusbar chip [Adithya R]
+2ec2784e6f91 SystemUI: Enable customizable lock screen quick affordances [Timo Dorfner]
+bfb50fc0de7c ScreenshotHelper: Add missing method for columbus [jhenrique09]
+499330b1d773 Fix sfps arrow color in overlay [jhenrique09]
+
+* manifest
+d653a97 manifest: Remove felix and tangorpro repositories [jhenrique09]
+5b92997 Merge tag 'android-13.0.0_r63' into thirteen-plus [jhenrique09]
+
+* packages/apps/Settings
 41b9ea0d0b Automatic translation import [jhenrique09]
 973c287edb Settings: Introduce Smart Pause [2/2] [Chris Crump]
 cef2482cdb Settings: Long press power button to toggle flashlight [2/2] [Chris Crump]
@@ -207,56 +255,38 @@ b718669bdb Settings: Add back increasing ring feature (2/2). [Danny Baumann]
 a2880b693d Settings: Forward port lock pattern grid size (2/2) [Michael Bestas]
 b0e628473d Settings: Protect sensitive data on the about phone [althafvly]
 f3224e91bf Settings: Add missing icons network and internet menu [kleidione Freitas]
+ddb07703b2 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD [jhenrique09]
 
-* packages/apps/TouchGestures
-43f90bc Automatic translation import [jhenrique09]
+* packages/modules/Wifi
+2e6d62e016 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD [jhenrique09]
 
-* packages/apps/Updates
-85e816d Automatic translation import [jhenrique09]
-
-* packages/resources/devicesettings
-fcb20a8 Automatic translation import [jhenrique09]
-
-* system/vold
-e07f635 vold: fix failing to format zero-ed out SD card [nift4]
+* system/nfc
+82eed2e Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/system/nfc into HEAD [jhenrique09]
 
 * vendor/aosp
-3a7f1e19 Revert "DeviceConfig: Speechpacks for gboard smart dictation" [jhenrique09]
-4ab59e72 device_config: Remove obsolete Android 11 permission hub overlays [Danny Lin]
-4f40a6dc SimpleDeviceConfig: Updated v3 manifest to version 3058 [AmbientMusicBot]
-37e43c7a vendor: soong: Add target_alternative_futex_waiters [ShevT]
-efda342a config: Allow overriding ro.support_one_handed_mode [Michael Bestas]
-80a7e89e Revert "vendor: soong: oneplus --> oplus" [Shantanu Sarkar]
 a5427b7a roomservice: Add fallback to thirteen branch [jhenrique09]
+d4aea51d config: Enable QR scanner shortcut on lockscreen [aswin7469]
+2e2ecaef fixup! config: Move IAntiFlicker to fqname [Nolen Johnson]
+de650106 soong: Add `aapt_version_code` default [LuK1337]
+02fd31ea config: Move IAntiFlicker to fqname [Michael Bestas]
+ff59a685 apn: Add Uno Mobile Italy [Dhina17]
 
 * vendor/gms
 868ee73 Update from July patch [jhenrique09]
 
-* vendor/pixel-framework
-da67e2a SettingsGoogle: Update and fix missing res error [jhenrique09]
+* vendor/qcom/opensource/audio-hal/st-hal
+7590197 st-hal: add TARGET_USES_QCOM_AUDIO_AR guard [SGCMarkus]
+
+* device/xiaomi/msm8998-common
+4786449 msm8998-common: Drop unneeded IMS VT prop [Nanhumly]
 
 ====================
-     2023-07-11    
+     2023-07-10    
 ====================
 * bionic
 945799503 Merge branch 'thirteen' of https://github.com/PixelExperience/bionic into thirteen [jhenrique09]
 
-* build/make
-24b4f883a Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/build into thirteen [jhenrique09]
-
-* frameworks/av
-80391ecf11 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/frameworks/av into HEAD [jhenrique09]
-
 * frameworks/base
-9600c4fe8e4a Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/frameworks/base into HEAD [jhenrique09]
-110d867a91d8 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
-976a3b426bd4 SystemUI: Prevent NPE when checking for powerbutton FPS [Michael W]
-9d1b69266bf2 SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
-bf72d850e70e SystemUI: Enable explicit media indicator [aswin7469]
-ed0d951785b0 SystemUI: Enable charger plug-in statusbar chip [Adithya R]
-2ec2784e6f91 SystemUI: Enable customizable lock screen quick affordances [Timo Dorfner]
-bfb50fc0de7c ScreenshotHelper: Add missing method for columbus [jhenrique09]
-499330b1d773 Fix sfps arrow color in overlay [jhenrique09]
 2996002d0513 fixup! SystemUI: Redraw display cutout on overlay changes [Omkar Chandorkar]
 34e425d55d56 SystemUI: Redraw display cutout on overlay changes [Adithya R]
 41d252db11c1 SystemUI: Enable media player surface ripple on button press [TimoDo]
@@ -273,24 +303,10 @@ e71e703 manifest: Stop tracking lynx dependencies [jhenrique09]
 f89a4ed [REVERTME] Use custom branch for gms [jhenrique09]
 d6eadc6 [REVERTME] Staging [jhenrique09]
 
-* packages/apps/Settings
-ddb07703b2 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD [jhenrique09]
-
-* packages/modules/Wifi
-2e6d62e016 Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD [jhenrique09]
-
 * packages/services/Telecomm
 8dbb075c1 Merge branch 'thirteen' of https://github.com/PixelExperience-Staging/packages_services_Telecomm into thirteen-plus [jhenrique09]
 
-* system/nfc
-82eed2e Merge tag 'android-13.0.0_r63' of https://android.googlesource.com/platform/system/nfc into HEAD [jhenrique09]
-
 * vendor/aosp
-d4aea51d config: Enable QR scanner shortcut on lockscreen [aswin7469]
-2e2ecaef fixup! config: Move IAntiFlicker to fqname [Nolen Johnson]
-de650106 soong: Add `aapt_version_code` default [LuK1337]
-02fd31ea config: Move IAntiFlicker to fqname [Michael Bestas]
-ff59a685 apn: Add Uno Mobile Italy [Dhina17]
 9f4eb72d fonts: Update from TQ3A.230605.012 [aswin7469]
 5debf448 DeviceConfig: Enable WallpaperEffects [aswin7469]
 66be3e87 SimpleDeviceConfig: Remove some pixel launcher configs [aswin7469]
@@ -312,18 +328,9 @@ e98122e SystemUIGoogle: Forcefully store Cached Estimate [someone5678]
 7ea6188 SystemUIGoogle: update to 13 QPR3 [aswin7469]
 65d1287 SystemUIGoogle: Update qs modules for 13 QPR3 [aswin7469]
 
-* vendor/qcom/opensource/audio-hal/st-hal
-7590197 st-hal: add TARGET_USES_QCOM_AUDIO_AR guard [SGCMarkus]
-
 * vendor/qcom/opensource/fm-commonsys
 74f4211 fm: Define soong_namespace [chrisl7]
 
-* device/xiaomi/msm8998-common
-4786449 msm8998-common: Drop unneeded IMS VT prop [Nanhumly]
-
-====================
-     2023-07-10    
-====================
 ====================
      2023-07-09    
 ====================
@@ -336,14 +343,14 @@ e98122e SystemUIGoogle: Forcefully store Cached Estimate [someone5678]
 ====================
      2023-07-07    
 ====================
-* hardware/qcom-caf/sm8150-common/display
-18c486f4 sdm: hwc: Allow overriding the doze mode support [danielml]
-
 ====================
      2023-07-06    
 ====================
 * hardware/qcom-caf/bengal/gps
 0d90e7f Revert "[DNM-TMP] Revert "Eliminate SystemStatusItem's multi-inheritance"" [CHRISL7]
+
+* hardware/qcom-caf/sm8150-common/display
+18c486f4 sdm: hwc: Allow overriding the doze mode support [danielml]
 
 * hardware/qcom-caf/sm8150-common/gps
 0d90e7f Revert "[DNM-TMP] Revert "Eliminate SystemStatusItem's multi-inheritance"" [CHRISL7]
@@ -355,6 +362,13 @@ e98122e SystemUIGoogle: Forcefully store Cached Estimate [someone5678]
 
 ====================
      2023-07-05    
+====================
+* hardware/qcom-caf/bengal/audio
+25c026b8 fixup! audio: Use TARGET_HALS_PATH [CHRISL7]
+ee902b1e Merge tag 'LA.UM.9.15.2.r1-07400-KAMORTA.QSSI12.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio into thirteen [CHRISL7]
+
+====================
+     2023-07-04    
 ====================
 * frameworks/base
 eb85a8a95674 PixelPropsUtils: Remove pixel whitelist [jhenrique09]
@@ -416,15 +430,6 @@ aa2e3b8b9e24 Don't pass repeated back key events to app if custom action is set 
 2eba269b3d7a Hide face recognizing message on bouncer when authenticated [jhenrique09]
 21d44cbd5bb4 face: Pass requestId on our authentication client [jhenrique09]
 2c717957de63 SystemUI: Tell user when face unlock detection is running [jhenrique09]
-
-* hardware/qcom-caf/bengal/audio
-25c026b8 fixup! audio: Use TARGET_HALS_PATH [CHRISL7]
-ee902b1e Merge tag 'LA.UM.9.15.2.r1-07400-KAMORTA.QSSI12.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio into thirteen [CHRISL7]
-
-====================
-     2023-07-04    
-====================
-* frameworks/base
 65c42790629a Reset face auth on occluding app when authenticated [jhenrique09]
 40d0988bfec6 WalletActivity: Don't explicity request face auth [jhenrique09]
 98b0e0bea7a4 Do not show camera indicator for Face Unlock service [LibXZR]
@@ -529,13 +534,6 @@ a441f929 sepolicy: Allow qti_init_shell to set proc_watermark_scale_factor. [Qua
 261aed1a sepolicy: Guard debugfs rules [Michael Bestas]
 1aeef8dd sepolicy: Label QTI USB HAL [LuK1337]
 
-* packages/apps/Aperture
-6aa5ea8 Aperture: Make the supported quality list an unordered map [Sebastiano Barezzi]
-2d52dfb Aperture: Frame rates lists should be unordered sets [Sebastiano Barezzi]
-957d8a2 Aperture: Framerate -> frame rate [Sebastiano Barezzi]
-afc2753 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Barezzi]
-5f4883a Aperture: Update CameraX to 1.3.0-beta01 [LuK1337]
-
 * packages/apps/Settings
 16d5df0f6a Automatic translation import [jhenrique09]
 56f22d9a74 Properly set Wi-Fi Privacy spinner initial state [Tommy Webb]
@@ -614,7 +612,11 @@ bc19180798 SystemUpdatePreferenceController: Refactor for our OTA app [jhenrique
      2023-07-02    
 ====================
 * packages/apps/Aperture
-969993e Automatic translation import [LineageOS Infra]
+6aa5ea8 Aperture: Make the supported quality list an unordered map [Sebastiano Barezzi]
+2d52dfb Aperture: Frame rates lists should be unordered sets [Sebastiano Barezzi]
+957d8a2 Aperture: Framerate -> frame rate [Sebastiano Barezzi]
+afc2753 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Barezzi]
+5f4883a Aperture: Update CameraX to 1.3.0-beta01 [LuK1337]
 
 ====================
      2023-07-01    
@@ -622,4 +624,7 @@ bc19180798 SystemUpdatePreferenceController: Refactor for our OTA app [jhenrique
 * hardware/qcom-caf/sm8150-common/audio
 436a06a3 HAL: Restrict calls to ADM for low-latency and ultra low-latency usecase [Vaibhav Raut]
 a3d32025 HAL: Restrict calls to ADM for low-latency usecase [Narsinga Rao Chella]
+
+* packages/apps/Aperture
+969993e Automatic translation import [LineageOS Infra]
 
