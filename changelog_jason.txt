@@ -1,0 +1,774 @@
+====================
+     2023-07-31    
+====================
+* build/make
+f0b8b4b27 build: Always use release-keys [Pranav Vashi]
+
+* frameworks/native
+2b223188e3 libbinder: force VNDK as system stable [ppooopppooo]
+
+* hardware/interfaces
+769d2ad70 Revert "audio: use binder threadpool" [anrui2032]
+34cf8c9c4 Revert "Audio: Load Bluetooth AIDL HAL" [anrui2032]
+
+* packages/apps/CarrierConfig
+ab6836a Override name of Mainland China carriers [cjybyjk]
+
+* packages/services/Telephony
+14aa19a45 Add support for multi-language carrier name override [cjybyjk]
+
+* device/xiaomi/jason
+b997ca1 jason: Forcing the use of prebuilt kernel [Nanhumly]
+c6d7a15 jason: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
+54ee9eb jason: Update fingerprint props from MIUI V12.0.1.0.PCHCNXM [Nanhumly]
+284d1f4 jason: Sort blobs list [Michael Bestas]
+a48bc3f jason: Disallow aux cam usage for Zoom [jabashque]
+6b357e7 jason: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
+96895f3 jason: overlay-lineage: Configure aux camera for Aperture [LuK1337]
+f01d99d jason: releasetools: Make re.search work on python3 [Alessandro Astone]
+faa1b71 jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
+717019c jason: Use piex shim from hardware/lineage/compat [Bruno Martins]
+8685616 jason: Prevent adding same dependency twice in blob_fixup [LuK1337]
+c824c0d jason: Bringup camera for T [Bruno Martins]
+43ed1cb jason: vndk: Update vndk-ext-libs [Nanhumly]
+
+* device/xiaomi/sdm660-common
+fae841a Revert "sdm660-common: Switch BtAudio to AIDL" [Nanhumly]
+4c432c1 sdm660-common: Build kernel with clang proton [Nanhumly]
+37204af sdm660-common: Opt-out for LLVM binutils [Bruno Martins]
+154725f sdm660-common: Migrate to proper libgui shim [Bruno Martins]
+5f74d6a sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
+d3d362d sdm660-common: Call my extra directory [Nanhumly]
+
+* vendor/xiaomi/jason
+a768c51 jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
+
+* vendor/xiaomi/sdm660-common
+1f69889 sdm660-common: Migrate to proper libgui shim [Bruno Martins]
+1f27026 sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
+
+====================
+     2023-07-30    
+====================
+* lineage/mirror
+546d4f3 Updated to 29-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+9d0a2f22 lineage: config: Allow devices without Cameras to opt-out of Aperture [Nolen Johnson]
+
+* device/xiaomi/jason
+fcb4a38 jason: Drop vendor.camera.aux.packagelist [Michael Bestas]
+
+* device/xiaomi/sdm660-common
+69d2a11 sdm660-common: Set correct manufacturer [Adithya R]
+1c4dd63 sdm660-common: Move ueventd.qcom.rc to /vendor/etc [Albert Tang]
+b0e2350 sdm660-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
+eaab991 sdm660-common: Fix PowerOffAlarm [Georg Veichtlbauer]
+8da743a sdm660-common: AOSP WFD doesn't support protected Wi-Fi Display buffers [Nolen Johnson]
+ce961e3 sdm660-common: Explicitly disable AVB [Nolen Johnson]
+2d09338 sdm660-common: Don't explicitly build android.hidl.allocator@1.0 [Arian]
+49b14b0 sdm660-common: Move to common Xiaomi fingerprint HIDL [Sebastiano Barezzi]
+6a81b55 sdm660-common: Move to common IFAAService [Sebastiano Barezzi]
+31cf81f sdm660-common: Switch to source-built mlipay interface [Bruno Martins]
+1a13e46 sdm660-common: Add hardware/xiaomi to Soong namespaces [Sebastiano Barezzi]
+e9712aa sdm660-common: Move qti_whitelist.xml to /system_ext [Michael Bestas]
+e4bb28d sdm660-common: switch to threaded Skia render engine backend [Timi Rautamäki]
+989b1da sdm660-common: Remove non-existent modules [Giovix92]
+fbee1a5 sdm660-common: doze: Fix compilation for QPR1 merge [Bruno Martins]
+7076d98 sdm660-common: audio: FIX "Switch audio HAL to V7 Updated audio policy manager configuration files to comply with the changes in the XML schema." [pix106]
+4c3df32 sdm660-common: Remove bdroid_buildcfg.h [Michael Bestas]
+c6d8f90 sdm660-common: Set block_binder_thread_on_incoming_calls in product.prop [Bruno Martins]
+77cad86 sdm660-common: Do not block binder thread on incoming calls [Danny Trunk]
+fe4c51b sdm660-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+47bac83 sdm660-common: Add tethering usb props [jro1979oliver]
+cfe59fc sdm660-common: Adoptable storage: Use CTS filenames encryption, not HEH [Paul Crowley]
+a2ff9e8 sdm660-common: ueventd: Set permissions for KGSL sysfs node [Mohammed Mirza Mandayappurath Manzoor]
+afe631d sdm660-common: wifi: Enable set channel on NDP setup [Nate Jiang]
+42eb8d7 sdm660-common: wifi: Configure correct overlay configuration. [Les Lee]
+1a4ff1e sdm660-common: Enable zygote critical window [Woody Lin]
+e0830c4 sdm660-common: Unpin updatable-media from memory [Santiago Seifert]
+74e5dce sdm660-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+876e657 sdm660-common: Drop default DRM service [Bruno Martins]
+a2c64a9 sdm660-common: Drop component overrides [Bruno Martins]
+e160c1e sdm660-common: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
+2e87bcd sdm660-common: overlay: Remove BT related configs [Bruno Martins]
+9acf572 sdm660-common: Move BT profiles props to vendor [Alexander Koskovich]
+3d14abb sdm660-common: Disable LE audio related profiles [Alice Kuo]
+0ed5405 sdm660-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+2937c5d sdm660-common: Set default the Bluetooth class of device [Sal Savage]
+0faf780 sdm660-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+e513645 sdm660-common: Enable bluetooth profiles with product.prop [Sal Savage]
+d1a1b97 sdm660-common: Switch BtAudio to AIDL [Josh Wu]
+b2c0aa9 sdm660-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
+490af15 sdm660-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
+64a5fb0 sdm660-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+4b60654 sdm660-common: Move to libhidl shim in hardware/lineage/compat [Nolen Johnson]
+28d943f sdm660-common: Removed audio A2dp from sdm660.mk [Etienne Ruffieux]
+
+* vendor/xiaomi/jason
+5f5455c jason: Use piex shim from hardware/lineage/compat [Bruno Martins]
+85cde04 jason: Bringup camera for T [Bruno Martins]
+
+* vendor/xiaomi/sdm660-common
+0b65cbc sdm660-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
+219733f sdm660-common: Fix PowerOffAlarm [Michael Bestas]
+15166f0 sdm660-common: Switch to source-built mlipay interface [Bruno Martins]
+b32fc41 sdm660-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+
+====================
+     2023-07-29    
+====================
+* android
+2fa2e8b qcom: Sync core-utils-sys and core-utils-vendor [Bruno Martins]
+
+* bootable/recovery
+107dfac7 recovery: Ask to reboot before installing anything after A/B update [LuK1337]
+
+* lineage/wiki
+4c6b1ea1 update contributors [Tom Powell]
+732015be wiki: Move note_signature_check in device install up [LuK1337]
+b806db4b wiki: Add vbmeta to oplus 4350/8350 boot stack partitions [LuK1337]
+
+* device/xiaomi/jason
+3ad96ad jason: rootdir: Fix mount of USB drivers with kernel 4.4 [Nanhumly]
+e99950d jason: PocketMode: Treat ProximitySensor values as int [Arian]
+36ee1e3 jason: overlay: Define proximity sensor type with custom threshold [Michael W]
+
+* kernel/xiaomi/sdm660
+0cc81e353bdc defconfig: jason: Remove duplicate F2FS config changes [stic-server-open]
+bf5b91dda072 ext4: Introduce xiaomi async_fsync mount options (default) [stic-server-open]
+92a787653b06 ext4: introduce jbd2_inode dirty range scoping and use it on ext4 [Ross Zwisler]
+1fbfd6935b29 ext4: Stop trim mechanism after receiving SIGUSR1 signal [stic-server-open]
+a30453126c58 fs: ext4-f2fs: Delete the Android I/O Trace that has never been used [stic-server-open]
+fde2dc670f36 f2fs: hardcode cp_interval to 200s after merging rapid GC [zhaoyuenan]
+dc63a0beb556 fs: f2fs: rename /sys/fs/f2fs sysfs [Park Ju Hyung]
+d042d263cf37 fs: f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
+132186783a51 fs: f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
+b7748233c7bd fs: f2fs: unlock wakelock properly when f2fs_stop_rapid_gc is called [Park Ju Hyung]
+9fa528c4303a fs: f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
+334642dd2b48 fs: f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
+38da2d968eef fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
+67013e8410ec fs: f2fs: mark gc_threads() functions as static [Park Ju Hyung]
+27e2025c03cb fs: f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
+31b8489c2207 fs: f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
+6f94afb9a500 fs: f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
+138f93991dfb fs: f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
+6c622dfc9ed0 fs: f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
+ec9b22cd6ba1 fs: f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
+4f93044b4e0d fs: f2fs: Fix f2fs Rapid GC merge conflict [Park Ju Hyung]
+796527aab824 fs: f2fs: do not wait until all invalid blocks are discarded [Park Ju Hyung]
+d98f9919f6c7 fs: f2fs: implement rapid GC for Android [Park Ju Hyung]
+fa6d706f55a7 fs: f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
+a60fcf2fdc59 f2fs: avoid needless checkpoint during fsync [liuchao12]
+4c0251470adb f2fs: enable fstrim to issue discard while using discard option [liuchao12]
+67378980f432 f2fs: Stop trim mechanism after receiving SIGUSR1 signal [xiongping1]
+5039a0122e52 f2fs: obsolete unused MAX_DISCARD_BLOCKS [Chao Yu]
+284f984e6390 f2fs: set checkpoint_merge by default [Jaegeuk Kim]
+8976fe2a561b f2fs: add ckpt_thread_ioprio sysfs node [Daeho Jeong]
+9df0e22a3a73 f2fs: don't grab superblock freeze for flush/ckpt thread [Jaegeuk Kim]
+29cd8cd46b97 f2fs: introduce checkpoint_merge mount option [Daeho Jeong]
+af45a1c5eb6f f2fs: deprecate f2fs_trace_io code [Jaegeuk Kim]
+dacb7a0a4c94 f2fs: remove unused stat_{inc, dec}_atomic_write [Jack Qiu]
+b8a957b70336 f2fs: use kmem_cache pool during inline xattr lookups [Chao Yu]
+26a08ed29292 f2fs: introduce DEFAULT_IO_TIMEOUT [Chao Yu]
+ae55d3e51200 f2fs: don't leak filename in f2fs_try_convert_inline_dir() [Eric Biggers]
+9289d5bc4211 f2fs: remove blk_plugging in block_operations [Jaegeuk Kim]
+ed9c475208aa f2fs: fix checkpoint=disable:%u%% [Jaegeuk Kim]
+76814e658d4c f2fs: delete DIO read lock [DongDongJu]
+6358943db895 f2fs: xattr.h: Replace zero-length array with flexible-array member [Gustavo A. R. Silva]
+bce34c5c5f8f f2fs: skip GC when section is full [Jaegeuk Kim]
+30f850ce7808 f2fs: fix the panic in do_checkpoint() [Sahitya Tummala]
+710db7885fdd f2fs: fix to wait all node page writeback [Chao Yu]
+7851030f6cd9 f2fs: Add f2fs stats to sysfs [Hridya Valsaraju]
+fe2ecd2c890c f2fs: delete duplicate information on sysfs nodes [Hridya Valsaraju]
+725c20b93966 f2fs: change to use rwsem for gc_mutex [Chao Yu]
+7225c7f24271 f2fs: code cleanup for f2fs_statfs_project() [Chengguang Xu]
+cb984a669315 f2fs: fix miscounted block limit in f2fs_statfs_project() [Chengguang Xu]
+c994907ffb84 f2fs: remove unneeded check for error allocating bio_post_read_ctx [Eric Biggers]
+e1153a451f15 f2fs: convert inline_dir early before starting rename [Jaegeuk Kim]
+3be750fbfbde f2fs: fix memleak of kobject [Chao Yu]
+7c8d57854303 f2fs: fix to add swap extent correctly [Chao Yu]
+70c94bfcc729 f2fs: run fsck when getting bad inode during GC [Jaegeuk Kim]
+cc0a768427fe f2fs: free sysfs kobject [Jaegeuk Kim]
+8a70466a4ab4 f2fs: declare nested quota_sem and remove unnecessary sems [Jaegeuk Kim]
+82c167cd399b f2fs: don't put new_page twice in f2fs_rename [Jaegeuk Kim]
+86c819c0122d f2fs: set I_LINKABLE early to avoid wrong access by vfs [Jaegeuk Kim]
+f0f4f70c63ca f2fs: introduce private bioset [Chao Yu]
+ead737bba5fb f2fs: cleanup duplicate stats for atomic files [Sahitya Tummala]
+a49543e3ccf9 f2fs: set GFP_NOFS when moving inline dentries [Jaegeuk Kim]
+7a1ab864c16f f2fs: should avoid recursive filesystem ops [Jaegeuk Kim]
+40d011c52092 f2fs: keep quota data on write_begin failure [Jaegeuk Kim]
+3e84e166541a f2fs: call f2fs_balance_fs outside of locked page [Jaegeuk Kim]
+609836863558 f2fs: preallocate DIO blocks when forcing buffered_io [Jaegeuk Kim]
+9572866f45c6 f2fs: stop GC when the victim becomes fully valid [Jaegeuk Kim]
+4cda043beacd f2fs: expose main_blkaddr in sysfs [Jaegeuk Kim]
+821fb71a828a f2fs: choose hardlimit when softlimit is larger than hardlimit in f2fs_statfs_project() [Chengguang Xu]
+f71cf0e4f318 f2fs: Fix deadlock in f2fs_gc() context during atomic files handling [Sahitya Tummala]
+42fed90d0085 f2fs: show f2fs instance in printk_ratelimited [Chao Yu]
+c35100c066f6 f2fs: fix potential overflow [Chao Yu]
+2aca90a40e12 f2fs: fix to update dir's i_pino during cross_rename [Chao Yu]
+19ae15103215 f2fs: support aligned pinned file [Jaegeuk Kim]
+c194e17fd1db f2fs: fix to avoid memory leakage in f2fs_listxattr [Randall Huang]
+b7c77afad857 f2fs: avoid kernel panic on corruption test [Jaegeuk Kim]
+0dcb7bc97c23 f2fs: fix wrong description in document [Chao Yu]
+449c69c934c8 f2fs: cache global IPU bio [Chao Yu]
+dea5ee97e46a f2fs: check total_segments from devices in raw_super [Qiuyang Sun]
+a7a51573ebe1 f2fs: update multi-dev metadata in resize_fs [Qiuyang Sun]
+59e670bb4976 f2fs: mark recovery flag correctly in read_raw_super_block() [Chengguang Xu via Linux-f2fs-devel]
+b59db896a4f1 f2fs: fix to update time in lazytime mode [Chao Yu]
+f91b7deeff31 f2fs: add a condition to detect overflow in f2fs_ioc_gc_range() [Sahitya Tummala]
+b1ad938ddbd0 f2fs: fix to add missing F2FS_IO_ALIGNED() condition [Chao Yu]
+b401ac3f7444 f2fs: fix to fallback to buffered IO in IO aligned mode [Chao Yu]
+31db15eeba7d f2fs: fix to handle error path correctly in f2fs_map_blocks [Chao Yu]
+e8b5a850f446 f2fs: fix extent corrupotion during directIO in LFS mode [Chao Yu]
+fbfb87b37c93 f2fs: Add a small clarification to CONFIG_FS_F2FS_FS_SECURITY [Lockywolf]
+218c94168a75 f2fs: fix inode rwsem regression [Goldwyn Rodrigues]
+17a0005a0e61 f2fs: fix to avoid accessing uninitialized field of inode page in is_alive() [Chao Yu]
+b84b55da4777 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
+ce87046dea26 f2fs: convert inline_data in prior to i_size_write [Jaegeuk Kim]
+61a75bbdc786 f2fs: fix error path of f2fs_convert_inline_page() [Chao Yu]
+290ae83f6686 f2fs: add missing documents of reserve_root/resuid/resgid [Chao Yu]
+a5e06cd99a29 f2fs: fix flushing node pages when checkpoint is disabled [Jaegeuk Kim]
+6ada2843e912 f2fs: enhance f2fs_is_checkpoint_ready()'s readability [Chao Yu]
+c6e51424129d f2fs: clean up __bio_alloc()'s parameter [Chao Yu]
+80a336b7cd7c f2fs: fix wrong error injection path in inc_valid_block_count() [Chao Yu]
+5c0fdd996774 f2fs: fix to writeout dirty inode during node flush [Chao Yu]
+163a9c5c43a1 f2fs: Fix indefinite loop in f2fs_gc() [Sahitya Tummala]
+f921b43906d5 f2fs: allocate memory in batch in build_sit_info() [Chao Yu]
+3713774f26fc f2fs: fix to avoid data corruption by forbidding SSR overwrite [Chao Yu]
+697f733be7c6 f2fs: cleanup the code in build_sit_entries. [Lihong Kou]
+863635401006 f2fs: fix wrong available node count calculation [Chao Yu]
+3fbbb7660ca4 f2fs: remove duplicate code in f2fs_file_write_iter [Lihong Kou]
+ef4254f22424 f2fs: fix to migrate blocks correctly during defragment [Chao Yu]
+f66c079aaf09 f2fs: use wrapped f2fs_cp_error() [Chao Yu]
+a6c1f0e057a5 f2fs: fix to use more generic EOPNOTSUPP [Chao Yu]
+cb258086a2e4 f2fs: use wrapped IS_SWAPFILE() [Chao Yu]
+081fb9d9c10c f2fs: fix to avoid call kvfree under spinlock [Chao Yu]
+7692e9ad343c f2fs: Remove unnecessary checks of SM_I(sbi) in update_general_status() [Jia-Ju Bai]
+7b768b1047b8 f2fs: disallow direct IO in atomic write [Chao Yu]
+ff19f728cdda f2fs: fix to handle quota_{on,off} correctly [Chao Yu]
+9ec629d2d69a f2fs: fix to detect cp error in f2fs_setxattr() [Chao Yu]
+6704df09eb77 f2fs: fix to spread f2fs_is_checkpoint_ready() [Chao Yu]
+d82ec393542c f2fs: support fiemap() for directory inode [Chao Yu]
+663c8e7cb03f f2fs: fix to avoid discard command leak [Chao Yu]
+fdc4883bd937 f2fs: disallow switching io_bits option during remount [Chao Yu]
+d1ef2a134426 f2fs: fix panic of IO alignment feature [Chao Yu]
+0b66fac30532 f2fs: introduce {page,io}_is_mergeable() for readability [Chao Yu]
+9c15e07be0b4 f2fs: fix livelock in swapfile writes [Jaegeuk Kim]
+e50d69402d68 mm: export add_swap_extent() (note: f2fs-backport merge) [Omar Sandoval]
+17867af2cb10 f2fs: checkout to LA.UM.9.2.r1-03300-SDMxx0.0 f2fs filesystem tree [stic-server-open]
+1b31d9775336 defconfig: jason: Enable CONFIG_NTFS_RW [hridaya]
+303d025bdda6 defconfig: jason: Enable CONFIG_NTFS_FS [sbwml]
+1d96870a702e defconfig: jason: Enable CONFIG_EXFAT_FS [sbwml]
+9aae85179fbd fs: Expose exFAT for build [sbwml]
+f1c915d511b4 fs: Add linux-exfat 5.10.1 [sbwml]
+1964d09a84d5 defconfig: jason: Drop -lineage identifier from kernel [Georg Veichtlbauer]
+
+====================
+     2023-07-28    
+====================
+* lineage/hudson
+dd13b25 Disable sony sm8250 family builds for now [Luofan Chen]
+
+* lineage/wiki
+964e4ae4 wiki: Make network property required [LuK1337]
+f5655715 wiki: a5y17lte and a7y17lte: Switch to recommending lineage recovery [filip rrs]
+bde3e74e devices: Drop pdx203 and pdx206 [Luofan Chen]
+
+* packages/apps/Aperture
+c9be184 Aperture: Update CameraX to 1.3.0-beta02 [LuK1337]
+c32bb3d Aperture: Restore old flash mode after Torch [Luca Stefani]
+
+* packages/apps/Jelly
+9f91d5c Revert "Jelly: Drop unused dependencies" [Luca Stefani]
+
+* vendor/lineage
+5c779462 qcom: Prepare for non-legacy dataservices [Bruno Martins]
+fa1664c6 qcom: Use full QTI gralloc struct for GKI 2.0 targets [Bruno Martins]
+
+* vendor/qcom/opensource/dataservices
+c8adc2a rmnetctl: Conditionally remove rmnet_data header include [Bruno Martins]
+
+* device/xiaomi/sdm660-common
+e98ac8b sdm660-common: Enable DRM service [Dyneteve]
+f355f89 sdm660-common: Update widevine blobs from from jasmine V11.0.22.0.QDIMIXM [Ratoriku]
+
+* vendor/xiaomi/sdm660-common
+0631625 sdm660-common: Update widevine blobs from from jasmine V11.0.22.0.QDIMIXM [Ratoriku]
+
+====================
+     2023-07-27    
+====================
+* device/lineage/sepolicy
+5dfb805 common: Label bluetooth.hci.disabled_commands [LuK1337]
+
+* lineage/hudson
+a96488f Unset `lineage_recovery` everywhere [LuK1337]
+a940da3 "no, we really are committed to tablets this time i swear" [Nolen Johnson]
+
+* lineage/mirror
+7616683 Updated aosp-minimal to 26-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+ea8ee0d8 wiki: Fix tangorpro peripherals list [LuK1337]
+22e9e79b wiki: Fix tangorpro device type [LuK1337]
+4e317130 devices: Add Pixel Tablet [Nolen Johnson]
+
+* packages/apps/Aperture
+1c64102 Aperture: Preserve classes extending SettingsFragment [Luca Stefani]
+
+* packages/modules/Bluetooth
+2b932ba1ef gd: hci: Allow disabling selected local commands [LuK1337]
+
+* device/xiaomi/jason
+2c41a78 jason: overlay: Update deprecated screen power items [Georg Veichtlbauer]
+ed9f67a jason: overlay: Remove dsp. prefix from audio and video power profiles [Arian]
+
+* device/xiaomi/sdm660-common
+fad4e57 sdm660-common: Makefile: Inherit several Android Go configurations [Albert I]
+7a62ac6 sdm660-common: Undefine BOARD_HAS_QCOM_WLAN. [Alexander Koskovich]
+8ccd940 sdm660-common: Remove duplicate SIP+VoIP permission [Timi Rautamäki]
+2c31b4d sdm660-common: Deduplicate handheld_core_hardware.xml copy rule [Bruno Martins]
+b804ab8 sdm660-common: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
+b6c455d sdm660-common: Drop custom APM flag [Bruno Martins]
+
+* kernel/xiaomi/sdm660
+abcfe49975c3 f2fs: gc: Fast-forward to https://github.com/arter97/android_kernel_realme_sdm710/commit/6ea19a5eae17aa37210346eab93acfff1e000b1e [celtare21]
+7b2d4160197d f2fs: gc: Replace f2fs_info with pr_info_ratelimited [celtare21]
+9fc7c00e18b8 f2fs: gc: Increse DEF_GC_THREAD_NOGC_SLEEP_TIME to 4 hours [celtare21]
+a45f28eccbe0 f2fs: Revert last wakelock patchset for rapid GC [celtare21]
+afa94c0f552e f2fs: Set cp_interval to 30 secs and make it no-op [celtare21]
+9dc1e02769c1 writeback: hardcode dirty_expire_centisecs=3000 (30s) [Park Ju Hyung]
+7bf1ab45aa0d fs: default to noatime [arter97]
+e1203ceba25c fs: drop_caches: expose mm_drop_caches() [Park Ju Hyung]
+69c337b82d84 mm, memcg: use consistent gfp flags during readahead [Michal Hocko]
+ba6051ec8d65 defconfig: jason: Enable F2FS [NurKeinNeid]
+8c7581c3008f f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
+942f43317891 f2fs: Fix absolute jiffy duration in write uncongestion timeout [Danny Lin]
+fc172a6e413d f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
+7f1f2de279fd f2fs: unlock wakelock properly when f2fs_stop_rapid_gc() is called [Park Ju Hyung]
+564746b7a598 f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
+25645a9b91ce f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
+94bda810792f f2fs: mark gc_threads() functions as static [Park Ju Hyung]
+00a4b74f5940 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
+9c95c291a7cc f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
+4a930ee200f7 f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
+177b37316b13 f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
+738b5b7299eb f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages() [Park Ju Hyung]
+1a2c80e02e9c f2fs: rename /sys/fs/f2fs [Park Ju Hyung]
+4eb1bf60c51f f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
+6000e0e82f61 f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
+9653eeb1cb0f f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
+d29c3e597e40 f2fs: fix rapid GC breakage from merge 4e87f7d2befb8 [Park Ju Hyung]
+27180299edfc f2fs/rapid_gc: do not wait until all invalid blocks are discarded [Park Ju Hyung]
+22e92e850bc2 f2fs: implement rapid GC for Android [Park Ju Hyung]
+0c92c038b444 f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
+e80264c9e8d2 bpf: Add new cgroup attach type to enable sock modifications [David Ahern]
+a4d53a9362dd ebpf: allow bpf_get_current_uid_gid_proto also for networking [Roberto Sartori]
+
+====================
+     2023-07-26    
+====================
+* device/qcom/sepolicy-legacy-um
+d2866673 sepolicy: Import legacy usb rules [jro1979oliver]
+
+* frameworks/base
+77a64024f86a SystemUI: Enable cast tile without Wi-Fi connection [nift4]
+e8fc948cb3c0 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
+
+* packages/apps/Aperture
+8863c66 Aperture: Set default_applicable_licenses [Michael Bestas]
+ea79c37 Aperture: Switch Android.bp to SPDX [Michael Bestas]
+dd2506a Aperture: Start making it REUSE compliant [Michael Bestas]
+69766ff Aperture: Add missing copyright headers to icons [Michael Bestas]
+cbe47bf Aperture: Move torch mode on photo mode to long press [Sebastiano Barezzi]
+473ec70 Aperture: Add some processing settings [Sebastiano Barezzi]
+7901412 Aperture: Use a delegate for view model properties [Sebastiano Barezzi]
+4b472e6 Aperture: Add previous() and next() for all enum classes [Sebastiano Barezzi]
+b2d9983 Aperture: SettingsFragment: Handle back button properly [Sebastiano Barezzi]
+3aeaa5d Aperture: Better handle left/right swipe gesture [Sebastiano Barezzi]
+dbd2ada Aperture: Sort camera modes in CameraMode [Sebastiano Barezzi]
+37c5c8e Aperture: Use the view model for LensSelectorLayout [Sebastiano Barezzi]
+4e95783 Aperture: Set UI components visibility on LiveData observer [Sebastiano Barezzi]
+59478dd Aperture: Remove useless timer mode button visibility setter [Sebastiano Barezzi]
+aaa5391 Aperture: Reformat code [Sebastiano Barezzi]
+7092b3b Aperture: Disable video quality button when there's only one quality available [Sebastiano Barezzi]
+6796239 Aperture: Add an info chip [Sebastiano Barezzi]
+1b1e80b Aperture: Use LiveData to update secondary bar buttons UI [Sebastiano Barezzi]
+7efb1d1 Aperture: Constrain count down view to the view finder [Sebastiano Barezzi]
+6362979 Aperture: Inflate count down view content by its own [Sebastiano Barezzi]
+e78d88f Aperture: Handle thermal status [Sebastiano Barezzi]
+8078449 Aperture: Add volume buttons gestures [Sebastiano Barezzi]
+300e62b Aperture: Handle camera errors [Sebastiano Barezzi]
+
+* packages/apps/Contacts
+68e10aee1 Contacts: add support for importing VCF v4 [althafvly]
+
+* packages/apps/Eleven
+24ecd251 Eleven: Request MANAGE_EXTERNAL_STORAGE permission [DarkJoker360]
+
+* packages/apps/Gallery2
+bca6838e1 Check for Potential Null Pointer [Jing Mike]
+
+* packages/apps/Jelly
+5e7cdbe Jelly: Drop unused dependencies [Sebastiano Barezzi]
+
+* packages/apps/SetupWizard
+0456a86 Remove landscape layout for missing SIM page [Michael Bestas]
+
+* vendor/lineage
+c3dda454 Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE [Bruno Martins]
+8bbb7d90 qcom: Add support for kalama platform [Bruno Martins]
+99041d0e apns: Format xml spacing [Michael Bestas]
+
+* device/xiaomi/jason
+fa344ff jason: sepolicy: Label camera.S5K3M3.actuator.update [Nanhumly]
+ca7f809 jason: sepolicy: Label camera.IMX386.actuator.update [Nanhumly]
+3487e92 jason: sepolicy: Mark camera as vendor executes system violator [Michael Bestas]
+0a22c3c jason: sepolicy: Allow camera hal to read system_file [Arian]
+
+* device/xiaomi/sdm660-common
+9845869 sdm660-common: sepolicy: Resolve vmallocinfo denial [Arne Coucheron]
+93592e1 sdm660-common: sepolicy: Allow system_app to access zram sysfs nodes [Kevin F. Haggerty]
+e8c1b4c sdm660-common: sepolicy: Allow system_app to read /proc/pagetypeinfo [Kevin F. Haggerty]
+
+====================
+     2023-07-25    
+====================
+* lineage/wiki
+3ed9e96c wiki: jfltespr is not a Verizon device [Neel Chauhan]
+
+* packages/apps/Jelly
+9f96ba9 Jelly: The epic of better suggestions [Luca Stefani]
+aee69cd Jelly: Remove custom focus change listener handling [Luca Stefani]
+38bebfc Jelly: Switch to new JSON format for Google suggestions [Luca Stefani]
+7f96a63 Jelly: Cleanup downloadSuggestionsForQuery [Luca Stefani]
+b2b4f08 Jelly: PrefsUtils -> SharedPreferencesExt [Sebastiano Barezzi]
+4ddc7bc Jelly: Bring in our version of guessFileName [Sebastiano Barezzi]
+
+* packages/apps/Trebuchet
+7d7e8f0c2a Trebuchet: Let's keep 2-button nav alive for a little longer [nift4]
+
+* vendor/lineage
+da5e531a Revert "Revert "config: Build NavigationBarMode2ButtonOverlay"" [nift4]
+
+* device/xiaomi/jason
+e4b264a jason: sepolicy: Suppress NFC denials [Michael Bestas]
+4afdefa jason: Build some extra vendor libs for camera and fingerprint [Nanhumly]
+3c172e5 jason: Patch camera HAL for Q bringup [Bruno Martins]
+2ecd8da jason: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
+1cb9605 jason: Remove libgui dependency from camera.sdm660.so [Nanhumly]
+056ee29 jason: Switch to stock camera hal [Nanhumly]
+a6a403f jason: Stop build camera hal from source [Nanhumly]
+74ff7b8 jason: Split system and vendor props [Nanhumly]
+2d81bf1 jason: Drop product_launched_with_*.mk [Sebastiano Barezzi]
+f111732 jason: Remove activity_recognition libs [Jeferson]
+
+* device/xiaomi/sdm660-common
+80470ab sdm660-common: Switch audio HAL to V7 [Mikhail Naganov]
+f0752a4 Revert "Revert "sdm660-common: Drop QTI bluetooth stack"" [Ratoriku]
+860310d sdm660-common: Enable iWlan legacy mode [Hongbo Zeng]
+e0d7595 sdm660-common: overlay: Fix fingerprint wake-up animation [Lucas Dupin]
+411dd75 sdm660-common: Build libwpa_client [Ratoriku]
+169bada sdm660-common: Add framework detect modules to PRODUCT_PACKAGES [shoudil]
+631c469 sdm660-common: Provide android.frameworks.sensorservice@1.0 on vendor [Pavel Dubrova]
+b238492 sdm660-common: sepolicy: Address rild denials [LuK1337]
+c5036ee sdm660-common: sepolicy: Allow audio hal to get boot_status prop [Mohammad Hasan Keramat J]
+dd4de62 sdm660-common: sepolicy: Add contexts for exported telephony props [Inseob Kim]
+e32f7dc sdm660-common: sepolicy: Attach vendor_property_type to properties. [Inseob Kim]
+8d9692f sdm660-common: properties: Use threaded GLES render engine [Kyle Harrison]
+6f82a7b sdm660-common: properties: Disable SDM Scalar [clarencelol]
+adc6063 sdm660-common: properties: Remove obsolete debug.sf.disable_backpressure [SamarV-121]
+c20d25f sdm660-common: properties: don't latch unsignal buffers [Midas Chien]
+4825b6b sdm660-common: Drop QTI datastatusnotification [daniml3]
+3a55fc0 sdm660-common: qcril: fix MT SMS sent during power off [Tim Lin]
+a487dcc sdm660-common: Squashed removal of TetheringOverlay [Nolen Johnson]
+41e2c71 sdm660-common: Drop support for Snapdragon Camera [Alexander Koskovich]
+335f4ca sdm660-common: Remove CLANG compile flag [Georg Veichtlbauer]
+cf02c25 sdm660-common: Uprev framework compatibility matrix to 2.0 [Nolen Johnson]
+541aeab sdm660-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+5e254ce sdm660-common: Copy cgroups and task_profiles directly from system/core [Bruno Martins]
+735c38d sdm660-common: Ship cgroups.json and task_profiles.json in vendor [Chenyang Zhong]
+86649d8 sdm660-common: Modify Vulkan and OpenGL version to 2020-03-01 [linjoey]
+83ee6ef sdm660-common: Add OpenGL ES and update Vulkan dEQP feature flags [Alastair Donaldson]
+24bf88e sdm660-common: Add required GPU props [Lunarixus]
+c2b7061 sdm660-common: Set manufacturer and soc properties [sudharani]
+343633d sdm660-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
+ea1f586 sdm660-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
+0f906ae sdm660-common: Build vendor version of libavservices_minijail [Volodymyr Zhdanov]
+ba02253 sdm660-common: Disable apex compression [Edwin Moquete]
+
+* vendor/xiaomi/jason
+4f88f21 jason: Patch camera HAL for Q bringup [Bruno Martins]
+b3d9b8b jason: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
+34283eb jason: Remove libgui dependency from camera.sdm660.so [Nanhumly]
+dcfb9b5 jason: Switch to stock camera hal [Nanhumly]
+8258e13 jason: Remove activity_recognition libs [Jeferson]
+
+* vendor/xiaomi/sdm660-common
+9151ab3 Revert "Revert "sdm660-common: Drop QTI bluetooth stack"" [Ratoriku]
+5150667 sdm660-common: Drop QTI datastatusnotification [daniml3]
+
+====================
+     2023-07-24    
+====================
+* lineage/crowdin
+488efa0 config: lineage-20.0: Add hardware/mediatek/PowerOffAlarm [nift4]
+
+* lineage/hudson
+e7667d3 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+54940e26 devices: Add model numbers to payton [Georg Veichtlbauer]
+53687ab8 devices: Update BT and RAM specs for Moto sdm660/msm8998 [Georg Veichtlbauer]
+07c52e1a devices: Only OnePlus uses 'Optic AMOLED' branding [Georg Veichtlbauer]
+
+* packages/apps/FMRadio
+ec0f0a4 FMRadio: Use FLAG_IMMUTABLE for notifications [Erfan Abdi]
+cc29422 FMRadio: check for other runtime perms too [nift4]
+b50935b FMRadio: Ask record audio permission before starting [Erfan Abdi]
+71aa624 FMRadio: (almost) drop system UID [nift4]
+25b8ce2 FMRadio: fix listen to recordings [nift4]
+92d2cc2 FMRadio: fix record activity timer being off after a while [nift4]
+d6259b8 FMRadio: match playlist by name instead [nift4]
+5b6038d FMRadio: fix monkey using MENU key can start record [nift4]
+ba2a149 FMRadio: Play Music is dead - fix saved recordings [nift4]
+a71ab2c FMRadio: androidx conversion, cleanup makefiles [nift4]
+31f2615 FMRadio: use notification channels [nift4]
+
+* packages/apps/Jelly
+f15ceb5 Jelly: Cleanup MenuDialog UI [Sebastiano Barezzi]
+9933887 Jelly: Switch Android.bp to SPDX [Michael Bestas]
+908c007 Jelly: Start making it REUSE compliant [Michael Bestas]
+57fe081 Jelly: Use WindowInsetsControllerCompat for hiding/showing the keyboard [Sebastiano Barezzi]
+24411b8 Jelly: Show keyboard on "Find in page" [Luca Stefani]
+12e64e3 Jelly: Pass a LinearLayout to MenuDialog's LayoutInflater [Luca Stefani]
+3284fac Jelly: Close keyboard when "more button" is clicked [Luca Stefani]
+4675ae2 Jelly: Remove focus from search bar when we close keyboard [Luca Stefani]
+514ca4f Jelly: New SSL certificate info dialog [Sebastiano Barezzi]
+
+* device/xiaomi/sdm660-common
+d9cef1d sdm660-common: Build needed HIDL libs into vendor [LuK1337]
+34e3a05 sdm660-common: clearkey plugin to drm HAL v1.4 [Edwin Wong]
+dfa9b07 sdm660-common: doze: Adapt to S style [TheScarastic]
+
+* vendor/xiaomi/sdm660-common
+965c031 sdm660-common: Initialize proprietary files [Nanhumly]
+
+====================
+     2023-07-23    
+====================
+* android
+2266761 lineage: Remove no longer used symlinks [Michael Bestas]
+
+* external/chromium-webview/prebuilt/arm
+8a258c8 Update Chromium Webview arm prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+59ca79e Update Chromium Webview x86 prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+777d0db Update Chromium Webview x86_64 prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
+
+* external/exfatprogs
+e706c15 Merge tag '1.2.1' of https://github.com/exfatprogs/exfatprogs into lineage-20.0 [Michael Bestas]
+
+* lineage-sdk
+aa4306a8 Remove deprecated settings migration code [Michael Bestas]
+1f91203c Remove deprecated host migration example [Michael Bestas]
+17d6d417 Remove leftover trusted_accent_packages array [Michael Bestas]
+d0720749 Partially revert "LineageSettingsProvider: Support migration from cmsettings" [Michael Bestas]
+f4c7907c Remove leftover LineageAudioService support [Michael Bestas]
+6326bdad Remove leftover Performance Profiles support [Michael Bestas]
+
+* lineage/charter
+12b0b06 directors-working-agreement: Address inactivity [Nolen Johnson]
+
+* lineage/hudson
+68a7e7e I honestly miss Moto Mods [Nolen Johnson]
+
+* lineage/mirror
+c0558c4 Updated to 22-Jul-2023 15:44 UTC [Kevin F. Haggerty]
+1564311 Updated to 22-Jul-2023 15:22 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+82e6e080 devices: Promote moto z2 force [Nolen Johnson]
+
+* packages/apps/Aperture
+d6334ce Aperture: Add missing copyright headers to icons [Michael Bestas]
+
+* packages/apps/Jelly
+c6a4d6a Jelly: Change desktop mode string [Luca Stefani]
+52ebd5c Jelly: New iconography [Sebastiano Barezzi]
+080fdaa Jelly: utils: UiUtils: Fix nullable parameter [Sebastiano Barezzi]
+03a0fd7 Jelly: Use relative activity names in manifest [Sebastiano Barezzi]
+00b2010 Jelly: Set default_applicable_licenses [Michael Bestas]
+254440e Jelly: New menu popup UI [Sebastiano Barezzi]
+0358afc Jelly: M3 [Sebastiano Barezzi]
+bed0c55 Jelly: New URL bar [Sebastiano Barezzi]
+0b77856 Jelly: Remove timestamp based history background color [Sebastiano Barezzi]
+cb4c848 Jelly: Remove background from empty lists icon [Sebastiano Barezzi]
+16c7e22 Jelly: Use AndroidX preference attributes [Sebastiano Barezzi]
+50250a0 Jelly: Don't apply tints directly on icons drawables [Sebastiano Barezzi]
+6279b63 Jelly: Nuke favicon based accent color change [Sebastiano Barezzi]
+9e36adb Jelly: Use camel case for layout IDs [Sebastiano Barezzi]
+cf858a5 Jelly: Use MaterialToolbar back button [Sebastiano Barezzi]
+a8eb621 Jelly: Use lazy getters for views [Sebastiano Barezzi]
+89b4391 Jelly: SettingsActivity: Use the new method for inflating fragments [Sebastiano Barezzi]
+9c575e8 Jelly: SettingsActivity: Use better Kotlin syntax [Sebastiano Barezzi]
+890567f Jelly: SettingsActivity: Rename settings fragment class [Sebastiano Barezzi]
+8b22506 Jelly: MainActivity: Use better Kotlin syntax [Sebastiano Barezzi]
+e6e43ab Jelly: MainActivity: Rename class attributes' names [Sebastiano Barezzi]
+60938cc Jelly: webview: Use better Kotlin syntax [Sebastiano Barezzi]
+941c9f2 Jelly: webview: Rename class attributes' names [Sebastiano Barezzi]
+f45b733 Jelly: utils: Use better Kotlin syntax [Sebastiano Barezzi]
+e8fe9ea Jelly: ui: Fix secure icon showing [Sebastiano Barezzi]
+fccfaa8 Jelly: ui: Use better Kotlin syntax [Sebastiano Barezzi]
+a5b0abc Jelly: ui: Rename class attributes' names [Sebastiano Barezzi]
+8fee876 Jelly: suggestions: Fix typo [Sebastiano Barezzi]
+8013db8 Jelly: suggestions: Use better Kotlin syntax [Sebastiano Barezzi]
+c95c028 Jelly: suggestions: Rename class attributes' names [Sebastiano Barezzi]
+e230efe Jelly: history: Use better Kotlin syntax [Sebastiano Barezzi]
+804d9ab Jelly: history: Rename class attributes' names [Sebastiano Barezzi]
+3a2c4b0 Jelly: favorite: Use better Kotlin syntax [Sebastiano Barezzi]
+58228e9 Jelly: favorite: Rename class attributes' names [Sebastiano Barezzi]
+00cd0f0 Jelly: ./gradlew generateBp [Sebastiano Barezzi]
+842dd1b Jelly: Add generateBp from Aperture [Sebastiano Barezzi]
+f3c66b6 Jelly: Move Android.bp to app/ [Sebastiano Barezzi]
+2143d07 Jelly: Migrate build scripts to Kotlin [Sebastiano Barezzi]
+a16e1ef Jelly: Disable Jetifier [Sebastiano Barezzi]
+d5346ef Jelly: Reformat code [Sebastiano Barezzi]
+4e6711d Jelly: Use ?attr/isLightTheme [Sebastiano Barezzi]
+5021feb Jelly: Rename app theme to Theme.Jelly [Sebastiano Barezzi]
+e911801 Jelly: Move to SPDX license headers [Sebastiano Barezzi]
+dd2db5f Jelly: Remove unused import [Sebastiano Barezzi]
+2ee67c4 Jelly: Add newline at the end of files where needed [Sebastiano Barezzi]
+7b617d3 Jelly: Get rid of wildcard imports [Sebastiano Barezzi]
+2540f9a Jelly: Introduce NoSuggestionProvider [Luca Stefani]
+e47c335 Jelly: Use ranges in suggestion provider [Luca Stefani]
+
+* device/xiaomi/jason
+0b5c346 jason: Change default wifi ssid to "Mi Note 3" [Arian]
+6148ad4 jason: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
+e540518 jason: overlay: Set physical power button and fps location [Bruno Martins]
+8032feb jason: Move libnfc-nci.conf to /product [Nanhumly]
+2612b42 jason: Remove unneeded NFC packages [Georg Veichtlbauer]
+0df9895 jason: Switch to source built nqnfcinfo [Nanhumly]
+2542c8a jason: nfc: Remove deprecated NFA_CONFIG_FORMAT key [intervigilium]
+5caba21 jason: Switch to AOSP NFC [iamehsangh]
+ba3d462 jason: Drop FDE support entirely [Nicholas Lim]
+de98237 jason: Remove PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE [Sebastiano Barezzi]
+1eca977 jason: Use PRODUCT_*_SEPOLICY_DIRS to build product sepolicy [Tri Vo]
+9899968 jason: Align userdata mount flags with twolip [Michael Bestas]
+f470e8c jason: fstab: Add f2fs support [Akhil Narang]
+51a5175 jason: remove discard in fstab [Wei Wang]
+f24385a jason: rootdir: fstab: Switch to FBE [Davide Garberi]
+0f9fc8f jason: Update fstab entry to auto mount USB [Bharat Pawar]
+af95787 jason: Get rid of recovery-only fstab [Michael Bestas]
+221c9e7 jason: Drop TARGET_KERNEL_VERSION [Giovanni Ricca]
+
+====================
+     2023-07-22    
+====================
+* external/chromium-webview/patches
+1cee4f2 Update Chromium Webview to 115.0.5790.136 [Kevin F. Haggerty]
+
+* lineage/mirror
+8b68087 Updated aosp-minimal to 21-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+7bbb1fd build-webview: Update default webview to 115.0.5790.136 [Kevin F. Haggerty]
+
+====================
+     2023-07-21    
+====================
+* frameworks/base
+ce1f9fc49c66 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+1c72405842ec SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
+68bb4d4aa245 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas]
+
+* lineage-sdk
+1a53318a LineageSettingsProvider: Allow enabling lockscreen rotation by default [Michael Bestas]
+
+* packages/apps/Etar
+a8791d7f Update README.md [Gitsaibot]
+c40eca14 AlertReceiver: Return early if either context or intent is null [Aayush Gupta]
+1507dfca Prompt user to add calendar instead of account [Aayush Gupta]
+6f1051a3 gradle clean should remove the generated libs [Jochen Sprickerhof]
+689c6209 Update Gradle and dependencies (#1373) [Gitsaibot]
+efef9833 UI Improvements (#1370) [marreitin]
+97056dd5 Update submodules [Jochen Sprickerhof]
+8501b6b1 Catching all sync adapters at once instead of one by one (#1334) [Gitsaibot]
+a0612241 Add URL field [Arnau Mora]
+767b60f2 fix calendar and organizer text colors being barely visible sometimes [Jonas Häusler]
+86ed71da New version 1.0.34 [Gitsaibot]
+c2167e03 check event color is initialized before using it [Jonas Häusler]
+2589e45a Use USE_EXACT_ALARM permission [Jochen Sprickerhof]
+
+* packages/apps/ThemePicker
+3c2259a2 ThemePicker: Remove unnecessary privileges [Tommy Webb]
+
+* packages/inputmethods/LatinIME
+dbdcbeaa5 Latin IME bug with deleted text will reappear after screen orientation changes [suyan yang]
+95109d858 LatinIME: Fix to English dictionary can be added after deleting [wangjing]
+
+* vendor/lineage
+7a6a0c2c overlay: Exempt MediaTek ImsService from location indicators [techyminati]
+
+====================
+     2023-07-20    
+====================
+* hardware/lineage/compat
+07607db libui: Move to system_ext [Sebastiano Barezzi]
+118bd42 compat: Add libutils shim [R0rt1z2]
+
+* lineage/wiki
+a0c20b10 wiki: Make sure git lfs is configured/installed [Michael W]
+
+====================
+     2023-07-19    
+====================
+* frameworks/base
+a9ecc905565a Fix multi-user silent notifications on lockscreen [Tommy Webb]
+
+* hardware/lineage/compat
+895a614 compat: Provide shim with IPermissionController stubs [R0rt1z2]
+
+====================
+     2023-07-18    
+====================
+* android
+8141fe3 manifest: Switch to our fork of system/netd [Michael Bestas]
+
+* frameworks/base
+cfd9c1e4c8ea Support per-UID VPN lockdown policy [Tommy Webb]
+64cef56e1c68 Skip firewall rules for stopped users [Tommy Webb]
+b83a568fa1d5 Use POLICY_REJECT_ALL instead of allowlist [Tommy Webb]
+c05f2daa164c fixup! Implement firewall status bar indicator [Oliver Scott]
+714095c893a9 NPMS: Check if UID is disallowed by transports [Tommy Webb]
+5a0dc91a17ee Track and send allowed transports to Connectivity [Tommy Webb]
+e91d98e3327a Do not consider transports for restricted mode [Tommy Webb]
+c35569b439a3 SystemUI: Fix keyguard affordance colour in light theme [Adithya R]
+01a12efd717c SystemUI: Check primitive vibration support in new quick affordances [Fabian Leutenegger]
+
+* hardware/lineage/compat
+5c54e69 compat: Add libtinyxml2 shim [Sebastiano Barezzi]
+844cbbb compat: Add some HIDL interfaces types shims [R0rt1z2]
+ca34347 compat: Keep only one copy of clang-format style [Sebastiano Barezzi]
+efa7303 libui: Add android::GraphicBufferMapper::lock shims [R0rt1z2]
+6be2ac1 libui: Move every symbol under extern C block [Sebastiano Barezzi]
+2318cd6 libui: Fix android::GraphicBuffer::lock return value [Sebastiano Barezzi]
+
+* lineage/charter
+0586eac charter: Add sdcard requirements [LuK1337]
+
+* lineage/wiki
+df865408 wiki: Update MTG ATV gapps URL [LuK1337]
+
+* packages/apps/Settings
+406607e0c1 POLICY_REJECT_ALL restricts all network access [Tommy Webb]
+
+* packages/apps/SetupWizard
+a5ba5df Hide navigation hint checkbox when taskbar is enabled [Michael Bestas]
+eecf4a9 Fix PhoneMonitor crash on WiFi only devices [Michael Bestas]
+
