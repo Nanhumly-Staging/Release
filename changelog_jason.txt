@@ -1,65 +1,410 @@
 ====================
-     2023-07-31    
+     2023-08-10    
 ====================
 * build/make
-f0b8b4b27 build: Always use release-keys [Pranav Vashi]
+d4749925d build: Always use release-keys [Pranav Vashi]
 
-* frameworks/native
-2b223188e3 libbinder: force VNDK as system stable [ppooopppooo]
-
-* hardware/interfaces
-769d2ad70 Revert "audio: use binder threadpool" [anrui2032]
-34cf8c9c4 Revert "Audio: Load Bluetooth AIDL HAL" [anrui2032]
+* lineage/mirror
+1fa200f Updated aosp-minimal to 09-Aug-2023 12:01 UTC [Tim Schumacher]
 
 * packages/apps/CarrierConfig
-ab6836a Override name of Mainland China carriers [cjybyjk]
+306a845 Override name of Mainland China carriers [cjybyjk]
 
 * packages/services/Telephony
-14aa19a45 Add support for multi-language carrier name override [cjybyjk]
+f0e61a02f Add support for multi-language carrier name override [cjybyjk]
 
 * device/xiaomi/jason
-b997ca1 jason: Forcing the use of prebuilt kernel [Nanhumly]
-c6d7a15 jason: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
-54ee9eb jason: Update fingerprint props from MIUI V12.0.1.0.PCHCNXM [Nanhumly]
-284d1f4 jason: Sort blobs list [Michael Bestas]
-a48bc3f jason: Disallow aux cam usage for Zoom [jabashque]
-6b357e7 jason: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
-96895f3 jason: overlay-lineage: Configure aux camera for Aperture [LuK1337]
-f01d99d jason: releasetools: Make re.search work on python3 [Alessandro Astone]
-faa1b71 jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
-717019c jason: Use piex shim from hardware/lineage/compat [Bruno Martins]
-8685616 jason: Prevent adding same dependency twice in blob_fixup [LuK1337]
-c824c0d jason: Bringup camera for T [Bruno Martins]
-43ed1cb jason: vndk: Update vndk-ext-libs [Nanhumly]
+1287db3 jason: Patch up libremosaic_daemon.so [Bharath]
+b19775a jason: camera: Guard some build errors using VANILLA_HAL [Akash Mondal]
+90a6eda jason: camera: Hardcode mStreamNames[] size [me-cafebabe]
+7b7b8d9 jason: camera: Report the correct QCamera3Stream size [Giovanni Ricca]
+4320c1b jason: QCamera2: HAL3: Invalidate cache based on gralloc flag [Brandon Schade]
+e0c6ef7 jason: camera: Replace libcamera_client to android.hardware.camera.common@1.0-helper [Jiyong Park]
+1484d42 jason: camera: Improve ZSL/HDR processing [edwardwa]
+3294739 jason: QCamera2: Wrap LOGE macro with braces in ADD_SET_PARAM_ENTRY_TO [bartcubbins]
+4436a1d jason: Bring back oss camera [Nanhumly]
+e62b240 jason: Update clang ld symlink path to clang-r450784d [anrui2032]
+89f6ba8 jason: Create ld symlink to avoid linking error(s) [trkzmn]
 
 * device/xiaomi/sdm660-common
-fae841a Revert "sdm660-common: Switch BtAudio to AIDL" [Nanhumly]
-4c432c1 sdm660-common: Build kernel with clang proton [Nanhumly]
-37204af sdm660-common: Opt-out for LLVM binutils [Bruno Martins]
-154725f sdm660-common: Migrate to proper libgui shim [Bruno Martins]
-5f74d6a sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
-d3d362d sdm660-common: Call my extra directory [Nanhumly]
+24d02ac Revert "sdm660-common: overlay: Fix fingerprint wake-up animation" [Nanhumly]
+2c4fc7e sdm660-common: Update Audio HIDL to 7.1 [Carter Hsu]
+b1f51f9 Revert "Revert "sdm660-common: Switch BtAudio to AIDL"" [Nanhumly]
+ab6b0c1 Revert "sdm660-common: Don't explicitly build android.hidl.allocator@1.0" [Nanhumly]
+02cc8e4 Revert "sdm660-common: Switch BtAudio to AIDL" [Nanhumly]
 
 * vendor/xiaomi/jason
-a768c51 jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
-
-* vendor/xiaomi/sdm660-common
-1f69889 sdm660-common: Migrate to proper libgui shim [Bruno Martins]
-1f27026 sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
+04a31a4 jason: Patch up libremosaic_daemon.so [Bharath]
+ebe6180 jason: Bring back oss camera [Nanhumly]
 
 ====================
-     2023-07-30    
+     2023-08-09    
 ====================
+* android
+100b83a manifest: August 2023 Security update [Michael Bestas]
+
+* build/make
+42dec8052 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+
+* frameworks/base
+4915af0e0ffb Merge tag 'android-13.0.0_r72' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+260ac0f71226 Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+928354581752 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+
+* lineage/hudson
+ecdcb7c Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Trebuchet
+f71ed2a454 Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+5a042d2df3 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+
+* packages/providers/TelephonyProvider
+72419e39 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+
+* packages/services/Telecomm
+6f28986bf Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+
+* vendor/lineage
+9d239d1b August 2023 Security update [Chirayu Desai]
+
+====================
+     2023-08-08    
+====================
+* lineage/hudson
+d0865f3 Regenerate device dependency mappings [LineageOS Infra]
+
 * lineage/mirror
-546d4f3 Updated to 29-Jul-2023 12:01 UTC [Tim Schumacher]
+a59f948 Updated to 08-Aug-2023 00:43 UTC [Kevin F. Haggerty]
+
+====================
+     2023-08-07    
+====================
+* frameworks/base
+2cf6a5a9363f VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
+9fb459b337f3 Automatic translation import [LineageOS Infra]
+
+* lineage-sdk
+c8b90136 Automatic translation import [LineageOS Infra]
+
+* lineage/wiki
+072348bd wiki: Require dtbo or boot+dtbo flash on Pixel 4/5 series [LuK1337]
+
+* packages/apps/Aperture
+54fab97 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+8f785f2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+4b20fe3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+32001be Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+eaeed69 Automatic translation import [LineageOS Infra]
+
+====================
+     2023-08-06    
+====================
+* external/chromium-webview/prebuilt/arm
+75fb96b Update Chromium Webview arm prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+9060a16 Update Chromium Webview x86 prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+015e404 Update Chromium Webview x86_64 prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
+
+* lineage/hudson
+afb5e1f Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+da9c5060 device_config: Enable separate notification volume control [LuK1337]
+
+====================
+     2023-08-05    
+====================
+* bootable/recovery
+a18688e5 recovery: Simplify reboot recovery reason [LuK1337]
+2a70656f recovery: Clear BCB before rebooting to recovery [LuK1337]
+
+* device/qcom/sepolicy-legacy-um
+ada4be8b Allow FM2 app to read/write `vendor.hw.fm.` props [me-cafebabe]
+
+* lineage/mirror
+2053b8c Updated to 04-Aug-2023 13:03 UTC [Kevin F. Haggerty]
+e9fd7c3 Updated to 04-Aug-2023 12:22 UTC [Kevin F. Haggerty]
+043d6bd Updated lineage-minimal to 04-Aug-2023 12:01 UTC [Tim Schumacher]
+
+====================
+     2023-08-04    
+====================
+* external/chromium-webview/patches
+8eef9e0 Update Chromium Webview to 115.0.5790.166 [Kevin F. Haggerty]
+
+* hardware/interfaces
+8aad8f621 compatibility_matrices: Allow radio.config@1.0 till target-level 5 [me-cafebabe]
+
+* lineage/mirror
+c83231e Updated aosp-minimal to 03-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+d41815c build-webview: Update default webview to 115.0.5790.166 [Kevin F. Haggerty]
+
+====================
+     2023-08-03    
+====================
+* hardware/qcom-caf/sm8450/display
+93805316fc gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+d5dcaf0994 display: fix remaining code issues [chandu078]
+a812b8396a display: silence format compilation issues [chandu078]
+c799aa7127 display: Remove dependencies of display specific kernel headers [chandu078]
+e3dadd90d0 gralloc: drop unused variables [Anay Wadhera]
+fef6237b2a gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
+1d4980dc26 gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
+39bcf223e5 fixup! display: Fix conflicting soong_namespace imports [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/display
+d5f57380e8 gralloc: Fix retrieving metadata state [Bruno Martins]
+
+* lineage/mirror
+41c6b87 Updated lineage-minimal to 02-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+f7c2546f vars: Add kailua tags [Bruno Martins]
+
+====================
+     2023-08-02    
+====================
+* android
+f50c4cf lineage: Switch to our own fork of hardware/libhardware_legacy [Bruno Martins]
+
+* frameworks/base
+48f045414e77 Automatic translation import [LineageOS Infra]
+
+* hardware/qcom-caf/sm8550/display
+48cdaa8e4c display: fix remaining code issues [chandu078]
+1202714cd0 display: silence format compilation issues [chandu078]
+79e47a9dfa display: Remove dependencies of display specific kernel headers [chandu078]
+07f2c7490a gralloc: drop unused variables [Anay Wadhera]
+cb2688ed21 gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
+abd3104c50 gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
+
+* lineage/hudson
+5dcd92c Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Aperture
+192aab5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+314c15d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+94fcce3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+973abea47 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+cbe010a9c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+07d283ca Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+63fb076c Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+020f407 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+6e1c4b4 Automatic translation import [LineageOS Infra]
+e5acd12 Jelly: Add Brave search engine and suggestion provider [Sebastiano Barezzi]
+65d27c1 Jelly: Show no suggestion when there are zero results [Sebastiano Barezzi]
+2ebfac2 Jelly: Fix string comment [Sebastiano Barezzi]
+68fcab4 Jelly: Handle accessibility warnings [Sebastiano Barezzi]
+8bb8be7 Jelly: UrlBarLayout: Use a unit for autocomplete item click listener [Sebastiano Barezzi]
+7fd052b Jelly: Remove unused namespace [Sebastiano Barezzi]
+0d0b5a5 Jelly: Handle autofill and input type warnings [Sebastiano Barezzi]
+ae7fd71 Jelly: Remove unused resources [Sebastiano Barezzi]
+059bc72 Jelly: Redo suggestion provider [Sebastiano Barezzi]
+c9f015d Jelly: Use a single view for suggestion items [Sebastiano Barezzi]
+da1d51f Jelly: Drop hardware accelerated flag in manifest [Sebastiano Barezzi]
+e6c340d Jelly: FavoriteProvider: Remove unneeded constructor property [Sebastiano Barezzi]
+8f53643 Jelly: Remove unused imports [Sebastiano Barezzi]
+
+* packages/apps/LineageParts
+67ffa8b Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+088781c312 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+ec40f08 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+f6b8cb50 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+bbb12b3 Automatic translation import [LineageOS Infra]
+
+* system/core
+0b4107e89 fastbootd: hacks for legacy [Alessandro Astone]
+dd75dc04a fastbootd: usb: fallback to v1 descriptors [Alessandro Astone]
+
+* vendor/crowdin
+36dbec5 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+eb934e66 kernel: Don't try to do math on empty kernel version [LuK1337]
+
+* vendor/qcom/opensource/fm-commonsys
+da7b802 Automatic translation import [LineageOS Infra]
+
+====================
+     2023-08-01    
+====================
+* hardware/qcom-caf/sm8450/audio/agm
+eff8e6c libagmclient: Do not error on format issues [Bruno Martins]
+08062be ipc: Update own paths [Bruno Martins]
+0e7e65a AGMIPC@1.0-service: make libagm_headers headers lib available [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/pal
+ffc7ba03 pal: silence format/unused parameter/variable errors [SGCMarkus]
+8a541189 pal_ipc_server: add include path for PalApi.h [SGCMarkus]
+078acc0a pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
+5571a3df pal: Update own paths [SGCMarkus]
+f9fc0961 libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
+8e319c05 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
+c8205ada pal: create libpal_headers module [SGCMarkus]
+f9f6a66f Remove kvh2xml.h imports [Albert Tang]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+f9d871aaa audio-ar: Add attribute [[fallthrough]] [Swapnil Kangralkar(Temp)]
+f8a213122 primary-hal: Update paths to agm and pal [SGCMarkus]
+416d8688d hal: Enforce -Wno-format [chandu078]
+6f176fd37 effects: post_proc: add libarpal_headers header library [SGCMarkus]
+00d81b9f7 audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+3b63d1865 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+6dcc88fbf audio: config: Use project pathmap [chandu078]
+
+* hardware/qcom-caf/sm8450/display
+15d92d87d4 composer: change ndk_platform dependencies to ndk [SGCMarkus]
+6563291bc6 display: Define init script modules properly. [Alexander Koskovich]
+f8cb829b37 display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+ca72a2907c Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
+d789b02e55 display: Fix conflicting soong_namespace imports [Bruno Martins]
+bd400fff85 Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT [Davide Garberi]
+a747dc57c4 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE [Bruno Martins]
+1a604e2b7e Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
+
+* hardware/qcom-caf/sm8550/audio/agm
+84ddd03 libagmclient: Do not error on format issues [Bruno Martins]
+3708752 ipc: Update own paths [Bruno Martins]
+e61ebdf plugins: disable modules on OSS builds that depend on proprietary headers [SGCMarkus]
+8db5a2a AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/audio/pal
+804e6e53 ipc: Update own paths [Bruno Martins]
+8bfea093 pal_ipc_server: Skip on OSS builds [Bruno Martins]
+18d53325 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
+a6e620ed libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
+6a985278 pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
+dd9c71b0 pal: Expose more headers under libarpal_headers module [SGCMarkus]
+8ed484aa Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
+b1b63515 Revert "QAL: Change in location of kvh2xml.h" [Albert Tang]
+fb599a48 pal: skip libar-pal on OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+f08825f62 primary-hal: Update paths to agm and pal [Bruno Martins]
+2ea80b9de hal: Include ipc headers from agm and pal [Bruno Martins]
+5d26b5e27 hal: Add dependency on libarpal_headers [Bruno Martins]
+adfa6bc3b hal: Enforce -Wno-format [chandu078]
+b98ced015 adsprpcd: Import missing string.h header [chandu078]
+584a7d562 audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+33fd781b0 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+419b0767b audio: config: Use project pathmap [chandu078]
+4128d4877 audio: Use direct project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8550/display
+0b37f94415 display: Define init script modules properly. [Alexander Koskovich]
+7b87e2386c display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+c1c5047ac7 Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
+
+* lineage/mirror
+a87ae25 Updated aosp-minimal to 31-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Jelly
+0feaa1a Jelly: Allow to choose all files if no parameter is set [Luca Stefani]
+0e79bbd Jelly: Fixup file upload [Luca Stefani]
+6f2f14f Jelly: Ignore mime type if it's binary [Luca Stefani]
+ca1430b Jelly: Suppress some warnings [Luca Stefani]
+32d4667 Jelly: Set UserAgent and Cookie to download files [Luca Stefani]
+
+* device/xiaomi/jason
+ba9a8f5 jason: Forcing the use of prebuilt kernel [Nanhumly]
+f57656c jason: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
+c0d65c4 jason: Update fingerprint props from MIUI V12.0.1.0.PCHCNXM [Nanhumly]
+ad0da9e jason: Sort blobs list [Michael Bestas]
+a31b859 jason: Disallow aux cam usage for Zoom [jabashque]
+37487d5 jason: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
+546e081 jason: overlay-lineage: Configure aux camera for Aperture [LuK1337]
+f7a3670 jason: releasetools: Make re.search work on python3 [Alessandro Astone]
+6efccff jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
+c55a0bc jason: Use piex shim from hardware/lineage/compat [Bruno Martins]
+b258046 jason: Prevent adding same dependency twice in blob_fixup [LuK1337]
+f0f42c4 jason: Bringup camera for T [Bruno Martins]
+fee0fb7 jason: vndk: Update vndk-ext-libs [Nanhumly]
+6c019d8 jason: Remove non-existent modules [Giovix92]
+
+====================
+     2023-07-31    
+====================
+* hardware/qcom-caf/sm8450/audio/agm
+4204a64 plugins: disable modules on OSS builds that depend on proprietary headers [SGCMarkus]
+6f5426d AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/pal
+1e633bcd Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
+b49d4ffa Revert "QAL: Change in location of kvh2xml.h" [Albert Tang]
+25a4ca4f pal: skip libar-pal on OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+ea69fa2c4 audio: Use direct project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8450/display
+011207033c display: config: Use project pathmap [Alexander Koskovich]
+ace5ce9410 display: Use project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8550/display
+f870cc1c81 display: Fix conflicting soong_namespace imports [Bruno Martins]
+bbc4b7ce80 display: config: Use project pathmap [chandu078]
+1765b40a12 display: Use project pathmap [Ethan Chen]
+
+* lineage/mirror
+9171a5b Updated to 30-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+20b6626f wiki: prepare_image: Trim & Resize [Michael W]
+944f83cf wiki: Disallow `uses_twrp: true` for maintained devices [LuK1337]
+183a505f wiki: We are now 100% TWRP free ^.^ [LuK1337]
 
 * vendor/lineage
 9d0a2f22 lineage: config: Allow devices without Cameras to opt-out of Aperture [Nolen Johnson]
 
-* device/xiaomi/jason
-fcb4a38 jason: Drop vendor.camera.aux.packagelist [Michael Bestas]
+* vendor/qcom/opensource/audio-hal/st-hal-ar
+2f7733f st-hal-ar: Update paths to pal and primary-hal [Bruno Martins]
+b85925f st-hal-ar: Add dependency on libarpal_headers [Bruno Martins]
+b891dad st-hal-ar: use audio project pathmap for header includes [SGCMarkus]
+c855212 st-hal-ar: do not allow including of ListenSoundModel on OSS builds [SGCMarkus]
+5ff0383 sthal: remove unused label in SoundTriggerSession [Swapnil Kangralkar(Temp)]
 
 * device/xiaomi/sdm660-common
+37204af sdm660-common: Opt-out for LLVM binutils [Bruno Martins]
+154725f sdm660-common: Migrate to proper libgui shim [Bruno Martins]
+5f74d6a sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
+d3d362d sdm660-common: Call my extra directory [Nanhumly]
 69d2a11 sdm660-common: Set correct manufacturer [Adithya R]
 1c4dd63 sdm660-common: Move ueventd.qcom.rc to /vendor/etc [Albert Tang]
 b0e2350 sdm660-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
@@ -101,6 +446,83 @@ e513645 sdm660-common: Enable bluetooth profiles with product.prop [Sal Savage]
 d1a1b97 sdm660-common: Switch BtAudio to AIDL [Josh Wu]
 b2c0aa9 sdm660-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
 490af15 sdm660-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
+
+* vendor/xiaomi/jason
+a768c51 jason: Remove libpowermanager dependency on libgf_hal.so [Arian]
+
+* vendor/xiaomi/sdm660-common
+1f69889 sdm660-common: Migrate to proper libgui shim [Bruno Martins]
+1f27026 sdm660-common: Add shim for missing symbol in lib-imsvt.so [Palakurthi Sreekanth]
+0b65cbc sdm660-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
+219733f sdm660-common: Fix PowerOffAlarm [Michael Bestas]
+15166f0 sdm660-common: Switch to source-built mlipay interface [Bruno Martins]
+b32fc41 sdm660-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+
+====================
+     2023-07-30    
+====================
+* android
+0049b11 qcom: Add kalama HALs [Bruno Martins]
+8332b3a qcom: Add taro HALs [Bruno Martins]
+
+* bootable/recovery
+107dfac7 recovery: Ask to reboot before installing anything after A/B update [LuK1337]
+
+* hardware/qcom-caf/msm8953/audio
+ce1101464d audio: hal: msm8974: Allow to override platform info xml path with prop [me-cafebabe]
+
+* hardware/qcom-caf/sm8450/audio/agm
+074c583 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/audio/pal
+e0f3613e Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+762808701 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/display
+750846593a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/media
+5f41035ba media: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+39e8bb014 media: Use project pathmap [Ethan Chen]
+2a6f4e8db Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/agm
+6bf0b5a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/pal
+1baf0bdd Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+6f71a84af Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/display
+ccfe577182 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/media
+d4463deef media: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+3369ee7f1 media: Use project pathmap [Ethan Chen]
+d161b417f Add .gitupstream file [Chirayu Desai]
+
+* lineage/mirror
+546d4f3 Updated to 29-Jul-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+4c6b1ea1 update contributors [Tom Powell]
+
+* packages/apps/FMRadio
+1d304d4 fixup! FMRadio: Use FLAG_IMMUTABLE for notifications [nift4]
+8a3e6e8 fixup! FMRadio: Ask record audio permission before starting [nift4]
+
+* vendor/qcom/opensource/audio-hal/st-hal-ar
+aca232d st-hal-ar: add TARGET_USES_QCOM_AUDIO_AR guard [SGCMarkus]
+d109e5e Add .gitupstream file [Chirayu Desai]
+
+* device/xiaomi/jason
+fcb4a38 jason: Drop vendor.camera.aux.packagelist [Michael Bestas]
+
+* device/xiaomi/sdm660-common
 64a5fb0 sdm660-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
 4b60654 sdm660-common: Move to libhidl shim in hardware/lineage/compat [Nolen Johnson]
 28d943f sdm660-common: Removed audio A2dp from sdm660.mk [Etienne Ruffieux]
@@ -109,25 +531,22 @@ b2c0aa9 sdm660-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
 5f5455c jason: Use piex shim from hardware/lineage/compat [Bruno Martins]
 85cde04 jason: Bringup camera for T [Bruno Martins]
 
-* vendor/xiaomi/sdm660-common
-0b65cbc sdm660-common: Remove aptX(HD) encoder shared libs [Georg Veichtlbauer]
-219733f sdm660-common: Fix PowerOffAlarm [Michael Bestas]
-15166f0 sdm660-common: Switch to source-built mlipay interface [Bruno Martins]
-b32fc41 sdm660-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
-
 ====================
      2023-07-29    
 ====================
 * android
+aca7ab0 qcom: Remove deprecated custom APM [Bruno Martins]
 2fa2e8b qcom: Sync core-utils-sys and core-utils-vendor [Bruno Martins]
 
-* bootable/recovery
-107dfac7 recovery: Ask to reboot before installing anything after A/B update [LuK1337]
+* hardware/qcom-caf/common
+b7371b2 Introduce os_pickup_audio-ar [Bruno Martins]
 
 * lineage/wiki
-4c6b1ea1 update contributors [Tom Powell]
 732015be wiki: Move note_signature_check in device install up [LuK1337]
 b806db4b wiki: Add vbmeta to oplus 4350/8350 boot stack partitions [LuK1337]
+964e4ae4 wiki: Make network property required [LuK1337]
+f5655715 wiki: a5y17lte and a7y17lte: Switch to recommending lineage recovery [filip rrs]
+bde3e74e devices: Drop pdx203 and pdx206 [Luofan Chen]
 
 * device/xiaomi/jason
 3ad96ad jason: rootdir: Fix mount of USB drivers with kernel 4.4 [Nanhumly]
@@ -270,11 +689,6 @@ f1c915d511b4 fs: Add linux-exfat 5.10.1 [sbwml]
 * lineage/hudson
 dd13b25 Disable sony sm8250 family builds for now [Luofan Chen]
 
-* lineage/wiki
-964e4ae4 wiki: Make network property required [LuK1337]
-f5655715 wiki: a5y17lte and a7y17lte: Switch to recommending lineage recovery [filip rrs]
-bde3e74e devices: Drop pdx203 and pdx206 [Luofan Chen]
-
 * packages/apps/Aperture
 c9be184 Aperture: Update CameraX to 1.3.0-beta02 [LuK1337]
 c32bb3d Aperture: Restore old flash mode after Torch [Luca Stefani]
@@ -295,480 +709,4 @@ f355f89 sdm660-common: Update widevine blobs from from jasmine V11.0.22.0.QDIMIX
 
 * vendor/xiaomi/sdm660-common
 0631625 sdm660-common: Update widevine blobs from from jasmine V11.0.22.0.QDIMIXM [Ratoriku]
-
-====================
-     2023-07-27    
-====================
-* device/lineage/sepolicy
-5dfb805 common: Label bluetooth.hci.disabled_commands [LuK1337]
-
-* lineage/hudson
-a96488f Unset `lineage_recovery` everywhere [LuK1337]
-a940da3 "no, we really are committed to tablets this time i swear" [Nolen Johnson]
-
-* lineage/mirror
-7616683 Updated aosp-minimal to 26-Jul-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-ea8ee0d8 wiki: Fix tangorpro peripherals list [LuK1337]
-22e9e79b wiki: Fix tangorpro device type [LuK1337]
-4e317130 devices: Add Pixel Tablet [Nolen Johnson]
-
-* packages/apps/Aperture
-1c64102 Aperture: Preserve classes extending SettingsFragment [Luca Stefani]
-
-* packages/modules/Bluetooth
-2b932ba1ef gd: hci: Allow disabling selected local commands [LuK1337]
-
-* device/xiaomi/jason
-2c41a78 jason: overlay: Update deprecated screen power items [Georg Veichtlbauer]
-ed9f67a jason: overlay: Remove dsp. prefix from audio and video power profiles [Arian]
-
-* device/xiaomi/sdm660-common
-fad4e57 sdm660-common: Makefile: Inherit several Android Go configurations [Albert I]
-7a62ac6 sdm660-common: Undefine BOARD_HAS_QCOM_WLAN. [Alexander Koskovich]
-8ccd940 sdm660-common: Remove duplicate SIP+VoIP permission [Timi Rautamäki]
-2c31b4d sdm660-common: Deduplicate handheld_core_hardware.xml copy rule [Bruno Martins]
-b804ab8 sdm660-common: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
-b6c455d sdm660-common: Drop custom APM flag [Bruno Martins]
-
-* kernel/xiaomi/sdm660
-abcfe49975c3 f2fs: gc: Fast-forward to https://github.com/arter97/android_kernel_realme_sdm710/commit/6ea19a5eae17aa37210346eab93acfff1e000b1e [celtare21]
-7b2d4160197d f2fs: gc: Replace f2fs_info with pr_info_ratelimited [celtare21]
-9fc7c00e18b8 f2fs: gc: Increse DEF_GC_THREAD_NOGC_SLEEP_TIME to 4 hours [celtare21]
-a45f28eccbe0 f2fs: Revert last wakelock patchset for rapid GC [celtare21]
-afa94c0f552e f2fs: Set cp_interval to 30 secs and make it no-op [celtare21]
-9dc1e02769c1 writeback: hardcode dirty_expire_centisecs=3000 (30s) [Park Ju Hyung]
-7bf1ab45aa0d fs: default to noatime [arter97]
-e1203ceba25c fs: drop_caches: expose mm_drop_caches() [Park Ju Hyung]
-69c337b82d84 mm, memcg: use consistent gfp flags during readahead [Michal Hocko]
-ba6051ec8d65 defconfig: jason: Enable F2FS [NurKeinNeid]
-8c7581c3008f f2fs: use a seperate mutex for setting wakelock [Park Ju Hyung]
-942f43317891 f2fs: Fix absolute jiffy duration in write uncongestion timeout [Danny Lin]
-fc172a6e413d f2fs: trigger rapid GC only when screen state actually changes [Park Ju Hyung]
-7f1f2de279fd f2fs: unlock wakelock properly when f2fs_stop_rapid_gc() is called [Park Ju Hyung]
-564746b7a598 f2fs: catch a global wakelock instead of per gc_kthread [Park Ju Hyung]
-25645a9b91ce f2fs: improve naming schemes for rapid GC [Park Ju Hyung]
-94bda810792f f2fs: mark gc_threads() functions as static [Park Ju Hyung]
-00a4b74f5940 fs: f2fs: Adapt gc.c to use f2fs_info() [celtare21]
-9c95c291a7cc f2fs: convert wakelock APIs to wakeup_source [Park Ju Hyung]
-4a930ee200f7 f2fs: don't wait with each discards under gc_urgent [Park Ju Hyung]
-177b37316b13 f2fs: use a more reasonable discard policy for high utilization [Park Ju Hyung]
-738b5b7299eb f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages() [Park Ju Hyung]
-1a2c80e02e9c f2fs: rename /sys/fs/f2fs [Park Ju Hyung]
-4eb1bf60c51f f2fs: do not expose tunables that doesn't work with rapid GC [Park Ju Hyung]
-6000e0e82f61 f2fs: drop caches upon rapid GC exit [Park Ju Hyung]
-9653eeb1cb0f f2fs: explicitly flush device upon foreground GC [Park Ju Hyung]
-d29c3e597e40 f2fs: fix rapid GC breakage from merge 4e87f7d2befb8 [Park Ju Hyung]
-27180299edfc f2fs/rapid_gc: do not wait until all invalid blocks are discarded [Park Ju Hyung]
-22e92e850bc2 f2fs: implement rapid GC for Android [Park Ju Hyung]
-0c92c038b444 f2fs: set ioprio of GC kthread to idle [Park Ju Hyung]
-e80264c9e8d2 bpf: Add new cgroup attach type to enable sock modifications [David Ahern]
-a4d53a9362dd ebpf: allow bpf_get_current_uid_gid_proto also for networking [Roberto Sartori]
-
-====================
-     2023-07-26    
-====================
-* device/qcom/sepolicy-legacy-um
-d2866673 sepolicy: Import legacy usb rules [jro1979oliver]
-
-* frameworks/base
-77a64024f86a SystemUI: Enable cast tile without Wi-Fi connection [nift4]
-e8fc948cb3c0 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
-
-* packages/apps/Aperture
-8863c66 Aperture: Set default_applicable_licenses [Michael Bestas]
-ea79c37 Aperture: Switch Android.bp to SPDX [Michael Bestas]
-dd2506a Aperture: Start making it REUSE compliant [Michael Bestas]
-69766ff Aperture: Add missing copyright headers to icons [Michael Bestas]
-cbe47bf Aperture: Move torch mode on photo mode to long press [Sebastiano Barezzi]
-473ec70 Aperture: Add some processing settings [Sebastiano Barezzi]
-7901412 Aperture: Use a delegate for view model properties [Sebastiano Barezzi]
-4b472e6 Aperture: Add previous() and next() for all enum classes [Sebastiano Barezzi]
-b2d9983 Aperture: SettingsFragment: Handle back button properly [Sebastiano Barezzi]
-3aeaa5d Aperture: Better handle left/right swipe gesture [Sebastiano Barezzi]
-dbd2ada Aperture: Sort camera modes in CameraMode [Sebastiano Barezzi]
-37c5c8e Aperture: Use the view model for LensSelectorLayout [Sebastiano Barezzi]
-4e95783 Aperture: Set UI components visibility on LiveData observer [Sebastiano Barezzi]
-59478dd Aperture: Remove useless timer mode button visibility setter [Sebastiano Barezzi]
-aaa5391 Aperture: Reformat code [Sebastiano Barezzi]
-7092b3b Aperture: Disable video quality button when there's only one quality available [Sebastiano Barezzi]
-6796239 Aperture: Add an info chip [Sebastiano Barezzi]
-1b1e80b Aperture: Use LiveData to update secondary bar buttons UI [Sebastiano Barezzi]
-7efb1d1 Aperture: Constrain count down view to the view finder [Sebastiano Barezzi]
-6362979 Aperture: Inflate count down view content by its own [Sebastiano Barezzi]
-e78d88f Aperture: Handle thermal status [Sebastiano Barezzi]
-8078449 Aperture: Add volume buttons gestures [Sebastiano Barezzi]
-300e62b Aperture: Handle camera errors [Sebastiano Barezzi]
-
-* packages/apps/Contacts
-68e10aee1 Contacts: add support for importing VCF v4 [althafvly]
-
-* packages/apps/Eleven
-24ecd251 Eleven: Request MANAGE_EXTERNAL_STORAGE permission [DarkJoker360]
-
-* packages/apps/Gallery2
-bca6838e1 Check for Potential Null Pointer [Jing Mike]
-
-* packages/apps/Jelly
-5e7cdbe Jelly: Drop unused dependencies [Sebastiano Barezzi]
-
-* packages/apps/SetupWizard
-0456a86 Remove landscape layout for missing SIM page [Michael Bestas]
-
-* vendor/lineage
-c3dda454 Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE [Bruno Martins]
-8bbb7d90 qcom: Add support for kalama platform [Bruno Martins]
-99041d0e apns: Format xml spacing [Michael Bestas]
-
-* device/xiaomi/jason
-fa344ff jason: sepolicy: Label camera.S5K3M3.actuator.update [Nanhumly]
-ca7f809 jason: sepolicy: Label camera.IMX386.actuator.update [Nanhumly]
-3487e92 jason: sepolicy: Mark camera as vendor executes system violator [Michael Bestas]
-0a22c3c jason: sepolicy: Allow camera hal to read system_file [Arian]
-
-* device/xiaomi/sdm660-common
-9845869 sdm660-common: sepolicy: Resolve vmallocinfo denial [Arne Coucheron]
-93592e1 sdm660-common: sepolicy: Allow system_app to access zram sysfs nodes [Kevin F. Haggerty]
-e8c1b4c sdm660-common: sepolicy: Allow system_app to read /proc/pagetypeinfo [Kevin F. Haggerty]
-
-====================
-     2023-07-25    
-====================
-* lineage/wiki
-3ed9e96c wiki: jfltespr is not a Verizon device [Neel Chauhan]
-
-* packages/apps/Jelly
-9f96ba9 Jelly: The epic of better suggestions [Luca Stefani]
-aee69cd Jelly: Remove custom focus change listener handling [Luca Stefani]
-38bebfc Jelly: Switch to new JSON format for Google suggestions [Luca Stefani]
-7f96a63 Jelly: Cleanup downloadSuggestionsForQuery [Luca Stefani]
-b2b4f08 Jelly: PrefsUtils -> SharedPreferencesExt [Sebastiano Barezzi]
-4ddc7bc Jelly: Bring in our version of guessFileName [Sebastiano Barezzi]
-
-* packages/apps/Trebuchet
-7d7e8f0c2a Trebuchet: Let's keep 2-button nav alive for a little longer [nift4]
-
-* vendor/lineage
-da5e531a Revert "Revert "config: Build NavigationBarMode2ButtonOverlay"" [nift4]
-
-* device/xiaomi/jason
-e4b264a jason: sepolicy: Suppress NFC denials [Michael Bestas]
-4afdefa jason: Build some extra vendor libs for camera and fingerprint [Nanhumly]
-3c172e5 jason: Patch camera HAL for Q bringup [Bruno Martins]
-2ecd8da jason: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
-1cb9605 jason: Remove libgui dependency from camera.sdm660.so [Nanhumly]
-056ee29 jason: Switch to stock camera hal [Nanhumly]
-a6a403f jason: Stop build camera hal from source [Nanhumly]
-74ff7b8 jason: Split system and vendor props [Nanhumly]
-2d81bf1 jason: Drop product_launched_with_*.mk [Sebastiano Barezzi]
-f111732 jason: Remove activity_recognition libs [Jeferson]
-
-* device/xiaomi/sdm660-common
-80470ab sdm660-common: Switch audio HAL to V7 [Mikhail Naganov]
-f0752a4 Revert "Revert "sdm660-common: Drop QTI bluetooth stack"" [Ratoriku]
-860310d sdm660-common: Enable iWlan legacy mode [Hongbo Zeng]
-e0d7595 sdm660-common: overlay: Fix fingerprint wake-up animation [Lucas Dupin]
-411dd75 sdm660-common: Build libwpa_client [Ratoriku]
-169bada sdm660-common: Add framework detect modules to PRODUCT_PACKAGES [shoudil]
-631c469 sdm660-common: Provide android.frameworks.sensorservice@1.0 on vendor [Pavel Dubrova]
-b238492 sdm660-common: sepolicy: Address rild denials [LuK1337]
-c5036ee sdm660-common: sepolicy: Allow audio hal to get boot_status prop [Mohammad Hasan Keramat J]
-dd4de62 sdm660-common: sepolicy: Add contexts for exported telephony props [Inseob Kim]
-e32f7dc sdm660-common: sepolicy: Attach vendor_property_type to properties. [Inseob Kim]
-8d9692f sdm660-common: properties: Use threaded GLES render engine [Kyle Harrison]
-6f82a7b sdm660-common: properties: Disable SDM Scalar [clarencelol]
-adc6063 sdm660-common: properties: Remove obsolete debug.sf.disable_backpressure [SamarV-121]
-c20d25f sdm660-common: properties: don't latch unsignal buffers [Midas Chien]
-4825b6b sdm660-common: Drop QTI datastatusnotification [daniml3]
-3a55fc0 sdm660-common: qcril: fix MT SMS sent during power off [Tim Lin]
-a487dcc sdm660-common: Squashed removal of TetheringOverlay [Nolen Johnson]
-41e2c71 sdm660-common: Drop support for Snapdragon Camera [Alexander Koskovich]
-335f4ca sdm660-common: Remove CLANG compile flag [Georg Veichtlbauer]
-cf02c25 sdm660-common: Uprev framework compatibility matrix to 2.0 [Nolen Johnson]
-541aeab sdm660-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
-5e254ce sdm660-common: Copy cgroups and task_profiles directly from system/core [Bruno Martins]
-735c38d sdm660-common: Ship cgroups.json and task_profiles.json in vendor [Chenyang Zhong]
-86649d8 sdm660-common: Modify Vulkan and OpenGL version to 2020-03-01 [linjoey]
-83ee6ef sdm660-common: Add OpenGL ES and update Vulkan dEQP feature flags [Alastair Donaldson]
-24bf88e sdm660-common: Add required GPU props [Lunarixus]
-c2b7061 sdm660-common: Set manufacturer and soc properties [sudharani]
-343633d sdm660-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
-ea1f586 sdm660-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
-0f906ae sdm660-common: Build vendor version of libavservices_minijail [Volodymyr Zhdanov]
-ba02253 sdm660-common: Disable apex compression [Edwin Moquete]
-
-* vendor/xiaomi/jason
-4f88f21 jason: Patch camera HAL for Q bringup [Bruno Martins]
-b3d9b8b jason: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
-34283eb jason: Remove libgui dependency from camera.sdm660.so [Nanhumly]
-dcfb9b5 jason: Switch to stock camera hal [Nanhumly]
-8258e13 jason: Remove activity_recognition libs [Jeferson]
-
-* vendor/xiaomi/sdm660-common
-9151ab3 Revert "Revert "sdm660-common: Drop QTI bluetooth stack"" [Ratoriku]
-5150667 sdm660-common: Drop QTI datastatusnotification [daniml3]
-
-====================
-     2023-07-24    
-====================
-* lineage/crowdin
-488efa0 config: lineage-20.0: Add hardware/mediatek/PowerOffAlarm [nift4]
-
-* lineage/hudson
-e7667d3 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-54940e26 devices: Add model numbers to payton [Georg Veichtlbauer]
-53687ab8 devices: Update BT and RAM specs for Moto sdm660/msm8998 [Georg Veichtlbauer]
-07c52e1a devices: Only OnePlus uses 'Optic AMOLED' branding [Georg Veichtlbauer]
-
-* packages/apps/FMRadio
-ec0f0a4 FMRadio: Use FLAG_IMMUTABLE for notifications [Erfan Abdi]
-cc29422 FMRadio: check for other runtime perms too [nift4]
-b50935b FMRadio: Ask record audio permission before starting [Erfan Abdi]
-71aa624 FMRadio: (almost) drop system UID [nift4]
-25b8ce2 FMRadio: fix listen to recordings [nift4]
-92d2cc2 FMRadio: fix record activity timer being off after a while [nift4]
-d6259b8 FMRadio: match playlist by name instead [nift4]
-5b6038d FMRadio: fix monkey using MENU key can start record [nift4]
-ba2a149 FMRadio: Play Music is dead - fix saved recordings [nift4]
-a71ab2c FMRadio: androidx conversion, cleanup makefiles [nift4]
-31f2615 FMRadio: use notification channels [nift4]
-
-* packages/apps/Jelly
-f15ceb5 Jelly: Cleanup MenuDialog UI [Sebastiano Barezzi]
-9933887 Jelly: Switch Android.bp to SPDX [Michael Bestas]
-908c007 Jelly: Start making it REUSE compliant [Michael Bestas]
-57fe081 Jelly: Use WindowInsetsControllerCompat for hiding/showing the keyboard [Sebastiano Barezzi]
-24411b8 Jelly: Show keyboard on "Find in page" [Luca Stefani]
-12e64e3 Jelly: Pass a LinearLayout to MenuDialog's LayoutInflater [Luca Stefani]
-3284fac Jelly: Close keyboard when "more button" is clicked [Luca Stefani]
-4675ae2 Jelly: Remove focus from search bar when we close keyboard [Luca Stefani]
-514ca4f Jelly: New SSL certificate info dialog [Sebastiano Barezzi]
-
-* device/xiaomi/sdm660-common
-d9cef1d sdm660-common: Build needed HIDL libs into vendor [LuK1337]
-34e3a05 sdm660-common: clearkey plugin to drm HAL v1.4 [Edwin Wong]
-dfa9b07 sdm660-common: doze: Adapt to S style [TheScarastic]
-
-* vendor/xiaomi/sdm660-common
-965c031 sdm660-common: Initialize proprietary files [Nanhumly]
-
-====================
-     2023-07-23    
-====================
-* android
-2266761 lineage: Remove no longer used symlinks [Michael Bestas]
-
-* external/chromium-webview/prebuilt/arm
-8a258c8 Update Chromium Webview arm prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-59ca79e Update Chromium Webview x86 prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-777d0db Update Chromium Webview x86_64 prebuilt to 115.0.5790.136 [Kevin F. Haggerty]
-
-* external/exfatprogs
-e706c15 Merge tag '1.2.1' of https://github.com/exfatprogs/exfatprogs into lineage-20.0 [Michael Bestas]
-
-* lineage-sdk
-aa4306a8 Remove deprecated settings migration code [Michael Bestas]
-1f91203c Remove deprecated host migration example [Michael Bestas]
-17d6d417 Remove leftover trusted_accent_packages array [Michael Bestas]
-d0720749 Partially revert "LineageSettingsProvider: Support migration from cmsettings" [Michael Bestas]
-f4c7907c Remove leftover LineageAudioService support [Michael Bestas]
-6326bdad Remove leftover Performance Profiles support [Michael Bestas]
-
-* lineage/charter
-12b0b06 directors-working-agreement: Address inactivity [Nolen Johnson]
-
-* lineage/hudson
-68a7e7e I honestly miss Moto Mods [Nolen Johnson]
-
-* lineage/mirror
-c0558c4 Updated to 22-Jul-2023 15:44 UTC [Kevin F. Haggerty]
-1564311 Updated to 22-Jul-2023 15:22 UTC [Kevin F. Haggerty]
-
-* lineage/wiki
-82e6e080 devices: Promote moto z2 force [Nolen Johnson]
-
-* packages/apps/Aperture
-d6334ce Aperture: Add missing copyright headers to icons [Michael Bestas]
-
-* packages/apps/Jelly
-c6a4d6a Jelly: Change desktop mode string [Luca Stefani]
-52ebd5c Jelly: New iconography [Sebastiano Barezzi]
-080fdaa Jelly: utils: UiUtils: Fix nullable parameter [Sebastiano Barezzi]
-03a0fd7 Jelly: Use relative activity names in manifest [Sebastiano Barezzi]
-00b2010 Jelly: Set default_applicable_licenses [Michael Bestas]
-254440e Jelly: New menu popup UI [Sebastiano Barezzi]
-0358afc Jelly: M3 [Sebastiano Barezzi]
-bed0c55 Jelly: New URL bar [Sebastiano Barezzi]
-0b77856 Jelly: Remove timestamp based history background color [Sebastiano Barezzi]
-cb4c848 Jelly: Remove background from empty lists icon [Sebastiano Barezzi]
-16c7e22 Jelly: Use AndroidX preference attributes [Sebastiano Barezzi]
-50250a0 Jelly: Don't apply tints directly on icons drawables [Sebastiano Barezzi]
-6279b63 Jelly: Nuke favicon based accent color change [Sebastiano Barezzi]
-9e36adb Jelly: Use camel case for layout IDs [Sebastiano Barezzi]
-cf858a5 Jelly: Use MaterialToolbar back button [Sebastiano Barezzi]
-a8eb621 Jelly: Use lazy getters for views [Sebastiano Barezzi]
-89b4391 Jelly: SettingsActivity: Use the new method for inflating fragments [Sebastiano Barezzi]
-9c575e8 Jelly: SettingsActivity: Use better Kotlin syntax [Sebastiano Barezzi]
-890567f Jelly: SettingsActivity: Rename settings fragment class [Sebastiano Barezzi]
-8b22506 Jelly: MainActivity: Use better Kotlin syntax [Sebastiano Barezzi]
-e6e43ab Jelly: MainActivity: Rename class attributes' names [Sebastiano Barezzi]
-60938cc Jelly: webview: Use better Kotlin syntax [Sebastiano Barezzi]
-941c9f2 Jelly: webview: Rename class attributes' names [Sebastiano Barezzi]
-f45b733 Jelly: utils: Use better Kotlin syntax [Sebastiano Barezzi]
-e8fe9ea Jelly: ui: Fix secure icon showing [Sebastiano Barezzi]
-fccfaa8 Jelly: ui: Use better Kotlin syntax [Sebastiano Barezzi]
-a5b0abc Jelly: ui: Rename class attributes' names [Sebastiano Barezzi]
-8fee876 Jelly: suggestions: Fix typo [Sebastiano Barezzi]
-8013db8 Jelly: suggestions: Use better Kotlin syntax [Sebastiano Barezzi]
-c95c028 Jelly: suggestions: Rename class attributes' names [Sebastiano Barezzi]
-e230efe Jelly: history: Use better Kotlin syntax [Sebastiano Barezzi]
-804d9ab Jelly: history: Rename class attributes' names [Sebastiano Barezzi]
-3a2c4b0 Jelly: favorite: Use better Kotlin syntax [Sebastiano Barezzi]
-58228e9 Jelly: favorite: Rename class attributes' names [Sebastiano Barezzi]
-00cd0f0 Jelly: ./gradlew generateBp [Sebastiano Barezzi]
-842dd1b Jelly: Add generateBp from Aperture [Sebastiano Barezzi]
-f3c66b6 Jelly: Move Android.bp to app/ [Sebastiano Barezzi]
-2143d07 Jelly: Migrate build scripts to Kotlin [Sebastiano Barezzi]
-a16e1ef Jelly: Disable Jetifier [Sebastiano Barezzi]
-d5346ef Jelly: Reformat code [Sebastiano Barezzi]
-4e6711d Jelly: Use ?attr/isLightTheme [Sebastiano Barezzi]
-5021feb Jelly: Rename app theme to Theme.Jelly [Sebastiano Barezzi]
-e911801 Jelly: Move to SPDX license headers [Sebastiano Barezzi]
-dd2db5f Jelly: Remove unused import [Sebastiano Barezzi]
-2ee67c4 Jelly: Add newline at the end of files where needed [Sebastiano Barezzi]
-7b617d3 Jelly: Get rid of wildcard imports [Sebastiano Barezzi]
-2540f9a Jelly: Introduce NoSuggestionProvider [Luca Stefani]
-e47c335 Jelly: Use ranges in suggestion provider [Luca Stefani]
-
-* device/xiaomi/jason
-0b5c346 jason: Change default wifi ssid to "Mi Note 3" [Arian]
-6148ad4 jason: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
-e540518 jason: overlay: Set physical power button and fps location [Bruno Martins]
-8032feb jason: Move libnfc-nci.conf to /product [Nanhumly]
-2612b42 jason: Remove unneeded NFC packages [Georg Veichtlbauer]
-0df9895 jason: Switch to source built nqnfcinfo [Nanhumly]
-2542c8a jason: nfc: Remove deprecated NFA_CONFIG_FORMAT key [intervigilium]
-5caba21 jason: Switch to AOSP NFC [iamehsangh]
-ba3d462 jason: Drop FDE support entirely [Nicholas Lim]
-de98237 jason: Remove PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE [Sebastiano Barezzi]
-1eca977 jason: Use PRODUCT_*_SEPOLICY_DIRS to build product sepolicy [Tri Vo]
-9899968 jason: Align userdata mount flags with twolip [Michael Bestas]
-f470e8c jason: fstab: Add f2fs support [Akhil Narang]
-51a5175 jason: remove discard in fstab [Wei Wang]
-f24385a jason: rootdir: fstab: Switch to FBE [Davide Garberi]
-0f9fc8f jason: Update fstab entry to auto mount USB [Bharat Pawar]
-af95787 jason: Get rid of recovery-only fstab [Michael Bestas]
-221c9e7 jason: Drop TARGET_KERNEL_VERSION [Giovanni Ricca]
-
-====================
-     2023-07-22    
-====================
-* external/chromium-webview/patches
-1cee4f2 Update Chromium Webview to 115.0.5790.136 [Kevin F. Haggerty]
-
-* lineage/mirror
-8b68087 Updated aosp-minimal to 21-Jul-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-7bbb1fd build-webview: Update default webview to 115.0.5790.136 [Kevin F. Haggerty]
-
-====================
-     2023-07-21    
-====================
-* frameworks/base
-ce1f9fc49c66 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
-1c72405842ec SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
-68bb4d4aa245 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas]
-
-* lineage-sdk
-1a53318a LineageSettingsProvider: Allow enabling lockscreen rotation by default [Michael Bestas]
-
-* packages/apps/Etar
-a8791d7f Update README.md [Gitsaibot]
-c40eca14 AlertReceiver: Return early if either context or intent is null [Aayush Gupta]
-1507dfca Prompt user to add calendar instead of account [Aayush Gupta]
-6f1051a3 gradle clean should remove the generated libs [Jochen Sprickerhof]
-689c6209 Update Gradle and dependencies (#1373) [Gitsaibot]
-efef9833 UI Improvements (#1370) [marreitin]
-97056dd5 Update submodules [Jochen Sprickerhof]
-8501b6b1 Catching all sync adapters at once instead of one by one (#1334) [Gitsaibot]
-a0612241 Add URL field [Arnau Mora]
-767b60f2 fix calendar and organizer text colors being barely visible sometimes [Jonas Häusler]
-86ed71da New version 1.0.34 [Gitsaibot]
-c2167e03 check event color is initialized before using it [Jonas Häusler]
-2589e45a Use USE_EXACT_ALARM permission [Jochen Sprickerhof]
-
-* packages/apps/ThemePicker
-3c2259a2 ThemePicker: Remove unnecessary privileges [Tommy Webb]
-
-* packages/inputmethods/LatinIME
-dbdcbeaa5 Latin IME bug with deleted text will reappear after screen orientation changes [suyan yang]
-95109d858 LatinIME: Fix to English dictionary can be added after deleting [wangjing]
-
-* vendor/lineage
-7a6a0c2c overlay: Exempt MediaTek ImsService from location indicators [techyminati]
-
-====================
-     2023-07-20    
-====================
-* hardware/lineage/compat
-07607db libui: Move to system_ext [Sebastiano Barezzi]
-118bd42 compat: Add libutils shim [R0rt1z2]
-
-* lineage/wiki
-a0c20b10 wiki: Make sure git lfs is configured/installed [Michael W]
-
-====================
-     2023-07-19    
-====================
-* frameworks/base
-a9ecc905565a Fix multi-user silent notifications on lockscreen [Tommy Webb]
-
-* hardware/lineage/compat
-895a614 compat: Provide shim with IPermissionController stubs [R0rt1z2]
-
-====================
-     2023-07-18    
-====================
-* android
-8141fe3 manifest: Switch to our fork of system/netd [Michael Bestas]
-
-* frameworks/base
-cfd9c1e4c8ea Support per-UID VPN lockdown policy [Tommy Webb]
-64cef56e1c68 Skip firewall rules for stopped users [Tommy Webb]
-b83a568fa1d5 Use POLICY_REJECT_ALL instead of allowlist [Tommy Webb]
-c05f2daa164c fixup! Implement firewall status bar indicator [Oliver Scott]
-714095c893a9 NPMS: Check if UID is disallowed by transports [Tommy Webb]
-5a0dc91a17ee Track and send allowed transports to Connectivity [Tommy Webb]
-e91d98e3327a Do not consider transports for restricted mode [Tommy Webb]
-c35569b439a3 SystemUI: Fix keyguard affordance colour in light theme [Adithya R]
-01a12efd717c SystemUI: Check primitive vibration support in new quick affordances [Fabian Leutenegger]
-
-* hardware/lineage/compat
-5c54e69 compat: Add libtinyxml2 shim [Sebastiano Barezzi]
-844cbbb compat: Add some HIDL interfaces types shims [R0rt1z2]
-ca34347 compat: Keep only one copy of clang-format style [Sebastiano Barezzi]
-efa7303 libui: Add android::GraphicBufferMapper::lock shims [R0rt1z2]
-6be2ac1 libui: Move every symbol under extern C block [Sebastiano Barezzi]
-2318cd6 libui: Fix android::GraphicBuffer::lock return value [Sebastiano Barezzi]
-
-* lineage/charter
-0586eac charter: Add sdcard requirements [LuK1337]
-
-* lineage/wiki
-df865408 wiki: Update MTG ATV gapps URL [LuK1337]
-
-* packages/apps/Settings
-406607e0c1 POLICY_REJECT_ALL restricts all network access [Tommy Webb]
-
-* packages/apps/SetupWizard
-a5ba5df Hide navigation hint checkbox when taskbar is enabled [Michael Bestas]
-eecf4a9 Fix PhoneMonitor crash on WiFi only devices [Michael Bestas]
 
