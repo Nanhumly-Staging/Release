@@ -1,4 +1,223 @@
 ====================
+     2023-08-12    
+====================
+* packages/apps/CarrierConfig
+ee33694 Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Settings
+37aa160077 Add unofficial OTA support [2/3] [piscesmk2013]
+
+* packages/apps/Updates
+23ce2e2 Add unofficial OTA support [1/3] [Nanhumly]
+
+* packages/services/Telephony
+20cd43857 Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/aosp
+f43086cf Also use release-keys [Nanhumly]
+d441c32a Add unofficial OTA support [3/3] [Nanhumly]
+77f9224d vendor: Disable OTA for ci builds for now [jhenrique09]
+
+* device/xiaomi/msm8998-common
+0f6cceb Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
+
+====================
+     2023-08-11    
+====================
+* bootable/recovery
+bc8eaca9 recovery: Simplify reboot recovery reason [LuK1337]
+b996f9a2 recovery: Clear BCB before rebooting to recovery [LuK1337]
+8a64f18a recovery: Ask to reboot before installing anything after A/B update [LuK1337]
+
+* build/make
+44d6bc539 Merge tag 'android-13.0.0_r67' of https://android.googlesource.com/platform/build into HEAD [jhenrique09]
+
+* device/custom/sepolicy
+1d681c8 common: Label bluetooth.hci.disabled_commands [LuK1337]
+
+* frameworks/base
+098df747c2a2 Automatic translation import [jhenrique09]
+b63c4ae88f2f Automatic translation import [jhenrique09]
+ac83398a173b PixelPropsUtils: Update fingerprints to August [jhenrique09]
+c3064328aa4a Merge tag 'android-13.0.0_r67' of https://android.googlesource.com/platform/frameworks/base into thirteen-plus [jhenrique09]
+0a314b5d0447 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
+4ad0494bb4d2 VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
+3d751d30a19c SystemUI: Enable cast tile without Wi-Fi connection [nift4]
+45f6a482e89e SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+ed8f9b27171d fixup - SystemUI: Add FingerprintInteractiveToAuthProvider implementation [jhenrique09]
+9719d9489243 Fix multi-user silent notifications on lockscreen [Tommy Webb]
+aa0b155fc249 SystemUI: Fix keyguard affordance colour in light theme [Adithya R]
+e1c909f9aedf SystemUI: Check primitive vibration support in new quick affordances [Fabian Leutenegger]
+65bad94dd52c DeviceConfig: Change setProperties behavior [jhenrique09]
+29c64672f244 DeviceConfigUtils: Make debug optional [jhenrique09]
+1d5b905ccad0 Implement DeviceConfigUtils and service [jhenrique09]
+
+* hardware/broadcom/libbt
+51b4ef6 correct WBS config VSC params [Nagarjuna Kristam]
+5aff56c libbt: configure audio codec right after firmware [z3DD3r]
+a639e46 libbt: Add support for using two stop bits [Steve Kondik]
+9cd26cc libbt: Add btlock support [Steve Kondik]
+86941dc libbt: Add prepatch support [Steve Kondik]
+
+* hardware/interfaces
+abed24ca6 compatibility_matrices: Allow radio.config@1.0 till target-level 5 [me-cafebabe]
+
+* manifest
+8164b52 Merge tag 'android-13.0.0_r67' of https://android.googlesource.com/platform/manifest into thirteen-plus [jhenrique09]
+57614be manifest: Track taro and kalama hals [jhenrique09]
+12e05f1 qcom: Sync core-utils-sys and core-utils-vendor [Bruno Martins]
+74c2fcc qcom: Remove deprecated custom APM [Bruno Martins]
+dbb20aa manifest: Remove no longer used symlinks [Michael Bestas]
+7c2085e manifest: Stop tracking SimpleDeviceConfig [jhenrique09]
+
+* packages/apps/FMRadio
+86a9d1d Revert "FMRadio: adaptive icon" [jhenrique09]
+392122d Revert "FMRadio: Bring in the new icon" [jhenrique09]
+fe10357 Revert "FMRadio: Update the app icon for Android 13" [jhenrique09]
+
+* packages/apps/FaceUnlockService
+d4e1f30 Automatic translation import [jhenrique09]
+
+* packages/apps/Settings
+a93c6013cc Automatic translation import [jhenrique09]
+d60ef68e3d Automatic translation import [jhenrique09]
+2caaf6a566 Settings: Show single-touch wakeup setting on rear & front fps devices [Terminator-J]
+232f859da9 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+
+* packages/apps/TouchGestures
+ae1a288 Automatic translation import [jhenrique09]
+
+* packages/apps/Updates
+c1ea34a Automatic translation import [jhenrique09]
+
+* packages/modules/Bluetooth
+d7c5961296 gd: hci: Allow disabling selected local commands [LuK1337]
+
+* packages/resources/devicesettings
+653e8b7 Automatic translation import [jhenrique09]
+81bc9a0 Automatic translation import [LineageOS Infra]
+7f6dc98 Automatic translation import [LineageOS Infra]
+91683bc Automatic translation import [LineageOS Infra]
+d615fb6 Automatic translation import [LineageOS Infra]
+42b8aa7 Automatic translation import [LineageOS Infra]
+df242ce Automatic translation import [LineageOS Infra]
+
+* packages/services/Telecomm
+6766f757f Merge tag 'android-13.0.0_r67' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD [jhenrique09]
+
+* system/core
+df654adc7 fastbootd: hacks for legacy [Alessandro Astone]
+e1f94ff8c fastbootd: usb: fallback to v1 descriptors [Alessandro Astone]
+2d0ac11e5 fixup! healthd: Reinitialize mChargerNames for every battery update [LuK1337]
+
+* vendor/aosp
+a906d1c1 kernel: Don't try to do math on empty kernel version [LuK1337]
+0936a096 vendor: config: Allow devices without Cameras to opt-out of Aperture [Nolen Johnson]
+00532f68 qcom: Prepare for non-legacy dataservices [Bruno Martins]
+aeffc24e qcom: Use full QTI gralloc struct for GKI 2.0 targets [Bruno Martins]
+613e5212 Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE [Bruno Martins]
+39d338cd qcom: Add support for kalama platform [Bruno Martins]
+a59d3395 qcom: Add taro platform [Arian]
+af3a7de7 apns: Format xml spacing [Michael Bestas]
+83681473 overlay: Exempt MediaTek ImsService from location indicators [techyminati]
+5d3f50d2 Revert "overlay: Enable sidefps performant auth by default" [jhenrique09]
+7e546fa0 vendor: Move custom device configs to global_device_configs_override [jhenrique09]
+bfe17b98 vendor: Drop SimpleDeviceConfig [jhenrique09]
+
+* vendor/gms
+f0e7f26 Update from August release [jhenrique09]
+
+* vendor/pixel-framework
+5eeca5a fixup - googlebattery/reversecharging: Update service calls [jhenrique09]
+a70b992 SystemUIGoogle: Fix BatteryControllerImplGoogle injection [jhenrique09]
+f9e357e SystemUIGoogle: Sync forked dagger files with SystemUI [Tobias Merkel]
+ee7094f googlebattery/reversecharging: Update service calls [jhenrique09]
+9c7cd4c SystemUIGoogle: Fix deprecated quality check [Master]
+51cc707 SystemUIGoogle: Replace outdated google-interfaces-lib [aswin7469]
+dd3039f SystemUIGoogle: BatteryDefenderNotification: Convert to aidl [spezi77]
+9726b3a Adaptive charging: Add google-hal checks and resolve possible regression [minaripenguin]
+b7433db Implement adaptive charging based on Google battery HAL [Anay Wadhera]
+a5da5e9 interfaces: add google_battery AIDL interface [Anay Wadhera]
+
+* vendor/qcom/opensource/commonsys-intf/display
+04ab79f9 Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE [Bruno Martins]
+
+* vendor/qcom/opensource/fm-commonsys
+4df023b Automatic translation import [LineageOS Infra]
+cded2b9 Automatic translation import [LineageOS Infra]
+df2de53 Automatic translation import [LineageOS Infra]
+5c62ec9 Automatic translation import [LineageOS Infra]
+
+====================
+     2023-08-10    
+====================
+* frameworks/base
+3ee149444460 SystemUI: Add switch data saver icon [xyyx]
+c07a84cb32b3 SystemUI: Enable monochromatic monet style [aswin7469]
+d65d4261bfa7 PixelPropsUtils: Refactor logic and cleanup [jhenrique09]
+
+* hardware/qcom-caf/bengal/audio
+76884ec4 Merge tag 'LA.UM.9.15.r1-07500-KAMORTA.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio into thirteen [CHRISL7]
+60d6ddfa audio: post_proc: Use path-map instead TARGET_HALS_PATH [boedhack99 (dblenk)]
+
+* manifest
+6a391eb Track ParanoidGlyph [jhenrique09]
+
+* vendor/aosp
+46f3ea08 vendor: Update now playing configs from gms [jhenrique09]
+00afd502 vendor: SimpleDeviceConfig: Isolate pixel specific configs and cleanup [jhenrique09]
+a9779dc1 vendor: SimpleDeviceConfig: Drop wallpaper effects [jhenrique09]
+
+* vendor/pixel-framework
+e88584a SystemUIGoogle: Add missing permission for Smartspace [spezi77]
+ec05a03 SettingsGoogle: Grab screen resolution drawables from cheetah-td1a.220804.031-factory-6152f6f3 [Sourajit Karmakar]
+98c312f SettingsGoogle: Follow monet color in settings icon like AOSP [Karan Parashar]
+
+====================
+     2023-08-09    
+====================
+* frameworks/base
+8ac8bef02d29 Revert "Remove fixed grant of READ_PHONE_STATE and cleanup" [micky387]
+a55ce2aeb50b SystemUI: Make clock & battery clickable again [micky387]
+
+* manifest
+0531794 Revert "manifest: Track default branch for Connectivity" [jhenrique09]
+
+* packages/apps/ParanoidGlyph
+df4f277 Update for crowdin [jhenrique09]
+
+* packages/modules/Connectivity
+6f0b7359f Connectivity: Add capability to allow tethering to use VPN upstreams [Oliver Scott]
+
+* device/xiaomi/msm8998-common
+008790c msm8998-common: Update CarrierConfig from LA.UM.10.2.1.r1-04000-sdm660.0 [Davide Garberi]
+
+* kernel/xiaomi/msm8998
+65c8a9a1c1cc zstd: disable debugging [Marco Zanin]
+1e962b41272c Revert "crypto: zstd: Switch default compr. level to 5" [Marco Zanin]
+
+====================
+     2023-08-08    
+====================
+* manifest
+13bb0e1 Manifest for Android 13.0.0 Release 67 (TQ3A.230805.001) [The Android Open Source Project]
+
+====================
+     2023-08-07    
+====================
+* packages/apps/Aperture
+54fab97 Automatic translation import [LineageOS Infra]
+
+* vendor/aosp
+31fd71bd vendor: Fix env variable conflict [Henrique Silva]
+
+====================
+     2023-08-06    
+====================
+====================
+     2023-08-05    
+====================
+====================
      2023-08-04    
 ====================
 * device/xiaomi/msm8998-common
@@ -61,45 +280,176 @@ b2254edce7e8 pinctrl: qcom: Update irq handle for GPIO pins [Archana Sathyakumar
 ====================
      2023-08-03    
 ====================
+* hardware/qcom-caf/sm8450/display
+93805316 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+d5dcaf09 display: fix remaining code issues [chandu078]
+a812b839 display: silence format compilation issues [chandu078]
+c799aa71 display: Remove dependencies of display specific kernel headers [chandu078]
+e3dadd90 gralloc: drop unused variables [Anay Wadhera]
+fef6237b gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
+1d4980dc gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
+39bcf223 fixup! display: Fix conflicting soong_namespace imports [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/display
+d5f57380 gralloc: Fix retrieving metadata state [Bruno Martins]
+
 ====================
      2023-08-02    
 ====================
+* hardware/qcom-caf/sm8550/display
+48cdaa8e display: fix remaining code issues [chandu078]
+1202714c display: silence format compilation issues [chandu078]
+79e47a9d display: Remove dependencies of display specific kernel headers [chandu078]
+07f2c749 gralloc: drop unused variables [Anay Wadhera]
+cb2688ed gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
+abd3104c gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
+
+* packages/apps/Aperture
+192aab5 Automatic translation import [LineageOS Infra]
+
 ====================
      2023-08-01    
 ====================
+* hardware/qcom-caf/sm8450/audio/agm
+eff8e6c libagmclient: Do not error on format issues [Bruno Martins]
+08062be ipc: Update own paths [Bruno Martins]
+0e7e65a AGMIPC@1.0-service: make libagm_headers headers lib available [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/pal
+ffc7ba03 pal: silence format/unused parameter/variable errors [SGCMarkus]
+8a541189 pal_ipc_server: add include path for PalApi.h [SGCMarkus]
+078acc0a pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
+5571a3df pal: Update own paths [SGCMarkus]
+f9fc0961 libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
+8e319c05 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
+c8205ada pal: create libpal_headers module [SGCMarkus]
+f9f6a66f Remove kvh2xml.h imports [Albert Tang]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+f9d871aa audio-ar: Add attribute [[fallthrough]] [Swapnil Kangralkar(Temp)]
+f8a21312 primary-hal: Update paths to agm and pal [SGCMarkus]
+416d8688 hal: Enforce -Wno-format [chandu078]
+6f176fd3 effects: post_proc: add libarpal_headers header library [SGCMarkus]
+00d81b9f audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+3b63d186 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+6dcc88fb audio: config: Use project pathmap [chandu078]
+
+* hardware/qcom-caf/sm8450/display
+15d92d87 composer: change ndk_platform dependencies to ndk [SGCMarkus]
+6563291b display: Define init script modules properly. [Alexander Koskovich]
+f8cb829b display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+ca72a290 Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
+d789b02e display: Fix conflicting soong_namespace imports [Bruno Martins]
+bd400fff Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT [Davide Garberi]
+a747dc57 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE [Bruno Martins]
+1a604e2b Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
+
+* hardware/qcom-caf/sm8550/display
+0b37f944 display: Define init script modules properly. [Alexander Koskovich]
+7b87e238 display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+c1c5047a Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
+
 ====================
      2023-07-31    
 ====================
+* hardware/qcom-caf/sm8450/audio/agm
+4204a64 plugins: disable modules on OSS builds that depend on proprietary headers [SGCMarkus]
+6f5426d AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/pal
+1e633bcd Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
+b49d4ffa Revert "QAL: Change in location of kvh2xml.h" [Albert Tang]
+25a4ca4f pal: skip libar-pal on OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+ea69fa2c audio: Use direct project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8450/display
+01120703 display: config: Use project pathmap [Alexander Koskovich]
+ace5ce94 display: Use project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8550/audio/agm
+84ddd03 libagmclient: Do not error on format issues [Bruno Martins]
+3708752 ipc: Update own paths [Bruno Martins]
+e61ebdf plugins: disable modules on OSS builds that depend on proprietary headers [SGCMarkus]
+8db5a2a AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/audio/pal
+804e6e53 ipc: Update own paths [Bruno Martins]
+8bfea093 pal_ipc_server: Skip on OSS builds [Bruno Martins]
+18d53325 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
+a6e620ed libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
+6a985278 pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
+dd9c71b0 pal: Expose more headers under libarpal_headers module [SGCMarkus]
+8ed484aa Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
+b1b63515 Revert "QAL: Change in location of kvh2xml.h" [Albert Tang]
+fb599a48 pal: skip libar-pal on OSS builds [SGCMarkus]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+f08825f6 primary-hal: Update paths to agm and pal [Bruno Martins]
+2ea80b9d hal: Include ipc headers from agm and pal [Bruno Martins]
+5d26b5e2 hal: Add dependency on libarpal_headers [Bruno Martins]
+adfa6bc3 hal: Enforce -Wno-format [chandu078]
+b98ced01 adsprpcd: Import missing string.h header [chandu078]
+584a7d56 audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+33fd781b adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+419b0767 audio: config: Use project pathmap [chandu078]
+4128d487 audio: Use direct project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/sm8550/display
+f870cc1c display: Fix conflicting soong_namespace imports [Bruno Martins]
+bbc4b7ce display: config: Use project pathmap [chandu078]
+1765b40a display: Use project pathmap [Ethan Chen]
+
+* vendor/qcom/opensource/audio-hal/st-hal-ar
+2f7733f st-hal-ar: Update paths to pal and primary-hal [Bruno Martins]
+b85925f st-hal-ar: Add dependency on libarpal_headers [Bruno Martins]
+b891dad st-hal-ar: use audio project pathmap for header includes [SGCMarkus]
+c855212 st-hal-ar: do not allow including of ListenSoundModel on OSS builds [SGCMarkus]
+
 ====================
      2023-07-30    
 ====================
-====================
-     2023-07-29    
-====================
-====================
-     2023-07-28    
-====================
-====================
-     2023-07-27    
-====================
-* device/xiaomi/msm8998-common
-508c62f Revert "msm8998-common: sepolicy: Import legacy usb rules" [Nanhumly]
+* hardware/qcom-caf/sm8450/audio/agm
+074c583 Add .gitupstream file [Chirayu Desai]
 
-====================
-     2023-07-26    
-====================
-* device/xiaomi/msm8998-common
-4406f34 msm8998-common: sepolicy: Import legacy usb rules [jro1979oliver]
+* hardware/qcom-caf/sm8450/audio/pal
+e0f3613e Add .gitupstream file [Chirayu Desai]
 
-====================
-     2023-07-25    
-====================
-====================
-     2023-07-24    
-====================
-====================
-     2023-07-23    
-====================
-====================
-     2023-07-22    
-====================
+* hardware/qcom-caf/sm8450/audio/primary-hal
+76280870 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/display
+75084659 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8450/media
+5f41035b media: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+39e8bb01 media: Use project pathmap [Ethan Chen]
+2a6f4e8d Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/agm
+6bf0b5a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/pal
+1baf0bdd Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+6f71a84a Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/display
+ccfe5771 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8550/media
+d4463dee media: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+3369ee7f media: Use project pathmap [Ethan Chen]
+d161b417 Add .gitupstream file [Chirayu Desai]
+
+* packages/apps/FMRadio
+1d304d4 fixup! FMRadio: Use FLAG_IMMUTABLE for notifications [nift4]
+8a3e6e8 fixup! FMRadio: Ask record audio permission before starting [nift4]
+
+* vendor/qcom/opensource/audio-hal/st-hal-ar
+5ff0383 sthal: remove unused label in SoundTriggerSession [Swapnil Kangralkar(Temp)]
+aca232d st-hal-ar: add TARGET_USES_QCOM_AUDIO_AR guard [SGCMarkus]
+d109e5e Add .gitupstream file [Chirayu Desai]
+
