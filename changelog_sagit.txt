@@ -1,443 +1,319 @@
 ====================
-     2023-08-13    
-====================
-* build/make
-97b717f8a build: Always use release-keys [Pranav Vashi]
-
-* frameworks/base
-a33d89a6b6bf build: Don't check for fingerprint mismatch [Dan Cartier]
-
-* lineage/hudson
-571555f Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-a50d5f0 Updated to 13-Aug-2023 13:02 UTC [Kevin F. Haggerty]
-a1b3be1 Updated to 13-Aug-2023 12:38 UTC [Kevin F. Haggerty]
-3653be0 Updated lineage-minimal to 13-Aug-2023 12:01 UTC [Tim Schumacher]
-
-* packages/apps/CarrierConfig
-c9863dd Override name of Mainland China carriers [cjybyjk]
-
-* packages/services/Telephony
-0bda912cb Add support for multi-language carrier name override [cjybyjk]
-
-====================
-     2023-08-12    
+     2023-09-20    
 ====================
 * android
-e7dfeaa manifest: August 2023 Security update [Michael Bestas]
+0378bb6 Revert "lineage: Sync external/dwarves from AOSP" [Bruno Martins]
 
-* lineage/mirror
-ad179a2 Updated to 12-Aug-2023 15:30 UTC [Kevin F. Haggerty]
-
-====================
-     2023-08-11    
-====================
-* hardware/qcom-caf/wlan
-1dd1fe0 wcnss-service: Restore OSS building functionality [Ricky Cheung]
-
-* lineage/wiki
-0f600a00 wiki: adding_device: Make lowest supported version dynamic [LuK1337]
-
-====================
-     2023-08-10    
-====================
-* lineage/hudson
-351f00d hudson: Ship Nubia Play 5G [Cyborg2017]
-
-* lineage/wiki
-ccb4952b wiki: Add Nubia Play 5G [Cyborg2017]
-17efcf6b wiki: Add Nubia Red Magic 5G/5S [Davide Garberi]
-d9c55ee0 wiki: Add install method for nubia devices [Davide Garberi]
-
-====================
-     2023-08-09    
-====================
 * build/make
-42dec8052 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+8a5a65e7d build: Always use release-keys [Pranav Vashi]
 
 * frameworks/base
-4915af0e0ffb Merge tag 'android-13.0.0_r72' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-260ac0f71226 Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-928354581752 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
+902a1cd25f5b build: Don't check for fingerprint mismatch [Dan Cartier]
 
-* lineage/hudson
-cc4dbcd hudson: Ship Red Magic 5G/5S [Davide Garberi]
+* packages/apps/CarrierConfig
+9dba2c1 Override name of Mainland China carriers [cjybyjk]
+
+* packages/inputmethods/LatinIME
+53e621bb7 LatinIME: Fix NPE when using a device with a physical keyboard [Georg Veichtlbauer]
+
+* packages/services/Telephony
+dc2161b3f Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/lineage
+231338af kernel: Use pahole from Google prebuilts [Bruno Martins]
+
+====================
+     2023-09-19    
+====================
+* hardware/lineage/compat
+bfad08e compat: Add libcomparetf2 shim [Alessandro Astone]
 
 * lineage/mirror
-1fa200f Updated aosp-minimal to 09-Aug-2023 12:01 UTC [Tim Schumacher]
+f7a63b0 Updated aosp-minimal to 19-Sep-2023 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-1e7e1a50 wiki: Fix device kernels for 18.1+ devices [LuK1337]
-
-* packages/apps/Trebuchet
-f71ed2a454 Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-5a042d2df3 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-72419e39 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-
-* packages/services/Telecomm
-6f28986bf Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas]
-
-* vendor/lineage
-9d239d1b August 2023 Security update [Chirayu Desai]
-
-* device/xiaomi/msm8998-common
-008790c msm8998-common: Update CarrierConfig from LA.UM.10.2.1.r1-04000-sdm660.0 [Davide Garberi]
-
-* kernel/xiaomi/msm8998
-65c8a9a1c1cc zstd: disable debugging [Marco Zanin]
-1e962b41272c Revert "crypto: zstd: Switch default compr. level to 5" [Marco Zanin]
+56663065 wiki: Update MTG URLs [LuK1337]
 
 ====================
-     2023-08-08    
+     2023-09-18    
 ====================
-* device/lineage/sepolicy
-155d37a sepolicy: vendor: Allow Trust to get vendor SPL [razorloves]
-
-* lineage/hudson
-ecdcb7c Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-a59f948 Updated to 08-Aug-2023 00:43 UTC [Kevin F. Haggerty]
-
-====================
-     2023-08-07    
-====================
-* frameworks/base
-2cf6a5a9363f VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
-
-* lineage/hudson
-d0865f3 Regenerate device dependency mappings [LineageOS Infra]
-
 * lineage/wiki
-072348bd wiki: Require dtbo or boot+dtbo flash on Pixel 4/5 series [LuK1337]
-
-====================
-     2023-08-06    
-====================
-* frameworks/base
-9fb459b337f3 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-c8b90136 Automatic translation import [LineageOS Infra]
+5bd86abb wiki: Add "unknown device" [Michael W]
+e3579836 templates: device_info: Make Quirks section only show if there are quirks [Nolen Johnson]
+78dac979 wiki: Introduce migration flag for codename migrations/unifications [Nolen Johnson]
+5546847d deivces: Migrate userdata unifications of legacy xperia to before_lineage_install [Nolen Johnson]
 
 * packages/apps/Aperture
-54fab97 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-8f785f2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-4b20fe3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-32001be Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-eaeed69 Automatic translation import [LineageOS Infra]
-
-====================
-     2023-08-05    
-====================
-* bootable/recovery
-a18688e5 recovery: Simplify reboot recovery reason [LuK1337]
-2a70656f recovery: Clear BCB before rebooting to recovery [LuK1337]
-
-* external/chromium-webview/prebuilt/arm
-75fb96b Update Chromium Webview arm prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-d80e3cd Update Chromium Webview arm64 prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-9060a16 Update Chromium Webview x86 prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-015e404 Update Chromium Webview x86_64 prebuilt to 115.0.5790.166 [Kevin F. Haggerty]
-
-* lineage/hudson
-afb5e1f Regenerate device dependency mappings [LineageOS Infra]
-
-* vendor/lineage
-da9c5060 device_config: Enable separate notification volume control [LuK1337]
-
-====================
-     2023-08-04    
-====================
-* device/qcom/sepolicy-legacy-um
-ada4be8b Allow FM2 app to read/write `vendor.hw.fm.` props [me-cafebabe]
-
-* external/chromium-webview/patches
-8eef9e0 Update Chromium Webview to 115.0.5790.166 [Kevin F. Haggerty]
-
-* hardware/interfaces
-8aad8f621 compatibility_matrices: Allow radio.config@1.0 till target-level 5 [me-cafebabe]
-
-* lineage/mirror
-2053b8c Updated to 04-Aug-2023 13:03 UTC [Kevin F. Haggerty]
-e9fd7c3 Updated to 04-Aug-2023 12:22 UTC [Kevin F. Haggerty]
-043d6bd Updated lineage-minimal to 04-Aug-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-d41815c build-webview: Update default webview to 115.0.5790.166 [Kevin F. Haggerty]
-
-* kernel/xiaomi/msm8998
-290d962116f2 Revert "sched: cpufreq: Use sched_clock instead of rq_clock when updating schedutil" [Georg Veichtlbauer]
-432f2f5db4c3 sched: Take irq_sparse lock during the isolation [Prasad Sodagudi]
-e04cc7073dea rcu: Speed up calling of RCU tasks callbacks [Steven Rostedt (VMware)]
-13a440ee801b kernel: power: Workaround for sensor ipc message causing high power consume [Frank Luo]
-e57c2b20ea74 sched/fair: Fix low cpu usage with high throttling by removing expiration of cpu-local slices [Dave Chiluk]
-f528895fdcbb sched/fair: Fix bandwidth timer clock drift condition [Xunlei Pang]
-f324b698354b kernel: power: qos: remove check for core isolation while cluster LPMs [Raghavendra Kakarla]
-1f1f766d993b sched/fair: Fix issue where frequency update not skipped [Joel Fernandes]
-0593898273fd ANDROID: Move schedtune en/dequeue before schedutil update triggers [Chris Redpath]
-a48c7415a341 sched/fair: Skip frequency updates if CPU about to idle [Joel Fernandes]
-109deb139279 FROMLIST: sched: Make iowait_boost optional in schedutil [Joel Fernandes]
-0e79d80ba5d8 FROMLIST: cpufreq: Make iowait boost a policy option [Joel Fernandes]
-306293a73849 ARM: dts: msm: add HW CPU's busy-cost-data for additional freqs [Andres Oportus]
-5f673d54f5f3 ARM: dts: msm: fix CPU's idle-cost-data [Patrick Bellasi]
-5e10dca8d3df ARM: dts: msm: fix EM to be monotonically increasing [Patrick Bellasi]
-f6ed68a72d64 ARM: dts: msm: Fix EAS idle-cost-data property length [Siqi Lin]
-894965458818 ARM: dts: msm: Add msm8998 energy model [Rashed Abdel-Tawab]
-35d8dca090ef sched/walt: Re-add code to allow WALT to function [Ethan Chen]
-954c717ae0c8 sched: Don't fail isolation request for an already isolated CPU [Pavankumar Kondeti]
-45e0670a5ae3 sched: WALT: increase WALT minimum window size to 20ms [Joonwoo Park]
-f26c8967908f sched: cpufreq: Use per_cpu_ptr instead of this_cpu_ptr when reporting load [Vikram Mulukutla]
-c7f10e958c51 sched: cpufreq: Use sched_clock instead of rq_clock when updating schedutil [Vikram Mulukutla]
-90dbdc46621b sched/cpupri: Exclude isolated CPUs from the lowest_mask [Pavankumar Kondeti]
-37bb68aa6150 sched: cpufreq: Limit governor updates to WALT changes alone [Vikram Mulukutla]
-acc9dfc07c79 sched: walt: Correct WALT window size initialization [Vikram Mulukutla]
-18a21024a440 sched: walt: fix window misalignment when HZ=300 [Joonwoo Park]
-a59dbf9361ca sched/tune: Increase the cgroup limit to 6 [Pavankumar Kondeti]
-871ef9b5bb65 drivers: cpuidle: lpm-levels: Fix KW issues with idle state idx < 0 [Lina Iyer]
-eb838fa80867 drivers: cpuidle: lpm-levels: Correctly check for list empty [Maulik Shah]
-657bbbb6e638 sched/fair: Fix load_balance() affinity redo path [Jeffrey Hugo]
-4ac06a21ff5b sched/fair: Avoid unnecessary active load balance [Maria Yu]
-c4f39c625624 BACKPORT: sched/core: Fix rules for running on online && !active CPUs [Peter Zijlstra]
-6f5c636b64d1 sched/core: Allow kthreads to fall back to online && !active cpus [Tejun Heo]
-7b7c4cea1f60 sched: Allow migrating kthreads into online but inactive CPUs [Tejun Heo]
-c66d7b9473e9 sched/fair: Allow load bigger task load balance when nr_running is 2 [Maria Yu]
-0496407b4618 pinctrl: qcom: Clear status bit on irq_unmask [Tengfei Fan]
-6c62529b0bcb UPSTREAM: mm: fix misplaced unlock_page in do_wp_page() [Linus Torvalds]
-357e4e538a28 UPSTREAM: mm/ksm: Remove reuse_ksm_page() [Peter Xu]
-6605a9fb1733 BACKPORT: mm: do_wp_page() simplification [Linus Torvalds]
-08c642c41fd7 UPSTREAM: mm: reuse only-pte-mapped KSM page in do_wp_page() [Kirill Tkhai]
-49718b7292e1 sched/fair: vruntime should normalize when switching from  fair [John Dias]
-9d21ef85faa9 mm: introduce arg_lock to protect arg_start|end and  env_start|end in mm_struct [Yang Shi]
-34eced2551e9 msm: mdss: Fix indentation [Georg Veichtlbauer]
-f3d83e4a9862 msm: mdss: Treat polling_en as the bool that it is [Georg Veichtlbauer]
-22b3f055d59b msm: mdss: add idle state node [Adrian Salido]
-ae254a1c7c8e genirq: Honour IRQ's affinity hint during migration [Pavankumar Kondeti]
-cb0d420d53cd power: qos: Use effective affinity mask [Pavankumar Kondeti]
-4ce839fec91c genirq: Introduce effective affinity mask [Thomas Gleixner]
-ee8e7f0aa7d6 sched/cputime: Mitigate performance regression in times()/clock_gettime() [Giovanni Gherdovich]
-56cefa67b728 kernel: time: Add delay after cpu_relax() in tight loops [Prasad Sodagudi]
-b2254edce7e8 pinctrl: qcom: Update irq handle for GPIO pins [Archana Sathyakumar]
-
-====================
-     2023-08-03    
-====================
-* hardware/qcom-caf/sm8450/display
-93805316fc gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
-d5dcaf0994 display: fix remaining code issues [chandu078]
-a812b8396a display: silence format compilation issues [chandu078]
-c799aa7127 display: Remove dependencies of display specific kernel headers [chandu078]
-e3dadd90d0 gralloc: drop unused variables [Anay Wadhera]
-fef6237b2a gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
-1d4980dc26 gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
-39bcf223e5 fixup! display: Fix conflicting soong_namespace imports [SGCMarkus]
-
-* hardware/qcom-caf/sm8550/display
-d5f57380e8 gralloc: Fix retrieving metadata state [Bruno Martins]
-
-* lineage/mirror
-c83231e Updated aosp-minimal to 03-Aug-2023 12:01 UTC [Tim Schumacher]
-
-* vendor/lineage
-f7c2546f vars: Add kailua tags [Bruno Martins]
-
-====================
-     2023-08-02    
-====================
-* lineage/mirror
-41c6b87 Updated lineage-minimal to 02-Aug-2023 12:01 UTC [Tim Schumacher]
-
-* system/core
-0b4107e89 fastbootd: hacks for legacy [Alessandro Astone]
-dd75dc04a fastbootd: usb: fallback to v1 descriptors [Alessandro Astone]
-
-* vendor/lineage
-eb934e66 kernel: Don't try to do math on empty kernel version [LuK1337]
-
-====================
-     2023-08-01    
-====================
-* frameworks/base
-48f045414e77 Automatic translation import [LineageOS Infra]
-
-* hardware/qcom-caf/sm8450/audio/agm
-eff8e6c libagmclient: Do not error on format issues [Bruno Martins]
-08062be ipc: Update own paths [Bruno Martins]
-0e7e65a AGMIPC@1.0-service: make libagm_headers headers lib available [SGCMarkus]
-
-* hardware/qcom-caf/sm8450/audio/pal
-ffc7ba03 pal: silence format/unused parameter/variable errors [SGCMarkus]
-8a541189 pal_ipc_server: add include path for PalApi.h [SGCMarkus]
-078acc0a pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
-5571a3df pal: Update own paths [SGCMarkus]
-f9fc0961 libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-f9d871aaa audio-ar: Add attribute [[fallthrough]] [Swapnil Kangralkar(Temp)]
-f8a213122 primary-hal: Update paths to agm and pal [SGCMarkus]
-416d8688d hal: Enforce -Wno-format [chandu078]
-6f176fd37 effects: post_proc: add libarpal_headers header library [SGCMarkus]
-00d81b9f7 audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
-
-* hardware/qcom-caf/sm8450/display
-15d92d87d4 composer: change ndk_platform dependencies to ndk [SGCMarkus]
-6563291bc6 display: Define init script modules properly. [Alexander Koskovich]
-f8cb829b37 display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
-ca72a2907c Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
-
-* hardware/qcom-caf/sm8550/display
-48cdaa8e4c display: fix remaining code issues [chandu078]
-1202714cd0 display: silence format compilation issues [chandu078]
-79e47a9dfa display: Remove dependencies of display specific kernel headers [chandu078]
-07f2c7490a gralloc: drop unused variables [Anay Wadhera]
-cb2688ed21 gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
-abd3104c50 gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
-0b37f94415 display: Define init script modules properly. [Alexander Koskovich]
-7b87e2386c display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
-c1c5047ac7 Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
-
-* lineage/hudson
-5dcd92c Regenerate device dependency mappings [LineageOS Infra]
-
-* packages/apps/Aperture
-192aab5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-314c15d Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-94fcce3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-973abea47 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-cbe010a9c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Eleven
-07d283ca Automatic translation import [LineageOS Infra]
+6de5535 Aperture: Don't pass `repository` unnecessarily [LuK1337]
+2edbe9a Aperture: Use composite action for running builds [LuK1337]
 
 * packages/apps/Etar
-63fb076c Automatic translation import [LineageOS Infra]
+2b298f83 Etar: Add soong_namespace for external modules [LuK1337]
 
-* packages/apps/FlipFlap
-020f407 Automatic translation import [LineageOS Infra]
+* packages/apps/Updater
+64261f1 Updater: Use generateBp plugin [LuK1337]
 
-* packages/apps/Jelly
-6e1c4b4 Automatic translation import [LineageOS Infra]
-e5acd12 Jelly: Add Brave search engine and suggestion provider [Sebastiano Barezzi]
-65d27c1 Jelly: Show no suggestion when there are zero results [Sebastiano Barezzi]
-2ebfac2 Jelly: Fix string comment [Sebastiano Barezzi]
-68fcab4 Jelly: Handle accessibility warnings [Sebastiano Barezzi]
-8bb8be7 Jelly: UrlBarLayout: Use a unit for autocomplete item click listener [Sebastiano Barezzi]
-7fd052b Jelly: Remove unused namespace [Sebastiano Barezzi]
-0d0b5a5 Jelly: Handle autofill and input type warnings [Sebastiano Barezzi]
-ae7fd71 Jelly: Remove unused resources [Sebastiano Barezzi]
-059bc72 Jelly: Redo suggestion provider [Sebastiano Barezzi]
-c9f015d Jelly: Use a single view for suggestion items [Sebastiano Barezzi]
-da1d51f Jelly: Drop hardware accelerated flag in manifest [Sebastiano Barezzi]
-e6c340d Jelly: FavoriteProvider: Remove unneeded constructor property [Sebastiano Barezzi]
-8f53643 Jelly: Remove unused imports [Sebastiano Barezzi]
-
-* packages/apps/LineageParts
-67ffa8b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-088781c312 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-ec40f08 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-f6b8cb50 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-bbb12b3 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-36dbec5 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/fm-commonsys
-da7b802 Automatic translation import [LineageOS Infra]
+* vendor/lineage
+2a0d4179 kernel: Allow to limit the used .dtb files for the final DTB image [SGCMarkus]
+3056928d kernel: Include DTBOs from OEM/ODM folder in base DTB [Bruno Martins]
+47931c12 kernel: Handle GKI modules [Bruno Martins]
 
 ====================
-     2023-07-31    
+     2023-09-17    
 ====================
-* hardware/qcom-caf/sm8450/audio/pal
-8e319c05 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
-c8205ada pal: create libpal_headers module [SGCMarkus]
-f9f6a66f Remove kvh2xml.h imports [Albert Tang]
+* android
+fed3b28 Track our own fork(s) for 2023-09 ASB patching [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8450/audio/primary-hal
-3b63d1865 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
-6dcc88fbf audio: config: Use project pathmap [chandu078]
+* build/make
+88f03751c Bump Security String to 2023-09-05 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8450/display
-d789b02e55 display: Fix conflicting soong_namespace imports [Bruno Martins]
-bd400fff85 Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT [Davide Garberi]
-a747dc57c4 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE [Bruno Martins]
-1a604e2b7e Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
+* external/chromium-webview/patches
+a4b0104 Update Chromium Webview to 117.0.5938.60 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8550/audio/agm
-84ddd03 libagmclient: Do not error on format issues [Bruno Martins]
-3708752 ipc: Update own paths [Bruno Martins]
-e61ebdf plugins: disable modules on OSS builds that depend on proprietary headers [SGCMarkus]
-8db5a2a AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+* external/chromium-webview/prebuilt/arm
+a80f484 Update Chromium Webview arm prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8550/audio/pal
-804e6e53 ipc: Update own paths [Bruno Martins]
-8bfea093 pal_ipc_server: Skip on OSS builds [Bruno Martins]
-18d53325 kvh2xml: add additional needed tags for post_proc effects [SGCMarkus]
-a6e620ed libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
-6a985278 pal: plugins: disable on OSS builds due to missing headers [SGCMarkus]
-dd9c71b0 pal: Expose more headers under libarpal_headers module [SGCMarkus]
-8ed484aa Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
-b1b63515 Revert "QAL: Change in location of kvh2xml.h" [Albert Tang]
-fb599a48 pal: skip libar-pal on OSS builds [SGCMarkus]
+* external/chromium-webview/prebuilt/arm64
+f0bcd13 Update Chromium Webview arm64 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8550/audio/primary-hal
-f08825f62 primary-hal: Update paths to agm and pal [Bruno Martins]
-2ea80b9de hal: Include ipc headers from agm and pal [Bruno Martins]
-5d26b5e27 hal: Add dependency on libarpal_headers [Bruno Martins]
-adfa6bc3b hal: Enforce -Wno-format [chandu078]
-b98ced015 adsprpcd: Import missing string.h header [chandu078]
-584a7d562 audio: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
-33fd781b0 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
-419b0767b audio: config: Use project pathmap [chandu078]
-4128d4877 audio: Use direct project pathmap [Ethan Chen]
+* external/chromium-webview/prebuilt/x86
+1355d68 Update Chromium Webview x86 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8550/display
-f870cc1c81 display: Fix conflicting soong_namespace imports [Bruno Martins]
-bbc4b7ce80 display: config: Use project pathmap [chandu078]
-1765b40a12 display: Use project pathmap [Ethan Chen]
+* external/chromium-webview/prebuilt/x86_64
+d44bdfd Update Chromium Webview x86_64 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
+
+* frameworks/av
+eedaeee7b1 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+c5ede30f14 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* frameworks/base
+87052f701854 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+eb2f4d321960 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* frameworks/native
+2d384e9588 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+d99406e91f Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* lineage-sdk
+9e850826 trust: Fix variable usage before null check [Tommaso Fonda]
+
+* lineage/hudson
+0753f4f Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-a87ae25 Updated aosp-minimal to 31-Jul-2023 12:01 UTC [Tim Schumacher]
+4e745a1 Updated to 17-Sep-2023 12:00 UTC [Tim Schumacher]
 
 * lineage/wiki
-20b6626f wiki: prepare_image: Trim & Resize [Michael W]
+7b263aac devices: us996*: Convert model identification note to before_install [Nolen Johnson]
+686cec58 wiki: Add "Known quirks" section [Michael W]
+
+* packages/apps/Aperture
+45a6690 Aperture: Update ZXing to 3.5.2 [LuK1337]
+0a4c3a6 fixup: yaml [Tom Powell]
+e495da5 add workflow_dispatch event for gerrit hooks [Tom Powell]
+
+* packages/apps/Nfc
+15cd9202 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Nfc into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/apps/Settings
+af9db16c85 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+9f776ebc68 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+80cbcb4750 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+f1b03d523b Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/modules/Bluetooth
+bf9abb2349 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+0feb021bd6 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/modules/NeuralNetworks
+b839fd39b Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+04b483884 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/providers/MediaProvider
+4dc6b691d Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+77423b384 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+* packages/services/Telephony
+544ea2dd2 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+2e0dfc989 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+
+====================
+     2023-09-16    
+====================
+* frameworks/base
+3c3a7256c646 AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
+
+* lineage-sdk
+d84bdac8 Automatic translation import [LineageOS Infra]
+
+* lineage/scripts
+23ef447 build-webview: Update default webview to 117.0.5938.60 [Kevin F. Haggerty]
+
+* lineage/wiki
+4f94abae wiki: xiaomi: Asking for the latest MIUI or having the right FW? [Michael W]
+
+* packages/apps/Aperture
+732a706 Aperture: Update workflows versions [Luca Stefani]
+67078d0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+0eb502023 fixup! Dialer: Introduce asking for default dialer role [LuK1337]
+b267f1554 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+07207d00 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+6ec123ea Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+53c4e9a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+5c17826 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+a451d5201 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+4b27258 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+8bce613 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+53760b51 overlay: Move config_hspa_data_distinguishable to proper location [Tommaso Fonda]
+
+* vendor/qcom/opensource/power
+f16c47b power: Remove unused variable [Chippa-a]
+
+* kernel/xiaomi/msm8998
+69ea976b36bd Merge tag 'LA.UM.8.4.c25-09400-8x98.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
+
+====================
+     2023-09-15    
+====================
+* device/lineage/sepolicy
+f568c2e common: Move in mediashell rules from ATV [LuK1337]
+
+* lineage/wiki
+5d6a9e47 schema: Include taro, cape and kalama [Bruno Martins]
+
+====================
+     2023-09-14    
+====================
+* lineage/mirror
+92eb22e Updated aosp-minimal to 14-Sep-2023 12:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+740926e6 wiki: Update steps for extracting payload based OTAs [razorloves]
+
+* packages/apps/Aperture
+79ee5da Aperture: Run ./gradlew app:generateBp [Sebastiano Barezzi]
+7fccb00 Aperture: Use generateBp plugin from maven repo [Sebastiano Barezzi]
 
 * packages/apps/Jelly
-0feaa1a Jelly: Allow to choose all files if no parameter is set [Luca Stefani]
-0e79bbd Jelly: Fixup file upload [Luca Stefani]
-6f2f14f Jelly: Ignore mime type if it's binary [Luca Stefani]
-ca1430b Jelly: Suppress some warnings [Luca Stefani]
-32d4667 Jelly: Set UserAgent and Cookie to download files [Luca Stefani]
+562bc91 Jelly: Run ./gradlew app:generateBp [Sebastiano Barezzi]
+42c0087 Jelly: Use generateBp plugin from maven repo [Sebastiano Barezzi]
+
+====================
+     2023-09-13    
+====================
+* lineage/mirror
+a8ee4bd Updated aosp-minimal to 13-Sep-2023 12:02 UTC [Tim Schumacher]
+
+* packages/inputmethods/LatinIME
+68795e35b fixup! LatinIME: Make emoji key look like any other key [LuK1337]
+
+====================
+     2023-09-12    
+====================
+* hardware/qcom-caf/sm8550/audio/agm
+a72154a agm: fixup!: OSS compile for plugins [Akash Srivastava]
+
+* lineage/scripts
+a01711d aosp-merger: README: Fix typos [Nolen Johnson]
+
+* lineage/wiki
+4014f1b6 wiki: 64-bit -> x86_64 [LuK1337]
+9321166b wiki: devices: Revive violet [raghavt20]
+
+* packages/apps/Aperture
+1bd3662 Aperture: Update CameraX maven repo URL [LuK1337]
+5cd5058 Aperture: Detect uncommitted changes after running app:generateBp [LuK1337]
+
+====================
+     2023-09-11    
+====================
+* lineage/wiki
+eaea8989 wiki: Add Wi-Fi device filter [LuK1337]
+
+====================
+     2023-09-10    
+====================
+* frameworks/base
+5cf8bcfdad8a core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
+
+* lineage/hudson
+05e08df add violet [jash]
+
+* lineage/wiki
+710a6d17 wiki: Update Sony nile peripherals [LuK1337]
+
+====================
+     2023-09-09    
+====================
+* lineage/wiki
+066b7840 wiki: Unify WiFi standard support [LuK1337]
+
+====================
+     2023-09-08    
+====================
+* lineage/hudson
+d166b33 I asked a couple of Marlins for a favor, but they wouldn't help. [Nolen Johnson]
+
+* lineage/scripts
+09efdf2 Drop update-payload-extractor [Chirayu Desai]
+
+* lineage/wiki
+bc8bf070 devices: Promote the Pixel and Pixel XL [Nolen Johnson]
+
+* packages/apps/Aperture
+9945a5d Aperture: Use Material You color on location dialog [Sebastiano Barezzi]
+b07cf68 Aperture: Use Material You colors on QR bottom sheet [Sebastiano Barezzi]
+45612be Aperture: Properly observe / remove observers from LiveDatas [Sebastiano Barezzi]
+b41107f Aperture: Cleanup cameras parsing [Sebastiano Barezzi]
+8f64c4d Aperture: New camera mode selector UI [Sebastiano Barezzi]
+09a3389 Aperture: Move all the remaining views changes to livedata observers [Sebastiano Barezzi]
+
+====================
+     2023-09-07    
+====================
+* hardware/qcom-caf/sm8450/audio/pal
+faf5da46 pal: Update kvh2xml for current branch [Aaron Kling]
+
+* hardware/qcom-caf/sm8550/audio/agm
+ca7db6f Revert "agm: changes to enable session flush using sessionId" [Bruno Martins]
+626a97d agm: Fix OSS compile for plugins [Aaron Kling]
+
+* hardware/qcom-caf/sm8550/audio/pal
+d22432bd pal: Complement kvh2xml header [Bruno Martins]
+9a816119 pal: Update kvh2xml for current branch [Aaron Kling]
+
+* lineage/wiki
+00e45dd8 Fixed incorrect camera specifications for apollon variants [Farid Zelli]
+05d8e82e wiki: Correct Snapdragon 63x model names [Georg Veichtlbauer]
+e9a6373c wiki: devices: {land,santoni}: Mention about migration to Mi8937 [me-cafebabe]
+dcd71476 wiki: miatoll: Add new maintainer [Giovanni Ricca]
+
+* device/xiaomi/msm8998-common
+f28e3f9 msm8998-common: Rolling back Time service blobs to LA.UM.10.2.1.r1-03400-sdm660.0 [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+7765386 msm8998-common: Rolling back Time service blobs to LA.UM.10.2.1.r1-03400-sdm660.0 [Nanhumly]
+
+* kernel/xiaomi/msm8998
+313bce82cf31 Merge tag 'LA.UM.9.2.c25-03000-SDMxx0.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
 
