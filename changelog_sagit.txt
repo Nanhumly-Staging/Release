@@ -1,142 +1,217 @@
 ====================
-     2023-09-01    
+     2023-09-26    
 ====================
-* device/xiaomi/msm8998-common
-93ffb71 Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
-72523da msm8998-common: gps: tune down debug log to error only [orges]
-7d6b2d7 msm8998-common: Update GPS from LA.UM.9.15.2.r1-07800-KAMORTA.QSSI14.0 [1582130940]
-3a31ac3 msm8998-common: Update GPS from LA.UM.11.2.1.r1-02500-sdm660.0 [Nanhumly]
+====================
+     2023-09-25    
+====================
+* external/webp
+2c38a75 Fix OOB write in BuildHuffmanTable. [Vincent Rabaud]
 
-* vendor/xiaomi/msm8998-common
-6a32530 Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
-31d7dba msm8998-common: Update GPS blobs from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0 [1582130940]
-b2ae3e2 msm8998-common: Update GPS blobs from hon660 [Nanhumly]
+* frameworks/base
+029cfa12e802 PhoneWindowManager: Pass correct invocation type for assistant launch on home long press [Dhina17]
+667fb50d731f AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
 
-====================
-     2023-08-31    
-====================
-* device/xiaomi/msm8998-common
-2ce515f msm8998-common: Update proprietary files sha1sum [Nanhumly]
-b4eb4c2 msm8998-common: audio: enable speaker spatializer [Jasmine Cha]
-bfe01a1 msm8998-common: configuration for spatial audio [Eric Laurent]
-a7f4204 msm8998-common: Update Alarm blobs from hon660 [Alcatraz323]
+* manifest
+49699bb Track external/webp [jhenrique09]
+e0ce91e manifest: Stop tracking dwarves [jhenrique09]
 
-* vendor/xiaomi/msm8998-common
-f1f1081 msm8998-common: Regeneration [Nanhumly]
-a635f36 msm8998-common: Add libspatialaudio from cheetah [Alcatraz323]
-706a6b6 msm8998-common: Update Alarm blobs from hon660 [Alcatraz323]
-
-====================
-     2023-08-30    
-====================
-====================
-     2023-08-29    
-====================
-====================
-     2023-08-28    
-====================
-* device/xiaomi/msm8998-common
-b08d91e msm8998-common: Update DRM (TUI), Time services blobs from hon660 [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-937563c msm8998-common: Update DRM (TUI), Time services blobs from hon660 [Nanhumly]
-
-====================
-     2023-08-27    
-====================
-====================
-     2023-08-26    
-====================
-====================
-     2023-08-25    
-====================
-====================
-     2023-08-24    
-====================
 * packages/apps/CarrierConfig
-5505924 Override name of Mainland China carriers [cjybyjk]
+ef9d2ef Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/Settings
-ccb97921e0 Add unofficial OTA support [2/3] [piscesmk2013]
+1a7f671a66 Add unofficial OTA support [2/3] [piscesmk2013]
 
 * packages/apps/Updates
-9d89980 Add unofficial OTA support [1/3] [Nanhumly]
+6f39c53 Add unofficial OTA support [1/3] [Nanhumly]
+
+* packages/resources/devicesettings
+183b445 Automatic translation import [LineageOS Infra]
 
 * packages/services/Telephony
-5330cdcbf Add support for multi-language carrier name override [cjybyjk]
+180086700 Add support for multi-language carrier name override [cjybyjk]
 
 * vendor/aosp
-a0b49c34 Always use release-keys [piscesmk2013]
-b1f73840 Add unofficial OTA support [3/3] [Nanhumly]
+ab58c99c Always use release-keys [piscesmk2013]
+88641f8e Add unofficial OTA support [3/3] [Nanhumly]
+970eb58f vendor: Enforce smartspace configs [jhenrique09]
+968ed6d0 repopick: Fix regex related SyntaxWarning on Python 3.12 [LuK1337]
+ab820361 kernel: Use pahole from Google prebuilts [Bruno Martins]
+bdf893e7 kernel: Allow to limit the used .dtb files for the final DTB image [SGCMarkus]
+d0f8ab1b kernel: Include DTBOs from OEM/ODM folder in base DTB [Bruno Martins]
+03b3e7ed kernel: Handle GKI modules [Bruno Martins]
+ba9cee9e overlay: Move config_hspa_data_distinguishable to proper location [Tommaso Fonda]
 
 * device/xiaomi/msm8998-common
-3184c0d Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
-ab97de0 msm8998-common: Do not build libxml2 [Demon Singur]
-2058240 Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
-eec520b msm8998-common: Kang QTI datastatusnotification from FP3 [Nanhumly]
+9fba590 Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
 
 * vendor/xiaomi/msm8998-common
-d6810d5 msm8998-common: Kang QTI datastatusnotification from FP3 [Nanhumly]
+57e4284 Merge remote-tracking branch 'origin/lineage-20.0' into thirteen [Nanhumly]
 
 * kernel/xiaomi/msm8998
-60e843e5a142 Partially revert "Revert "cgroup: Add generic cgroup subsystem permission checks"" [Nanhumly]
+0f35a504150e {chiron,sagit}_defconfig: Disable legacy IPA v2 [Danny Lin]
+5ada3aba236c {chiron,sagit}_defconfig: Don't include debugging info [alk3pInjection]
 
 ====================
-     2023-08-23    
+     2023-09-24    
 ====================
-* kernel/xiaomi/msm8998
-29733c75ae88 qcacld: nuke rx_wakelock code entirely [Park Ju Hyung]
-c78dd3c9666b qcacld: disable qcom_rx_wakelock [Park Ju Hyung]
-b6c77ffeb421 qcacld-3.0: Free a bunch of pkts at once [Julian Liu]
-4854c3c5300b qcacld: reduce log spam [Park Ju Hyung]
-57efec5f8dbf qcacld-3.0: Do not allow any wakelocks to be held [Tyler Nijmeh]
-3ede4db9517b BACKPORT: cpufreq: schedutil: Avoid using invalid next_freq [Rafael J. Wysocki]
-5bb0d5c9223b cpufreq: schedutil: Don't set next_freq to UINT_MAX [Viresh Kumar]
-5ecf46b862bf schedutil: Allow cpufreq requests to be made even when kthread kicked [Joel Fernandes (Google)]
-303d6c308735 cpufreq: schedutil: Fix iowait boost reset [Patrick Bellasi]
-09fdd82d97bf FROMLIST: sched/fair: Don't move tasks to lower capacity cpus unless necessary [Chris Redpath]
-f220cc41901a sched: Enable min capacity capping [Georg Veichtlbauer]
-96732e7afe79 softirq, sched: reduce softirq conflicts with RT [John Dias]
-f66cae447887 ANDROID: sched/rt: rt cpu selection integration with EAS. [Srinath Sridharan]
-a3724fa394af cpufreq: schedutil: Fix sugov_start versus sugov_update_shared race [Vikram Mulukutla]
-6de2495f5ade BACKPORT: cpufreq: schedutil: Cache tunables on governor exit [Rohit Gupta]
-9964dc8b5a34 sched: energy: handle memory allocation failure [Joonwoo Park]
-7193ffcfa2b6 BACKPORT: ANDROID: Add hold functionality to schedtune CPU boost [Chris Redpath]
-c2962a69a40b sched/fair: select the most energy-efficient CPU candidate on wake-up [Quentin Perret]
-8cb31fb3a494 sched/fair: fix array out of bounds access in select_energy_cpu_idx() [Pavankumar Kondeti]
-d56456fbde0c ANDROID: sched/walt: make walt_ktime_suspended __read_mostly [Todd Poynor]
-c59f502f04b4 cpufreq: schedutil: Use >= when aggregating CPU loads in a policy [Saravana Kannan]
-e839aae8d64c sched/tune: fix tracepoint location [Patrick Bellasi]
-ed20dc70973f sched/tune: allow negative cpu boosts [Connor O'Brien]
-523416b75278 sched: tune: Unconditionally allow attach [Andres Oportus]
-be78c5db9f21 sched/fair: use min capacity when evaluating active cpus [Ionela Voinescu]
-bf136d320817 sched/fair: use min capacity when evaluating idle backup cpus [Ionela Voinescu]
-749c89458683 sched/fair: use min capacity when evaluating placement energy costs [Ionela Voinescu]
-5683a15016c6 sched/fair: introduce minimum capacity capping sched feature [Ionela Voinescu]
-e6910e7c9131 sched: add arch_scale_min_freq_capacity to track minimum capacity caps [Ionela Voinescu]
-ccd14947ef8b sched/fair: introduce an arch scaling function for max frequency capping [Dietmar Eggemann]
-c3309748b181 sched/fair: reduce rounding errors in energy computations [Patrick Bellasi]
-a07aba23ecfd sched/fair: re-factor energy_diff to use a single (extensible) energy_env [Patrick Bellasi]
-f85e8599f854 sched/fair: cleanup select_energy_cpu_brute to be more consistent [Patrick Bellasi]
-9fa5b3c8aee0 sched/fair: remove capacity tracking from energy_diff [Patrick Bellasi]
-189cb6aaa5ed sched/fair: remove energy_diff tracepoint in preparation to re-factoring [Patrick Bellasi]
-373713d5c896 sched/fair: use *p to reference task_structs [Chris Redpath]
+* build/make
+d4ae49db9 Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/build into HEAD [Ruchit]
+56671e151 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/build into HEAD [Ruchit]
 
-====================
-     2023-08-22    
-====================
+* frameworks/av
+b3f1d9d714 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/frameworks/av into HEAD [Ruchit]
+
 * frameworks/base
-375fbce66a5a fixup! SystemUI: Add AOD QS tile [Michael Bestas]
+462f6fea8b32 PixelPropsUtils: Update fingerprints for September [Ruchit]
+dfb82be90fc2 Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/frameworks/base into HEAD [Ruchit]
+d99e387b6c34 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/frameworks/base into HEAD [Ruchit]
+
+* frameworks/native
+643c1abc5d Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/frameworks/native into HEAD [Ruchit]
+
+* manifest
+7347ef8 Revert "Track our own fork(s) for 2023-09 ASB patching" [Ruchit]
+5a9fde8 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/manifest into HEAD [Ruchit]
+72b600c Track our own fork(s) for 2023-09 ASB patching [Kevin F. Haggerty]
+
+* packages/apps/Nfc
+c374bb44 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD [Ruchit]
+
+* packages/apps/Settings
+d8aa45d050 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD [Ruchit]
+ecb2e3fc92 DO NOT MERGE: Prevent non-system IME from becoming device admin [Taran Singh]
+2495dd897d Settings: don't try to allow NLSes with too-long component names [Matías Hernández]
+4a8853ef6a Don't hide approved NLSes in Settings [Matías Hernández]
+
+* packages/modules/Bluetooth
+d9eb464c92 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/modules/Bluetooth into HEAD [Ruchit]
+fd7112489c Fix UAF in gatt_cl.cc [Brian Delwiche]
+8c82b7d40f Fix potential abort in btu_av_act.cc [Brian Delwiche]
+7fb1540940 Fix integer overflow in build_read_multi_rsp [Brian Delwiche]
+bc068a3e68 Fix an integer overflow bug in avdt_msg_asmbl [Hui Peng]
+
+* packages/providers/MediaProvider
+ccd20de49 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD [Ruchit]
+9148a86c9 Canonicalize file path for insertion by legacy apps [Dipankar Bhardwaj]
+4b0ae270d Remove invalid surrogates during bindSelection [Krishang Garodia]
+
+* packages/services/Telephony
+27145c119 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD [Ruchit]
+
+* system/core
+6f7ef6eb0 Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/system/core into HEAD [Ruchit]
 
 ====================
-     2023-08-21    
+     2023-09-23    
 ====================
 ====================
-     2023-08-20    
+     2023-09-22    
+====================
+* vendor/qcom/opensource/audio-hal/st-hal-ar
+3e200da st-hal-ar: Guard on oss sthal flag [Aaron Kling]
+
+* kernel/xiaomi/msm8998
+eaad367ef495 {chiron,sagit}_defconfig: Regen defconfig [Nanhumly]
+7068c770189b BACKPORT: qcacld-3.0: Ignore CSA request for invalid channel [Aravind Kishore Sukla]
+
+====================
+     2023-09-21    
+====================
+* packages/apps/Aperture
+b80bc79 Aperture: Update CameraX to 1.4.0-alpha01 [LuK1337]
+
+* kernel/xiaomi/msm8998
+04efda3d1095 {chiron,sagit}_defconfig: Disable 16-bit UID calls on ARM64 device [Panchajanya1999]
+
+====================
+     2023-09-20    
 ====================
 ====================
-     2023-08-19    
+     2023-09-19    
 ====================
-* device/xiaomi/msm8998-common
-bf93e9b msm8998-common: Create dummy libldacBT_bco [someone5678]
+* manifest
+1ecb353 Manifest for Android 13.0.0 Release 75 [The Android Open Source Project]
+
+* vendor/aosp
+b2a8000e config: qcom: Add bengal 5.15 [chrisl7]
+77b4340f config: qcom: Allow Skip common display vendor freezer through a condition [chrisl7]
+a278f926 config: qcom: Add parrot on 5.10 FAMILY [chrisl7]
+98f45205 config: qcom: Enable some condititions based on kernel version [chrisl7]
+
+====================
+     2023-09-18    
+====================
+* hardware/custom/compat
+bfad08e compat: Add libcomparetf2 shim [Alessandro Astone]
+
+* packages/apps/Aperture
+6de5535 Aperture: Don't pass `repository` unnecessarily [LuK1337]
+2edbe9a Aperture: Use composite action for running builds [LuK1337]
+
+====================
+     2023-09-17    
+====================
+* packages/apps/Aperture
+45a6690 Aperture: Update ZXing to 3.5.2 [LuK1337]
+0a4c3a6 fixup: yaml [Tom Powell]
+e495da5 add workflow_dispatch event for gerrit hooks [Tom Powell]
+
+====================
+     2023-09-16    
+====================
+* packages/apps/Aperture
+732a706 Aperture: Update workflows versions [Luca Stefani]
+67078d0 Automatic translation import [LineageOS Infra]
+
+* kernel/xiaomi/msm8998
+69ea976b36bd Merge tag 'LA.UM.8.4.c25-09400-8x98.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
+
+====================
+     2023-09-15    
+====================
+====================
+     2023-09-14    
+====================
+* packages/apps/Aperture
+79ee5da Aperture: Run ./gradlew app:generateBp [Sebastiano Barezzi]
+7fccb00 Aperture: Use generateBp plugin from maven repo [Sebastiano Barezzi]
+
+====================
+     2023-09-13    
+====================
+* bootable/recovery
+8dcd80eb Merge "recovery: Bypass reboot prompt for sideload-auto-reboot" into thirteen [PixelExperience Automation]
+
+* build/soong
+c4d10d8a3 [T-Only] Add android.hardware.power-V3-ndk to VndkMustUseVendorVariantList [Jake Weinstein]
+
+* frameworks/base
+31db9c737506 Automatic translation import [jhenrique09]
+aa0aa810611a Automatic translation import [jhenrique09]
+f007413aa2a6 core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
+df74cc4ca9f2 wm: fix APPEARANCE_LOW_PROFILE_BARS not working in non-fullscreen app [nift4]
+
+* manifest
+3df8e9f manifest: Track libhardware_legacy [jhenrique09]
+f12bc09 manifest: Track external/dtc [jhenrique09]
+
+* packages/apps/FaceUnlockService
+d1145d8 Automatic translation import [jhenrique09]
+
+* packages/apps/Settings
+146c4849f4 Automatic translation import [jhenrique09]
+eed16e6175 Automatic translation import [jhenrique09]
+
+* packages/apps/Updates
+50c6109 Automatic translation import [jhenrique09]
+
+* packages/resources/devicesettings
+bf64ce5 Automatic translation import [jhenrique09]
+
+* vendor/aosp
+cc9b4dd1 kernel: Support copying modules to recovery [Aaron Kling]
+225b9d99 kernel: Support Qualcomm merge_dtbs script [Aaron Kling]
+
+* vendor/qcom/opensource/power
+3369e2e power: configs: bengal: Add 5.15 changes and add kernel contition to use [chrisl7]
 
