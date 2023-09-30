@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1695740538,
-      "filename": "lineage-20.0-20230926-UNOFFICIAL-jason.zip",
-      "id": "fc825eee48ffaf1b6f236b2677f7692050934d4c930161566310253c4badf575",
+      "datetime": 1696060674,
+      "filename": "lineage-20.0-20230930-UNOFFICIAL-jason.zip",
+      "id": "9344f8851333e7b81da0f63e9fcfa30378e3f7dda2976b3b4923c2d466610dbf",
       "romtype": "UNOFFICIAL",
-      "size": 809195673,
-      "url": "https://down.warbler.cc/d/XiaoMi-Note-3/LineageOS/20.0/lineage-20.0-20230926-UNOFFICIAL-jason.zip",
+      "size": 809210412,
+      "url": "https://down.warbler.cc/d/XiaoMi-Note-3/LineageOS/20.0/lineage-20.0-20230930-UNOFFICIAL-jason.zip",
       "version": "20.0"
     }
   ]
