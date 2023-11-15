@@ -1,300 +1,512 @@
 ====================
-     2023-09-22    
+     2023-11-15    
 ====================
-* android
-b80192f Track our own fork for CVE-2023-4863 [Luca Stefani]
-
 * build/make
-e33f21eb1 build: Always use release-keys [Pranav Vashi]
+1e738904be build: Always use release-keys [Pranav Vashi]
 
-* frameworks/base
-dbe3c548eb6a build: Don't check for fingerprint mismatch [Dan Cartier]
-
-* lineage/mirror
-9e1c55a Updated to 21-Sep-2023 12:01 UTC [Tim Schumacher]
+* lineage/wiki
+032ccc89 wiki: Remove has_recovery_partition from all devices [LuK1337]
 
 * packages/apps/CarrierConfig
-f645d1c Override name of Mainland China carriers [cjybyjk]
+23d8edd Override name of Mainland China carriers [cjybyjk]
 
-* packages/services/Telephony
-e1c4473aa Add support for multi-language carrier name override [cjybyjk]
-
-* kernel/xiaomi/msm8998
-7068c770189b BACKPORT: qcacld-3.0: Ignore CSA request for invalid channel [Aravind Kishore Sukla]
-04efda3d1095 {chiron,sagit}_defconfig: Disable 16-bit UID calls on ARM64 device [Panchajanya1999]
-
-====================
-     2023-09-21    
-====================
-* frameworks/base
-acd73062553a PhoneWindowManager: Pass correct invocation type for assistant launch on home long press [Dhina17]
-28152d898e34 SystemUI: Pass touch events to pulsing gesture listener only if dozing [Dhina17]
-edb2e6376776 SystemUI: Move DT2S from PulsingGestureListener [Dhina17]
-
-* packages/apps/Aperture
-b80bc79 Aperture: Update CameraX to 1.4.0-alpha01 [LuK1337]
+* system/libhidl
+beb3bca Revert "delete gBn/sConstructorMap" [anrui2032]
 
 * vendor/lineage
-0ddf65dc repopick: Fix regex related SyntaxWarning on Python 3.12 [LuK1337]
+79f7511c Update APN settings used in Japan. [BHCrusher1]
+
+* device/xiaomi/chiron
+39bf056 fixup! chiron: overlay: Switch to vector drawable for rounded corners [Nanhumly]
+
+* device/xiaomi/msm8998-common
+3efff40 msm8998-common: Keep building health HIDL interface lib in vendor [Sebastiano Barezzi]
+2e4cd2e msm8998-common: Move to QTI health AIDL service [Bruno Martins]
+
+* vendor/extra
+5e01281 lineage 21 [Nanhumly]
 
 ====================
-     2023-09-20    
+     2023-11-14    
 ====================
-* android
-0378bb6 Revert "lineage: Sync external/dwarves from AOSP" [Bruno Martins]
+* device/qcom/sepolicy-legacy-um
+f9b54fb0 sepolicy: Label QTI health AIDL service [Bruno Martins]
 
-* external/webp
-161f49c Fix OOB write in BuildHuffmanTable. [Vincent Rabaud]
+* device/qcom/sepolicy_vndr/legacy-um
+bbe032040 sepolicy_vndr: Label QTI health AIDL service [Bruno Martins]
 
-* lineage/mirror
-f7a63b0 Updated aosp-minimal to 19-Sep-2023 12:01 UTC [Tim Schumacher]
-
-* packages/inputmethods/LatinIME
-53e621bb7 LatinIME: Fix NPE when using a device with a physical keyboard [Georg Veichtlbauer]
-
-* vendor/lineage
-231338af kernel: Use pahole from Google prebuilts [Bruno Martins]
-
-====================
-     2023-09-19    
-====================
 * hardware/lineage/compat
-bfad08e compat: Add libcomparetf2 shim [Alessandro Astone]
-
-* lineage/wiki
-56663065 wiki: Update MTG URLs [LuK1337]
-
-* packages/apps/Aperture
-6de5535 Aperture: Don't pass `repository` unnecessarily [LuK1337]
-2edbe9a Aperture: Use composite action for running builds [LuK1337]
-
-* packages/apps/Etar
-2b298f83 Etar: Add soong_namespace for external modules [LuK1337]
-
-* packages/apps/Updater
-64261f1 Updater: Use generateBp plugin [LuK1337]
-
-====================
-     2023-09-18    
-====================
-* lineage/hudson
-0753f4f Regenerate device dependency mappings [LineageOS Infra]
+6c54b85 libhidlbase: Add SPDX license [LuK1337]
 
 * lineage/mirror
-4e745a1 Updated to 17-Sep-2023 12:00 UTC [Tim Schumacher]
+d236bf0 Updated lineage-minimal to 13-Nov-2023 13:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-5bd86abb wiki: Add "unknown device" [Michael W]
-e3579836 templates: device_info: Make Quirks section only show if there are quirks [Nolen Johnson]
-78dac979 wiki: Introduce migration flag for codename migrations/unifications [Nolen Johnson]
-5546847d deivces: Migrate userdata unifications of legacy xperia to before_lineage_install [Nolen Johnson]
+cd88ba2e wiki: Make gapps mention in install instructions less confusing [LuK1337]
 
-* packages/apps/Aperture
-45a6690 Aperture: Update ZXing to 3.5.2 [LuK1337]
+* system/core
+b4fa8cc3e fs_mgr: Allow remounts with Magisk installed [Bruno Martins]
+439e8fd16 fastbootd: hacks for legacy [Alessandro Astone]
+8fc6da91e fastbootd: usb: fallback to v1 descriptors [Alessandro Astone]
+9ab28963c first_stage_mount: Skip dm-verity setup if AVB is not enabled [me-cafebabe]
+101cd0c99 init: Don't enable ADB by default on userdebug builds [Aaron Kling]
+7a3612e3e liblp: Allow to flash on bigger block device [me-cafebabe]
+5e001ec04 Add wrapped key support [dianlujitao]
+262e2c113 fastboot: Prefer ro.boot.hardware.revision for hw-revision [Michael Bestas]
+5d2a30cab libsysutils: Hide NetlinkListener error in recovery [Michael Bestas]
+01ca04f9f libsparse: Add simg2img_static target for host [Chirayu Desai]
+92c1a9250 llkd: Include llkd-debuggable.rc in eng builds only [dianlujitao]
+b2ebe4a5d debuggerd: add Lineage version to tombstones [Scott Mertz]
+d4270549a healthd: Reinitialize mChargerNames for every battery update [Abhijeet Dharmapurikar]
+96a64e122 healthd: Add support for HVDCP_3P5 chargers [Dyneteve]
+cac114db3 healthd: Add support for HVDCP_3 chargers [Abhijeet Dharmapurikar]
+c41401559 healthd: Add DASH charger type [Steve Kondik]
+56833a910 reboot: allow opting-in to fastbootd [Alessandro Astone]
+c46703fc2 core: mark libsysutils and libdiskconfig recovery_available [Alessandro]
+09584a9e1 Revert "Format formattable partitions if mount fails" [Tom Marshall]
+98bbb1215 fs_mgr: mount: don't set the block device as ro for recovery [Alessandro Astone]
+d15eec880 init: don't skip starting a service with no domain if permissive [William Bellavance]
+36756d738 init: Add vendor-specific initialization hooks. [David Ng]
+0bf773863 fs_mgr: Don't run clean_scratch_files on non-dynamic devices [Nolen Johnson]
+86e0ede20 FastbootDevice::boot1_1 null pointer dereference [Arun Sharma]
+4385ee357 core: fastboot: Fix data not being wiped on do_update [Alexander Koskovich]
+fd23984a7 Removing duplicate CollectImages() [Daniel Zheng]
+bef36bca8 Adding in wipe tasks before other tasks run. [Daniel Zheng]
+
+====================
+     2023-11-13    
+====================
+* device/qcom/sepolicy-legacy-um
+ce7b0f7c sepolicy: Remove duplicate hwservice_contexts [Bruno Martins]
+
+* hardware/lineage/compat
+23f094c libhidlbase: Run clang format [LuK1337]
+
+* lineage/hudson
+c421d0c Regenerate device dependency mappings [LineageOS Infra]
+cf350bc updater: gauguin: Append "5G" to the IN/GL variants [Hridaya Prajapati]
+0f6f50b don't leave gauguin alone.. [Hridaya Prajapati]
+
+* lineage/wiki
+4b4b582a wiki: Promote gauguin to 20 [Hridaya Prajapati]
 
 * vendor/lineage
-2a0d4179 kernel: Allow to limit the used .dtb files for the final DTB image [SGCMarkus]
-3056928d kernel: Include DTBOs from OEM/ODM folder in base DTB [Bruno Martins]
-47931c12 kernel: Handle GKI modules [Bruno Martins]
+5d8add8d overlay: Remove dimensions that are the same as defaults [Michael Bestas]
+30a34bb4 overlay: Unset search_bar_corner_radius [LuK1337]
+8e0f54da vars: sunfish: November 2023 update [Chirayu Desai]
 
 ====================
-     2023-09-17    
+     2023-11-12    
 ====================
-* android
-fed3b28 Track our own fork(s) for 2023-09 ASB patching [Kevin F. Haggerty]
-
 * build/make
-88f03751c Bump Security String to 2023-09-05 [Kevin F. Haggerty]
-
-* external/chromium-webview/patches
-a4b0104 Update Chromium Webview to 117.0.5938.60 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-a80f484 Update Chromium Webview arm prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-f0bcd13 Update Chromium Webview arm64 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-1355d68 Update Chromium Webview x86 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-d44bdfd Update Chromium Webview x86_64 prebuilt to 117.0.5938.60 [Kevin F. Haggerty]
+7c95ae8cae Disable sparse images for A/B updater targets [LuK1337]
+410d627427 Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag [LuK1337]
+ae66e3fee8 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
+a14fd26749 Don't remove ANDROID_SECURE_STORAGE_CMD from env vars [LuK1337]
+ba32e4d584 Log when we fail to get key password from secure cmd [LuK1337]
+180f107dfe Add bluetooth and sdk_sandbox to default key map [HZ]
+edf246a877 Add vendor_kernel_boot files to target-files-package [Chirayu Desai]
+c92b0f833e Exclude Camera2 for lineage builds [Michael Bestas]
+3120847684 Allow passing makefile path to enforce-product-packages-exist [Aaron Kling]
+f4be767349 releasetools: squash backuptool support [Chris Soyars]
+4465b50d85 build: ota: Support for install tools in /tmp/install [Tom Marshall]
+58705a736d Disable Traceur for non eng-builds [Aaron Kling]
+16a5042fc3 releasetools: Unconditionally store recovery.img in non-A/B OTA [LuK1337]
+3a448ea840 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
+bc9a6c8ab6 build: Respect fs_config when generating recovery ramdisk [lambdadroid]
+4941bc655b Add support for separate kernels for boot and recovery [2/2] [marcost2]
+af52fe6de2 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
+538c39effb build: Add support for device tree in boot.img [David Ng]
+d9af6d52dc Add BOARD_CUSTOM_BOOTIMG_MK support [Ricardo Cerqueira]
+04a5b3c779 core: Allow overriding device/model/name properties [LuK1337]
+c3e04f3299 core: Add support for overriding build.prop settings [Koushik Dutta]
+47717e7051 build: Squash of allowing a device to generically define its own headers [Ricardo Cerqueira]
+9339a53b50 Add build support for XZ ramdisks [Luca Stefani]
+1d6d9c5e1d Fix recovery image generation with LZ4 compressed ramdisk [Arne Coucheron]
+f3dd69e505 releasetools: Add script to sign zips [Gabriele M]
+b9e81e1e81 releasetools: support reading release keys out of some sort of command [Tom Powell]
+840303319c releasetools: do not remove dynamic partitions in system-only builds [Peter Cai]
+46f1b56412 Unset BOARD_EXT4_SHARE_DUP_BLOCKS [LuK1337]
+5c191c37d5 build_image: Allow disabling custom inode count calculation [Christian Oder]
+465150803f Remove unused locale data for recovery [Alessandro Astone]
+4a9055d465 releasetools: Use the first entry of a mount point when reading fstab [Brint E. Kriebel]
+20a3e12fd1 Edify: Add abort message for bootloader asserts [Matt Mower]
+a6db6c2da1 ota: Disable downgrade check [Andrew Dodd]
+7d9251e4bf Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES [Michael Bestas]
+2416169028 Allow setting the recovery density separately from the aapt config [Chirayu Desai]
+019105f4b9 build: Separate commands in recovery foreach loops [Matt Mower]
+90c6413fb0 build: recovery: Support adding device-specific items [Tom Marshall]
+badb2f943a releasetools: ota_from_target_files: add FullOTA_PostValidate [M1cha]
+619be139bc Don't enable ADB by default on userdebug builds [Michael Bestas]
+df792dcc09 Don't make recovery patch for devices with prebuilt vendor [TheScarastic]
+e046a16a30 Move recovery-from-boot.p from /system to /vendor [dianlujitao]
+b36b1b1717 Allow override of device asserts, including multi-device support. [Steve Kondik]
+1c78d87721 build: Automatically replace old-style kernel header includes with new header lib [Rashed Abdel-Tawab]
+5115efec06 build/target: Include Lineage platform jar in system server. [Adnan Begovic]
+c38bd28a7f Add extra variables to _readonly_late_variables [dianlujitao]
+f584ee3471 Add roomservice [Koushik Dutta]
+a7a23ff227 build: Add Lineage build support [Luca Stefani]
 
 * frameworks/av
-eedaeee7b1 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-c5ede30f14 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+a1ad1e4a9f Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB [SGCMarkus]
+dc7e66cc0d Camera: Skip stream size check for whitelisted apps [Arian]
+cc00416110 Partial revert "Move unused classes out of stagefright foundataion" [Nico]
+2ff7040b1b audioflinger: Fix audio for WifiDisplay [myfluxi]
+570218d238 libstagefright_wfd: video encoder does not actually release MediaBufferBase when done [Vladimir Oltean]
+321a8cd08f stagefright: Fix buffer handle retrieval in signalBufferReturned [Angelo G. Del Regno]
+0e7ea5a1fe stagefright: Fix SurfaceMediaSource getting handle from wrong position issue [zhangbo_a]
+e55df3836c libstagefright_wfd: compilation fixes [Vladimir Oltean]
+ba19e29d54 libstagefright: Remove libmediaextractor dependency [Adithya R]
+af9eb4fdd5 Revert "Removed unused class and its test" [Vladimir Oltean]
+fd702408e6 Revert "stagefright: remove Miracast sender code" [Vladimir Oltean]
+56f4615932 audiopolicy: Disable sonification on WFD sink [Mingming Yin]
+88cecc8978 codec2: add smoothfactor when checking n-th work [Jiajia Cong]
+bfc07808c3 Add group audio to vendor.media.omx service [Luca Weiss]
 
 * frameworks/base
-87052f701854 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-eb2f4d321960 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-3c3a7256c646 AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
+776264cb3194 Add support for runtime toggle of navbar [Bruno Martins]
+3147ca9d8489 camera2: Add methods for backward compatibility [Ihor Ivanov]
+517f8b5d86a4 AudioService: Remove Analog Dock from fixed-volume devices [Vachounet]
+0babd29c1423 BatteryService: Add support for battery Moto Mods [Vachounet]
+528a72d631c2 Report success on every fingerprint removal [Kishan Dudhatra]
+b36071d8b87f AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
+19e87a5106e4 core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
+c913b43b00f0 core: pm: Use checkRequiredSystemProperties from FrameworkParsingPackageUtils [Luca Stefani]
+00a69b0f6ac8 SystemUI: fix missing rotate suggestion in 2 button nav mode [nift4]
+a67f189a3539 SystemUI: show ime switcher + cursor keys if we have space [nift4]
+a1ad83f8fdff PhoneWindowManager: only handle long press on back key if using it [nift4]
+f6320202ea03 VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
+cc394b1d1d50 SystemUI: Enable cast tile without Wi-Fi connection [nift4]
+af1a6cb68e9d SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
+872433a28fc6 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+cfbf2cd9a98c Fix multi-user silent notifications on lockscreen [Tommy Webb]
+78469ed4b2a8 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
+68d70dcd90cf SystemUI: Prevent NPE when checking for powerbutton FPS [Michael W]
+3da4be996037 DozeSensors: only use proximity sensor if supported [Demon000]
+3940e84c9e49 InputDevices: Fix Hungarian language overlay [Sean McCreary]
+429b0033acad MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
+4f9523474a8d SystemUI: Make battery clickable again [Michael W]
+5e846484a78e PhoneWindowManager: Fix wakeup and long-press actions of assistant key [kyasu]
+68c0a3c40f56 Settings: Add package name to installed app details [2/2] [Aayush Gupta]
+97e0648f330e SystemUI: React to PrivacyConfig changes properly [Tommy Webb]
+71dc03233c19 JobScheduler: Respect allow-in-power-save perm [Tommy Webb]
+566521ea4d18 Increase maximum password length to 64 [Oliver Scott]
+7d9b61145811 wm: fix APPEARANCE_LOW_PROFILE_BARS not working in non-fullscreen app [nift4]
+5742f37143e0 SystemUI: Respect single-touch wakeup setting on rear & front fps devices [Michael Bestas]
+1640292a7f5a SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
+12ad0cd7ba37 SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
+4b8a452424d8 SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
+6f2caba267f5 Apply monet to fingerprint authentication ripple animation [SagarMakhar]
+7b7de20e0688 SystemUI: Update string for add tiles with one click [mydongistiny]
+e9db0742d733 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
+fa25ead54e0e SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
+69c43cbb8364 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
+1e6d934ca10f GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
+3ae314c564c5 GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
+7ed5a4a3c48d Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
+304711ed135d Remove sensitive info from SUPL requests [Tommy Webb]
+e93129ff4012 SystemUI: Fix position and orientation of arrow keys in navbar [Wolfram Liebchen]
+24b0288bdc68 Fix stuck screen from display change timeout [Tommy Webb]
+6fa08f3aa3c1 AlertWindowNotification: Correctly load app label [HZ]
+35f8a18fb481 camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu]
+236c9d6bd3ac Camera: Skip stream size check for whitelisted apps.. [Gaoxiang Chen]
+9d886db46e51 IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
+6d6271ec63e2 toast: fix bg color not changing with theme change [SuperDroidBond]
+2795f58421e8 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
+63315b058549 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen]
+d790ff23e2cd Fallback ESC to BACK [Aaron Kling]
+fb8e7113490f SystemUI: Disable clock auto hide feature for QS [LuK1337]
+d6406ea617e3 SystemUI: Network Traffic [1/3] [Sam Mortimer]
+e8c56ba93b52 WiredAccessoryManager: Add support for DP audio [LuK1337]
+7f4aef884e63 WiredAccessoryManager: Update stream index assignment [Harold Tan]
+ce1021c75cfb WiredAccessoryManager: use dev index from UEventInfo to form devPath [Harold Tan]
+6f6aef89e940 WiredAccessoryManager: Update display port device index [Aniket Kumar Lata]
+13d956ffa753 WiredAccessoryManager: support for multiple display ports [Vignesh Kulothungan]
+dff5f9e846b1 audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available [Dhananjay Kumar]
+cf8d82247b81 WiredAccessoryManager: Support for multiple extconn devices [Haynes Mathew George]
+4b3fcc41f188 WiredAccessoryManager: update extcon file paths [Aalique Grahame]
+4ab907f6a14e WiredAccessoryManager: Add support for DisplayPort Audio [Revathi Uddaraju]
+64cc8c4f1f32 WifiDisplayController: handle preexisting p2p connection status [Li Sun]
+0fa927a25d1c Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
+4cd9caeea144 Support per-UID VPN lockdown policy [Tommy Webb]
+ce13618a53fd Revert "Remove dependency on IME subtype from TSMS" [Michael Bestas]
+fa9efb8861cd Test new upgrade steps [Pavel Grafov]
+df956094e6ef Update the behavior to match the documentation. [Pavel Grafov]
+1221fdabdcdd Camera button support [HazouPH]
+cfb540b42389 PhoneWindowManager: Add support for back key long press customization [LuK1337]
+03403799b43a fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
+5703036fe3e6 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
+c5aaab3cb48d PhoneWindowManager: Tap volume buttons to answer call [martincz]
+9c745369341f Reimplement device hardware wake keys support [LuK1337]
+57dc9ec1b1ed Reimplement hardware keys custom rebinding [Phil Tunstall]
+677eb172409a fwb: Re-introduce keyboard backlight brightness control [Bruno Martins]
+d8e90453bdc7 PowerManager: Allow to distinguish different keypresses [Corinna Vinschen]
+4e0c36587f12 PowerManagerService: Allow to light up buttons only when pressed [Anas Karbila]
+92f4938f54f4 fw/b: Button backlight brightness [Ricardo Cerqueira]
+e756ec8b444e PackageManager: Allow build-time disabling of components [Pawit Pornkitprasan]
+550167958a22 frameworks: Add support for clock auto-hiding [Cédric Bellegarde]
+ec6c6e712638 SystemUI: Make the volume dialog expandable [Arian]
+bdf48ecb6728 SystemUI: runtime configurable audio panel location [a.derendyaev]
+6d89d19c97a0 SystemUI: volume dialog: Align padding/margin for left and right [Arian]
+6cc8bd277213 VolumeDialogImpl: Handle the outmost row with respect to left gravity [Arian]
+8f1c9e3e18eb VolumeDialogImpl: Respect left gravity in ringer drawer [Arian]
+a80e76f947a1 VolumeDialogImpl: Set touchable region properly for left gravity [Arian]
+6f3b37f4b2e6 VolumeDialogImpl: Drop unnecessary layout gravity defines and handle left [Arian]
+6e16454740b9 VolumeDialogImpl: Fix cut layout when on setup or lock task mode [jhenrique09]
+44bedde34005 udfps: Make pressed udfp view configurable [TheScarastic]
+67da8b465725 udfps: Restore illumination dot for global hbm [Arian]
+60762563bbd8 Forward port 'Swap volume buttons' (1/3) [nadlabak]
+51c0042ad9d1 Forward port CM Screen Security settings (1/2) [Michael Bestas]
+379f7a2ea284 SystemUI: screenshot: add delay for long-press partial screenshot [Pranav Vashi]
+adb3d3b2760d SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337]
+d2c83741b0d4 SystemUI: screenshot: disable magnification for partial screenshots [Cosmin Tanislav]
+49149369f555 SystemUI: screenshot: add extra crop boundaries [Cosmin Tanislav]
+3e05400a5898 SystemUI: screenshot: remove duplicate clamping on move action [Cosmin Tanislav]
+14779177e44d SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav]
+a0cd0f8fa5e3 Implement click to take partial screenshot [1/3] [Jesse Chan]
+51fb6ce7b0ab Screenshot: Append app name to filename [ezio84]
+3b54bc2fc811 Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
+ca0b702bccdf Firewall: Transport-based toggle support (1/3) [Oliver Scott]
+7836f2668e21 Firewall: Migrate to POLICY_REJECT_ALL [Tommy Webb]
+10259beb8e28 Firewall: Network access toggle support [Oliver Scott]
+747ddc6afe78 Implement backup/restore for network policy [Oliver Scott]
+7f08c6182e8d Split network policy XML parsing into read/write helper functions [Oliver Scott]
+ff6b64ef0a2a SystemUI: Bring in drawable for statusbar firewall toggle [Michael Bestas]
+e7fbad1bb225 Implement firewall status bar indicator [Oliver Scott]
+390e9701a506 Settings.Global: Add UIDS_ALLOWED_ON_RESTRICTED_NETWORKS [Chirayu Desai]
+81b0b164220a Download: Add support to manually pause/resume download [qqzhou]
+d3849f146f42 SystemUI: Bring back good ol' circle battery style [Luca Stefani]
+35595738222b SystemUI: Add tunables for clock AM/PM style [Michael Bestas]
+2117d5fea320 SystemUI: Add tunables for clock position [Luca Stefani]
+0867808d5151 SystemUI: Bring in drawables for statusbar icon toggles [althafvly]
+43d36b64c8eb SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
+20946ee1888a SystemUI: doze: add config for long press sensors that need a proximity check [Cosmin Tanislav]
+d850365ec8d3 SystemUI: doze: add config for double tap sensors that need a proximity check [Cosmin Tanislav]
+6537bb844e3e Partially revert "Assume sensors perform prox check" [Cosmin Tanislav]
+6eaaf8fba2a2 frameworks/base: Lights notifications brightness support [Adrian DC]
+49925e27c237 frameworks/base: Battery and Notification Lights [Sam Mortimer]
+8903c0af8ab1 SystemUI: add left and right virtual buttons while typing [Roman Birg]
+50711a7b121b base: ChooserActivity: Don't show image edit button on multiple targets [Aayush Gupta]
+552c84b62888 Don't skip theme application if it's already current [Michael Bestas]
+4bbb09239fa8 SystemUI: support black theme for dark mode [1/4] [althafvly]
+e03a95ed89c8 SystemUI: screenshot: open the screenshot instead of edit [Timi Rautamäki]
+4bb6656b4396 Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
+6f601caa1ee9 SystemUI: Add left padding for keyguard slices [LuK1337]
+6183e095381c AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
+402614684b30 SystemUI: Make isLargeScreen() use correct API for getting window metrics [LuK1337]
+6bc910ccb006 SystemUI: Add API for runtime taskbar config [Danny Lin]
+c0a2319280b3 SystemUI: Port brightness slider changes [Alberto97]
+10857876250b SystemUI: Fix alarm icon [Michael W]
+8bfa95dc8066 VolumeDialogImpl: Don't hide the default stream when adjusting the music stream [Arian]
+a14ccaf2cb9b Introduce high touch polling rate feature control [Ramii Ahmed]
+3675868a34a7 camera: Allow extending aux list/excludelist via sdk resources [LuK1337]
+ba737180597e camera: Support exposing aux camera to apps [Sauhard Pande]
+42b808f3664e Keyguard: don't use large clock on landscape [Timi Rautamäki]
+527420fa251a AuthService: Add support for workaround side fps props [LuK1337]
+886cdaf2881e SystemUI: add FloatingRotationButton for hw-key devices [Michal Pražák]
+601be8472d82 SystemUI: Use AVCProfileMain for screen recorder [Arne Coucheron]
+0cdf4b40feb1 frameworks: Add device controls shortcut to power menu [LuK1337]
+de0ec9371e5e frameworks: Add more power menu customizations [Gegham Zakaryan]
+c6949857b74b frameworks: Add support for advanced restart options [Michael Bestas]
+47958b6f54fb SystemUI: Don't store pending ControlAction if the device is locked [LuK1337]
+a80fd92c90e9 SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds [Arne Coucheron]
+ae991d31a6d1 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well [LuK1337]
+74827a32c96b Enable Binder Proxy Tracking by Uid only on eng builds [dianlujitao]
+73a64f4df35d Don't pass repeated back key events to app if custom action is set up [LuK1337]
+75a06f645cd0 PhoneWindowManager: Allow torch and track skip during ambient display [ezio84]
+33683260a8a1 Long-press power while display is off for torch [beanstown106]
+89964c903d9c PhoneWindowManager: add LineageButtons volumekey hook [Simon Shields]
+a5cfff7312e9 Fix bug Device that can't support adoptable storage cannot read the sdcard. [sangho.yoon]
+68befd5b21f2 VolumeDialogImpl: Don't vibrate when volume dialog is not visible [LuK1337]
+228476db8692 Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
+36a2b3a914f2 Support enforcing a minimum delay between notification sounds of an app. [Danny Baumann]
+da9d7210895c PowerManagerService: Wake on plug (1/2) [Jon Evans]
+e57d1f14d4a0 PowerManager: Add proximity check on wake [Bruno Martins]
+102171d77887 Add high touch sensitivity and hovering to InputService [Danesh M]
+5a305004ef27 Allow lid to send a generic COVER_CHANGED broadcast [jrior001]
+e484b6078461 SystemUI: Allow to enable Lockscreen Media Art [beanstown106]
+66cac9b87433 UsbDeviceManager: Delay MSG_UPDATE_SCREEN_LOCK message [LuK1337]
+e7aece37bfd7 SystemUI: Fix the unlock sound played repeatedly [Shufeng Hou]
+3df6a6ca37d1 Sharesheet: Display two rows of max ranked targets [LuK1337]
+c8e4fc8c341b Keyguard: Add option to scramble pin layout when unlocking (2/2). [Adnan]
+33170cb69060 SystemUI: Dismiss keyguard on boot if disabled by current profile [Gabriele M]
+7a21a47cd3e0 Exempt location packages from location indicators [Chirayu Desai]
+9653ddd70f66 SystemUI: Add quick settings pull down with one finger [Roman Birg]
+ba4ec859a18b SystemUI: Remove nav bar background in QS customizer [Danny Lin]
+fbc3f8ef01b0 SystemUI: Implement hide gestural navigation hint bar [Jesse Chan]
+e275e4c538dd SystemUI: Add navbar layout inversion tuning [LuK1337]
+8aa915928c6b SystemUI: Add VPN tile [Danny Baumann]
+669c0596fa94 SystemUI: Add Profiles tile [Roman Birg]
+26c19fa7baee SystemUI: Enable NFC tile [Tim Schumacher]
+bbdc3604b1f8 SystemUI: Expose legacy Wi-Fi and cellular data QS tiles [Danny Lin]
+1a45a94a2c35 SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model [Danny Lin]
+5311f714f351 Revert "[DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model" [Danny Lin]
+485fbebf1bba SystemUI: Restore wifi and cellular QS tiles [Michael Bestas]
+b26d6c86f7a6 SystemUI: Add reading mode tile [Joey]
+3c92c9199a31 SystemUI: Add powershare QS tile [Linux4]
+d3aa61ecac88 SystemUI: Add AOD QS tile [Marko Man]
+a402b041c908 SystemUI: Add USB Tether tile [BestPig]
+8db210816a1b SystemUI: Add AmbientDisplay tile [Adnan Begovic]
+8c3df7060004 SystemUI: Add Sync tile [Altaf-Mahdi]
+b14be75a4038 SystemUI: Add heads up tile [Michael Bestas]
+8ad3b0525a88 SystemUI: Add caffeine QS tile [Keith Mok]
+65a6aad3fd8a SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
+ba467d7e92ba SystemUI: Allow using tuner API for LineageSettings [Rashed Abdel-Tawab]
+b8af79ea9cc9 SystemUI: Bringup tuner statusbar changes [Rashed Abdel-Tawab]
+81b4cc68f5f0 power: Extend custom charging sounds [Bruno Martins]
+c22b756533f5 power: Keep file scheme when not using content URI [Han Wang]
+ff3cd286797f power: Respect global vibration setting for charging sounds [Michael Bestas]
+3dc6cabb7436 power: Explicitly check for silent ringtone [Sam Mortimer]
+f093688108ca VolumeDialog: Display default row when active row is notification [Jesse Chan]
+bd9896d80964 Allow adjusting screen density to smaller sizes. [Danny Baumann]
+becb5f3f7740 Squash of SystemUI: Show bluetooth battery level [LuK1337]
+bf57edb1f241 Squashed import of adb root patches [LuK1337]
+8cf5d96c266c Fallback to global actions if assistant is not available [LuK1337]
+dc561c34ea17 SystemUI: Add support for persistent usb drive notification. [Adnan Begovic]
+d3f4dafd689f SystemUI: Allow snoozing SD card notification unconditionally [LuK1337]
+48a8bb339d9b SystemUI: Allow privileged system apps to access screenshot service [Danny Lin]
+df76b064b83b core: Expose method to start assistant through Binder [Danny Lin]
+8b33829a31c1 Allow adjusting progress on touch events. [Danny Baumann]
+913439e2b373 SystemUI: handle camera launch gesture from keyhandler [Roman Birg]
+35939ff460a1 Support for device specific key handlers [Bruno Martins]
+c8a15e248d08 Framework: Volume key cursor control [Konsta]
+21e5f101127e SystemUI: Fix toggling lockscreen rotation [1/3] [Dan Pasanen]
+25a6acb320df Configurable 0, 90, 180 and 270 degree rotation [Ricardo Cerqueira]
+762d9bea7ca6 Rewrite trust USB restriction handling [Oliver Scott]
+a43b4139089d Include LineageSettings in settings dump [Tommy Webb]
+35fe3da8c3bb Shell: Allow writing to lineage settings [Chirayu Desai]
+bfa48637cdc8 SystemUI: Add lineage-sdk dep [Sam Mortimer]
+9b124e36e6b0 idmap2: Cache Lineage resources [Luca Stefani]
+e524f8bc6e9a androidfw: Add Lineage res to default assets [Luca Stefani]
+2d845bb08bca Allow lineage resources package to be overlayed by RRO packages [LuK1337]
+ba4894fa67ac SettingsProvider: Allow accessing LineageSettings via settings command [d34d]
+8d7df293c0cd services: Keep vendor.lineage.* classes [Michael Bestas]
+2a6607becd66 services: Keep sdk classes [Michael Bestas]
+fac1a44f1511 services: Kick off to LineageSystemServer for external service init. [Adnan Begovic]
+654fcffca0cb services: Include org.lineageos.platform.internal [Rashed Abdel-Tawab]
+a3d78498510f Add lineage sdk resource APK to Zygote FD whitelist [Steve Kondik]
+8976e64f5026 androidfw: Squash of declare and load lineage sdk resource package w/ id [Adnan Begovic]
+64f8f12ca0e7 UpdateEngine: Add perf mode binder interface [Luca Stefani]
+d4cdfe371d70 LockPatternUtils: Make settings getter and setters protected [d34d]
+b28f17078546 admin: Restore requireSecureKeyguard interface. [Adnan Begovic]
+1f479f72091a Check for null callerPackage in getStorageEncryptionStatus [Ethan Chen]
+2047f4e00a39 fw/b: Add NotificationGroup class for use by lineage sdk system profiles [Martin Long]
+e9b52fa2a8b0 fw/b: Use ro.build.version.incremental to signal OTA upgrades [dhacker29]
+66142f9191b3 Show the vibrate icon in the Status Bar by default [Chirayu Desai]
+e26bdc350515 fwb: Bring in the new icon [Asher Simonds]
+862d809702cd Updates to various icons: [Dan Sandler]
 
 * frameworks/native
-2d384e9588 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-d99406e91f Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+6b44f5010b InputDispatcher: On keypress, deliver keycode to pokeUserActivity [Corinna Vinschen]
+f2765d55e6 Forward port 'Swap volume buttons' (2/3) [nadlabak]
+8830d6d31d libgui: reset buffer count to max slots instead of returning BAD_VALUE. [Rajat Yadav]
+d2811e0bed PowerManager.h: Define USER_ACTIVITY_FLAG values [Corinna Vinschen]
+2c288a78ec EGL: Conditionally revert commit a9550f3 [Danny Trunk]
+d1eee651f0 sf: Exclude VDS use of HWC on non-UM platforms [dianlujitao]
+d5b624faf4 sf: Allow WFD to use hwc in vendor frozen targets [Rheygine Medel]
+5bd882b4c2 sf: Clean up properties for virtual display [Rheygine Medel]
+dd0b9aeafa sf: Align virtual display changes with CAF [Michael Bestas]
+24307c5147 SF: Fix HWC based virtual display creation [Rajat Yadav]
+483efc6f95 Remove use of VrFlinger from value-adds. [Chris Gross]
+8489cedcac sf: Fix virtual display related issues. [Ramakant Singh]
+d7c96ecc56 Do not return glGetString error on desktop GL context [Aaron Kling]
+6f1c03e727 EGL: nvidia: For desktop gl contexts, use gles v2 hooks list [Aaron Kling]
+6c22ca5ef6 EGL: nvidia: Don't use extension map [Aaron Kling]
+daacc895dc EGL: Loader: Enable desktop openGL on Nvidia platforms [Billy Laws]
+69fad8aa40 CompositionEngine: Request device composition for the Udfps touched layer [daniml3]
+8655d06e96 surfaceflinger: Add support for Udfps extension lib [Pierre-Hugues Husson]
+cbeb1716b1 libui: Allow extension of valid gralloc 1.0 buffer usage bits [Kevin F. Haggerty]
+79496f04a3 Add vendor version for libgui [Vinay Verma]
 
-* lineage-sdk
-9e850826 trust: Fix variable usage before null check [Tommaso Fonda]
+* lineage/hudson
+96dff7b Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/scripts
-23ef447 build-webview: Update default webview to 117.0.5938.60 [Kevin F. Haggerty]
+adaacc6 device-deps-regenerator: Ignore Pixel 8 common repos [Michael Bestas]
+62ffe61 device-deps-regenerator: Ignore sm8450/sm8550-devicetrees [Michael Bestas]
 
 * lineage/wiki
-7b263aac devices: us996*: Convert model identification note to before_install [Nolen Johnson]
-686cec58 wiki: Add "Known quirks" section [Michael W]
+f3c992fa wiki: devices: Add Xiaomi Mi MIX 3 (perseus) [Andrey Sprynga]
 
-* packages/apps/Aperture
-0a4c3a6 fixup: yaml [Tom Powell]
-e495da5 add workflow_dispatch event for gerrit hooks [Tom Powell]
+* device/xiaomi/msm8998-common
+08c56da msm8998-common: Switch to legacy WiFi HIDL HAL [me-cafebabe]
+7e7e137 msm8998-common: Remove some camera-daemon commands [Rick Yiu]
 
-* packages/apps/Dialer
-0eb502023 fixup! Dialer: Introduce asking for default dialer role [LuK1337]
+====================
+     2023-11-11    
+====================
+* hardware/lineage/compat
+770258c compat: Provide libprotobuf-cpp vendorcompat prebuilts from v29 VNDK [Bruno Martins]
 
-* packages/apps/Nfc
-15cd9202 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Nfc into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+* lineage/mirror
+9e54e03 Updated to 10-Nov-2023 20:30 UTC [Kevin F. Haggerty]
+3c52f73 Updated to 10-Nov-2023 20:17 UTC [Kevin F. Haggerty]
+b275953 Updated to 10-Nov-2023 20:11 UTC [Kevin F. Haggerty]
+991b378 Updated to 10-Nov-2023 19:47 UTC [Kevin F. Haggerty]
+8af0be8 Updated to 10-Nov-2023 18:03 UTC [Kevin F. Haggerty]
 
-* packages/apps/Settings
-af9db16c85 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-9f776ebc68 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-
-* packages/apps/Trebuchet
-80cbcb4750 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-f1b03d523b Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-
-* packages/modules/Bluetooth
-bf9abb2349 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-0feb021bd6 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-
-* packages/modules/NeuralNetworks
-b839fd39b Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-04b483884 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/modules/NeuralNetworks into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-
-* packages/providers/MediaProvider
-4dc6b691d Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-77423b384 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-
-* packages/services/Telephony
-544ea2dd2 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
-2e0dfc989 Merge tag 'android-security-13.0.0_r8' of https://android.googlesource.com/platform/packages/services/Telephony into staging/lineage-20.0_merge_android-security-13.0.0_r9 [Kevin F. Haggerty]
+* lineage/wiki
+9cb6551d wiki: nio: Require 12 FW [Michael W]
 
 * vendor/lineage
-53760b51 overlay: Move config_hspa_data_distinguishable to proper location [Tommaso Fonda]
-
-* vendor/qcom/opensource/power
-f16c47b power: Remove unused variable [Chippa-a]
+fb6b12b1 overlay: Set udfps_lottie_translate_y to -500dp [LuK1337]
 
 ====================
-     2023-09-16    
+     2023-11-10    
 ====================
+* frameworks/opt/telephony
+a1d17f0dc5 Make UiccSlot::getPrintableIccIds() skip null values [LuK1337]
+fb469b715a Conditionally revert "Block Binder thread until incoming call process completes" [ExactExampl]
+e39bc2b682 RadioMessagingProxy: Fix sending CDMA IMS SMS [Paul Keith]
+
 * lineage-sdk
-d84bdac8 Automatic translation import [LineageOS Infra]
+9bc61e26 Network traffic with automatic units [2/2] [Wolfram Liebchen]
+
+* lineage/hudson
+c3c6a2f china markets things... interestingly [Nolen Johnson]
+44c0af3 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+e4f1671 Updated to 09-Nov-2023 13:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-4f94abae wiki: xiaomi: Asking for the latest MIUI or having the right FW? [Michael W]
-5d6a9e47 schema: Include taro, cape and kalama [Bruno Martins]
-
-* packages/apps/Aperture
-732a706 Aperture: Update workflows versions [Luca Stefani]
-67078d0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-b267f1554 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Eleven
-07207d00 Automatic translation import [LineageOS Infra]
+53c9b4aa devices: Split nash [Nolen Johnson]
 
 * packages/apps/Etar
-6ec123ea Automatic translation import [LineageOS Infra]
+939296a0 AllInOneActivity: Don't request disabling doze on pre-M devices [Aayush Gupta]
+1299f5c9 Remove unused imports [Gitsaibot]
+7fd37cbe Fix small lint warnings [Gitsaibot]
+e2c0085f Update submodules [Jochen Sprickerhof]
+cc8e396e Use Integer.MIN_VALUE for preference "No Reminders" instead of -1 [Gitsaibot]
+88b3ccb0 Revert "Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)" [Gitsaibot]
+cc98d122 Update gradle plugins and dependencies [Gitsaibot]
 
 * packages/apps/LineageParts
-53c4e9a Automatic translation import [LineageOS Infra]
+733e55f Network traffic with automatic units [1/2] [Wolfram Liebchen]
+4aff3e9 LineageParts: Bring back VoLTE [Michael W]
+e4103b3 LineageParts: Some fixes [Michael W]
+9fbeb19 LineageParts: Make REUSE compliant [Michael W]
 
-* packages/apps/Updater
-5c17826 Automatic translation import [LineageOS Infra]
+* packages/apps/Messaging
+9cbc421 Messaging: All contacts: Remove space for sections [Michael W]
 
-* packages/inputmethods/LatinIME
-a451d5201 Automatic translation import [LineageOS Infra]
+* vendor/lineage
+de4302a6 Update custom_apns script for Python 3 [Georg Veichtlbauer]
 
-* packages/resources/devicesettings
-4b27258 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-8bce613 Automatic translation import [LineageOS Infra]
-
-* kernel/xiaomi/msm8998
-69ea976b36bd Merge tag 'LA.UM.8.4.c25-09400-8x98.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-20.0 [Nanhumly]
+* device/xiaomi/msm8998-common
+e1cadba msm8998-common: Compile kernel with default Clang [Nanhumly]
 
 ====================
-     2023-09-15    
+     2023-11-09    
 ====================
-* device/lineage/sepolicy
-f568c2e common: Move in mediashell rules from ATV [LuK1337]
+* external/nano
+12f8158e nano: Enable regex GNU extensions [LuK1337]
 
-* lineage/mirror
-92eb22e Updated aosp-minimal to 14-Sep-2023 12:02 UTC [Tim Schumacher]
-
-* packages/apps/Aperture
-79ee5da Aperture: Run ./gradlew app:generateBp [Sebastiano Barezzi]
-7fccb00 Aperture: Use generateBp plugin from maven repo [Sebastiano Barezzi]
-
-* packages/apps/Jelly
-562bc91 Jelly: Run ./gradlew app:generateBp [Sebastiano Barezzi]
-42c0087 Jelly: Use generateBp plugin from maven repo [Sebastiano Barezzi]
-
-====================
-     2023-09-14    
-====================
-* lineage/mirror
-a8ee4bd Updated aosp-minimal to 13-Sep-2023 12:02 UTC [Tim Schumacher]
-
-* lineage/wiki
-740926e6 wiki: Update steps for extracting payload based OTAs [razorloves]
-
-* packages/inputmethods/LatinIME
-68795e35b fixup! LatinIME: Make emoji key look like any other key [LuK1337]
-
-====================
-     2023-09-13    
-====================
-* hardware/qcom-caf/sm8550/audio/agm
-a72154a agm: fixup!: OSS compile for plugins [Akash Srivastava]
-
-* lineage/wiki
-4014f1b6 wiki: 64-bit -> x86_64 [LuK1337]
-
-====================
-     2023-09-12    
-====================
-* lineage/scripts
-a01711d aosp-merger: README: Fix typos [Nolen Johnson]
-
-* lineage/wiki
-9321166b wiki: devices: Revive violet [raghavt20]
-
-* packages/apps/Aperture
-1bd3662 Aperture: Update CameraX maven repo URL [LuK1337]
-5cd5058 Aperture: Detect uncommitted changes after running app:generateBp [LuK1337]
-
-====================
-     2023-09-11    
-====================
 * lineage/hudson
-05e08df add violet [jash]
+a4cc06d hudson: Drop chef from the menu [Georg Veichtlbauer]
 
 * lineage/wiki
-eaea8989 wiki: Add Wi-Fi device filter [LuK1337]
-710a6d17 wiki: Update Sony nile peripherals [LuK1337]
+6ed2f098 contributors: Correct Reviewers group name [Nolen Johnson]
+f1891690 contributors: Update to reflect gerrit groups [Nolen Johnson]
+aa19d281 wiki: Drop chef [Georg Veichtlbauer]
 
-====================
-     2023-09-10    
-====================
-* frameworks/base
-5cf8bcfdad8a core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
-
-* lineage/wiki
-066b7840 wiki: Unify WiFi standard support [LuK1337]
-
-====================
-     2023-09-09    
-====================
