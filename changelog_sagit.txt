@@ -1,4 +1,64 @@
 ====================
+     2023-12-17    
+====================
+* frameworks/av
+8735962d31 av: support per-app volume [1/3] [cjybyjk]
+
+* frameworks/base
+d9699d81176a SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+fb589a4d077b ParanoidSense: Adapt to Android 14 QPR1 [someone5678]
+da508eccdd8c SystemUI: FaceUnlock: Allow to overlay FaceUnlockImageView bottom margin [Fabian Leutenegger]
+f1b53916152e SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
+876f0ae35f97 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+e094ef1cee42 KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
+064cd6e59051 WalletActivity: Don't explicity request face auth [jhenrique09]
+0ac7102dd52d SystemUI: Reset face auth on occluding app when authenticated [jhenrique09]
+81215e1f58e6 SystemUI: use simple check for isFaceDisabled [Ali B]
+25220fc2afbd base: Initial SenseProvider for FaceSense service [Chris Crump]
+732f00d06730 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+4cb14ff8b391 base: Reset props for status bar lyric [1/2] [cjybyjk]
+aab85d0e73f6 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+f7c78d77240b Add Extra proto [Nanhumly]
+eec0e5b2eb48 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+cf6c580f05bd [SQUASHED] base: Add status bar lyric for Android 14 [cjybyjk]
+de51853cc41f base: make per-app work with multi audio focus [El Dainosor]
+62220825b37b SystemUI: Update App volume icon [yukiscape]
+9a8138c81d2f base: support per-app volume [2/3] [cjybyjk]
+edfbeee75dcd SystemUI: make QS footer rounded (#910) [awakened]
+6bc878521940 SystemUI: BatteryStatusChip: Always use dark text [Kazuki Hashimoto]
+a50e243d3fec SystemUI: Apply surface color to brightness icons [Harsh  Pal]
+2624824267fd SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+08d7dcb5eed7 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+330840de4643 SystemUI: Switch notification background to monet on heads up [DillerOFire]
+a553283b11d4 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+6d29f1517609 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+65d225b17590 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+de4c7813471f SystemUI: Calculate paged QS tiles height properly [Adithya R]
+eab1f3f24a7f SystemUI: Fix QS header clock color [Danny Baumann]
+8a210b06a2f0 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+f3c58c7800d3 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+103e401ec84c SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+3343947e9bcc SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+acb2b33428fe SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+ee291fccdc1b SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+33830d91806a Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+60eb7b23729c Revert "Make QS always use dark theme colors" [Danny Lin]
+
+* lineage-sdk
+192b3547 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* packages/apps/Settings
+e3ecdd89273 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+9f315c1fc31 2 [Nanhumly]
+ff77101bba3 1 [Nanhumly]
+a54e07b422c Settings: Updated translations [Nanhumly]
+7dc0742397e Settings: support per-app volume [3/3] [cjybyjk]
+
+* vendor/lineage
+f99e5fb6 vendor: Guard Face Unlock support [someone5678]
+9f388480 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+====================
      2023-12-16    
 ====================
 * packages/apps/Settings
@@ -8,6 +68,9 @@ f6a3305d636 Hide fingerprint settings help if URL is empty [Michael Bestas]
 ====================
      2023-12-15    
 ====================
+====================
+     2023-12-14    
+====================
 * build/make
 f6b4b30202 build: Always use release-keys [Pranav Vashi]
 
@@ -15,14 +78,11 @@ f6b4b30202 build: Always use release-keys [Pranav Vashi]
 143c699 Revert "delete gBn/sConstructorMap" [anrui2032]
 
 ====================
-     2023-12-14    
+     2023-12-13    
 ====================
 * lineage/mirror
 5532fb1 Updated aosp-minimal to 13-Dec-2023 13:02 UTC [Tim Schumacher]
 
-====================
-     2023-12-13    
-====================
 * lineage/wiki
 de615e5b hotdog(b)/instantnoodle(p)/kebab/lemonade(p): Add CDMA mention [Neel Chauhan]
 192f31f8 marlin/sailfish/us997: Add CDMA2000 support in the wiki page [Neel Chauhan]
@@ -35,11 +95,111 @@ c0250e3a build: Add macro for sha1 checked add-radio-file [LuK1337]
 ====================
      2023-12-12    
 ====================
+* lineage-sdk
+cbe38a2f LineageSettings: Delete status bar brightness control key [Bruno Martins]
+
+* lineage/hudson
+a1fcdba hudson: Temporarily unship Spacewar [x0x00044]
+
+* lineage/wiki
+142f22f6 wiki: Temporarily unship Spacewar [x0x00044]
+
+====================
+     2023-12-11    
+====================
 * android
 fb42506 manifest: Track our cronet [Nolen Johnson]
 
+* build/make
+8289ff3ec3 Disable sparse images for A/B updater targets [LuK1337]
+12e39d3665 Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag [LuK1337]
+728475b2d7 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
+2939996b7b Don't remove ANDROID_SECURE_STORAGE_CMD from env vars [LuK1337]
+f859f3c0ff Log when we fail to get key password from secure cmd [LuK1337]
+ddc8c29f26 Add bluetooth and sdk_sandbox to default key map [HZ]
+eabbe7e9a5 Add vendor_kernel_boot files to target-files-package [Chirayu Desai]
+45bafa0962 Exclude Camera2 for lineage builds [Michael Bestas]
+f95dcf46e6 Allow passing makefile path to enforce-product-packages-exist [Aaron Kling]
+826ba32575 releasetools: squash backuptool support [Chris Soyars]
+8b3f7c0b4a build: ota: Support for install tools in /tmp/install [Tom Marshall]
+906e9db054 Disable Traceur for non eng-builds [Aaron Kling]
+4fcf4c0597 releasetools: Unconditionally store recovery.img in non-A/B OTA [LuK1337]
+e2ba83e068 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
+e889d0cb5e build: Respect fs_config when generating recovery ramdisk [lambdadroid]
+bd20dae61e Add support for separate kernels for boot and recovery [2/2] [marcost2]
+2e10a5c039 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
+caec12b18d build: Add support for device tree in boot.img [David Ng]
+3a275f5a42 Add BOARD_CUSTOM_BOOTIMG_MK support [Ricardo Cerqueira]
+c971d58d44 core: Allow overriding device/model/name properties [LuK1337]
+f5e57f1e34 core: Add support for overriding build.prop settings [Koushik Dutta]
+9203f0657b build: Squash of allowing a device to generically define its own headers [Ricardo Cerqueira]
+e679fddd08 Add build support for XZ ramdisks [Luca Stefani]
+fa3bfdc41e Fix recovery image generation with LZ4 compressed ramdisk [Arne Coucheron]
+6e784b8aa8 releasetools: Add script to sign zips [Gabriele M]
+d991f090c5 releasetools: support reading release keys out of some sort of command [Tom Powell]
+1ad32426a5 releasetools: do not remove dynamic partitions in system-only builds [Peter Cai]
+3366fc8868 Unset BOARD_EXT4_SHARE_DUP_BLOCKS [LuK1337]
+1042d50268 build_image: Allow disabling custom inode count calculation [Christian Oder]
+df60c89771 Remove unused locale data for recovery [Alessandro Astone]
+97c1a85593 releasetools: Use the first entry of a mount point when reading fstab [Brint E. Kriebel]
+eaa6166ed9 Edify: Add abort message for bootloader asserts [Matt Mower]
+aedf4a33fe ota: Disable downgrade check [Andrew Dodd]
+1f3a4b3b8c Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES [Michael Bestas]
+59ab74834f Allow setting the recovery density separately from the aapt config [Chirayu Desai]
+d4d0343ceb build: Separate commands in recovery foreach loops [Matt Mower]
+2323ff4a80 build: recovery: Support adding device-specific items [Tom Marshall]
+e7ce72e0f1 releasetools: ota_from_target_files: add FullOTA_PostValidate [M1cha]
+fdfdba0b31 Don't enable ADB by default on userdebug builds [Michael Bestas]
+46a24794f5 Don't make recovery patch for devices with prebuilt vendor [TheScarastic]
+5248f3dbdb Move recovery-from-boot.p from /system to /vendor [dianlujitao]
+d0bb77edc3 Allow override of device asserts, including multi-device support. [Steve Kondik]
+b9426b9513 build: Automatically replace old-style kernel header includes with new header lib [Rashed Abdel-Tawab]
+050f27bb7e build/target: Include Lineage platform jar in system server. [Adnan Begovic]
+777f339154 Add extra variables to _readonly_late_variables [dianlujitao]
+88e40337c0 Add roomservice [Koushik Dutta]
+3fb6381544 build: Add Lineage build support [Luca Stefani]
+
+* build/soong
+7d4531838 Add vendor/lineage-priv/keys to allowlist [LuK1337]
+cb2a20d59 Add ability to enable scudo-free 32-bit libc variant. [Quallenauge]
+cf27d2bb5 check_boot_jars: Add Lineage SDK packages [LuK1337]
+07ede8366 soong: Add equivalent for LOCAL_EXPORT_CFLAGS [Alessandro Astone]
+3067db8f6 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
+2e9979518 check_boot_jars: Add IFAA Manager to whitelist [Michael Bestas]
+2cd60917a Add qcom.fmradio and org.codeaurora.internal to allowlist [Scott Lobdell]
+58273e265 sandbox_linux: set CCACHE_DIR as a writable path [daniml3]
+6d7eac3a4 Add Init_rc to Product_variables.Eng [dianlujitao]
+a2b4241b2 Add exported-to-kati namespaces to root namespace [LuK1337]
+eb2d9ac2b Replace qti_kernel_headers with generated_kernel_headers [Nolen Johnson]
+9d43cbdfe Replace device_kernel_headers with generated_kernel_headers [Chirayu Desai]
+56bdb5891 soong: allow overriding header files [Jan Altensen]
+db9e3e31a soong: Add PathForSourceRelaxed [Sam Mortimer]
+6e1476b8e soong: Squash of lineage-sdk bringup commits [Rashed Abdel-Tawab]
+
 * external/cronet
 ae9af2ba5 cronet: Fix build with custom out directory [M. Masters]
+
+* external/gptfdisk
+6727e78 gptfdisk: Make libsgdisk visible to libvolume_manager [Michael Bestas]
+
+* external/wpa_supplicant_8
+d64f1db6 wpa_supplicant: add support for bcmdhd SAE authentication offload [Tim Zimmermann]
+
+* frameworks/av
+1e64302bd7 Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB [SGCMarkus]
+e26a9d309d Camera: Skip stream size check for whitelisted apps [Arian]
+81c517c27c Partial revert "Move unused classes out of stagefright foundataion" [Nico]
+731e69f411 audioflinger: Fix audio for WifiDisplay [myfluxi]
+4089b485f2 libstagefright_wfd: video encoder does not actually release MediaBufferBase when done [Vladimir Oltean]
+3584cfd451 stagefright: Fix buffer handle retrieval in signalBufferReturned [Angelo G. Del Regno]
+2fb7e0c90b stagefright: Fix SurfaceMediaSource getting handle from wrong position issue [zhangbo_a]
+f9f0caa088 libstagefright_wfd: compilation fixes [Vladimir Oltean]
+7dccd35faa libstagefright: Remove libmediaextractor dependency [Adithya R]
+3cbb2fc973 Revert "Removed unused class and its test" [Vladimir Oltean]
+ed24344315 Revert "stagefright: remove Miracast sender code" [Vladimir Oltean]
+57650f1da6 audiopolicy: Disable sonification on WFD sink [Mingming Yin]
+a5b141dcd4 codec2: add smoothfactor when checking n-th work [Jiajia Cong]
+0aa46a9581 Add group audio to vendor.media.omx service [Luca Weiss]
 
 * frameworks/base
 f87abad41175 Implement edge long swipe gesture to new back gesture affordance [someone5678]
@@ -221,192 +381,6 @@ a5b60da26394 Keyguard: Add option to scramble pin layout when unlocking (2/2). [
 8b3e4866f4aa SystemUI: Dismiss keyguard on boot if disabled by current profile [Gabriele M]
 a8101afbfb4e Exempt location packages from location indicators [Chirayu Desai]
 df2c87e508bf SystemUI: Add quick settings pull down with one finger [Roman Birg]
-
-* lineage-sdk
-cbe38a2f LineageSettings: Delete status bar brightness control key [Bruno Martins]
-
-* lineage/hudson
-a1fcdba hudson: Temporarily unship Spacewar [x0x00044]
-
-* lineage/mirror
-8a6686b Updated lineage-minimal to 11-Dec-2023 13:02 UTC [Tim Schumacher]
-0fd2fb7 Updated to 11-Dec-2023 13:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-142f22f6 wiki: Temporarily unship Spacewar [x0x00044]
-
-* packages/apps/Settings
-3c472251fba Settings: make sure Wifi exists before adding controllers [Timi Rautamäki]
-8084cdfecd4 Settings: Add mobile plan and private dns icons [penglezos]
-c664b3f94f3 Settings: Tie wake on plug with some form of battery presence [Bruno Martins]
-5f10ce7f76e POLICY_REJECT_ALL restricts all network access [Tommy Webb]
-600c51935a0 Settings: Show single-touch wakeup setting on rear & front fps devices [Terminator-J]
-1b50fa53972 Settings: Add charging control part [Danny Trunk]
-94fc584921a Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
-675b95843f1 Settings: Add switch preference for AGPS [juwei]
-bc92dd5e86e Properly set Wi-Fi Privacy spinner initial state [Tommy Webb]
-39c6c1e1722 Hide SFPS wakeup setting when it's not supported [Michael Bestas]
-7124c38a689 Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
-873292e1cb8 Settings: Redo "Good news, `encryptable=footer` is broken" [Michael W]
-92f030b000b Settings: Add toggle for heads up notifications [Michael Bestas]
-9596dfd7366 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins]
-1e60a48b1bc Settings: Add back battery and notification lights settings [Sam Mortimer]
-e08be9df684 Settings: support black theme for dark mode [2/4] [Jesse Chan]
-7a7606412d4 Settings: gestures: Add page for Screen-Off UDFPS [Cosmin Tanislav]
-ecfec8dc939 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
-8cb19acc03a Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
-8a670ffdde5 Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
-b76b51bf9d6 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
-f2447d30ee9 Settings: Allow using legacy VPN types [Alessandro Astone]
-22f46a7ef9f Settings: Add preference for KEY_MIN_REFRESH_RATE [LuK1337]
-758a7b5ff57 Settings: Add peak refresh rate list preference [Michael Bestas]
-48163c41c0c Settings: Display: Add High Touch Polling Rate Support [Ramii Ahmed]
-a5fb6407cdf fingerprint: Rework enrollment screen [Bruno Martins]
-7fd9466383f fingerprint: hide link icon when there's no link [Timi Rautamäki]
-6ac7df5ca96 Settings: Add FastCharge preference into Battery settings [Bruno Martins]
-8d990fd6dec Settings: Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
-270f6e40876 Settings: Add setup UI for minimum delay between an app's notification sounds [Danny Baumann]
-2f511b11215 Settings: display: Add wake on plug switch [Jon Evans]
-178f9034157 Settings: Add proximity check on wake preference [Bruno Martins]
-253bf8025f3 AppDataUsage: Handle apps without INTERNET permission [Oliver Scott]
-82c043a7557 Settings: Add high touch sensitivity and touchscreen hovering toggles [LuK1337]
-f821dd91716 Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott]
-3dbdbb08647 Settings: Add support for allowing/disallowing apps on restricted networks [Sam Mortimer]
-5dcd7126d9e Settings: Add option to scramble pin layout when unlocking (1/2). [Adnan]
-b6a9fc2876b Settings: Add hotspot setting to allow VPN upstreams [Sam Mortimer]
-b20829b71c7 Settings: Add toggle for Lockscreen Media Art [beanstown106]
-998020f151a Settings: default to GlifV3Theme [Timi Rautamäki]
-fd53e47577b Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
-8981bfa99a8 Settings: Apply SUW button theming to WiFi page [Erfan Abdi]
-b0f36f801a5 Settings: Allow devices to provide remote gesture preferences [Bruno Martins]
-7bbf0133cb6 Settings: gesture: Add LineageParts touchscreen gesture settings [Zhao Wei Liew]
-3551cceabc8 Remove useless USB page header [Michael Bestas]
-f80ac7e1f39 Settings: Add double tap to sleep preference [Rashed Abdel-Tawab]
-b164e229964 get outer NFC preference to listen for changes [inthewaves]
-0c45aeb2182 Fix inconsistent USB preference screen title [Danny Lin]
-a7f58323496 Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay [Paul Keith]
-c1d83a09640 Settings: Network setup UI changes for SUW [Michael Bestas]
-f20ca962ac8 Settings: use Glif themed button bar [Timi Rautamäki]
-e02814df2e3 Settings: Add package name to installed app details [1/2] [Luca Stefani]
-1924b43ce6b Settings: Implement hide gestural navigation hint bar [Jesse Chan]
-9fe50e49aba Settings: Add a RemotePreference for device-specific doze settings [Steve Kondik]
-85512be7d23 Settings: Hide unsupported USB modes automatically [Wang Han]
-76c24547a25 Settings: Check if we have any color modes declared in overlay [Luca Stefani]
-de45e0d2169 Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
-19abe2a7776 Settings: Forward port lock pattern grid size (2/2) [Michael Bestas]
-
-* tools/extract-utils
-f6abdcd extract-utils: Use newly introduced add-radio-file-sha1-checked macro [LuK1337]
-
-====================
-     2023-12-11    
-====================
-* bootable/recovery
-efdd5e96 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* build/make
-8289ff3ec3 Disable sparse images for A/B updater targets [LuK1337]
-12e39d3665 Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag [LuK1337]
-728475b2d7 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
-2939996b7b Don't remove ANDROID_SECURE_STORAGE_CMD from env vars [LuK1337]
-f859f3c0ff Log when we fail to get key password from secure cmd [LuK1337]
-ddc8c29f26 Add bluetooth and sdk_sandbox to default key map [HZ]
-eabbe7e9a5 Add vendor_kernel_boot files to target-files-package [Chirayu Desai]
-45bafa0962 Exclude Camera2 for lineage builds [Michael Bestas]
-f95dcf46e6 Allow passing makefile path to enforce-product-packages-exist [Aaron Kling]
-826ba32575 releasetools: squash backuptool support [Chris Soyars]
-8b3f7c0b4a build: ota: Support for install tools in /tmp/install [Tom Marshall]
-906e9db054 Disable Traceur for non eng-builds [Aaron Kling]
-4fcf4c0597 releasetools: Unconditionally store recovery.img in non-A/B OTA [LuK1337]
-e2ba83e068 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
-e889d0cb5e build: Respect fs_config when generating recovery ramdisk [lambdadroid]
-bd20dae61e Add support for separate kernels for boot and recovery [2/2] [marcost2]
-2e10a5c039 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
-caec12b18d build: Add support for device tree in boot.img [David Ng]
-3a275f5a42 Add BOARD_CUSTOM_BOOTIMG_MK support [Ricardo Cerqueira]
-c971d58d44 core: Allow overriding device/model/name properties [LuK1337]
-f5e57f1e34 core: Add support for overriding build.prop settings [Koushik Dutta]
-9203f0657b build: Squash of allowing a device to generically define its own headers [Ricardo Cerqueira]
-e679fddd08 Add build support for XZ ramdisks [Luca Stefani]
-fa3bfdc41e Fix recovery image generation with LZ4 compressed ramdisk [Arne Coucheron]
-6e784b8aa8 releasetools: Add script to sign zips [Gabriele M]
-d991f090c5 releasetools: support reading release keys out of some sort of command [Tom Powell]
-1ad32426a5 releasetools: do not remove dynamic partitions in system-only builds [Peter Cai]
-3366fc8868 Unset BOARD_EXT4_SHARE_DUP_BLOCKS [LuK1337]
-1042d50268 build_image: Allow disabling custom inode count calculation [Christian Oder]
-df60c89771 Remove unused locale data for recovery [Alessandro Astone]
-97c1a85593 releasetools: Use the first entry of a mount point when reading fstab [Brint E. Kriebel]
-eaa6166ed9 Edify: Add abort message for bootloader asserts [Matt Mower]
-aedf4a33fe ota: Disable downgrade check [Andrew Dodd]
-1f3a4b3b8c Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES [Michael Bestas]
-59ab74834f Allow setting the recovery density separately from the aapt config [Chirayu Desai]
-d4d0343ceb build: Separate commands in recovery foreach loops [Matt Mower]
-2323ff4a80 build: recovery: Support adding device-specific items [Tom Marshall]
-e7ce72e0f1 releasetools: ota_from_target_files: add FullOTA_PostValidate [M1cha]
-fdfdba0b31 Don't enable ADB by default on userdebug builds [Michael Bestas]
-46a24794f5 Don't make recovery patch for devices with prebuilt vendor [TheScarastic]
-5248f3dbdb Move recovery-from-boot.p from /system to /vendor [dianlujitao]
-d0bb77edc3 Allow override of device asserts, including multi-device support. [Steve Kondik]
-b9426b9513 build: Automatically replace old-style kernel header includes with new header lib [Rashed Abdel-Tawab]
-050f27bb7e build/target: Include Lineage platform jar in system server. [Adnan Begovic]
-777f339154 Add extra variables to _readonly_late_variables [dianlujitao]
-88e40337c0 Add roomservice [Koushik Dutta]
-3fb6381544 build: Add Lineage build support [Luca Stefani]
-3d95942e7e Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* build/soong
-7d4531838 Add vendor/lineage-priv/keys to allowlist [LuK1337]
-cb2a20d59 Add ability to enable scudo-free 32-bit libc variant. [Quallenauge]
-cf27d2bb5 check_boot_jars: Add Lineage SDK packages [LuK1337]
-07ede8366 soong: Add equivalent for LOCAL_EXPORT_CFLAGS [Alessandro Astone]
-3067db8f6 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
-2e9979518 check_boot_jars: Add IFAA Manager to whitelist [Michael Bestas]
-2cd60917a Add qcom.fmradio and org.codeaurora.internal to allowlist [Scott Lobdell]
-58273e265 sandbox_linux: set CCACHE_DIR as a writable path [daniml3]
-6d7eac3a4 Add Init_rc to Product_variables.Eng [dianlujitao]
-a2b4241b2 Add exported-to-kati namespaces to root namespace [LuK1337]
-eb2d9ac2b Replace qti_kernel_headers with generated_kernel_headers [Nolen Johnson]
-9d43cbdfe Replace device_kernel_headers with generated_kernel_headers [Chirayu Desai]
-56bdb5891 soong: allow overriding header files [Jan Altensen]
-db9e3e31a soong: Add PathForSourceRelaxed [Sam Mortimer]
-6e1476b8e soong: Squash of lineage-sdk bringup commits [Rashed Abdel-Tawab]
-d7b3989a4 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* development
-8b3b0c914 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* device/google/atv
-1ce9b59 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* external/gptfdisk
-6727e78 gptfdisk: Make libsgdisk visible to libvolume_manager [Michael Bestas]
-93fcea5 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* external/setupcompat
-301cd66 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* external/wpa_supplicant_8
-d64f1db6 wpa_supplicant: add support for bcmdhd SAE authentication offload [Tim Zimmermann]
-1403c13e Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* frameworks/av
-1e64302bd7 Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB [SGCMarkus]
-e26a9d309d Camera: Skip stream size check for whitelisted apps [Arian]
-81c517c27c Partial revert "Move unused classes out of stagefright foundataion" [Nico]
-731e69f411 audioflinger: Fix audio for WifiDisplay [myfluxi]
-4089b485f2 libstagefright_wfd: video encoder does not actually release MediaBufferBase when done [Vladimir Oltean]
-3584cfd451 stagefright: Fix buffer handle retrieval in signalBufferReturned [Angelo G. Del Regno]
-2fb7e0c90b stagefright: Fix SurfaceMediaSource getting handle from wrong position issue [zhangbo_a]
-f9f0caa088 libstagefright_wfd: compilation fixes [Vladimir Oltean]
-7dccd35faa libstagefright: Remove libmediaextractor dependency [Adithya R]
-3cbb2fc973 Revert "Removed unused class and its test" [Vladimir Oltean]
-ed24344315 Revert "stagefright: remove Miracast sender code" [Vladimir Oltean]
-57650f1da6 audiopolicy: Disable sonification on WFD sink [Mingming Yin]
-a5b141dcd4 codec2: add smoothfactor when checking n-th work [Jiajia Cong]
-0aa46a9581 Add group audio to vendor.media.omx service [Luca Weiss]
-187d6cd812 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* frameworks/base
 17b2b698d041 SystemUI: Remove nav bar background in QS customizer [Danny Lin]
 9a9c7b710087 SystemUI: Implement hide gestural navigation hint bar [Jesse Chan]
 dc94054621b1 SystemUI: Add navbar layout inversion tuning [LuK1337]
@@ -470,10 +444,6 @@ e41bc38ec545 fw/b: Use ro.build.version.incremental to signal OTA upgrades [dhac
 7fbd0ccd1fad Show the vibrate icon in the Status Bar by default [Chirayu Desai]
 0f2dba6d82e3 fwb: Bring in the new icon [Asher Simonds]
 2ea6b9d48ae5 Updates to various icons: [Dan Sandler]
-8d29f6c86040 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* frameworks/libs/systemui
-31eb91c Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * frameworks/native
 95953b6873 InputDispatcher: On keypress, deliver keycode to pokeUserActivity [Corinna Vinschen]
@@ -496,7 +466,6 @@ e015479cf5 CompositionEngine: Request device composition for the Udfps touched l
 4e31f7f589 surfaceflinger: Add support for Udfps extension lib [Pierre-Hugues Husson]
 a8f136dd97 libui: Allow extension of valid gralloc 1.0 buffer usage bits [Kevin F. Haggerty]
 2d07ed19b6 Add vendor version for libgui [Vinay Verma]
-ba7508fb59 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * frameworks/opt/telephony
 8ed557dff7 Make UiccSlot::getPrintableIccIds() skip null values [LuK1337]
@@ -509,20 +478,9 @@ baf3d84453 Pass correct value to setPreferredNetworkType() for RIL version < 1.4
 832220de88 RIL: Fix manual network selection with old modem [faust93]
 2ef368697a Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
 fecaf67327 Update external card state based on current app [Wileen Chiu]
-bac736de5c Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* hardware/google/gchips
-710b2e5 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * hardware/google/graphics/common
 2d9caa9 hwc: Depend on generated kernel headers [Michael Bestas]
-101e047 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* hardware/google/pixel
-1a208a4 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* hardware/google/pixel-sepolicy
-f8febae Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * hardware/interfaces
 734d45c1a camera: Make overrideFormat from reserved fields opt-in [Rohit Sekhar]
@@ -530,37 +488,76 @@ f8febae Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-1
 abc2620c6 compatibility_matrices: Allow radio.config@1.0 till target-level 5 [me-cafebabe]
 ee041cf4a audio: Verify that hal implements get_audio_port before calling [Aaron Kling]
 fe73af608 keymasterV4_0: Tags support for FBE wrapped key. [Shivaprasad Hongal]
-7b9b34462 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* hardware/qcom/wlan
-cb36e2f Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * lineage/hudson
 e341f74 hudson: Ship gta4lwifi aka Samsung Galaxy Tab A7 10.4 Wi-Fi (2020) aka SM-T500 [Christian Hoffmann]
-2cd7eb1 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+8a6686b Updated lineage-minimal to 11-Dec-2023 13:02 UTC [Tim Schumacher]
+0fd2fb7 Updated to 11-Dec-2023 13:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 6488ec4c wiki: Add gta4lwifi (Samsung Galaxy Tab A7 Wi-Fi (2020)) [Christian Hoffmann]
 
-* packages/apps/Car/Settings
-89bf757d8 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/CellBroadcastReceiver
-5eae07d5a Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/Contacts
-263cd1247 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/DocumentsUI
-aafaf861e Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/EmergencyInfo
-854a7a3 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/Nfc
-1b5926bb Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
 * packages/apps/Settings
+3c472251fba Settings: make sure Wifi exists before adding controllers [Timi Rautamäki]
+8084cdfecd4 Settings: Add mobile plan and private dns icons [penglezos]
+c664b3f94f3 Settings: Tie wake on plug with some form of battery presence [Bruno Martins]
+5f10ce7f76e POLICY_REJECT_ALL restricts all network access [Tommy Webb]
+600c51935a0 Settings: Show single-touch wakeup setting on rear & front fps devices [Terminator-J]
+1b50fa53972 Settings: Add charging control part [Danny Trunk]
+94fc584921a Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+675b95843f1 Settings: Add switch preference for AGPS [juwei]
+bc92dd5e86e Properly set Wi-Fi Privacy spinner initial state [Tommy Webb]
+39c6c1e1722 Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+7124c38a689 Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
+873292e1cb8 Settings: Redo "Good news, `encryptable=footer` is broken" [Michael W]
+92f030b000b Settings: Add toggle for heads up notifications [Michael Bestas]
+9596dfd7366 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins]
+1e60a48b1bc Settings: Add back battery and notification lights settings [Sam Mortimer]
+e08be9df684 Settings: support black theme for dark mode [2/4] [Jesse Chan]
+7a7606412d4 Settings: gestures: Add page for Screen-Off UDFPS [Cosmin Tanislav]
+ecfec8dc939 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
+8cb19acc03a Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+8a670ffdde5 Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
+b76b51bf9d6 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
+f2447d30ee9 Settings: Allow using legacy VPN types [Alessandro Astone]
+22f46a7ef9f Settings: Add preference for KEY_MIN_REFRESH_RATE [LuK1337]
+758a7b5ff57 Settings: Add peak refresh rate list preference [Michael Bestas]
+48163c41c0c Settings: Display: Add High Touch Polling Rate Support [Ramii Ahmed]
+a5fb6407cdf fingerprint: Rework enrollment screen [Bruno Martins]
+7fd9466383f fingerprint: hide link icon when there's no link [Timi Rautamäki]
+6ac7df5ca96 Settings: Add FastCharge preference into Battery settings [Bruno Martins]
+8d990fd6dec Settings: Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
+270f6e40876 Settings: Add setup UI for minimum delay between an app's notification sounds [Danny Baumann]
+2f511b11215 Settings: display: Add wake on plug switch [Jon Evans]
+178f9034157 Settings: Add proximity check on wake preference [Bruno Martins]
+253bf8025f3 AppDataUsage: Handle apps without INTERNET permission [Oliver Scott]
+82c043a7557 Settings: Add high touch sensitivity and touchscreen hovering toggles [LuK1337]
+f821dd91716 Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott]
+3dbdbb08647 Settings: Add support for allowing/disallowing apps on restricted networks [Sam Mortimer]
+5dcd7126d9e Settings: Add option to scramble pin layout when unlocking (1/2). [Adnan]
+b6a9fc2876b Settings: Add hotspot setting to allow VPN upstreams [Sam Mortimer]
+b20829b71c7 Settings: Add toggle for Lockscreen Media Art [beanstown106]
+998020f151a Settings: default to GlifV3Theme [Timi Rautamäki]
+fd53e47577b Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
+8981bfa99a8 Settings: Apply SUW button theming to WiFi page [Erfan Abdi]
+b0f36f801a5 Settings: Allow devices to provide remote gesture preferences [Bruno Martins]
+7bbf0133cb6 Settings: gesture: Add LineageParts touchscreen gesture settings [Zhao Wei Liew]
+3551cceabc8 Remove useless USB page header [Michael Bestas]
+f80ac7e1f39 Settings: Add double tap to sleep preference [Rashed Abdel-Tawab]
+b164e229964 get outer NFC preference to listen for changes [inthewaves]
+0c45aeb2182 Fix inconsistent USB preference screen title [Danny Lin]
+a7f58323496 Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay [Paul Keith]
+c1d83a09640 Settings: Network setup UI changes for SUW [Michael Bestas]
+f20ca962ac8 Settings: use Glif themed button bar [Timi Rautamäki]
+e02814df2e3 Settings: Add package name to installed app details [1/2] [Luca Stefani]
+1924b43ce6b Settings: Implement hide gestural navigation hint bar [Jesse Chan]
+9fe50e49aba Settings: Add a RemotePreference for device-specific doze settings [Steve Kondik]
+85512be7d23 Settings: Hide unsupported USB modes automatically [Wang Han]
+76c24547a25 Settings: Check if we have any color modes declared in overlay [Luca Stefani]
+de45e0d2169 Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
+19abe2a7776 Settings: Forward port lock pattern grid size (2/2) [Michael Bestas]
 aa55a37d8ae Settings: Fix the failing strings [Michael Bestas]
 f087eb78e2c Settings: Add back increasing ring feature (2/2). [Danny Baumann]
 c97ca1bef05 Settings: Add LineageParts charging sound settings preference [Sam Mortimer]
@@ -578,13 +575,6 @@ f25ff704fd5 Settings: Add LineageOS entries into device info [LuK1337]
 2e005fbd0d8 Settings: Put device info header above "Basic info" [LuK1337]
 d9f36a20361 Allow the user to change the BackupTransport [Torsten Grote]
 8bf99248ed4 Settings: Bring in the new icon [Asher Simonds]
-2452c62dc91 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/Stk
-3433b13 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/apps/ThemePicker
-1235df2d Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * packages/apps/Trebuchet
 3e98347450 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
@@ -628,9 +618,6 @@ cfda8034f4 Trebuchet: update build configs [Joey]
 dd8240cecc Launcher3QuickStepGo should have one Default Activity [Arvind Kumar]
 93067be57c Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
-* packages/apps/WallpaperPicker2
-43ac92a8 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
 * packages/modules/Bluetooth
 4a60c8c20a Fix OPP comparison [Brian Delwiche]
 855d864edd btm: allow BTM_VSC_CHIP_CAPABILITY_RSP_LEN_M_RELEASE to be adjustable [Geel]
@@ -639,7 +626,6 @@ dd8240cecc Launcher3QuickStepGo should have one Default Activity [Arvind Kumar]
 292b5db2c5 gd: hci: Ignore unexpected status events [Peter Cai]
 64485794ad legacy: Split header for hci legacy definitions [Christian Hoffmann]
 06cb6d9abd bluetooth: abandon app local certificate [Ji Luo]
-32d11b6ffb Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * packages/modules/Connectivity
 168c966978 Keep UID in lockdown when present in any range [Tommy Webb]
@@ -651,45 +637,10 @@ dd8240cecc Launcher3QuickStepGo should have one Default Activity [Arvind Kumar]
 3c708e456c Disallow non-VPN tethering upstreams on always-on VPN lockdown mode [Oliver Scott]
 a665a2f3f9 Connectivity: Add capability to allow tethering to use VPN upstreams [Oliver Scott]
 affa0653d1 Remove DUN requirement for tethering [Dave Daynard]
-581d1721e6 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/modules/Permission
-c2c4d8d88 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/modules/Wifi
-41d7ced32f Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/modules/common
-68a29e9 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/providers/BlockedNumberProvider
-6fc4bc4 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/providers/ContactsProvider
-32e00931 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/providers/DownloadProvider
-362a3231 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/providers/MediaProvider
-c61a5b475 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-b4884097 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/services/Telecomm
-1b883f102 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * packages/services/Telephony
 20a7e53c3 Telephony: Add ERI configuration for U.S. Cellular [Arne Coucheron]
 fe72cbf11 Telephony: Adapt to S style [ReallySnow]
-b23866188 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* packages/wallpapers/LivePicker
-12412a5 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* system/bpf
-355cd85 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/core
 75b64415b fs_mgr: Allow remounts with Magisk installed [Bruno Martins]
@@ -714,22 +665,13 @@ b8a1cfd06 debuggerd: add Lineage version to tombstones [Scott Mertz]
 be8691b88 fs_mgr: mount: don't set the block device as ro for recovery [Alessandro Astone]
 b0deef096 init: don't skip starting a service with no domain if permissive [William Bellavance]
 9ef8fd991 init: Add vendor-specific initialization hooks. [David Ng]
-4e26d4190 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* system/extras
-d285995e Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/logging
 cad32f75 liblog: Always report as debuggable when building userdebug/eng [Bruno Martins]
-a9d11f98 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
-
-* system/media
-45bf4b15 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/netd
 da3e0118 Firewall: Transport-based toggle support (2/3) [Tommy Webb]
 75274941 Return ECONNREFUSED when socket creation blocked [Tommy Webb]
-a2a0cf9a Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/sepolicy
 e86929063 Label wifi.interface. [LuK1337]
@@ -744,7 +686,6 @@ d57ba6c40 Ignore access to /proc/pagetypeinfo for Settings [Thiébaud Weksteen]
 b599aa4ee Making sys.boot.reason.last restricted [Alexei Nicoara]
 98d7fe4dd sepolicy: Allow recovery to alter / [Gabriele M]
 063472e7d sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
-83a86dc1f Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/update_engine
 87f3cfb0 update_engine: Do not attempt to run backuptool in recovery [Alessandro Astone]
@@ -754,7 +695,6 @@ d11c915d update_engine: Run backuptool only in debuggable builds [Luca Stefani]
 c6dfd1e5 update_engine: Transition to backuptool domain [Luca Stefani]
 044e6917 update_engine: Run backuptool script before normal postinstall script [Dan Pasanen]
 f0756264 update_engine: Add performance mode [Gabriele M]
-a87f5c62 Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
 
 * system/vold
 9a10275 vold: fix failing to format zero-ed out SD card [nift4]
@@ -771,41 +711,10 @@ b8be148 vold: Fix fsck on public volumes [Michael Bestas]
 f85036c vold: Bring in more wrapped key changes [Pig]
 8793dbb vold: Enable legacy support for wrapped key [Neeraj Soni]
 eb417b8 system: vold: Use wrapped key for metadata encryption [Neeraj Soni]
-6bd0ffa Merge tag 'android-14.0.0_r17' into staging/lineage-21.0_merge-android-14.0.0_r17 [Michael Bestas]
+
+* tools/extract-utils
+f6abdcd extract-utils: Use newly introduced add-radio-file-sha1-checked macro [LuK1337]
 
 * vendor/lineage
 aeb5e117 vars: December 2023 Quarterly Platform Release and Security update [Michael Bestas]
-
-====================
-     2023-12-10    
-====================
-* android
-701b303 manifest: December 2023 Quarterly Platform Release and Security update [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-e8f23940b msmnile: Allow init write to discard_max_bytes [Michael Bestas]
-
-* frameworks/base
-2ed7dc64e87e Revert "Update parcling logic for Uris." [Michael Bestas]
-
-* lineage/hudson
-51d8519 hudson: Ship Samsung Galaxy A73 5G [Simon1511]
-b600f88 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-ddcd4900 wiki: Add Samsung Galaxy A73 5G [Simon1511]
-1bf6fdb7 wiki: Simplify download boot combo on gts4lv and gta4l [LuK1337]
-
-* packages/apps/Settings
-bb0582e8f87 Revert "RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()" [Michael Bestas]
-
-* packages/apps/ThemePicker
-ff7973f5 Revert "ThemePicker: Fix crash choosing Live Wallpapers" [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-d032450b Reapply "Fixes preview on home/lock tabs when wallpaper is live for both screens" [Michael Bestas]
-519a62ac Revert "Added changes for adding a11y changes for the clock carousel" [Michael Bestas]
-
-* vendor/lineage
-7c451050 vars: RIP bramble/redfin [Michael Bestas]
 
