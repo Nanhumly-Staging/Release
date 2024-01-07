@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1703600091,
-      "filename": "lineage-21.0-20231226-UNOFFICIAL-chiron.zip",
-      "id": "c0b9831c74d26eca082de5503c1e525a65ef39b323d127b9c7c08e0dd758f102",
+      "datetime": 1704602247,
+      "filename": "lineage-21.0-20240107-UNOFFICIAL-chiron.zip",
+      "id": "0a300e6a69fc94981fabcbc5ba8a40852290ec593081acfaab9e29957824f3f1",
       "romtype": "UNOFFICIAL",
-      "size": 945337321,
-      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/21.0/lineage-21.0-20231226-UNOFFICIAL-chiron.zip",
+      "size": 948993437,
+      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/21.0/lineage-21.0-20240107-UNOFFICIAL-chiron.zip",
       "version": "21.0"
     }
   ]
