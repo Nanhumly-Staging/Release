@@ -1,277 +1,372 @@
 ====================
-     2024-03-06    
+     2024-04-01    
 ====================
 * build/make
-c3ac34fa7e build: Always use release-keys [Pranav Vashi]
+5b3862bbbf build: Always use release-keys [Pranav Vashi]
 
 * frameworks/av
-0ab3ed7b94 av: support per-app volume [1/3] [cjybyjk]
+bd4ad0e650 av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-70a75876c3aa update current.txt [Nanhumly]
-44543630e95d PixelPropsUtils: Do not spoof ASI [aswin7469]
-9da77598c769 PixelPropsUtils: Allow devices to opt out gms/gapps [Pranav Vashi]
-c0706350bf44 base: Add support for strict standby policy [LibXZR]
-bc2120e3590d FaceSense: Vibrate on successful authentication [Adithya R]
-a85336e6aeb4 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-48faf21a2223 ParanoidSense: Adapt to Android 14 QPR1 [someone5678]
-59136b151989 SystemUI: FaceUnlock: Allow to overlay FaceUnlockImageView bottom margin [Fabian Leutenegger]
-7d6b325a33e3 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-342a98f7ab38 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-208362c4754c KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-2fdf6ac0adf5 WalletActivity: Don't explicity request face auth [jhenrique09]
-6dd7c0f45e60 SystemUI: Reset face auth on occluding app when authenticated [jhenrique09]
-d1619e7d45c2 SystemUI: use simple check for isFaceDisabled [Ali B]
-280f506d2b9a base: Initial SenseProvider for FaceSense service [Chris Crump]
-5ee224837291 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-d3d7d592eab4 base: Reset props for status bar lyric [1/2] [cjybyjk]
-c20b22393ba7 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-c348876ac20a SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-0b090ca3476e base: Add status bar lyric for Android 14 [cjybyjk]
-c98f29360c2b Add Extra proto [Nanhumly]
-1588853b6e38 base: make per-app work with multi audio focus [El Dainosor]
-523f725d2e2f SystemUI: Update App volume icon [yukiscape]
-1661fbd33778 base: support per-app volume [2/3] [cjybyjk]
-762a1c78ed1c SystemUI: make QS footer rounded (#910) [awakened]
-8e0826306142 SystemUI: BatteryStatusChip: Always use dark text [Kazuki Hashimoto]
-148a73fd3b1d SystemUI: Apply surface color to brightness icons [Harsh Pal]
-4ec8cb096b99 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-53035797a834 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-d560730d5370 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-6468ae0ade3d SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-02a3b32d86e5 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-1abb204879b2 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-3f4f0022ac8a SystemUI: Calculate paged QS tiles height properly [Adithya R]
-ce4a20e9e9d7 SystemUI: Fix QS header clock color [Danny Baumann]
-70fb8a16e766 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-0e6df1af9014 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-a1087b78a80a SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-d4fe73b825bb SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-d768758313df SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-262de8bc9383 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-af374b68fea1 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-a7249965c5fe Revert "Make QS always use dark theme colors" [Danny Lin]
+2a68ea4a103b BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+0d086d936ada base: Add support for strict standby policy [LibXZR]
+b44f544b1f6f SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+1d3efc4f4915 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+43b7c90269d1 base: Initial SenseProvider for FaceSense service [Chris Crump]
+c525e960a243 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+7d90f872c4c1 base: Reset props for status bar lyric [1/2] [cjybyjk]
+6f224755bc6c Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+869f830b74e4 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+b4de72936891 base: Add status bar lyric for Android 14 [cjybyjk]
+d84349aeb95c Add Extra proto [Nanhumly]
+df246470096c fixup! base: support per-app volume [2/3] [someone5678]
+0feb118b03fe base: make per-app work with multi audio focus [El Dainosor]
+bf471d785838 SystemUI: Update App volume icon [yukiscape]
+283f1dbb5a40 base: support per-app volume [2/3] [cjybyjk]
+5d512944f119 SystemUI: make QS footer rounded (#910) [awakened]
+f174daaf2c55 SystemUI: Apply surface color to brightness icons [Harsh Pal]
+27dcfd13d2ca SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+b72aeaa18181 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+cdfafa7b8874 SystemUI: Switch notification background to monet on heads up [DillerOFire]
+7f50f2545666 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+3e85a9c6fb59 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+1d3ea3df5fb5 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+d0dd22f167d0 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+e63a361259d1 SystemUI: Fix QS header clock color [Danny Baumann]
+13645f4dde7a SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+509dc92783e5 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+baf52de7388d SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+18a28fbfd285 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+1327a132ee5e SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+091da96407cc SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+7cf40b4a491c Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+0fcd50b4b91c Revert "Make QS always use dark theme colors" [Danny Lin]
+
+* hardware/qcom-caf/sm8450/audio/pal
+8514a7eb Revert "pal: validate stream handle in pal server wrapper" [Michael Bestas]
 
 * lineage-sdk
-7a468680 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+1c3cc343 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 
-* lineage/hudson
-9de4e6e sleep well, sweet prince [Nolen Johnson]
+* lineage/mirror
+9946a84 Updated to 31-Mar-2024 17:15 UTC [Kevin F. Haggerty]
 
-* lineage/website
-6b249d8 Sunsetting LineageOS 18.1 [Nolen Johnson]
-
-* packages/apps/LineageParts
-57dea85 ChargingControl: Respect 24 hour locales in TimePicker [Georg Veichtlbauer]
+* packages/apps/Jelly
+2ebff33 Jelly: Allow user added certificates to be used [Alexander Koskovich]
+04ca7ef Jelly: Handle SSL certificate errors [Alexander Koskovich]
 
 * packages/apps/Settings
-fef2c2e6d14 Settings: Add model spoof support [Nanhumly]
-a797bcc5133 Settings: Add strict standby policy [LibXZR]
-c7727e9c8ab Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-55f7f7b8b58 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-e2b52462668 Settings: Add status bar lyric [Kujou Yuko]
-3504b13c70c Settings: Updated translations [Nanhumly]
-763387bbde1 Settings: support per-app volume [3/3] [cjybyjk]
-4750a799f91 Settings: Make all user apps cloneable [someone5678]
-1e2595d7093 Settings: Enable Cloned Apps by default [AmeChanRain]
+2f9417f1f64 Settings: Add model spoof support [Nanhumly]
+9144e4e8b07 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+57d9584f525 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+693458d3bd5 Settings: Add status bar lyric [Kujou Yuko]
+adc8530d235 Settings: support per-app volume [3/3] [cjybyjk]
+a9dbd622c99 Settings: Make all user apps cloneable [someone5678]
+c129d2248e9 Settings: Enable Cloned Apps by default [AmeChanRain]
 
 * vendor/lineage
-e5e443f3 vendor: Guard Face Unlock support [someone5678]
-abc0928b config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+268510ea vendor: Guard Face Unlock support [someone5678]
+0ce5616a config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+* device/xiaomi/sagit
+7b23b5b sagit: Switch to new AIDL IR service [Devin Moore]
 
 ====================
-     2024-03-05    
+     2024-03-31    
 ====================
-* lineage/hudson
-3bc3a2b Regenerate device dependency mappings [LineageOS Infra]
+* bootable/recovery
+a08daf08 recovery_ui: Respect margin_height while drawing battery capacity status [Chippa-a]
 
-* lineage/mirror
-a416f34 Updated aosp-minimal to 05-Mar-2024 13:01 UTC [Tim Schumacher]
-6d73ac1 Updated aosp-minimal to 05-Mar-2024 00:16 UTC [Tim Schumacher]
-
-* lineage/wiki
-d59c02a8 wiki: Drop LineageOS 18.1 [Nolen Johnson]
+* packages/apps/Dialer
+9cf5ef233 Dialer: convert VoicemailSecretCodeActivity to androidx [Joel Beckmeyer]
 
 * vendor/lineage
-f3ee8668 bacon: Depend on $(DEFAULT_GOAL) [LuK1337]
+f75e1195 overlay: several Dialer VVM config fixes [Joel Beckmeyer]
 
 ====================
-     2024-03-04    
+     2024-03-30    
 ====================
-* external/chromium-webview/patches
-864d156 Revert "Set android.ext.adservices as optionally used lib" [Chirayu Desai]
-d984db6 Begone, adservices [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm
-05a960b Rebuild arm Chromium Webview to remove adservices [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-417dec3 Rebuild arm64 Chromium Webview to remove adservices [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-5e4902f Rebuild x86 Chromium Webview to remove adservices [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-fb4141f Rebuild x86_64 Chromium Webview to remove adservices [Kevin F. Haggerty]
-
-* lineage/mirror
-a31a55e Updated to 04-Mar-2024 13:01 UTC [Tim Schumacher]
-
-* vendor/extra
-9ccd849 extra: New gapps [Nanhumly]
-
-====================
-     2024-03-03    
-====================
-* lineage/mirror
-f691b05 Updated to 03-Mar-2024 13:01 UTC [Tim Schumacher]
-
-====================
-     2024-03-02    
-====================
-* external/chromium-webview/patches
-b38c6ca Set android.ext.adservices as optionally used lib [Chirayu Desai]
-
-* frameworks/base
-1aa3f624c408 Fix unknown sources app install confirmation [Tommy Webb]
-
-* hardware/qcom-caf/sdm845/audio
-6584f9dca1 audio_amplifier: Change the enable amplifier function location [Luofan Chen]
-1bdcf072f4 hal: Support the audio amplifier hook [Daniel Hillenbrand]
-bfe4e281be hal: Use correct mixer element size when setting channel map [Ivan Vecera]
-
-* lineage/wiki
-36f4ed8f Revert "wiki: Rollback rosemary 20->21 changes temporarily" [Matsvei Niaverau]
-00c27031 wiki: Fix broken links on logcat page [razorloves]
-84617db0 devices: Ship caprip again, but on 21 [Michael Bestas]
-459c6710 wiki: Stop saying "Autogenerated" [Nolen Johnson]
-
-* packages/apps/Aperture
-efed05d Aperture: Use smooth zoom for logical camera switch button [Sebastiano Barezzi]
-fb2fb35 Aperture: QrImageAnalyzer: Fix views interaction on background thread [Sebastiano Barezzi]
-e90283e Aperture: Reset zoom ratio on current cam click [Luca Stefani]
-
-* packages/apps/Glimpse
-e5d3f8f Glimpse: Enable scrollbar for bottom sheet horizontal scroll view [LuK1337]
-
-* packages/apps/Settings
-d60c7eb8e42 Handle mobile data on internet page during setup [Alexander Koskovich]
-
-* packages/apps/SetupWizard
-112f926 fixup! Remove unused colors [razorloves]
-2b605d1 welcome: Use a separate string for work profile start [Chirayu Desai]
-db86c22 Remove unused View [Michael Bestas]
-b69c30c Remove unused colors [Michael Bestas]
-f3d2943 Remove unused import [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-5bdfc282fa60 fs: verity: Match current keyring_alloc function signature [Bruno Martins]
-e37ecf81780d fs: verity: Fix sched header include [Bruno Martins]
-607bf1d535d5 BACKPORT: fsverity: don't drop pagecache at end of FS_IOC_ENABLE_VERITY [Eric Biggers]
-42b79baf76d3 UPSTREAM: fsverity: Remove WQ_UNBOUND from fsverity read workqueue [Nathan Huckleberry]
-66eb03990f07 fs-verity: fix signed integer overflow with i_size near S64_MAX [Eric Biggers]
-ee7a8ec75701 fs-verity: remove unnecessary extern keywords [Eric Biggers]
-8e70fcda31e7 fs-verity: fix all kerneldoc warnings [Eric Biggers]
-dc41e63fd6fd fs-verity: use u64_to_user_ptr() [Eric Biggers]
-f14631c8d53f fs-verity: implement readahead for FS_IOC_ENABLE_VERITY [Eric Biggers]
-2a7bfb6977aa ext4: add basic fs-verity support [Eric Biggers]
-cbabf93ad668 fs-verity: support builtin file signatures [Eric Biggers]
-cdd90e73b973 fs-verity: add SHA-512 support [Eric Biggers]
-2f518952e9b7 fs-verity: implement FS_IOC_MEASURE_VERITY ioctl [Eric Biggers]
-1a746f3d36b0 fs-verity: implement FS_IOC_ENABLE_VERITY ioctl [Eric Biggers]
-0a05151b819c fs-verity: add data verification hooks for ->readpages() [Eric Biggers]
-e84e7bd589e4 fs-verity: add the hook for file ->setattr() [Eric Biggers]
-932fe90ae539 fs-verity: add the hook for file ->open() [Eric Biggers]
-76cce8ce439b fs-verity: add inode and superblock fields [Eric Biggers]
-3c611cf98a20 fs-verity: add Kconfig and the helper functions for hashing [Eric Biggers]
-fb1b6fd2934d fs: uapi: define verity bit for FS_IOC_GETFLAGS [Eric Biggers]
-a1ecded3bc57 fs-verity: add UAPI header [Eric Biggers]
-4e2384d7e175 fs-verity: add MAINTAINERS file entry [Eric Biggers]
-1f4cdf32ce62 crypto: hash - Add helpers to return alg and driver names [Herbert Xu]
-19898d5f7755 crypto: hash - Add crypto_has_ahash helper [Herbert Xu]
-fa9b388606eb PKCS#7: Make trust determination dependent on contents of trust keyring [David Howells]
-3c2d049d279b KEYS: Generalise system_verify_data() to provide access to internal content [David Howells]
-a7958c09bd5d ext4: allow ext4_truncate() to return an error [Theodore Ts'o]
-151a0aee32fe ext4: add EXT4_JOURNAL_DATA_FL and EXT4_EXTENTS_FL to modifiable mask [Jan Kara]
-01e34b5dfc12 ext4: add FS_IOC_FSSETXATTR/FS_IOC_FSGETXATTR interface support [Li Xi]
-
-====================
-     2024-03-01    
-====================
-* external/chromium-webview/prebuilt/arm
-64ab072 Update Chromium Webview arm prebuilt to 122.0.6261.90 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-5892f41 Update Chromium Webview arm64 prebuilt to 122.0.6261.90 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-a97397a Update Chromium Webview x86 prebuilt to 122.0.6261.90 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-2bfbe2e Update Chromium Webview x86_64 prebuilt to 122.0.6261.90 [Kevin F. Haggerty]
-
-* lineage/scripts
-ec2a76a build-webview: Update default webview to 122.0.6261.90 [Kevin F. Haggerty]
-
-* lineage/wiki
-3daa1a29 wiki: Rollback rosemary 20->21 changes temporarily [Łukasz Patron]
-
-* packages/apps/Aperture
-5b6e869 Aperture: Use the new ZoomGestureDetector [Luca Stefani]
-9f443d6 Aperture: Import ZoomGestureDetector [Luca Stefani]
-e5ea46c Aperture: Reformat code [Sebastiano Barezzi]
-ea781be Aperture: Move camera manager to the view model [Sebastiano Barezzi]
-4831db5 Aperture: Extract overlay configuration into a new class [Sebastiano Barezzi]
-547cf2e Aperture: Move camera view model to .viewmodels [Sebastiano Barezzi]
-8894751 Aperture: Use nonNullablePropertyDelegate for screen rotation LiveData [Sebastiano Barezzi]
-e747a22 Aperture: Rework gallery button handling [Tommy Webb]
-3ddff76 Aperture: Initial captured media flow [Sebastiano Barezzi]
-d0a5228 Aperture: Bump gradle-generatebp to v1.7 [LuK1337]
-
-* packages/apps/Glimpse
-11e5d1f Glimpse: Bump gradle-generatebp to v1.7 [LuK1337]
+* build/make
+a9951bda95 Correct logic for obtaining the path to full recovery image [Ricky Cheung]
 
 * vendor/lineage
-fccfeff7 config: Fix build when WITH_SU is set [Michael Bestas]
+1b0fc0e0 fixup! kernel: Support copying modules to boot ramdisk [Aaron Kling]
 
 ====================
-     2024-02-29    
+     2024-03-29    
 ====================
-* external/chromium-webview/patches
-6dfd6e6 Update Chromium Webview to 122.0.6261.90 [Kevin F. Haggerty]
+* android
+1413de3 Track device/google_car [Nolen Johnson]
 
-* packages/apps/Aperture
-3c9a0c0 Aperture: Reformat code [Sebastiano Barezzi]
-958af00 Aperture: Update icons from Material Icons [Sebastiano Barezzi]
-78db13a Aperture: Implement screen flash [Sebastiano Barezzi]
-3cfe9a0 Aperture: Remove RED_EYE mentions [Sebastiano Barezzi]
-f3fbb59 Aperture: Use `onCaptureStarted()` for shutter sound and UI update [Sebastiano Barezzi]
+* device/qcom/sepolicy
+2a95cd0b Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
 
-* packages/apps/SetupWizard
-ab27e60 Don't disable mobile data, AOSP has props for this [Tom Pratt]
+* device/qcom/sepolicy-legacy-um
+7eabf65f Merge tag 'LA.UM.12.2.1.r1-02900-sdm660.0' into staging/lineage-21.0_merge-LA.UM.12.2.1.r1-02900-sdm660.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+0aead9436 Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+8c60f174a Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8550
+6c4e885fb Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/interfaces
+f34187dd9 Partial revert "Remove mapper from composer2.1 VTS" [Aaron Kling]
+
+* hardware/qcom-caf/sm8250/media
+b8532b472 Merge tag 'LA.UM.9.12.r1-18300-SMxx50.QSSI14.0' into staging/lineage-21.0_merge-LA.UM.9.12.r1-18300-SMxx50.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+f9a2a65c2e Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/agm
+f1c6ae5 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+7bd889e4 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+a5f3dd3ad Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/media
+157a3a89f Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/agm
+f7f6f77 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/pal
+306ddd3e Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+365c15076 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/dataipa
+673d1b3 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+863b6d7 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+4b32654 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* lineage/crowdin
+f731ae0 config: lineage-21.0: Add Car & Tv Settings [Michael Bestas]
+
+* lineage/mirror
+821b048 Updated aosp-minimal to 28-Mar-2024 13:01 UTC [Tim Schumacher]
+
+* packages/apps/Car/Settings
+32ff6ebc5 Settings: res: cm -> lineage [Michael Bestas]
 
 * packages/apps/TvSettings
-dc2ebff51 fixup! Move openInEditMode from onViewCreated to onResume [Aaron Kling]
-f08a15d83 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
-757522280 Add ethernet check to initial network setup [Andreas Sandblad]
+ae46b628a Settings: res: cm -> lineage [Michael Bestas]
 
-* vendor/lineage
-fc39d905 Disable mobiledata by default with sys prop [Tom Pratt]
+* vendor/qcom/opensource/commonsys-intf/display
+aec76aca Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/display
+7539335 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/fm
+1b8ec97 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/interfaces
+77b3a98 fixup! interfaces: Introduce vendor.qti.hardware.perf interfaces [Michael Bestas]
+dedf811 fixup! interfaces: Introduce vendor.qti.hardware.btconfigstore interfaces [Michael Bestas]
+b2e434f fixup! interfaces: Introduce vendor.qti.hardware.capabilityconfigstore@1.0 interface [Michael Bestas]
+23e41ef Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+737d94e Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
 
 * device/xiaomi/msm8998-common
-4425035 msm8998-common: media: Drop OMX.qcom.video.decoder.vp9 [CrisBal]
-efb0c45 msm8998-common: Sort blobs list [Nanhumly]
-acdbb4a msm8998-common: Update soter service from jasmine V11.0.28.0.QDIMIXM [Nanhumly]
-0eab63f msm8998-common: vndk: Only ship 64bit libstagefright_foundation [Nanhumly]
-3b66825 msm8998-common: overlay: Add MotoDolby to Pinner Service list [Nanhumly]
+0c78be66 msm8998-common: gps: Drop diag support [0ranko0P]
+
+====================
+     2024-03-28    
+====================
+* frameworks/base
+498f7414665b Settings: Always show package name in installed app details [Michael Bestas]
+5852c1bc690a Revert "Settings: Add package name to installed app details [2/2]" [Michael Bestas]
+8ba6015ec518 fixup! SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [Michael Bestas]
+
+* lineage/mirror
+7f1ab28 Updated aosp-minimal to 27-Mar-2024 13:01 UTC [Tim Schumacher]
+
+* packages/apps/Car/Settings
+f7fede7f2 One does not simply become a Developer [Chirayu Desai]
+da2817363 fixup! Hardcode default pattern size [Bruno Martins]
+
+* packages/apps/Settings
+3ffb1bf5d9b Revert "Settings: Add package name to installed app details [1/2]" [Michael Bestas]
+12793b21f22 Settings: Move adb root toggle and make it independent [Bruno Martins]
+6c31c6d8f74 Settings: Disable adb root if developer options are disabled [Bruno Martins]
+
+* packages/apps/TvSettings
+fb811d8d3 fixup! Settings: Implement ADB over network [Bruno Martins]
+ed2cd5aec Add support for Nvidia convertible USB port [Aaron Kling]
+
+* vendor/lineage
+5b8dd24b lineage: products: sdk_phone_x86_64 emulator - fix sdk_addon packaging [mse1969]
+
+* device/xiaomi/msm8998-common
+95f07dfe msm8998-common: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
+f1241f48 msm8998-common: Add QtiRadio 1.0 to manifest [Dhina17]
+eceeccd7 msm8998-common: Uprev vendor.qti.hardware.radio.qtiradio to 2.4 [TogoFire]
+fd7f5c0a msm8998-common: Update ImsRadio HAL to v1.7 [pengfeix]
+
+====================
+     2024-03-27    
+====================
+* frameworks/av
+5f431141f6 libcameraservice: Use the correct vendor tag id type on filterParameters [danielml]
+
+* frameworks/base
+6552d533a96f Automatic translation import [LineageOS Infra]
+e034bcd277cd SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [LuK1337]
+56d09f61b6ec fixup! SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Anay Wadhera]
+
+* frameworks/native
+238a5b5296 input: Bring back PointerProperties::copyFrom() [Edwin Moquete]
+
+* lineage-sdk
+0ab2a0be Automatic translation import [LineageOS Infra]
+
+* packages/apps/Aperture
+e9c3ee5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+218ddfa Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+9fba9349c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+ee1ffb928 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+964525a8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+b0509477 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+83f67b7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+5be77ba Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+7c0f6c4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+c77a9b2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+7cb2b85 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+5e67c04 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+3d4f9484f65 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+10343a5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+d59b43fd97 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+4345964ff Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+4a731c2 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+2a49cb7 Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+75b2afaa repopick: Require python3 [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+27385f6 Automatic translation import [LineageOS Infra]
+
+====================
+     2024-03-26    
+====================
+* build/make
+9493e54ac7 releasetools: Resolve symlinks in IsEntryOtaPackage() [LuK1337]
+701d287667 fixup! build: Add phony package to build enforce RRO packages [Yumi Yukimura]
+
+* build/soong
+743a21952 Support multiple sources for prebuilt_etc [Thiébaud Weksteen]
+
+* device/lineage/atv
+3d3e87e Copy Steam Controller layouts for ble and wireless [Aaron Kling]
+2bf7688 Revert "Add steam controller key layouts" [Aaron Kling]
+
+* external/bash
+e394fc5 mk->bp [LuK1337]
+
+* external/htop
+4490088 mk->bp [LuK1337]
+
+* external/libncurses
+423e8c9 mk->bp [LuK1337]
+
+* external/nano
+d18ad76e mk->bp [LuK1337]
+
+* external/vim
+6c12c2669 mk->bp [LuK1337]
+
+* frameworks/base
+fabbde227292 fixup! SystemUI: Implement hide gestural navigation hint bar [Dhina17]
+
+* lineage/crowdin
+59213c2 config: lineage-21.0_aosp: Update for QPR2 [Michael Bestas]
+
+* packages/apps/Settings
+1e38076b4fb fixup! Settings: Show single-touch wakeup setting on rear & front fps devices [Michael Bestas]
+ba302d75a85 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+
+* vendor/crowdin
+764cc98 Move translations for QPR2 [Michael Bestas]
+
+* vendor/lineage
+105b86ee lineage: products: sdk_phone_x86_64 emulator - restore partition sizes [mse1969]
+8e362b5b overlay: tv: Add night mode for package installer [Aaron Kling]
+
+* device/xiaomi/msm8998-common
+0ffc162b msm8998-common: init.qcom.rc: create /data/vendor/tzstorage needed by SFS listener service [Zhen Kong]
+14ab6fd8 msm8998-common: Update Alarm blobs from Fairphone 3 [Nanhumly]
+4918b060 msm8998-common: Update DRM (TUI) blobs from Fairphone 3 [Nanhumly]
+d5993140 msm8998-common: Update DRM and SEE blobs from Fairphone 3 [Nanhumly]
+47f07fe2 msm8998-common: Kang libqmiservices from FairPhone 3 [Nanhumly]
+89be0111 msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
+57c4c86c msm8998-common: sepolicy: Lable persist.vendor.iwlan.logging.logcat [xiaoleGun]
+c57fb7f2 msm8998-common: Update DPM blobs from FairPhone 3 [Nanhumly]
+54e3bb0b msm8998-common: Update CNE blobs from FairPhone 3 [Nanhumly]
+cfdb5468 msm8998-common: sepolicy: Label persist.vendor.bt.address prop [ZeeLog]
+536e514a msm8998-common: Update ANT+ and Bluetooth blobs from FairPhone 3 [Nanhumly]
+d86e453f msm8998-common: Update portion IMS VT blobs from FairPhone 3 [Nanhumly]
+fe976514 fixup! msm8998-common: Update Time services blobs from FairPhone 3 [Nanhumly]
+9b08aeb3 msm8998-common: Update sha1sum of libril-qc-hal-qmi [Nanhumly]
+b279ffd2 msm8998-common: Introduce radio config wrapper [Yumi Yukimura]
 
 * vendor/xiaomi/msm8998-common
-a4fbb0d msm8998-common: Update soter service from jasmine V11.0.28.0.QDIMIXM [Nanhumly]
-d5ff2f2 msm8998-common: override AudioFX/MusicFX with MotoDolby [Marco Zanin]
-f91e643 msm8998-common: Patch libdlbdsservice.so to load libstagefright_foundation-v33.so [Marco Zanin]
-2406b94 msm8998-common: Import dolby atmos [trpsl]
-
-* kernel/xiaomi/msm8998
-3c9c29f248c6 Merge pull request #9 from sticpaper/lineage-21.0 [Eden Tommy]
-7b27ae3f7d46 dts: xiaomi: msm8998: Build only (chiron/sagit)-msm8998-v2.1-mtp.dtb [stic-server-open]
+5628f62 msm8998-common: Update Alarm blobs from Fairphone 3 [Nanhumly]
+743c68b msm8998-common: Update DRM (TUI) blobs from Fairphone 3 [Nanhumly]
+46e1167 msm8998-common: Update DRM and SEE blobs from Fairphone 3 [Nanhumly]
+d28e090 msm8998-common: Kang libqmiservices from FairPhone 3 [Nanhumly]
+bdaa649 msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
+12f5483 msm8998-common: Update DPM blobs from FairPhone 3 [Nanhumly]
+8b4f8e2 msm8998-common: Update CNE blobs from FairPhone 3 [Nanhumly]
+f182f55 msm8998-common: Update ANT+ and Bluetooth blobs from FairPhone 3 [Nanhumly]
+a25d542 msm8998-common: Update portion IMS VT blobs from FairPhone 3 [Nanhumly]
+ae6ae30 msm8998-common: Patch libril-qc-hal-qmi to use radio config wrapper [Yumi Yukimura]
 
