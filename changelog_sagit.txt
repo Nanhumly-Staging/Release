@@ -1,52 +1,90 @@
 ====================
-     2024-04-01    
+     2024-04-02    
 ====================
 * build/make
-5b3862bbbf build: Always use release-keys [Pranav Vashi]
+9ab84fb699 build: Always use release-keys [Pranav Vashi]
+
+* device/qcom/sepolicy_vndr/legacy-um
+a1365fb8d lahaina: dos2unix umdservice.te [Michael Bestas]
 
 * frameworks/av
-bd4ad0e650 av: support per-app volume [1/3] [cjybyjk]
+b96ce5d8a7 audio: Remove UID check from per-app volume commands [Adithya R]
+fa83f567de av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-2a68ea4a103b BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-0d086d936ada base: Add support for strict standby policy [LibXZR]
-b44f544b1f6f SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-1d3efc4f4915 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-43b7c90269d1 base: Initial SenseProvider for FaceSense service [Chris Crump]
-c525e960a243 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-7d90f872c4c1 base: Reset props for status bar lyric [1/2] [cjybyjk]
-6f224755bc6c Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-869f830b74e4 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-b4de72936891 base: Add status bar lyric for Android 14 [cjybyjk]
-d84349aeb95c Add Extra proto [Nanhumly]
-df246470096c fixup! base: support per-app volume [2/3] [someone5678]
-0feb118b03fe base: make per-app work with multi audio focus [El Dainosor]
-bf471d785838 SystemUI: Update App volume icon [yukiscape]
-283f1dbb5a40 base: support per-app volume [2/3] [cjybyjk]
-5d512944f119 SystemUI: make QS footer rounded (#910) [awakened]
-f174daaf2c55 SystemUI: Apply surface color to brightness icons [Harsh Pal]
-27dcfd13d2ca SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-b72aeaa18181 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-cdfafa7b8874 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-7f50f2545666 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-3e85a9c6fb59 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-1d3ea3df5fb5 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-d0dd22f167d0 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-e63a361259d1 SystemUI: Fix QS header clock color [Danny Baumann]
-13645f4dde7a SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-509dc92783e5 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-baf52de7388d SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-18a28fbfd285 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-1327a132ee5e SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-091da96407cc SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-7cf40b4a491c Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-0fcd50b4b91c Revert "Make QS always use dark theme colors" [Danny Lin]
-
-* hardware/qcom-caf/sm8450/audio/pal
-8514a7eb Revert "pal: validate stream handle in pal server wrapper" [Michael Bestas]
+278980fd0bc3 base: Add support for strict standby policy [LibXZR]
+7de16f5a3474 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+5f25caba6e38 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+dd3b93efc936 base: Initial SenseProvider for FaceSense service [Chris Crump]
+0646d2cee967 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+2690408b12f9 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+718eed03752d base: Reset props for status bar lyric [1/2] [cjybyjk]
+24159d613d1e Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+51d24b797b7d SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+cb5f0109f82f base: Add status bar lyric for Android 14 [cjybyjk]
+3cd91f28db29 Add Extra proto [Nanhumly]
+70de6eb1790a fixup! base: support per-app volume [2/3] [someone5678]
+c40a9f6e75aa base: make per-app work with multi audio focus [El Dainosor]
+ba9edd362733 SystemUI: Update App volume icon [yukiscape]
+97989f647933 base: support per-app volume [2/3] [cjybyjk]
+af1710dbe7f3 SystemUI: make QS footer rounded (#910) [awakened]
+06b7951c9dbc SystemUI: Apply surface color to brightness icons [Harsh Pal]
+76c90ae88d4b SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+d3816d070402 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+67480538722f SystemUI: Switch notification background to monet on heads up [DillerOFire]
+794d389f07db SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+e81ad4fbddf3 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+00a12093750d SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+d2e97f88c49c SystemUI: Calculate paged QS tiles height properly [Adithya R]
+eb085ffb63a2 SystemUI: Fix QS header clock color [Danny Baumann]
+c7a3b500ab0e SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+bdcd35ac5842 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+a59a7aacac5d SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+23cbc89ec6e2 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+a438935f1382 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+0e8dca77d786 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+fd55562840f8 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+e791175516ee Revert "Make QS always use dark theme colors" [Danny Lin]
 
 * lineage-sdk
-1c3cc343 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+eb63704d sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* lineage/crowdin
+cf2004c config: Add recent Dialer string additions [Michael W]
+
+* packages/apps/Car/Settings
+f1c4d355c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+711503d06 fixup! Dialer: convert VoicemailSecretCodeActivity to androidx [Michael W]
+
+* packages/apps/Jelly
+be8cc16 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+38045c7b811 Settings: Add model spoof support [Nanhumly]
+03808562451 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+f34a5e64c46 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+26501b8452a Settings: Add status bar lyric [Kujou Yuko]
+2a681d6a4f1 Settings: support per-app volume [3/3] [cjybyjk]
+5fda1358fff Settings: Make all user apps cloneable [someone5678]
+1f2ee5adc29 Settings: Enable Cloned Apps by default [AmeChanRain]
+
+* packages/apps/TvSettings
+0481fc3ee Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+295a346a vendor: Guard Face Unlock support [someone5678]
+b75cb0a7 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+* device/xiaomi/msm8998-common
+e0d31b05 Revert "msm8998-common: sepolicy: Allow rild to communicate with qtidataservices" [Nanhumly]
+
+====================
+     2024-04-01    
+====================
+* hardware/qcom-caf/sm8450/audio/pal
+8514a7eb Revert "pal: validate stream handle in pal server wrapper" [Michael Bestas]
 
 * lineage/mirror
 9946a84 Updated to 31-Mar-2024 17:15 UTC [Kevin F. Haggerty]
@@ -55,18 +93,8 @@ baf52de7388d SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
 2ebff33 Jelly: Allow user added certificates to be used [Alexander Koskovich]
 04ca7ef Jelly: Handle SSL certificate errors [Alexander Koskovich]
 
-* packages/apps/Settings
-2f9417f1f64 Settings: Add model spoof support [Nanhumly]
-9144e4e8b07 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-57d9584f525 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-693458d3bd5 Settings: Add status bar lyric [Kujou Yuko]
-adc8530d235 Settings: support per-app volume [3/3] [cjybyjk]
-a9dbd622c99 Settings: Make all user apps cloneable [someone5678]
-c129d2248e9 Settings: Enable Cloned Apps by default [AmeChanRain]
-
 * vendor/lineage
-268510ea vendor: Guard Face Unlock support [someone5678]
-0ce5616a config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+9a445cdf vars: Update qcom tags [Michael Bestas]
 
 * device/xiaomi/sagit
 7b23b5b sagit: Switch to new AIDL IR service [Devin Moore]
@@ -76,6 +104,9 @@ c129d2248e9 Settings: Enable Cloned Apps by default [AmeChanRain]
 ====================
 * bootable/recovery
 a08daf08 recovery_ui: Respect margin_height while drawing battery capacity status [Chippa-a]
+
+* device/qcom/sepolicy-legacy-um
+d3dc18a4 legacy: Allow communication between rild and data module [Bruno Martins]
 
 * packages/apps/Dialer
 9cf5ef233 Dialer: convert VoicemailSecretCodeActivity to androidx [Joel Beckmeyer]
@@ -294,79 +325,4 @@ d59b43fd97 Automatic translation import [LineageOS Infra]
 
 * vendor/qcom/opensource/commonsys/fm
 27385f6 Automatic translation import [LineageOS Infra]
-
-====================
-     2024-03-26    
-====================
-* build/make
-9493e54ac7 releasetools: Resolve symlinks in IsEntryOtaPackage() [LuK1337]
-701d287667 fixup! build: Add phony package to build enforce RRO packages [Yumi Yukimura]
-
-* build/soong
-743a21952 Support multiple sources for prebuilt_etc [Thiébaud Weksteen]
-
-* device/lineage/atv
-3d3e87e Copy Steam Controller layouts for ble and wireless [Aaron Kling]
-2bf7688 Revert "Add steam controller key layouts" [Aaron Kling]
-
-* external/bash
-e394fc5 mk->bp [LuK1337]
-
-* external/htop
-4490088 mk->bp [LuK1337]
-
-* external/libncurses
-423e8c9 mk->bp [LuK1337]
-
-* external/nano
-d18ad76e mk->bp [LuK1337]
-
-* external/vim
-6c12c2669 mk->bp [LuK1337]
-
-* frameworks/base
-fabbde227292 fixup! SystemUI: Implement hide gestural navigation hint bar [Dhina17]
-
-* lineage/crowdin
-59213c2 config: lineage-21.0_aosp: Update for QPR2 [Michael Bestas]
-
-* packages/apps/Settings
-1e38076b4fb fixup! Settings: Show single-touch wakeup setting on rear & front fps devices [Michael Bestas]
-ba302d75a85 fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas]
-
-* vendor/crowdin
-764cc98 Move translations for QPR2 [Michael Bestas]
-
-* vendor/lineage
-105b86ee lineage: products: sdk_phone_x86_64 emulator - restore partition sizes [mse1969]
-8e362b5b overlay: tv: Add night mode for package installer [Aaron Kling]
-
-* device/xiaomi/msm8998-common
-0ffc162b msm8998-common: init.qcom.rc: create /data/vendor/tzstorage needed by SFS listener service [Zhen Kong]
-14ab6fd8 msm8998-common: Update Alarm blobs from Fairphone 3 [Nanhumly]
-4918b060 msm8998-common: Update DRM (TUI) blobs from Fairphone 3 [Nanhumly]
-d5993140 msm8998-common: Update DRM and SEE blobs from Fairphone 3 [Nanhumly]
-47f07fe2 msm8998-common: Kang libqmiservices from FairPhone 3 [Nanhumly]
-89be0111 msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-57c4c86c msm8998-common: sepolicy: Lable persist.vendor.iwlan.logging.logcat [xiaoleGun]
-c57fb7f2 msm8998-common: Update DPM blobs from FairPhone 3 [Nanhumly]
-54e3bb0b msm8998-common: Update CNE blobs from FairPhone 3 [Nanhumly]
-cfdb5468 msm8998-common: sepolicy: Label persist.vendor.bt.address prop [ZeeLog]
-536e514a msm8998-common: Update ANT+ and Bluetooth blobs from FairPhone 3 [Nanhumly]
-d86e453f msm8998-common: Update portion IMS VT blobs from FairPhone 3 [Nanhumly]
-fe976514 fixup! msm8998-common: Update Time services blobs from FairPhone 3 [Nanhumly]
-9b08aeb3 msm8998-common: Update sha1sum of libril-qc-hal-qmi [Nanhumly]
-b279ffd2 msm8998-common: Introduce radio config wrapper [Yumi Yukimura]
-
-* vendor/xiaomi/msm8998-common
-5628f62 msm8998-common: Update Alarm blobs from Fairphone 3 [Nanhumly]
-743c68b msm8998-common: Update DRM (TUI) blobs from Fairphone 3 [Nanhumly]
-46e1167 msm8998-common: Update DRM and SEE blobs from Fairphone 3 [Nanhumly]
-d28e090 msm8998-common: Kang libqmiservices from FairPhone 3 [Nanhumly]
-bdaa649 msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-12f5483 msm8998-common: Update DPM blobs from FairPhone 3 [Nanhumly]
-8b4f8e2 msm8998-common: Update CNE blobs from FairPhone 3 [Nanhumly]
-f182f55 msm8998-common: Update ANT+ and Bluetooth blobs from FairPhone 3 [Nanhumly]
-a25d542 msm8998-common: Update portion IMS VT blobs from FairPhone 3 [Nanhumly]
-ae6ae30 msm8998-common: Patch libril-qc-hal-qmi to use radio config wrapper [Yumi Yukimura]
 
