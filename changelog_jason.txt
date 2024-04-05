@@ -1,304 +1,367 @@
 ====================
-     2024-02-23    
+     2024-04-05    
 ====================
 * build/make
-952ee9f384 envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32]
-d66a95eb44 build: Always use release-keys [Pranav Vashi]
+9d2eb2fcf6 envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32]
+08dbeb847b build: Always use release-keys [Pranav Vashi]
 
 * frameworks/av
-62e6b20b8d av: support per-app volume [1/3] [cjybyjk]
+f6c88aab8f audio: Remove UID check from per-app volume commands [Adithya R]
+1f0f066fe7 av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-f1f9746371bc PixelPropsUtils: Do not spoof ASI [aswin7469]
-00d0fb20a30a PixelPropsUtils: Allow devices to opt out gms/gapps [Pranav Vashi]
-37b7ff805b75 base: Add support for strict standby policy [LibXZR]
-65f69e29882c FaceSense: Vibrate on successful authentication [Adithya R]
-34ccd906d2ec SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-abaa400065ba ParanoidSense: Adapt to Android 14 QPR1 [someone5678]
-8b4c83018e57 SystemUI: FaceUnlock: Allow to overlay FaceUnlockImageView bottom margin [Fabian Leutenegger]
-a4ed5ad0e1a5 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-f9fc4654af69 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-74990df2189c KeyguardBouncer: Don't delay showing if face auth running [jhenrique09]
-f13ff5e818b0 WalletActivity: Don't explicity request face auth [jhenrique09]
-c017e35cf31a SystemUI: Reset face auth on occluding app when authenticated [jhenrique09]
-2776ff43bac0 SystemUI: use simple check for isFaceDisabled [Ali B]
-97a886d915b1 base: Initial SenseProvider for FaceSense service [Chris Crump]
-f1d68d43a720 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-ba1ee89f9e92 base: Reset props for status bar lyric [1/2] [cjybyjk]
-5250a3168d24 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-be26366aa4d1 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-713a308ef736 base: Add status bar lyric for Android 14 [cjybyjk]
-7d7ff214c0a6 Add Extra proto [Nanhumly]
-52fbc11ccf35 base: make per-app work with multi audio focus [El Dainosor]
-82e426165c9f SystemUI: Update App volume icon [yukiscape]
-e09d1c78d104 base: support per-app volume [2/3] [cjybyjk]
-20100d6a5853 SystemUI: make QS footer rounded (#910) [awakened]
-829fb6a4ef2e SystemUI: BatteryStatusChip: Always use dark text [Kazuki Hashimoto]
-42e59db99923 SystemUI: Apply surface color to brightness icons [Harsh Pal]
-878deefb1776 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-9a93c9333874 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-58f7b29344f7 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-87d6acd4dfeb SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-328e31f34592 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-336c4dbd76c0 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-99a1de272ed4 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-21c19fc71fb6 SystemUI: Fix QS header clock color [Danny Baumann]
-34cae4c478ef SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-994fc7551de8 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-46b546c4f41f SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-be3ee5838594 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-2dc5a28938f1 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-703128a97c5d SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-f847072f29f5 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-19619a9aa857 Revert "Make QS always use dark theme colors" [Danny Lin]
+2974990b90e4 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
+377702f6b501 SystemUI: enable fading squiggle animation of qs media player [nift4]
+cd48bca92cc5 SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
+65857072fc19 SystemUI: Enable session-based media actions for all apps [Adithya R]
+d2585c065a95 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+897b2257892a SystemUI: Use new privacy indicators for location [Danny Lin]
+1d994d119e6d Use brightness icon matching with slider redesign [Pranav Vashi]
+7a49594948bc base: Add support for strict standby policy [LibXZR]
+18c6d1db9475 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+bf1a9a35edc7 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+23aabb300707 base: Initial SenseProvider for FaceSense service [Chris Crump]
+58711df246d9 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+99f89746bd50 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+b3bcc9c295c3 base: Reset props for status bar lyric [1/2] [cjybyjk]
+2879809b7ae5 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+f4f7daf59893 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+79d2a716cb8f base: Add status bar lyric for Android 14 [cjybyjk]
+527a89240556 Add Extra proto [Nanhumly]
+2faa82e5e573 fixup! base: support per-app volume [2/3] [someone5678]
+c36f3011a571 base: make per-app work with multi audio focus [El Dainosor]
+d269b8156b2f SystemUI: Update App volume icon [yukiscape]
+524e4072fb0d base: support per-app volume [2/3] [cjybyjk]
+c166ea40c79a SystemUI: make QS footer rounded (#910) [awakened]
+9efd5ca05622 SystemUI: Apply surface color to brightness icons [Harsh Pal]
+ea4cd6e0e4b6 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+37e16cb4ed68 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+ff72a6a23ff7 SystemUI: Switch notification background to monet on heads up [DillerOFire]
+6f834e2484cd SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+5b9aef160208 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+31589db72a64 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+17d999e81ba4 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+8f312b7f9ac6 SystemUI: Fix QS header clock color [Danny Baumann]
+eb72f5ebf4a4 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+cb7903a98f4e SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+af3b6a523e72 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+32f54ba5f8d1 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+8d2e83b7a4fe SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+bf935d20d6f8 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+164244514ae9 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+0880172b9cba Revert "Make QS always use dark theme colors" [Danny Lin]
 
 * lineage-sdk
-a6e285f5 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+6d04fbf0 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 
-* lineage/wiki
-4a9ee3a2 Out of the shadows [Paul Keith]
+* lineage/mirror
+99ce110 Updated aosp-minimal to 04-Apr-2024 12:02 UTC [Tim Schumacher]
 
 * packages/apps/Settings
-ea85b156a23 Settings: Add model spoof support [Nanhumly]
-39ddb530e76 Settings: Add strict standby policy [LibXZR]
-3bec9e663a1 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-ab7b3ebf450 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-5ab0edfc5a8 Settings: Add status bar lyric [Kujou Yuko]
-821aeb16679 Settings: Updated translations [Nanhumly]
-cc91f602e23 Settings: support per-app volume [3/3] [cjybyjk]
-9b61db63acb Settings: Make all user apps cloneable [someone5678]
-d4a17c1574a Settings: Enable Cloned Apps by default [AmeChanRain]
+30bc83b9f7b Settings: Add model spoof support [Nanhumly]
+c850df18651 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+6b9f5ad4c20 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+26c926f6428 Settings: Add status bar lyric [Kujou Yuko]
+98043ec7bde Settings: support per-app volume [3/3] [cjybyjk]
+a06076d31c0 Settings: Make all user apps cloneable [someone5678]
+ea7facb74e9 Settings: Enable Cloned Apps by default [AmeChanRain]
 
 * vendor/lineage
-f93df95f Revert "build: Provide qti_kernel_headers module" [Nanhumly]
-213258a0 vendor: Guard Face Unlock support [someone5678]
-8f3d01d5 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+472f5d81 vendor: Guard Face Unlock support [someone5678]
+535ef4c6 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
 
 * device/xiaomi/jason
-787d35fac jason: Build fingerprint extension interfaces from source [Arian]
-
-* vendor/xiaomi/jason
-ae98999 jason: Regen main blueprint [Michael Bestas]
-3bfba7e jason: Build fingerprint extension interfaces from source [Arian]
-
-* vendor/xiaomi/sdm660-common
-6b371cd sdm660-common: Regen main blueprint [Michael Bestas]
+10f30e87b jason: Update prebuilt kernel [Nanhumly]
+24434fab4 jason: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
+77aba921f jason: camera: Fix compilation for U QPR2 merge [Nanhumly]
 
 ====================
-     2024-02-22    
+     2024-04-04    
 ====================
+* android
+0ddac72 manifest: April 2024 Security update [Michael Bestas]
+
 * build/make
-b66a9f1230 Move AudioPackage14.mk inclusion to vendor/lineage [Michael Bestas]
+2638b6557f Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* frameworks/av
+c2809dba0d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 
 * frameworks/base
-4c7719d3a332 CEC: correct frameworks physicalAddress parsing [Thomas Makin]
-582ed2b25676 fixup! ScreenOffAnimation: Fix system animation disable check [LuK1337]
-278b7c9fb4c1 SystemUI: Allow enabling lockscreen rotation by default [Michael Bestas]
-
-* lineage-sdk
-36e14240 sdk: Allow enabling lockscreen rotation by default [Michael Bestas]
-691670d7 Revert "LineageSettingsProvider: Allow enabling lockscreen rotation by default" [Michael Bestas]
-
-* packages/apps/LineageParts
-fe87f3f LineageParts: Allow enabling lockscreen rotation by default [Michael Bestas]
-
-* packages/apps/Settings
-aaf2384f32d FingerprintSettings: Add proximity check awareness if supported [Bruno Martins]
-
-* vendor/lineage
-03b20d87 overlay: Update NTP server overlay for Chinese users [dantmnf]
-3e404517 config: Include AudioPackage14.mk [Michael Bestas]
-
-====================
-     2024-02-21    
-====================
-* lineage-sdk
-7241fa0b sdk: Introduce config_proximityCheckOnFpsUnlock [Bruno Martins]
-
-* lineage/wiki
-df18da7f devices: Promote nx651j to 21 [Cyborg2017]
-560e944a devices: Promote nx606j and nx619j to 21 [Cyborg2017]
-2621fb3b devices: Promote nx563j and nx609j to 21 [Cyborg2017]
-41656040 devices: troika/kane: Format on upgrade to 21 [Nolen Johnson]
-
-====================
-     2024-02-20    
-====================
-* lineage/hudson
-566cd57 hudson: Promote nx651j to 21 [Cyborg2017]
-e545886 now the entire mithorium family is on LineageOS 21 with kernel 4.19 \o/ [Yumi Yukimura]
-9c7e42c hudson: Promote nx606j and nx619j to 21 [Cyborg2017]
-
-* lineage/mirror
-b7288d1 Updated aosp-minimal to 19-Feb-2024 22:52 UTC [Tim Schumacher]
-677a056 mirror: Skip AOSP manifest revisions with no default.xml [Tim Schumacher]
-a843baa Update lineage-minimal to Mon Feb 19 09:01:43 PM UTC 2024 [Chirayu Desai]
-a42f1ad Add LFS flag to example repo init referencing the mirror [Kevin F. Haggerty]
-
-* lineage/wiki
-6b355930 wiki: devices: Mi439(pine): Ship it with 21 [Yumi Yukimura]
-73963625 wiki: Remove ugly spacing between steps in device update [LuK1337]
-c07379b3 wiki: Remove ugly spacing between steps in device upgrade [LuK1337]
-f114177a devices: Promote Samsung sm7125 and sm7325 devices to 21 [Simon1511]
-
-* packages/apps/TvSettings
-5fc4a13ef Add button to sleep device [Aaron Kling]
-
-====================
-     2024-02-19    
-====================
-* frameworks/base
-d3566f5fcac2 ScreenOffAnimation: Fix system animation disable check [Dhina17]
-
-* lineage/hudson
-613c6c9 hudson: Promote nx563j and nx609j to 21 [Cyborg2017]
-21d562c Alphabetize targets [Nolen Johnson]
-f1ea533 hudson: Promote nx611j to 21 [Cyborg2017]
-2d96a5a in a Samsung Galaxy far, far away [Simon1511]
-c5f530b Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-3cd95bf0 wiki: Escape quotes in `before_lineage_install_m1s1.md` [LuK1337]
-963f752f devices: husky: add the 1TB version [PiotrZPL]
-0143cf73 devices: fix battery type for shiba and husky [PiotrZPL]
-0a650b4c devices: m1s1: Cover upgrade cases in the before_lineage_install [Nolen Johnson]
-3b1eaf68 wiki: extract: Band-aid to make it work [Nolen Johnson]
-78e5bda1 devices: Correct salami's RAM specs [Bruno Martins]
-92e1b0ec devices: Promote nx611j to 21 [Cyborg2017]
-268e3772 wiki: Make salami use `fastboot flashing unlock` [LuK1337]
-7a60b163 devices: correct felix battery capacity [PiotrZPL]
-97c3b89e wiki: Add boot to salami `before_recovery_install` [LuK1337]
-
-* packages/apps/Aperture
-78aa151 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Etar
-44d8026a Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-b204814 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-3c66340 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-2112a66 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-3fe4f39 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-5d07407 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-d776005ad92 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-11e55ab Automatic translation import [LineageOS Infra]
-
-* packages/apps/Trebuchet
-2b51e6a8f7 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-c9eada5 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-2885b58 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-8aa05c0 Automatic translation import [LineageOS Infra]
-
-* vendor/lineage
-74db3872 bootanimation: Use 256 colors [Luca Stefani]
-
-* vendor/qcom/opensource/commonsys/fm
-95e0d41 Automatic translation import [LineageOS Infra]
-
-====================
-     2024-02-18    
-====================
-* frameworks/base
-98551756b602 fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Tommaso Fonda]
-2a75ed355ace fixup! SystemUI: Register content observer for clock position [Tommaso Fonda]
-34db116b2934 SystemUI: Fix the right clock's gravity [Luca Stefani]
-
-* lineage/mirror
-c499b2f Updated to 17-Feb-2024 20:09 UTC [Kevin F. Haggerty]
-bb55ceb Updated to 17-Feb-2024 19:25 UTC [Kevin F. Haggerty]
-
-* packages/apps/Aperture
-597ace1 Aperture: Set QR code component via RRO overlay [Luca Stefani]
-
-* packages/apps/Dialer
-7e2a340cf Dialer: Request BLUETOOTH_CONNECT [Michael W]
-d91ad2379 Dialer: At least show "Bluetooth" [Michael W]
-09582e603 Dialer: Voicemail: Don't tear down the app [Michael W]
-4bc2558d4 Dialer: Fix Voicemail playback [Michael W]
-
-* packages/apps/Glimpse
-3eb0ccc Glimpse: Add required overlay to set default system gallery app [Luca Stefani]
-
-* system/core
-bb9009581 fs_mgr: Load DM table as RW for debuggable recoveries [LuK1337]
-
-* vendor/lineage
-a82e9332 Revert "overlay: Set config_defaultQrCodeComponent" [Luca Stefani]
-eaa26143 config: Ship EmergencyInfo on WiFi only tablets [LuK1337]
-
-* device/xiaomi/jason
-3799f5a31 jason: Ship full recovery image [Jarl-Penguin]
-106895b21 jason: Inherit non_ab_device.mk [Tim Zimmermann]
-72a6e7caf jason: Update 32bit libremosaic_daemon.so from sagit [Nanhumly]
-2355ee46f jason: Update partial fingerprint blobs from dipper [Nanhumly]
-
-* device/xiaomi/sdm660-common
-15c03c7 sdm660-common: overlay: Remove config_cellBroadcastAppLinks [x0x00044]
-
-* vendor/xiaomi/jason
-5aaa297 jason: Update 32bit libremosaic_daemon.so from sagit [Nanhumly]
-d4ae53c jason: Update partial fingerprint blobs from dipper [Nanhumly]
-
-====================
-     2024-02-17    
-====================
-* frameworks/base
-4216f1cb47f9 SystemUI: Fix height for center and right clock [Pranav Vashi]
-6f9e6fe0ec16 fixup! Rewrite trust USB restriction handling [jabashque]
-6e3d890d9765 SystemUI: advanced reboot: set maxElementsWrap [Timi Rautamäki]
-349079b08f27 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
-8d05a43e6a5b SystemUI: make powermenu usable on TV [Timi Rautamäki]
-87dd4ffda131 SystemUI: fix global_actions_power_dialog_flow formatting [Timi Rautamäki]
+be7b8918ca64 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 
 * hardware/interfaces
-64f26d21d bluetooth: do not fatally error on unknown packet types [Billy Laws]
+f130a1c1d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 
-* lineage/charter
-6a8d73f device-support-requirements: Exempt Face Unlock on the Pixel 4 & XL [Nolen Johnson]
-
-* lineage/hudson
-4f13523 Regenerate device dependency mappings [LineageOS Infra]
-05af51f The endangered species survived another year [Michael Bestas]
-4ea8673 the only modern non-Samsung Exynos devices [Nolen Johnson]
-caa7956 The COVID era pixels live [Nolen Johnson]
-b9e6f12 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/website
-85d13f2 Changelog 28: Regen devices list [LuK1337]
+* lineage/mirror
+801833c Updated aosp-minimal to 03-Apr-2024 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-47e188f7 devices: Promote SHIFT6mq to 21 [Michael Bestas]
-b5cd25e3 devices: Promote the moto one vision and action [Nolen Johnson]
-98545b0d devices: Promote the Pixel 4 & XL [Nolen Johnson]
+a2f058f7 wiki: Only skip fw req in upgrade guides [LuK1337]
 
-* packages/apps/Glimpse
-a6050c7 Glimpse: Set default_applicable_licenses [Michael Bestas]
-70fa9af Glimpse: Make it REUSE compliant [Michael Bestas]
+* packages/apps/Settings
+8a6ec377630 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 
-* packages/apps/TvSettings
-71a0f6a06 TvSettings: implement long press power settings [Timi Rautamäki]
-d2bea87f9 TvSettings: reformat buttons.xml [Timi Rautamäki]
+* packages/apps/Trebuchet
+15baf96e46 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 
 * vendor/lineage
-bbefef9f ovelay: tv: set power menu max columns to 4 [Timi Rautamäki]
-7dd2be50 Revert "overlay: Decommonize long press power action" [Timi Rautamäki]
+cb8d5206 vars: April 2024 Security update [Chirayu Desai]
+
+* kernel/xiaomi/sdm660
+bd12909185d3 defconfig: jason: Enable overlayfs [Mark Salyzyn]
+781701145e59 usb: dwc3: Handle charging behavior when usb data is disabled [Jimmy Hu]
+343d397741e9 usb: dwc3: Set the initial value of usb_data_enabled before use [Albert Wang]
+77b921400735 usb: new attributes implementation to enable/disable usb data [Albert Wang]
+24f943e7d8e8 arm64: insn: Fix ldadd instruction encoding [Jean-Philippe Brucker]
+7305b802a1af BACKPORT: Bluetooth: hci_sock: Correctly bounds check and pad HCI_MON_NEW_INDEX name [Kees Cook]
+2c742b439566 Bluetooth: hci_sock: fix slab oob read in create_monitor_event [Edward AD]
+e3b06140e44f string: uninline memcpy_and_pad [Guenter Roeck]
+fc3233754c0a string.h: un-fortify memcpy_and_pad [Martin Wilck]
+e6a9d59e12b5 BACKPORT: string.h: add memcpy_and_pad() [Martin Wilck]
+424bf8a43a0c input: Drop INPUT_PROP_NO_DUMMY_RELEASE bit [Han Wang]
+7739f10f4152 defconfig: jason: Enable BPF_JIT_ALWAYS_ON [Marco Zanin]
+78dee19d24c1 bpf, arm64: use more scalable stadd over ldxr / stxr loop in xadd [Daniel Borkmann]
+84e134bf5efe bpf, arm64: remove prefetch insn in xadd mapping [Daniel Borkmann]
+752ac4e945e2 bpf, arm64: use separate register for state in stxr [Daniel Borkmann]
+9594b726a37b bpf, arm64: implement jiting of BPF_J{LT, LE, SLT, SLE} [Daniel Borkmann]
+2a021e9078c3 bpf, arm64: implement jiting of BPF_XADD [Daniel Borkmann]
+dda3c3b7e0ee bpf: add BPF_J{LT,LE,SLT,SLE} instructions [Daniel Borkmann]
+3baea711772a lib/test_bpf: Add tests for unsigned BPF_JGT [Naveen N. Rao]
+4bb6a2e63234 arm64: fix endianness annotation for 'struct jit_ctx' and friends [Luc Van Oostenryck]
+b863e435d0c9 bpf: free up BPF_JMP | BPF_CALL | BPF_X opcode [Alexei Starovoitov]
+5c0d65945a46 bpf: remove stubs for cBPF from arch code [Daniel Borkmann]
+7a19cab3468d bpf: split HAVE_BPF_JIT into cBPF and eBPF variant [Daniel Borkmann]
+27e31eaaeb3b {nl,mac}80211: add rssi to mesh candidates [Bob Copeland]
+c77efed4215f mac80211: mesh: drop new node with weak power [Masashi Honma]
+6b879328627d wifi: cfg80211: avoid leaking stack data into trace [Benjamin Berg]
+be0250aa0e1c UPSTREAM: netpoll: Fix device name check in netpoll_setup() [Matthias Kaehlcke]
+a296d432d71b tracing: Avoid adding tracer option before update_tracer_options [Mark-PK Tsai]
+1e7e3a55782d thread_info: Remove superflous struct decls [Alexander Grund]
+c8ad4ccb8666 USB: core: Prevent nested device-reset calls [Alan Stern]
+b05051d3f0ee USB: core: Don't hold device lock while reading the "descriptors" sysfs file [Alan Stern]
+0fd4ac76244a tty: fix deadlock caused by calling printk() under tty_port->lock [Qi Zheng]
+ed0ce8d0d139 flow: fix object-size-mismatch warning in flowi{4,6}_to_flowi_common() [Tetsuo Handa]
+de8fa0a9a8c5 lsm,selinux: pass flowi_common instead of flowi to the LSM hooks [Paul Moore]
+c6906bd15af4 leds: leds-qpnp: Fix uninitialized local variable [Alexander Grund]
+a170b71e1d08 qcacld-3.0: Avoid possible array OOB [Jianmin Zhu]
+881ab128f878 ASoC: msm-pcm-q6-v2: Add dsp buf check [Shalini Manjunatha]
+763bf11a436a asoc: Update copy_to_user to requested buffer size [Laxminath Kasam]
+a8c377520825 asoc: msm-pcm-q6-v2: Update memset for period size [Laxminath Kasam]
+01c840788230 asoc: Reset the buffer if size is partial or zero [Laxminath Kasam]
+9aef8f873815 msm: adsprpc: Handle UAF in fastrpc internal munmap [Vamsi Krishna Gattupalli]
+8c6a50fbdd6d msm: adsprpc: Handle UAF in fastrpc debugfs read [Swathi K]
+7ce6b7df037f msm: adsprpc: Add missing spin_lock in `fastrpc_debugfs_read` [Alexander Grund]
+d8d7b1b36597 msm: ADSPRPC: Protect global remote heap maps [Tharun Kumar Merugu]
+31906f7c4398 msm: adsprpc: Avoid race condition during map creation and free [Tharun Kumar Merugu]
+dc6e26d8e561 adsprpc: update mmap list nodes before mmap free [Tharun Kumar Merugu]
+929fc8fc16e2 BACKPORT: net: ipv6: Fix processing of RAs in presence of VRF [Alexander Grund]
+c8c658dc10cd wifi: cfg80211: Fix use after free for wext [Alexander Wetzel]
+025b85e4249c cfg80211: allow connect keys only with default (TX) key [Johannes Berg]
+eedef886811a nl80211: Update bss channel on channel switch for P2P_CLIENT [Sreeramya Soratkal]
+dfa9af567e13 ALSA: oss: Fix potential deadlock at unregistration [Takashi Iwai]
+ea23cebac0a0 Revert "ALSA: rawmidi: Fix racy buffer resize under concurrent accesses" [Alexander Grund]
+d44772bd6dda ALSA: rawmidi: Drop register_mutex in snd_rawmidi_free() [Takashi Iwai]
+0fb3d0d6fcc0 ALSA: rawmidi: Avoid OOB access to runtime buffer [Alexander Grund]
+eff8024509e1 HID: check empty report_list in hid_validate_values() [Pietro Borrello]
+14024717e623 HID: core: Provide new max_buffer_size attribute to over-ride the default [Lee Jones]
+922c277fa463 HID: core: fix shift-out-of-bounds in hid_report_raw_event [ZhangPeng]
+517b3d9a0adf tty: use new tty_insert_flip_string_and_push_buffer() in pty_write() [Jiri Slaby]
+9d0fcf5a5070 tty: extract tty_flip_buffer_commit() from tty_flip_buffer_push() [Jiri Slaby]
+f33374a05104 tracing: Fix infinite loop in tracing_read_pipe on overflowed print_trace_line [Yang Jihong]
+e46a77685b7a tracing: Fix memleak due to race between current_tracer and trace [Zheng Yejian]
+1fcfb2c80048 tracing: Ensure trace buffer is at least 4096 bytes large [Sven Schnelle]
+cc1cc7754351 tracing: Fix tp_printk option related with tp_printk_stop_on_boot [JaeSang Yoo]
+5b164e281130 blktrace: Fix output non-blktrace event when blk_classic option enabled [Yang Jihong]
+
+====================
+     2024-04-03    
+====================
+* device/qcom/sepolicy-legacy-um
+b7e999e5 sepolicy: fix domain for com.qualcomm.telephony [Ankit Siddhapura]
+
+* frameworks/base
+bf5884b17133 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
+e0c2544b24ab Screenrecord: Add delete action to the notification [Sourajit Karmakar]
+cf766fff723c Screenrecord: Dismiss notification on stop [Lostark13]
+8e4f219a5f93 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+059325b87a6a Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+cf4e36897340 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+d8795dbbca98 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+5b9226e3398f Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+3aa2098c9b69 Screenrecord: Save and load set preferences [Ido Ben-Hur]
+d50e8d6c6065 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
+78bc8dea0deb Screenrecord: add blinking stop dot and low quality options [ezio84]
+c4053e85dce4 Screenrecord: Allow to select AVC codec profile level [iusmac]
+dc1c7bf0da01 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+39e6e6a662dd core: BatteryManager: Add few more Battery broadcast intents [Jyotiraditya Panda]
+125409c11027 fixup! frameworks: Add device controls shortcut to power menu [Michael Bestas]
+385d4cec4fa5 fixup! frameworks: Add more power menu customizations [Michael Bestas]
+8013f67c2029 fixup! frameworks: Add support for advanced restart options [Michael Bestas]
+f423f8badea4 fixup! SystemUI: advanced reboot: set maxElementsWrap [Michael Bestas]
+41acd95c4c4e fixup! SystemUI: Register content observer for clock position [Michael Bestas]
+0eb0dae59cd3 fixup! SystemUI: Port brightness slider changes [Michael Bestas]
+9d55d4dc65f7 fixup! DozeSensors: only use proximity sensor if supported [Michael Bestas]
+2701e6c800b4 fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Michael Bestas]
+f0c541d8f602 fixup! udfps: Make pressed udfp view configurable [Michael Bestas]
+9964716363aa fixup! SystemUI: Add UDFPS framework dimming support [Michael Bestas]
+aad94b4357b1 fixup! SystemUI: Add Profiles tile [Michael Bestas]
+f01df1f3861d fixup! SystemUI: Add VPN tile [Michael Bestas]
+1b82cf6b201e fixup! SystemUI: Add Lineage statusbar item holder [Oliver Scott]
+443eac9421da fixup! SystemUI: Add double tap to sleep gesture [Oliver Scott]
+0a3ea240ec62 fixup! SystemUI: Bringup tuner statusbar changes [Oliver Scott]
+2d6153511135 fixup! SystemUI: Add USB Tether tile [Oliver Scott]
+fb772f4d38a9 fixup! SystemUI: Add Sync tile [Oliver Scott]
+4d58cb18382e fixup! SystemUI: Add reading mode tile [Oliver Scott]
+170164402c33 fixup! SystemUI: Add powershare QS tile [Oliver Scott]
+cf321c6d8ad4 fixup! SystemUI: Add heads up tile [Oliver Scott]
+43d54f59f068 fixup! SystemUI: Add caffeine QS tile [Oliver Scott]
+d02a1713d97b fixup! SystemUI: Add AmbientDisplay tile [Oliver Scott]
+7dec343cf711 fixup! SystemUI: Add AOD QS tile [Oliver Scott]
+02339c2fbb07 SystemUI: Refactor the WiFi & Cellular QS tiles [Tommaso Fonda]
+429f5d1407d5 Reapply "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Danny Lin]
+033d5caad51b Reapply "SystemUI: Restore wifi and cellular QS tiles" [Michael Bestas]
+
+* packages/apps/Settings
+e1cea87cc61 Make battery cycle count configurable and disable it by default [Michael Bestas]
+1a1486fd7da Hide unavailable battery info [Michael Bestas]
+911d6d222b0 Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
+781740000ba Make battery info configurable and enable it by default [Michael Bestas]
+
+====================
+     2024-04-02    
+====================
+* device/qcom/sepolicy_vndr/legacy-um
+a1365fb8d lahaina: dos2unix umdservice.te [Michael Bestas]
+
+* lineage/crowdin
+cf2004c config: Add recent Dialer string additions [Michael W]
+
+* packages/apps/Car/Settings
+f1c4d355c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+711503d06 fixup! Dialer: convert VoicemailSecretCodeActivity to androidx [Michael W]
+
+* packages/apps/Jelly
+be8cc16 Automatic translation import [LineageOS Infra]
+
+* packages/apps/TvSettings
+0481fc3ee Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+9a445cdf vars: Update qcom tags [Michael Bestas]
+
+====================
+     2024-04-01    
+====================
+* hardware/qcom-caf/sm8450/audio/pal
+8514a7eb Revert "pal: validate stream handle in pal server wrapper" [Michael Bestas]
+
+* lineage/mirror
+9946a84 Updated to 31-Mar-2024 17:15 UTC [Kevin F. Haggerty]
+
+* packages/apps/Jelly
+2ebff33 Jelly: Allow user added certificates to be used [Alexander Koskovich]
+04ca7ef Jelly: Handle SSL certificate errors [Alexander Koskovich]
+
+====================
+     2024-03-31    
+====================
+* bootable/recovery
+a08daf08 recovery_ui: Respect margin_height while drawing battery capacity status [Chippa-a]
+
+* build/make
+a9951bda95 Correct logic for obtaining the path to full recovery image [Ricky Cheung]
+
+* device/qcom/sepolicy-legacy-um
+d3dc18a4 legacy: Allow communication between rild and data module [Bruno Martins]
+
+* packages/apps/Dialer
+9cf5ef233 Dialer: convert VoicemailSecretCodeActivity to androidx [Joel Beckmeyer]
+
+* vendor/lineage
+f75e1195 overlay: several Dialer VVM config fixes [Joel Beckmeyer]
+1b0fc0e0 fixup! kernel: Support copying modules to boot ramdisk [Aaron Kling]
+
+====================
+     2024-03-30    
+====================
+* device/qcom/sepolicy
+2a95cd0b Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* device/qcom/sepolicy-legacy-um
+7eabf65f Merge tag 'LA.UM.12.2.1.r1-02900-sdm660.0' into staging/lineage-21.0_merge-LA.UM.12.2.1.r1-02900-sdm660.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+0aead9436 Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+8c60f174a Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8550
+6c4e885fb Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+b8532b472 Merge tag 'LA.UM.9.12.r1-18300-SMxx50.QSSI14.0' into staging/lineage-21.0_merge-LA.UM.9.12.r1-18300-SMxx50.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+f9a2a65c2e Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/agm
+f1c6ae5 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+7bd889e4 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+a5f3dd3ad Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/media
+157a3a89f Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/agm
+f7f6f77 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/pal
+306ddd3e Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+365c15076 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/dataipa
+673d1b3 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+863b6d7 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+4b32654 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
+
+* lineage/crowdin
+f731ae0 config: lineage-21.0: Add Car & Tv Settings [Michael Bestas]
+
+* packages/apps/Car/Settings
+32ff6ebc5 Settings: res: cm -> lineage [Michael Bestas]
+
+* packages/apps/TvSettings
+ae46b628a Settings: res: cm -> lineage [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/display
+aec76aca Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/display
+7539335 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/fm
+1b8ec97 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/interfaces
+77b3a98 fixup! interfaces: Introduce vendor.qti.hardware.perf interfaces [Michael Bestas]
+dedf811 fixup! interfaces: Introduce vendor.qti.hardware.btconfigstore interfaces [Michael Bestas]
+b2e434f fixup! interfaces: Introduce vendor.qti.hardware.capabilityconfigstore@1.0 interface [Michael Bestas]
+23e41ef Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+737d94e Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
 
