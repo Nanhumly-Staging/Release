@@ -1,4 +1,26 @@
 ====================
+     2024-04-08    
+====================
+* vendor/lineage
+972d6bf7 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+
+* device/xiaomi/jason
+75d28b9ca jason: Update prebuilt kernel [Nanhumly]
+
+* kernel/xiaomi/sdm660
+2c13c8fc3723 cmdline: Clean up dead code [Pranav Vashi]
+8269eea4b5b5 cmdline: extend replace for veritymode 'enforcing' SafetyNet [tbalden]
+433848390f76 cmdline: replace instead of remove for SafetyNet CTS pass [tbalden]
+14f85fa41ee6 proc: cmdline: Patch vbmeta device state flag for SafetyNet [Danny Lin]
+0506bcf3a04e proc: cmdline: Patch SafetyNet flags [Sultan Alsawaf]
+
+====================
+     2024-04-07    
+====================
+====================
+     2024-04-06    
+====================
+====================
      2024-04-05    
 ====================
 * build/make
@@ -54,9 +76,6 @@ bf935d20d6f8 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
 * lineage-sdk
 6d04fbf0 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 
-* lineage/mirror
-99ce110 Updated aosp-minimal to 04-Apr-2024 12:02 UTC [Tim Schumacher]
-
 * packages/apps/Settings
 30bc83b9f7b Settings: Add model spoof support [Nanhumly]
 c850df18651 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
@@ -71,42 +90,18 @@ ea7facb74e9 Settings: Enable Cloned Apps by default [AmeChanRain]
 535ef4c6 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
 
 * device/xiaomi/jason
-10f30e87b jason: Update prebuilt kernel [Nanhumly]
-24434fab4 jason: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
-77aba921f jason: camera: Fix compilation for U QPR2 merge [Nanhumly]
+0bec48028 jason: Update prebuilt kernel [Nanhumly]
+c7acd9e07 jason: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
+c4f715ba8 jason: camera: Fix compilation for U QPR2 merge [Nanhumly]
+
+* device/xiaomi/sdm660-common
+f6a70404 sdm660-common: Use the common device compatibility matrix from QCOM [Bruno Martins]
 
 ====================
      2024-04-04    
 ====================
-* android
-0ddac72 manifest: April 2024 Security update [Michael Bestas]
-
-* build/make
-2638b6557f Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* frameworks/av
-c2809dba0d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* frameworks/base
-be7b8918ca64 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* hardware/interfaces
-f130a1c1d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
 * lineage/mirror
-801833c Updated aosp-minimal to 03-Apr-2024 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-a2f058f7 wiki: Only skip fw req in upgrade guides [LuK1337]
-
-* packages/apps/Settings
-8a6ec377630 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* packages/apps/Trebuchet
-15baf96e46 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* vendor/lineage
-cb8d5206 vars: April 2024 Security update [Chirayu Desai]
+99ce110 Updated aosp-minimal to 04-Apr-2024 12:02 UTC [Tim Schumacher]
 
 * kernel/xiaomi/sdm660
 bd12909185d3 defconfig: jason: Enable overlayfs [Mark Salyzyn]
@@ -177,10 +172,20 @@ cc1cc7754351 tracing: Fix tp_printk option related with tp_printk_stop_on_boot [
 ====================
      2024-04-03    
 ====================
+* android
+0ddac72 manifest: April 2024 Security update [Michael Bestas]
+
+* build/make
+2638b6557f Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
 * device/qcom/sepolicy-legacy-um
 b7e999e5 sepolicy: fix domain for com.qualcomm.telephony [Ankit Siddhapura]
 
+* frameworks/av
+c2809dba0d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
 * frameworks/base
+be7b8918ca64 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 bf5884b17133 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
 e0c2544b24ab Screenrecord: Add delete action to the notification [Sourajit Karmakar]
 cf766fff723c Screenrecord: Dismiss notification on stop [Lostark13]
@@ -222,11 +227,27 @@ d02a1713d97b fixup! SystemUI: Add AmbientDisplay tile [Oliver Scott]
 429f5d1407d5 Reapply "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Danny Lin]
 033d5caad51b Reapply "SystemUI: Restore wifi and cellular QS tiles" [Michael Bestas]
 
+* hardware/interfaces
+f130a1c1d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* lineage/mirror
+801833c Updated aosp-minimal to 03-Apr-2024 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+a2f058f7 wiki: Only skip fw req in upgrade guides [LuK1337]
+
 * packages/apps/Settings
+8a6ec377630 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
 e1cea87cc61 Make battery cycle count configurable and disable it by default [Michael Bestas]
 1a1486fd7da Hide unavailable battery info [Michael Bestas]
 911d6d222b0 Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
 781740000ba Make battery info configurable and enable it by default [Michael Bestas]
+
+* packages/apps/Trebuchet
+15baf96e46 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* vendor/lineage
+cb8d5206 vars: April 2024 Security update [Chirayu Desai]
 
 ====================
      2024-04-02    
@@ -240,128 +261,9 @@ cf2004c config: Add recent Dialer string additions [Michael W]
 * packages/apps/Car/Settings
 f1c4d355c Automatic translation import [LineageOS Infra]
 
-* packages/apps/Dialer
-711503d06 fixup! Dialer: convert VoicemailSecretCodeActivity to androidx [Michael W]
-
 * packages/apps/Jelly
 be8cc16 Automatic translation import [LineageOS Infra]
 
 * packages/apps/TvSettings
 0481fc3ee Automatic translation import [LineageOS Infra]
-
-* vendor/lineage
-9a445cdf vars: Update qcom tags [Michael Bestas]
-
-====================
-     2024-04-01    
-====================
-* hardware/qcom-caf/sm8450/audio/pal
-8514a7eb Revert "pal: validate stream handle in pal server wrapper" [Michael Bestas]
-
-* lineage/mirror
-9946a84 Updated to 31-Mar-2024 17:15 UTC [Kevin F. Haggerty]
-
-* packages/apps/Jelly
-2ebff33 Jelly: Allow user added certificates to be used [Alexander Koskovich]
-04ca7ef Jelly: Handle SSL certificate errors [Alexander Koskovich]
-
-====================
-     2024-03-31    
-====================
-* bootable/recovery
-a08daf08 recovery_ui: Respect margin_height while drawing battery capacity status [Chippa-a]
-
-* build/make
-a9951bda95 Correct logic for obtaining the path to full recovery image [Ricky Cheung]
-
-* device/qcom/sepolicy-legacy-um
-d3dc18a4 legacy: Allow communication between rild and data module [Bruno Martins]
-
-* packages/apps/Dialer
-9cf5ef233 Dialer: convert VoicemailSecretCodeActivity to androidx [Joel Beckmeyer]
-
-* vendor/lineage
-f75e1195 overlay: several Dialer VVM config fixes [Joel Beckmeyer]
-1b0fc0e0 fixup! kernel: Support copying modules to boot ramdisk [Aaron Kling]
-
-====================
-     2024-03-30    
-====================
-* device/qcom/sepolicy
-2a95cd0b Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
-
-* device/qcom/sepolicy-legacy-um
-7eabf65f Merge tag 'LA.UM.12.2.1.r1-02900-sdm660.0' into staging/lineage-21.0_merge-LA.UM.12.2.1.r1-02900-sdm660.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-0aead9436 Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8450
-8c60f174a Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8550
-6c4e885fb Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8250/media
-b8532b472 Merge tag 'LA.UM.9.12.r1-18300-SMxx50.QSSI14.0' into staging/lineage-21.0_merge-LA.UM.9.12.r1-18300-SMxx50.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8350/audio
-f9a2a65c2e Merge tag 'LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0' into staging/lineage-21.0_merge-LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/agm
-f1c6ae5 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/pal
-7bd889e4 Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-a5f3dd3ad Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/media
-157a3a89f Merge tag 'LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-24900-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/agm
-f7f6f77 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/pal
-306ddd3e Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/primary-hal
-365c15076 Merge tag 'AUDIO.LA.8.0.r1-10100-KAILUA.0' into staging/lineage-21.0_merge-AUDIO.LA.8.0.r1-10100-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/dataipa
-673d1b3 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/thermal
-863b6d7 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/wlan
-4b32654 Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
-
-* lineage/crowdin
-f731ae0 config: lineage-21.0: Add Car & Tv Settings [Michael Bestas]
-
-* packages/apps/Car/Settings
-32ff6ebc5 Settings: res: cm -> lineage [Michael Bestas]
-
-* packages/apps/TvSettings
-ae46b628a Settings: res: cm -> lineage [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys-intf/display
-aec76aca Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys/display
-7539335 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys/fm
-1b8ec97 Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/interfaces
-77b3a98 fixup! interfaces: Introduce vendor.qti.hardware.perf interfaces [Michael Bestas]
-dedf811 fixup! interfaces: Introduce vendor.qti.hardware.btconfigstore interfaces [Michael Bestas]
-b2e434f fixup! interfaces: Introduce vendor.qti.hardware.capabilityconfigstore@1.0 interface [Michael Bestas]
-23e41ef Merge tag 'LA.QSSI.14.0.r1-13400-qssi.0' into staging/lineage-21.0_merge-LA.QSSI.14.0.r1-13400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/usb
-737d94e Merge tag 'LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0' into staging/lineage-21.0_merge-LA.VENDOR.13.2.0.r1-22400-KAILUA.QSSI14.0 [Michael Bestas]
 
