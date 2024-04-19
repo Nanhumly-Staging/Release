@@ -1,269 +1,186 @@
 ====================
-     2024-04-08    
+     2024-04-19    
 ====================
-* vendor/lineage
-972d6bf7 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+* art
+da0473ea01 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
-* device/xiaomi/jason
-75d28b9ca jason: Update prebuilt kernel [Nanhumly]
-
-* kernel/xiaomi/sdm660
-2c13c8fc3723 cmdline: Clean up dead code [Pranav Vashi]
-8269eea4b5b5 cmdline: extend replace for veritymode 'enforcing' SafetyNet [tbalden]
-433848390f76 cmdline: replace instead of remove for SafetyNet CTS pass [tbalden]
-14f85fa41ee6 proc: cmdline: Patch vbmeta device state flag for SafetyNet [Danny Lin]
-0506bcf3a04e proc: cmdline: Patch SafetyNet flags [Sultan Alsawaf]
-
-====================
-     2024-04-07    
-====================
-====================
-     2024-04-06    
-====================
-====================
-     2024-04-05    
-====================
 * build/make
-9d2eb2fcf6 envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32]
-08dbeb847b build: Always use release-keys [Pranav Vashi]
+a377318c3a envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32]
+e106f8ddde build: Always use release-keys [Pranav Vashi]
 
 * frameworks/av
-f6c88aab8f audio: Remove UID check from per-app volume commands [Adithya R]
-1f0f066fe7 av: support per-app volume [1/3] [cjybyjk]
+0ae4725ce0 audio: Remove UID check from per-app volume commands [Adithya R]
+efa070f7b7 av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-2974990b90e4 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
-377702f6b501 SystemUI: enable fading squiggle animation of qs media player [nift4]
-cd48bca92cc5 SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
-65857072fc19 SystemUI: Enable session-based media actions for all apps [Adithya R]
-d2585c065a95 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-897b2257892a SystemUI: Use new privacy indicators for location [Danny Lin]
-1d994d119e6d Use brightness icon matching with slider redesign [Pranav Vashi]
-7a49594948bc base: Add support for strict standby policy [LibXZR]
-18c6d1db9475 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-bf1a9a35edc7 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-23aabb300707 base: Initial SenseProvider for FaceSense service [Chris Crump]
-58711df246d9 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-99f89746bd50 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-b3bcc9c295c3 base: Reset props for status bar lyric [1/2] [cjybyjk]
-2879809b7ae5 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-f4f7daf59893 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-79d2a716cb8f base: Add status bar lyric for Android 14 [cjybyjk]
-527a89240556 Add Extra proto [Nanhumly]
-2faa82e5e573 fixup! base: support per-app volume [2/3] [someone5678]
-c36f3011a571 base: make per-app work with multi audio focus [El Dainosor]
-d269b8156b2f SystemUI: Update App volume icon [yukiscape]
-524e4072fb0d base: support per-app volume [2/3] [cjybyjk]
-c166ea40c79a SystemUI: make QS footer rounded (#910) [awakened]
-9efd5ca05622 SystemUI: Apply surface color to brightness icons [Harsh Pal]
-ea4cd6e0e4b6 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-37e16cb4ed68 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-ff72a6a23ff7 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-6f834e2484cd SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-5b9aef160208 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-31589db72a64 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-17d999e81ba4 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-8f312b7f9ac6 SystemUI: Fix QS header clock color [Danny Baumann]
-eb72f5ebf4a4 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-cb7903a98f4e SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-af3b6a523e72 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-32f54ba5f8d1 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-8d2e83b7a4fe SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-bf935d20d6f8 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-164244514ae9 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-0880172b9cba Revert "Make QS always use dark theme colors" [Danny Lin]
+7e90c43abc51 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
+b14d2cf5685c SystemUI: enable fading squiggle animation of qs media player [nift4]
+00d61110cfae SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
+27dc4120afb8 SystemUI: Enable session-based media actions for all apps [Adithya R]
+9e1d1b677fac SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+94a8474f7adc SystemUI: Use new privacy indicators for location [Danny Lin]
+9910d270e66c Use brightness icon matching with slider redesign [Pranav Vashi]
+8eac852bfcc0 base: Add support for strict standby policy [LibXZR]
+da31d518d7cf SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+e0ceb59561d8 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+7bd1a22addeb base: Initial SenseProvider for FaceSense service [Chris Crump]
+73f64ec924fc BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+408b88ff812b MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+f3bf09f18890 base: Reset props for status bar lyric [1/2] [cjybyjk]
+de582f4008c5 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+3e78202f7300 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+44c5d68f3828 base: Add status bar lyric for Android 14 [cjybyjk]
+7e97b484acd8 Add Extra proto [Nanhumly]
+ff9965f297ba fixup! base: support per-app volume [2/3] [someone5678]
+784cefb7685e base: make per-app work with multi audio focus [El Dainosor]
+a35d3ced0079 SystemUI: Update App volume icon [yukiscape]
+17e7ab0c4a1a base: support per-app volume [2/3] [cjybyjk]
+cec4e7f93b33 SystemUI: make QS footer rounded (#910) [awakened]
+cddaf1fb8f92 SystemUI: Apply surface color to brightness icons [Harsh Pal]
+a613f438adf3 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+b24093f89981 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+79d92bc0ffaf SystemUI: Switch notification background to monet on heads up [DillerOFire]
+50edc932d4e4 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+0fc9c87faacc SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+b9a78fd24bea SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+f6cf4ab38002 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+a87e6e01c083 SystemUI: Fix QS header clock color [Danny Baumann]
+7752adeb2800 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+323634b4d77a SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+ccbad130c916 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+efe52b6e57ca SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+b3ba919a8f65 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+16c3818a0aba SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+bac732766cbf Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+5f93993ee04c Revert "Make QS always use dark theme colors" [Danny Lin]
 
 * lineage-sdk
-6d04fbf0 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
-
-* packages/apps/Settings
-30bc83b9f7b Settings: Add model spoof support [Nanhumly]
-c850df18651 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-6b9f5ad4c20 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-26c926f6428 Settings: Add status bar lyric [Kujou Yuko]
-98043ec7bde Settings: support per-app volume [3/3] [cjybyjk]
-a06076d31c0 Settings: Make all user apps cloneable [someone5678]
-ea7facb74e9 Settings: Enable Cloned Apps by default [AmeChanRain]
-
-* vendor/lineage
-472f5d81 vendor: Guard Face Unlock support [someone5678]
-535ef4c6 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
-
-* device/xiaomi/jason
-0bec48028 jason: Update prebuilt kernel [Nanhumly]
-c7acd9e07 jason: Switch to android.hardware.usb@1.3-service.dual_role_usb [Michael Bestas]
-c4f715ba8 jason: camera: Fix compilation for U QPR2 merge [Nanhumly]
-
-* device/xiaomi/sdm660-common
-f6a70404 sdm660-common: Use the common device compatibility matrix from QCOM [Bruno Martins]
-
-====================
-     2024-04-04    
-====================
-* lineage/mirror
-99ce110 Updated aosp-minimal to 04-Apr-2024 12:02 UTC [Tim Schumacher]
-
-* kernel/xiaomi/sdm660
-bd12909185d3 defconfig: jason: Enable overlayfs [Mark Salyzyn]
-781701145e59 usb: dwc3: Handle charging behavior when usb data is disabled [Jimmy Hu]
-343d397741e9 usb: dwc3: Set the initial value of usb_data_enabled before use [Albert Wang]
-77b921400735 usb: new attributes implementation to enable/disable usb data [Albert Wang]
-24f943e7d8e8 arm64: insn: Fix ldadd instruction encoding [Jean-Philippe Brucker]
-7305b802a1af BACKPORT: Bluetooth: hci_sock: Correctly bounds check and pad HCI_MON_NEW_INDEX name [Kees Cook]
-2c742b439566 Bluetooth: hci_sock: fix slab oob read in create_monitor_event [Edward AD]
-e3b06140e44f string: uninline memcpy_and_pad [Guenter Roeck]
-fc3233754c0a string.h: un-fortify memcpy_and_pad [Martin Wilck]
-e6a9d59e12b5 BACKPORT: string.h: add memcpy_and_pad() [Martin Wilck]
-424bf8a43a0c input: Drop INPUT_PROP_NO_DUMMY_RELEASE bit [Han Wang]
-7739f10f4152 defconfig: jason: Enable BPF_JIT_ALWAYS_ON [Marco Zanin]
-78dee19d24c1 bpf, arm64: use more scalable stadd over ldxr / stxr loop in xadd [Daniel Borkmann]
-84e134bf5efe bpf, arm64: remove prefetch insn in xadd mapping [Daniel Borkmann]
-752ac4e945e2 bpf, arm64: use separate register for state in stxr [Daniel Borkmann]
-9594b726a37b bpf, arm64: implement jiting of BPF_J{LT, LE, SLT, SLE} [Daniel Borkmann]
-2a021e9078c3 bpf, arm64: implement jiting of BPF_XADD [Daniel Borkmann]
-dda3c3b7e0ee bpf: add BPF_J{LT,LE,SLT,SLE} instructions [Daniel Borkmann]
-3baea711772a lib/test_bpf: Add tests for unsigned BPF_JGT [Naveen N. Rao]
-4bb6a2e63234 arm64: fix endianness annotation for 'struct jit_ctx' and friends [Luc Van Oostenryck]
-b863e435d0c9 bpf: free up BPF_JMP | BPF_CALL | BPF_X opcode [Alexei Starovoitov]
-5c0d65945a46 bpf: remove stubs for cBPF from arch code [Daniel Borkmann]
-7a19cab3468d bpf: split HAVE_BPF_JIT into cBPF and eBPF variant [Daniel Borkmann]
-27e31eaaeb3b {nl,mac}80211: add rssi to mesh candidates [Bob Copeland]
-c77efed4215f mac80211: mesh: drop new node with weak power [Masashi Honma]
-6b879328627d wifi: cfg80211: avoid leaking stack data into trace [Benjamin Berg]
-be0250aa0e1c UPSTREAM: netpoll: Fix device name check in netpoll_setup() [Matthias Kaehlcke]
-a296d432d71b tracing: Avoid adding tracer option before update_tracer_options [Mark-PK Tsai]
-1e7e3a55782d thread_info: Remove superflous struct decls [Alexander Grund]
-c8ad4ccb8666 USB: core: Prevent nested device-reset calls [Alan Stern]
-b05051d3f0ee USB: core: Don't hold device lock while reading the "descriptors" sysfs file [Alan Stern]
-0fd4ac76244a tty: fix deadlock caused by calling printk() under tty_port->lock [Qi Zheng]
-ed0ce8d0d139 flow: fix object-size-mismatch warning in flowi{4,6}_to_flowi_common() [Tetsuo Handa]
-de8fa0a9a8c5 lsm,selinux: pass flowi_common instead of flowi to the LSM hooks [Paul Moore]
-c6906bd15af4 leds: leds-qpnp: Fix uninitialized local variable [Alexander Grund]
-a170b71e1d08 qcacld-3.0: Avoid possible array OOB [Jianmin Zhu]
-881ab128f878 ASoC: msm-pcm-q6-v2: Add dsp buf check [Shalini Manjunatha]
-763bf11a436a asoc: Update copy_to_user to requested buffer size [Laxminath Kasam]
-a8c377520825 asoc: msm-pcm-q6-v2: Update memset for period size [Laxminath Kasam]
-01c840788230 asoc: Reset the buffer if size is partial or zero [Laxminath Kasam]
-9aef8f873815 msm: adsprpc: Handle UAF in fastrpc internal munmap [Vamsi Krishna Gattupalli]
-8c6a50fbdd6d msm: adsprpc: Handle UAF in fastrpc debugfs read [Swathi K]
-7ce6b7df037f msm: adsprpc: Add missing spin_lock in `fastrpc_debugfs_read` [Alexander Grund]
-d8d7b1b36597 msm: ADSPRPC: Protect global remote heap maps [Tharun Kumar Merugu]
-31906f7c4398 msm: adsprpc: Avoid race condition during map creation and free [Tharun Kumar Merugu]
-dc6e26d8e561 adsprpc: update mmap list nodes before mmap free [Tharun Kumar Merugu]
-929fc8fc16e2 BACKPORT: net: ipv6: Fix processing of RAs in presence of VRF [Alexander Grund]
-c8c658dc10cd wifi: cfg80211: Fix use after free for wext [Alexander Wetzel]
-025b85e4249c cfg80211: allow connect keys only with default (TX) key [Johannes Berg]
-eedef886811a nl80211: Update bss channel on channel switch for P2P_CLIENT [Sreeramya Soratkal]
-dfa9af567e13 ALSA: oss: Fix potential deadlock at unregistration [Takashi Iwai]
-ea23cebac0a0 Revert "ALSA: rawmidi: Fix racy buffer resize under concurrent accesses" [Alexander Grund]
-d44772bd6dda ALSA: rawmidi: Drop register_mutex in snd_rawmidi_free() [Takashi Iwai]
-0fb3d0d6fcc0 ALSA: rawmidi: Avoid OOB access to runtime buffer [Alexander Grund]
-eff8024509e1 HID: check empty report_list in hid_validate_values() [Pietro Borrello]
-14024717e623 HID: core: Provide new max_buffer_size attribute to over-ride the default [Lee Jones]
-922c277fa463 HID: core: fix shift-out-of-bounds in hid_report_raw_event [ZhangPeng]
-517b3d9a0adf tty: use new tty_insert_flip_string_and_push_buffer() in pty_write() [Jiri Slaby]
-9d0fcf5a5070 tty: extract tty_flip_buffer_commit() from tty_flip_buffer_push() [Jiri Slaby]
-f33374a05104 tracing: Fix infinite loop in tracing_read_pipe on overflowed print_trace_line [Yang Jihong]
-e46a77685b7a tracing: Fix memleak due to race between current_tracer and trace [Zheng Yejian]
-1fcfb2c80048 tracing: Ensure trace buffer is at least 4096 bytes large [Sven Schnelle]
-cc1cc7754351 tracing: Fix tp_printk option related with tp_printk_stop_on_boot [JaeSang Yoo]
-5b164e281130 blktrace: Fix output non-blktrace event when blk_classic option enabled [Yang Jihong]
-
-====================
-     2024-04-03    
-====================
-* android
-0ddac72 manifest: April 2024 Security update [Michael Bestas]
-
-* build/make
-2638b6557f Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* device/qcom/sepolicy-legacy-um
-b7e999e5 sepolicy: fix domain for com.qualcomm.telephony [Ankit Siddhapura]
-
-* frameworks/av
-c2809dba0d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* frameworks/base
-be7b8918ca64 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-bf5884b17133 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
-e0c2544b24ab Screenrecord: Add delete action to the notification [Sourajit Karmakar]
-cf766fff723c Screenrecord: Dismiss notification on stop [Lostark13]
-8e4f219a5f93 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
-059325b87a6a Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
-cf4e36897340 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
-d8795dbbca98 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
-5b9226e3398f Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
-3aa2098c9b69 Screenrecord: Save and load set preferences [Ido Ben-Hur]
-d50e8d6c6065 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
-78bc8dea0deb Screenrecord: add blinking stop dot and low quality options [ezio84]
-c4053e85dce4 Screenrecord: Allow to select AVC codec profile level [iusmac]
-dc1c7bf0da01 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
-39e6e6a662dd core: BatteryManager: Add few more Battery broadcast intents [Jyotiraditya Panda]
-125409c11027 fixup! frameworks: Add device controls shortcut to power menu [Michael Bestas]
-385d4cec4fa5 fixup! frameworks: Add more power menu customizations [Michael Bestas]
-8013f67c2029 fixup! frameworks: Add support for advanced restart options [Michael Bestas]
-f423f8badea4 fixup! SystemUI: advanced reboot: set maxElementsWrap [Michael Bestas]
-41acd95c4c4e fixup! SystemUI: Register content observer for clock position [Michael Bestas]
-0eb0dae59cd3 fixup! SystemUI: Port brightness slider changes [Michael Bestas]
-9d55d4dc65f7 fixup! DozeSensors: only use proximity sensor if supported [Michael Bestas]
-2701e6c800b4 fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Michael Bestas]
-f0c541d8f602 fixup! udfps: Make pressed udfp view configurable [Michael Bestas]
-9964716363aa fixup! SystemUI: Add UDFPS framework dimming support [Michael Bestas]
-aad94b4357b1 fixup! SystemUI: Add Profiles tile [Michael Bestas]
-f01df1f3861d fixup! SystemUI: Add VPN tile [Michael Bestas]
-1b82cf6b201e fixup! SystemUI: Add Lineage statusbar item holder [Oliver Scott]
-443eac9421da fixup! SystemUI: Add double tap to sleep gesture [Oliver Scott]
-0a3ea240ec62 fixup! SystemUI: Bringup tuner statusbar changes [Oliver Scott]
-2d6153511135 fixup! SystemUI: Add USB Tether tile [Oliver Scott]
-fb772f4d38a9 fixup! SystemUI: Add Sync tile [Oliver Scott]
-4d58cb18382e fixup! SystemUI: Add reading mode tile [Oliver Scott]
-170164402c33 fixup! SystemUI: Add powershare QS tile [Oliver Scott]
-cf321c6d8ad4 fixup! SystemUI: Add heads up tile [Oliver Scott]
-43d54f59f068 fixup! SystemUI: Add caffeine QS tile [Oliver Scott]
-d02a1713d97b fixup! SystemUI: Add AmbientDisplay tile [Oliver Scott]
-7dec343cf711 fixup! SystemUI: Add AOD QS tile [Oliver Scott]
-02339c2fbb07 SystemUI: Refactor the WiFi & Cellular QS tiles [Tommaso Fonda]
-429f5d1407d5 Reapply "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Danny Lin]
-033d5caad51b Reapply "SystemUI: Restore wifi and cellular QS tiles" [Michael Bestas]
-
-* hardware/interfaces
-f130a1c1d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-
-* lineage/mirror
-801833c Updated aosp-minimal to 03-Apr-2024 12:01 UTC [Tim Schumacher]
+33953662 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 
 * lineage/wiki
-a2f058f7 wiki: Only skip fw req in upgrade guides [LuK1337]
+f663b37d wiki: signing_builds: Fix make_key typo [razorloves]
+
+* packages/apps/Aperture
+c9d50d1 Aperture: Hide camera mode highlight button in single capture mode too [LuK1337]
+
+* packages/apps/CarrierConfig
+9342305 Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/Settings
-8a6ec377630 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
-e1cea87cc61 Make battery cycle count configurable and disable it by default [Michael Bestas]
-1a1486fd7da Hide unavailable battery info [Michael Bestas]
-911d6d222b0 Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
-781740000ba Make battery info configurable and enable it by default [Michael Bestas]
+e654f5f14e3 Settings: Add model spoof support [Nanhumly]
+618fe1d56c2 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+844def0f11b Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+cdf8c8685d5 Settings: Add status bar lyric [Kujou Yuko]
+3e9e6450839 Settings: support per-app volume [3/3] [cjybyjk]
+150d4f85b32 Settings: Make all user apps cloneable [someone5678]
+0aed2823249 Settings: Enable Cloned Apps by default [AmeChanRain]
 
-* packages/apps/Trebuchet
-15baf96e46 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+* packages/services/Telephony
+241fdef20 Add support for multi-language carrier name override [cjybyjk]
 
 * vendor/lineage
-cb8d5206 vars: April 2024 Security update [Chirayu Desai]
+2f710430 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+6caf53e3 vendor: Guard Face Unlock support [someone5678]
+f34d95bf config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+* device/xiaomi/sdm660-common
+ca37db78 sdm660-common: sepolicy: Remove rules moved to qcom sepolicy [Bruno Martins]
+76c7d71f sdm660-common: Enforce vintf kernel requirements [Michael Bestas]
 
 ====================
-     2024-04-02    
+     2024-04-18    
 ====================
-* device/qcom/sepolicy_vndr/legacy-um
-a1365fb8d lahaina: dos2unix umdservice.te [Michael Bestas]
+* packages/apps/Aperture
+cb72afd Aperture: Add tint to capture preview buttons [Sebastiano Barezzi]
 
-* lineage/crowdin
-cf2004c config: Add recent Dialer string additions [Michael W]
+* packages/apps/Settings
+6796f7ba075 fixup! Settings: Add high touch sensitivity and touchscreen hovering toggles [Dhina17]
+
+====================
+     2024-04-17    
+====================
+* lineage/wiki
+4ba05602 wiki: Add com.android.hardware.boot to apex list [LuK1337]
+
+====================
+     2024-04-16    
+====================
+* lineage/mirror
+6dba409 Updated aosp-minimal to 16-Apr-2024 12:02 UTC [Tim Schumacher]
+
+====================
+     2024-04-15    
+====================
+* device/qcom/sepolicy-legacy-um
+84869e5c legacy: Add common telephony rules [Bruno Martins]
+
+* frameworks/base
+bf34fd7de4f6 Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+423ec19 hudson: Resume builds for gemini and natrium [Bruno Martins]
+
+* lineage/mirror
+c2d1c5c Updated aosp-minimal to 15-Apr-2024 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+824d18b7 wiki: Sign apks that use public keys [althafvly]
+97752fb1 wiki: Reinstate gemini and natrium [Bruno Martins]
+
+* packages/apps/Aperture
+40eac7a Automatic translation import [LineageOS Infra]
 
 * packages/apps/Car/Settings
-f1c4d355c Automatic translation import [LineageOS Infra]
+c92c227c7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+fa7adc383 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Jelly
-be8cc16 Automatic translation import [LineageOS Infra]
+7e67117 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+158d243 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+a9ae601c057 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+6665ca7 Automatic translation import [LineageOS Infra]
 
 * packages/apps/TvSettings
-0481fc3ee Automatic translation import [LineageOS Infra]
+10c517131 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+3d4606b Automatic translation import [LineageOS Infra]
+
+====================
+     2024-04-14    
+====================
+====================
+     2024-04-13    
+====================
+* build/make
+5c2a19744f releasetools: Make recovery patch use bsdiff exclusively [Gérard Parat]
+
+* frameworks/opt/telephony
+a97d6d0b68 Revert "Clear up the obsoleted cascading signal strength polling logic" [Han Sol Jin]
+
+* lineage/hudson
+1b007bf hudson: Resume rtwo builds [Marc Bourgoin]
+7381c95 hudson: Promote heart and zippo to 21 [Marc Bourgoin]
+fbb1b01 More Gs [Michael Bestas]
+5623073 hudson: Promote surya to 21 [Willy Gardiol]
+6eb62bd Hello again, QPR2 [Bruno Martins]
+
+* lineage/wiki
+f8ca2305 wiki: Resume rtwo builds [Marc Bourgoin]
+4d1f9cc7 wiki: Update APEX signing for QPR2 [althafvly]
+170eeae0 wiki: Promote heart and zippo to 21 [Marc Bourgoin]
+2bb4d412 wiki: Add guamp [Michael Bestas]
+a556a5ff devices: surya: promote to 21 [Willy Gardiol]
+b3d29602 wiki: Sync lineage-21.0 devices with hudson [LuK1337]
+
+* packages/modules/Wifi
+634862cb6a Fix the issue of not sending p2p connection change broadcast to app with PERMISSION_MAINLINE_NETWORK_STACK [Shuibing Dai]
 
