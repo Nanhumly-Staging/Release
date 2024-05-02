@@ -1,10 +1,40 @@
 ====================
+     2024-05-02    
+====================
+* device/xiaomi/msm8998-common
+bd4910ef msm8998-common: Update NFC firmware from FairPhone 3 [Nanhumly]
+32a0120c Revert "msm8998-common: media: Drop OMX.qcom.video.decoder.vp9" [Nanhumly]
+f1eb2292 Revert "msm8998-common: Switch to Vulkan UI renderer" [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+d68f40a msm8998-common: Update NFC firmware from FairPhone 3 [Nanhumly]
+
+====================
+     2024-05-01    
+====================
+====================
+     2024-04-30    
+====================
+* device/xiaomi/msm8998-common
+23730704 msm8998-common: Update Keystore and Gatekeeper blobs from FairPhone 3 [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+1b302eb msm8998-common: Update Keystore and Gatekeeper blobs from FairPhone 3 [Nanhumly]
+
+====================
+     2024-04-29    
+====================
+* device/xiaomi/msm8998-common
+c65b5e06 fixup! msm8998-common: Disable slim_daemon [Nanhumly]
+
+====================
      2024-04-28    
 ====================
 * art
 6ddb5d2a52 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
+ddd5bfb857 envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32]
 4ca25683f6 build: Always use release-keys [Pranav Vashi]
 2da41b24a7 fixup! Correct logic for obtaining the path to full recovery image [Luca Stefani]
 
@@ -81,7 +111,6 @@ a8dd2fd5e51 Settings: Add status bar lyric [Kujou Yuko]
 3ed0a33 Don't start wizard flow on atv when gms is present [Aaron Kling]
 5dd3549 SetupWizardUtils: Check if active Ethernet network reaches the Internet [Bruno Martins]
 2ec7da3 SetupWizardUtils: Properly test for Ethernet transport presence [Bruno Martins]
-5b49c1f BaseSetupWizardActivity: Handle NPE when WiFi service is unavailable [Bruno Martins]
 
 * packages/services/Telephony
 3c0639ba9 Add support for multi-language carrier name override [cjybyjk]
@@ -92,13 +121,6 @@ a8dd2fd5e51 Settings: Add status bar lyric [Kujou Yuko]
 8479a624 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
 0d73175f lineage: Opt-in to shipping full recovery image by default [Jarl-Penguin]
 5e0e5c91 overlay: Update Dialer VVM config [Joel Beckmeyer]
-
-* device/xiaomi/msm8998-common
-a451a191 msm8998-common: Explicitly disable ship full recovery image [Nanhumly]
-f2c814c6 msm8998-common: Update soter service from lavender V12.5.3.0.QFGCNXM [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-585e466 msm8998-common: Update soter service from lavender V12.5.3.0.QFGCNXM [Nanhumly]
 
 * device/xiaomi/msm8998-common
 a451a191 msm8998-common: Explicitly disable ship full recovery image [Nanhumly]
@@ -120,218 +142,9 @@ ec36cf32 devices: Update odroid-c4 specs and maintainers [Bruno Martins]
 190e424d schema: Add Ethernet port to the list of peripherals [Bruno Martins]
 40878400 wiki: RIP TowelRoot [LuK1337]
 58ec2b28 devices: jflte{att,vzw}: Remove unecessary note [Nolen Johnson]
-
-* vendor/lineage
-a27417bb Revert "config: BoardConfigReservedSize: Prevent overlayfs on remount" [LuK1337]
-bb1a5edc vars: Update to AP1A.240405.002.A2/B1 [Michael Bestas]
-675e3637 config: device_framework_matrix: Add lineage.hardware.radio.config [Yumi Yukimura]
-
-* device/xiaomi/msm8998-common
-160e9737 msm8998-common: Disable slim_daemon [ghostrider-reborn]
-bf4f63c8 msm8998-common: gps: Update gps.conf for SUPL [maxliou]
-4bf0da52 msm8998-common: Switch to FairPhone 3 GNSS blobs [Nanhumly]
-3f23cb34 msm8998-common: Import GNSS and location API from LA.UM.10.6.2.r1-02500-89xx.0 [Bruno Martins]
-922a96f0 msm8998-common: Remove suffix in vulkan-related permissions [raul16]
-
-* vendor/xiaomi/msm8998-common
-c8b7125 msm8998-common: Disable slim_daemon [ghostrider-reborn]
-db1622c msm8998-common: Switch to FairPhone 3 GNSS blobs [Nanhumly]
-
-* device/xiaomi/msm8998-common
-160e9737 msm8998-common: Disable slim_daemon [ghostrider-reborn]
-bf4f63c8 msm8998-common: gps: Update gps.conf for SUPL [maxliou]
-4bf0da52 msm8998-common: Switch to FairPhone 3 GNSS blobs [Nanhumly]
-3f23cb34 msm8998-common: Import GNSS and location API from LA.UM.10.6.2.r1-02500-89xx.0 [Bruno Martins]
-922a96f0 msm8998-common: Remove suffix in vulkan-related permissions [raul16]
-
-* vendor/xiaomi/msm8998-common
-c8b7125 msm8998-common: Disable slim_daemon [ghostrider-reborn]
-db1622c msm8998-common: Switch to FairPhone 3 GNSS blobs [Nanhumly]
-
-====================
-     2024-04-26    
-====================
-* lineage/mirror
-de65c76 Updated aosp-minimal to 26-Apr-2024 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-0a64571c devices: jflte{att,vzw}: Use OOR for installation [Nolen Johnson]
-
-* device/xiaomi/msm8998-common
-e499721f msm8998-common: Switch to Vulkan UI renderer [Danny Lin]
-dc743f42 msm8998-common: telephony: Disable handling audio directing changes between call states [Quallenauge]
-09607579 Revert "msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop" [Michael Bestas]
-4f06867f fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-1d781632 msm8998-common: Drop dummy libldacBT_bco [Nanhumly]
-0c2207ad msm8998-common: Use lineage radio config wrapper [Yumi Yukimura]
-
-* vendor/xiaomi/msm8998-common
-fb6a118 fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-
-* device/xiaomi/msm8998-common
-e499721f msm8998-common: Switch to Vulkan UI renderer [Danny Lin]
-dc743f42 msm8998-common: telephony: Disable handling audio directing changes between call states [Quallenauge]
-09607579 Revert "msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop" [Michael Bestas]
-4f06867f fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-1d781632 msm8998-common: Drop dummy libldacBT_bco [Nanhumly]
-0c2207ad msm8998-common: Use lineage radio config wrapper [Yumi Yukimura]
-
-* vendor/xiaomi/msm8998-common
-fb6a118 fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-
-====================
-     2024-04-25    
-====================
-* hardware/lineage/interfaces
-978ca55 radio: config: 1.1-wrapper: Initial wrapper [Yumi Yukimura]
-
-* lineage/mirror
-938b882 Updated aosp-minimal to 25-Apr-2024 12:01 UTC [Tim Schumacher]
-
-====================
-     2024-04-24    
-====================
-* hardware/qcom-caf/sm8150/audio
-a5102d9426 audio_amplifier: Change the enable amplifier function location [Luofan Chen]
-
-* lineage/hudson
-dc16043 Revive the moto-exynos boys [Nolen Johnson]
-
-* lineage/wiki
-28805861 devices: Revive Moto Exynos9610 [Nolen Johnson]
-
-====================
-     2024-04-23    
-====================
-* lineage/mirror
-425f455 Updated aosp-minimal to 23-Apr-2024 12:01 UTC [Tim Schumacher]
-
-* vendor/lineage
-4ffd90db Revert "Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC" [Bruno Martins]
-
-====================
-     2024-04-22    
-====================
-* device/qcom/sepolicy_vndr/legacy-um
-d7e709c67 legacy: vendor: Allow location to read wifi_hal_prop [Nolen Johnson]
-2f2d9b8b1 legacy: Allow NFC HAL to access vendor data folder [Gaurav Singhal]
-8b4e9c66b legacy: Resolve vendor.qti.hardware.mwqemadapter denials [Michael Bestas]
-
-====================
-     2024-04-28    
-====================
-* art
-6ddb5d2a52 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
-
-* build/make
-4ca25683f6 build: Always use release-keys [Pranav Vashi]
-2da41b24a7 fixup! Correct logic for obtaining the path to full recovery image [Luca Stefani]
-
-* frameworks/av
-817bc6dda3 audio: Remove UID check from per-app volume commands [Adithya R]
-1466bc049d av: support per-app volume [1/3] [cjybyjk]
-
-* frameworks/base
-d3c6373bf179 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-17dc31744a75 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
-f6b3790b66b6 SystemUI: enable fading squiggle animation of qs media player [nift4]
-c53c6d221cd5 SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
-50b43059d07f SystemUI: Enable session-based media actions for all apps [Adithya R]
-aa4837816374 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-4f258fe4ea3d SystemUI: Use new privacy indicators for location [Danny Lin]
-268ed16dd88b Use brightness icon matching with slider redesign [Pranav Vashi]
-c8a32e086aa3 base: Add support for strict standby policy [LibXZR]
-13fd244397ee SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-9bf7b4e3b7b7 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-031de071940a base: Initial SenseProvider for FaceSense service [Chris Crump]
-d135a3f581d8 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-cffe793357d9 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-3230762edd71 base: Reset props for status bar lyric [1/2] [cjybyjk]
-9439a35d5b17 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-fb2b215804d3 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-5235424bf94c base: Add status bar lyric for Android 14 [cjybyjk]
-2bb46db96e0c Add Extra proto [Nanhumly]
-df5804b6d048 fixup! base: support per-app volume [2/3] [someone5678]
-a9d733d71be0 base: make per-app work with multi audio focus [El Dainosor]
-6b58def0c6fe SystemUI: Update App volume icon [yukiscape]
-44aae4e6216e base: support per-app volume [2/3] [cjybyjk]
-89ddb4c901e2 SystemUI: make QS footer rounded (#910) [awakened]
-52ef2b60bb84 SystemUI: Apply surface color to brightness icons [Harsh Pal]
-bc79aa3d6547 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-2eb0c7256c75 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-157d0b1cbe77 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-8b7d97f3df36 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-8626a80e25e6 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-075f0eb8f0d3 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-c5c32602981e SystemUI: Calculate paged QS tiles height properly [Adithya R]
-9d37b97d59f2 SystemUI: Fix QS header clock color [Danny Baumann]
-a3f363c8d27d SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-90fb4f753b6f SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-1a0098b2bce2 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-2a8ec4948175 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-464e1f9ffeef SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-467d4f19381f SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-740f08774b86 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-40dadb1ec9e4 Revert "Make QS always use dark theme colors" [Danny Lin]
-
-* lineage-sdk
-1e7c5e63 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
-
-* lineage/website
-a185f71 www: kiwiirc.com -> web.libera.chat [LuK1337]
-
-* lineage/wiki
-b9465969 wiki: kiwiirc.com -> web.libera.chat [LuK1337]
-
-* packages/apps/CarrierConfig
-2de3f0e Override name of Mainland China carriers [cjybyjk]
-
-* packages/apps/Settings
-9e8375b61d8 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-1500c953fad Settings: Add model spoof support [Nanhumly]
-2b9f1dae75e Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-5f790099e89 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-a8dd2fd5e51 Settings: Add status bar lyric [Kujou Yuko]
-67abec04e47 Settings: support per-app volume [3/3] [cjybyjk]
-651a1a815bb Settings: Make all user apps cloneable [someone5678]
-052f96db73e Settings: Enable Cloned Apps by default [AmeChanRain]
 
 * packages/apps/SetupWizard
-3ed0a33 Don't start wizard flow on atv when gms is present [Aaron Kling]
-5dd3549 SetupWizardUtils: Check if active Ethernet network reaches the Internet [Bruno Martins]
-2ec7da3 SetupWizardUtils: Properly test for Ethernet transport presence [Bruno Martins]
 5b49c1f BaseSetupWizardActivity: Handle NPE when WiFi service is unavailable [Bruno Martins]
-
-* packages/services/Telephony
-3c0639ba9 Add support for multi-language carrier name override [cjybyjk]
-
-* vendor/lineage
-1e7e80c7 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
-1697210c vendor: Guard Face Unlock support [someone5678]
-8479a624 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
-0d73175f lineage: Opt-in to shipping full recovery image by default [Jarl-Penguin]
-5e0e5c91 overlay: Update Dialer VVM config [Joel Beckmeyer]
-
-* device/xiaomi/msm8998-common
-a451a191 msm8998-common: Explicitly disable ship full recovery image [Nanhumly]
-f2c814c6 msm8998-common: Update soter service from lavender V12.5.3.0.QFGCNXM [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-585e466 msm8998-common: Update soter service from lavender V12.5.3.0.QFGCNXM [Nanhumly]
-
-====================
-     2024-04-27    
-====================
-* device/lineage/sepolicy
-210b1eb sepolicy: Add rules for radio config wrapper [Yumi Yukimura]
-
-* lineage/wiki
-017ae287 devices: Update deadpool specs and maintainers [Bruno Martins]
-b45486e5 devices: Update radxa0 specs [Bruno Martins]
-ec36cf32 devices: Update odroid-c4 specs and maintainers [Bruno Martins]
-190e424d schema: Add Ethernet port to the list of peripherals [Bruno Martins]
-40878400 wiki: RIP TowelRoot [LuK1337]
-58ec2b28 devices: jflte{att,vzw}: Remove unecessary note [Nolen Johnson]
 
 * vendor/lineage
 a27417bb Revert "config: BoardConfigReservedSize: Prevent overlayfs on remount" [LuK1337]
@@ -363,54 +176,7 @@ e499721f msm8998-common: Switch to Vulkan UI renderer [Danny Lin]
 dc743f42 msm8998-common: telephony: Disable handling audio directing changes between call states [Quallenauge]
 09607579 Revert "msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop" [Michael Bestas]
 4f06867f fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-1d781632 msm8998-common: Drop dummy libldacBT_bco [Nanhumly]
-0c2207ad msm8998-common: Use lineage radio config wrapper [Yumi Yukimura]
 
 * vendor/xiaomi/msm8998-common
 fb6a118 fixup! msm8998-common: Update Radio, IMS from FairPhone 3 [Nanhumly]
-
-====================
-     2024-04-25    
-====================
-* hardware/lineage/interfaces
-978ca55 radio: config: 1.1-wrapper: Initial wrapper [Yumi Yukimura]
-
-* lineage/mirror
-938b882 Updated aosp-minimal to 25-Apr-2024 12:01 UTC [Tim Schumacher]
-
-====================
-     2024-04-24    
-====================
-* hardware/qcom-caf/sm8150/audio
-a5102d9426 audio_amplifier: Change the enable amplifier function location [Luofan Chen]
-
-* lineage/hudson
-dc16043 Revive the moto-exynos boys [Nolen Johnson]
-
-* lineage/wiki
-28805861 devices: Revive Moto Exynos9610 [Nolen Johnson]
-
-====================
-     2024-04-23    
-====================
-* lineage/mirror
-425f455 Updated aosp-minimal to 23-Apr-2024 12:01 UTC [Tim Schumacher]
-
-* vendor/lineage
-4ffd90db Revert "Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC" [Bruno Martins]
-
-====================
-     2024-04-22    
-====================
-* device/qcom/sepolicy_vndr/legacy-um
-d7e709c67 legacy: vendor: Allow location to read wifi_hal_prop [Nolen Johnson]
-2f2d9b8b1 legacy: Allow NFC HAL to access vendor data folder [Gaurav Singhal]
-8b4e9c66b legacy: Resolve vendor.qti.hardware.mwqemadapter denials [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/display
-1a98734d97 Revert "sdm: Conditionally revert "sdm: Implement ‘Null Display’ in SDM core"" [Bruno Martins]
-8ad6951855 Merge tag 'DISPLAY.LA.3.0.r1-10700-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/display into HEAD [SGCMarkus]
-
-* vendor/lineage
-3940fb42 config: BoardConfigReservedSize: Prevent overlayfs on remount [Nolen Johnson]
 
