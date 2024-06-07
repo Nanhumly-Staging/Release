@@ -1,0 +1,220 @@
+====================
+     2024-06-07    
+====================
+====================
+     2024-06-06    
+====================
+* art
+379fb81c88 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+
+* build/make
+83e3c0f32c build: Always use release-keys [Pranav Vashi]
+
+* device/lineage/sepolicy
+a17dc7f sepolicy: Add rules for radio wrapper [Sebastiano Barezzi]
+
+* frameworks/av
+40b898d529 audio: Remove UID check from per-app volume commands [Adithya R]
+2cdb958f57 av: support per-app volume [1/3] [cjybyjk]
+
+* frameworks/base
+e83db5d3112a base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+7ad6beb55402 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
+36998fb63eae SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
+0546d73406dc SystemUI: Enable session-based media actions for all apps [Adithya R]
+4c556db05e59 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+803c9d9a067d SystemUI: Use new privacy indicators for location [Danny Lin]
+cbd261a98de6 Use brightness icon matching with slider redesign [Pranav Vashi]
+f6629815d289 base: Add support for strict standby policy [LibXZR]
+6a066f46549e SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+29dd67f9c7b9 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+30fb60bd8e70 base: Initial SenseProvider for FaceSense service [Chris Crump]
+d06ff28d6d1a BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+c3cff970cafa MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+fde6849821c9 base: Reset props for status bar lyric [1/2] [cjybyjk]
+053375c8e188 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+a3e258d29079 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+1947c8ef13a2 base: Add status bar lyric for Android 14 [cjybyjk]
+c0f3f1f6c163 Add Extra proto [Nanhumly]
+f43694d25b3e fixup! base: support per-app volume [2/3] [someone5678]
+7d7dfb73f63b base: make per-app work with multi audio focus [El Dainosor]
+093771352f95 SystemUI: Update App volume icon [yukiscape]
+0ad18caa36f9 base: support per-app volume [2/3] [cjybyjk]
+e94f5be5347e SystemUI: make QS footer rounded (#910) [awakened]
+a44753f7ed36 SystemUI: Apply surface color to brightness icons [Harsh Pal]
+06239018436f SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+03754cc62651 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+428b506202ce SystemUI: Switch notification background to monet on heads up [DillerOFire]
+1feee6d8b6aa SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+512295583f05 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+e48fe12a52d3 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+e42199a99800 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+033771c59ee5 SystemUI: Fix QS header clock color [Danny Baumann]
+1e313cb5cb59 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+10e2703d382f SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+8a792f92faa8 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+20e9b2d397fb SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+00896a36038f SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+fb7cdc63fdf7 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+7208471a598d Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+607aff7fa04a Revert "Make QS always use dark theme colors" [Danny Lin]
+
+* hardware/lineage/interfaces
+0b534a8 radio: 1.4: legacy: Initial wrapper (original) [Derek]
+
+* hardware/qcom-caf/msm8998/media
+785f4a115 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* lineage-sdk
+3f1ed97f sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* packages/apps/CarrierConfig
+71315ac Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Settings
+2e575791968 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+d0d08f3f3a1 Settings: Add model spoof support [Nanhumly]
+9148eae6e8e Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+a675b725a19 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+ce104566e28 Settings: Add status bar lyric [Kujou Yuko]
+9c4927c8b8d Settings: support per-app volume [3/3] [cjybyjk]
+8f7e65dd330 Settings: Make all user apps cloneable [someone5678]
+7c49f0bb024 Settings: Enable Cloned Apps by default [AmeChanRain]
+
+* packages/services/Telephony
+5db9e86ea Add support for multi-language carrier name override [cjybyjk]
+
+* vendor/lineage
+962f0e3c Sign Build [Nanhumly]
+4004bc75 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+fe412e47 vendor: Guard Face Unlock support [someone5678]
+83973046 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+====================
+     2024-06-05    
+====================
+* lineage/mirror
+6ef0a6d Updated aosp-minimal to 05-Jun-2024 12:01 UTC [Tim Schumacher]
+7637643 Updated to 05-Jun-2024 02:22 UTC [Kevin F. Haggerty]
+
+====================
+     2024-06-04    
+====================
+* lineage/mirror
+097a0f3 Updated aosp-minimal to 04-Jun-2024 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Etar
+0ade9bfa Avoid crash if "Search Service" isn't available [Gitsaibot]
+61ad6557 New version 1.0.45 [Jochen Sprickerhof]
+50dba117 Downgrade kotlin to fix compilation [Jochen Sprickerhof]
+0028704f Convert app/build.gradle to kts [doomsdayrs]
+1be7b471 Convert build.gradle to kts [doomsdayrs]
+f090ffdf Convert settings.gradle to kts [doomsdayrs]
+16e01391 New version 1.0.44 [Jochen Sprickerhof]
+b14c62b1 Revert "Update gradle and fix warnings" [Jochen Sprickerhof]
+37fe5dc6 Add missing permission [Gitsaibot]
+d6deb537 New version 1.0.43 [Gitsaibot]
+dac9b25b Change to vector images in status bar [Gitsaibot]
+fab75e53 4824-q-Add_confirmation_dialog_on_event_discard [Fahim Salam Chowdhury]
+ca3f8dea Add_no_snooze_option [Fahim Salam Chowdhury]
+bce21357 gradle: Check and warn about lint errors on release builds [Aayush Gupta]
+e4984584 lint: Don't warn about missing translations [Aayush Gupta]
+4a77e99b Bump to latest stable AGP and Gradle version [Aayush Gupta]
+e99436d8 Use exclamation mark as Icon for better visibility [Gitsaibot]
+1516287c Update dependencies and increase java minimum requirement to java 17 [Gitsaibot]
+2f753894 No reponse container if no attendee data [Windkracht8]
+7d657eed Check the ratio of left/right to up/down [Greg Ross]
+
+====================
+     2024-06-03    
+====================
+* frameworks/base
+0abcf0db0b50 SystemUI: Match keyguard carrier text font with system [Dhina17]
+fc48059645ec SystemUI: Update QS header fields text appearance on theme change [Dhina17]
+07f556405688 SystemUI: Enable fading squiggle animation of qs media player [nift4]
+
+* lineage/hudson
+10139b1 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/overlays/Lineage
+6973048 BlackTheme: Set overlay category as system palette [Dhina17]
+
+====================
+     2024-06-02    
+====================
+* frameworks/base
+1668fe8ee917 Automatic translation import [LineageOS Infra]
+
+* hardware/lineage/interfaces
+65cabbc radio: config: 1.1-wrapper: Enable mobile data at last [Yumi Yukimura]
+0f94319 radio: config: 1.1-wrapper: Remove superfluous null check for radios[i] [Yumi Yukimura]
+
+* lineage-sdk
+97b8e583 Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+2c07379 hudson: Build pdx234 [Luofan Chen]
+
+* lineage/wiki
+46f4285d wiki: Add Xperia 1 V [Luofan Chen]
+
+* packages/apps/Aperture
+aac5e1c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Car/Settings
+6389a1aeb Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+444610acc Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+eb9f3f636 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+1874c85b Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+8346104 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+cb87891 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1997755 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+8ede9dd Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+9dd46987224 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+d7dd5b0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+61f272c6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+6dfea4cd59 Automatic translation import [LineageOS Infra]
+
+* packages/apps/TvSettings
+443fbda6f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+a6ce04a Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+feb53d85f Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+d2cf4e2 Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+9d32845 Automatic translation import [LineageOS Infra]
+
+====================
+     2024-06-01    
+====================
+* vendor/lineage
+fd8791a8 Update CMCC APNs [Luofan Chen]
+
