@@ -1,188 +1,179 @@
 ====================
-     2024-05-26    
+     2024-06-13    
+====================
+* device/xiaomi/msm8998-common
+1a641bc8 msm8998-common: Implement keys_migration [Edrick Sinsuan]
+23bd4580 Revert "msm8998-common: Declare BOARD_VENDOR" [Nanhumly]
+e469ed67 msm8998-common: Use common libqti-perfd-client and power-libperfmgr [Bruno Martins]
+18111701 msm8998-common: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
+1d49a9f5 msm8998-common: rootdir: Fix PowerHAL nodes [Sebastiano Barezzi]
+84d32bf4 msm8998-common: rootdir: Tune FS for runtime [Georg Veichtlbauer]
+fb25f3d3 msm8998-common: rootdir: Switch to EAS/schedutil [Georg Veichtlbauer]
+7ba35323 msm8998-common: rootdir: Enable PowerHAL hint processing [Nanhumly]
+1e79a156 msm8998-common: sepolicy: Initial libperfmgr sepolicy [Sebastiano Barezzi]
+daefe079 msm8998-common: Drop TARGET_USES_INTERACTION_BOOST [Subhajeet Muhuri]
+d1a46b69 msm8998-common: powerhint: Let libperfmgr handles DT2W [Georg Veichtlbauer]
+35f0cbc7 msm8998-common: Add powerhint.json for msm8998 [jmpfbmx]
+8ecb6896 msm8998-common: Remove useless perf props [itsjoeoui]
+14dbbc0e msm8998-common: Add back ro.vendor.extension_library definition [Weikai Kong]
+ae3b464a msm8998-common: libqti-perfd-client: Clean up [LuK1337]
+84873993 msm8998-common: libqti-perfd-client: Move to C [Sebastiano Barezzi]
+b6a85c0c msm8998-common: libqti-perfd-client: return a dummy value [Chenyang Zhong]
+c3d9dbb7 msm8998-common: libqti-perfd-client: Remove namespace declaration [Bruno Martins]
+a6d1b063 msm8998-common: Create dummy libqti-perfd-client [Lucchetto]
+9fedd216 msm8998-common: Remove QTI perfd [Wei Wang]
+28e5aa6a msm8998-common: Declare BOARD_VENDOR [Sebastiano Barezzi]
+983b3ce5 msm8998-common: Migrate to Xiaomi power AIDL HAL [Bruno Martins]
+
+====================
+     2024-06-12    
 ====================
 * art
-e3ef0babb0 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+b717acd849 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-8d2d8def9f build: Always use release-keys [Pranav Vashi]
+43f3d4e273 build: Always use release-keys [Pranav Vashi]
 
 * frameworks/av
-6a93139be4 audio: Remove UID check from per-app volume commands [Adithya R]
-febb8cf796 av: support per-app volume [1/3] [cjybyjk]
+53089d569d audio: Remove UID check from per-app volume commands [Adithya R]
+ac5dd0e32f av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-4203e2fbbfee base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-6a5c98f9dca2 SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
-40da93e90342 SystemUI: enable fading squiggle animation of qs media player [nift4]
-a27012010036 SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
-a422a43305be SystemUI: Enable session-based media actions for all apps [Adithya R]
-0dc29412e02e SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-0ae6bf50b5cb SystemUI: Use new privacy indicators for location [Danny Lin]
-0b29ad665018 Use brightness icon matching with slider redesign [Pranav Vashi]
-0d02fed10b6c base: Add support for strict standby policy [LibXZR]
-d19aed6f23b9 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-6b19e7bf2f9d SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-032d35902f03 base: Initial SenseProvider for FaceSense service [Chris Crump]
-235f0927d40e BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-024487b5d79b MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-6acb105e822c base: Reset props for status bar lyric [1/2] [cjybyjk]
-29fc676c1a34 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-6fc84494e965 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-42f5f1a649c0 base: Add status bar lyric for Android 14 [cjybyjk]
-05e21d7d05b8 Add Extra proto [Nanhumly]
-7217e7bda7e5 fixup! base: support per-app volume [2/3] [someone5678]
-b6e7fa403897 base: make per-app work with multi audio focus [El Dainosor]
-451c07f04e74 SystemUI: Update App volume icon [yukiscape]
-4ac0a0b07333 base: support per-app volume [2/3] [cjybyjk]
-9f4cbaec13c7 SystemUI: make QS footer rounded (#910) [awakened]
-21ba794b23df SystemUI: Apply surface color to brightness icons [Harsh Pal]
-be031a1c6992 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-72d1f30865b1 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-df7be3a26981 SystemUI: Switch notification background to monet on heads up [DillerOFire]
-73fe9af1e817 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-56d0aaf58292 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-af90d0f9e8b5 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-826c5ee94010 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-7f119493487a SystemUI: Fix QS header clock color [Danny Baumann]
-3b1cd9ae4147 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-28a43d5470fa SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-b778a1780ff3 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-68f63feaaa50 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-eaf7fe229467 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-0978737d3dfe SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-945c28013403 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-6388a12c323f Revert "Make QS always use dark theme colors" [Danny Lin]
+1df4c5cd5521 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+38abc8b78d8c SystemUI: Kill old privacy indicator icons completely [Pranav Vashi]
+a26d3c6b59b5 SystemUI: Enable production-ready feature flags - Conversations: enabled by default on Pixel - Charging ripple: enabled by default on Pixel Taken from https://github.com/ProtonAOSP/android_vendor_proton/commit/a32d8c4c9e731e609b16b37da191669f5c607aad [Danny Lin]
+8b8a798aee71 SystemUI: Enable session-based media actions for all apps [Adithya R]
+6e7d3db2febb SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+43624b9bb55a SystemUI: Use new privacy indicators for location [Danny Lin]
+d2a662ea04ee Use brightness icon matching with slider redesign [Pranav Vashi]
+5952a3db27c8 base: Add support for strict standby policy [LibXZR]
+027e5d94e309 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+523d1260c15b SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+cafa73bddc9f base: Initial SenseProvider for FaceSense service [Chris Crump]
+98cec338f80c BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+73d004422cb7 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+fcdf133cdec0 base: Reset props for status bar lyric [1/2] [cjybyjk]
+c7c529ed7880 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+9aad89e3b384 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+a241d433d386 base: Add status bar lyric for Android 14 [cjybyjk]
+48d9fae259ad Add Extra proto [Nanhumly]
+321d335028a9 fixup! base: support per-app volume [2/3] [someone5678]
+da0d91975f44 base: make per-app work with multi audio focus [El Dainosor]
+1be8567a561e SystemUI: Update App volume icon [yukiscape]
+5f9f7d9dcb28 base: support per-app volume [2/3] [cjybyjk]
+c622fc2a32f8 SystemUI: make QS footer rounded (#910) [awakened]
+ecd9f6f3ee0c SystemUI: Apply surface color to brightness icons [Harsh Pal]
+08b6269981ac SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+c7dc7a7d3e60 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+337d5f579cae SystemUI: Switch notification background to monet on heads up [DillerOFire]
+b5e4f417668b SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+58d05381ae5b SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+a778bdc8c170 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+6477987b67d6 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+58a2259d53b3 SystemUI: Fix QS header clock color [Danny Baumann]
+12b61afa0286 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+173298173aa2 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+e0cc76a5df42 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+d313061b62de SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+d2223071343a SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+3d9f00511791 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+8879edbff912 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+30124d36d669 Revert "Make QS always use dark theme colors" [Danny Lin]
 
 * hardware/qcom-caf/msm8998/media
-57c987d77 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
-* hardware/qcom-caf/thermal
-a1bb7a3 thermal-hal: Enable thermal_hal support for yupik variants [Gopala Krishna Nuthaki]
+31557e802 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * lineage-sdk
-edbadb94 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
-
-* lineage/hudson
-179a83a Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-b762334 Updated to 25-May-2024 16:03 UTC [Kevin F. Haggerty]
-4a2e435 Updated aosp-minimal to 25-May-2024 12:01 UTC [Tim Schumacher]
+8a2a5126 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 
 * packages/apps/CarrierConfig
-2ccb163 Override name of Mainland China carriers [cjybyjk]
-
-* packages/apps/FlipFlap
-fd4e1e2 FlipFlap: Update ForegroundService and broadcast receivers for U [Simon1511]
+1ad021a Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/Settings
-a9ba069be37 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-a76c3b40e8f Settings: Add model spoof support [Nanhumly]
-ea821d6ae99 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-bb4605dfa96 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-b6e38126c5a Settings: Add status bar lyric [Kujou Yuko]
-a40ddd31b4d Settings: support per-app volume [3/3] [cjybyjk]
-a9a3cba5752 Settings: Make all user apps cloneable [someone5678]
-c2cd1cc647c Settings: Enable Cloned Apps by default [AmeChanRain]
+b6c1600d4ed Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+6960bbd6752 Settings: Add model spoof support [Nanhumly]
+e1ca920fdc0 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+5882670c6db Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+076421acd80 Settings: Add status bar lyric [Kujou Yuko]
+59360623f4b Settings: support per-app volume [3/3] [cjybyjk]
+c09cdc4af12 Settings: Make all user apps cloneable [someone5678]
+83b6051eb3a Settings: Enable Cloned Apps by default [AmeChanRain]
 
 * packages/services/Telephony
-856ac080f Add support for multi-language carrier name override [cjybyjk]
+cee4382ff Add support for multi-language carrier name override [cjybyjk]
 
 * vendor/lineage
-b943b1c7 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
-bcd59973 vendor: Guard Face Unlock support [someone5678]
-1eb231d5 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+86dec41e Sign Build [Nanhumly]
+f4cdd547 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+54060725 vendor: Guard Face Unlock support [someone5678]
+e5ee29ee config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
 
-* device/xiaomi/msm8998-common
-5bd1f90e msm8998-common: Disable AAudio MMAP [madmax7896]
-
-====================
-     2024-05-25    
-====================
-* lineage/hudson
-f85242c We want more Mi 10 series devices to join our sweet sweet little family <3 [Yumi Yukimura]
-6af7de3 we're essentially unkillable [Nolen Johnson]
-
-* lineage/mirror
-0771f8a Updated to 24-May-2024 15:34 UTC [Kevin F. Haggerty]
-29fe22d Updated aosp-minimal to 24-May-2024 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-3813fd30 devices: mata: Revive post QPR2 [Nolen Johnson]
-175a2dc2 wiki: devices: Promote xiaomi sm8350 family to 21 [Arian]
-
-* vendor/qcom/opensource/vibrator
-b8de119 vibrator: Use a better check for primitive effects [Adithya R]
-
-* device/xiaomi/msm8998-common
-a4508353 msm8998-common: Remove A2DP input module in audio policy configuration [llololo]
+* kernel/xiaomi/msm8998
+02972a003f9f {chiron,sagit}_defconfig: Disable external SoC control [Georg Veichtlbauer]
+6b276cfaa2df {chiron,sagit}_defconfig: Disable unneeded UDP diag and RAID arrays [Georg Veichtlbauer]
+8a6e653e6346 {chiron,sagit}_defconfig: Enable page table mapping [Georg Veichtlbauer]
 
 ====================
-     2024-05-24    
+     2024-06-11    
+====================
+====================
+     2024-06-10    
+====================
+====================
+     2024-06-09    
 ====================
 * lineage/mirror
-f1568c0 Updated to 23-May-2024 12:01 UTC [Tim Schumacher]
+70b9a71 Updated aosp-minimal to 08-Jun-2024 12:01 UTC [Tim Schumacher]
 
-* packages/apps/Glimpse
-a247533 Glimpse: Update AGP and Gradle to latest stable version [Sebastiano Barezzi]
-
-====================
-     2024-05-23    
-====================
-* lineage/hudson
-8574783 hudson: Promote miatoll to 21 [Alexander Winkowski]
-
-* lineage/wiki
-ef8dcddc wiki: Update maintainers [Timi Rautamäki]
-e423d0d0 wiki: Improve FP4 instructions [Michael Bestas]
-9eb9e2de wiki: Add FP5 [Michael Bestas]
-70d3b571 wiki: Fix POCO M2 Pro camera info [Alexander Winkowski]
-63321b10 fixup! devices: miatoll: Add firmware update guide [Giovanni Ricca]
-68f17bdd wiki: Remove "Qi wireless charging" from pdx214 [LuK1337]
-
-* packages/apps/Glimpse
-218e328 Glimpse: Switch to NavigationRail for large screen devices [Aayush Gupta]
-021ab55 Glimpse: Move info and useAs actions to toolbar [Aayush Gupta]
+* packages/apps/LineageParts
+6e0e1f0 Migrate long screen settings to MaterialSwitch [Michael Bestas]
 
 * vendor/lineage
-de2ff1dc config: BoardConfigReservedSize: Add ATV reserved sizes [Nolen Johnson]
+9d4dc16c config: Indent BoardConfig makefiles [Bruno Martins]
 
 ====================
-     2024-05-22    
+     2024-06-08    
 ====================
-====================
-     2024-05-21    
-====================
-* device/qcom/sepolicy_vndr/sm8450
-f6cdacdcd qva: Label qcom,battery_charger extcon [Michael Bestas]
-49a07b007 qva: Extend extcon rules [Bruno Martins]
-6c5be29b0 Add IQtiRadio in vendor [Suresh Koleti]
-13952f5a5 sepolicy: Label vendor.qti.ims.factoryaidlservice.IImsFactory [Michael Bestas]
-a3463e5ce sepolicy: Move some AIDL rules to common policy [Michael Bestas]
+* external/chromium-webview/prebuilt/arm
+525b590 Update Chromium Webview arm prebuilt to 125.0.6422.165 [Kevin F. Haggerty]
 
-* lineage/hudson
-9c89f04 why did Renoir take mona Lisa to Mars? [Arian]
+* external/chromium-webview/prebuilt/arm64
+5cc8b47 Update Chromium Webview arm64 prebuilt to 125.0.6422.165 [Kevin F. Haggerty]
 
-====================
-     2024-05-20    
-====================
-* device/qcom/sepolicy_vndr/sm8450
-d6a218c5b sepolicy_vndr: Add IQtiOemHook and IDeviceInfo [Sridhar Kasukurthi]
-7a49fa4b7 taro: Label discard_max_bytes sysfs [Michael Bestas]
-76acc1fc3 generic: Allow init write to discard_max_bytes [dianlujitao]
-d9e0c83e2 sepolicy: enable vibrator HAL to access qcom-haptics class sysfs [xuanpeng]
-dc90f3137 device/qcom/sepolicy_vndr : Support Widevine AIDL [Phalguni Bumhyavarapu]
+* external/chromium-webview/prebuilt/x86
+d62b845 Update Chromium Webview x86 prebuilt to 125.0.6422.165 [Kevin F. Haggerty]
 
-* hardware/lineage/interfaces
-329cea5 power: Allow device specific hooks for setMode, isModeSupported [LuK1337]
+* external/chromium-webview/prebuilt/x86_64
+e61e555 Update Chromium Webview x86_64 prebuilt to 125.0.6422.165 [Kevin F. Haggerty]
+
+* frameworks/base
+8066ea307fce SystemUI: Remove icon tint for user switch items in global actions [Dhina17]
+fecb17f48f9b SystemUI: Use grid view for user switch in global actions [Dhina17]
 
 * lineage/hudson
-7105ae2 After almost 4 years I just discovered Xiaomi was referring to Leo Minor [Sebastiano Barezzi]
+429248e hudson: Bring up earth (Redmi 12C) [Matsvei Niaverau]
+
+* lineage/mirror
+4f206b2 Updated aosp-minimal to 07-Jun-2024 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-e1d0b22b wiki: devices: Promote lmi to 21 [Sebastiano Barezzi]
+6de3ad03 wiki: Bring up earth (Redmi 12C) [Matsvei Niaverau]
 
-* vendor/lineage
-0b86619d soong: Add power libperfmgr extension config [Arian]
+* kernel/xiaomi/msm8998
+644ec7f40221 {chiron,sagit}_defconfig: Enable Energy Aware Scheduling [Josh Choo]
+
+====================
+     2024-06-07    
+====================
+* external/chromium-webview/patches
+481cefa Update Chromium Webview to 125.0.6422.165 [Kevin F. Haggerty]
+
+* lineage/scripts
+622b06d build-webview: Update default webview to 125.0.6422.165 [Kevin F. Haggerty]
+
+* packages/apps/Updater
+4a536da Updater: Use https:// for wiki URL [LuK1337]
+
+* vendor/xiaomi/msm8998-common
+8a5c6eb msm8998-common: Remove QTI perfd [Nanhumly]
 
