@@ -1,68 +1,256 @@
 ====================
-     2024-06-27    
+     2024-07-02    
 ====================
 * art
-0d5416fa8a Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+3fa4dd4a59 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+
+* bootable/recovery
+8bbe7bae updater: Support loading dynamic partition metadata from OTA [Yumi Yukimura]
 
 * build/make
-2068816262 build: Always use release-keys [Pranav Vashi]
+a5edd34cad build: Always use release-keys [Pranav Vashi]
+8124d9428e releasetools: Pass non-sparse super_empty.img to update_dynamic_partitions() [Yumi Yukimura]
+e8426993f4 releasetools: build_super_image: Do not set readonly attr [Yumi Yukimura]
+c8d38611f4 build: Enable super image build rules depending on single super block device [Yumi Yukimura]
 
 * frameworks/av
-ed0b622f9e audio: Remove UID check from per-app volume commands [Adithya R]
-de45fe417d av: support per-app volume [1/3] [cjybyjk]
+c10e2fe6bc audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
+3b6df6bf7a audio: Remove UID check from per-app volume commands [Adithya R]
+aa8079bbf1 av: support per-app volume [1/3] [cjybyjk]
 
 * frameworks/base
-95d181d9bfd6 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-53cd732d0299 base: Add support for strict standby policy [LibXZR]
-277d0ce08e83 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
-da377caa961f fixup! Add Face Unlock with ParanoidSense [someone5678]
-708a57d60549 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-b6b700903116 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-491a5658aefa SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-b11846c0399c SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-54fd5022a8ab FaceSense: Adapt for 14 QPR2 [aswin7469]
-24cb6cbd8cb7 FaceSense: Vibrate on successful authentication [Adithya R]
-8fdc3da07dd9 Add Face Unlock with ParanoidSense [Chris Crump]
-8d275d60c2fa BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-4f76508f5c23 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
-312ca278d2ae MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-6319c26f4334 base: Reset props for status bar lyric [1/2] [cjybyjk]
-a1e85563e07f Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-58f610123e10 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-017e648ca740 base: Add status bar lyric for Android 14 [cjybyjk]
-658bc89b4231 Add Extra proto [Nanhumly]
-a10365a7b3d4 fixup! base: support per-app volume [2/3] [someone5678]
-2417decfdc24 base: make per-app work with multi audio focus [El Dainosor]
-7a5e76a5ec7a SystemUI: Update App volume icon [yukiscape]
-23d0bd3ec841 base: support per-app volume [2/3] [cjybyjk]
+b5c32b45f689 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
+84cf147b99e0 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
+d89038b42fe7 SystemUI: Use color accent for charging animation [Genkzsz11]
+aec003fc317b ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
+6737e9546237 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+b38a3e5e078b SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+6c12fe3e0da5 SystemUI: Use proper Resolver background color [elluzion]
+7e85bfa0abef SystemUI: Fix QS tile dialog background color [Pranav Vashi]
+fdf4e0e72106 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+3691c40c4f21 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+18a9fa187651 SystemUI: Fix QS header clock color [Danny Baumann]
+7da9a9a6b4a0 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+a79f4087588c SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+a780d7130a99 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+6ed4aeda7359 SystemUI: Use transparent background for QS footer [Pranav Vashi]
+12fbb50c8dea SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
+60d06e553773 SystemUI: Update QS notification background color [minaripenguin]
+599ad6e9881d SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+4154c47014f2 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+bd8c591d491c SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+bdbb67ae60db SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+0dcba2f89c75 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+6465257e86ff SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+97cc1b08d4cd Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+b0726fae8844 Revert "Make QS always use dark theme colors" [Danny Lin]
+ba537472734b base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+943be01fc3c4 base: Add support for strict standby policy [LibXZR]
+8da9c55dcbf8 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
+e1fffdc4bc1d fixup! Add Face Unlock with ParanoidSense [someone5678]
+02bd5fa3adb9 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+ea137e3aeb7c SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+ed5ab224e1f6 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
+0844f18cc784 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+965cc17e1ffa FaceSense: Adapt for 14 QPR2 [aswin7469]
+f87b5002f168 FaceSense: Vibrate on successful authentication [Adithya R]
+8ea9d855bbe5 Add Face Unlock with ParanoidSense [Chris Crump]
+e3fe339810c0 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+81c50a28c132 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
+5a6bd894c037 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+757faffc7769 base: Reset props for status bar lyric [1/2] [cjybyjk]
+778a073c2045 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+6d43e5d38ecd SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+e41aedfd19d6 base: Add status bar lyric for Android 14 [cjybyjk]
+27f532bf7aae Add Extra proto [Nanhumly]
+ed4a652eab94 fixup! base: support per-app volume [2/3] [someone5678]
+bd11c5226787 base: make per-app work with multi audio focus [El Dainosor]
+281757515f57 SystemUI: Update App volume icon [yukiscape]
+115719c5ca4c base: support per-app volume [2/3] [cjybyjk]
 
 * hardware/qcom-caf/msm8998/media
-f67118ed1 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+dc2406493 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * lineage-sdk
-b0e9121f sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+ff2cbc7d sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+65ab777e Automatic translation import [LineageOS Infra]
+
+* lineage/wiki
+db523ae8 wiki: Kill is_retrofit_dynamic_partitions flag [Yumi Yukimura]
+82e5fa99 devices: {a52q, a52sxq, a72q, a73xq, m52xq}: Add info about display refresh rate [PiotrZPL]
+393fd72f devices: Spacewar: Split rear cameras into 2 [PiotrZPL]
+c71e98a9 devices: FP5: Add info about 90Hz refresh rate [PiotrZPL]
+41f28e56 devices: r8q: Add info about 120Hz refresh rate [PiotrZPL]
+1671f011 devices: earth: Add front camera info [PiotrZPL]
+
+* packages/apps/Aperture
+73c31df Automatic translation import [LineageOS Infra]
 
 * packages/apps/CarrierConfig
-4bf0c1e Override name of Mainland China carriers [cjybyjk]
+5b72665 Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/DeskClock
+222518fe9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+a03a34689 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+b1325202 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+025dd3b3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+9bcd56c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+22ec170 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+6043625 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+53b6c8e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+7fdcf5e Automatic translation import [LineageOS Infra]
 
 * packages/apps/Settings
-030e9b20333 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-30ecd882165 Settings: Add model spoof support [Nanhumly]
-9fe71d91d33 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-cabb7abb683 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-162bef16e18 Settings: Add status bar lyric [Kujou Yuko]
-a16ce75ee49 Settings: support per-app volume [3/3] [cjybyjk]
-47b951bce2a Settings: Make all user apps cloneable [someone5678]
-5e27d966b2c Settings: Enable Cloned Apps by default [AmeChanRain]
+a905523887d Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+fc4753c9273 Settings: Add model spoof support [Nanhumly]
+5aede801262 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+175631f708f Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+84ce736cb87 Settings: Add status bar lyric [Kujou Yuko]
+5730c6aecdf Settings: support per-app volume [3/3] [cjybyjk]
+b90ffa42731 Settings: Make all user apps cloneable [someone5678]
+66173bd68e7 Settings: Enable Cloned Apps by default [AmeChanRain]
+
+* packages/apps/SetupWizard
+0e299f2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+6caab89b21 Automatic translation import [LineageOS Infra]
+
+* packages/apps/TvSettings
+b0b6fa535 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+21dc643 Automatic translation import [LineageOS Infra]
 
 * packages/services/Telephony
-612967ed3 Add support for multi-language carrier name override [cjybyjk]
+83bfa6224 Add support for multi-language carrier name override [cjybyjk]
+
+* system/core
+7a568f180 init: devices: Add option to accept any device as boot device [Yumi Yukimura]
+abe592877 fixup! liblp: Allow to flash on bigger block device [me-cafebabe]
+
+* vendor/crowdin
+84ccf24 Automatic translation import [LineageOS Infra]
 
 * vendor/lineage
-1e366c9d Sign Build [Nanhumly]
-d758d421 vendor: Guard Face Unlock support [someone5678]
-f6b3b1ca config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+d59255c1 Sign Build [Nanhumly]
+bcaeaf07 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+ce84adce vendor: Guard Face Unlock support [someone5678]
+0302566c config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+14403c21 roomservice: Set timeout when accessing GitHub [Yumi Yukimura]
 
+* device/xiaomi/msm8998-common
+6ef0fc7 msm8998-common: Remove software omx codec references [Aaron Kling]
+
+====================
+     2024-07-01    
+====================
+* frameworks/av
+0d0d275890 codec2: a workaround to solve backward compatibility issue [Jiajia Cong]
+
+* lineage/hudson
+e8138cd hudson: Promote gta4xl Family to 21 [Tim Zimmermann]
+6b9a49f hudson: Promote Exynos 9820 Family to 21 [Tim Zimmermann]
+592d8e4 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+45009d91 payton: Quirk IMS [Nolen Johnson]
+5d93afbe fixup! wiki: devices: Promote gta4xl Family to 21 [Tim Zimmermann]
+676fd5de fixup! wiki: devices: Promote Exynos 9820 Family to 21 [Tim Zimmermann]
+ea925053 wiki: devices: Promote Exynos 9820 Family to 21 [Tim Zimmermann]
+b5ad6e9b wiki: devices: Promote gta4xl Family to 21 [Tim Zimmermann]
+
+====================
+     2024-06-30    
+====================
+* hardware/qcom-caf/common
+2c1fa0c Update entry for ILocAidlGnss in FCM [yingjiew]
+0111bf8 fcm: VST AIDL frame work compatibility matrix changes [Naga Dhanunjay Sunkara]
+a24fb42 fcm: Remove improveTouch HAL entries [Alex Sarraf]
+
+* lineage/hudson
+be910d2 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+2bcf4e0 Updated to 29-Jun-2024 19:14 UTC [Kevin F. Haggerty]
+b31e93b Updated to 29-Jun-2024 17:06 UTC [Kevin F. Haggerty]
+
+* system/core
+1a9e711d3 core: Disable fscklogs for recovery [LuK1337]
+
+* vendor/lineage
+063ee402 lineage: Bump aconfig flags extension to AP2A [basamaryan]
+
+====================
+     2024-06-29    
+====================
+* lineage/hudson
+8329cab Revert "Pull the lesser of the g12 family" [Nolen Johnson]
+305df27 Unship joan [Han Sol Jin]
+080b382 Pull the lesser of the g12 family [Nolen Johnson]
+3a1245e hudson: Revive rtwo [Marc Bourgoin]
+
+* lineage/mirror
+acb30fd Updated to 28-Jun-2024 16:32 UTC [Kevin F. Haggerty]
+4fde7a0 Updated to 28-Jun-2024 15:08 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+92c9b042 Revert "devices: Mark dopinder as unmaintained" [Nolen Johnson]
+54cc1ff1 Unship joan [Han Sol Jin]
+8013726b devices: Mark dopinder as unmaintained [Nolen Johnson]
+bf1482a1 wiki: Revive rtwo [Marc Bourgoin]
+
+* packages/apps/Messaging
+67df8f0 Messaging: Allow deletion of messages without a sim inserted [Michael W]
+
+* packages/apps/Updater
+0d1c94f Updater: Round dialogs [Michael W]
+
+* vendor/lineage
+8616dba1 vars: Pixel 8a [Michael Bestas]
+
+====================
+     2024-06-28    
+====================
+* lineage/hudson
+c11ab46 moto moto likes you [Nolen Johnson]
+0846d33 m1s1 lives on [Nolen Johnson]
+9965693 hudson: Revive surya [Willy Gardiol]
+
+* lineage/scripts
+917a81e lineage-priv-template: Initial commit [LuK1337]
+
+* lineage/wiki
+56ff00bb devices: Support OG Pixels again [Nolen Johnson]
+faee87f4 devices: moto8998: Revive [Nolen Johnson]
+efe1fc1a templates: recovery_install_nintendo: Revamp [Nolen Johnson]
+1b6f1b20 wiki: Revive surya [Willy Gardiol]
+
+* packages/apps/Settings
+6d3f42d53e9 Revert "[Sim UI enhancement] remove the "Tap to show info"" [althafvly]
+
+* tools/extract-utils
+9d83b15 extract-utils: Ensure that install_symlink names are always unique [Bruno Martins]
+
+====================
+     2024-06-27    
+====================
 * device/xiaomi/msm8998-common
 b02f3af msm8998-common: Update Peripheral manager blobs from Fairphone 3 [Huexxx]
 edb2833 msm8998-common: rro_overlays: Drop explicit 'sdk_version' declaration [Alexander Koskovich]
@@ -78,6 +266,7 @@ ed07e32 msm8998-common: Move to new RFS install_symlink targets [Bruno Martins]
 * vendor/xiaomi/msm8998-common
 534f287 msm8998-common: Update Peripheral manager blobs from Fairphone 3 [Huexxx]
 b895d5d msm8998-common: Add IMS and EGL symlinks [Nanhumly]
+4302f4f msm8998-common: Regen makefiles [Nanhumly]
 
 ====================
      2024-06-26    
@@ -95,145 +284,4 @@ af6c4c0 Haydn Second Journey to Mars [FlowerSea0208]
 * device/xiaomi/sagit
 9bf7c0b sagit: SagitWifiOverlay: Drop explicit 'sdk_version' declaration [Alexander Koskovich]
 05d31d3 sagit: overlay-lineage: Drop default HardwareKeys overlay [Nolen Johnson]
-
-* vendor/xiaomi/msm8998-common
-4302f4f msm8998-common: Regen makefiles [Nanhumly]
-
-====================
-     2024-06-25    
-====================
-====================
-     2024-06-24    
-====================
-* build/make
-ea73f271e0 Allow installing fake [odm|product|system_ext] packages [Alexander Koskovich]
-
-* hardware/qcom-caf/common
-46d5d08 fwd-detect: Create symlink target for CneApp [Bruno Martins]
-554d4b8 Introduce RFS install_symlink targets [Bruno Martins]
-
-* lineage/hudson
-7dd2b8d hudson: Revive r8q [ata-kaner]
-4096b23 much doges wow [Michael Bestas]
-10f50cb WAAAAAHOOOOOOOOOO [Nolen Johnson]
-85e6c05 One last revival [Michael Bestas]
-
-* lineage/mirror
-c733598 Updated lineage-minimal to 23-Jun-2024 12:02 UTC [Tim Schumacher]
-
-* lineage/wiki
-ad05a3bd wiki: Revive r8q [ata-kaner]
-61a2a37a wiki: Update Pixel 8/8 Pro specs [Michael Bestas]
-ca1a5311 wiki: Add Pixel 8a (akita) [Michael Bestas]
-80e16a66 devices: wahoo: Support it again [Nolen Johnson]
-3332557b wiki: Sync lineage-21.0 devices with hudson [Michael Bestas]
-ee399fc2 wiki: Add few more apex apks [LuK1337]
-
-* packages/apps/LineageParts
-0dab8cc LineageParts: Don't directly call onStart/onStop on dialogs [Sebastiano Barezzi]
-
-* tools/extract-utils
-e3d40c9 extract-utils: Make symlink_target account for moved blobs [Bruno Martins]
-19df2c5 extract-utils: Fix ARCH of symlinks installed to app folders [Bruno Martins]
-79a2a0f extract-utils: Set install_symlink PREFIX based on installed_location [Mashopy]
-
-* device/xiaomi/msm8998-common
-deb7cad msm8998-common: powerhint: use lowest CPU frequency on MinFreq nodes [Han Sol Jin]
-8cba626 msm8998-common: powerhint: Drop PM QoS latency boosting [Subhajeet Muhuri]
-4e8d162 msm8998-common: powerhint: decrease LAUNCH duration to 1s [EmanuelCN]
-64f3b07 msm8998-common: powerhint: set INTERACTION duration to 58ms [EmanuelCN]
-b69d9cf msm8998-common: powerhint: Replace unused & inefficient freqs with efficient ones [enesykaya]
-a372962 msm8998-common: powerhint: Remove Google-specific camera and VR hints [Bruno Martins]
-65c9fb0 msm8998-common: Don't chown DT2W node [Sebastiano Barezzi]
-
-====================
-     2024-06-23    
-====================
-* android
-33aec9e manifest: Switch to our fork of TvSystemUI [Michael Bestas]
-5958caa manifest: Add aosp-akita remote [Michael Bestas]
-
-* lineage/hudson
-17a4e3f Regenerate device dependency mappings [LineageOS Infra]
-8989140 updater: Correct POCO branding [Alexander Winkowski]
-
-* lineage/mirror
-667ec6e Updated to 23-Jun-2024 22:08 UTC [Michael Bestas]
-369147e Updated lineage-minimal to 22-Jun-2024 12:02 UTC [Tim Schumacher]
-
-* lineage/wiki
-0bbb01a9 wiki: Add Kryo 660 and SM6375 to schema [Albert Tang]
-54341ce5 wiki: Correct POCO branding [Alexander Winkowski]
-
-====================
-     2024-06-22    
-====================
-* bootable/recovery
-e386de48 Add e2fsck/resize2fs/tune2fs to recovery [Michael Bestas]
-
-* build/make
-2ba7f00a98 Revert "Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk" [Alexander Winkowski]
-
-* frameworks/base
-85853878ce27 core: Move Lineage notification LED code to NotificationAttentionHelper [LuK1337]
-493b2c778357 core: jni: Add backwards compat methods for QCOM WFD [LuK1337]
-b966ea2569f9 fixup! Screenshot: Add delete action chip intent [someone5678]
-b99905478ee4 fixup! Add support for runtime toggle of navbar [Michael Bestas]
-068ab0a2d7b4 fixup! SystemUI: Bring back good ol' circle battery style [Michael Bestas]
-b7bc2193c132 fixup! Screenrecord: Allow to select AVC codec profile level [Michael Bestas]
-41cbb1144639 fixup! Screenrecord: Allow limiting the max framerate [Michael Bestas]
-ec1bf97499a2 fixup! SystemUI: Add Profiles tile [Michael Bestas]
-5f04d9a2e77e fixup! SystemUI: Enable NFC tile [Bruno Martins]
-fb8a938d0c16 fixup! camera: Skip HFR checks for privileged apps. [Dominik Baronelli]
-44d74203475c Revert "camera: Allow extending aux list/excludelist via sdk resources" [Dominik Baronelli]
-ab575b34f2ad fixup! fwb: Re-introduce keyboard backlight brightness control [Michael Bestas]
-3a0286d19278 fixup! fw/b: Button backlight brightness [Michael Bestas]
-74ea8c5af763 fixup! AutoBrightness: Add support for one shot auto-brightness [Michael Bestas]
-1b14b629490e fixup! JobScheduler: Respect allow-in-power-save perm [Chirayu Desai]
-4ccce266bed2 fixup! PowerManager: Add proximity check on wake [Michael Bestas]
-37fd0557b582 Merge tag 'android-14.0.0_r50' into staging/lineage-21.0_merge-android-14.0.0_r50 [Michael Bestas]
-a4296270e7e4 Revert "Work around the flicker on enter PiP for foldables" [Michael Bestas]
-d7cb1e4d3f26 Partially revert "[RESTRICT AUTOMERGE] Check permission of Autofill icon URIs" [Michael Bestas]
-9fd6e6cd1217 Revert "Force disable Note Task Shortcut" [Michael Bestas]
-870ecaf7f236 Revert "SystemUI: Remove nav bar background in QS customizer" [Michael Bestas]
-
-* hardware/libhardware
-b923f817 libhardware: Fix symlinks for audio_amplifier and display_defs [Vivekachooz]
-
-* lineage/hudson
-2b91dba Regenerate device dependency mappings [LineageOS Infra]
-c451416 QPR3 disband [Michael Bestas]
-
-* lineage/wiki
-175aabe1 wiki: Update keys list for 14 QPR3 [LuK1337]
-
-* packages/apps/Car/Settings
-3b38802fa VolumeSettingsPreferenceController: Fix NPE when changing volumes [Bruno Martins]
-
-* packages/apps/Dialer
-01694c896 Dialer: Make the database compatible with AOSP dialer again. [Michael Bestas]
-
-* packages/services/Car
-420741151e car_product: Remove dead and missing packages for EPPE [Bruno Martins]
-
-* vendor/lineage
-deaee2eb fixup! Hookup GRALLOC_HANDLE_HAS_UBWCP_FORMAT [AdarshGrewal]
-
-====================
-     2024-06-21    
-====================
-* lineage/hudson
-72589c2 joan: add a third variant [Han Sol Jin]
-
-* lineage/wiki
-fbf0ddfe wiki: devices: Add Mi 10 (umi) [Yumi Yukimura]
-45a9416a wiki: Use fastboot boot recovery.img for Mi439/Mi8917/Mi8937 [LuK1337]
-1f42ed62 joan: replace bootloader requirement with firmware requirement for fastboot variant [Han Sol Jin]
-33178f86 joan: add a third variant [Han Sol Jin]
-352722f6 devices: g12*/sm1: Update recovery reboot methods [Nolen Johnson]
-ea06ae58 wiki: Update alioth variants firmware links [althafvly]
-3b0d11dc wiki: Use fastboot reboot-recovery for miatoll [LuK1337]
-
-* packages/apps/Trebuchet
-51fc8a7aee fixup! Trebuchet: allow disabling workspace edit [Michael Bestas]
 
