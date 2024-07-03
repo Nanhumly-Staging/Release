@@ -1,78 +1,138 @@
 ====================
+     2024-07-03    
+====================
+* android
+27697ee manifest: July 2024 Security update [Chirayu Desai]
+
+* art
+536ac03132 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+
+* build/make
+c39135a35b build: Always use release-keys [Pranav Vashi]
+0ff3cb3ced Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* external/setupcompat
+cc43ef1 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* frameworks/av
+575cab5213 audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
+2fdd57792a audio: Remove UID check from per-app volume commands [Adithya R]
+fabf121d54 av: support per-app volume [1/3] [cjybyjk]
+a25ba038b1 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* frameworks/base
+36482ed8b7d7 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
+66b0af07c0f0 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
+6cf33ae85994 SystemUI: Use color accent for charging animation [Genkzsz11]
+12f58dc17be3 ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
+29b6565c76d5 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+0771efa22ecb SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+92fe9e48cb52 SystemUI: Use proper Resolver background color [elluzion]
+5a655843e6dd SystemUI: Fix QS tile dialog background color [Pranav Vashi]
+d0b060c7d9bf SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+f09943865a05 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+fd2a16d0756b SystemUI: Fix QS header clock color [Danny Baumann]
+c17d1c128167 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+46cfbe56b68d SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+4e6fb3932976 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+7825563d367b SystemUI: Use transparent background for QS footer [Pranav Vashi]
+1b042648f3b9 SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
+7b48ac1b5412 SystemUI: Update QS notification background color [minaripenguin]
+7d35d7c6b962 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+dcb61db0b288 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+d4795d5d26b9 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+26af023a2acb SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+f1d5a079b32f SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+5a5cbc6b9fb7 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+75153ed2601e Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+4b89260c261b Revert "Make QS always use dark theme colors" [Danny Lin]
+0a81a78d9276 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+c0e9cda67eda base: Add support for strict standby policy [LibXZR]
+7fc9c7da1e75 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
+216e54c38422 fixup! Add Face Unlock with ParanoidSense [someone5678]
+9d0e2f5f69e4 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+49625fb5c967 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+70c6d2e8e085 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
+c21bca7712fa SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+c203939dc916 FaceSense: Adapt for 14 QPR2 [aswin7469]
+3ef508241327 FaceSense: Vibrate on successful authentication [Adithya R]
+079a832ca165 Add Face Unlock with ParanoidSense [Chris Crump]
+47cc968146d5 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+e0ad1cb7c9d6 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
+63b4541e77d2 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+a5abed4f6dc6 base: Reset props for status bar lyric [1/2] [cjybyjk]
+59fcfa232398 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+5eb5fe9b527d SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+b87151e22392 base: Add status bar lyric for Android 14 [cjybyjk]
+985d2c10cfb5 Add Extra proto [Nanhumly]
+4add5639cb8a fixup! base: support per-app volume [2/3] [someone5678]
+a68ff9bbd751 base: make per-app work with multi audio focus [El Dainosor]
+8e4b4e41d8d6 SystemUI: Update App volume icon [yukiscape]
+a0d01024a282 base: support per-app volume [2/3] [cjybyjk]
+e62549563ef8 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* hardware/google/graphics/common
+a4c7d42 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* hardware/interfaces
+48d217b174 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* hardware/qcom-caf/msm8998/media
+29e04570c mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* lineage-sdk
+f5f8ea73 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* packages/apps/CarrierConfig
+ec17a64 Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Settings
+7e0a76555cf Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+e59b74f76fe Settings: Add model spoof support [Nanhumly]
+0da564c37f5 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+c63545f494c Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+6a0055c6a22 Settings: Add status bar lyric [Kujou Yuko]
+e49c1dbf829 Settings: support per-app volume [3/3] [cjybyjk]
+987a5d3a6fb Settings: Make all user apps cloneable [someone5678]
+5e68471cc8c Settings: Enable Cloned Apps by default [AmeChanRain]
+e79dc60931b Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* packages/modules/common
+7226421 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* packages/providers/MediaProvider
+5243597c4 Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* packages/services/Telephony
+a29e5ea50 Add support for multi-language carrier name override [cjybyjk]
+
+* system/media
+a72f7e8f Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53 [Michael Bestas]
+
+* vendor/lineage
+19fa8f3e Sign Build [Nanhumly]
+d2699607 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+bf925e6d vendor: Guard Face Unlock support [someone5678]
+5e4eed50 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+b39f86d1 vars: July 2024 Security update [Chirayu Desai]
+837e92cf vars: Update qcom tags [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+76c4ecf msm8998-common: Don't care about key migration anymore [Nanhumly]
+6ef0fc7 msm8998-common: Remove software omx codec references [Aaron Kling]
+
+====================
      2024-07-02    
 ====================
-* art
-3fa4dd4a59 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
-
 * bootable/recovery
 8bbe7bae updater: Support loading dynamic partition metadata from OTA [Yumi Yukimura]
 
 * build/make
-a5edd34cad build: Always use release-keys [Pranav Vashi]
 8124d9428e releasetools: Pass non-sparse super_empty.img to update_dynamic_partitions() [Yumi Yukimura]
 e8426993f4 releasetools: build_super_image: Do not set readonly attr [Yumi Yukimura]
 c8d38611f4 build: Enable super image build rules depending on single super block device [Yumi Yukimura]
 
-* frameworks/av
-c10e2fe6bc audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
-3b6df6bf7a audio: Remove UID check from per-app volume commands [Adithya R]
-aa8079bbf1 av: support per-app volume [1/3] [cjybyjk]
-
-* frameworks/base
-b5c32b45f689 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
-84cf147b99e0 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
-d89038b42fe7 SystemUI: Use color accent for charging animation [Genkzsz11]
-aec003fc317b ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
-6737e9546237 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-b38a3e5e078b SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-6c12fe3e0da5 SystemUI: Use proper Resolver background color [elluzion]
-7e85bfa0abef SystemUI: Fix QS tile dialog background color [Pranav Vashi]
-fdf4e0e72106 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-3691c40c4f21 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-18a9fa187651 SystemUI: Fix QS header clock color [Danny Baumann]
-7da9a9a6b4a0 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-a79f4087588c SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-a780d7130a99 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-6ed4aeda7359 SystemUI: Use transparent background for QS footer [Pranav Vashi]
-12fbb50c8dea SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
-60d06e553773 SystemUI: Update QS notification background color [minaripenguin]
-599ad6e9881d SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-4154c47014f2 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-bd8c591d491c SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-bdbb67ae60db SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-0dcba2f89c75 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-6465257e86ff SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-97cc1b08d4cd Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-b0726fae8844 Revert "Make QS always use dark theme colors" [Danny Lin]
-ba537472734b base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-943be01fc3c4 base: Add support for strict standby policy [LibXZR]
-8da9c55dcbf8 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
-e1fffdc4bc1d fixup! Add Face Unlock with ParanoidSense [someone5678]
-02bd5fa3adb9 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-ea137e3aeb7c SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-ed5ab224e1f6 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-0844f18cc784 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-965cc17e1ffa FaceSense: Adapt for 14 QPR2 [aswin7469]
-f87b5002f168 FaceSense: Vibrate on successful authentication [Adithya R]
-8ea9d855bbe5 Add Face Unlock with ParanoidSense [Chris Crump]
-e3fe339810c0 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-81c50a28c132 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
-5a6bd894c037 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-757faffc7769 base: Reset props for status bar lyric [1/2] [cjybyjk]
-778a073c2045 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-6d43e5d38ecd SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-e41aedfd19d6 base: Add status bar lyric for Android 14 [cjybyjk]
-27f532bf7aae Add Extra proto [Nanhumly]
-ed4a652eab94 fixup! base: support per-app volume [2/3] [someone5678]
-bd11c5226787 base: make per-app work with multi audio focus [El Dainosor]
-281757515f57 SystemUI: Update App volume icon [yukiscape]
-115719c5ca4c base: support per-app volume [2/3] [cjybyjk]
-
-* hardware/qcom-caf/msm8998/media
-dc2406493 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
 * lineage-sdk
-ff2cbc7d sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
 65ab777e Automatic translation import [LineageOS Infra]
 
 * lineage/wiki
@@ -85,9 +145,6 @@ c71e98a9 devices: FP5: Add info about 90Hz refresh rate [PiotrZPL]
 
 * packages/apps/Aperture
 73c31df Automatic translation import [LineageOS Infra]
-
-* packages/apps/CarrierConfig
-5b72665 Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/DeskClock
 222518fe9 Automatic translation import [LineageOS Infra]
@@ -116,16 +173,6 @@ b1325202 Automatic translation import [LineageOS Infra]
 * packages/apps/Recorder
 7fdcf5e Automatic translation import [LineageOS Infra]
 
-* packages/apps/Settings
-a905523887d Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-fc4753c9273 Settings: Add model spoof support [Nanhumly]
-5aede801262 Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-175631f708f Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-84ce736cb87 Settings: Add status bar lyric [Kujou Yuko]
-5730c6aecdf Settings: support per-app volume [3/3] [cjybyjk]
-b90ffa42731 Settings: Make all user apps cloneable [someone5678]
-66173bd68e7 Settings: Enable Cloned Apps by default [AmeChanRain]
-
 * packages/apps/SetupWizard
 0e299f2 Automatic translation import [LineageOS Infra]
 
@@ -138,9 +185,6 @@ b0b6fa535 Automatic translation import [LineageOS Infra]
 * packages/resources/devicesettings
 21dc643 Automatic translation import [LineageOS Infra]
 
-* packages/services/Telephony
-83bfa6224 Add support for multi-language carrier name override [cjybyjk]
-
 * system/core
 7a568f180 init: devices: Add option to accept any device as boot device [Yumi Yukimura]
 abe592877 fixup! liblp: Allow to flash on bigger block device [me-cafebabe]
@@ -149,14 +193,7 @@ abe592877 fixup! liblp: Allow to flash on bigger block device [me-cafebabe]
 84ccf24 Automatic translation import [LineageOS Infra]
 
 * vendor/lineage
-d59255c1 Sign Build [Nanhumly]
-bcaeaf07 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
-ce84adce vendor: Guard Face Unlock support [someone5678]
-0302566c config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
 14403c21 roomservice: Set timeout when accessing GitHub [Yumi Yukimura]
-
-* device/xiaomi/msm8998-common
-6ef0fc7 msm8998-common: Remove software omx codec references [Aaron Kling]
 
 ====================
      2024-07-01    
@@ -251,6 +288,9 @@ efe1fc1a templates: recovery_install_nintendo: Revamp [Nolen Johnson]
 ====================
      2024-06-27    
 ====================
+* frameworks/base
+3e39d48f004e fixup! frameworks/base: Lights notifications brightness support [LuK1337]
+
 * device/xiaomi/msm8998-common
 b02f3af msm8998-common: Update Peripheral manager blobs from Fairphone 3 [Huexxx]
 edb2833 msm8998-common: rro_overlays: Drop explicit 'sdk_version' declaration [Alexander Koskovich]
@@ -267,21 +307,4 @@ ed07e32 msm8998-common: Move to new RFS install_symlink targets [Bruno Martins]
 534f287 msm8998-common: Update Peripheral manager blobs from Fairphone 3 [Huexxx]
 b895d5d msm8998-common: Add IMS and EGL symlinks [Nanhumly]
 4302f4f msm8998-common: Regen makefiles [Nanhumly]
-
-====================
-     2024-06-26    
-====================
-* frameworks/base
-3e39d48f004e fixup! frameworks/base: Lights notifications brightness support [LuK1337]
-283adef7d94e keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
-
-* lineage/hudson
-af6c4c0 Haydn Second Journey to Mars [FlowerSea0208]
-
-* lineage/wiki
-7d5a3123 wiki: Support Mars and Haydn again [FlowerSea0208]
-
-* device/xiaomi/sagit
-9bf7c0b sagit: SagitWifiOverlay: Drop explicit 'sdk_version' declaration [Alexander Koskovich]
-05d31d3 sagit: overlay-lineage: Drop default HardwareKeys overlay [Nolen Johnson]
 
