@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1719988498,
-      "filename": "lineage-21.0-20240703-UNOFFICIAL-GAPPS-chiron-signed.zip",
-      "id": "d05f200f9d454120b23a8a76d63451e3653e83972e9a4b9e3665554a9cd0f3de",
+      "datetime": 1721124343,
+      "filename": "lineage-21.0-20240716-UNOFFICIAL-GAPPS-chiron-signed.zip",
+      "id": "fed24d2ed54a687280cf8eaffa42fd454e2adc30935d7b3eaf55ec9b463b28c3",
       "romtype": "UNOFFICIAL",
-      "size": 1571762909,
-      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/21.0/Gapps/lineage-21.0-20240703-UNOFFICIAL-GAPPS-chiron-signed.zip",
+      "size": 1570455683,
+      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/21.0/Gapps/lineage-21.0-20240716-UNOFFICIAL-GAPPS-chiron-signed.zip",
       "version": "21.0"
     }
   ]
