@@ -1,222 +1,347 @@
 ====================
-     2024-07-16    
+     2024-08-09    
 ====================
+* android
+b499aae manifest: August 2024 Security Update [Michael Bestas]
+
 * art
-6ef82904f8 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+44cba913d0 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-8c53ce6275 build: Always use release-keys [Pranav Vashi]
-60daab0529 sdk-addon: Prevent nested data/ inside $(PRIVATE_STAGING_DIR) [DroidFreak32]
-
-* device/qcom/sepolicy_vndr/legacy-um
-6524bf5b4 sepolicy: holi: Fix avc denials for wakeup nodes [Vivekachooz]
-24344853f generic: lito: Add some misc wakeup nodes for lito [Michael Bestas]
-54b0d45e5 sepolicy: Commonize some wakeup nodes [Michael Bestas]
+83eb68db17 build: Always use release-keys [Pranav Vashi]
+12a64c2575 Revert "Remove non existent snapuserd.recovery package" [David Anderson]
+34f5805937 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
 
 * frameworks/av
-6cf5a43bfc audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
-cb14daaaf4 audio: Remove UID check from per-app volume commands [Adithya R]
-ea60d897f9 av: support per-app volume [1/3] [cjybyjk]
+42f2b9fe5b audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
+80bfac9de2 audio: Remove UID check from per-app volume commands [Adithya R]
+df2faa597d av: support per-app volume [1/3] [cjybyjk]
+a2bd776597 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
 
 * frameworks/base
-ad9ad9a8d625 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
-d11008ba9290 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
-bfe896fd1185 SystemUI: Use color accent for charging animation [Genkzsz11]
-771d8d23324d ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
-e6a7114ab1e2 SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-14e5dcef6a84 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-b6d1a32c3c86 SystemUI: Use proper Resolver background color [elluzion]
-fc1ae95b5d1c SystemUI: Fix QS tile dialog background color [Pranav Vashi]
-09a00b75806c SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-930f3d2aceb3 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-74f8e10e6c99 SystemUI: Fix QS header clock color [Danny Baumann]
-6e9843a93be3 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-19566da41efa SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-49f5722243c1 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-00c64e00df56 SystemUI: Use transparent background for QS footer [Pranav Vashi]
-8cabaa19e63d SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
-1c23f7758d45 SystemUI: Update QS notification background color [minaripenguin]
-889c99176db4 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-f9657e31180a SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-64c53e882796 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-121ee6c2fff4 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-e76450d31324 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-97edc1fe11b1 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-e3b86e714dfe Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-e3f84dcf815a Revert "Make QS always use dark theme colors" [Danny Lin]
-b1911a9ae41d base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-573f6098a93f base: Add support for strict standby policy [LibXZR]
-e064eb9c2908 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
-7d8a6a0ed221 fixup! Add Face Unlock with ParanoidSense [someone5678]
-d981979a477e SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-87c6a06a6681 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-bb80d9418650 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-3f8ac4cab347 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-0bbba795e43c FaceSense: Adapt for 14 QPR2 [aswin7469]
-978dacfff736 FaceSense: Vibrate on successful authentication [Adithya R]
-46acd953c6bd Add Face Unlock with ParanoidSense [Chris Crump]
-98251d9c370f BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-a8e6db463bde Keystore: Spoof locked bootloader on local attestations [minaripenguin]
-283b7e655d10 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-149fc7184a1f base: Reset props for status bar lyric [1/2] [cjybyjk]
-5d0b24fc1cf9 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-32f0cc5a91c6 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-ed4b5bf34f66 base: Add status bar lyric for Android 14 [cjybyjk]
-8aa64812bacb Add Extra proto [Nanhumly]
-e379f4184a96 fixup! base: support per-app volume [2/3] [someone5678]
-a4c7fe5522ca base: make per-app work with multi audio focus [El Dainosor]
-fb7a6bd989fe SystemUI: Update App volume icon [yukiscape]
-0f69ff47a225 base: support per-app volume [2/3] [cjybyjk]
-561df851d86b ATV: Display battery notifications [Aaron Kling]
-8c94f0381b0d [1/2] Add battery info to tvsettings device info [Aaron Kling]
-182785919756 PointerIcon: Add leniency to hotspot validation for scaled icons [Prabir Pradhan]
-4951f24fd878 Revert "Set lower hotspotY for handwriting icon" [LuK1337]
+717e14eb0966 SystemUI: Remove composite alpha from additional scrim on lockscreen [Pranav Vashi]
+b5ccd9d4e495 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
+6dc439104dd1 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
+4559ae96ad88 SystemUI: Use color accent for charging animation [Genkzsz11]
+c6ea0e0bf6fb ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
+6c268cf9cd5e SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+a99031aae1e9 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+e4a7bc210492 SystemUI: Use proper Resolver background color [elluzion]
+25f5f252c6d7 SystemUI: Fix QS tile dialog background color [Pranav Vashi]
+77a0346cf6ab SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+1ee728671237 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+696f0c505ae8 SystemUI: Fix QS header clock color [Danny Baumann]
+7acbd7817e7a SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+5bbd6fbbc8f3 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+8db90fe6e5f4 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+dc90e96ec222 SystemUI: Use transparent background for QS footer [Pranav Vashi]
+f01c6843f859 SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
+d525ddcbdfc4 SystemUI: Update QS notification background color [minaripenguin]
+fad003cec2bf SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+c051d0c3e3f8 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+acb5302976a2 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+60348e28bf3b SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+e978954b396e SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+c98c84d942d0 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+997be36fe606 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+81324c668999 Revert "Make QS always use dark theme colors" [Danny Lin]
+18b8039b0aad base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+1eff6a8be7e3 base: Add support for strict standby policy [LibXZR]
+1c2d6e520108 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
+22bf7839b3f7 fixup! Add Face Unlock with ParanoidSense [someone5678]
+6d86b1d1d55d SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+bfa58831fb74 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+c415ac374f2b SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
+d2eaedee24ea SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+2193bc86af22 FaceSense: Adapt for 14 QPR2 [aswin7469]
+c0dc80c6e8db FaceSense: Vibrate on successful authentication [Adithya R]
+5dd710746afa Add Face Unlock with ParanoidSense [Chris Crump]
+27b6cccc0288 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+29978d39fe7d Keystore: Spoof locked bootloader on local attestations [minaripenguin]
+0b72eaa83403 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+4837bd52df63 base: Reset props for status bar lyric [1/2] [cjybyjk]
+9857c8fdbe93 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+597c32c9b563 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+c43debfaed6f base: Add status bar lyric for Android 14 [cjybyjk]
+304c523a62b9 Add Extra proto [Nanhumly]
+190ea904e809 fixup! base: support per-app volume [2/3] [someone5678]
+3a3288a5d197 base: make per-app work with multi audio focus [El Dainosor]
+bfde183fffb7 SystemUI: Update App volume icon [yukiscape]
+32e766df3c06 base: support per-app volume [2/3] [cjybyjk]
+389031749dcf Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* frameworks/native
+7034776f08 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* hardware/interfaces
+727cbe0377 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
 
 * hardware/qcom-caf/msm8998/media
-b621587cf mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+76d38db0a mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * lineage-sdk
-f03723dd sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+3c76ef33 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* lineage/mirror
+91c6e06 Updated to 08-Aug-2024 12:01 UTC [Tim Schumacher]
 
 * packages/apps/CarrierConfig
-5e39e3a Override name of Mainland China carriers [cjybyjk]
+0cabc0d Override name of Mainland China carriers [cjybyjk]
 
 * packages/apps/Settings
-6b5fd7623fc Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-ad6d6de45ab Settings: Add model spoof support [Nanhumly]
-1730c22f74c Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-44083ba9808 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-72612798425 Settings: Add status bar lyric [Kujou Yuko]
-817fc6058ea Settings: support per-app volume [3/3] [cjybyjk]
-618d8fddff6 Settings: Make all user apps cloneable [someone5678]
-3e550a1a873 Settings: Enable Cloned Apps by default [AmeChanRain]
-04f0e38d449 NetworkProvider: Remove header start padding in SuW [Dhina17]
-c64ca6191c0 Settings: Remove unused pattern sizes layout [Dhina17]
-4c88c7843fb ChooseLockPatternSize: Remove header start padding in SuW [Dhina17]
-731551f1bee Settings: Fix choose pattern size activity theme issues [Dhina17]
+b930015c115 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+17f02498bbe Settings: Add model spoof support [Nanhumly]
+7df693ed18f Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+293fec3c8b5 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+cc60f63dc34 Settings: Add status bar lyric [Kujou Yuko]
+ba5a466fe5b Settings: support per-app volume [3/3] [cjybyjk]
+cf7c46efcbb Settings: Make all user apps cloneable [someone5678]
+f7a0d1d1e63 Settings: Enable Cloned Apps by default [AmeChanRain]
 
-* packages/apps/TvSettings
-4494f1cfd [2/2] Add battery info to tvsettings device info [Aaron Kling]
+* packages/modules/Bluetooth
+5d908840e4 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
 
 * packages/services/Telephony
-29324168b Add support for multi-language carrier name override [cjybyjk]
+c82ef6747 Add support for multi-language carrier name override [cjybyjk]
+
+* system/security
+12112e1d Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
 
 * vendor/lineage
-00a4a9ef Sign Build [Nanhumly]
-8f9a0b2f overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
-990bb1ee vendor: Guard Face Unlock support [someone5678]
-98f90541 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+053f2dad Sign Build [Nanhumly]
+5d282614 overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+72a8350c vendor: Guard Face Unlock support [someone5678]
+39ef08d2 config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+43ae0f9a vars: August 2024 Security update [Chirayu Desai]
 
 * kernel/xiaomi/msm8998
-28ae71d90f7b ANDROID: block-cfq: Set group_idle to 0 for non-rotating disks [Bart Van Assche]
-85c087305df6 f2fs: fix to update age extent in f2fs_do_zero_range() [Chao Yu]
-09420e66072f f2fs: fix to update age extent correctly during truncation [Chao Yu]
-538acc9bb62f f2fs: fix to do sanity check on extent cache correctly [Chao Yu]
+b7b8ae14fed9 Merge tag 'v4.4.302-cip90' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [Nanhumly]
 
 ====================
-     2024-07-15    
+     2024-08-08    
 ====================
 * lineage/wiki
-deb34c84 Revive gta4l and gta4lwifi [Christian Hoffmann]
+f866d388 pages: signing_builds: Add signature reset patch for all LineageOS versions [Nolen Johnson]
+
+* prebuilts/extract-tools
+5185b28 common: add stripzip [Cosmin Tanislav]
+
+* kernel/xiaomi/msm8998
+1c0b45a5d75c CIP: Bump version suffix to -cip90 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
+477b01cb7fb1 Merge branch 'linux-4.4.y-st' into linux-4.4.y-cip [Ulrich Hecht]
+cb9dfb48cd35 Update localversion-st, tree is up-to-date with 4.19.319. [Ulrich Hecht]
 
 ====================
-     2024-07-14    
+     2024-08-07    
+====================
+* lineage/mirror
+766a42a Updated aosp-minimal to 06-Aug-2024 12:02 UTC [Tim Schumacher]
+
+* tools/extract-utils
+2b8a351 extract-utils: add apktool patching helper [Cosmin Tanislav]
+
+* kernel/xiaomi/msm8998
+98bfe1063ae0 Merge tag 'LA.UM.8.4.c25-11300-8x98.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.4 into lineage-21.0 [Nanhumly]
+f2161d8a879c nilfs2: fix incorrect use of nilfs_error() [Ulrich Hecht]
+a6ae5ec7dfcc fs: better handle deep ancestor chains in is_subdir() [Christian Brauner]
+ff842781bb56 Bluetooth: hci_core: cancel all works upon hci_unregister_dev() [Tetsuo Handa]
+a5df95e4362d Bluetooth: fix power_on vs close race [Jiri Slaby]
+c921dfb5c279 fs/file: fix the check in find_next_fd() [Yuntao Wang]
+410fcd8ea8f7 SUNRPC: Fix RPC client cleaned up the freed pipefs dentries [felix]
+2a1697e92507 libceph: fix race between delayed_work() and ceph_monc_stop() [Ilya Dryomov]
+d4b2325b981b nilfs2: fix incorrect inode allocation from reserved inodes [Ryusuke Konishi]
+761475562f9c i2c: pnx: Fix potential deadlock warning from del_timer_sync() call in isr [Piotr Wojtaszczyk]
+bc1d4ada7379 nilfs2: fix inode number range checks [Ryusuke Konishi]
+47c75e1b7073 UPSTREAM: tcp: fix DSACK undo in fast recovery to call tcp_try_to_open() [Neal Cardwell]
+3f54a6a7702d tcp: Fix data races around icsk->icsk_af_ops. [Kuniyuki Iwashima]
+5c12cc6581e3 ipv6: Fix data races around sk->sk_prot. [Kuniyuki Iwashima]
+da3cfe9f5833 ipv6: annotate some data-races around sk->sk_prot [Eric Dumazet]
+9f3440427ed7 ftruncate: pass a signed offset [Arnd Bergmann]
+1962263704af batman-adv: Don't accept TT entries for out-of-spec VIDs [Sven Eckelmann]
+4f0f312fefd1 netfilter: nf_tables: fully validate NFT_DATA_VALUE on store to data registers [Pablo Neira Ayuso]
+9ab276aa1277 ARM: dts: samsung: smdk4412: fix keypad no-autorepeat [Krzysztof Kozlowski]
+979a5e700bc5 ARM: dts: samsung: exynos4412-origen: fix keypad no-autorepeat [Krzysztof Kozlowski]
+2a4141b787a8 ARM: dts: samsung: smdkv310: fix keypad no-autorepeat [Krzysztof Kozlowski]
+fcf74c5dc01e net: usb: rtl8150 fix unintiatilzed variables in rtl8150_get_link_ksettings [Oliver Neukum]
+7ae1e39cfc84 udf: udftime: prevent overflow in udf_disk_stamp_to_time() [Roman Smirnov]
+
+====================
+     2024-08-06    
 ====================
 * lineage/hudson
-56794d5 Revive gta4l and gta4lwifi [Christian Hoffmann]
-4c9e554 hudson: Resume Z01R [Marc Bourgoin]
-6ae219c Regenerate device dependency mappings [LineageOS Infra]
+ed8d3d7 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/wiki
-165a9e7d wiki: Add newline check to validate.rb [LuK1337]
-19686ddc wiki: Add EOF endline to all files [LuK1337]
-c43e88a2 wiki: Resume Z01R [Marc Bourgoin]
-3db4fd0d wiki: Fix missing newline at the end of rtwo_variant1.yml [LuK1337]
-e5b39b4b wiki: rtwo: Declare 802.11be support [Qiyao Hou]
-ad662270 wiki: Allow Android 14 FW for kebab and lemonades [LuK1337]
+fabdb42a wiki: Add OEM unlock toggle mention to fastboot_sony [lohithbb]
 
-* kernel/xiaomi/msm8998
-854ca78e6ea7 Merge tag 'v4.4.302-cip89' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [Nanhumly]
-e5152c451404 Merge tag 'v4.4.302-cip88' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [Nanhumly]
-44b0d97ee836 Merge tag 'v4.4.302-cip87' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [Nanhumly]
-10f9e7613c68 usb: gadget: f_fs: Add unbind event before functionfs_unbind [Uttkarsh Aggarwal]
-b049aa9ab717 usb: gadget: f_fs: Fix unbalanced spinlock in __ffs_ep0_queue_wait [Udipto Goswami]
-e3bde6d987e9 usb: gadget: f_fs: Ensure ep0req is dequeued before free_request [Udipto Goswami]
-e5b03fe2a63d usb: gadget: f_fs: Prevent race during ffs_ep0_queue_wait [Udipto Goswami]
-a17c2da03398 usb: gadget: function: f_fs: Add FUNCTIONFS_ENDPOINT_ALLOC ioctl [Jerry Zhang]
-aa58a7a35d33 drivers: usb: gadget: revert f_fs.c to its state prior to CIP merge [AShiningRay]
-7e0d7d8bec23 drivers: usb: dwc3: Checkout gadget.c to a state prior to CIP merge [AShiningRay]
-22e359f09c92 Merge tag 'v4.4.302-cip86' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [AShiningRay]
-b1e35eba5a0d ARM64: defconfig: mi8998: Disable NF ConnTrack NETLINK & Quota Interface [Panchajanya1999]
+* tools/extract-utils
+63e589e extract-utils: switch oat2dex to use prebuilt jdk [Cosmin Tanislav]
 
 ====================
-     2024-07-13    
+     2024-08-05    
 ====================
-* device/lineage/sepolicy
-1a7689a common: private: Label mirroring disablement property [Nolen Johnson]
+* lineage/hudson
+b41a62a Revive Google Pixel Ultra (prototype p2) [Andrey Sprynga]
+efec9ae "No, I'm Not From Earth, I'm From Missouri." [Nolen Johnson]
+9538e43 Should thor be with the lady foster, or the lady sif? [Nolen Johnson]
 
-* device/qcom/sepolicy-legacy-um
-a0cc2d5f sepolicy: Add memtrack HAL [Naseer Ahmed]
+* lineage/mirror
+ca869e5 Updated to 04-Aug-2024 12:01 UTC [Tim Schumacher]
 
+* lineage/wiki
+217369d8 wiki: devices: Add Xiaomi Black Shark (shark) [Andrey Sprynga]
+a00744bf templates: recovery_install_*: Update kingroot app URL [Nolen Johnson]
+0bda17ef fixup! devices: nvidia*: Rework for jetson/foster split in variants [Nolen Johnson]
+08082b01 devices: nvidia*: Rework for jetson/foster split in variants [Nolen Johnson]
+f9ea3366 devices: nvidia*: Update links to flash packages [Nolen Johnson]
+9e2821c3 devices: Promote NVIDIA T210 & T186 [Nolen Johnson]
+596d6a28 joan: resume support [Han Sol Jin]
+a74ef558 wiki: Remove unwanted newlines in adding_device.md [LuK1337]
+
+====================
+     2024-08-04    
+====================
+* lineage/hudson
+7cbf42d Resume joan [Han Sol Jin]
+6aed58d Regenerate device dependency mappings [LineageOS Infra]
+
+====================
+     2024-08-03    
+====================
 * frameworks/base
-8cd8a8b06b93 SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
+b09bbae04431 BatteryMeterView: Battery icon available by default [althafvly]
 
 * lineage/hudson
-372b0a6 hudson: Resume heart and zippo [Marc Bourgoin]
+bff68d8 ngl carrier SKUs are kind of a meme [Han Sol Jin]
+0bbbef3 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-eddbb6d Updated to 12-Jul-2024 12:01 UTC [Tim Schumacher]
+71f5a93 Updated aosp-minimal to 02-Aug-2024 12:02 UTC [Tim Schumacher]
 
 * lineage/wiki
-68f67803 Wiki: Resume heart and zippo [Marc Bourgoin]
+5babfa3c wiki: Add more LG G7 ThinQs (g710n/g710ulm) [Han Sol Jin]
+6bbe3c51 templates: boot_stack, but dd [Han Sol Jin]
 
-* device/xiaomi/chiron
-3d94b00 chiron: Include target config fragment [Bruno Martins]
-
-* device/xiaomi/msm8998-common
-7707dfd msm8998-common: Define main kernel defconfig [Bruno Martins]
+* packages/apps/Dialer
+d4bc69578 Dialer: Add microphone to foreground service types [LuK1337]
 
 * kernel/xiaomi/msm8998
-a4b20e0e7522 ARM64: defconfig: mi8998: Disable SLUB per-CPU partial caches [Sultan Alsawaf]
-be33b989b324 ARM64: defconfig: mi8998: Disable SMACK and Integrity security suites [Sultan Alsawaf]
-9170613d1511 ARM64: defconfig: mi8998: disable CONFIG_MEMORY_STATE_TIME [Steve Muckle]
-0b2d098757f9 kernel: Modify the stock CAF config to match kernel FCM [Huexxx]
-d1f293e42f2f kernel: Use the stock CAF config for /proc/config.gz [Sultan Alsawaf]
-6717b02cd4c7 ARM64: defconfig: mi8998: Create main defconfig and config fragments [Nanhumly]
-f8f30dd07ff7 {chiron,sagit}_defconfig: Regen minimal defconfig [Nanhumly]
-
-====================
-     2024-07-12    
-====================
-* build/soong
-cfde37181 Add support for keyboard prebuilt module type [yangbill]
-c81ec528f Add support for prebuilt_usr_hyphendata type [yangbill]
-
-* lineage/wiki
-a165a74b wiki: s/Continue/Yes/g [LuK1337]
-
-* vendor/lineage
-3fe68ad5 kernel: Better x86 support [Sebastiano Barezzi]
-
-====================
-     2024-07-11    
-====================
-* lineage/wiki
-76181da1 wiki: lemonade/martini: Set lineage_version for fw req [LuK1337]
-b110c126 wiki: guacamole/hotdog: Set lineage_version for fw req [LuK1337]
-26bd8159 wiki: instantnoodle*: Set lineage_version for fw req [LuK1337]
-5a9c18b1 wiki: Fix sdcard format in adding_device.md [LuK1337]
-4d39ccae wiki: sdcard.sizeMax -> sdcard.size_max [Sebastiano Barezzi]
-e25b65e9 wiki: Simplify device GPU list [LuK1337]
-eac7d5d7 wiki: Fix multiple SoC display [Sebastiano Barezzi]
-
-* vendor/lineage
-b3f09c69 kernel: Add kernel modules to partition file list [Aaron Kling]
-b9ca97bc envsetup: dopush: Update regex to match remaining build time [Dhina17]
-
-====================
-     2024-07-10    
-====================
-* lineage/mirror
-511d2d6 Updated aosp-minimal to 09-Jul-2024 12:02 UTC [Tim Schumacher]
+dff699deb339 HID: core: remove unnecessary WARN_ON() in implement() [Nikita Zhandarovich]
+65ea5a47714a nilfs2: fix nilfs_empty_dir() misjudgment and long loop on I/O errors [Ryusuke Konishi]
+f419702e0165 media: mc: mark the media devnode as registered from the, start [Hans Verkuil]
+6ebd8367c352 filelock: Fix fcntl/close race recovery compat path [Jann Horn]
+af1a2788b603 jfs: don't walk off the end of ealist [lei lu]
+f92bfcc25e7a ocfs2: add bounds checking to ocfs2_check_dir_entry() [lei lu]
+c7ec2b3b2888 net: relax socket state check at accept time. [Paolo Abeni]
+e1ffbc0ccbcc ACPI: processor_idle: Fix invalid comparison with insertion sort for latency [Kuan-Wei Chiu]
+1383a0c1b514 ARM: 9324/1: fix get_user() broken with veneer [Masahiro Yamada]
+f45b899adc6b filelock: Remove locks reliably when fcntl/close race is detected [Jann Horn]
+8e50795a5df1 hfsplus: fix uninit-value in copy_name [Edward Adam Davis]
+04211be5b601 selftests/vDSO: fix clang build errors and warnings [John Hubbard]
+22fe3a43d959 s390/sclp: Fix sclp_init() cleanup on failure [Heiko Carstens]
+35bfd773dc56 Input: elantech - fix touchpad state on resume for Lenovo N24 [Jonathan Denose]
+3f4641034c5b wifi: cfg80211: wext: add extra SIOCSIWSCAN data check [Dmitry Antipov]
+65fc8ed22de4 mei: demote client disconnect warning on suspend to debug [Alexander Usyskin]
+de86b5cd4732 kconfig: remove wrong expr_trans_bool() [Masahiro Yamada]
+27119a6dc35a kconfig: gconf: give a proper initial state to the Save button [Masahiro Yamada]
+aada50de9626 wifi: mac80211: mesh: init nonpeer_pm to active by default in mesh sdata [Nicolas Escande]
+6b02234892e9 ACPI: EC: Avoid returning AE_OK on errors in address space handler [Armin Wolf]
+2a4962cd56a9 ACPI: EC: Abort address space access upon error [Armin Wolf]
+c9b70ed4ae1f USB: core: Fix duplicate endpoint bug by clearing reserved bits in the descriptor [Alan Stern]
+635be4297250 usb: gadget: configfs: Prevent OOB read/write in usb_string_copy() [Lee Jones]
+6f0cfd147c37 USB: Add USB_QUIRK_NO_SET_INTF quirk for START BP-850k [WangYuli]
+f1cff708e754 USB: serial: option: add Rolling RW350-GL variants [Vanillan Wang]
+1d74adc7c5c3 USB: serial: option: add Netprisma LCUK54 series modules [Mank Wang]
+87b214654282 USB: serial: option: add support for Foxconn T99W651 [Slark Xiao]
+0e30bd300fac USB: serial: option: add Fibocom FM350-GL [Bjørn Mork]
+7130f2d2a209 USB: serial: option: add Telit FN912 rmnet compositions [Daniele Palmas]
+1a88d67d9b2b USB: serial: option: add Telit generic core-dump composition [Daniele Palmas]
+7a6b9c818d25 ppp: reject claimed-as-LCP but actually malformed packets [Dmitry Antipov]
+e824e225f11d net: ethernet: lantiq_etop: fix double free in detach [Aleksander Jan Bajkowski]
+951e6f7353ee net: lantiq_etop: add blank line after declaration [Aleksander Jan Bajkowski]
+c10a3b631da6 tcp: fix incorrect undo caused by DSACK of TLP retransmit [Neal Cardwell]
+7a3feeac7dda bnx2x: Fix multiple UBSAN array-index-out-of-bounds [Ghadi Elie Rahme]
+a597901aae85 drm/nouveau: fix null pointer dereference in nouveau_connector_get_modes [Ma Ke]
+087c0e236cfc Revert "mm/writeback: fix possible divide-by-zero in wb_dirty_limits(), again" [Jan Kara]
+a5e51db5eae3 fsnotify: Do not generate events for O_PATH file descriptors [Jan Kara]
+d035e141925a Bluetooth: Fix incorrect pointer arithmatic in ext_adv_report_evt [Jaganath Kanakkassery]
+7ed769cc0270 mm: optimize the redundant loop of mm_update_owner_next() [Jinliang Zheng]
+8586190cdd6d nilfs2: add missing check for inode numbers on directory entries [Ryusuke Konishi]
+9b6e6ce15514 inet_diag: Initialize pad field in struct inet_diag_req_v2 [Shigeru Yoshida]
+7aa46ac8326d bonding: Fix out-of-bounds read in bond_option_arp_ip_targets_set() [Sam Sun]
+b8617719d306 tcp_metrics: validate source addr length [Jakub Kicinski]
+954b56c37665 jffs2: Fix potential illegal address access in jffs2_free_inode [Wang Yong]
+b277a8b9e5f9 powerpc/64: Set _IO_BASE to POISON_POINTER_DELTA not 0 for CONFIG_PCI=n [Michael Ellerman]
+2d534b531321 media: dvb-frontends: tda10048: Fix integer overflow [Ricardo Ribalda]
+870958c3ef4f media: dvb-frontends: tda18271c2dd: Remove casting during div [Ricardo Ribalda]
+ed7daeb3df73 Input: ff-core - prefer struct_size over open coded arithmetic [Erick Archer]
+a3739931a9e5 firmware: dmi: Stop decoding on broken entry [Jean Delvare]
+a066f0cb6e08 IB/core: Implement a limit on UMAD receive List [Michael Guralnik]
+1405dbdfa365 media: dvb-usb: dib0700_devices: Add missing release_firmware() [Ricardo Ribalda]
+bac501c86907 media: dvb: as102-fe: Fix as10x_register_addr packing [Ricardo Ribalda]
+9055a2b1109d drm/nouveau/dispnv04: fix null pointer dereference in nv17_tv_get_hd_modes [Ma Ke]
+e620ef439381 drm/nouveau/dispnv04: fix null pointer dereference in nv17_tv_get_ld_modes [Ma Ke]
+8d3bfa391d1e hexagon: fix fadvise64_64 calling conventions [Arnd Bergmann]
+0f2832489b7d tty: mcf: MCF54418 has 10 UARTS [Jean-Michel Hautbois]
+0857b805a755 usb: atm: cxacru: fix endpoint checking in cxacru_bind() [Nikita Zhandarovich]
+34d8ea997a2a usb: gadget: printer: SS+ support [Oliver Neukum]
+f80ed0d310a9 net: usb: ax88179_178a: improve link status logs [Jose Ignacio Tornos Martinez]
+813bdd458797 iio: adc: ad7266: Fix variable checking bug [Fernando Yang]
+71ab95616807 mmc: sdhci-pci: Convert PCIBIOS_* return codes to errnos [Ilpo Järvinen]
+8470f12539c1 x86: stop playing stack games in profile_pc() [Linus Torvalds]
+98b9d1dba43d i2c: ocores: set IACK bit after core is enabled [Grygorii Tertychnyi]
+db3839d8a770 i2c: ocores: stop transfer on timeout [Federico Vaga]
+9a15400ee597 media: dvbdev: Initialize sbuf [Ricardo Ribalda]
+ccb1d69b9ffc ALSA: emux: improve patch ioctl data validation [Oswald Buddenhagen]
+ff3cd6c29df0 ASoC: fsl-asoc-card: set priv->pdev before using it [Elinor Montmasson]
+d285a56b2366 drm/amdgpu: fix UBSAN warning in kv_dpm.c [Alex Deucher]
+b0a1a3963387 pinctrl: rockchip: fix pinmux reset in rockchip_pmx_set [Huang-Huang Bao]
+4a51a2ca90eb pinctrl: fix deadlock in create_pinctrl() when handling -EPROBE_DEFER [Hagar Hemdan]
+366940ffb83f scsi: mpt3sas: Add ioc_<level> logging macros [Joe Perches]
+eb7bf506d8d4 gcov: add support for GCC 14 [Peter Oberparleiter]
+ede576cd852d drm/radeon: fix UBSAN warning in kv_dpm.c [Alex Deucher]
+c5c5b28cc15a ACPICA: Revert "ACPICA: avoid Info: mapping multiple BARs. Your kernel is fine." [Raju Rangoju]
+50a43d002626 dmaengine: ioatdma: Fix missing kmem_cache_destroy() [Nikita Shubin]
+90f253eddf6e regulator: core: Fix modpost error "regulator_get_regmap" undefined [Biju Das]
+000256bb2ec9 virtio_net: checksum offloading handling fix [Heng Qi]
+b6e894e8ebf7 xfrm6: check ip6_dst_idev() return value in xfrm6_get_saddr() [Eric Dumazet]
+feae50bfb78c netrom: Fix a memory leak in nr_heartbeat_expiry() [Gavrilov Ilia]
+6df9480e8917 cipso: fix total option length computation [Ondrej Mosnacek]
+f7806d001522 MIPS: Routerboard 532: Fix vendor retry check code [Ilpo Järvinen]
+1b6ce29b701c MIPS: Octeon: Add PCIe link status check [Songyang Li]
+e4c316bd944b powerpc/io: Avoid clang null pointer arithmetic warnings [Michael Ellerman]
+8e628c289ac8 powerpc/pseries: Enforce hcall result buffer validity and size [Nathan Lynch]
+da45256c36eb batman-adv: bypass empty buckets in batadv_purge_orig_ref() [Eric Dumazet]
+0df99958f148 usb-storage: alauda: Check whether the media is initialized [Shichao Lai]
+a2beacf553dd hv_utils: drain the timesync packets on onchannelcallback [Vineeth Pillai]
+1e7f203b63f4 nilfs2: fix potential kernel bug due to lack of writeback flag waiting [Ryusuke Konishi]
+2fab9027d209 dmaengine: axi-dmac: fix possible race in remove() [Nuno Sa]
+9436fbd75e46 ocfs2: fix races between hole punching and AIO+DIO [Su Yue]
+58e6cf01e8be fs/proc: fix softlockup in __read_vmcore [Rik van Riel]
+6f6ce9e70228 vmci: prevent speculation leaks by sanitizing event in event_deliver() [Hagar Gamal Halim Hemdan]
+bd47c8567260 drm/exynos/vidi: fix memory leak in .get_modes() [Jani Nikula]
+3aab177a1bec drivers: core: synchronize really_probe() and dev_uevent() [Dirk Behme]
+1e68639c34b4 net/ipv6: Fix the RT cache flush via sysctl using a previous delay [Petr Pavlu]
+e863732b64f7 ipv6/route: Add a missing check on proc_dointvec [Aditya Pakki]
+bd3fdd4dc9d7 Bluetooth: L2CAP: Fix rejecting L2CAP_CONN_PARAM_UPDATE_REQ [Luiz Augusto von Dentz]
+09a0d00e2010 tcp: fix race in tcp_v6_syn_recv_sock() [Eric Dumazet]
+7637be7c4033 Input: try trimming too long modalias strings [Dmitry Torokhov]
+cb0a6bf6f3b3 xhci: Apply broken streams quirk to Etron EJ188 xHCI host [Kuangyi Chiang]
+2fd68471b878 xhci: Apply reset resume quirk to Etron EJ188 xHCI host [Kuangyi Chiang]
+88840af6e4f2 jfs: xattr: fix buffer overflow for invalid xattr [Greg Kroah-Hartman]
+393e60e1a866 mei: me: release irq in mei_me_pci_resume error path [Tomas Winkler]
+524f2530dd2f USB: class: cdc-wdm: Fix CPU lockup caused by excessive log messages [Alan Stern]
+15fafd62ebc7 selftests/mm: compaction_test: fix incorrect write of zero to nr_hugepages [Dev Jain]
+28f05bf28acd serial: sc16is7xx: fix bug in sc16is7xx_set_baud() when using prescaler [Hugo Villeneuve]
+1306d1a2e0ad serial: sc16is7xx: replace hardcoded divisor value with BIT() macro [Hugo Villeneuve]
+3e81dbc5a4e4 usb: gadget: f_fs: Fix race between aio_cancel() and AIO request complete [Wesley Cheng]
+8a4d62764a49 af_unix: Use skb_queue_len_lockless() in sk_diag_show_rqlen(). [Kuniyuki Iwashima]
+2ac1828a9c69 af_unix: Annotate data-race of net->unx.sysctl_max_dgram_qlen. [Kuniyuki Iwashima]
+e2224abd96cc af_unix: Annotate data-races around sk->sk_state in UNIX_DIAG. [Kuniyuki Iwashima]
+d53da08e5e33 af_unix: Annotate data-races around sk->sk_state in sendmsg() and recvmsg(). [Kuniyuki Iwashima]
+979826a60928 af_unix: Annotate data-race of sk->sk_state in unix_inq_len(). [Kuniyuki Iwashima]
+94c4c5f38679 ptp: Fix error message on failed pin verification [Karol Kolacinski]
+3473817258fa tcp: count CLOSE-WAIT sockets for TCP_MIB_CURRESTAB [Jason Xing]
+8d15b74b7db8 wifi: mac80211: Fix deadlock in ieee80211_sta_ps_deliver_wakeup() [Remi Pommarel]
+6d5d46455216 wifi: mac80211: mesh: Fix leak of mesh_preq_queue objects [Nicolas Escande]
 
