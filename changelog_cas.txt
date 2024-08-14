@@ -1,0 +1,126 @@
+====================
+     2024-08-14    
+====================
+* art
+ee27946b34 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+
+* build/make
+27f004b002 build: Always use release-keys [Pranav Vashi]
+
+* device/qcom/sepolicy_vndr/legacy-um
+23e11dee2 lito: Allow init write to discard_max_bytes [Michael Bestas]
+
+* vendor/lineage
+3479c84d Sign Build [Nanhumly]
+
+* device/xiaomi/cas
+ec065d1 cas: overlay-lineage: Adjust config_ignoredAuxCameraIds for cas [Nanhumly]
+392fee8 cas: overlay: Move UDFPS enroll radius to settings [Omkar Chandorkar]
+3111f03 cas: overlay: Kang rounded corner values from zeus [Nanhumly]
+f9b4214 cas: overlay: Update brightness values from stock [Nanhumly]
+1d26774 cas: overlay: Update power profile from stock [Nanhumly]
+b9679b2 cas: Initial cas device tree conversion [Nanhumly]
+
+* device/xiaomi/sm8250-common
+497dd5e sm8250-common: sepolicy: Lable sysfs nodes for cas [Nanhumly]
+
+* vendor/xiaomi/cas
+0c0758b cas: Import blobs from cas-user 13 RKQ1.211001.001 V816.0.4.0.TJJCNXM release-keys [Nanhumly]
+
+* kernel/xiaomi/sm8250
+6847ef6cf drivers: power: supply: ti: Fix bq25790 driver build [Nanhumly]
+
+====================
+     2024-08-13    
+====================
+====================
+     2024-08-12    
+====================
+====================
+     2024-08-11    
+====================
+* lineage/mirror
+2670d40 Updated to 11-Aug-2024 12:01 UTC [Tim Schumacher]
+
+* system/core
+9454d903d Make snapuserd recovery_available. [David Anderson]
+
+* vendor/lineage
+2bf1bc81 config: tablet: Enable freeform and large screen support for all targets [Sebastiano Barezzi]
+3f0c84c2 config: tablet: Enable freeform windows by default [Davide Garberi]
+4e89bdb1 config: tablet: Deduplicate full tablet configuration [Sebastiano Barezzi]
+82cb3dc4 config: Move LatinIME stuff to common_mobile*.mk [Sebastiano Barezzi]
+799d1224 config: Rename mobile-specific configs [Sebastiano Barezzi]
+
+* device/xiaomi/sm8250-common
+5937299 sm8250-common: build missing Wi-Fi Display lib [luffitys]
+eac1d55 sm8250-common: keylayout: Really denylist all fingerprint input events [Sebastiano Barezzi]
+6480337 sm8250-common: keylayout: Denylist all fingerprint input events [Sebastiano Barezzi]
+
+====================
+     2024-08-10    
+====================
+* lineage/hudson
+f00b4ac hudson: Add Galaxy A71 [Haky86]
+
+* lineage/wiki
+395bd1f0 wiki: Add Galaxy A71 [Haky86]
+
+====================
+     2024-08-09    
+====================
+* lineage/hudson
+90c6d42 Regenerate device dependency mappings [LineageOS Infra]
+
+====================
+     2024-08-08    
+====================
+* android
+b499aae manifest: August 2024 Security Update [Michael Bestas]
+
+* build/make
+12a64c2575 Revert "Remove non existent snapuserd.recovery package" [David Anderson]
+34f5805937 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* external/chromium-webview/patches
+3e66b09 Update Chromium Webview to 127.0.6533.103 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+942a549 Update Chromium Webview arm prebuilt to 127.0.6533.103 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+1be5632 Update Chromium Webview arm64 prebuilt to 127.0.6533.103 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+bf30b1d Update Chromium Webview x86 prebuilt to 127.0.6533.103 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+47c5a9c Update Chromium Webview x86_64 prebuilt to 127.0.6533.103 [Kevin F. Haggerty]
+
+* frameworks/av
+a2bd776597 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* frameworks/base
+389031749dcf Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* frameworks/native
+7034776f08 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* hardware/interfaces
+727cbe0377 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* lineage/mirror
+91c6e06 Updated to 08-Aug-2024 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+f866d388 pages: signing_builds: Add signature reset patch for all LineageOS versions [Nolen Johnson]
+
+* packages/modules/Bluetooth
+5d908840e4 Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* system/security
+12112e1d Merge tag 'android-14.0.0_r55' into staging/lineage-21.0_merge-android-14.0.0_r55 [Bruno Martins]
+
+* vendor/lineage
+43ae0f9a vars: August 2024 Security update [Chirayu Desai]
+
