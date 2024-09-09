@@ -1,6 +1,138 @@
 ====================
+     2024-09-09    
+====================
+====================
+     2024-09-08    
+====================
+* art
+49652b99eb Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+
+* build/make
+1cd5078615 build: Always use release-keys [Pranav Vashi]
+
+* frameworks/av
+14a3fccfb7 audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
+3c0fc616a7 audio: Remove UID check from per-app volume commands [Adithya R]
+102d45fa4f av: support per-app volume [1/3] [cjybyjk]
+
+* frameworks/base
+8c24923dfc82 SystemUI: Remove composite alpha from additional scrim on lockscreen [Pranav Vashi]
+073918afbe93 config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
+a47edab801e1 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
+31a504190926 SystemUI: Use color accent for charging animation [Genkzsz11]
+22300c19f1d3 ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
+d5287012130f SystemUI: Follow monet theme on privacy indicators [minaripenguin]
+d1c1d31cc6a5 SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
+c4f22f046253 SystemUI: Use proper Resolver background color [elluzion]
+37455d1a9723 SystemUI: Fix QS tile dialog background color [Pranav Vashi]
+82f6f1c34428 SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
+d0d47636d024 SystemUI: Calculate paged QS tiles height properly [Adithya R]
+aa7dd35461e5 SystemUI: Fix QS header clock color [Danny Baumann]
+4601db70719e SystemUI: Re-evaluate system theme on UI mode change [althafvly]
+b3a2b4d5c0fe SystemUI: Always refresh power menu on UI mode change [Danny Lin]
+30a413618364 SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
+65f5fbf9f39d SystemUI: Use transparent background for QS footer [Pranav Vashi]
+599c481afa92 SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
+9da5807ad8e8 SystemUI: Update QS notification background color [minaripenguin]
+9c1e21314149 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+3d978daec85e SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
+b11ac468ee53 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
+d2d1180470aa SystemUI: Initialize QS tiles in inactive state [Danny Lin]
+9f3a942a4563 SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
+44d7adacf110 SystemUI: Follow light/dark theme in quick settings [Danny Lin]
+df0f5b25241b Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
+52bce58b5996 Revert "Make QS always use dark theme colors" [Danny Lin]
+6944a5c70c16 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+412e56c74f07 base: Add support for strict standby policy [LibXZR]
+cfc6b23a76d0 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
+3830a7275583 fixup! Add Face Unlock with ParanoidSense [someone5678]
+b0f4180abfdf SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
+f64fe5fefb55 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
+a1c1a5ab9cf5 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
+34c0ae2b2e26 SystemUI: Implement face unlock recognition animation and text [minaripenguin]
+e1e2fc11be56 FaceSense: Adapt for 14 QPR2 [aswin7469]
+b6aa3ef0f02f FaceSense: Vibrate on successful authentication [Adithya R]
+c67be69911ae Add Face Unlock with ParanoidSense [Chris Crump]
+ed26656716d6 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
+0b2f9bc64363 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
+035047a2b374 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
+809d3fa20ce1 base: Reset props for status bar lyric [1/2] [cjybyjk]
+6253563d433b Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
+16449031cf37 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
+d15ef64bcf14 base: Add status bar lyric for Android 14 [cjybyjk]
+6469f962372e Add Extra proto [Nanhumly]
+d1129b617f77 fixup! base: support per-app volume [2/3] [someone5678]
+35540df13813 base: make per-app work with multi audio focus [El Dainosor]
+5a7ec94a28a3 SystemUI: Update App volume icon [yukiscape]
+d9ca449b52ef base: support per-app volume [2/3] [cjybyjk]
+
+* hardware/qcom-caf/msm8998/media
+6e2c2aa38 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* hardware/qcom/sm7250/display
+e816646b Convert some display libraries to blueprint [Aaron Kling]
+
+* lineage-sdk
+8df02594 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
+
+* packages/apps/Aperture
+3f3c736 Aperture: SettingsActivity: Only two-way gestures can invert buttons [Sebastiano Barezzi]
+
+* packages/apps/CarrierConfig
+ba67fb3 Override name of Mainland China carriers [cjybyjk]
+
+* packages/apps/Glimpse
+a650893 Glimpse: Update AGP to 8.5.2 [Luca Stefani]
+947bdc6 Glimpse: Update Gradle wrapper to 8.10 [Luca Stefani]
+
+* packages/apps/Settings
+682b1ca621c Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+3a6adba3b05 Settings: Add model spoof support [Nanhumly]
+8a4bb48c1ba Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
+639bc30cce8 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
+b50713c2c83 Settings: Add status bar lyric [Kujou Yuko]
+9c255dd7c92 Settings: support per-app volume [3/3] [cjybyjk]
+166d04fc42f Settings: Make all user apps cloneable [someone5678]
+0c625f72609 Settings: Enable Cloned Apps by default [AmeChanRain]
+
+* packages/services/Telephony
+77137431b Add support for multi-language carrier name override [cjybyjk]
+
+* tools/extract-utils
+b2c09dd extract_utils: Add xml suffix to prebuilt_etc_xml modules [Michael Bestas]
+bccc230 extract-utils: Also support rfsa package targets on odm [Bruno Martins]
+
+* vendor/lineage
+a1236e08 Sign Build [Nanhumly]
+08e013ed overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
+298f2a9d vendor: Guard Face Unlock support [someone5678]
+c95f1e5f config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
+
+* device/xiaomi/msm8998-common
+b6e5dfe msm8998-common: Update FairPhone 3 blobs from FP3-REL-6.A.030.0-gms-d57debf7-user [Bharath]
+
+* vendor/xiaomi/msm8998-common
+17113ac msm8998-common: Add xml suffix to prebuilt_etc_xml modules [Michael Bestas]
+c46a67e msm8998-common: Update FairPhone 3 blobs from FP3-REL-6.A.030.0-gms-d57debf7-user [Bharath]
+
+====================
      2024-09-07    
 ====================
+* lineage/mirror
+907f870 Updated aosp-minimal to 07-Sep-2024 12:02 UTC [Tim Schumacher]
+
+* vendor/lineage
+85a01b77 vars: Update qcom tags [Michael Bestas]
+f55e136f vars: Drop no longer supported Pixels [Michael Bestas]
+49d9566e vars: September 2024 Security update [Chirayu Desai]
+
+* device/xiaomi/chiron
+48b4f4c chiron: Sync extract scripts with templates [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+987905d msm8998-common: Nuke `libstagefright_foundation-v33` definition [Matsvei Niaverau]
+6c1b53e msm8998-common: Sync extract scripts with templates [Michael Bestas]
+
 * kernel/xiaomi/msm8998
 ba209d35ba7a Merge tag 'v4.4.302-cip91' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-21.0 [Nanhumly]
 309cb0b211f9 CIP: Bump version suffix to -cip91 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
@@ -17,120 +149,17 @@ ada6573ceee6 SUNRPC: Fix a race to wake a sync task [Benjamin Coddington]
 ====================
      2024-09-06    
 ====================
-* art
-48fa19c708 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
-
-* build/make
-d69ea5c91b build: Always use release-keys [Pranav Vashi]
-
-* frameworks/av
-d13d299a03 audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume [Adithya R]
-d9e1f17b83 audio: Remove UID check from per-app volume commands [Adithya R]
-62040537b8 av: support per-app volume [1/3] [cjybyjk]
-
-* frameworks/base
-d64be9060f43 SystemUI: Remove composite alpha from additional scrim on lockscreen [Pranav Vashi]
-1508964d6d3a config_progress_background_tint: Use accent color for progress bar background [Danny Lin]
-2f4c5a214bd5 colors_device_defaults: Add chroma to light surface highlight color [Danny Lin]
-b47016b88b9e SystemUI: Use color accent for charging animation [Genkzsz11]
-696a277f47e9 ThemeOverlayController: Remove repeated monet check [Pranav Vashi]
-1359be15190f SystemUI: Follow monet theme on privacy indicators [minaripenguin]
-e293ce604f7d SystemUI: QSCustomizer: Add reset to toolbar menu [althafvly]
-17e2ed4d6580 SystemUI: Use proper Resolver background color [elluzion]
-3ebe9f0b8c74 SystemUI: Fix QS tile dialog background color [Pranav Vashi]
-4500232b3c1c SystemUI: Remove visibility check in setting QSCarrier color [Adithya R]
-73ac263e12e2 SystemUI: Calculate paged QS tiles height properly [Adithya R]
-59591d61f0ac SystemUI: Fix QS header clock color [Danny Baumann]
-b0b0fae50b83 SystemUI: Re-evaluate system theme on UI mode change [althafvly]
-4dc4e1a12ca9 SystemUI: Always refresh power menu on UI mode change [Danny Lin]
-1f9780cd9ddc SystemUI: Follow Dark/Light theme for Safe Mode dialog [Pulkit077]
-5d86230c94dc SystemUI: Use transparent background for QS footer [Pranav Vashi]
-d7e441f2d948 SystemUI: Apply rounded corners for QS footer [Pranav Vashi]
-29cb00064ea9 SystemUI: Update QS notification background color [minaripenguin]
-a3c14fbc070a SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
-eee1081ce134 SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT [althafvly]
-24293b56dd5a SystemUI: Add dual-tone light and dark themes for QS [Danny Lin]
-e555960ba3c3 SystemUI: Initialize QS tiles in inactive state [Danny Lin]
-09e7b9df235d SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable [Pranav Vashi]
-86bbf9fbc22b SystemUI: Follow light/dark theme in quick settings [Danny Lin]
-e21d1ac8ba19 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin]
-8903f4a6c741 Revert "Make QS always use dark theme colors" [Danny Lin]
-ecc79e8d2512 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-ee84e1dcf5a6 base: Add support for strict standby policy [LibXZR]
-89d06b1dafc1 fixup! SystemUI: Implement face unlock recognition animation and text [someone5678]
-3857bb463cb9 fixup! Add Face Unlock with ParanoidSense [someone5678]
-5e02003dbc35 SystemUI: biometrics: Follow user setting to confirm face unlock [Pranav Vashi]
-c5c74d343104 SystemUI: Use proper tint for face unlock icon [Pranav Vashi]
-339d11cc3d08 SystemUI: FaceUnlock: Add margin based on lock icon [someone5678]
-bbd15407ffec SystemUI: Implement face unlock recognition animation and text [minaripenguin]
-8e0f3ccdf163 FaceSense: Adapt for 14 QPR2 [aswin7469]
-d6331002f853 FaceSense: Vibrate on successful authentication [Adithya R]
-d48426a37ee1 Add Face Unlock with ParanoidSense [Chris Crump]
-2c1083157d71 BiometricScheduler: Cancel operation if not idle [SagarMakhar]
-a076466b1c61 Keystore: Spoof locked bootloader on local attestations [minaripenguin]
-edc276d5f324 MeizuPropsUtils: Add com.hihonor.cloudmusic to whitelist of music apps [Majokeiko]
-1296fd397600 base: Reset props for status bar lyric [1/2] [cjybyjk]
-486277567d57 Introduce PixelPropsUtils for safety net spoof [SQUASHED] [jhenrique09]
-a176db04c1a5 SystemUI: Fix status bar lyric overlapping with the center clock [LibXZR]
-a2399c5ca613 base: Add status bar lyric for Android 14 [cjybyjk]
-149875900368 Add Extra proto [Nanhumly]
-72bf5293facd fixup! base: support per-app volume [2/3] [someone5678]
-3d364a3f7d47 base: make per-app work with multi audio focus [El Dainosor]
-8ba536a72d98 SystemUI: Update App volume icon [yukiscape]
-516d1b32da06 base: support per-app volume [2/3] [cjybyjk]
-
-* hardware/qcom-caf/msm8998/media
-d89ef4ed7 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
 * hardware/qcom-caf/sdm660/display
 2b63444088 gralloc: add checks for reserved size of allocation requests [Vikas batchu]
-
-* hardware/qcom-caf/sm8250/display
-65835560fe fixup! gralloc: Conditionally revert changes related to gralloc struct [Michael Bestas]
-
-* hardware/qcom-caf/sm8350/display
-04d8f7bddc fixup! gralloc: Conditionally revert changes related to gralloc struct [Michael Bestas]
 
 * hardware/qcom-caf/sm8550/display
 8f92fc5a59 gralloc: add checks for reserved size of allocation requests [Vikas batchu]
 
-* lineage-sdk
-d9d91638 sdk: preference: add SystemPropertySwitchPreference [cjybyjk]
-
-* lineage/mirror
-44d28e3 Updated aosp-minimal to 05-Sep-2024 12:02 UTC [Tim Schumacher]
-
-* packages/apps/CarrierConfig
-47fee7a Override name of Mainland China carriers [cjybyjk]
-
-* packages/apps/Settings
-c86e951488a Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-643849ceaa8 Settings: Add model spoof support [Nanhumly]
-2ce14d6993b Add Face Unlock with ParanoidSense (2/2) [Chris Crump]
-ad0346acf44 Settings: Reset props for status bar lyric [2/2] [cjybyjk]
-165c4afc3b5 Settings: Add status bar lyric [Kujou Yuko]
-0160af757de Settings: support per-app volume [3/3] [cjybyjk]
-5869263f31e Settings: Make all user apps cloneable [someone5678]
-42a0c7b9e8e Settings: Enable Cloned Apps by default [AmeChanRain]
-
-* packages/services/Telephony
-81986827e Add support for multi-language carrier name override [cjybyjk]
+* packages/apps/Aperture
+cde40a1 Aperture: SettingsActivity: Deduplicate HardwareKey prefs keys [Sebastiano Barezzi]
 
 * vendor/lineage
-8585296d Sign Build [Nanhumly]
-0eb1aecb overlay: SystemUI: Follow light/dark theme in power menu [Danny Lin]
-a73b417a vendor: Guard Face Unlock support [someone5678]
-c7ddf0fb config: Switch to AOSPA's face unlock implementation [Alberto Ponces]
-bed1204b Merge commit 'refs/changes/37/400937/1' of https://github.com/LineageOS/android_vendor_lineage into HEAD [Nanhumly]
-b91fd93f Merge commit 'refs/changes/36/400936/1' of https://github.com/LineageOS/android_vendor_lineage into HEAD [Nanhumly]
 8450e172 apn: Set correct apn for `Grameenphone` [hipexscape]
-
-* device/xiaomi/chiron
-d494e9d chiron: Sync extract scripts with templates [Michael Bestas]
-
-* device/xiaomi/msm8998-common
-71be711 msm8998-common: Nuke `libstagefright_foundation-v33` definition [Matsvei Niaverau]
-251f08f msm8998-common: Sync extract scripts with templates [Michael Bestas]
 
 * vendor/xiaomi/msm8998-common
 a161248 msm8998-common: chmod 755 proprietary/*/bin/hw/* [Nolen Johnson]
@@ -138,14 +167,6 @@ a161248 msm8998-common: chmod 755 proprietary/*/bin/hw/* [Nolen Johnson]
 ====================
      2024-09-05    
 ====================
-* hardware/qcom-caf/msm8953/display
-15c93265da gralloc: add checks for buffer allocation requests [Min Cheng]
-24140a6fd4 gralloc: add checks for reserved size of allocation requests [Vikas batchu]
-
-* hardware/qcom-caf/sdm845/display
-328365b3cf gralloc: add checks for buffer allocation requests [Min Cheng]
-4921c5a770 gralloc: add checks for reserved size of allocation requests [Vikas batchu]
-
 * hardware/qcom-caf/sm8150/display
 b80820872c gralloc: add checks for reserved size of allocation requests [Vikas batchu]
 
@@ -158,15 +179,17 @@ b80820872c gralloc: add checks for reserved size of allocation requests [Vikas b
 * hardware/qcom-caf/sm8450/display
 f9f930265f gralloc: add checks for reserved size of allocation requests [Vikas batchu]
 
-* hardware/qcom/sdm845/display
-ea447bbc gralloc: add checks for buffer allocation requests [Min Cheng]
-c9e0cd40 gralloc: add checks for reserved size of allocation requests [Vikas batchu]
-
 * hardware/qcom/sm7250/display
 bb6b351d gralloc: add checks for reserved size of allocation requests [Vikas batchu]
 
 * hardware/qcom/sm8150/display
 83b7104f gralloc: add checks for reserved size of allocation requests [Vikas batchu]
+
+* lineage/mirror
+44d28e3 Updated aosp-minimal to 05-Sep-2024 12:02 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+bdf870d Aperture: Update CameraX to 1.5.0-alpha01 [LuK1337]
 
 ====================
      2024-09-04    
@@ -185,7 +208,6 @@ f0be5874bbab Merge tag 'android-14.0.0_r67' into staging/lineage-21.0_merge-andr
 
 * lineage/mirror
 7d1b34c VanillaIceCream [Chirayu Desai]
-be62ca7 Updated to 03-Sep-2024 12:01 UTC [Tim Schumacher]
 
 * packages/apps/Settings
 56587ac011f Merge tag 'android-14.0.0_r67' into staging/lineage-21.0_merge-android-14.0.0_r67 [Michael Bestas]
@@ -197,8 +219,6 @@ a2ae9a507 Merge tag 'android-14.0.0_r67' into staging/lineage-21.0_merge-android
 fcc9a8830 Merge tag 'android-14.0.0_r67' into staging/lineage-21.0_merge-android-14.0.0_r67 [Michael Bestas]
 
 * vendor/lineage
-f9e33e0f vars: Drop no longer supported Pixels [Michael Bestas]
-c028a0da vars: September 2024 Security update [Chirayu Desai]
 ad558bf4 config: Add common config for book-style foldables [Jens Reidel]
 
 * kernel/xiaomi/msm8998
@@ -294,8 +314,17 @@ e8cfcd347952 x86/of: Return consistent error type from x86_of_pci_irq_enable() [
 * frameworks/base
 14701c3bfed8 Automatic translation import [LineageOS Infra]
 
+* hardware/google/camera
+df3f282 camera: Guard with soong namespace [Michael Bestas]
+
+* hardware/qcom/sm7250/gps
+15e156a gps: Remove gps.conf [Michael Bestas]
+
 * lineage-sdk
 611bcdff Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+be62ca7 Updated to 03-Sep-2024 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 9bbf2207 wiki: devices: Update image for Razer Phone 2 [Andrey Sprynga]
@@ -327,24 +356,9 @@ b2cd9f6 Automatic translation import [LineageOS Infra]
 * packages/resources/devicesettings
 9030fa4 Automatic translation import [LineageOS Infra]
 
+* tools/extract-utils
+2bf7718 extract_utils: Only mark lib/lib64 .so as packages [Michael Bestas]
+
 * vendor/crowdin
 b9ef4ea Automatic translation import [LineageOS Infra]
-
-====================
-     2024-09-02    
-====================
-* lineage/wiki
-2b2cbd12 wiki: devices: Update specs for Xiaomi Black Shark [Andrey Sprynga]
-
-====================
-     2024-09-01    
-====================
-* lineage/hudson
-d725404 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-ed1466c Updated to 01-Sep-2024 01:55 UTC [Michael Bestas]
-
-* system/core
-a23f94542 toolbox/libmodprobe: add toolbox to vendor_ramdisk [Junki Min]
 
