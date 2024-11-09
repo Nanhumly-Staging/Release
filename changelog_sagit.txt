@@ -1,581 +1,273 @@
 ====================
-     2024-10-11    
+     2024-11-09    
 ====================
 * art
-d66e6546e9 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+bd16617cfa Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-a7785d042f build: Always use release-keys [Pranav Vashi]
+428b05338e build: Always use release-keys [Pranav Vashi]
 
-* frameworks/base
-ab623b8ae344 webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+* frameworks/opt/telephony
+dc1f0a6827 Revert "Clear up the obsoleted cascading signal strength polling logic" [Han Sol Jin]
+809dac6795 telephony: introduce a stub SubscriptionController [ExactExampl]
+9164b51888 Make UiccSlot::getPrintableIccIds() skip null values [LuK1337]
+58fa96a01f Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
 
 * hardware/qcom-caf/msm8998/media
-7bb06cf4f mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+a4066e607 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
-* lineage/wiki
-d12464c1 pages: signing_builds: Remove mention of migration script from recovery [voidanix]
-
-* vendor/lineage
-1974ad58 Sign Build [Nanhumly]
-ae137e1c Remove config_webview_packages overlay [Luca Stefani]
-e1f33428 kernel: Add rust prebuilts to path [Aaron Kling]
-f26b8c60 backuptool: Only check against major version [Michael Bestas]
-8dfb953f DO NOT MERGE: vars: Add Pixel 9 series [Michael Bestas]
-a2687bd9 DO NOT MERGE: Android 15 beta factory images [Tommy Webb]
-a5ff7a85 aconfig: Enable polite notifications [Arian]
-2b0dd346 aconfig: Enable revamped settings [Arian]
-7a603964 kernel: Nuke --cuda-path/--hip-path [Michael Bestas]
-f89a854e kernel: Update default clang version to r522817 [Michael Bestas]
-8c3c0dcc build: Don't set a default fingerprint [Michael Bestas]
-9ba5535b build: Move version & legal properties to product [Michael Bestas]
-41006aa6 build: goodbye Cid :') [Michael Bestas]
-b0654584 build: Drop lineage sdk versions [Michael Bestas]
-33a4dab9 vars: Add lanai tags [Michael Bestas]
-94ea2017 vars: Update qssi tag [Michael Bestas]
-066016a2 aconfig: Drop use_media_router2_for_info_media_manager [Arian]
-6e1bad68 aconfig: Add release and buildconfig textproto [Sourajit Karmakar]
-1826467b lineage: Bump aconfig flags extension to AP3A [Arian]
-500639f0 soong: generator: Update for 15 [Michael Bestas]
-f3dc58b8 build: Switch to _get_build_var_cached [Michael Bestas]
-88e54699 build: Drop makerecipe/mk_timer from envsetup [Michael Bestas]
-2bc78b60 build: Split envsetup help to a separate file [Michael Bestas]
-b5437a56 build: Import check_product from lineage-21.0 build/make [Michael Bestas]
-97531ce7 Revert "roomservice: Try major-only revision if default doesn't exist" [LuK1337]
-5109e5c7 LineageOS 22.0 [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-e0e320f027e5 arm/topology: link arch_scale_min_freq_capacity to cpufreq [Ionela Voinescu]
-e346640af72e arm64/topology: link arch_scale_min_freq_capacity to cpufreq [Chris Redpath]
-25cd17dd79b0 cpufreq: add scaled minimum capacity tracking for policy changes [Ionela Voinescu]
-2575df841d7d arm64: enable max frequency capping [Dietmar Eggemann]
-47a3ff51bfff arm: enable max frequency capping [Dietmar Eggemann]
-3468f87130e4 cpufreq: implement max frequency capping [Dietmar Eggemann]
-60bd78bcde96 cpufreq: remove max frequency capping from scale_freq_capacity() [Dietmar Eggemann]
-127d6001ba2b Revert "cpufreq: Max freq invariant scheduler load-tracking and cpu capacity support" [Quentin Perret]
-47f1461effaf Revert "arm: Enable max freq invariant scheduler load-tracking and capacity support" [Quentin Perret]
-f404312ca0d8 Revert "arm64: Enable max freq invariant scheduler load-tracking and capacity support" [Quentin Perret]
-27442ed2aa46 kconfig/lxdialog: Make main() return 0 [LuK1337]
-
-====================
-     2024-10-10    
-====================
-* lineage/mirror
-036ba4e Updated to 09-Oct-2024 20:16 UTC [Michael Bestas]
-1104d22 Updated aosp-minimal to 09-Oct-2024 12:02 UTC [Tim Schumacher]
+* lineage/crowdin
+bd9a458 config: Add Twelve to 22.0 extra packages [LuK1337]
 
 * lineage/website
-1e4b6a6 www: Remove Google Play Certification blog post [LuK1337]
-
-* packages/modules/NetworkStack
-24d3b450 Reduce the performance impact of reading APF counters [Patrick Rohr]
-3ecba8f9 Increase default APF counter polling interval to reduce battery drain [Yuyang Huang]
+385b743 www: Make site title more succinct [Nicholas Lim]
 
 * vendor/lineage
-beb96459 build: Make gsi_arm{,64} inherit full_base_telephony.mk [LuK1337]
+e410ffbd Sign Build [Nanhumly]
 
 * device/xiaomi/msm8998-common
-96dfb7d msm8998-common: Sync extract scripts with 22 templates [Michael Bestas]
-
-* kernel/xiaomi/msm8998
-bf4e671595bf Merge tag 'v4.4.302-cip92' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-22.0 [Nanhumly]
+0453f4e msm8998-common: Explicitly set as an non-AB target [Kelvin Zhang]
 
 ====================
-     2024-10-09    
-====================
-* device/qcom/sepolicy_vndr/legacy-um
-444d947f1 legacy: common: Switch to AIDL thermal HAL [LuK1337]
-
-* kernel/xiaomi/msm8998
-da1013db74d9 CIP: Bump version suffix to -cip92 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
-16311e76828b Merge branch 'linux-4.4.y-st' into linux-4.4.y-cip [Ulrich Hecht]
-b5f5caba9e17 Update localversion-st, tree is up-to-date with 4.19.322. [Ulrich Hecht]
-7c4bd759d48d fbcon: Prevent that screen size is smaller than font size [Helge Deller]
-e19c8dfdf7f6 rtmutex: Drop rt_mutex::wait_lock before scheduling [Roland Xu]
-68c9bca6851c nilfs2: protect references to superblock parameters exposed in sysfs [Ryusuke Konishi]
-a2e7c94e682b nilfs2: replace snprintf in show functions with sysfs_emit [Qing Wang]
-81da31d1a088 of/irq: Prevent device address out-of-bounds read in interrupt map walk [Stefan Wiehler]
-f5316dd41a0e btrfs: clean up our handling of refs == 0 in snapshot delete [Josef Bacik]
-f74557da4d93 cgroup: Protect css->cgroup write under css_set_lock [Waiman Long]
-6c90700a913d udf: Avoid excessive partition lengths [Jan Kara]
-c47f9fb4ab29 nilfs2: fix missing cleanup on rollforward recovery error [Ryusuke Konishi]
-cfd3bcfa5513 mmc: dw_mmc: Fix IDMAC operation with pages bigger than 4K [Sam Protsenko]
-eaeb11db2b7c sch/netem: fix use after free in netem_dequeue [Stephen Hemminger]
-595e997ba3cd block: initialize integrity buffer to zero before writing it to media [Christoph Hellwig]
-2d0dbd414270 dm suspend: return -ERESTARTSYS instead of -EINTR [Mikulas Patocka]
-d63e7eefa7b6 drm/amdgpu: Using uninitialized value *size when calling amdgpu_vce_cs_reloc [Jesse Zhang]
-010bce17135f Bluetooth: hci_ldisc: check HCI_UART_PROTO_READY flag in HCIUARTGETPROTO [Lee, Chun-Yi]
-e33f7e7376c9 f2fs: fix to do sanity check in update_sit_entry [Zhiguo Niu]
-8c8584bb2401 kbuild: clang: Disable 'asm-operand-widths warnings' warning [LuK1337]
-28eebd076c05 tracing: Fix clang -Wint-in-bool-context warnings in IF_ASSIGN macro [Nathan Chancellor]
-52ae48297644 kbuild: clang: Disable 'address-of-packed-member' warning [Matthias Kaehlcke]
-544b6ab20b39 syscall: Increase bpf fake uname to 5.4.186 [Tim Zimmermann]
-a7866a8e556f kernel: bpf: Improve prog_type spoofing [Tim Zimmermann]
-7183765450ef kernel: bpf: Pretend to support ANY map_type [Tim Zimmermann]
-b4b2492997a3 kernel: bpf: Pretend to support ANY prog_type/attach_type [Tim Zimmermann]
-eafb657fd2c0 syscall: Increase bpf fake uname to 5.4 [Tim Zimmermann]
-c0598307f532 fixup! bpf: Hooks for sys_sendmsg [Huexxx]
-f606eda1d67d bpf: fix bpf_skb_load_bytes_relative pkt length check [Daniel Borkmann]
-6597787bcbca bpf: fix unconnected udp hooks [Daniel Borkmann]
-10d8721cb469 bpf: Hooks for sys_sendmsg [Andrey Ignatov]
-aacc25582ccd BACKPORT: devmap: Allow map lookups from eBPF [Toke Høiland-Jørgensen]
-86201ea5df0d BACKPORT: xdp: Add devmap_hash map type for looking up devices by hashed index [Toke Høiland-Jørgensen]
-d5dd01f02e92 kernel: bpf: devmap: Create __dev_map_alloc_node [Tim Zimmermann]
-4f6406280d38 FROMLIST: [net-next,v2,1/2] bpf: Allow CGROUP_SKB eBPF program to access sk_buff [Chenbo Feng]
-2122736c102b syscall: Increase bpf fake uname to 4.19.236 [Huexxx]
-c91b9159159e syscall: Fake uname to 4.19 also for netbpfload [Tim Zimmermann]
-aa2fd67a2f74 syscall: Fake uname to 4.19 for bpfloader/netd [Tim Zimmermann]
-d2427b0e9801 tcp: Add tcp_inq to get available receive bytes on socket [Tom Herbert]
-c0f3f3d48d9a net: Walk fragments in __skb_splice_bits [Tom Herbert]
-88dcc9ab6911 net: Add MSG_BATCH flag [Tom Herbert]
-b9cebdac63e2 net: Allow MSG_EOR in each msghdr of sendmmsg [Tom Herbert]
-6190d492c924 net: Make sock_alloc exportable [Tom Herbert]
-a5b042ec5de0 rcu: Add list_next_or_null_rcu [Tom Herbert]
-bb83fa587227 tun: switch to use skb array for tx [Jason Wang]
-c6fa7cad8822 net: introduce NETDEV_CHANGE_TX_QUEUE_LEN [Jason Wang]
-1c69fad2b57d skb_array: add wrappers for resizing [Jason Wang]
-d26c1d9bb4e5 ptr_ring: support resizing multiple queues [Michael S. Tsirkin]
-181108090190 skb_array: minor tweak [Jason Wang]
-529c15feb7b4 ptr_ring: support zero length ring [Jason Wang]
-d89ad910b6d8 skb_array: resize support [Michael S. Tsirkin]
-103465123ae0 ptr_ring: resize support [Michael S. Tsirkin]
-2d514d8285a8 skb_array: array based FIFO for skbs [Michael S. Tsirkin]
-2d9a41298cd5 ptr_ring: array based FIFO for pointers [Michael S. Tsirkin]
-92e4adbff747 tcp: fix lockdep splat in tcp_snd_una_update() [Eric Dumazet]
-cbd0325b0b38 sock: relax WARN_ON() in sock_owned_by_user() [Eric Dumazet]
-6eb08372d1a3 sock: tigthen lockdep checks for sock_owned_by_user [Hannes Frederic Sowa]
-ec15936a485b bpf: fix use after free in bpf_evict_inode [Daniel Borkmann]
-7bafeb7fd775 fixup! bpf: fix mixed signed/unsigned derived min/max value bounds [Luca Stefani]
-236d660ea275 bpf/verifier: increase complexity limit to 128k [Edward Cree]
-75789e7e04ee bpf: reset id on CONST_IMM transition [Daniel Borkmann]
-74e58ea90f90 bpf: don't check spilled reg state for non-STACK_SPILLed type slots [Daniel Borkmann]
-1a5b93ff3629 bpf: fix incorrect pruning decision when alignment must be tracked [Daniel Borkmann]
-0399688cdb1b bpf: Handle multiple variable additions into packet pointers in verifier. [David S. Miller]
-bce3a2e389f2 bpf: Fix and simplifications on inline map lookup [Martin KaFai Lau]
-97d190dc7b6d perf, bpf: Add BPF support to all perf_event types [Alexei Starovoitov]
-cbaa0bf0f22f bpf: reference may_access_skb() from __bpf_prog_run() [Johannes Berg]
-727b4aa6554f bpf: do not use KMALLOC_SHIFT_MAX [Michal Hocko]
-4c3f883f4a18 bpf: allow for mount options to specify permissions [Daniel Borkmann]
-dd889506a0a2 bpf: Export bpf_prog_inc() [Huexxx]
-6dd5cb8d6597 bpf, inode: add support for symlinks and fix mtime/ctime [Daniel Borkmann]
-6ddc0947a403 bpf: fix unlocking of jited image when module ronx not set [Daniel Borkmann]
-0d1a97fae000 trace: add variant without spacing in trace_print_hex_seq [Daniel Borkmann]
-d06ffa1121c6 bpf, lpm: Fix check prefixlen before walking trie [Florian Lehner]
-3b1917e22908 net: strparser: Compile by default [Nguyễn Long]
-64f39f9059e2 strparser: Remove early eaten to fix full tcp receive buffer stall [Doron Roberts-Kedes]
-3c7b107db798 strparser: Fix incorrect strp->need_bytes value. [Doron Roberts-Kedes]
-6beb556ca9bd strparser: Do not call mod_delayed_work with a timeout of LONG_MAX [Doron Roberts-Kedes]
-0a956f61ed83 strparser: Fix sign of err codes [Dave Watson]
-1ac713ca55af strparser: Use delayed work instead of timer for msg timeout [Tom Herbert]
-e1803eaf2198 strparser: initialize all callbacks [Eric Biggers]
-79f4b648638e net: early init support for strparser [John Fastabend]
-37bb2ed66da8 strparser: Generalize strparser [Tom Herbert]
-6cd0d35dbea2 strparser: destroy workqueue on module exit [WANG Cong]
-42a1da7d8ce5 strparser: Propagate correct error code in strp_recv() [Geert Uytterhoeven]
-b7803853998a kcm: Remove TCP specific references from kcm and strparser [Tom Herbert]
-9fc79c6ada04 tcp: Set read_sock and peek_len proto_ops [Tom Herbert]
-fc3bb6828a84 net: Add read_sock proto_op [Tom Herbert]
-ba7a4b485d20 strparser: Queue work when being unpaused [Tom Herbert]
-ec8f1582a880 net: strparser: fix strparser sk_user_data check [Dave Watson]
-81f81adfa8c1 strparser: Documentation [Tom Herbert]
-3fabe990d232 strparser: Stream parser for messages [Tom Herbert]
-642b2bc84d02 bpf: Fix incompatible function poniter [Nguyễn Long]
-ea0c3679ec1c bpf: Remove MTU check in __bpf_skb_max_len [Jesper Dangaard Brouer]
-83a4209511bd bpf: Fix incompatible function pointer [Nguyễn Long]
-c6c1b211f109 net: inet needs addrconf.h include [Nguyễn Long]
-80f417479aae BACKPORT: bpf: Post-hooks for sys_bind [Andrey Ignatov]
-21cf148d9f56 BACKPORT: bpf: Hooks for sys_connect [Andrey Ignatov]
-06985ac33f78 BACKPORT: net: Introduce __inet_bind() and __inet6_bind [Andrey Ignatov]
-aff0db2256f2 BACKPORT: bpf: Hooks for sys_bind [Andrey Ignatov]
-7e6f73075cde BACKPORT: bpf: introduce BPF_PROG_QUERY command [Alexei Starovoitov]
-f0d52c993b75 BACKPORT: bpf: Check attach type at prog load time [Andrey Ignatov]
-ef43c26e57ca bpf: offload: rename the ifindex field [Jakub Kicinski]
-367837e80a32 BACKPORT: bpf: offload: add infrastructure for loading programs for a specific netdev [Jakub Kicinski]
-1330a82518a9 BACKPORT: net: bpf: rename ndo_xdp to ndo_bpf [Jakub Kicinski]
-721e0fc02c7c BACKPORT: bpf: add skb_load_bytes_relative helper [Daniel Borkmann]
-cc649d400e74 bpf: Add mark and priority to sock options that can be set [David Ahern]
-5c6ce86ca626 ipv6: move stub initialization after ipv6 setup completion [Paolo Abeni]
-88cd983fa003 bpf: drop unnecessary context cast from BPF_PROG_RUN [Daniel Borkmann]
-34184cc4d16d bpf: remove cg_skb_func_proto and use sk_filter_func_proto directly [Daniel Borkmann]
-93b6aa01c431 Add uid and cookie bpf helper to cg_skb_func_proto [Chenbo Feng]
-f8eca713a52a net: Allow sk_filter to access get_socket* [Nguyễn Long]
-901e81725052 BACKPORT: bpf: add bpf_ktime_get_boot_ns() [Maciej Żenczykowski]
-0da866386830 UPSTREAM: net: bpf: Make bpf_ktime_get_ns() available to non GPL programs [Maciej Żenczykowski]
-b50274dcd2be BACKPORT: bpf: Use char in prog and map name [Martin KaFai Lau]
-ee27d7b72f3c bpf: Fix truncation handling for mod32 dst reg wrt zero [Daniel Borkmann]
-f8d47660b5f1 bpf: Fix 32 bit src register truncation on div/mod [Daniel Borkmann]
-f37debd49089 bpf: btf: fix truncated last_member_type_id in btf_struct_resolve [Lorenz Bauer]
-eed12fdd074d bpf/btf: Fix BTF verification of enum members in struct/union [Yoshiki Komachi]
-af3aa98a1bae bpf, btf: fix a missing check bug in btf_parse [Martin Lau]
-01a9c2392c7d bpf: btf: Fix a missing check bug [Wenwen Wang]
-f175518bdc4d bpf: btf: Fix end boundary calculation for type section [Martin KaFai Lau]
-68d427b61d66 bpf: btf: Ensure the member->offset is in the right order [Martin KaFai Lau]
-c46ea0ab903b bpf: btf: Clean up BTF_INT_BITS() in uapi btf.h [Martin KaFai Lau]
-7127c21a9b38 bpf: btf: Fix bitfield extraction for big endian [Okash Khawaja]
-1d571f22a262 bpf: btf: Ensure t->type == 0 for BTF_KIND_FWD [Martin KaFai Lau]
-2f6fda863e4e bpf: btf: Check array t->size [Martin KaFai Lau]
-186a6038a1bb bpf: btf: avoid -Wreturn-type warning [Arnd Bergmann]
-4c030ddb7648 bpf: btf: Avoid variable length array [Martin KaFai Lau]
-9d2a9ca45f74 bpf: btf: Remove unused bits from uapi/linux/btf.h [Martin KaFai Lau]
-117e077a22ba bpf: btf: Check array->index_type [Martin KaFai Lau]
-705f570fd90b bpf: btf: Change how section is supported in btf_header [Martin KaFai Lau]
-ae5c5d9a489d bpf: Fix compiler warning on info.map_ids for 32bit platform [Martin KaFai Lau]
-a645e5b78bb0 bpf: Change bpf_obj_name_cpy() to better ensure map's name is init by 0 [Martin KaFai Lau]
-aac214cba36e BACKPORT: bpf: Add map_name to bpf_map_info [Martin KaFai Lau]
-15ae4a57f052 BACKPORT: bpf: Add name, load_time, uid and map_ids to bpf_prog_info [Martin KaFai Lau]
-d7298fe6261d bpf: btf: Add missing refcount include [Nguyễn Long]
-742426026ce9 bpf: btf: Avoid WARN_ON when CONFIG_REFCOUNT_FULL=y [Martin KaFai Lau]
-2334420ffdbe BACKPORT: bpf: btf: Clean up btf.h in uapi [Martin KaFai Lau]
-4b41aecdb610 bpf: btf: Add BPF_OBJ_GET_INFO_BY_FD support to BTF fd [Martin KaFai Lau]
-f2d3e25b0b11 BACKPORT: bpf: btf: Add BPF_BTF_LOAD command [Martin KaFai Lau]
-4fc356df30d8 bpf: btf: Add pretty print capability for data with BTF type info [Martin KaFai Lau]
-041a43f7804f bpf: btf: Check members of struct/union [Martin KaFai Lau]
-4b9d3adff97a bpf: btf: Validate type reference [Martin KaFai Lau]
-aefe5b9357a5 bpf: Update logging functions to work with BTF [Tim Zimmermann]
-fc833166ba26 BACKPORT: bpf: btf: Introduce BPF Type Format (BTF) [Martin KaFai Lau]
-e4bd5d1913ee BACKPORT: bpf: Rename bpf_verifer_log [Martin KaFai Lau]
-9385980b22bc BACKPORT: bpf: encapsulate verifier log state into a structure [Jakub Kicinski]
-4891ef0f1d5d BACKPORT: bpf: Add file mode configuration into bpf maps [Chenbo Feng]
-a9dc0a3fb27d bpf: properly reset caller saved regs after helper call and ld_abs/ind [Daniel Borkmann]
-45cbee8f4206 bpf: devmap fix arithmetic overflow in bitmap_size calculation [John Fastabend]
-68b16a9383ba bpf: require CAP_NET_ADMIN when using devmap [John Fastabend]
-718fd16fe44e bpf: fix splat for illegal devmap percpu allocation [Daniel Borkmann]
-9380d18b2114 bpf: devmap: pass on return value of bpf_map_precharge_memlock [Tobias Klauser]
-131442e49a33 bpf: devmap, use cond_resched instead of cpu_relax [John Fastabend]
-3238cf92390d bpf: netdev is never null in __dev_map_flush [Daniel Borkmann]
-b03137a56a8a bpf: minor cleanups for dev_map [Daniel Borkmann]
-fd8eb5c23b48 bpf: fix double free from dev_map_notification() [Daniel Borkmann]
-45e13aba3204 bpf: devmap: remove unnecessary value size check [John Fastabend]
-33bbf010dc09 bpf: devmap fix mutex in rcu critical section [John Fastabend]
-cf103b1a0f55 bpf: dev_map_alloc() shouldn't return NULL [Dan Carpenter]
-ba97f411ea1b net: add notifier hooks for devmap bpf map [John Fastabend]
-9f731f7d32fe bpf: Set mac_len in bpf_skb_change_head [Jussi Maki]
-6a9650019390 bpf: don't enable preemption twice in smap_do_verdict [Daniel Borkmann]
-fa9bcbed63bb bpf: sockmap state change warning fix [John Fastabend]
-8edb7e34ecc0 bpf: sockmap, remove STRPARSER map_flags and add multi-map support [John Fastabend]
-04316f458026 fixup: bpf: Allow selecting numa node during map creation [Nguyễn Long]
-08960839dedf bpf: sockmap with sk redirect support [John Fastabend]
-40faf5a01cf6 proto_ops: Add locked held versions of sendmsg and sendpage [Tom Herbert]
-2f248e1d3645 skbuff: Function to send an skbuf on a socket [Tom Herbert]
-99223fca8de7 bpf: export bpf_prog_inc_not_zero [John Fastabend]
-516261670387 bpf: reset id on spilled regs in clear_all_pkt_pointers [Daniel Borkmann]
-a040116a678d bpf: simplify narrower ctx access [Daniel Borkmann]
-bbabfbb1cd21 bpf: add napi_id read access to __sk_buff [Daniel Borkmann]
-aa056a6e4bdb bpf: simplify __is_valid_access test on cb [Daniel Borkmann]
-497972197e29 net: Define MIN_NAPI_ID [Nguyễn Long]
-9e4ab3c91dbf bpf: Add BPF_OBJ_GET_INFO_BY_FD [Martin KaFai Lau]
-213867195e2e bpf: Add BPF_MAP_GET_FD_BY_ID [Martin KaFai Lau]
-1ac5df5b2706 bpf: Add BPF_PROG_GET_FD_BY_ID [Martin KaFai Lau]
-cc37bd2f45d3 bpf: Add BPF_(PROG|MAP)_GET_NEXT_ID command [Martin KaFai Lau]
-46d9eb7f856e bpf: introduce BPF_PROG_TEST_RUN command [Alexei Starovoitov]
-61ff8d52f8af bpf: Add jited_len to struct bpf_prog [Martin KaFai Lau]
-62fa51b7928f net: fix build error in devmap helper calls [John Fastabend]
-3be19f3c289c bpf: introduce new program type for skbs on sockets [John Fastabend]
-97b218e4b5f7 bpf: split check_mem_access logic for map values [Gianluca Borello]
-fd004b5c804f bpf: bpf_lock on kallsysms doesn't need to be irqsave [Hannes Frederic Sowa]
-5bb8625ea0ae bpf: rename ARG_PTR_TO_STACK [Alexei Starovoitov]
-02927c51a9dd bpf: allow helpers access to variable memory [Gianluca Borello]
-b56fa513e822 bpf: allow helpers access to map element values [Gianluca Borello]
-dd66e400edd9 bpf: allow adjusted map element values to spill [Gianluca Borello]
-02901e57f59f bpf: Add strict alignment flag for BPF_PROG_LOAD. [David S. Miller]
-6ebb2ca49b88 bpf: Track alignment of register values in the verifier. [David S. Miller]
-2be8d745584f bpf: Remove unused but set variables [Tobias Klauser]
-ff9e52f7d353 xdp: Add batching support to redirect map [John Fastabend]
-c225cdb31002 bpf: add bpf_redirect_map helper routine [John Fastabend]
-345f6a0b5dd5 xdp: add trace event for xdp redirect [John Fastabend]
-26804513a829 xdp: add bpf_redirect helper function [John Fastabend]
-f7569655a9e7 bpf: add bpf_skb_adjust_room helper [Daniel Borkmann]
-fbd742c899d4 bpf, net: add skb_mac_header_len helper [Daniel Borkmann]
-84943235fe73 bpf: Add setsockopt helper function to bpf [Lawrence Brakmo]
-72f8ed0a191b bpf: add bpf_set_hash helper for tc progs [Daniel Borkmann]
-77a50d7b497a bpf: Do per-instruction state dumping in verifier when log_level > 1. [David S. Miller]
-43f445fc54b6 bpf: Introduce bpf_map ID [Martin KaFai Lau]
-84f460591ae0 bpf: Introduce bpf_prog ID [Martin KaFai Lau]
-617d4cb4d55e ANDROID: net: bpf: Allow TC programs to call BPF_FUNC_skb_change_head [Lorenzo Colitti]
-733067f1fee4 bpf: possibly avoid extra masking for narrower load in verifier [Yonghong Song]
-af804f0e4277 bpf: permits narrower load from bpf program context fields [Yonghong Song]
-23f8f9383a83 bpf: add helper inlining infra and optimize map_array lookup [Alexei Starovoitov]
-a79c9469af6f bpf: make jited programs visible in traces [Daniel Borkmann]
-1568877d2c42 bpf: add initial bpf tracepoints [Daniel Borkmann]
-c2e6cab68552 fixup: bpf: convert htab map to hlist_nulls [Nguyễn Long]
-6720996d6d5f bpf: BPF support for sock_ops [Lawrence Brakmo]
-da7affb0e30d bpf: don't open-code memdup_user() [Al Viro]
-169deb52fea3 bpf: linux/bpf.h needs linux/numa.h [David S. Miller]
-12388556bc2f bpf: Allow selecting numa node during map creation [Martin KaFai Lau]
-2571adf67310 bpf: fix hashmap extra_elems logic [Alexei Starovoitov]
-fe5b0aa8de8f bpf: inline htab_map_lookup_elem() [Alexei Starovoitov]
-b358f098b656 bpf: add devmap, a map for storing net device references [John Fastabend]
-14c9cc301e47 bpf: remove struct bpf_map_type_list [Johannes Berg]
-7be68bc6a2dd bpf: remove struct bpf_prog_type_list [Johannes Berg]
-8934b4848755 bpf: mark all registered map/prog types as __ro_after_init [Daniel Borkmann]
-035310c44547 bpf: enable load bytes helper for filter/reuseport progs [Daniel Borkmann]
-e5f7169a49ee bpf: allow b/h/w/dw access for bpf's cb in ctx [Daniel Borkmann]
-9835530df544 bpf: pass original insn directly to convert_ctx_access [Daniel Borkmann]
-af2bfea8969e bpf, verifier: fix rejection of unaligned access checks for map_value_adj [Daniel Borkmann]
-30ba3dd48283 bpf: Add hash of maps support [Martin KaFai Lau]
-408cea6a2e4d bpf: Add array of maps support [Martin KaFai Lau]
-2cfbd6369c33 bpf_lru_list: Read double-checked variable once without lock [Marco Elver]
-c3e2255c1766 bpf: lru: Lower the PERCPU_NR_SCANS from 16 to 4 [Martin KaFai Lau]
-27be66ec5e0d bpf: Make unnecessarily global functions static [Tobias Klauser]
-f356ed098a7f bpf: Remove unused but set variable in __bpf_lru_list_shrink_inactive() [Tobias Klauser]
-153601e914ef bpf: Fix compilation warning in __bpf_lru_list_rotate_inactive [Martin KaFai Lau]
-1b53e82a9c88 bpf: fix wrong exposure of map_flags into fdinfo for lpm [Daniel Borkmann]
-c08849fd36dd bpf: add get_next_key callback to LPM map [Alexei Starovoitov]
-02007b58dd7d bpf, lpm: fix overflows in trie_alloc checks [Daniel Borkmann]
-7e84066e32ab bpf, lpm: fix kfree of im_node in trie_update_elem [Daniel Borkmann]
-39f7c39dd630 bpf: add a longest prefix match trie map implementation [Daniel Mack]
-42a0501cd0dc bpf: rework prog_digest into prog_tag [Daniel Borkmann]
-d333d9c53c63 bpf: dynamically allocate digest scratch buffer [Daniel Borkmann]
-d67faa2ad52b bpf: Use u64_to_user_ptr() [Mickaël Salaün]
-e3fc406ee474 bpf: add prog_digest and expose it via fdinfo/netlink [Daniel Borkmann]
-6e8d75f4860d bpf: drop useless bpf_fd member from cls/act [Daniel Borkmann]
-bf1006310714 bpf: Add BPF_MAP_TYPE_LRU_PERCPU_HASH [Martin KaFai Lau]
-60dbd22e2892 bpf: Add BPF_MAP_TYPE_LRU_HASH [Martin KaFai Lau]
-42daf4f4a94c bpf: Refactor codes handling percpu map [Martin KaFai Lau]
-0776188a1831 bpf: Add percpu LRU list [Martin KaFai Lau]
-8109499eb220 bpf: LRU List [Martin KaFai Lau]
-36bb8905ab51 Revert "BACKPORT: bpf: Add file mode configuration into bpf maps" [Huexxx]
-54dd6440a074 bpf: add bpf_probe_read_str helper [Gianluca Borello]
-321882428176 Revert "BACKPORT: Add support for BPF_FUNC_probe_read_str" [Huexxx]
-9b54d62f454b bpf: xdp: Allow head adjustment in XDP prog [Martin KaFai Lau]
-316be33f43af bpf: fix loading of BPF_MAXINSNS sized programs [Daniel Borkmann]
-4079cdfb0b9c bpf: Add support for reading socket family, type, protocol [David Ahern]
-aacd2df8dadf bpf: Preserve const register type on const OR alu ops [Gianluca Borello]
-e051c432ab27 fixup! BACKPORT: bpf: multi program support for cgroup+bpf [Huexxx]
-b165fbbe3a1d bpf: add owner_prog_type and accounted mem to array map's fdinfo [Daniel Borkmann]
-b089a17af417 bpf: add __must_check attributes to refcount manipulating helpers [Daniel Borkmann]
-1415ab31d33a bpf: BPF for lightweight tunnel infrastructure [Thomas Graf]
-cfa765844407 mpls: autoload lwt module [Robert Shearman]
-706ee2e2fb0b lwtunnel: autoload of lwt modules [Robert Shearman]
-92b7c71a7357 bpf: Refactor cgroups code in prep for new type [David Ahern]
-7a5fe3347143 bpf: Print function name in addition to function id [Thomas Graf]
-266c470d5770 bpf: add helper for retrieving current numa node id [Daniel Borkmann]
-7b4c9e4821c0 Revert "ANDROID: Fix missing uapi headers" [Nguyễn Long]
-29748919ffd8 Revert "bpf: avoid false sharing of map refcount with max_entries" [Nguyễn Long]
-f19093260bde f2fs: Remove static current_time() declaration [Huexxx]
-0c3ffe75f9cc vfs: Add current_time() api [Deepa Dinamani]
-b282e3f46339 refcount: change EXPORT_SYMBOL markings [Greg Kroah-Hartman]
-
-====================
-     2024-10-08    
-====================
-* lineage/scripts
-54ca9af DO NOT MERGE: Android 15 beta factory images [Tommy Webb]
-8310968 pixel: extract-utils: Let compgen fail if there are no radio files [LuK1337]
-
-* packages/modules/Connectivity
-62b902bb15 netd: Require 4.19+ for programs using connect/recvmsg/sendmsg hooks [LuK1337]
-
-====================
-     2024-10-07    
-====================
-* lineage/hudson
-ff00093 Revert "Drop DRG" [Nolen Johnson]
-
-* lineage/wiki
-aa420724 devices: nx: Install boot.scr [Nolen Johnson]
-9f8e3419 Revert "Drop DRG" [Nolen Johnson]
-
-* packages/apps/TvSettings
-dba278b00 Allow disabling Frame Rate settings [Aaron Kling]
-741b7763b Fix the bluetooth headset without mic icon [Tuan Le Anh]
-85187f418 Fix default focus in list fragment [Tuan Le Anh]
-092788570 Fix the problem that "forget" does not return to the previous level UI, bugId: b/341040773 [meiy.yang]
-41599fcc3 [2/2] Add battery info to tvsettings device info [Aaron Kling]
-d74291a66 Add support for Nvidia convertible USB port [Aaron Kling]
-b73b1501b TvSettings: Move power related options to "Power and Energy" [Bruno Martins]
-c58618abf TvSettings: Reorder restart, sleep and shutdown guided actions [Bruno Martins]
-ec216a47f ButtonsFragment: Fix advanced restart preference [Bruno Martins]
-5c8fbdfce TvSettings: fix crash on developer options [Timi Rautamäki]
-8df720616 fixup! Move openInEditMode from onViewCreated to onResume [Aaron Kling]
-ccab470d8 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
-c3f7ad46e Fix UI glitch on USB debugging toggled [Tuan Le Anh]
-543a47c48 Only auto-pair peripheral devices [Aaron Kling]
-5e3313838 Add button to sleep device [Aaron Kling]
-e0e45ccf3 TvSettings: implement long press power settings [Timi Rautamäki]
-be595025b TvSettings: Trust [Timi Rautamäki]
-b357a7daa Settings: Implement ADB over network [Dave Carey]
-6ec8d6030 Add Lineage advanced restart options [Aaron Kling]
-12c88bcce Add rooted development option [Aaron Kling]
-0760fbb45 TvSettings: Fix NPE in SystemSoundsPlayer [Timi Rautamäki]
-23fc89a30 TvSettings: use dark color for Wifi SUW [Timi Rautamäki]
-b29c58200 Add button to shut down device [Aaron Kling]
-d1ef48ee6 TwoPanelSettings: fix double ripple in Wifi selection [Timi Rautamäki]
-41ffa8a11 HDMI CEC: Add volume preference [Aaron Kling]
-35e008580 Show input settings on cec playback devices [Aaron Kling]
-69ab8913f TvSettings: Default to not showing bug-report quick setting [Nolen Johnson]
-7eb8a654c TvSettings: add Buttons-section to System settings [Timi Rautamäki]
-ae99ca0f4 Settings: Add intent to launch LineageOS platlogo upon multiple taps [Zhao Wei Liew]
-1e23bab44 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
-b0e73b9c0 One does not simply become a Developer [dhacker29]
-
-* tools/extract-utils
-3d0c6ac extract_utils: Remove IFS override from colored_echo() [LuK1337]
-
-====================
-     2024-10-06    
+     2024-11-08    
 ====================
 * android
-42a6786 manifest: Track our fork of NetworkStack [LuK1337]
+2af1fc8 manifest: November 2024 Security Update [Michael Bestas]
 
-* lineage/hudson
-ff17f08 Hold my Lyre. [Ramii Zaki]
+* build/make
+cbbde02c21 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* frameworks/base
+12f2819dc0b8 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* frameworks/native
+1a656213bf Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* frameworks/opt/telephony
+6f74d80eb1 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* hardware/google/graphics/common
+dbdd700 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+7535d6ae5 hal: Guard primary audio HAL in case target provides prebuilt [Bruno Martins]
+
+* lineage-sdk
+5a577dc6 sdk: Make it REUSE compatible [Michael Bestas]
+87d20850 sdk: Remove unused .gitignore [Michael Bestas]
+5efaee22 sdk: Remove SettingsProvider tests [Michael Bestas]
+756427f9 sdk: Remove unused proguard.txt [Michael Bestas]
 
 * lineage/mirror
-2e7bb3b Updated aosp-minimal to 05-Oct-2024 12:01 UTC [Tim Schumacher]
+9c0e75e Updated aosp-minimal to 07-Nov-2024 13:02 UTC [Tim Schumacher]
 
-* lineage/wiki
-c375c283 wiki: devices: bump Apollon to 21 [Ramii Zaki]
+* lineage/scripts
+cf89200 pixel: Adapt to new build prop override scheme [Michael Bestas]
+
+* packages/apps/Recorder
+824dc49 Recorder: grant read permissions for apps requesting recordings [Alexander Martinz]
+
+* packages/apps/Settings
+86aae56098b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+400176ffa32 Add a mobile data toggle for setup [Alexander Koskovich]
+
+* packages/modules/Bluetooth
+077e740c03 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* packages/modules/Wifi
+1e0094e821 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* packages/providers/MediaProvider
+3bb894798 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* system/core
+3f2d09e4b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* tools/extract-utils
+c16941b fixup! extract_utils: ignore regeneration when regenerate makefiles is set [Cosmin Tanislav]
+1ba5168 extract_utils: Use vendorcompat only for blobs on odm and vendor [LuK1337]
+
+* vendor/lineage
+2e33440b release: Sync Pixel 9 SVN/kernel manually for Nov ASB [Michael Bestas]
+eb804592 release: Sync Pixel 6-8a SVN manually for Nov ASB [Chirayu Desai]
+28166977 vars: November 2024 Security update [Chirayu Desai]
 
 ====================
-     2024-10-05    
+     2024-11-07    
+====================
+* build/release
+0d371027 AP3A: Set SPL to 2024-11-05 [Ankur Bakshi]
+
+* lineage/mirror
+4ccddbf Updated to 06-Nov-2024 13:01 UTC [Tim Schumacher]
+
+* tools/extract-utils
+3a62f8b extract_utils: Fixup unversioned protobuf dependencies [Michael Bestas]
+8732375 extract_utils: find deps separately for 32-bit and 64-bit [Cosmin Tanislav]
+a96e5b7 extract_utils: ignore regeneration when regenerate makefiles is set [Cosmin Tanislav]
+2e05b3c extract_utils: silently ignore regeneration when section is set [Cosmin Tanislav]
+4721d59 extract_utils: extend `lib_fixups` in the template [LuK1337]
+
+====================
+     2024-11-06    
+====================
+* android
+5a9d759 manifest: Track our device/google/contexthub [Nolen Johnson]
+
+* device/google/contexthub
+8e258d96 Revert "Removed unused Android.mk under device/google/contexthub" [Nolen Johnson]
+
+* frameworks/base
+e92b8c8add79 Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
+
+* lineage/scripts
+5ac8f5a pixel: Changes for python extract-utils [Michael Bestas]
+
+* packages/apps/Recorder
+09b8722 Recorder: Use File instead of Path [Luca Stefani]
+229da7c Recorder: Always track amplitude [Luca Stefani]
+32a6b1c Recorder: Redo high quality recorder [Luca Stefani]
+2a69a8b Recorder: Don't make trackAmplitude/isRecording atomic [Luca Stefani]
+cbeb8fc Recorder: Release the AudioRecord properly [Luca Stefani]
+7bba682 Recorder: Use default audio source in GoodQualityRecorder [Luca Stefani]
+
+* tools/extract-utils
+c0902d9 extract_utils: enable ELF checks by default [Cosmin Tanislav]
+2616b80 extract_utils: add support for factory proprietary file [Cosmin Tanislav]
+79a9d9d extract_utils: add extract function for copying pixel fimware [Cosmin Tanislav]
+772136a extract_utils: add extract function for extracting pixel factory images [Cosmin Tanislav]
+0e85d2b extract_utils: fix built-in shadowing [Cosmin Tanislav]
+09aa24e extract_utils: keep ruff rules in ruff.toml [Cosmin Tanislav]
+dde2495 extract_utils: implement SKIPAPKCHECKS [Cosmin Tanislav]
+5b092cb extract_utils: roll our own ELF parser [Cosmin Tanislav]
+a7b5b16 extract_utils: use absolute path for debugfs executable if possible [LuK1337]
+118062b extract_utils: enable unused-import (F401) ruff check [LuK1337]
+a7ad59e extract_utils: enable undefined-name (F821) ruff check [LuK1337]
+b0974f4 extract_utils: enable f-string-missing-placeholders (F541) ruff check [LuK1337]
+64c6bba fixup! extract_utils: Make carriersettings package opt-outable [Cosmin Tanislav]
+
+* vendor/qcom/opensource/commonsys/fm
+41adf54 FM: Add backward compatiblity support for oreo FM configs [Erfan Abdi]
+
+====================
+     2024-11-05    
 ====================
 * frameworks/base
-579610e79b10 HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
-a787981b2f94 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
-8f2748830d62 SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337]
-16db2889c009 SystemUI: screenshot: disable magnification for partial screenshots [Cosmin Tanislav]
-9ee6066c1aa2 SystemUI: screenshot: add extra crop boundaries [Cosmin Tanislav]
-ad07b4c811e6 SystemUI: screenshot: remove duplicate clamping on move action [Cosmin Tanislav]
-9ed19e49ad84 SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav]
-e386aa1631d6 Implement edge long swipe gesture to new back gesture affordance [someone5678]
-7753ac9a32ad Fix screen can not be switched issue [Bo Liang]
-d5352afc2a20 core: Fix uninitialized settings in NotificationAttentionHelper [LuK1337]
-b9777882f8db BatteryMeterView: Hide icon on battery-less devices [Bruno Martins]
-d4ca026874ad Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
-aa8dd489e6ac Fallback BUTTON_SELECT to BACK [Aaron Kling]
-044e81344400 camera2: allow access to CaptureRequest.mLogicalCameraSettings [Cosmin Tanislav]
-4c5ffd8a3ad9 Fix default values for 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
-f896ea3ef0af Add 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
-db088d6bbc14 ATV: Display battery notifications [Aaron Kling]
-6cf7fa03e0c2 [1/2] Add battery info to tvsettings device info [Aaron Kling]
-e09b3bc251c7 SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
-0a5ae345713f keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
-59489546ed0e core: Move Lineage notification LED code to NotificationAttentionHelper [LuK1337]
-13f363703aad core: jni: Add backwards compat methods for QCOM WFD [LuK1337]
-ee5485cf9478 WiredAccessoryManager: replace every non digit character [Francesco "Dil3mm4" Manzo]
-2e54ef4516c8 SystemUI: Remove icon tint for user switch items in global actions [Dhina17]
-37e66fe72249 SystemUI: Use grid view for user switch in global actions [Dhina17]
-1ce10cc05af6 SystemUI: Match keyguard carrier text font with system [Dhina17]
-9c87196cac8c SystemUI: Update QS header fields text appearance on theme change [Dhina17]
-e6855957c112 SystemUI: tuner: Migrate to M3 switch [Dhina17]
-7c8d8c32d40b SystemUI: Expose VPN icon to allow toggling [Bruno Martins]
-480fafe64039 SystemUI: Use correct back drawable for 2-button nav [Dhina17]
-cf9818edb37d Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
-2a0fe6dfd64f Screenrecord: Add delete action to the notification [Sourajit Karmakar]
-36b743c3781e Screenrecord: Dismiss notification on stop [Lostark13]
-ee6f937b47fc Screenrecord: Save preferences for permission dialog [Pranav Vashi]
-7ff94d2f35c8 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
-e1807b84fcbe Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
-05dcd72bfa83 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
-ca6058f72423 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
-746dfc2b1e27 Screenrecord: Save and load set preferences [Ido Ben-Hur]
-c1aecfaf9304 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
-ee12e1701a35 Screenrecord: add blinking stop dot and low quality options [ezio84]
-fc4b7a605d0c Screenrecord: Allow to select AVC codec profile level [iusmac]
-185fdca2f9e8 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
-86372c1a0559 BatteryService: Expose [maximum|design] capacity API [Jyotiraditya Panda]
-ce3b508220e7 BatteryService: Typo fix ("Charing" -> "Charging") [Jyotiraditya Panda]
-7b1a595ba277 Settings: Always show package name in installed app details [Michael Bestas]
-9d671ed15d50 SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [LuK1337]
-af5a5a0b7320 Partially revert "Show floating rotation button regardless of ime status" [Michael Bestas]
-9a07eaaca97e usb: Show charging notification only if power brick is disconnected [Adithya R]
-c5a6ccde98fb Allow signature spoofing for microG Companion/Services [LuK1337]
-4851206c7137 Add nvidia profile manager [Aaron Kling]
-2332017a6417 Add nvcpl hook interfaces [Aaron Kling]
-5d8c9d63f25c SystemUI: Allow enabling lockscreen rotation by default [Michael Bestas]
-0a18309f4de4 SystemUI: Fix the right clock's gravity [Luca Stefani]
-9ec4ae8070d3 SystemUI: Fix height for center and right clock [Pranav Vashi]
-d934ecde501d SystemUI: advanced reboot: set maxElementsWrap [Timi Rautamäki]
-8fd5e39b8547 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
-d36ba38703e7 SystemUI: make powermenu usable on TV [Timi Rautamäki]
-b6be3e535a20 SystemUI: fix global_actions_power_dialog_flow formatting [Timi Rautamäki]
-bf9380b812b4 SettingsLib: Use framework resource for headline font [Adithya R]
-c7372503800e LockPatternView: Fix showing pattern error [Dhina17]
-3bcfae441e71 PhoneWindowManager: Pass correct assistInvocationType for KEYCODE_ASSIST [Dhina17]
-8d4bf8c7e860 RotationLockTile: Open LineageParts rotation settings [DroidFreak32]
-269462bf4c46 SystemUI: Only set dim behind UDFPS if it is actually enabled [danielml]
-0f4222ce06d7 VolumeDialogImpl: Ignore external layout direction changes [danielml]
-ca4d8166472e camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu]
-f18c2fee2eef Camera: Skip stream size check for whitelisted apps. [Gaoxiang Chen]
-3ea08b2b64d3 camera: Support exposing aux camera to apps [Sauhard Pande]
-7833c5ff6128 BootAnimation: Check for resolution override [Aaron Kling]
-61d681813e77 Don't fail setDeviceConnectionState if not implemented in hal [Aaron Kling]
-f6b650b225b2 SystemUI: Add UDFPS framework dimming support [cjybyjk]
-1866636ed528 SystemUI: Internet tile: Allow long-pressing on mobile network [Michael W]
-e56d1919c3d4 SystemUI: Fix uneven volume icon padding in status bar [Danny Lin]
-e81c5a13b66f SystemUI: Hide notifications when quickly expanding QS [Adithya R]
-68b48cf50aec SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
-f91a87cf479d services: fix quickswitch with gesture pill disabled [nift4]
-aa2018ce420a SystemServer: only enable fd leak tracker on eng [Simao Gomes Viana]
-e37d1a2ee328 fw/b: Add support for runtime toggle of navbar [Bruno Martins]
-59b082b142dd camera2: Add methods for backward compatibility [Ihor Ivanov]
-8186806c0e1c AudioService: Remove Analog Dock from fixed-volume devices [Vachounet]
-36185f31e3c2 BatteryService: Add support for battery Moto Mods [Vachounet]
-f61659584099 Report success on every fingerprint removal [Kishan Dudhatra]
-2be55f9e392f AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
-945e568e61fb core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
-25aa1339c7be core: pm: Use checkRequiredSystemProperties from FrameworkParsingPackageUtils [Luca Stefani]
-681eedf711e1 SystemUI: fix missing rotate suggestion in 2 button nav mode [nift4]
-bac4a3bfb752 SystemUI: show ime switcher + cursor keys if we have space [nift4]
-777bc36655c7 PhoneWindowManager: only handle long press on back key if using it [nift4]
-b581f1673f46 VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
-19e5750dec14 SystemUI: Enable cast tile without Wi-Fi connection [nift4]
-b0b698f3e776 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
-278545ba618a SystemUI: Check whether the selected WFD route is available [Weijie Wang]
-9321ac5dcd71 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
-c674213c6d17 DozeSensors: only use proximity sensor if supported [Demon000]
-807d6bfe9047 InputDevices: Fix Hungarian language overlay [Sean McCreary]
-2ce878533b31 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
-15dec1a1be56 SystemUI: Make battery clickable again [Michael W]
-b18c1d3276a3 PhoneWindowManager: Fix wakeup and long-press actions of assistant key [kyasu]
-e892bfe77ddb SystemUI: React to PrivacyConfig changes properly [Tommy Webb]
-ec4be5f25acc JobScheduler: Respect allow-in-power-save perm [Tommy Webb]
-8dd5b17203ca Increase maximum password length to 64 [Oliver Scott]
-2edd0d29f7cd SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
-016f4079b77d SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
-8e4e8c740c59 SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
-11236f87664c Apply monet to fingerprint authentication ripple animation [SagarMakhar]
-5a5a7e1c806a SystemUI: Update string for add tiles with one click [mydongistiny]
-e53a321417b7 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
-b832d2edd60c SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
-ae6bab827b28 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
-f392386e28aa GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
-fd49261a36f4 GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
-97cbd396045d Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
-4bb1864f7bf9 Remove sensitive info from SUPL requests [Tommy Webb]
-e73219e7b605 AlertWindowNotification: Correctly load app label [HZ]
-bb5f6ca3c451 toast: fix bg color not changing with theme change [SuperDroidBond]
-e14afc23265e SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
-ec21b9db54c1 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen]
-03eed3198eb2 Fallback ESC to BACK [Aaron Kling]
-1aa886c2ce91 SystemUI: Network Traffic [1/3] [Sam Mortimer]
-c8e726cdaf98 Support per-UID VPN lockdown policy [Tommy Webb]
-161c0c5533b3 Revert "Remove dependency on IME subtype from TSMS" [Michael Bestas]
-23d36b1f8869 Camera button support [HazouPH]
-2601811b32cd PhoneWindowManager: Add support for back key long press customization [LuK1337]
-a788ae4078ec fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
-51de34cff9c0 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
-456ff77c4760 PhoneWindowManager: Tap volume buttons to answer call [martincz]
-2acd62d3920f fw/b: Implement device hardware wake keys support [LuK1337]
-a47a1e05227e fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
-3739d364df08 fw/b: Re-introduce keyboard backlight brightness control [Bruno Martins]
-b8d0a859eb20 PowerManager: Allow to distinguish different keypresses [Corinna Vinschen]
-5af26ab59dcd PowerManagerService: Allow to light up buttons only when pressed [Anas Karbila]
-4f73701fe9d7 fw/b: Button backlight brightness [Ricardo Cerqueira]
-54876ce5d743 PackageManager: Allow build-time disabling of components [Pawit Pornkitprasan]
-637d6fffd62b SystemUI: Add support for clock auto-hiding [Cédric Bellegarde]
-d2b31abc5f01 SystemUI: Make the volume dialog expandable [Arian]
-3522f9468bab SystemUI: runtime configurable audio panel location [a.derendyaev]
-9c12ca48f6ed SystemUI: volume dialog: Align padding/margin for left and right [Arian]
-4ca78266d637 VolumeDialogImpl: Handle the outmost row with respect to left gravity [Arian]
-60fa880ab3da VolumeDialogImpl: Respect left gravity in ringer drawer [Arian]
-9d21a3f412c8 VolumeDialogImpl: Set touchable region properly for left gravity [Arian]
-b328b52b347b VolumeDialogImpl: Drop unnecessary layout gravity defines and handle left [Arian]
-abd582f05d80 VolumeDialogImpl: Fix cut layout when on setup or lock task mode [jhenrique09]
-9cdca87be003 udfps: Make pressed udfps view configurable [TheScarastic]
-e88e0b5532d2 udfps: Restore illumination dot for global hbm [Arian]
+572abdbf092a fixup! ThemeOverlayController: Ensure we always disable the neutral overlay [Luca Stefani]
+2ee954ebc37a Revert "PackageManager: Allow build-time disabling of components" [Luca Stefani]
+
+* hardware/lineage/compat
+7ac87c6 libhidlbase-v32: Mark as recovery_available [Tommaso Fonda]
+
+* lineage-sdk
+303a1082 Remove 'build-time disabling of components' resources [Luca Stefani]
+
+* lineage/wiki
+6b6fd1e9 wiki: apt-get -> apt [LuK1337]
+
+* packages/apps/Settings
+4b5fe3fc359 Settings: support black theme for dark mode [2/4] [Jesse Chan]
+
+* packages/modules/Connectivity
+00c8ef7431 BpfHandler: Add kver checks around V BPF attach program checks [LuK1337]
+3b4ae19746 netd: Require 4.19+ for connect/recvmsg/sendmsg cgroup hooks [LuK1337]
+
+* vendor/lineage
+413a493c config: Add text classifier files to allowed product artifacts [LuK1337]
+f3cb134b Migrate to component-override for force enabled/disabled components [Luca Stefani]
+e96bc80d config: Build the textclassifier models [Dyneteve]
+
+====================
+     2024-11-04    
+====================
+* frameworks/base
+8bd951c79fd7 ThemeOverlayController: Ensure we always disable the neutral overlay [Pranav Vashi]
+24d0a54dc547 ThemeOverlayController: Don't enable neutral overlay when we use dark bg [Ido Ben-Hur]
+
+* hardware/google/gchips
+39efe73 Convert libVendorVideoApi to soong [yangbill]
+
+* tools/extract-utils
+cd1d802 extract_utils: Make carriersettings package opt-outable [Michael Bestas]
+d6322a1 extract_utils: add type to default lib_fixups [Cosmin Tanislav]
+0c0462b extract_utils: create empty dirs for not found partitions [Cosmin Tanislav]
+8fffa19 extract_utils: refactor extract functions handling [Cosmin Tanislav]
+93ee352 extract_utils: split up alternate paths handling [Cosmin Tanislav]
+0722dbc extract_utils: add and use proprietary file type [Cosmin Tanislav]
+
+====================
+     2024-11-03    
+====================
+* android
+d8074fa manifest: Track our kotlinc/kotlinx.{coroutines,serialization} forks [LuK1337]
+
+* build/soong
+681549f2a Add vendor/lineage to kotlin plugins neverallow [Luca Stefani]
+41029755d Add support for kotlin plugins [Luca Stefani]
+ad0784406 Add documentation for select statements [Cole Faust]
+
+* external/kotlinc
+c3434db Add a target for kotlin-serialize-compiler [Luca Stefani]
+
+* external/kotlinx.serialization
+8f4c5d9f Export r8 rules to users [Luca Stefani]
+
+* lineage-sdk
+8c849ce2 sdk: Remove tests [Michael Bestas]
+cd36464e sdk: Remove CleanSpec.mk [Michael Bestas]
+82a2cae2 sdk: Remove most public sdk parts [Michael Bestas]
+
+* lineage/crowdin
+f283e95 config: lineage-22.0: Remove car-broadcastradio-support [Michael Bestas]
+cc4db85 ci: Install yq from snap [LuK1337]
+890174d ci: Add file validation for config/*.{xml,yaml} [LuK1337]
 
 * lineage/mirror
-9086a4d Updated aosp-minimal to 04-Oct-2024 12:02 UTC [Tim Schumacher]
+1633fd8 Updated lineage-minimal to 02-Nov-2024 13:01 UTC [Tim Schumacher]
+6f1423d Updated to 02-Nov-2024 13:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+6ca3c81 reuse_helper: Handle proguard.flags, aidl and fix bp [Michael Bestas]
+
+* lineage/wiki
+8ae0d64e wiki: FP5 needs 14 firmware [Michael Bestas]
+
+* packages/apps/Aperture
+950a507 Aperture: Update CameraX to 1.5.0-alpha03 [LuK1337]
+a87bc50 Aperture: Use AOSP material & lifecycle-common [Luca Stefani]
+084bbbf Aperture: Update to SDK 35 [Luca Stefani]
+b674847 Aperture: Update AGP to 8.7.2 [Luca Stefani]
+
+* packages/apps/ExactCalculator
+760b63b ExactCalculator: Switch to dedicated layout for license activity [Aayush Gupta]
+0a67a77 ExactCalculator: Add missing newlines to all files [Michael Bestas]
+5d95627 ExactCalculator: Set default_applicable_licenses [Michael Bestas]
+8f2d4e7 ExactCalculator: Make it REUSE compatible [Michael Bestas]
+1c907f8 ExactCalculator: Remove CleanSpec.mk [Michael Bestas]
+
+* packages/apps/FMRadio
+be7524a FMRadio: Remove unused string [Michael Bestas]
+
+* packages/apps/Glimpse
+42ab488 Glimpse: Use AOSP material [Luca Stefani]
+cbb3002 Glimpse: Update to SDK 35 [Luca Stefani]
+4254672 Glimpse: Update AGP to 8.7.2 [Luca Stefani]
+
+* packages/apps/Jelly
+215e423 Jelly: Don't change immersive mode on focus change [Luca Stefani]
+4644d2b Jelly: Refactor immersive mode [Luca Stefani]
+db352a5 Jelly: Use AOSP appcompat and material [Luca Stefani]
+c64b4dc Jelly: Update to SDK 35 [Luca Stefani]
+ef8f4e6 Jelly: Update AGP to 8.7.2 [Luca Stefani]
+
+* packages/apps/Recorder
+1ab7444 Recorder: Use AOSP material [Luca Stefani]
+6cf972f Recorder: Update to SDK 35 [Luca Stefani]
+0fe0b82 Recorder: Update AGP to 8.7.2 [Luca Stefani]
+
+* tools/extract-utils
+91caba4 extract_utils: raise clearer error when file does not exist [Cosmin Tanislav]
+
+* vendor/lineage
+0cb50ea0 Add `androidx.compose.compiler_compiler-hosted-plugin` define [Luca Stefani]
 
