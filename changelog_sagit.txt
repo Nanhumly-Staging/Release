@@ -1,29 +1,210 @@
 ====================
-     2024-11-09    
+     2024-11-14    
 ====================
 * art
-bd16617cfa Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+875abf3b7a Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-428b05338e build: Always use release-keys [Pranav Vashi]
+838e98d560 build: Always use release-keys [Pranav Vashi]
 
+* hardware/qcom-caf/msm8998/media
+b82259ca7 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* lineage/mirror
+a345537 Updated aosp-minimal to 13-Nov-2024 13:02 UTC [Tim Schumacher]
+5997cb7 Updated lineage-minimal to 13-Nov-2024 13:02 UTC [Tim Schumacher]
+6cace75 Updated to 13-Nov-2024 13:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+5819bb04 lineage: Build OpenEUICC as Telephony packages [Nanhumly]
+97c76245 Sign Build [Nanhumly]
+
+====================
+     2024-11-13    
+====================
+* packages/apps/TvSettings
+e9d24b61c TvSettings: partially revert "Implement long press power button settings" [Timi]
+
+* tools/extract-utils
+e934265 extract_utils: make a more sophisticated `call()` example [LuK1337]
+550ecd3 extract_utils: escape sigscan pattern [Cosmin Tanislav]
+fb336ae extract_utils: use utf-8 encoding for text files [Cosmin Tanislav]
+
+====================
+     2024-11-12    
+====================
+* device/lineage/atv
+a65c47a atv: init: Allow opt-out of forced 1080p scaling [Thomas Makin]
+
+* device/qcom/sepolicy_vndr/sm8550
+8a517e806 sepolicy: Allow USB HAL to rw usb_data_enabled nodes [LuK1337]
+
+* frameworks/base
+96ea263d7c7b SystemUI: Add support for udfps dim layer [pjgowtham]
+
+* frameworks/native
+c6fd302728 surfaceflinger: Allow ZOrder override for UDFPS dim layer [pjgowtham]
+
+* packages/apps/Settings
+029d24f5a75 Settings: Place and order Google & Digital Wellbeing [Michael W]
+3248cf9aab4 Settings: Move Google Setting way down [Michael W]
+
+* packages/apps/TvSettings
+4bc0ffc08 Add support for Nvidia convertible USB port [Aaron Kling]
+dd8b41674 [2/2] Add battery info to tvsettings device info [Aaron Kling]
+34d815492 fixup! Move openInEditMode from onViewCreated to onResume [Aaron Kling]
+c4e687c06 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
+52245a774 Only auto-pair peripheral devices [Aaron Kling]
+03d08a3eb Fix the bluetooth headset without mic icon [Tuan Le Anh]
+f86642ad3 TwoPanelSettings: fix double ripple in Wifi selection [Timi Rautamäki]
+9530fc3cf Fix NPE in SystemSoundsPlayer [Timi Rautamäki]
+a7e4dbc62 HDMI CEC: Add volume preference [Aaron Kling]
+29c625469 Show input settings on cec playback devices [Aaron Kling]
+1a9b70aa1 Move power related options to "Power and Energy" [Bruno Martins]
+bec45bdf4 Reorder restart, sleep and shutdown guided actions [Bruno Martins]
+5c6ce4dc4 ButtonsFragment: Fix advanced restart preference [Bruno Martins]
+065c8a816 Implement long press power button settings [Timi Rautamäki]
+59da7317e Add Lineage advanced restart options [Aaron Kling]
+d5e23844f Add buttons to shut down/sleep device [Aaron Kling]
+da49e90d5 TvSettings: add Buttons-section to System settings [Timi Rautamäki]
+39b5a7587 TvSettings: Default to not showing bug-report quick setting [Nolen Johnson]
+0fc2ad64c Implement ADB over network [Dave Carey]
+c1afcf4be Add rooted development option [Aaron Kling]
+569c06782 Fix UI glitch on USB debugging toggled [Tuan Le Anh]
+cbc5d527e Fix crash when scrolling past developer options entry [Timi Rautamäki]
+ad9eaa992 One does not simply become a Developer [dhacker29]
+fa8312186 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
+e8504f29b Add LineageOS version to the About screen [dhacker29]
+
+* packages/apps/Updater
+ed36157 Updater: Set SYSTEM_UPDATE_SETTINGS priority higher than GMS [Giovanni Ricca]
+
+* vendor/lineage
+e84e4c62 aconfig: Enable polite notifications [Arian]
+
+* vendor/qcom/opensource/usb
+c97e2df usb: Use DFP/UFP mode for non-power role source/sink [Vivekachooz]
+
+====================
+     2024-11-11    
+====================
+* device/qcom/sepolicy
+a21fe125 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+626d4de1d fixup! Remove vendor_service. [Michael Bestas]
+933516c38 Merge tag 'LA.UM.9.14.r1-25000.02-LAHAINA.QSSI14.0' into staging/lineage-22.0_merge-LA.UM.9.14.r1-25000.02-LAHAINA.QSSI14.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+d0253f7c2 Merge tag 'LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8550
+083ba1e70 Merge tag 'LA.VENDOR.13.2.0.r1-24800-KAILUA.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.13.2.0.r1-24800-KAILUA.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+ead18037c Merge tag 'LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/agm
+c6a803d Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/pal
+d1696044 Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/audio/primary-hal
+abf63538b Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+dd4208e Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
+
+* packages/apps/Contacts
+7b4b6262d Contacts: Remove navigation bar divider [Michael Bestas]
+ed08842e3 Contacts: silence logs about getDrawable without theme [maxwen]
+e75473181 Contacts: Fix LetterTileDrawable for all languages [Pranav Vashi]
+
+* packages/apps/Dialer
+39bea136b Dialer: CallLogFragment: Move Un-registering call log observer to destroy [Varun Date]
+aa95a51dd Fix unnatural animation while move up "Swipe down to reject" [Nishizawa Nobuhiro]
+e8e53524d Dialer: Fix LetterTileDrawable for all languages [Pranav Vashi]
+3377bb1d4 Dialer: Use system fonts [Pranav Vashi]
+
+* packages/services/Car
+b2c492ca58 car_product: Guard APN copy with LINEAGE_BUILD [Nolen Johnson]
+
+* tools/extract-utils
+34010ec extract_utils: allow `call()` to accept arbitrary arguments [LuK1337]
+58fc452 extract_utils: declare llvm-objdump path in tools [LuK1337]
+2f9fa38 extract_utils: kargs -> kwargs [LuK1337]
+5bc16f0 extract_utils: solve mypy issues [Cosmin Tanislav]
+2e5bd84 extract_utils: showcase blob fixup for multiple files [LuK1337]
+
+* vendor/lineage
+0941edfa vars: Update qcom tags [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/bluetooth
+eeba1c7 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/display
+f32767c2 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/interfaces
+78890ac Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/power
+5a96e66 Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+57f28ae Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
+f42f05d Revert "usb: Fix USB HAL crash due to PortRole tag mismatch" [Arian]
+
+====================
+     2024-11-10    
+====================
+* frameworks/base
+92db5dfdc919 fixup! Implement firewall status bar indicator [Tommy Webb]
+e33c027f9507 KeyguardUpdateMonitor: Add missing getFaceAuthInteractor null check [Michael Bestas]
+
+* lineage/website
+385b743 www: Make site title more succinct [Nicholas Lim]
+
+* packages/apps/ExactCalculator
+b10a222 ExactCalculator: Setup for edge to edge support [Aayush Gupta]
+f9f0b82 ExactCalculator: Bump SDK version to 35 [Aayush Gupta]
+33358c3 ExactCalculator: Bump to latest stable AGP, Gradle and dependencies [Aayush Gupta]
+
+* packages/apps/Settings
+488ab0b5378 Fix background data clobbering other policies [Tommy Webb]
+
+* tools/extract-utils
+335a0af extract_utils: add script for converting to python dump structure [Cosmin Tanislav]
+a534bbb extract_utils: simplify partition chunks sorting algorithm [Cosmin Tanislav]
+5a39801 extract_utils: allow generation of apns along carrier settings [Cosmin Tanislav]
+7ad9e20 extract_utils: pass ctx to write_product_copy_files [Cosmin Tanislav]
+1e01d0f extract_utils: add root-relative vendor sub-dir path to ProductPackagesCtx [Cosmin Tanislav]
+38d9d41 extract_utils: add comments to the paths in ProductPackagesCtx [Cosmin Tanislav]
+2c50493 extract_utils: allow any File iterable in makefile functions [Cosmin Tanislav]
+afe947e extract_utils: pass packages context to pre/post mk generation fns [Cosmin Tanislav]
+063cdd8 extract_utils: add args catch-all to pre / post mk generation fns [Cosmin Tanislav]
+032cc59 extract_utils: expose pre / post mk generation fns [Cosmin Tanislav]
+e1325b0 extract_utils: do not pass around own file list [Cosmin Tanislav]
+c0499ac extract_utils: generate soong namespace when imports are missing [Cosmin Tanislav]
+
+* vendor/lineage
+0da17a7e lineage: config: Allow using an env var to enable insecure ADB [Nolen Johnson]
+
+====================
+     2024-11-09    
+====================
 * frameworks/opt/telephony
 dc1f0a6827 Revert "Clear up the obsoleted cascading signal strength polling logic" [Han Sol Jin]
 809dac6795 telephony: introduce a stub SubscriptionController [ExactExampl]
 9164b51888 Make UiccSlot::getPrintableIccIds() skip null values [LuK1337]
 58fa96a01f Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
 
-* hardware/qcom-caf/msm8998/media
-a4066e607 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
 * lineage/crowdin
 bd9a458 config: Add Twelve to 22.0 extra packages [LuK1337]
 
-* lineage/website
-385b743 www: Make site title more succinct [Nicholas Lim]
-
-* vendor/lineage
-e410ffbd Sign Build [Nanhumly]
+* packages/apps/Recorder
+824dc49 Recorder: grant read permissions for apps requesting recordings [Alexander Martinz]
 
 * device/xiaomi/msm8998-common
 0453f4e msm8998-common: Explicitly set as an non-AB target [Kelvin Zhang]
@@ -36,6 +217,9 @@ e410ffbd Sign Build [Nanhumly]
 
 * build/make
 cbbde02c21 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
+
+* build/release
+0d371027 AP3A: Set SPL to 2024-11-05 [Ankur Bakshi]
 
 * frameworks/base
 12f2819dc0b8 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
@@ -64,9 +248,6 @@ dbdd700 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15
 * lineage/scripts
 cf89200 pixel: Adapt to new build prop override scheme [Michael Bestas]
 
-* packages/apps/Recorder
-824dc49 Recorder: grant read permissions for apps requesting recordings [Alexander Martinz]
-
 * packages/apps/Settings
 86aae56098b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
 400176ffa32 Add a mobile data toggle for setup [Alexander Koskovich]
@@ -91,183 +272,4 @@ c16941b fixup! extract_utils: ignore regeneration when regenerate makefiles is s
 2e33440b release: Sync Pixel 9 SVN/kernel manually for Nov ASB [Michael Bestas]
 eb804592 release: Sync Pixel 6-8a SVN manually for Nov ASB [Chirayu Desai]
 28166977 vars: November 2024 Security update [Chirayu Desai]
-
-====================
-     2024-11-07    
-====================
-* build/release
-0d371027 AP3A: Set SPL to 2024-11-05 [Ankur Bakshi]
-
-* lineage/mirror
-4ccddbf Updated to 06-Nov-2024 13:01 UTC [Tim Schumacher]
-
-* tools/extract-utils
-3a62f8b extract_utils: Fixup unversioned protobuf dependencies [Michael Bestas]
-8732375 extract_utils: find deps separately for 32-bit and 64-bit [Cosmin Tanislav]
-a96e5b7 extract_utils: ignore regeneration when regenerate makefiles is set [Cosmin Tanislav]
-2e05b3c extract_utils: silently ignore regeneration when section is set [Cosmin Tanislav]
-4721d59 extract_utils: extend `lib_fixups` in the template [LuK1337]
-
-====================
-     2024-11-06    
-====================
-* android
-5a9d759 manifest: Track our device/google/contexthub [Nolen Johnson]
-
-* device/google/contexthub
-8e258d96 Revert "Removed unused Android.mk under device/google/contexthub" [Nolen Johnson]
-
-* frameworks/base
-e92b8c8add79 Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
-
-* lineage/scripts
-5ac8f5a pixel: Changes for python extract-utils [Michael Bestas]
-
-* packages/apps/Recorder
-09b8722 Recorder: Use File instead of Path [Luca Stefani]
-229da7c Recorder: Always track amplitude [Luca Stefani]
-32a6b1c Recorder: Redo high quality recorder [Luca Stefani]
-2a69a8b Recorder: Don't make trackAmplitude/isRecording atomic [Luca Stefani]
-cbeb8fc Recorder: Release the AudioRecord properly [Luca Stefani]
-7bba682 Recorder: Use default audio source in GoodQualityRecorder [Luca Stefani]
-
-* tools/extract-utils
-c0902d9 extract_utils: enable ELF checks by default [Cosmin Tanislav]
-2616b80 extract_utils: add support for factory proprietary file [Cosmin Tanislav]
-79a9d9d extract_utils: add extract function for copying pixel fimware [Cosmin Tanislav]
-772136a extract_utils: add extract function for extracting pixel factory images [Cosmin Tanislav]
-0e85d2b extract_utils: fix built-in shadowing [Cosmin Tanislav]
-09aa24e extract_utils: keep ruff rules in ruff.toml [Cosmin Tanislav]
-dde2495 extract_utils: implement SKIPAPKCHECKS [Cosmin Tanislav]
-5b092cb extract_utils: roll our own ELF parser [Cosmin Tanislav]
-a7b5b16 extract_utils: use absolute path for debugfs executable if possible [LuK1337]
-118062b extract_utils: enable unused-import (F401) ruff check [LuK1337]
-a7ad59e extract_utils: enable undefined-name (F821) ruff check [LuK1337]
-b0974f4 extract_utils: enable f-string-missing-placeholders (F541) ruff check [LuK1337]
-64c6bba fixup! extract_utils: Make carriersettings package opt-outable [Cosmin Tanislav]
-
-* vendor/qcom/opensource/commonsys/fm
-41adf54 FM: Add backward compatiblity support for oreo FM configs [Erfan Abdi]
-
-====================
-     2024-11-05    
-====================
-* frameworks/base
-572abdbf092a fixup! ThemeOverlayController: Ensure we always disable the neutral overlay [Luca Stefani]
-2ee954ebc37a Revert "PackageManager: Allow build-time disabling of components" [Luca Stefani]
-
-* hardware/lineage/compat
-7ac87c6 libhidlbase-v32: Mark as recovery_available [Tommaso Fonda]
-
-* lineage-sdk
-303a1082 Remove 'build-time disabling of components' resources [Luca Stefani]
-
-* lineage/wiki
-6b6fd1e9 wiki: apt-get -> apt [LuK1337]
-
-* packages/apps/Settings
-4b5fe3fc359 Settings: support black theme for dark mode [2/4] [Jesse Chan]
-
-* packages/modules/Connectivity
-00c8ef7431 BpfHandler: Add kver checks around V BPF attach program checks [LuK1337]
-3b4ae19746 netd: Require 4.19+ for connect/recvmsg/sendmsg cgroup hooks [LuK1337]
-
-* vendor/lineage
-413a493c config: Add text classifier files to allowed product artifacts [LuK1337]
-f3cb134b Migrate to component-override for force enabled/disabled components [Luca Stefani]
-e96bc80d config: Build the textclassifier models [Dyneteve]
-
-====================
-     2024-11-04    
-====================
-* frameworks/base
-8bd951c79fd7 ThemeOverlayController: Ensure we always disable the neutral overlay [Pranav Vashi]
-24d0a54dc547 ThemeOverlayController: Don't enable neutral overlay when we use dark bg [Ido Ben-Hur]
-
-* hardware/google/gchips
-39efe73 Convert libVendorVideoApi to soong [yangbill]
-
-* tools/extract-utils
-cd1d802 extract_utils: Make carriersettings package opt-outable [Michael Bestas]
-d6322a1 extract_utils: add type to default lib_fixups [Cosmin Tanislav]
-0c0462b extract_utils: create empty dirs for not found partitions [Cosmin Tanislav]
-8fffa19 extract_utils: refactor extract functions handling [Cosmin Tanislav]
-93ee352 extract_utils: split up alternate paths handling [Cosmin Tanislav]
-0722dbc extract_utils: add and use proprietary file type [Cosmin Tanislav]
-
-====================
-     2024-11-03    
-====================
-* android
-d8074fa manifest: Track our kotlinc/kotlinx.{coroutines,serialization} forks [LuK1337]
-
-* build/soong
-681549f2a Add vendor/lineage to kotlin plugins neverallow [Luca Stefani]
-41029755d Add support for kotlin plugins [Luca Stefani]
-ad0784406 Add documentation for select statements [Cole Faust]
-
-* external/kotlinc
-c3434db Add a target for kotlin-serialize-compiler [Luca Stefani]
-
-* external/kotlinx.serialization
-8f4c5d9f Export r8 rules to users [Luca Stefani]
-
-* lineage-sdk
-8c849ce2 sdk: Remove tests [Michael Bestas]
-cd36464e sdk: Remove CleanSpec.mk [Michael Bestas]
-82a2cae2 sdk: Remove most public sdk parts [Michael Bestas]
-
-* lineage/crowdin
-f283e95 config: lineage-22.0: Remove car-broadcastradio-support [Michael Bestas]
-cc4db85 ci: Install yq from snap [LuK1337]
-890174d ci: Add file validation for config/*.{xml,yaml} [LuK1337]
-
-* lineage/mirror
-1633fd8 Updated lineage-minimal to 02-Nov-2024 13:01 UTC [Tim Schumacher]
-6f1423d Updated to 02-Nov-2024 13:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-6ca3c81 reuse_helper: Handle proguard.flags, aidl and fix bp [Michael Bestas]
-
-* lineage/wiki
-8ae0d64e wiki: FP5 needs 14 firmware [Michael Bestas]
-
-* packages/apps/Aperture
-950a507 Aperture: Update CameraX to 1.5.0-alpha03 [LuK1337]
-a87bc50 Aperture: Use AOSP material & lifecycle-common [Luca Stefani]
-084bbbf Aperture: Update to SDK 35 [Luca Stefani]
-b674847 Aperture: Update AGP to 8.7.2 [Luca Stefani]
-
-* packages/apps/ExactCalculator
-760b63b ExactCalculator: Switch to dedicated layout for license activity [Aayush Gupta]
-0a67a77 ExactCalculator: Add missing newlines to all files [Michael Bestas]
-5d95627 ExactCalculator: Set default_applicable_licenses [Michael Bestas]
-8f2d4e7 ExactCalculator: Make it REUSE compatible [Michael Bestas]
-1c907f8 ExactCalculator: Remove CleanSpec.mk [Michael Bestas]
-
-* packages/apps/FMRadio
-be7524a FMRadio: Remove unused string [Michael Bestas]
-
-* packages/apps/Glimpse
-42ab488 Glimpse: Use AOSP material [Luca Stefani]
-cbb3002 Glimpse: Update to SDK 35 [Luca Stefani]
-4254672 Glimpse: Update AGP to 8.7.2 [Luca Stefani]
-
-* packages/apps/Jelly
-215e423 Jelly: Don't change immersive mode on focus change [Luca Stefani]
-4644d2b Jelly: Refactor immersive mode [Luca Stefani]
-db352a5 Jelly: Use AOSP appcompat and material [Luca Stefani]
-c64b4dc Jelly: Update to SDK 35 [Luca Stefani]
-ef8f4e6 Jelly: Update AGP to 8.7.2 [Luca Stefani]
-
-* packages/apps/Recorder
-1ab7444 Recorder: Use AOSP material [Luca Stefani]
-6cf972f Recorder: Update to SDK 35 [Luca Stefani]
-0fe0b82 Recorder: Update AGP to 8.7.2 [Luca Stefani]
-
-* tools/extract-utils
-91caba4 extract_utils: raise clearer error when file does not exist [Cosmin Tanislav]
-
-* vendor/lineage
-0cb50ea0 Add `androidx.compose.compiler_compiler-hosted-plugin` define [Luca Stefani]
 
