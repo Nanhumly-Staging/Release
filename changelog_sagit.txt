@@ -1,275 +1,272 @@
 ====================
-     2024-11-14    
+     2024-12-22    
+====================
+* kernel/xiaomi/msm8998
+02d7dd0394e4 arch: arm64: vdso32: Drop -no-integrated-as [Christian Hoffmann]
+590ad6cd4720 ARM64: vdso32: Hardcode toolchain target [LuK1337]
+341b5b84be6f qcacld-3.0: Handle wpa_versions properly [LuK1337]
+6f83a4842678 nl80211: add WPA3 definition for SAE authentication [Chung-Hsien Hsu]
+
+====================
+     2024-12-21    
 ====================
 * art
-875abf3b7a Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+7caf3c81d5 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-838e98d560 build: Always use release-keys [Pranav Vashi]
+7a03217931 build: Always use release-keys [Pranav Vashi]
 
 * hardware/qcom-caf/msm8998/media
-b82259ca7 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
-* lineage/mirror
-a345537 Updated aosp-minimal to 13-Nov-2024 13:02 UTC [Tim Schumacher]
-5997cb7 Updated lineage-minimal to 13-Nov-2024 13:02 UTC [Tim Schumacher]
-6cace75 Updated to 13-Nov-2024 13:01 UTC [Tim Schumacher]
-
-* vendor/lineage
-5819bb04 lineage: Build OpenEUICC as Telephony packages [Nanhumly]
-97c76245 Sign Build [Nanhumly]
-
-====================
-     2024-11-13    
-====================
-* packages/apps/TvSettings
-e9d24b61c TvSettings: partially revert "Implement long press power button settings" [Timi]
-
-* tools/extract-utils
-e934265 extract_utils: make a more sophisticated `call()` example [LuK1337]
-550ecd3 extract_utils: escape sigscan pattern [Cosmin Tanislav]
-fb336ae extract_utils: use utf-8 encoding for text files [Cosmin Tanislav]
-
-====================
-     2024-11-12    
-====================
-* device/lineage/atv
-a65c47a atv: init: Allow opt-out of forced 1080p scaling [Thomas Makin]
-
-* device/qcom/sepolicy_vndr/sm8550
-8a517e806 sepolicy: Allow USB HAL to rw usb_data_enabled nodes [LuK1337]
-
-* frameworks/base
-96ea263d7c7b SystemUI: Add support for udfps dim layer [pjgowtham]
-
-* frameworks/native
-c6fd302728 surfaceflinger: Allow ZOrder override for UDFPS dim layer [pjgowtham]
-
-* packages/apps/Settings
-029d24f5a75 Settings: Place and order Google & Digital Wellbeing [Michael W]
-3248cf9aab4 Settings: Move Google Setting way down [Michael W]
-
-* packages/apps/TvSettings
-4bc0ffc08 Add support for Nvidia convertible USB port [Aaron Kling]
-dd8b41674 [2/2] Add battery info to tvsettings device info [Aaron Kling]
-34d815492 fixup! Move openInEditMode from onViewCreated to onResume [Aaron Kling]
-c4e687c06 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling]
-52245a774 Only auto-pair peripheral devices [Aaron Kling]
-03d08a3eb Fix the bluetooth headset without mic icon [Tuan Le Anh]
-f86642ad3 TwoPanelSettings: fix double ripple in Wifi selection [Timi Rautamäki]
-9530fc3cf Fix NPE in SystemSoundsPlayer [Timi Rautamäki]
-a7e4dbc62 HDMI CEC: Add volume preference [Aaron Kling]
-29c625469 Show input settings on cec playback devices [Aaron Kling]
-1a9b70aa1 Move power related options to "Power and Energy" [Bruno Martins]
-bec45bdf4 Reorder restart, sleep and shutdown guided actions [Bruno Martins]
-5c6ce4dc4 ButtonsFragment: Fix advanced restart preference [Bruno Martins]
-065c8a816 Implement long press power button settings [Timi Rautamäki]
-59da7317e Add Lineage advanced restart options [Aaron Kling]
-d5e23844f Add buttons to shut down/sleep device [Aaron Kling]
-da49e90d5 TvSettings: add Buttons-section to System settings [Timi Rautamäki]
-39b5a7587 TvSettings: Default to not showing bug-report quick setting [Nolen Johnson]
-0fc2ad64c Implement ADB over network [Dave Carey]
-c1afcf4be Add rooted development option [Aaron Kling]
-569c06782 Fix UI glitch on USB debugging toggled [Tuan Le Anh]
-cbc5d527e Fix crash when scrolling past developer options entry [Timi Rautamäki]
-ad9eaa992 One does not simply become a Developer [dhacker29]
-fa8312186 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
-e8504f29b Add LineageOS version to the About screen [dhacker29]
-
-* packages/apps/Updater
-ed36157 Updater: Set SYSTEM_UPDATE_SETTINGS priority higher than GMS [Giovanni Ricca]
-
-* vendor/lineage
-e84e4c62 aconfig: Enable polite notifications [Arian]
-
-* vendor/qcom/opensource/usb
-c97e2df usb: Use DFP/UFP mode for non-power role source/sink [Vivekachooz]
-
-====================
-     2024-11-11    
-====================
-* device/qcom/sepolicy
-a21fe125 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/legacy-um
-626d4de1d fixup! Remove vendor_service. [Michael Bestas]
-933516c38 Merge tag 'LA.UM.9.14.r1-25000.02-LAHAINA.QSSI14.0' into staging/lineage-22.0_merge-LA.UM.9.14.r1-25000.02-LAHAINA.QSSI14.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8450
-d0253f7c2 Merge tag 'LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* device/qcom/sepolicy_vndr/sm8550
-083ba1e70 Merge tag 'LA.VENDOR.13.2.0.r1-24800-KAILUA.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.13.2.0.r1-24800-KAILUA.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-ead18037c Merge tag 'LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0' into staging/lineage-22.0_merge-LA.VENDOR.1.0.r1-26700-WAIPIO.QSSI14.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/agm
-c6a803d Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/pal
-d1696044 Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/audio/primary-hal
-abf63538b Merge tag 'AUDIO.LA.8.0.r1-11600-KAILUA.0' into staging/lineage-22.0_merge-AUDIO.LA.8.0.r1-11600-KAILUA.0 [Michael Bestas]
-
-* hardware/qcom-caf/wlan
-dd4208e Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
-
-* packages/apps/Contacts
-7b4b6262d Contacts: Remove navigation bar divider [Michael Bestas]
-ed08842e3 Contacts: silence logs about getDrawable without theme [maxwen]
-e75473181 Contacts: Fix LetterTileDrawable for all languages [Pranav Vashi]
-
-* packages/apps/Dialer
-39bea136b Dialer: CallLogFragment: Move Un-registering call log observer to destroy [Varun Date]
-aa95a51dd Fix unnatural animation while move up "Swipe down to reject" [Nishizawa Nobuhiro]
-e8e53524d Dialer: Fix LetterTileDrawable for all languages [Pranav Vashi]
-3377bb1d4 Dialer: Use system fonts [Pranav Vashi]
-
-* packages/services/Car
-b2c492ca58 car_product: Guard APN copy with LINEAGE_BUILD [Nolen Johnson]
-
-* tools/extract-utils
-34010ec extract_utils: allow `call()` to accept arbitrary arguments [LuK1337]
-58fc452 extract_utils: declare llvm-objdump path in tools [LuK1337]
-2f9fa38 extract_utils: kargs -> kwargs [LuK1337]
-5bc16f0 extract_utils: solve mypy issues [Cosmin Tanislav]
-2e5bd84 extract_utils: showcase blob fixup for multiple files [LuK1337]
-
-* vendor/lineage
-0941edfa vars: Update qcom tags [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-eeba1c7 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/commonsys-intf/display
-f32767c2 Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/interfaces
-78890ac Merge tag 'LA.QSSI.15.0.r1-11400-qssi.0' into staging/lineage-22.0_merge-LA.QSSI.15.0.r1-11400-qssi.0 [Michael Bestas]
-
-* vendor/qcom/opensource/power
-5a96e66 Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
-
-* vendor/qcom/opensource/usb
-57f28ae Merge tag 'LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0' into staging/lineage-22.0_merge-LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0 [Michael Bestas]
-f42f05d Revert "usb: Fix USB HAL crash due to PortRole tag mismatch" [Arian]
-
-====================
-     2024-11-10    
-====================
-* frameworks/base
-92db5dfdc919 fixup! Implement firewall status bar indicator [Tommy Webb]
-e33c027f9507 KeyguardUpdateMonitor: Add missing getFaceAuthInteractor null check [Michael Bestas]
-
-* lineage/website
-385b743 www: Make site title more succinct [Nicholas Lim]
-
-* packages/apps/ExactCalculator
-b10a222 ExactCalculator: Setup for edge to edge support [Aayush Gupta]
-f9f0b82 ExactCalculator: Bump SDK version to 35 [Aayush Gupta]
-33358c3 ExactCalculator: Bump to latest stable AGP, Gradle and dependencies [Aayush Gupta]
-
-* packages/apps/Settings
-488ab0b5378 Fix background data clobbering other policies [Tommy Webb]
-
-* tools/extract-utils
-335a0af extract_utils: add script for converting to python dump structure [Cosmin Tanislav]
-a534bbb extract_utils: simplify partition chunks sorting algorithm [Cosmin Tanislav]
-5a39801 extract_utils: allow generation of apns along carrier settings [Cosmin Tanislav]
-7ad9e20 extract_utils: pass ctx to write_product_copy_files [Cosmin Tanislav]
-1e01d0f extract_utils: add root-relative vendor sub-dir path to ProductPackagesCtx [Cosmin Tanislav]
-38d9d41 extract_utils: add comments to the paths in ProductPackagesCtx [Cosmin Tanislav]
-2c50493 extract_utils: allow any File iterable in makefile functions [Cosmin Tanislav]
-afe947e extract_utils: pass packages context to pre/post mk generation fns [Cosmin Tanislav]
-063cdd8 extract_utils: add args catch-all to pre / post mk generation fns [Cosmin Tanislav]
-032cc59 extract_utils: expose pre / post mk generation fns [Cosmin Tanislav]
-e1325b0 extract_utils: do not pass around own file list [Cosmin Tanislav]
-c0499ac extract_utils: generate soong namespace when imports are missing [Cosmin Tanislav]
-
-* vendor/lineage
-0da17a7e lineage: config: Allow using an env var to enable insecure ADB [Nolen Johnson]
-
-====================
-     2024-11-09    
-====================
-* frameworks/opt/telephony
-dc1f0a6827 Revert "Clear up the obsoleted cascading signal strength polling logic" [Han Sol Jin]
-809dac6795 telephony: introduce a stub SubscriptionController [ExactExampl]
-9164b51888 Make UiccSlot::getPrintableIccIds() skip null values [LuK1337]
-58fa96a01f Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
-
-* lineage/crowdin
-bd9a458 config: Add Twelve to 22.0 extra packages [LuK1337]
-
-* packages/apps/Recorder
-824dc49 Recorder: grant read permissions for apps requesting recordings [Alexander Martinz]
-
-* device/xiaomi/msm8998-common
-0453f4e msm8998-common: Explicitly set as an non-AB target [Kelvin Zhang]
-
-====================
-     2024-11-08    
-====================
-* android
-2af1fc8 manifest: November 2024 Security Update [Michael Bestas]
-
-* build/make
-cbbde02c21 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* build/release
-0d371027 AP3A: Set SPL to 2024-11-05 [Ankur Bakshi]
-
-* frameworks/base
-12f2819dc0b8 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* frameworks/native
-1a656213bf Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* frameworks/opt/telephony
-6f74d80eb1 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* hardware/google/graphics/common
-dbdd700 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-7535d6ae5 hal: Guard primary audio HAL in case target provides prebuilt [Bruno Martins]
+f62c143e6 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * lineage-sdk
-5a577dc6 sdk: Make it REUSE compatible [Michael Bestas]
-87d20850 sdk: Remove unused .gitignore [Michael Bestas]
-5efaee22 sdk: Remove SettingsProvider tests [Michael Bestas]
-756427f9 sdk: Remove unused proguard.txt [Michael Bestas]
+73bcf048 LineageSettingsProvider: Migrate tethering_allow_vpn_upstreams to AOSP [LuK1337]
+19638368 Deprecate org.lineageos.platform.lineagesettings [Luca Stefani]
 
 * lineage/mirror
-9c0e75e Updated aosp-minimal to 07-Nov-2024 13:02 UTC [Tim Schumacher]
-
-* lineage/scripts
-cf89200 pixel: Adapt to new build prop override scheme [Michael Bestas]
-
-* packages/apps/Settings
-86aae56098b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-400176ffa32 Add a mobile data toggle for setup [Alexander Koskovich]
-
-* packages/modules/Bluetooth
-077e740c03 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* packages/modules/Wifi
-1e0094e821 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* packages/providers/MediaProvider
-3bb894798 Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* system/core
-3f2d09e4b Merge tag 'android-15.0.0_r5' into staging/lineage-22.0_merge-android-15.0.0_r5 [Michael Bestas]
-
-* tools/extract-utils
-c16941b fixup! extract_utils: ignore regeneration when regenerate makefiles is set [Cosmin Tanislav]
-1ba5168 extract_utils: Use vendorcompat only for blobs on odm and vendor [LuK1337]
+1984a1c Updated lineage-minimal to 20-Dec-2024 13:02 UTC [Tim Schumacher]
+3af20da Updated to 20-Dec-2024 13:01 UTC [Tim Schumacher]
 
 * vendor/lineage
-2e33440b release: Sync Pixel 9 SVN/kernel manually for Nov ASB [Michael Bestas]
-eb804592 release: Sync Pixel 6-8a SVN manually for Nov ASB [Chirayu Desai]
-28166977 vars: November 2024 Security update [Chirayu Desai]
+a1b5e482 Sign Build [Nanhumly]
+
+====================
+     2024-12-20    
+====================
+* android
+ee56d1f manifest: Switch to our fork of system/chre [Michael Bestas]
+ec9490b manifest: Update legacy AOSP repo list [Michael Bestas]
+b6e27c8 manifest: December 2024 Quarterly Platform Release and Security update [Michael Bestas]
+b47f626 LineageOS 22.1 [Michael Bestas]
+
+* frameworks/base
+f56924f3e012 fixup! base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
+b5d61d9672d2 fixup! SystemUI: Clock position customization [LuK1337]
+f3569d6542ed fixup! Screenshot: Append app name to filename [LuK1337]
+ceb189872938 fixup! SystemUI: add FloatingRotationButton for hw-key devices [LuK1337]
+b9717a5c7fe7 fixup! Forward port CM Screen Security settings (1/2) [LuK1337]
+4442c00fe0f7 fixup! SystemUI: Dismiss keyguard on boot if disabled by current profile [LuK1337]
+5fbab0d513b0 fixup! fw/b: Add support for runtime toggle of navbar [LuK1337]
+0937e49b7b57 fixup! SystemUI: screenshot: Add delete action chip intent [LuK1337]
+1ea2338dc8c4 Revert "SystemUI: show ime switcher + cursor keys if we have space" [Michael Bestas]
+c35b58d9cba9 Revert "SystemUI: fix missing rotate suggestion in 2 button nav mode" [Michael Bestas]
+9d0bb61ef3f9 fixup! SystemUI: add left and right virtual buttons while typing [Michael Bestas]
+415a5cb1edf9 Merge tag 'android-15.0.0_r6' into staging/lineage-22.0_merge-android-15.0.0_r6 [Michael Bestas]
+
+* hardware/qcom/camera
+b42f465 msm8998: Import easel headers [Christian Hoffmann]
+
+* lineage-sdk
+4e9ea61e TrustInterfaceService: Allow BAL [Christian Hoffmann]
+
+* lineage/hudson
+d723b92 Regenerate device dependency mappings [Chirayu Desai]
+
+* lineage/mirror
+cd0fa78 Updated aosp-minimal to 19-Dec-2024 13:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+7ca1fa0f devices: amlogic*: Fix SoCs and branding [Nolen Johnson]
+
+* packages/apps/DeskClock
+a9562048e Make java_sdk_library dependencies explicit [Jihoon Kang]
+
+* packages/apps/Dialer
+7aa50e223 Merge tag 'android-15.0.0_r6' into staging/lineage-22.0_merge-android-15.0.0_r6 [Michael Bestas]
+
+* packages/apps/Etar
+275a5d5d Make java_sdk_library dependencies explicit [Jihoon Kang]
+
+* packages/apps/LineageParts
+0dfe810 LineageParts: Import ObservablePreferenceFragment from Settings [Michael Bestas]
+
+* packages/apps/Settings
+0e4260f6253 Settings: Migrate VPN upstreams to AOSP settings [Luca Stefani]
+9212bba66d7 Fix the NPE in the tryToFetchUsageData() method [YK Hung]
+1e271bc8389 Merge tag 'android-15.0.0_r6' into staging/lineage-22.0_merge-android-15.0.0_r6 [Michael Bestas]
+
+* packages/providers/DownloadProvider
+4cf01015 Merge tag 'android-15.0.0_r6' into staging/lineage-22.0_merge-android-15.0.0_r6 [Michael Bestas]
+
+* vendor/lineage
+4c6891dc LineageOS 22.1 [Michael Bestas]
+a9e1b5ef kernel: Update default clang version to clang-r530567 [Michael Bestas]
+9062d8ec Revert^3 "config: Build NavigationBarMode2ButtonOverlay" [Michael Bestas]
+5319975d soong: generator: Update for AP4A [Michael Bestas]
+43c1a8bd release: Bump aconfig flags extension to AP4A [Michael Bestas]
+fa4d7b7e vars: December 2024 Quarterly Platform Release and Security update [Michael Bestas]
+7cefcff4 build: Add `privateremote` helper [Michael Bestas]
+
+====================
+     2024-12-19    
+====================
+* lineage/mirror
+43938b0 Updated aosp-minimal to 18-Dec-2024 13:02 UTC [Tim Schumacher]
+
+====================
+     2024-12-18    
+====================
+* hardware/lineage/interfaces
+c0e0a19 power-libperfmgr: PowerHAL: fix deadlock while PowerHintSession calls to DoHint [jimmyshiu]
+c196adf revert revert power-libperfmgr: PowerHAL: fix native crash when switching different profiles in a binder call [jimmyshiu]
+3b415ee Revert "power-libperfmgr: PowerHAL: fix native crash when switching different profiles in a binder call" [Jimmy Shiu]
+9d1440a power-libperfmgr: Powerhal: fix the spamming debug log. [guibing]
+eb33fb3 power-libperfmgr: PowerHAL: fix native crash when switching different profiles in a binder call [jimmyshiu]
+1ca9b79 power-libperfmgr: PowerHAL: PowerHintSession to get profile by its tag [jimmyshiu]
+4134bd1 power-libperfmgr: HintManager: Handle ADPF tag profile with EventNode [Jimmy Shiu]
+a7a39c5 power-libperfmgr: PowerHAL: add session tag in dump log [jimmyshiu]
+52a7373 power-libperfmgr: Adpf: Add heuristic boost mode distribution statistics to dump log. [guibing]
+e829a79 power-libperfmgr: Adpf: Multitier heuristic boost based on janky status levels [guibing]
+fa09c26 power-libperfmgr: Add hint session tracker [Matt Buckley]
+5ed8fac power-libperfmgr: Make sure we mark session as closed [Matt Buckley]
+fd5f6d8 power-libperfmgr: Refactoring PowerHAL to allow for better testing [Matt Buckley]
+afd51bf power-libperfmgr: perfmgr: Teach GTest how to print quantities [Bruno BELANYI]
+a73c8ae power-libperfmgr: perfmgr: Use 'SessionTaskMap::add{,Gpu}Vote' [Bruno BELANYI]
+60d44db power-libperfmgr: Add implementation for Power Efficiency mode [Matt Buckley]
+0976d95 power-libperfmgr: adpf: Track different adpf session votes in separate traces. [guibing]
+da69ee3 power-libperfmgr: adpf: rename AdpfHintType to AdpfVoteType. [guibing]
+3fd7aee power-libperfmgr: adpf: fix the typo from "junk" to "jank" [guibing]
+01bbdfa power-libperfmgr: adpf: Add a target duration scale factor for hboost junk frame detection [guibing]
+c5989d3 power-libperfmgr: PowerHAL: Add LoadUp LoadReset specific profile values [Jimmy Shiu]
+67abd24 power-libperfmgr: Adpf: Add heuristic boost to adpf sessions. [guibing]
+b12f321 power-libperfmgr: Adpf: Add session status history recorder. [guibing]
+d6a8f41 power-libperfmgr: Use UclampMinInit for CPU LOAD UP/RESET hint [Jimmy Shiu]
+f9c595f power-libperfmgr: perfmgr: implement GPU_LOAD_UP [Bruno BELANYI]
+1c29e33 power-libperfmgr: perfmgr: Allow voting for different GPU hint types [Bruno BELANYI]
+cc55236 power-libperfmgr: perfmgr: Report sum of GPU capacity and load votes [Bruno BELANYI]
+3410df6 power-libperfmgr: perfmgr: Loop over sessions to report GPU capacity [Bruno BELANYI]
+d90b67c power-libperfmgr: perfmgr: Correct deletion of assignment. [Kevin DuBois]
+68888d9 power-libperfmgr: perfmgr: add trace and dumping for GPU boost. [Kevin DuBois]
+81d276d power-libperfmgr: perfmgr: Integrate GPU boosting mechanism. [Kevin DuBois]
+5e0b2cb power-libperfmgr: ADPF: remove stale mention of logs [Bruno BELANYI]
+475933f power-libperfmgr: perfmgr: Add mediation for GPU capacity sessions. [Kevin DuBois]
+ebb06a1 power-libperfmgr: perfmgr: calculation logic for GPU capacity. [Kevin DuBois]
+e1f5d29 power-libperfmgr: Account for rate limited sessions in timeout [Matt Buckley]
+bca37a6 power-libperfmgr: Toggle ADPF flag when session pause/resume [Wei Wang]
+31dbad1 power-libperfmgr: Update FMQ stub to pop incoming messages off the queue [Matt Buckley]
+c2eb36d power-libperfmgr: perfmgr: Split uclamp range and vote timing via inheritance. [Kevin DuBois]
+5f040c6 power-libperfmgr: perfmgr: Add helpers to interact with GPU driver. [Kevin DuBois]
+1aafdaa power-libperfmgr: perfmgr: Add infrastructure for physical quantity types. [Kevin DuBois]
+88eba85 power-libperfmgr: power: check the boundary by HAL interface version [jimmyshiu]
+d1140ca power-libperfmgr: Implement "createHintSessionWithConfig" Power method [Matt Buckley]
+d8ef5b1 power-libperfmgr: Add GPU load hint references [Xiang Wang]
+9798b62 power-libperfmgr: Adpf: Rename setPoint to control variable [David Kimmel]
+5acf01c power-libperfmgr: Write stub methods for PowerHAL FMQ implementation [Matt Buckley]
+136e739 power-libperfmgr: Enable power hal to unblock thermal restart under off mode charge [TeYuan Wang]
+e9b2085 power-libperfmgr: powerhints: Moved ATRACE into constrctor/destructor [Will Song]
+62ace20 power-libperfmgr: powerhal: fix log tag to make log level setting active. [guibing]
+96a86d8 power-libperfmgr: Power: include AdpfProfile names for isModeSupported [Jimmy Shiu]
+814cf30 power-libperfmgr: Adpf: Remove dead thread from hint session. [guibing]
+b30545d power-libperfmgr: ADPF Session inspect isActive [David Kimmel]
+b007e94 power-libperfmgr: Adpf: fix vote duration update. [guibing]
+c46f412 power-libperfmgr: Add plumbing for ADPF Power Efficiency hint [Matt Buckley]
+9e148b2 power-libperfmgr: Remove "default" vote on LOAD_RESET, LOAD_RESUME [Matt Buckley]
+404a725 power-libperfmgr: ADPF task id vec reference [David Kimmel]
+bb7b51c power-libperfmgr: ADPF Power Session Mgr rewrite staged part 5 print specifier fix [David Kimmel]
+a972203 Revert "Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 4 Pow..." [David Kimmel]
+e2220ed Revert "Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 3 Bac..." [David Kimmel]
+bd0e311 Revert "Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 2 Ses..." [David Kimmel]
+07f8201 Revert "Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 1 Adp..." [David Kimmel]
+7b3e5d8 Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 1 AdpfTypes, ..." [Himanshu Rawat]
+a0b98b7 Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 2 SessionTaskMap" [Himanshu Rawat]
+7c5a496 Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 3 BackgroundW..." [Himanshu Rawat]
+62a1d77 Revert "power-libperfmgr: ADPF Power Session Mgr rewrite staged part 4 PowerSessio..." [Himanshu Rawat]
+56e6dce power-libperfmgr: ADPF Power Session Mgr rewrite staged part 4 PowerSessionManager Integration [David Kimmel]
+0336857 power-libperfmgr: ADPF Power Session Mgr rewrite staged part 3 BackgroundWorker [David Kimmel]
+444d360 power-libperfmgr: ADPF Power Session Mgr rewrite staged part 2 SessionTaskMap [David Kimmel]
+d531453 power-libperfmgr: ADPF Power Session Mgr rewrite staged part 1 AdpfTypes, UClampVoter [David Kimmel]
+e3e3814 power-libperfmgr: Add another location to check for the frame-buffer's "idle_state" poll file. [My Name]
+
+* lineage/hudson
+220a998 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+11b9451 Updated aosp-minimal to 17-Dec-2024 13:03 UTC [Tim Schumacher]
+
+* lineage/wiki
+ccb3fcbf wiki: Don't provide dysfunctional download links [Michael W]
+
+* packages/apps/Updater
+1d33cc3 Updater: push-update: unroot on exit if zip exists [Timi]
+
+====================
+     2024-12-17    
+====================
+* frameworks/base
+2df219d6a7d0 Allow spoofing signingInfo for microG Companion/Services [Jonathan Klee]
+
+* hardware/interfaces
+2a6684e39f Revert "Partial revert "Remove mapper from composer2.1 VTS"" [Michael Bestas]
+
+* lineage/hudson
+f2b4bb1 Regenerate device dependency mappings [LineageOS Infra]
+
+====================
+     2024-12-16    
+====================
+* frameworks/base
+39d16e1b5aee Automatic translation import [LineageOS Infra]
+
+* hardware/lineage/interfaces
+9aae791 Revert "power-libperfmgr: Fix shared_ptr conversion for HintManager" [Nolen Johnson]
+
+* lineage-sdk
+b503f5ce Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+b63f918 Updated to 15-Dec-2024 13:01 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+84f17b0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+f513278 Automatic translation import [LineageOS Infra]
+5222ca9 Camelot: Actually make it REUSE compliant [Michael Bestas]
+
+* packages/apps/DeskClock
+eaf6d78a4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+6e2bc49fa Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+b4a63c5b Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+e7f3c17 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+5e314df Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1c673bb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+0895e55 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+57410d9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+23e5b29 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+4921d7935bc Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+28bd97d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+6298914 Automatic translation import [LineageOS Infra]
+cab5746 Twelve: Use AOSP material [Luca Stefani]
+3dbc25f Twelve: Full OpenSubsonic and Navidrome coverage [Sebastiano Barezzi]
+
+* packages/providers/DownloadProvider
+0b7acccc Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+f2b92f1 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+0586329 Automatic translation import [LineageOS Infra]
 
