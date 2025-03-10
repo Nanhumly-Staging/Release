@@ -1,192 +1,175 @@
 ====================
-     2025-03-03    
+     2025-03-10    
 ====================
 * art
-abbd1e54f4 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+1417d1778f Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-4a909d3a16 build: Always use release-keys [Pranav Vashi]
+f3b3a6e51c build: Always use release-keys [Pranav Vashi]
 
 * hardware/qcom-caf/msm8998/media
-ab04a1b9e mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+5afdcdb83 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * vendor/lineage
-23befcd4 Sign Build [Nanhumly]
+1a911c03 Sign Build [Nanhumly]
+
+* device/xiaomi/sagit
+09aa901 sagit: Set fingerprint sensor type [Bruno Martins]
+ab158ad sagit: Setup ELF checks [LuK1337]
+abefc1e sagit: Fix soname of renamed libraries [Sebastiano Barezzi]
+acbc08c sagit: Add system prefix to blobs [Michael Bestas]
+6ccf61a sagit: Switch to py extract utils [Nanhumly]
 
 * device/xiaomi/msm8998-common
-eb33d714 msm8998-common: tetheroffload: Version 1.1 [Tyler Wear]
+2e9c0072 msm8998-common: Update FairPhone 3 blobs from FP3-6.A.031.7-gms-f31c7748-user [Nanhumly]
+97229096 msm8998-common: Remove duplicate SystemUI optimizations [Nanhumly]
+607f426b msm8998-common: Move to Xiaomi fingerprint AIDL [basamaryan]
+ae066a0e msm8998-common: unset BOARD_USERDATAIMAGE_PARTITION_SIZE [SGCMarkus]
+981107a5 msm8998-common: Remove unused Android.mk [Michael Bestas]
+81691cb7 msm8998-common: Include vendor namespace [Nolen Johnson]
+267664ec msm8998-common: gps/location: Convert remaining Android.mk to bp [Michael Bestas]
+5a9d9ab4 msm8998-common: location: Remove unused components [Michael Bestas]
+65ac12b7 msm8998-common: Enable ELF checks for vulkan.msm8998 [Nanhumly]
+8b041482 msm8998-common: Enable ELF checks for libOmxVpp [Michael Bestas]
+56fa1b19 msm8998-common: Mark CNE symlink target as required package [Bruno Martins]
+667cc699 msm8998-common: do not manually build dependencies [Cosmin Tanislav]
+10ba57a4 msm8998-common: Enable ELF checks for libril-qcril-hook-oem.so [Edwin Moquete]
+9cfb0185 msm8998-common: Clear LIBC_PRIVATE symbol versions for libmmcamera_faceproc [LuK1337]
+e5a22c30 msm8998-common: Enable elfchecks for libMiCameraHal [LuK1337]
+ce5c7856 msm8998-common: camera: Add remaining symbols required by libMiCameraHal [Michael Bestas]
+88819ac7 msm8998-common: Remove elf files in copy files check [Aaron Kling]
+be291e86 msm8998-common: Disable ELF checks for certain libraries [Michael Bestas]
+a1b8f588 msm8998-common: skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+3a09112e msm8998-common: Drop unused blobs [Nanhumly]
+f38360e1 msm8998-common: fix dirac_resource ELF checks [Nanhumly]
+673d9a1a msm8998-common: fix vendor.qti.hardware.tui_comm@1.0 ELF checks [Nanhumly]
+977ba61c msm8998-common: Fix ELF checks on FP3 kangs [Nolen Johnson]
+400fe792 msm8998-common: fix ELF checks for vendor.qti.hardware.qccsyshal@1.0 [Nolen Johnson]
+a33d640c msm8998-common: fix vendor.qti.imsrtpservice@3.0 ELF checks [Cosmin Tanislav]
+e823d2e8 msm8998-common: fix com.qualcomm.qti.dpm.api@1.0 ELF checks [Cosmin Tanislav]
+e73f4b39 msm8998-common: Libraries are now automatically added to PRODUCT_PACKAGES [Michael Bestas]
+50c7924f msm8998-common: Setup ELF checks & regenerate vendor [Marc Bourgoin]
+32b3e2b9 msm8998-common: Patch camera blobs to appease elfchecks [Nanhumly]
+ce89a48e msm8998-common: Patch lib-imscamera with libgui_shim as well [Nolen Johnson]
+9214fe83 msm8998-common: Fix NFC firmware path [Ivan Vecera]
+be4c1664 msm8998-common: Add missing lib-rcsconfig.so [Michael Bestas]
+673e62af msm8998-common: Remove unused camera libs [Michael Bestas]
+5ac0427b msm8998-common: Switch to py extract utils [Nanhumly]
+0e11872e msm8998-common: Run update-sha1sums.py [Nanhumly]
+12ee1bf3 msm8998-common: Update portion IMS VT blobs from sweet_k6a OS1.0.10.0.THGMIXM [Nanhumly]
+7d2bfca8 msm8998-common: Cleanup CNE, QMI, Radio, IMS blobs [Nanhumly]
+
+* vendor/xiaomi/sagit
+235f5f1 sagit: Regenerate with python extract utils & checkelf changes [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+5b6eae1 msm8998-common: Regenerate with python extract utils & checkelf changes [Nanhumly]
+309659f msm8998-common: Update portion IMS VT blobs from sweet_k6a OS1.0.10.0.THGMIXM [Nanhumly]
+e75199b msm8998-common: Cleanup CNE, QMI, Radio, IMS blobs [Nanhumly]
 
 ====================
-     2025-03-02    
+     2025-03-09    
 ====================
-* frameworks/base
-6e956d6a2500 Automatic translation import [LineageOS Infra]
-
-* hardware/qcom-caf/bootctrl
-9a64b83 gpt-utils: skip swapping xbl_config slots [Cosmin Tanislav]
-3b17191 bootctrl/gpt-utils: Check for full partiton name instead of partial prefix [SGCMarkus]
-ef1bf26 gpt-utils: Add OTA support for FIH Nokia partitions [Tuan Anh]
-f306c65 gpt-utils: Add OTA support for Razer partitions [Michael Bestas]
-
 * lineage/hudson
-c43b52a hudson: Bring back monet with 22.1 [Alec Chan]
-
-* lineage/wiki
-81e8947d wiki: Bring back monet with 22.1 [Alec Chan]
-d1e668c3 wiki: Promote earth to 22.1 [Matsvei Niaverau]
-
-* packages/apps/Aperture
-3b31359 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-587b087 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-08ac373 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-6ef8dcae5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-64270168d Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-3c79d0b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-c72ee26 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-09df967 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-a5fd5ed Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-94c0b87 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-66d85eb Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-6015d30a37a Automatic translation import [LineageOS Infra]
-
-* packages/apps/Trebuchet
-dcb17f1121 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-007116c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-ec85854 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-a27d7edd2 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-2a12ea4 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-c9b1d00 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/commonsys/fm
-0b5e2e3 Automatic translation import [LineageOS Infra]
+4490b41 Regenerate device dependency mappings [LineageOS Infra]
 
 ====================
-     2025-03-01    
-====================
-* frameworks/base
-9af2ac75cafc pm: aconfig: do not error on missing flag files [Thomas Makin]
-
-* lineage/wiki
-f6309db9 wiki: libvirt-qemu: Add the subtargets [Yumi Yukimura]
-64b17094 wiki: libvirt-qemu: Tablet input device shows mouse cursor finally [Yumi Yukimura]
-c9306eb2 wiki: libvirt-qemu: x86 targets now supports BIOS firmware [Yumi Yukimura]
-40add276 wiki: libvirt-qemu: Default targets are now Tablet type [Yumi Yukimura]
-
-* packages/apps/Glimpse
-d66d116 Glimpse: Reformat code [Sebastiano Barezzi]
-fb5adcd Glimpse: Make K NonNull in SelectionTracker<K>.kill(...) [Luca Stefani]
-
-====================
-     2025-02-28    
-====================
-* packages/apps/Aperture
-a1618e8 Aperture: Use ViewModel's `onCleared()` [Sebastiano Barezzi]
-12c932c Aperture: CameraActivity: Rename `model` to `viewModel` [Sebastiano Barezzi]
-3532c3b Aperture: Clarify what's the actual context for `AndroidViewModel`s [Sebastiano Barezzi]
-cca046f Aperture: Update edge-to-edge setup [Sebastiano Barezzi]
-6b6cddb Aperture: Rework Camera2 CaptureRequest application [Sebastiano Barezzi]
-
-* packages/apps/SimpleSettingsConfig
-e539270 Add support for "first boot" configs [LuK1337]
-
-* tools/extract-utils
-0239fa3 extract_utils: try to move SaR even if all partitions are there [Cosmin Tanislav]
-c069833 extract_utils: add support extracting Moto PIV images [Cosmin Tanislav]
-
-====================
-     2025-02-27    
-====================
-* frameworks/base
-0f0a69e09083 SettingsProvider: aconfig: do not error on missing flag files [Aaron Kling]
-
-* hardware/interfaces
-7381227716 compatibility_matrices: Allow radio 1.5 on target-level 6 [Yumi Yukimura]
-
-* lineage/hudson
-1eb4048 hudson: Promote earth to 22.1 [Matsvei Niaverau]
-
-* lineage/wiki
-56567fb5 salami: Bump FW to match OOS 15 release [Bruno Martins]
-
-* packages/apps/Aperture
-82e69ef Aperture: Address getTapToFocusState() deprecation [LuK1337]
-b8c65f3 Aperture: Update CameraX to 1.5.0-alpha06 [LuK1337]
-
-* packages/apps/Catapult
-ad6520a Catapult: Fix row icons issue [Timi]
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
-4944205 Revert "Revert "ipacm: Add support for DataWarning limit"" [Tyler Wear]
-
-====================
-     2025-02-26    
-====================
-* frameworks/base
-9aa511ce713d Catch BadParcelableException when checking extras [Luca Stefani]
-772ada4028df Catch all exceptions when loading images [Jernej Virag]
-0368bb1a4128 Revert "Handle all exceptions when loading artwork bitmap" [Luca Stefani]
-
-* packages/apps/Aperture
-b0eea75 Aperture: More lint fixes [Sebastiano Barezzi]
-fa6f4d0 Aperture: `values()` -> `entries` [Sebastiano Barezzi]
-a1514f1 Aperture: Cleanup experimental CameraX annotations [Sebastiano Barezzi]
-50805c4 Aperture: Remove not needed deprecation suppress [Sebastiano Barezzi]
-f0a16c0 Aperture: Bump JVM version to 17 [Sebastiano Barezzi]
-b384c7f Aperture: lens_launcher: Bump SDK to 35 [Sebastiano Barezzi]
-4c2c873 Aperture: Update AGP to 8.8.1 [Sebastiano Barezzi]
-cfe5d27 Aperture: Update Gradle wrapper to 8.13 [Sebastiano Barezzi]
-0d1066c Aperture: Move to Gradle catalog and update Gradle templates from Twelve [Sebastiano Barezzi]
-e4afda2 Aperture: Reformat code [Sebastiano Barezzi]
-
-* packages/apps/Jelly
-925c0a9 Jelly: Introduce HttpUtils#bitmap() [SaeedDev94]
-
-====================
-     2025-02-25    
+     2025-03-08    
 ====================
 * hardware/lineage/interfaces
-19de245 aidl: light: Treat keyboard devices as keyboards [Sebastiano Barezzi]
-a163b58 aidl: light: Support `charging` LED [Nolen Johnson]
+cc1cb0f health: Delete .clang-format [Bruno Martins]
 
-* hardware/qcom-caf/sm8450/display
-8f6535f6c6 sdm: hwc: Allow enabling doze mode support with a property [danielml]
+* lineage/hudson
+51231a2 Regenerate device dependency mappings [LineageOS Infra]
 
-* lineage-sdk
-e3951996 health: Catch all setCharging*() exceptions [LuK1337]
+* packages/apps/Jelly
+a621293 Jelly: Update Yahoo search engine url [Bjørn Wiegell]
+2dbb5f0 Jelly: Add Ecosia, GOOD, Startpage, and Qwant search engines [Bjørn Wiegell]
+
+* packages/apps/Updater
+0342bb3 Updater: Fix warnings [Michael W]
+33d63d6 Updater: Use Java 11 [Michael W]
+9918f7e Updater: Bump minSdk to 32 [Michael W]
+fbdb557 Updater: Update gradle plugin to 8.7.3 [Michael W]
+e28d157 Updater: Update gradle wrapper to 8.9 [Michael W]
+a9d7673 Updater: Add welcome message with instructions [Michael W]
+
+* device/xiaomi/msm8998-common
+6356fc4b msm8998-common: Enabling sound trigger V2_3 [Yung Ti Su]
+2f087cc9 msm8998-common: Update Audio HIDL to 7.1 [Carter Hsu]
+f964f1fb msm8998-common: Switch audio HAL to V7 [Mikhail Naganov]
+
+* kernel/xiaomi/msm8998
+c664a60d93e6 qcacld-3.0: Fix the possible OOB write in country IE unpack [Kiran Kumar Lokere]
+5c6dcf04e484 disp: msm: dsi: add null pointer check in dsi_display_dev_remove [Jinfeng Gu]
+
+====================
+     2025-03-07    
+====================
+* lineage/wiki
+4389700d wiki: Make larry use `fastboot flashing unlock` [LuK1337]
+
+====================
+     2025-03-06    
+====================
+* lineage/mirror
+4b8a6c1 Updated aosp-minimal to 05-Mar-2025 11:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+a9da5594 wiki: Make oscaro use `fastboot flashing unlock` [LuK1337]
+
+====================
+     2025-03-05    
+====================
+* hardware/qcom-caf/bootctrl
+8c5ba5e gpt-utils: Add OTA support for HTC partitions [Nolen Johnson]
+6e6b280 gpt-utils: Add OTA support for LGE partitions [Nolen Johnson]
+9d77f8c gpt-utils: Add OTA support for legacy Motorola partitions [Nolen Johnson]
+
+* lineage/wiki
+6ec87dd2 wiki: Add next steps after boot [Michael W]
+e9c96fb5 wiki: Improve the wording on the firmware requirement [Michael W]
+45899a48 Revert "wiki: libvirt-qemu: Default targets are now Tablet type" [Yumi Yukimura]
+1bc33ccb wiki: pages: Document `virtio_*` targets in UTM VM on Apple Silicon Mac [Yumi Yukimura]
 
 * packages/apps/Twelve
-d62490f Twelve: Reduce number of player callbacks [Luca Stefani]
-5dea906 Twelve: Reformat code [Luca Stefani]
+437fced Twelve: NowPlayingViewModel: Don't poll current position w/o lyrics [Sebastiano Barezzi]
+b669300 Twelve: MediaItemBottomSheetDialog: Handle favorites [Sebastiano Barezzi]
+c282206 Twelve: NowPlayingFragment: Add favorite button [Luca Stefani]
+5c88661 Twelve: Add playlist type handling [Luca Stefani]
+890d8b9 Twelve: LocalDataSource: Implement favorites [Sebastiano Barezzi]
+498c06c Twelve: LocalDataSource: Move media item mappers to method [Sebastiano Barezzi]
+2ce5a23 Twelve: TwelveDatabase: Add favorites table [Sebastiano Barezzi]
+435d5e3 Twelve: JellyfinDataSource: Implement favorites [Sebastiano Barezzi]
+5fa1fb1 Twelve: SubsonicDataSource: Implement favorites [Sebastiano Barezzi]
+cade559 Twelve: Add `setFavorite` method [Sebastiano Barezzi]
+7b09541 Twelve: Add playlist type and audio isFavorite attributes [Luca Stefani]
+a81cbc8 Twelve: MediaItemBottomSheetDialog: Refactor [Sebastiano Barezzi]
+c931c8a Twelve: SubsonicDataSource: Fix a missed playlist ID cast to int [Sebastiano Barezzi]
+
+====================
+     2025-03-04    
+====================
+* frameworks/base
+a9664e0fcc42 BrightnessUtils: Conditionally disable gamma conversion for brightness slider [SagarMakhar]
+
+* hardware/interfaces
+55e7ea4b27 compatibility_matrices: Allow IOffloadControl 1.1 on target-level 5 [LuK1337]
+
+* lineage/wiki
+924ee543 devices: dopinder: Not unlockable anymore [Nolen Johnson]
+4c27dc5c wiki: libvirt-qemu: Let Gemini 2.0 Flash improve the sentences [Yumi Yukimura]
+
+* packages/apps/Twelve
+33b49f7 Twelve: NowPlayingViewModel: Missed a nullable state flow [Sebastiano Barezzi]
+951e350 Twelve: Bring back loading state for flows [Sebastiano Barezzi]
+fe2ac4a Twelve: Api: Migrate MethodResult to Result [Sebastiano Barezzi]
+00bdb89 Twelve: Result: Mark mapping methods as inline [Sebastiano Barezzi]
+be3f449 Twelve: Result: Add `getOrNull` [Sebastiano Barezzi]
+ee82d6d Twelve: Goodbye RequestStatus.Loading [Sebastiano Barezzi]
+e4a1882 Twelve: Rename RequestStatus to Result [Sebastiano Barezzi]
+ad282d0 Twelve: Commonize Error [Sebastiano Barezzi]
+cc2faac Twelve: Readd TextRenderer [Sebastiano Barezzi]
+7f16232 Twelve: Lyrics: Let the builder methods return the builder itself [Sebastiano Barezzi]
+a8b4b5c Twelve: Don't save an instance of TwelveDatabase [Luca Stefani]
 
