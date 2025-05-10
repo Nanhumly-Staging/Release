@@ -1,359 +1,166 @@
 ====================
-     2025-04-25    
+     2025-05-10    
 ====================
+* android
+8ccdcc1 Track our own Iwlan [LuK1337]
+
 * art
-fe7a65a662 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+d9f9a4800b Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-138194ff78 build: Always use release-keys [Pranav Vashi]
+c7fe7584ef build: Always use release-keys [Pranav Vashi]
 
-* hardware/qcom-caf/common
-bb9c984 qcom: Move rmnetctl old_rmnet_data to soong_config_set [Michael Bestas]
-
-* hardware/qcom-caf/msm8998/media
-71dfc8f58 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
-* packages/apps/Trebuchet
-8fe17eed22 fixup! Trebuchet: allow disabling workspace edit [LuK1337]
-
-* vendor/lineage
-c879fe69 Sign Build [Nanhumly]
-
-* device/xiaomi/msm8998-common
-f236d4b3 msm8998-common: Kang HotwordEnrollment from umi V14.0.5.0.TJBMIXM [Yumi Yukimura]
-f4b44109 msm8998-common: Drop soundtrigger [Alcatraz323]
-
-* vendor/xiaomi/msm8998-common
-5a24d26 msm8998-common: Kang HotwordEnrollment from umi V14.0.5.0.TJBMIXM [Yumi Yukimura]
-57b770f msm8998-common: Drop soundtrigger [Alcatraz323]
-
-====================
-     2025-04-24    
-====================
-* lineage/wiki
-5176b763 wiki: s/do not reboot/do not reboot to system/ [LuK1337]
-
-* device/xiaomi/msm8998-common
-2fc207d1 msm8998-common: overlay: Switch to `config_screenBrightnessSettingMinimumFloat` [DarkJoker360]
-50b36cd5 Revert^3 "msm8998-common: Disable carrier video calls" [Nanhumly]
-46370920 msm8998-common: Update portion IMS blobs from QSSI 15 [Nanhumly]
-
-* vendor/xiaomi/msm8998-common
-9f1a9bb msm8998-common: Update portion IMS blobs from QSSI 15 [Nanhumly]
-
-* kernel/xiaomi/msm8998
-69d8beae1fc4 mdss: mdp: Remove redefinition of BITS_TO_BYTES [Chippa-a]
-1ebeb34a80e6 Merge tag 'v4.4.302-cip98' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-22.2 [Nanhumly]
-b810fd4acfb5 tick/nohz: Optimize nohz idle enter [Gaurav Jindal]
-aea64c5796cb sched/fair: Fix load_balance() affinity redo path [Jeffrey Hugo]
-251b49efa8fe Revert "sched/fair: Fix load_balance() affinity redo path" [BeYkeRYkt]
-406b6c1e1f1a sched/rt: Don't try push tasks if there are none. [Sebastian Andrzej Siewior]
-50d62c75e8c5 workqueue: don't use wq_select_unbound_cpu() for bound works [Hillf Danton]
-ad8e992e1405 sched: Don't update idle_cpus_mask during core isolation [Puja Gupta]
-690438f7bda2 sched/deadline: Make update_curr_dl() more accurate [Wen Yang]
-caceb256bb26 sched/rt: Make update_curr_rt() more accurate [Wen Yang]
-d9dfbc9ab648 sched/core: Ensure load_balance() respects the active_mask [Peter Zijlstra]
-a8bc663de3be sched/fair: Avoid newidle balance for !active CPUs [Peter Zijlstra]
-0466ef002b66 sched/topology, cpuset: Avoid spurious/wrong domain rebuilds [Peter Zijlstra]
-8b99caaccbb1 sched/topology: Fix building of overlapping sched-groups [Peter Zijlstra]
-1a46b27b6013 mm: process_reclaim: allow nomap-only reclaim [Vinayak Menon]
-0c3c776b75a2 Revert "mm: vmscan: support setting of kswapd cpu affinity" [Park Ju Hyung]
-b9f0b1518744 sched/fair: sanitize vruntime of entity being placed [Zhang Qiao]
-0c7e22dd7694 sched: core_ctl: Detect and correct IRQ stacking scenario [Alex Naidis]
-e93c78f34bd2 sched/fair: update_rq_clock after nr_running check in load balance path [Satya Durga Srinivasu Prabhala]
-567b5116d8ea sched/fair: Plug hole between hotplug and active_load_balance() [Peter Zijlstra]
-4511808201de sched/core: Fix set_user_nice() [Peter Zijlstra]
-71949d2e4ae8 sched/fair: Fix the min_vruntime update logic in dequeue_entity() [Song Muchun]
-79dd9dbfc334 sched/fair: Fix min_vruntime tracking [Peter Zijlstra]
-71249418eb8c sched/fair: Fix typo in sync_throttle() [Xunlei Pang]
-b52f41b28e80 sched/fair: Rework throttle_count sync [Peter Zijlstra]
-14628373595b sched/fair: Reorder cgroup creation code [Peter Zijlstra]
-21dcfe04836c sched/fair: Fix PELT integrity for new groups [Peter Zijlstra]
-98508e060ecb soc: qcom: glink: qmp: Remove IRQF_NO_SUSPEND [Chris Lew]
-fb9effd63bfd workqueue: schedule WORK_CPU_UNBOUND work on wq_unbound_cpumask CPUs [Mike Galbraith]
-34af98570c5a sched: Do not always skip yielding tasks [Tyler Nijmeh]
-3e262e428a23 sched: fair: Add strict skip buddy support [Maria Yu]
-bda2ecffc02f sched/fair: Fix the wrong throttled clock time for cfs_rq_clock_task() [Xunlei Pang]
-ce53cddd5cd5 time: Fix extra sleeptime injection when suspend fails [Mukesh Ojha]
-45747f342ac1 timers, sched/clock: Hook into s2idle freeze path [Stephen Boyd]
-f7632706a351 sched/fair: Fix util_avg of new tasks for asymmetric systems [Quentin Perret]
-8a62672841f9 ARM64: defconfig: mi8998: Disable CONFIG_RT_GROUP_SCHED [Suren Baghdasaryan]
-4491162456fd sched/core: Fix preempt warning in ttwu [Peter Zijlstra]
-29dd6d73a4a5 sched/core: Optimize try_to_wake_up() for local wakeups [Peter Zijlstra]
-3ecb61000f07 sched/fair: Don't push cfs_bandwith slack timers forward [bsegall@google.com]
-75039823671e locking/rwsem: for rwsem prio aware enhancement [Maria Yu]
-36b3bf0bbd1b sched/fair: Make tick path active migration more robust [Pavankumar Kondeti]
-0deeccd4a5b7 drivers: cpuidle: lpm-levels: Export symbols used by audio [Karthikeyan Mani]
-f16171b87ba5 sched/core: Fix pick_next_task() for RT,DL [Peter Zijlstra]
-44e8de05ad8f sched/core: Optimize pick_next_task() for idle_sched_class [Peter Zijlstra]
-06e34e7d88ae sched/core: Fix incorrect utilization accounting when switching to fair class [Vincent Guittot]
-f72c7d670e20 sched/cputime: Improve scalability by not accounting thread group tasks pending runtime [Stanislaw Gruszka]
-ef4021303115 sched/rt, sched/dl: Don't push if task's scheduling class was changed [Xunlei Pang]
-3a602c5df4fb sched/core: Call __schedule() from do_idle() without enabling preemption [Steven Rostedt (VMware)]
-abb34340367e sched/rt: Kick RT bandwidth timer immediately on start up [Steven Rostedt]
-2e27a3c3389f mm/mempolicy.c: convert the shared_policy lock to a rwlock [Nathan Zimmer]
-eb266bf29a75 sched: use rq_clock if WALT is not enabled [Santosh Mardi]
-113c7347a0ab sched: walt: Provide the most recent window_start value to cpufreq [Vikram Mulukutla]
-611578eeb756 sched: cpufreq: Use sched_clock instead of rq_clock when updating schedutil [Vikram Mulukutla]
-0efc68348f14 BACKPORT: ANDROID: sched: Exempt paused CPU from nohz idle balance [Pavankumar Kondeti]
-f4c99ecf5fdd mm, vmstat: Skip DMA in is_zone_first_populated() [LuK1337]
-786727620e22 mm, vmstat: NR_VM_NODE_STAT_ITEMS -> NR_VM_ZONE_STAT_ITEMS [LuK1337]
-dd26f926ecb4 mm, vmstat: Remove spurious WARN() during zoneinfo print [Reza Arbab]
-d1143f7419c5 mm, vmstat: print node-based stats in zoneinfo file [Mel Gorman]
-
-====================
-     2025-04-23    
-====================
-* lineage-sdk
-e0d5a134 health: Allow Limit/Toggle providers for MODE_AUTO/MODE_MANUAL [LuK1337]
-
-* lineage/hudson
-805aba7 Regenerate device dependency mappings [LineageOS Infra]
-1c95a65 hudson: Add Moto G10 (capri) [Deivid21]
-fa51e9c hudson: Promote lenovo sm8150-common to 22.2 [Marc Bourgoin]
-e959caf hudson: Promote Z01R to 22.2 [Marc Bourgoin]
-
-* lineage/wiki
-40b7e93c fixup! wiki: Add Moto G10 (capri) [Deivid21]
-e22fcf80 wiki: guamp: Update maintainers [Deivid21]
-30b53a55 wiki: cebu: Update variants [Deivid21]
-58ac6bcf wiki: Add Moto G10 (capri) [Deivid21]
-99229a40 wiki: Promote lenovo sm8150-common to 22.2 [Marc Bourgoin]
-da31fde9 wiki: Promote Z01R to 22.2 [Marc Bourgoin]
-
-* packages/apps/Twelve
-4296316 Twelve: Display device name when available [LuK1337]
-
-* vendor/lineage
-2130319a Revert "kernel: Add support for external kernel configs" [Nolen Johnson]
-
-* kernel/xiaomi/msm8998
-284b07c3e0e9 CIP: Bump version suffix to -cip98 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
-e65b75bb11f9 Merge branch 'linux-4.4.y-st' into linux-4.4.y-cip [Ulrich Hecht]
-b556d08f65b2 Update localversion-st, tree is up-to-date with 4.19-st3. [Ulrich Hecht]
-
-====================
-     2025-04-22    
-====================
-* lineage/mirror
-d4fdb1a Updated to 22-Apr-2025 10:01 UTC [Tim Schumacher]
-
-* packages/apps/Aperture
-72cc51b Revert "Aperture: Update gradle-generatebp to 1.23" [Luca Stefani]
-4f8bf3e Aperture: Update gradle-generatebp to 1.23 [Luca Stefani]
-63c7fdd Aperture: Apply CameraX Pixel bugfix from androidx-main [LuK1337]
-
-* packages/apps/Camelot
-5355197 Camelot: Update androidx.pdf to 1.0.0-alpha08 [Luca Stefani]
-
-* packages/apps/Twelve
-474bfca Twelve: Update gradle-generatebp to 1.23 [Luca Stefani]
-
-* device/xiaomi/msm8998-common
-acbe1f87 msm8998-common: Enable auto_latch_unsignaled for V [Govind R Sekhar]
-99ae43b5 msm8998-common: Disable Wi-Fi Hotspot Speed Settings [Alcatraz323]
-
-* kernel/xiaomi/msm8998
-1ad7c1fe33ef doc: update KNOWN-BUGS file [Ulrich Hecht]
-f27e398a376a nilfs2: handle errors that nilfs_prepare_chunk() may return [Ryusuke Konishi]
-a80e9f6f4ff3 wifi: nl80211: reject cooked mode if it is set along with other flags [Vitaliy Shevtsov]
-b5ab4b9247e6 acct: perform last write from workqueue [Christian Brauner]
-8466b160abf4 pfifo_tail_enqueue: Drop new packet when sch->limit == 0 [Quang Le]
-14dcb866f5a2 geneve: Fix use-after-free in geneve_find_dev(). [Kuniyuki Iwashima]
-e4b9f1f00a8b ipv4: use RCU protection in inet_select_addr() [Eric Dumazet]
-16282ba80e20 ptp: Ensure info->enable callback is always set [Thomas Weißschuh]
-9a72da75736f tg3: Disable tg3 PCIe AER on system reboot [Lenny Szubowicz]
-4a374aa2c4eb usb: xhci: Fix NULL pointer dereference on certain command aborts [Michal Pecio]
-add8362c84b8 net: rose: lock the socket in rose_bind() [Eric Dumazet]
-70f157e7c125 btrfs: fix use-after-free when attempting to join an aborted transaction [Filipe Manana]
-c92345ebc0d5 media: lmedm04: Handle errors for lme2510_int_read [Chen Ni]
-ed0ef2cb9e46 wifi: rtlwifi: rtl8192se: rise completion of firmware loading as last step [Thadeu Lima de Souza Cascardo]
-725150d9012a Squashfs: check the inode number is not the invalid value of zero [Phillip Lougher]
-23532d73fbe5 xhci: pci: Fix indentation in the PCI device ID definitions [Andy Shevchenko]
-3ffe068820fb usb: gadget: Check bmAttributes only if configuration is valid [Prashanth K]
-134d2fa5308b usb: gadget: Fix setting self-powered state on suspend [Marek Szyprowski]
-7317917c56cb usb: gadget: Set self-powered based on MaxPower and bmAttributes [Prashanth K]
-277b35d4eecd usb: atm: cxacru: fix a flaw in existing endpoint checks [Nikita Zhandarovich]
-0d5cf0795dcc usb: quirks: Add DELAY_INIT and NO_LPM for Prolific Mass Storage Card Reader [Miao Li]
-143a82b9ddc3 usb: renesas_usbhs: Use devm_usb_get_phy() [Claudiu Beznea]
-94041d18ed5d Revert "drivers/card_reader/rtsx_usb: Restore interrupt based detection" [Christian Heusel]
-25025cc57729 net-timestamp: support TCP GSO case for a few missing flags [Jason Xing]
-3eff1916eb47 vlan: enforce underlying device type [Oscar Maes]
-7c12a65338ae llc: do not use skb_get() before dev_queue_xmit() [Eric Dumazet]
-80b23365c3d2 hwmon: (ad7314) Validate leading zero bits and return error [Erik Schumacher]
-fa120b13cbde hwmon: (pmbus) Initialise page count in pmbus_identify() [Titus Rwantare]
-a32732452e33 caif_virtio: fix wrong pointer check in cfv_probe() [Vitaliy Shevtsov]
-ba236908c5fd wifi: cfg80211: regulatory: improve invalid hints checking [Nikita Zhandarovich]
-ff845cc1afe2 x86/cpu: Validate CPUID leaf 0x2 EDX output [Ahmed S. Darwish]
-f819919e54e4 x86/cacheinfo: Validate CPUID leaf 0x2 EDX output [Ahmed S. Darwish]
-6377c9a58b5c drm/radeon: Fix rs400_gpu_init for ATI mobility radeon Xpress 200M [Richard Thier]
-6e2f6cc43eca HID: appleir: Fix potential NULL dereference at raw event handle [Daniil Dulov]
-ca882b3a2ae0 kernel/acct.c: use dedicated helper to access rlimit values [Yang Yang]
-84dd53f1eda6 kernel/acct.c: use #elif instead of #end and #elif [Hui Su]
-43b2ba5fdcd5 sched/core: Prevent rescheduling when interrupts are disabled [Thomas Gleixner]
-202b9c85892e phy: exynos5-usbdrd: fix MPLL_MULTIPLIER and SSC_REFCLKSEL masks in refclk [Kaustabh Chakraborty]
-bb71e7fc9704 usbnet: gl620a: fix endpoint checking in genelink_bind() [Nikita Zhandarovich]
-fbe63b5ce89b ftrace: Avoid potential division by zero in function_stat_show() [Nikolay Kuratov]
-2d12c6f3cf4d x86/CPU: Fix warm boot hang regression on AMD SC1100 SoC systems [Russell Senior]
-1af22610dc57 ASoC: es8328: fix route from DAC to output [Nicolas Frattaroli]
-d9906051665a sunrpc: suppress warnings for unused procfs functions [Arnd Bergmann]
-f744f7d771c8 power: supply: da9150-fg: fix potential overflow [Andrey Vatoropin]
-eeb7c6cc7e85 crypto: testmgr - populate RSA CRT parameters in RSA test vectors [Ignat Korchagin]
-c5f8ed2bfda3 crypto: testmgr - fix version number of RSA tests [lei he]
-659b72f8fcb0 crypto: testmgr - Fix wrong test case of RSA [Lei He]
-650c90dc9817 driver core: bus: Fix double free in driver API bus_register() [Zijun Hu]
-2dad63e22290 scsi: storvsc: Set correct data length for sending SCSI command without payload [Long Li]
-ab050d5c098b Revert "btrfs: avoid monopolizing a core when activating a swap file" [Koichiro Den]
-f1379c9091b5 parport_pc: add support for ASIX AX99100 [Jiaqing Zhao]
-9ea53d667469 can: ems_pci: move ASIX AX99100 ids to pci_ids.h [Jiaqing Zhao]
-4966f0517ccd nilfs2: protect access to buffers with no active references [Ryusuke Konishi]
-6acec41f4e16 alpha: replace hardcoded stack offsets with autogenerated ones [Ivan Kokshaysky]
-e30fe7c9691e ndisc: extend RCU protection in ndisc_send_skb() [Eric Dumazet]
-b8b8d5248881 arp: use RCU protection in arp_xmit() [Eric Dumazet]
-04f42759b523 neighbour: use RCU protection in __neigh_notify() [Eric Dumazet]
-48fb19bf4e3a neighbour: delete redundant judgment statements [Li Zetao]
-17d865a55d92 ndisc: use RCU protection in ndisc_alloc_skb() [Eric Dumazet]
-447bae2a5e71 ipv6: use RCU protection in ip6_default_advmss() [Eric Dumazet]
-30e33d1e1f10 ipv4: use RCU protection in rt_is_expired() [Eric Dumazet]
-e9537d5c565c net: add dev_net_rcu() helper [Eric Dumazet]
-8c2b9245ae24 net: treat possible_net_t net pointer as an RCU one and add read_pnet_rcu() [Jiri Pirko]
-a062206eb12b partitions: mac: fix handling of bogus partition table [Jann Horn]
-96e6f2af8d8e alpha: align stack for page fault and user unaligned trap handlers [Ivan Kokshaysky]
-28bc721fe934 alpha: make stack 16-byte aligned (most cases) [Ivan Kokshaysky]
-3bab8e11c39b can: c_can: fix unbalanced runtime PM disable in error path [Krzysztof Kozlowski]
-4a2f518f4240 USB: serial: option: drop MeiG Smart defines [Johan Hovold]
-6a7b219034ba USB: serial: option: fix Telit Cinterion FN990A name [Fabio Porcedda]
-1285350e553a USB: serial: option: add Telit Cinterion FN990B compositions [Fabio Porcedda]
-81283f6e5fd9 USB: serial: option: add MeiG Smart SLM828 [Chester A. Unal]
-194c12908844 USB: cdc-acm: Fill in Renesas R-Car D3 USB Download mode quirk [Marek Vasut]
-27a600fa398c USB: hub: Ignore non-compliant devices with too many configs or interfaces [Alan Stern]
-620f2b19a1c7 usb: gadget: f_midi: fix MIDI Streaming descriptor lengths [John Keeping]
-0b3e511bf057 USB: Add USB_QUIRK_NO_LPM quirk for sony xperia xz1 smartphone [Mathias Nyman]
-9c1e2a27b646 USB: quirks: add USB_QUIRK_NO_LPM quirk for Teclast dist [Lei Huang]
-65d4d2922012 usb: dwc2: gadget: remove of_node reference upon udc_stop [Fabrice Gasnier]
-e5f0041be65f vfio/pci: Enable iowrite64 and ioread64 for vfio pci [Ramesh Thomas]
-602f3261ac08 gpio: bcm-kona: Add missing newline to dev_err format string [Artur Weber]
-516b8fbe03b8 gpio: bcm-kona: Fix GPIO lock/unlock for banks above bank 0 [Artur Weber]
-92a2b0786e0b arm64: cacheinfo: Avoid out-of-bounds write to cacheinfo array [Radu Rendec]
-24b0bde916e7 team: better TEAM_OPTION_TYPE_STRING validation [Eric Dumazet]
-0ea652d698a2 HID: multitouch: Add NULL check in mt_input_configured [Charles Han]
-982dec66006f ocfs2: check dir i_size in ocfs2_find_entry [Su Yue]
-40e844e903d5 MIPS: ftrace: Declare ftrace_get_parent_ra_addr() as static [WangYuli]
-82517a9ef624 mtd: onenand: Fix uninitialized retlen in do_otp_read() [Ivan Stepchenko]
-64ca5defbfdc NFC: nci: Add bounds checking in nci_hci_create_pipe() [Dan Carpenter]
-7b85adcb57c5 nilfs2: fix possible int overflows in nilfs_fiemap() [Nikita Zhandarovich]
-1ebc54c42633 ocfs2: handle a symlink read error correctly [Matthew Wilcox (Oracle)]
-491de9832533 ocfs2: fix incorrect CPU endianness conversion causing mount failure [Heming Zhao]
-4c6ef356ad1a nvmem: core: improve range check for nvmem_cell_write() [Jennifer Berringer]
-613bac168388 ocfs2/dlm: move BITS_TO_BYTES() to bitops.h for wider use [Andy Shevchenko]
-6b3787a40f2c crypto: qce - fix goto jump in error path [Bartosz Golaszewski]
-25be632a45f2 powerpc/pseries/eeh: Fix get PE state translation [Narayana Murty N]
-55adb73400d5 wifi: brcmfmac: fix NULL pointer dereference in brcmf_txfinalize() [Marcel Hamer]
-35db0a1b4222 HID: hid-sensor-hub: don't use stale platform-data on remove [Heiko Stuebner]
-f6e8edca50bf of: Fix of_find_node_opts_by_path() handling of alias+path+options [Zijun Hu]
-2f27186f2c9b Bluetooth: L2CAP: handle NULL sock pointer in l2cap_sock_alloc [Fedor Pchelkin]
-0784a4caae47 s390/futex: Fix FUTEX_OP_ANDN implementation [Heiko Carstens]
-658e4f555c21 leds: lp8860: Write full EEPROM, not only half of it [Alexander Sverdlin]
-521f78a821c4 cpufreq: s3c64xx: Fix compilation warning [Viresh Kumar]
-e1ebf3ea7568 tun: revert fix group permission check [Willem de Bruijn]
-dbcb359e0063 firmware: iscsi_ibft: fix ISCSI_IBFT Kconfig entry [Prasad Pandit]
-5a546d7c7636 wifi: brcmsmac: add gain range check to wlc_phy_iqcal_gainparams_nphy() [Dmitry Antipov]
-08e6f6fde9d4 tun: fix group permission check [Stas Sergeev]
-e87972c642a2 printk: Fix signed integer overflow when defining LOG_BUF_LEN_MAX [Kuan-Wei Chiu]
-e1ca7132aeb1 media: uvcvideo: Fix double free in error path [Laurent Pinchart]
-8b1268665e80 drivers/card_reader/rtsx_usb: Restore interrupt based detection [Sean Rhodes]
-4bb760cb588c ktest.pl: Check kernelrelease return in get_version [Ricardo B. Marliere]
-fdf787652479 NFSD: Reset cb_seq_status after NFS4ERR_DELAY [Chuck Lever]
-4eaf7517707c hexagon: Fix unbalanced spinlock in die() [Lin Yujun]
-fdb0648b6761 hexagon: fix using plain integer as NULL pointer warning in cmpxchg [Willem de Bruijn]
-cf8545e83203 genksyms: fix memory leak when the same symbol is read from *.symref file [Masahiro Yamada]
-f212c9352fcc vsock: Allow retrying on connect() failure [Michal Luczaj]
-10a9c7777022 net: davicom: fix UAF in dm9000_drv_remove [Chenyuan Yang]
-13f2bc2b0a97 net: rose: fix timer races against user threads [Eric Dumazet]
-4ce1194bb71b ocfs2: mark dquot as inactive if failed to start trans while releasing dquot [Su Yue]
-bec94664d4df scsi: mpt3sas: Set ioc->manu_pg11.EEDPTagMode directly to 1 [Paul Menzel]
-e7861bfdf025 media: camif-core: Add check for clk_enable() [Jiasheng Jiang]
-826cc4edabb4 media: mipi-csis: Add check for clk_enable() [Jiasheng Jiang]
-f1bd3d2648a5 media: rc: iguanair: handle timeouts [Oliver Neukum]
-405c197deb72 fbdev: omapfb: Fix an OF node leak in dss_of_port_get_parent_device() [Joe Hattori]
-19886ff2e11a arm64: dts: mediatek: mt8173-evb: Fix MT6397 PMIC sub-node names [Chen-Yu Tsai]
-a2cd9b37e547 arm64: dts: mediatek: mt8173-evb: Drop regulator-compatible property [Chen-Yu Tsai]
-541929af5874 rdma/cxgb4: Prevent potential integer overflow on 32bit [Dan Carpenter]
-64266a901cd3 overflow: Implement size_t saturating arithmetic helpers [Kees Cook]
-cb296a28d78b perf report: Fix misleading help message about --demangle [Jiachen Zhang]
-7e6128690f2d padata: fix sysfs store callback check [Thomas Weißschuh]
-3f3005a70ea8 ktest.pl: Remove unused declarations in run_bisect_test function [Ba Jing]
-8280cb087245 regulator: of: Implement the unwind path of of_regulator_match() [Joe Hattori]
-0470891400f1 team: prevent adding a device which is already a team device lower [Octavian Purdila]
-1100a5bad3e0 cpupower: fix TSC MHz calculation [He Rongguang]
-81dfb0fc1427 wifi: rtlwifi: usb: fix workqueue leak when probe fails [Thadeu Lima de Souza Cascardo]
-4722e015d9ed wifi: rtlwifi: do not complete firmware loading needlessly [Thadeu Lima de Souza Cascardo]
-ca3fc00186db udf: Fix use of check_add_overflow() with mixed type arguments [Ben Hutchings]
-449dab61428b can: dev: make can_change_state() robust to be called with cf == NULL [Marc Kleine-Budde]
-e47595d2e9fa ARM: 8933/1: replace Sun/Solaris style flag on section directive [Nick Desaulniers]
-
-====================
-     2025-04-21    
-====================
-* external/chromium-webview/patches
-c162f97 webview: bp: Declare com.android.extensions.xr as optional library [Nolen Johnson]
-
-* lineage/hudson
-ebc5440 hudson: Promote Spacewar to 22.2 [Wiktor Rudzki]
-
-* lineage/scripts
-ad3e029 build-webview: Update default webview to 135.0.7049.100 [Kevin F. Haggerty]
-
-* lineage/wiki
-9b1822b0 Fix current branch for gunnar [Albert Tang]
-cf830b4b wiki: Provide more overview on the FAQ [Michael W]
-91dd2f59 wiki: Place prominent warning on top [Michael W]
-1b79f95a wiki: Fix warning [Michael W]
-d18db8a5 wiki: Update Gemfile.lock [Michael W]
-a664f011 wiki: Promote Spacewar to 22.2 [Wiktor Rudzki]
-
-====================
-     2025-04-20    
-====================
-* external/chromium-webview/prebuilt/arm
-76c9461 Update Chromium Webview arm to 135.0.7049.100 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-ae042da Update Chromium Webview arm64 to 135.0.7049.100 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-f5521b6 Update Chromium Webview x86 to 135.0.7049.100 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-740af52 Update Chromium Webview x86_64 to 135.0.7049.100 [Kevin F. Haggerty]
-
-* lineage/hudson
-4b3df39 hudson: Promote surya to 22.2 [Mohammad Hasan Keramat J]
-1646aab Nordic names are interesting... [Albert Tang]
-
-* lineage/wiki
-c13ec3c1 wiki: devices: Promote surya to 22.2 [Mohammad Hasan Keramat J]
-7f8d5d8d devices: Add OnePlus Nord N20 [Albert Tang]
-
-====================
-     2025-04-19    
-====================
-* external/chromium-webview/patches
-8e086be Update Chromium Webview to 135.0.7049.100 [Kevin F. Haggerty]
+* device/lineage/sepolicy
+2ed0e51 sepolicy: Migrate to PowerShare AIDL [sidharthify]
+0cebada common: Label property `vendor.usb.uvc.payload_transfer_size` [Yumi Yukimura]
 
 * frameworks/base
-b898dd080d8d Fix ever-growing AppOpItem string representation [Tommy Webb]
+d24629b6471f PowerShareTile: Migrate to AIDL PowerShare HAL [sidharthify]
+
+* hardware/google/pixel
+11245652 pixel: Switch to PowerShare AIDL [Bruno Martins]
+
+* hardware/lineage/interfaces
+12709a5 powershare: Convert to AIDL [sidharthify]
+
+* hardware/qcom-caf/msm8998/media
+81fd2d317 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* lineage/mirror
+a541d38 Updated lineage-minimal to 09-May-2025 22:01 UTC [Tim Schumacher]
+f315481 Updated to 09-May-2025 22:01 UTC [Tim Schumacher]
+
+* packages/services/DeviceAsWebcam
+277855b DeviceAsWebcam: jni: Make dwMaxPayloadTransferSize adjustable via property [Yumi Yukimura]
+
+* packages/services/Iwlan
+83bd433 Remove android.net.ipsec.ike uses-library tag [Jihoon Kang]
+
+* vendor/lineage
+cdb28f04 Sign Build [Nanhumly]
+5b643908 config: Migrate PowerShare to AIDL [sidharthify]
+
+====================
+     2025-05-09    
+====================
+* build/make
+933b1c5dda Filter out framework and ext in uses library tag propagation in make [Jihoon Kang]
+
+* build/soong
+f7442576e Do not propagate boot jars in CLC construction [Jihoon Kang]
+09f6732cc Do not propagate uses lib tags of framework [Jihoon Kang]
+
+* frameworks/base
+f02cc438e267 Add the VDM permissions to shell [Vladimir Komsiyski]
 
 * hardware/qcom-caf/common
-744b9d8 qcom: declare hidl_vendor_qti_hardware_iop_interface [Simon1511]
+fe3b092 qcom: Pass TARGET_KERNEL_VERSION to qtidisplay [Michael Bestas]
 
 * lineage/hudson
-52f5f97 hudson: promote Samsung sm7125/sm7325 series to 22.2 [Simon1511]
+b0dff96 Regenerate device dependency mappings [LineageOS Infra]
+c2bd1ca the final dragon dies [Nolen Johnson]
 
 * lineage/wiki
-a0922254 wiki: promote Samsung sm7125/sm7325 series to 22.2 [Simon1511]
+5d3fdc71 wiki: Fix grammar in IMS quirk [razorloves]
+936d0d2a Revert "wiki: Add temporary BP1A.250405.007 requirement for Pixel 6/8 series" [Michael Bestas]
+fa06e48b devices: Drop DRG [Nolen Johnson]
 
-* kernel/xiaomi/msm8998
-f785a3ecf5c5 f2fs: cache more dentry pages [zangyangyang1]
-10b07f465e5a f2fs: set highest IO priority for checkpoint thread [Jaegeuk Kim]
+* vendor/lineage
+fc8519eb release: Sync flag_values with BP1A.250505.005 [Michael Bestas]
+9e87c4de vars: May 2025 Security update [Chirayu Desai]
+
+====================
+     2025-05-08    
+====================
+* lineage/hudson
+d93e6f9 Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+11334404 config: Deprecate TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB [Bruno Martins]
+e722226e config: Deprecate TARGET_TRUST_USB_CONTROL_* flags [Michael Bestas]
+
+====================
+     2025-05-07    
+====================
+* android
+6352ddb manifest: May 2025 Security Update [Michael Bestas]
+
+* build/make
+34bf89a93c Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* frameworks/av
+a055fce5bd Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* frameworks/base
+b35222c30646 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* frameworks/opt/telephony
+065fa9112e Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* lineage/wiki
+30ac8a03 wiki: Add temporary BP1A.250405.007 requirement for Pixel 6/8 series [LuK1337]
+
+* packages/apps/Settings
+7dbe5060cbf Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* packages/modules/Bluetooth
+493b351ef9 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* packages/modules/Permission
+ed11e0d69 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+* packages/modules/Wifi
+cc1fd5e836 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
+
+====================
+     2025-05-06    
+====================
+* build/release
+be57613f Update build flags to BP1A.250505.005 [Xin Li]
+
+* hardware/qcom/sdm845/gps
+e2b4788 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+
+* hardware/qcom/sm7250/gps
+17b95f9 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+
+* hardware/qcom/sm8150/gps
+537a8b1 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+
+* lineage/hudson
+f28239a Regenerate device dependency mappings [LineageOS Infra]
+
+* device/xiaomi/msm8998-common
+c5c9abd2 msm8998-common: gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+
+====================
+     2025-05-05    
+====================
+* frameworks/base
+f19ae33ce00b DisplayCutout: fully animate camera protection [Cosmin Tanislav]
+
+* hardware/google/pixel
+199baa46 pixel: Migrate powershare to soong_config_set [Michael Bestas]
+
+* hardware/interfaces
+177a5b89b3 camera: Migrate camera_override_format_from_reserved_defaults to select() [Michael Bestas]
+
+* hardware/lineage/interfaces
+f957e97 usb: 1.3-basic: Migrate trust_usb_control_defaults to select() [Michael Bestas]
+
+* lineage/hudson
+7d71bfc hudson: Promote OP8998 to 22.2 [Georg Veichtlbauer]
+
+* lineage/wiki
+207d77b3 wiki: Hide TA warning for Sony devices released after 2017 [LuK1337]
+cbbc400e wiki: Promote OP8998 to 22.2 [Georg Veichtlbauer]
+
+====================
+     2025-05-04    
+====================
+* hardware/interfaces
+396db2dca0 radiocompat: Implement iccCloseLogicalChannelWithSessionInfo() [LuK1337]
+
+* lineage/hudson
+09034ba hudson: Promote rest of oplus sm6375 to 22.2 [Vivekachooz]
 
