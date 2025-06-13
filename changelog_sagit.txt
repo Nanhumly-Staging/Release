@@ -1,164 +1,253 @@
 ====================
-     2025-05-10    
+     2025-06-13    
 ====================
-* android
-8ccdcc1 Track our own Iwlan [LuK1337]
-
 * art
-d9f9a4800b Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+9e95dc9d4b Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-c7fe7584ef build: Always use release-keys [Pranav Vashi]
-
-* device/lineage/sepolicy
-2ed0e51 sepolicy: Migrate to PowerShare AIDL [sidharthify]
-0cebada common: Label property `vendor.usb.uvc.payload_transfer_size` [Yumi Yukimura]
-
-* frameworks/base
-d24629b6471f PowerShareTile: Migrate to AIDL PowerShare HAL [sidharthify]
-
-* hardware/google/pixel
-11245652 pixel: Switch to PowerShare AIDL [Bruno Martins]
-
-* hardware/lineage/interfaces
-12709a5 powershare: Convert to AIDL [sidharthify]
+c3c775a1ac build: Always use release-keys [Pranav Vashi]
 
 * hardware/qcom-caf/msm8998/media
-81fd2d317 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
-* lineage/mirror
-a541d38 Updated lineage-minimal to 09-May-2025 22:01 UTC [Tim Schumacher]
-f315481 Updated to 09-May-2025 22:01 UTC [Tim Schumacher]
-
-* packages/services/DeviceAsWebcam
-277855b DeviceAsWebcam: jni: Make dwMaxPayloadTransferSize adjustable via property [Yumi Yukimura]
-
-* packages/services/Iwlan
-83bd433 Remove android.net.ipsec.ike uses-library tag [Jihoon Kang]
+9f7015cd0 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * vendor/lineage
-cdb28f04 Sign Build [Nanhumly]
-5b643908 config: Migrate PowerShare to AIDL [sidharthify]
-
-====================
-     2025-05-09    
-====================
-* build/make
-933b1c5dda Filter out framework and ext in uses library tag propagation in make [Jihoon Kang]
-
-* build/soong
-f7442576e Do not propagate boot jars in CLC construction [Jihoon Kang]
-09f6732cc Do not propagate uses lib tags of framework [Jihoon Kang]
-
-* frameworks/base
-f02cc438e267 Add the VDM permissions to shell [Vladimir Komsiyski]
-
-* hardware/qcom-caf/common
-fe3b092 qcom: Pass TARGET_KERNEL_VERSION to qtidisplay [Michael Bestas]
-
-* lineage/hudson
-b0dff96 Regenerate device dependency mappings [LineageOS Infra]
-c2bd1ca the final dragon dies [Nolen Johnson]
-
-* lineage/wiki
-5d3fdc71 wiki: Fix grammar in IMS quirk [razorloves]
-936d0d2a Revert "wiki: Add temporary BP1A.250405.007 requirement for Pixel 6/8 series" [Michael Bestas]
-fa06e48b devices: Drop DRG [Nolen Johnson]
-
-* vendor/lineage
-fc8519eb release: Sync flag_values with BP1A.250505.005 [Michael Bestas]
-9e87c4de vars: May 2025 Security update [Chirayu Desai]
-
-====================
-     2025-05-08    
-====================
-* lineage/hudson
-d93e6f9 Regenerate device dependency mappings [LineageOS Infra]
-
-* vendor/lineage
-11334404 config: Deprecate TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB [Bruno Martins]
-e722226e config: Deprecate TARGET_TRUST_USB_CONTROL_* flags [Michael Bestas]
-
-====================
-     2025-05-07    
-====================
-* android
-6352ddb manifest: May 2025 Security Update [Michael Bestas]
-
-* build/make
-34bf89a93c Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* frameworks/av
-a055fce5bd Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* frameworks/base
-b35222c30646 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* frameworks/opt/telephony
-065fa9112e Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* lineage/wiki
-30ac8a03 wiki: Add temporary BP1A.250405.007 requirement for Pixel 6/8 series [LuK1337]
-
-* packages/apps/Settings
-7dbe5060cbf Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* packages/modules/Bluetooth
-493b351ef9 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* packages/modules/Permission
-ed11e0d69 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-* packages/modules/Wifi
-cc1fd5e836 Merge tag 'android-15.0.0_r32' into staging/lineage-22.2_merge-android-15.0.0_r32 [Michael Bestas]
-
-====================
-     2025-05-06    
-====================
-* build/release
-be57613f Update build flags to BP1A.250505.005 [Xin Li]
-
-* hardware/qcom/sdm845/gps
-e2b4788 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
-
-* hardware/qcom/sm7250/gps
-17b95f9 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
-
-* hardware/qcom/sm8150/gps
-537a8b1 gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
-
-* lineage/hudson
-f28239a Regenerate device dependency mappings [LineageOS Infra]
+c8ea2028 Sign Build [Nanhumly]
 
 * device/xiaomi/msm8998-common
-c5c9abd2 msm8998-common: gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+08564b6ef msm8998-common: Update blobs from specific sources [Nanhumly]
 
 ====================
-     2025-05-05    
+     2025-06-12    
 ====================
-* frameworks/base
-f19ae33ce00b DisplayCutout: fully animate camera protection [Cosmin Tanislav]
+* lineage/wiki
+4a23da2f wiki: Update Heimdall to v2.2.2 [LuK1337]
+e44d9ac4 wiki: Add link to issues page in submitting to gerrit [Inhishonor]
+e09d1d3e wiki: Add link to issues for contributing_to_apps page [Inhishonor]
+78daee1f wiki: Abandon SunShine [SirRGB]
+a50a1c52 wiki: miami does not have sdcard slot [SirRGB]
 
-* hardware/google/pixel
-199baa46 pixel: Migrate powershare to soong_config_set [Michael Bestas]
+* vendor/xiaomi/msm8998-common
+598856f msm8998-common: Update blobs from specific sources [Nanhumly]
 
-* hardware/interfaces
-177a5b89b3 camera: Migrate camera_override_format_from_reserved_defaults to select() [Michael Bestas]
-
-* hardware/lineage/interfaces
-f957e97 usb: 1.3-basic: Migrate trust_usb_control_defaults to select() [Michael Bestas]
-
-* lineage/hudson
-7d71bfc hudson: Promote OP8998 to 22.2 [Georg Veichtlbauer]
-09034ba hudson: Promote rest of oplus sm6375 to 22.2 [Vivekachooz]
+====================
+     2025-06-11    
+====================
+* lineage/mirror
+aad72dc aosp-minimal: Baklava [Chirayu Desai]
 
 * lineage/wiki
-207d77b3 wiki: Hide TA warning for Sony devices released after 2017 [LuK1337]
-cbbc400e wiki: Promote OP8998 to 22.2 [Georg Veichtlbauer]
+b75cea36 devices: rhodep: Add sevenrock as a maintainer [Nolen Johnson]
+
+* vendor/lineage
+49cbf625 merge_dtbs: ignore not matching DTBOs when finding symbols for a fixup [Cosmin Tanislav]
 
 ====================
-     2025-05-04    
+     2025-06-10    
 ====================
-* hardware/interfaces
-396db2dca0 radiocompat: Implement iccCloseLogicalChannelWithSessionInfo() [LuK1337]
+* external/chromium-webview/patches
+85e1f86 Update Chromium Webview to 137.0.7151.72 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+1cdf79d Update Chromium Webview arm to 137.0.7151.72 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+f8bab97 Update Chromium Webview arm64 to 137.0.7151.72 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+eba5d0e Update Chromium Webview x86 to 137.0.7151.72 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+d71e61c Update Chromium Webview x86_64 to 137.0.7151.72 [Kevin F. Haggerty]
+
+* hardware/lineage/interfaces
+f568995 health: Fix typo in FastCharge [Thomas Turner]
+
+* hardware/qcom-caf/sm8450/audio/pal
+4d950a56 pal: Parse LVACFS microphone feature parameter [pjgowtham]
+
+* lineage/scripts
+c55758c build-webview: Update default webview to 137.0.7151.72 [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+3e43b47 LineageParts: Switch to ListPreference for Network Traffic settings [HeroBuxx]
+
+* vendor/lineage
+101451f3 lineage: products: Add Cuttlefish products [Yumi Yukimura]
+6b8100b6 init.lineage-system_ext.rc: Rename `bugreport` service [Yumi Yukimura]
+
+====================
+     2025-06-09    
+====================
+* lineage/wiki
+77fc06ec wiki: Specify that laurel_sprout ships firmware [Skyblueborb]
+556fde48 wiki: Specify laurel_sprout is an A/B device [Skyblueborb]
+
+* vendor/lineage
+0ea2a44f merge_dtbs: Sort DTBOs based on needed symbols [Cosmin Tanislav]
+
+* kernel/xiaomi/msm8998
+887622cbebd5 ARM64: defconfig: mi8998: Disable kernel lowmemorykiller driver [Suren Baghdasaryan]
+630a49b7c33c ARM64: defconfig: mi8998: Disable Simple LMK [Nanhumly]
+04e3d26d69d5 ARM64: defconfig: mi8998: enable psi kernel configuration [Suren Baghdasaryan]
+1592836169bd BACKPORT: psi: Fix uaf issue when psi trigger is destroyed while being polled [Suren Baghdasaryan]
+91b6eb675414 UPSTREAM: psi: get poll_work to run when calling poll syscall next time [Jason Xing]
+b5ac20db1bb8 UPSTREAM: sched/psi: Do not require setsched permission from the trigger creator [Suren Baghdasaryan]
+85110dcbc2d4 UPSTREAM: sched/psi: Reduce psimon FIFO priority [Peter Zijlstra]
+87e15b7e4dfa UPSTREAM: sched/psi: Fix OOB write when writing 0 bytes to PSI files [Suren Baghdasaryan]
+b3a865177b97 UPSTREAM: psi: Fix a division error in psi poll() [Johannes Weiner]
+9fd4f8f70d48 UPSTREAM: sched/psi: Fix sampling error and rare div0 crashes with cgroups and high uptime [Johannes Weiner]
+06e89cd92a95 UPSTREAM: sched/psi: Correct overly pessimistic size calculation [Miles Chen]
+32da8f47d23b ANDROID: fix 4.9 backport of psi header refactoring [Suren Baghdasaryan]
+e16428fbe859 FROMLIST: psi: introduce psi monitor [Suren Baghdasaryan]
+d4bddbdc6126 FROMLIST: refactor header includes to allow kthread.h inclusion in psi_types.h [Suren Baghdasaryan]
+9205473256bc FROMLIST: psi: track changed states [Suren Baghdasaryan]
+f4574b69457e FROMLIST: psi: split update_stats into parts [Suren Baghdasaryan]
+32ed90aac119 FROMLIST: psi: rename psi fields in preparation for psi trigger addition [Suren Baghdasaryan]
+0273296e8dd5 FROMLIST: psi: make psi_enable static [Suren Baghdasaryan]
+2b49274b061c FROMLIST: psi: introduce state_mask to represent stalled psi states [Suren Baghdasaryan]
+928e1234c63f UPSTREAM: psi: avoid divide-by-zero crash inside virtual machines [Johannes Weiner]
+2348d042058e UPSTREAM: psi: clarify the Kconfig text for the default-disable option [Johannes Weiner]
+cadd57784fbf UPSTREAM: psi: fix aggregation idle shut-off [Johannes Weiner]
+f5c3310f1252 UPSTREAM: psi: fix reference to kernel commandline enable [Baruch Siach]
+53958c54ebe3 BACKPORT: psi: make disabling/enabling easier for vendor kernels [Johannes Weiner]
+538496e76625 UPSTREAM: kernel/sched/psi.c: simplify cgroup_move_task() [Olof Johansson]
+62a21b47064e BACKPORT: psi: cgroup support [Johannes Weiner]
+9b754de5824d UPSTREAM: psi: pressure stall information for CPU, memory, and IO [Johannes Weiner]
+1bca0bfb33c0 BACKPORT: sched: introduce this_rq_lock_irq() [Johannes Weiner]
+a071729de65a BACKPORT: sched: sched.h: make rq locking and clock functions available in stats.h [Johannes Weiner]
+10533d4a2c6b UPSTREAM: sched: loadavg: make calc_load_n() public [Johannes Weiner]
+bade098c485b UPSTREAM: sched: loadavg: consolidate LOAD_INT, LOAD_FRAC, CALC_LOAD [Johannes Weiner]
+e239b4ac5791 BACKPORT: delayacct: track delays from thrashing cache pages [Johannes Weiner]
+31be3090cfd1 BACKPORT: mm: workingset: tell cache transitions from workingset thrashing [Johannes Weiner]
+85c4712e9e67 mm: workingset: size shadow nodes lru basing on file cache size [Vladimir Davydov]
+975c476904a6 mm: workingset: eviction buckets for bigmem/lowbit machines [Johannes Weiner]
+0e839cfe5f6a mm: workingset: separate shadow unpacking and refault calculation [Johannes Weiner]
+757a1611af1f mm: workingset: #define radix entry eviction mask [Johannes Weiner]
+b00c1cef82b2 UPSTREAM: sched/headers: Remove <linux/sched.h> from <linux/sched/loadavg.h> [Ingo Molnar]
+996966344922 UPSTREAM: sched/headers: Move loadavg related definitions from <linux/sched.h> to <linux/sched/loadavg.h> [Ingo Molnar]
+748dbccb42e0 UPSTREAM: sched/headers, delayacct: Move the 'struct task_delay_info' definition from <linux/sched.h> to <linux/delayacct.h> [Ingo Molnar]
+114910db1d85 UPSTREAM: sched/headers: Prepare for new header dependencies before moving code to <linux/sched/loadavg.h> [Ingo Molnar]
+196cfd3021ad BACKPORT: sched/core: Add wrappers for lockdep_(un)pin_lock() [Matt Fleming]
+84171af2cf45 locking/lockdep, sched/core: Implement a better lock pinning scheme [Peter Zijlstra]
+d9b5ebbaca18 UPSTREAM: Avoid page waitqueue race leaving possible page locker waiting [Linus Torvalds]
+a830495c51c9 UPSTREAM: mm: add PageWaiters indicating tasks are waiting for a page bit [Nicholas Piggin]
+e8880a6d2806 UPSTREAM: workqueue: make workqueue available early during boot [Tejun Heo]
+790667051a2a kthread: prevent deadlock when kthread_mod_delayed_work() races with kthread_cancel_delayed_work_sync() [Petr Mladek]
+fbc7885b4250 kthread_worker: split code for canceling the delayed work timer [Petr Mladek]
+145f156863ac kthread_worker: prevent queuing delayed work from timer_fn when it is being canceled [Zqiang]
+843bff7a33d2 kthread: add kerneldoc for kthread_create() [Jonathan Corbet]
+ceaa081790ea kthread: better support freezable kthread workers [Petr Mladek]
+151d626e36e2 kthread: allow to modify delayed kthread work [Petr Mladek]
+c3947692a967 kthread: allow to cancel kthread work II [Petr Mladek]
+7c89750d693b kthread: initial support for delayed kthread work [Petr Mladek]
+ea063829a6b7 kthread: detect when a kthread work is used by more workers [Petr Mladek]
+412f419922b6 kthread: add kthread_destroy_worker() [Petr Mladek]
+b8cc03440b2b kthread: add kthread_create_worker*() [Petr Mladek]
+e684782cadd8 kthread: allow to call __kthread_create_on_node() with va_list args [Petr Mladek]
+b092cf6339ec kthread/smpboot: do not park in kthread_create_on_cpu() [Petr Mladek]
+28de7130b806 kthread: kthread worker API cleanup [Petr Mladek]
+7158a68d2e34 kthread: rename probe_kthread_data() to kthread_probe_data() [Petr Mladek]
+7e1050a9ae67 page-flags: drop __TestClearPage*() helpers [Kirill A. Shutemov]
+be02d5552637 mm: sanitize page->mapping for tail pages [Kirill A. Shutemov]
+8e815a0d6e5c page-flags: look at head page if the flag is encoded in page->mapping [Kirill A. Shutemov]
+1326080943c7 page-flags: define PG_uptodate behavior on compound pages [Kirill A. Shutemov]
+59b7e535a7f4 page-flags: define PG_uncached behavior on compound pages [Kirill A. Shutemov]
+d3b8148fd9f2 page-flags: define PG_mlocked behavior on compound pages [Kirill A. Shutemov]
+bf3ab68cda9c page-flags: define PG_swapcache behavior on compound pages [Kirill A. Shutemov]
+4b120e9f25b7 page-flags: define PG_swapbacked behavior on compound pages [Kirill A. Shutemov]
+cfe65063a0ef page-flags: define PG_reserved behavior on compound pages [Kirill A. Shutemov]
+16e3f39c0277 page-flags: define behavior of Xen-related flags on compound pages [Kirill A. Shutemov]
+bff431366816 page-flags: define behavior SL*B-related flags on compound pages [Kirill A. Shutemov]
+6b92ab043c8e page-flags: define behavior of LRU-related flags on compound pages [Kirill A. Shutemov]
+c4bc2b3423cd page-flags: define behavior of FS/IO-related flags on compound pages [Kirill A. Shutemov]
+1c933e87ad6c page-flags: trivial cleanup for PageTrans* helpers [Kirill A. Shutemov]
+
+====================
+     2025-06-08    
+====================
+* hardware/google/pixel
+2b38ba69 touch: Migrate to AIDL [Bruno Martins]
+
+* hardware/google/pixel-sepolicy
+bb25323 touch: Migrate to AIDL [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+659f51de3 hal: Add LVACFS microphone feature [pjgowtham]
+
+* lineage/wiki
+4f8f852d wiki: Correct munch_cn megapixel count for main camera [Ricky Cheung]
+4dd65bb8 wiki: Add app group to contributors list [Inhishonor]
+
+* vendor/lineage
+722d1ce1 kernel: Report all modules not found at once [Nikita Savchenko]
+
+====================
+     2025-06-07    
+====================
+* art
+026b9bdf6b Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* device/lineage/sepolicy
+f131c06 sepolicy: Support Touch AIDL [Bruno Martins]
+
+* device/qcom/sepolicy_vndr/legacy-um
+81b4a3f65 sepolicy: trinket: Label odm partitions for fastbootd [Skyblueborb]
+
+* frameworks/av
+4d360975fc Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* frameworks/base
+3b9065901b81 fixup! Keyguard: Add option to scramble pin layout when unlocking (2/2). [Tommy Webb]
+1efc69ef26e6 fixup! Introduce high touch polling rate feature control [Michael Bestas]
+bd853b84fe41 fixup! Add high touch sensitivity and hovering to InputService [Oliver Scott]
+ca6aea399094 fixup! PowerManager: Add proximity check on wake [Oliver Scott]
+a05ba1fcebc1 fixup! SystemUI: Add quick settings pull down with one finger [Oliver Scott]
+71dff9ba120f fixup! Keyguard: Add option to scramble pin layout when unlocking (2/2). [Oliver Scott]
+6e47edf79711 Only toggle MainSwitchBar on successful change listener result [Oliver Scott]
+ac5d174b3d33 Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* hardware/lineage/interfaces
+3427c42 vibrator: Remove no longer used custom HIDL [Bruno Martins]
+6bb297a RIP legacy camera device and provider impl [Bruno Martins]
+5a72233 touch: Add AIDL HAL [Luca Stefani]
+
+* lineage-sdk
+b1685ba1 sdk: Register network callback only if it is enabled. [althafvly]
+75b3eded sdk: Fix UserContentObserver build [Michael Bestas]
+f65d1c05 Wire up AIDL touch HAL [Luca Stefani]
+
+* lineage/hudson
+e7bcb93 Replanting the ancient Ginkgo biloba [Skyblueborb]
+956ca71 Do you hear yanny or laurel? [Skyblueborb]
+20105ac hudson: rhodep: Sync name as per wiki [Anand S]
+b210323 hudson: Add moto g82 5G (rhodep) [Anand S]
+
+* lineage/wiki
+4efcb3b0 wiki: Add laurel_sprout [Skyblueborb]
+8e2ca8f1 wiki: Revive Redmi Note 8/8T [Skyblueborb]
+85c73169 wiki: Fix wording for title length limit in the wiki [Inhishonor]
+5e6233a0 wiki: Clarify the `repo upload` command [Inhishonor]
+53126493 wiki: Add rhodep [Anand S]
+
+* packages/apps/ManagedProvisioning
+80826717 Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* packages/apps/Settings
+f56c4c40ba9 New string for "Hotspot VPN" feature [Chirayu Desai]
+569173e4129 Partially revert "[Settings] Start SettingsDumpService to dump the db log after the db is" [ExactExampl]
+
+* packages/apps/Twelve
+6ed5659 Twelve: Fix hashed token authentication for Subsonic [Robin Slot]
+
+* packages/modules/Bluetooth
+081fe1e126 Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* packages/modules/Connectivity
+42f77549fc Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* packages/modules/Permission
+df15d7434 Merge tag 'android-security-15.0.0_r9' into lineage-22.2 [Michael Bestas]
+
+* vendor/lineage
+f4a6ff20 Add AIDL touch HAL [Luca Stefani]
 
