@@ -1,64 +1,131 @@
 ====================
-     2025-06-18    
-====================
-* device/xiaomi/msm8998-common
-6af8682ac msm8998-common: rootdir: Setup permissions for capacitive_keys_enable [Arian]
-755475818 msm8998-common: overlay: Remove deprecated config_mobile_tcp_buffers/networkAttributes [Michael Bestas]
-
-====================
-     2025-06-17    
-====================
-* device/xiaomi/msm8998-common
-592b8ac59 msm8998-common: Specify androidboot.boot_devices [Chenyang Zhong]
-8def23c73 msm8998-common: Switch to two-stage init mounting [Sebastiano Barezzi]
-
-* kernel/xiaomi/msm8998
-cfca380d8d25 dts: xiaomi: msm8998: Remove fstab entries [Bruno Martins]
-1fa61c878a96 ARM64: defconfig: mi8998: Enable CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
-20997e1bc8ef init: Add CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
-76819babe9db Revert "proc: cmdline: Patch SafetyNet flags" [Nanhumly]
-5c8df3c254d2 Revert "proc: cmdline: Patch vbmeta device state flag for SafetyNet" [Nanhumly]
-bad3f5ca6f51 Revert "cmdline: replace instead of remove for SafetyNet CTS pass" [Nanhumly]
-3078344f13cc Revert "cmdline: extend replace for veritymode 'enforcing' SafetyNet" [Nanhumly]
-a4b8d177b843 Revert "cmdline: Clean up dead code" [Nanhumly]
-
-====================
-     2025-06-16    
-====================
-====================
-     2025-06-15    
-====================
-====================
-     2025-06-14    
-====================
-====================
-     2025-06-13    
+     2025-08-07    
 ====================
 * art
-9e95dc9d4b Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+6df6ed8629 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * build/make
-c3c775a1ac build: Always use release-keys [Pranav Vashi]
+31eeb6e521 build: Always use release-keys [Pranav Vashi]
 
 * hardware/qcom-caf/msm8998/media
-9f7015cd0 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+08242fb1c mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* lineage/hudson
+c38f087 nx659j is back to the game [Wiktor Rudzki]
+
+* lineage/wiki
+5b4f0983 wiki: Revive nx659j [Wiktor Rudzki]
 
 * vendor/lineage
-c8ea2028 Sign Build [Nanhumly]
+584ec98b Sign Build [Nanhumly]
 
 * device/xiaomi/msm8998-common
-08564b6ef msm8998-common: Update blobs from specific sources [Nanhumly]
+7eb854299 msm8998-common: Go back to schedtune [Alcatraz323]
+
+* kernel/xiaomi/msm8998
+c6f5c6ee0c95 Revert "ARM64: defconfig: mi8998: enable UClamp" [Alcatraz323]
 
 ====================
-     2025-06-12    
+     2025-08-06    
+====================
+====================
+     2025-08-05    
+====================
+* device/qcom/sepolicy_vndr/legacy-um
+d94d104a8 sepolicy: holi: Label pmr735a power supply nodes [LuK1337]
+
+* vendor/lineage
+cb1091b3 Update APN settings for Odido/T-Mobile NL [Yannick Binnenweg]
+
+====================
+     2025-08-04    
+====================
+====================
+     2025-08-03    
 ====================
 * lineage/wiki
-4a23da2f wiki: Update Heimdall to v2.2.2 [LuK1337]
-e44d9ac4 wiki: Add link to issues page in submitting to gerrit [Inhishonor]
-e09d1d3e wiki: Add link to issues for contributing_to_apps page [Inhishonor]
-78daee1f wiki: Abandon SunShine [SirRGB]
-a50a1c52 wiki: miami does not have sdcard slot [SirRGB]
+9fe2afe2 wiki: Switch Oxygen Updater download URL from Google Play to GitHub [LuK1337]
 
-* vendor/xiaomi/msm8998-common
-598856f msm8998-common: Update blobs from specific sources [Nanhumly]
+====================
+     2025-08-02    
+====================
+* lineage-sdk
+68106a63 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Aperture
+7f948a8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+47bb118 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+71be01105 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+f7d17ba4d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+d312f415 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+0823949 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+638533e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+01654bb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+aad4d12 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+564c276 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+e5e9566 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+0c8bad3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+608e3772fa6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+06bff70 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+5228c51f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+7c5366bda3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+397c8ca Automatic translation import [LineageOS Infra]
+8b48e37 Twelve: Fix typo in string name [Inhishonor]
+
+* packages/apps/Updater
+a689cb3 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+34ff6b224 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+723daf60 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+85e6e4a Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+ddd8d75 Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+6f3546e Automatic translation import [LineageOS Infra]
+
+====================
+     2025-08-01    
+====================
+* lineage/wiki
+f844c2d8 wiki: Improve wording and commands in blob extraction [Inhishonor]
+e01bffa4 wiki: Fix wording in brotli archive extraction [Inhishonor]
 

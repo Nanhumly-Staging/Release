@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1750242589,
-      "filename": "lineage-22.2-20250618-UNOFFICIAL-chiron-signed.zip",
-      "id": "a88a394aac1390d725f7a917e3407ae1fc4ea7cfa863f43f5c08b9cfc516562d",
+      "datetime": 1754569684,
+      "filename": "lineage-22.2-20250807-UNOFFICIAL-chiron-signed.zip",
+      "id": "bafc500e246dd3ada205e531c16733cc198b853efa3b319b11e07732a9c8b3b8",
       "romtype": "UNOFFICIAL",
-      "size": 1015935572,
-      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/22.2/lineage-22.2-20250618-UNOFFICIAL-chiron-signed.zip",
+      "size": 1024664944,
+      "url": "https://down.warbler.cc/d/XiaoMi-Mix-2/LineageOS/22.2/lineage-22.2-20250807-UNOFFICIAL-chiron-signed.zip",
       "version": "22.2"
     }
   ]
