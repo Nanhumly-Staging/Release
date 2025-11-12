@@ -1,362 +1,241 @@
 ====================
-     2025-10-02    
-====================
-====================
-     2025-10-01    
+     2025-11-12    
 ====================
 * art
-f5bc2b24af Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+aadee86829 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * hardware/interfaces
-3f080dce71 compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
-0ff3ebe498 Restore q/android-4.9 again [Michael Bestas]
+b78637c9a2 compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
+43414c1704 Restore q/android-4.9 again [Michael Bestas]
 
 * hardware/qcom-caf/msm8998/media
-a33266aef mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+8640c4829 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * kernel/configs
-f384424 p/android-4.4: Bump min LTS version [Bruno Martins]
-8c89e49 p/android-4.4: Enforce eBPF configs [Bruno Martins]
-af49c55 Revert "Delete p/android-4.4." [Bruno Martins]
-d2fd1c0 Restore q/android-4.9 [LuK1337]
+8fb6653 p/android-4.4: Bump min LTS version [Bruno Martins]
+0511fdb p/android-4.4: Enforce eBPF configs [Bruno Martins]
+31edf27 Revert "Delete p/android-4.4." [Bruno Martins]
+50bd4a7 Remove usb dependency on rtl8152 on q/android-4.9 [Aaron Kling]
+629f2bc Restore q/android-4.9 [LuK1337]
 
-* vendor/lineage
-52974f20 Sign Build [Nanhumly]
-
-* kernel/xiaomi/msm8998
-894fb039cada f2fs: Adapt node.c to use f2fs_err() [Nanhumly]
-7069d18547aa Merge tag 'v4.4.302-cip103' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-23.0 [Nanhumly]
-
-====================
-     2025-09-30    
-====================
 * lineage/hudson
-8ba4739 Regenerate device dependency mappings [LineageOS Infra]
-
-* kernel/xiaomi/msm8998
-2cfa12e66e2a CIP: Bump version suffix to -cip103 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
-41070c31db01 Merge branch 'linux-4.4.y-st' into linux-4.4.y-cip [Ulrich Hecht]
-df26dbb653e6 Update localversion-st, tree is up-to-date with 4.19-st8. [Ulrich Hecht]
-61340b13c3c1 net: dlink: fix multicast stats being counted incorrectly [Yeounsu Moon]
-39143eb61809 atm: atmtcp: Prevent arbitrary write in atmtcp_recv_control(). [Kuniyuki Iwashima]
-d7ef64e752bc usb: musb: omap2430: fix device leak at unbind [Johan Hovold]
-f3c9f4951d38 cdc-acm: fix race between initial clearing halt and open [Oliver Neukum]
-63ee13edccd7 usb: hub: Don't try to recover devices lost during warm reset. [Mathias Nyman]
-58c3b0e7ca5f usb: hub: avoid warm port reset during USB3 disconnect [Mathias Nyman]
-0f4815799389 net: usbnet: Avoid potential RCU stall on LINK_CHANGE event [John Ernberg]
-f4df277f2b66 rtc: ds1307: remove clear of oscillator stop flag (OSF) in probe [Meagan Lloyd]
-b263354e3695 pNFS: Fix uninited ptr deref in block/scsi layout [Sergey Bashirov]
-361ddd5ae9dc net: fec: allow disable coalescing [Jonas Rebmann]
-23f12f8a81a6 securityfs: don't pin dentries twice, once is enough... [Al Viro]
-ad2f3c28f0a3 netfilter: ctnetlink: fix refcount leak on table dump [Florian Westphal]
-103aea64adf6 fs: Prevent file descriptor table allocations exceeding INT_MAX [Sasha Levin]
-12f7d504dfa0 usb: gadget : fix use-after-free in composite_dev_cleanup() [Tao Xue]
-ac25767ccd3c net/packet: fix a race in packet_set_ring() and packet_notifier() [Quang Le]
-4d21096bf598 netfilter: xt_nfacct: don't assume acct name is null-terminated [Florian Westphal]
-453ac67b6b9b iwlwifi: Add missing check for alloc_ordered_workqueue [Jiasheng Jiang]
-dbb3112350bf usb: hub: fix detection of high tier USB3 devices behind suspended hubs [Mathias Nyman]
-125f687a948c net_sched: sch_sfq: move the limit validation [Octavian Purdila]
-20c06a7b918e net_sched: sch_sfq: annotate data-races around q->perturb_period [Eric Dumazet]
-39c03435df22 squashfs: fix memory leak in squashfs_fill_super [Phillip Lougher]
-300a10fab45b pNFS: Handle RPC size limit for layoutcommits [Sergey Bashirov]
-a36ed859c25e usb: core: usb_submit_urb: downgrade type check [Oliver Neukum]
-31c9d532a8f9 udf: Verify partition map count [Jan Kara]
-0e7f66514d75 efivarfs: Fix slab-out-of-bounds in efivarfs_d_compare [Li Nan]
-7fd405d1083c sctp: initialize more fields in sctp_v6_from_sk() [Eric Dumazet]
-991dad42f2f3 net/atm: remove the atmdev_ops {get, set}sockopt methods [Christoph Hellwig]
-5d66923d7eea Bluetooth: hci_event: Detect if HCI_EV_NUM_COMP_PKTS is unbalanced [Luiz Augusto von Dentz]
-d551ce8efca3 powerpc/kvm: Fix ifdef to remove build warning [Madhavan Srinivasan]
-63794f831a7c net: ipv4: fix regression in local-broadcast routes [Oscar Maes]
-e95f00ce3019 vhost/net: Protect ubufs with rcu read lock in vhost_net_ubuf_put() [Nikolay Kuratov]
-c51659f5f910 scsi: core: sysfs: Correct sysfs attributes access rights [Damien Le Moal]
-54b8c8ed8628 ftrace: Fix potential warning in trace_printk_seq during ftrace_dump [Tengda Wu]
-72fadcf48789 alloc_fdtable(): change calling conventions. [Al Viro]
-db35758abe9f scsi: qla4xxx: Prevent a potential error pointer dereference [Dan Carpenter]
-3bc962304bdf Bluetooth: fix use-after-free in device_for_each_child() [Dmitry Antipov]
-ca41494d8302 btrfs: populate otime when logging an inode item [Qu Wenruo]
-7a8e7a1e813e f2fs: fix to avoid out-of-boundary access in dnode page [Chao Yu]
-d9f80dfd6468 media: v4l2-ctrls: Don't reset handler's error in v4l2_ctrl_handler_free() [Sakari Ailus]
-ae1a8769c0e3 USB: cdc-acm: do not log successful probe on later errors [Johan Hovold]
-5f358ce272f1 nfsd: handle get_client_locked() failure in nfsd4_setclientid_confirm() [Jeff Layton]
-64e8efb8c134 tracing: Add down_write(trace_event_sem) when adding trace event [Steven Rostedt]
-2f793fc684e2 iio: hid-sensor-prox: Fix incorrect OFFSET calculation [Zhang Lixu]
-3e154bb10374 net: usbnet: Fix the wrong netif_carrier_on() call [Ammar Faizi]
-ce40576a270d kbuild: Add KBUILD_CPPFLAGS to as-option invocation [Nathan Chancellor]
-c656baeed49c kbuild: Add CLANG_FLAGS to as-instr [Nathan Chancellor]
-682081e92f15 mips: Include KBUILD_CPPFLAGS in CHECKFLAGS invocation [Nathan Chancellor]
-9b11bb3a376a kbuild: Update assembler calls to use proper flags and language target [Nick Desaulniers]
-03d8c8985e91 ARM: 9448/1: Use an absolute path to unified.h in KBUILD_AFLAGS [Nathan Chancellor]
-2b18ab7b2cca USB: storage: Ignore driver CD mode for Realtek multi-mode Wi-Fi dongles [Zenm Chen]
-2883ef25be05 usb: storage: realtek_cr: Use correct byte order for bcs->Residue [Thorsten Blum]
-e0961cf85935 usb: quirks: Add DELAY_INIT quick for another SanDisk 3.2Gen1 Flash Drive [Miao Li]
-e5f8bea7a947 fs/buffer: fix use-after-free when call bh_read() helper [Ye Bin]
-a7a93956b615 media: ov2659: Fix memory leaks in ov2659_probe() [Zhang Shurong]
-b7ae4cd0ace5 media: usbtv: Lock resolution while streaming [Ludwig Disterhof]
-d79f8c1bfde8 media: gspca: Add bounds checking to firmware parser [Dan Carpenter]
-6b72479d6686 jbd2: prevent softlockup in jbd2_log_do_checkpoint() [Baokun Li]
-a9bcb21a91de mtd: rawnand: fsmc: Add missing check after DMA map [Thomas Fourier]
-2defd08fbb75 wifi: brcmsmac: Remove const from tbl_ptr parameter in wlc_lcnphy_common_read_table() [Nathan Chancellor]
-f61a39c942ff ata: libata-scsi: Fix ata_to_sense_error() status handling [Damien Le Moal]
-61f8cfe1b6ee Revert "vgacon: Add check for vc_origin address range in vgacon_scroll()" [Helge Deller]
-1d54d0d8e2ca vt: defkeymap: Map keycodes above 127 to K_HOLE [Myrrh Periwinkle]
-3bba8ac27612 usb: atm: cxacru: Merge cxacru_upload_firmware() into cxacru_heavy_init() [Nathan Chancellor]
-0b547bcf670a m68k: Fix lost column on framebuffer debug console [Finn Thain]
-ad68dce39add serial: 8250: fix panic due to PSLVERR [Yunhui Cui]
-d5da65a77f84 media: uvcvideo: Fix 1-byte out-of-bounds read in uvc_parse_format() [Youngjun Lee]
-b5bc25421eb0 misc: rtsx: usb: Ensure mmc child device is active when card is present [Ricky Wu]
-e9c5024517fe pNFS: Fix disk addr range check in block/scsi layout [Sergey Bashirov]
-e8349aed21c5 pNFS: Fix stripe mapping in block/scsi layout [Sergey Bashirov]
-a880f4bb6916 ipmi: Fix strcpy source and destination the same [Corey Minyard]
-bd90ed1ca12f kconfig: lxdialog: fix 'space' to (de)select options [Yann E. MORIN]
-73074f0d52bf kconfig: gconf: fix potential memory leak in renderer_edited() [Masahiro Yamada]
-e91e308f3fae kconfig: gconf: avoid hardcoding model2 in on_treeview2_cursor_changed() [Masahiro Yamada]
-f73f2fa4971a kconfig: nconf: Ensure null termination where strncpy is used [Shankari Anand]
-8bde352e004e kconfig: lxdialog: replace strcpy() with strncpy() in inputbox.c [Suchit Karunakaran]
-a1c3a36b531e media: uvcvideo: Fix bandwidth issue for Alcor camera [chenchangcheng]
-300b4bf5bc85 media: dvb-frontends: w7090p: fix null-ptr-deref in w7090p_tuner_write_serpar and w7090p_tuner_read_serpar [Alex Guo]
-fc86e5fcb06e media: dvb-frontends: dib7090p: fix null-ptr-deref in dib7090p_rw_on_apb() [Alex Guo]
-e99d60237708 media: tc358743: Increase FIFO trigger level to 374 [Dave Stevenson]
-7650b3bd6d7d scsi: mpt3sas: Correctly handle ATA device errors [Damien Le Moal]
-105d7985dbc8 jfs: upper bound check of tree index in dbAllocAG [Arnaud Lecomte]
-0ad5e3a65ebc jfs: Regular file corruption check [Edward Adam Davis]
-25da8eb772c9 jfs: truncate good inode pages when hard link is 0 [Lizhi Xu]
-cf483a81b500 scsi: bfa: Double-free fix [jackysliu]
-fa17e361c675 MIPS: vpe-mt: add missing prototypes for vpe_{alloc,start,stop,free} [Shiji Yang]
-4a3c2e2280b4 scsi: libiscsi: Initialize iscsi_conn->dd_data only if memory is allocated [Showrya M N]
-1de091a6fe31 ext4: do not BUG when INLINE_DATA_FL lacks system.data xattr [Theodore Ts'o]
-4be5b9a24b76 vhost: fail early when __vhost_add_used() fails [Jason Wang]
-75d0f6fc3246 net: vlan: Replace BUG() with WARN_ON_ONCE() in vlan_dev_* stubs [Gal Pressman]
-4de448c3f1d5 netmem: fix skb_frag_address_safe with unreadable skbs [Mina Almasry]
-af679b057f7e wifi: rtlwifi: fix possible skb memory leak in `_rtl_pci_rx_interrupt()`. [Thomas Fourier]
-bcf1c03fbd95 wifi: iwlwifi: dvm: fix potential overflow in rs_fill_link_cmd() [Rand Deeb]
-9ee7ed9cd614 (powerpc/512) Fix possible `dma_unmap_single()` on uninitialized pointer [Thomas Fourier]
-44d146a06fa7 wifi: iwlwifi: mvm: fix scan request validation [Avraham Stern]
-d66ef9603f6e net: thunderx: Fix format-truncation warning in bgx_acpi_match_id() [Alok Tiwari]
-61b83f92afbc net: ipv4: fix incorrect MTU in broadcast routes [Oscar Maes]
-e1c298f4e183 et131x: Add missing check after DMA map [Thomas Fourier]
-d0316d0021c1 wifi: cfg80211: reject HTC bit for management frames [Johannes Berg]
-2ad1b583b60e ktest.pl: Prevent recursion of default variable options [Steven Rostedt]
-7f3d96020f6a ASoC: codecs: rt5640: Retry DEVICE_ID verification [Xinxin Wan]
-ba514447f462 ALSA: hda/ca0132: Fix buffer overflow in add_tuning_control [Lucy Thrun]
-bcaa95c82ef4 platform/x86: thinkpad_acpi: Handle KCOV __init vs inline mismatches [Kees Cook]
-12497a61d07a pm: cpupower: Fix the snapshot-order of tsc,mperf, clock in mperf_stop() [Gautham R. Shenoy]
-c559d57949e3 ALSA: intel8x0: Fix incorrect codec index usage in mixer for ICH4 [Alok Tiwari]
-c1cebf4bbddc mmc: rtsx_usb_sdmmc: Fix error-path in sd_set_power_mode() [Ulf Hansson]
-0aa22e22972d ACPI: processor: fix acpi_object initialization [Sebastian Ott]
-53b334b7b0dc PM: sleep: console: Fix the black screen issue [tuhaowen]
-5e183e5bb974 ARM: tegra: Use I/O memcpy to write to IRAM [Aaron Kling]
-ab255ec2d8ef ASoC: soc-dapm: set bias_level if snd_soc_dapm_set_bias_level() was successed [Kuninori Morimoto]
-74cb0ad58a54 selftests/futex: Define SYS_futex on 32-bit architectures with 64-bit time_t [Cynthia Huang]
-cc2fe511d93e usb: xhci: print xhci->xhc_state when queue_command failed [Su Hui]
-988529890c4c hfs: fix not erasing deleted b-tree node issue [Viacheslav Dubeyko]
-88873360b8f4 hfsplus: don't use BUG_ON() in hfsplus_create_attributes_file() [Tetsuo Handa]
-9dd697ef2d52 hfsplus: fix slab-out-of-bounds read in hfsplus_uni2asc() [Viacheslav Dubeyko]
-885640dbfd2b NFSD: detect mismatch of file handle and delegation stateid in OPEN op [Dai Ngo]
-5d55d85fb82d netlink: avoid infinite retry looping in netlink_unicast() [Fedor Pchelkin]
-f37db2578d06 MIPS: mm: tlb-r4k: Uniquify TLB entries on init [Jiaxun Yang]
-6c4565db3ec7 USB: serial: option: add Foxconn T99W709 [Slark Xiao]
-bb9b22ec335b vsock: Do not allow binding to VMADDR_PORT_ANY [Budimir Markovic]
-b74bf49820ad perf/core: Exit early on perf_mmap() fail [Thomas Gleixner]
-6d3b4f4a4598 perf/core: Don't leak AUX buffer refcount on allocation failure [Thomas Gleixner]
-78b50b96fb9c pptp: fix pptp_xmit() error path [Eric Dumazet]
-1a40ee98b340 benet: fix BUG when creating VFs [Michal Schmidt]
-4e7c2fb482ef ipv6: reject malicious packets in ipv6_gso_segment() [Eric Dumazet]
-ec92023f3e0e pptp: ensure minimal skb length in pptp_xmit() [Eric Dumazet]
-65ce8e11f553 netpoll: prevent hanging NAPI when netcons gets enabled [Jakub Kicinski]
-ecdedb00b2f8 rtc: pcf8563: fix incorrect maximum clock rate handling [Brian Masney]
-fdbc0fe5e9fc rtc: hym8563: fix incorrect maximum clock rate handling [Brian Masney]
-14f9c7c522df jfs: fix metapage reference count leak in dbAllocCtl [Zheng Yu]
-a8729826641e fbdev: imxfb: Check fb_add_videomode to prevent null-ptr-deref [Chenyuan Yang]
-e71941af6cfc crypto: qat - fix seq_file position update in adf_ring_next() [Giovanni Cabiddu]
-dc3e2c90b6c2 dmaengine: nbpfaxi: Add missing check after DMA map [Thomas Fourier]
-3a7a5250abfd crypto: img-hash - Fix dma_unmap_sg() nents value [Thomas Fourier]
-307b4e8a134a scsi: isci: Fix dma_unmap_sg() nents value [Thomas Fourier]
-0d42474e23bd scsi: mvsas: Fix dma_unmap_sg() nents value [Thomas Fourier]
-fed160268db1 power: supply: max14577: Handle NULL pdata when CONFIG_OF is not set [Charles Han]
-1116e30dc178 mwl8k: Add missing check after DMA map [Thomas Fourier]
-824a89c3cd81 arch: powerpc: defconfig: Drop obsolete CONFIG_NET_CLS_TCINDEX [Johan Korsnes]
-ac416348b3f3 tcp: fix tcp_ofo_queue() to avoid including too much DUP SACK range [xin.guo]
-26c8a3274533 wifi: rtl818x: Kill URBs before clearing tx status queue [Daniil Dulov]
-d15b8c3a0024 staging: nvec: Fix incorrect null termination of battery manufacturer [Alok Tiwari]
-dc91ce73dbc9 samples: mei: Fix building on musl libc [Brahmajit Das]
-1a2a8decc7f5 Revert "vmci: Prevent the dispatching of uninitialized payloads" [Greg Kroah-Hartman]
-69854ac14421 vmci: Prevent the dispatching of uninitialized payloads [Lizhi Xu]
-9ef66236a583 staging: fbtft: fix potential memory leak in fbtft_framebuffer_alloc() [Abdun Nihaal]
-3e261d1f15c5 ARM: dts: vfxxx: Correctly use two tuples for timer address [Krzysztof Kozlowski]
-55140cc149e1 ASoC: ops: dynamically allocate struct snd_ctl_elem_value [Arnd Bergmann]
-795554e778bc usb: phy: mxs: disconnect line when USB charger is attached [Xu Yang]
-89d03196b7bd comedi: comedi_test: Fix possible deletion of uninitialized timers [Ian Abbott]
-70830b57832a nilfs2: reject invalid file types when reading inodes [Ryusuke Konishi]
-5a47ea5e31b0 net: appletalk: fix kerneldoc warnings [Andrew Lunn]
-2b5b965eb4eb net_sched: sch_sfq: don't allow 1 packet limit [Octavian Purdila]
-
-====================
-     2025-09-29    
-====================
-* lineage/hudson
-25b46d6 Regenerate device dependency mappings [LineageOS Infra]
+362cfeb Two-face [Andrey Sprynga]
+c529ac8 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-2860df0 Updated to 28-Sep-2025 22:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-7b8ba9e best-caf-kernel: chmod +x [LuK1337]
-
-====================
-     2025-09-28    
-====================
-* external/chromium-webview/prebuilt/arm
-35d15d3 Update Chromium Webview arm to 140.0.7339.207 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-6760647 Update Chromium Webview arm64 to 140.0.7339.207 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-c18e219 Update Chromium Webview x86 to 140.0.7339.207 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-856f1ce Update Chromium Webview x86_64 to 140.0.7339.207 [Kevin F. Haggerty]
-
-* hardware/lineage/interfaces
-ff5ea6d sensors: Add a sensors 2.0 -> 1.0 subhal wrapper [bengris32]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-06775df25 hal: Add missing headers for ultrasound_proximity [AdarshGrewal]
-
-* lineage/hudson
-c9c398a 洱海 [LuK1337]
+136c0a7 Updated aosp-minimal to 11-Nov-2025 23:22 UTC [Tim Schumacher]
+f918fe2 aosp-minimal: Include release branches [Tim Schumacher]
+d7ea5e6 Updated to 11-Nov-2025 23:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-9264484e wiki: Add erhai [LuK1337]
+2bccf08d wiki: Add Nubia X [Andrey Sprynga]
 
-* device/xiaomi/sagit
-65a7660 sagit: sensors: Drop sensors.elliptic.so from hals.conf [Nanhumly]
-6bf26c0 sagit: Migrate to AIDL sensors multihal [LuK1337]
+* vendor/lineage
+6a033f8f Sign Build [Nanhumly]
+5d460828 config: tablet: Bring back `android.software.freeform_window_management` feature [Yumi Yukimura]
+00d7786f lineage: Enable R8 code shrinking and optimizations [Jared Duke]
 
-* device/xiaomi/msm8998-common
-e020aba msm8998-common: Use regex to disable slim daemon process stat [BladeRunner-A2C]
-87c854b msm8998-common: Fix seccomp policy for imsrtp [Flicker372]
-33259e2 msm8998-common: proprietary: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
-9b06144 msm8998-common: Update blobs from specific sources [Nanhumly]
-1990a4e msm8998-common: Migrate to AIDL sensors multihal [LuK1337]
-aae3306 msm8998-common: Migrate to AIDL camera provider [LuK1337]
-1c90516 msm8998-common: Remove vendor/lineage device framework matrix inclusion [LuK1337]
-
-* vendor/xiaomi/sagit
-59f8df1 sagit: Migrate to AIDL sensors multihal [LuK1337]
-
-* vendor/xiaomi/msm8998-common
-d182097 msm8998-common: Fix seccomp policy for imsrtp [Flicker372]
-2fb713d msm8998-common: proprietary: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
-9816360 msm8998-common: Update blobs from specific sources [Nanhumly]
-abe7870 msm8998-common: Migrate to AIDL sensors multihal [LuK1337]
+* kernel/xiaomi/msm8998
+e05039f6e93f sched: Fix sched_lib_mask_force build for k4.4 [Alcatraz323]
+18cc0dbf3850 sched: Improve the scheduler [Pavankumar Kondeti]
+6c46a7af3be1 sched/core: fix userspace affining threads incorrectly [Abhijeet Dharmapurikar]
 
 ====================
-     2025-09-27    
+     2025-11-11    
 ====================
 * android
-9548d9e manifest: Forks for recommended patches [Michael Bestas]
-
-* build/release
-f11d54a5 Enable temporary_pairing_tracking into 25Q2 FRC [Thomas Girardier]
-324f68f4 Add flag com.android.graphics.surfaceflinger.flags.disable_synthetic_vsync_for_performance to bp2a. [boq-halyard-service-composite@system.gserviceaccount.com]
-
-* device/qcom/sepolicy-legacy-um
-5fa0de2fe legacy: Copy AIDL NFC HAL policy from non-legacy [Edwin Moquete]
-
-* external/chromium-webview/patches
-22fb1dd Update Chromium Webview to 140.0.7339.207 [Kevin F. Haggerty]
-
-* frameworks/proto_logging
-fcbbaa85 Log UID in wifi toggle metrics [Oscar Shu]
-
-* lineage/mirror
-6140202 Updated lineage-minimal to 26-Sep-2025 22:02 UTC [Tim Schumacher]
-196583b Updated to 26-Sep-2025 11:59 UTC [Michael Bestas]
-
-* lineage/scripts
-5147852 build-webview: Update default webview to 140.0.7339.207 [Kevin F. Haggerty]
-
-* packages/apps/FMRadio
-7e89b01 FmService: Set RECEIVER_NOT_EXPORTED [Cyber Knight]
-
-* packages/apps/Jelly
-2d8559b Jelly: Load scripts once [Luca Stefani]
-67d7b58 Jelly: Implement Web Share API [SaeedDev94]
-
-* packages/apps/Stk
-ffb951e Fxied edge-to-edge UX support for StkLauncherActivity. [arunvoddu]
-
-* system/apex
-37a7810a apexd: loosen no-overlap check on install [Jooyung Han]
-
-====================
-     2025-09-26    
-====================
-* bootable/recovery
-e30a8e84 recovery: Make OTA safety check A/B package only [LuK1337]
-
-* build/make
-63edc917c1 Mark "disable_synthetic_vsync_for_performance" flag as exported [Dennis Kiilerich]
-
-* frameworks/av
-8a1d0df53d AudioFlinger: more duplicating mixer fixes [Eric Laurent]
-f19e42d36e AudioFlinger: duplicating output underrun improvements [Eric Laurent]
-
-* frameworks/base
-85331b069c48 Disable concurrent MQ in SysUI [Shai Barack]
-ebf730651113 Fix a bug where turning off Bluetooth before CDM BLE device discovery timeout results in a crash. [Raphael Kim]
-f772e4561233 Register IME back callback on new dispatcher [Cosmin Băieș]
-ca17c13d2808 Remove CompanionServicesRegister [Evan Chen]
-984609dd9aff Fix association XML parsing issues [Guojing Yuan]
-406b2d0beb30 Fix deadlock b/w historical and discrete registry in xml implementation [Manjeet Rulhania]
-
-* frameworks/native
-4c953eac80 Mark "disable_synthetic_vsync_for_performance" flag as exported [Dennis Kiilerich]
-9297ad6a65 Turn off synthetic VSYNC when adjusting thread scheduling for performance [Dennis Kiilerich]
-
-* frameworks/opt/telephony
-dc24303848 satellite data service policy fixes [Nagendra Prasad Nagarle Basavaraju]
-4820f09b94 Update the logic of calling setSatelliteEnabledForCarrier HAL API. [Aishwarya Mallampati]
-
-* hardware/interfaces
-25fab97631 Bluetooth HAL: fix suspend behavior [Eric Laurent]
-
-* hardware/libhardware
-2c0db7eb Avoid log fatal when converting between pcm_format and audio_format_t. [jiabin]
-
-* lineage/hudson
-7455f3c aston joins the race [inferno0230]
-8fe97e9 benz joins the race [inferno0230]
+06332e0 manifest: Track vendor/apn [LuK1337]
 
 * lineage/wiki
-cd0ce91f wiki: Swap aston.png to one that matches other OnePlus devices [LuK1337]
-0c5e7876 wiki: Add OnePlus 12R (aston) [inferno0230]
+0c60a8a6 wiki: Rewrite extracting proprietary blobs page [Hex]
+0819dc7c pages: {libvirt-qemu,utm}: LineageOS 23.0 is supported [Yumi Yukimura]
 
-* packages/modules/Bluetooth
-bf95acfe44 Fix the parameter ordering of btm_send_hci_set_scan_params [Ömer Faruk Yılmaz]
-92472d2ec2 Change Android Headtracker Codec ID to 0x0002 [Himanshu Rawat]
-b8a94470a8 25Q3: Remove sdp_ccb_clean_up_after_l2cap_disc [Jack He]
-b952f1a7fa SDP: Clean up CCBs when L2CAP disconnects [Katherine Lai]
-af64ccc580 Add flag for cleaning up SDP CCBs when L2CAP disconnects [Katherine Lai]
+* vendor/apn
+2341ff2 Add a helper to pretty format apn xmls and run it [Arian]
+ebf7f73 Initial commit [LuK1337]
 
-* packages/modules/Connectivity
-7fe8e5653f Remove pending BT request when service disconnects [Quang Anh Luong]
-f94e845024 clatd: disable seccomp [Maciej Żenczykowski]
-58323d3f27 Fix NetworkAgent 4-way binder interlock [Chalard Jean]
+====================
+     2025-11-10    
+====================
+* frameworks/base
+2dc97cf3d623 SystemUI: Hide HEVC screen recording when no HW codec is available [Ido Ben-Hur]
 
-* packages/modules/Wifi
-f55b2f7a01 Log caller UID for wifi toggle metrics [Oscar Shu]
-155229ec7f Set minimum connect choice RSSI [Oscar Shu]
-7ad55f06a8 Enable support for Continuous Nan Ranging [Shreyat Pandey]
-
-* packages/services/Telecomm
-1cfce4f5f Prevent infinite SPEAKER_OFF looping [Pranav Madapurmath]
+* lineage/mirror
+7556153 Updated to 09-Nov-2025 23:01 UTC [Tim Schumacher]
 
 * system/core
-d8e680dcd libprocessgroup: Mount cpuset v1 with cpuset_v2_mode [T.J. Mercier]
+914a773aa core: Fix host_init_verifier for devices with overriding services [Alexander Koskovich]
+
+* tools/extract-utils
+4bbc4b9 extract_utils: update pre-commit hooks to the latest versions [LuK1337]
 
 * vendor/lineage
-665b11d8 kernel: Set scmversion for kernel platform [Aaron Kling]
-88858796 kernel: Fix building kernel platform with in-tree out [Aaron Kling]
+3d4d3841 Move APNs data to vendor/apn [LuK1337]
+
+====================
+     2025-11-09    
+====================
+* device/qcom/sepolicy
+84e7b7b4a sepolicy: Add sepolicy rules for PowerState HAL [Sneh Mankad]
+9d8687601 Merge tag 'LA.QSSI.16.0.r1-10300-qssi.0' into staging/lineage-23.0_merge-LA.QSSI.16.0.r1-10300-qssi.0 [Michael Bestas]
+ecd05f7dd Revert "sepolicy: Added attributes for BHS services." [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/legacy-um
+99d386ba6 removing get_prop function as it set_prop provides the same functionality [abarnwal]
+f84755cb4 [NFC][Sepolicy]: Fix the AVC denial issue [Amruth Naga]
+0cdb3b202 qva: Label AOSP ST NFC HAL [Michael Bestas]
+51bc00fc0 NFC: ST: Add the AIDL HAL service [Devendar Gali]
+a3b48b689 NFC: FR74324, Add the new STM NFC HAL service [Devendar Gali]
+69fbe8f16 Merge tag 'LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0' into staging/lineage-23.0_merge-LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+95a405bc8 removing get_prop function as it set_prop provides the same functionality [abarnwal]
+1095fc028 [NFC][Sepolicy]: Fix the AVC denial issue [Amruth Naga]
+e1c11502b qva: Label AOSP ST NFC HAL [Michael Bestas]
+243984360 Merge tag 'LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8550
+805c0886f qva: Label AOSP ST NFC HAL [Michael Bestas]
+45e6960d8 Merge tag 'LA.VENDOR.13.2.0.r1-27200-KAILUA.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.13.2.0.r1-27200-KAILUA.QSSI16.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8650
+d6d84e1ac removing get_prop function as it set_prop provides the same functionality [abarnwal]
+8e0d78349 [NFC][Sepolicy]: Fix the AVC denial issue [Amruth Naga]
+f1b185bee qva: Label AOSP ST NFC HAL [Michael Bestas]
+56f1a2da5 Merge tag 'LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0' into staging/lineage-23.0_merge-LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8750
+447107e0d removing get_prop function as it set_prop provides the same functionality [abarnwal]
+ba4de13c9 [NFC][Sepolicy]: Fix the AVC denial issue [Amruth Naga]
+408812078 qva: Label AOSP ST NFC HAL [Michael Bestas]
+71e3f7627 Merge tag 'LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0 [Michael Bestas]
+
+* external/chromium-webview/prebuilt/arm
+6f94e76 Update Chromium Webview arm to 142.0.7444.138 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+70d1609 Update Chromium Webview arm64 to 142.0.7444.138 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+84c74ff Update Chromium Webview x86 to 142.0.7444.138 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+69244c6 Update Chromium Webview x86_64 to 142.0.7444.138 [Kevin F. Haggerty]
+
+* hardware/libhardware
+d8e910cf Revert "hardware/libhw: Add display_defs.h to declare custom enums/flags" [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+6afc6e6245 Merge tag 'LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0' into staging/lineage-23.0_merge-LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+70e7102f3 Merge tag 'LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+0b70a90c0 Merge tag 'LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/dataipa
+191b3fc9 Merge tag 'LA.VENDOR.13.2.0.r1-27200-KAILUA.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.13.2.0.r1-27200-KAILUA.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/dataipa
+5f520e78 Merge tag 'LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0' into staging/lineage-23.0_merge-LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/audio/agm
+d6fba18b Merge tag 'AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0' into staging/lineage-23.0_merge-AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/audio/pal
+02956690e Merge tag 'AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0' into staging/lineage-23.0_merge-AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/audio/primary-hal
+f60ec5944 Merge tag 'AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0' into staging/lineage-23.0_merge-AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/dataipa
+845bfb98 Merge tag 'LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+a4298a2 Merge tag 'LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal-legacy-um
+74bce7c Merge tag 'LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0' into staging/lineage-23.0_merge-LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+7aa5591c Merge tag 'WLAN.LA.1.0.r1-08900-pakala.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan into staging/lineage-23.0_merge-WLAN.LA.1.0.r1-08900-pakala.0 [Michael Bestas]
+82a363ca Revert "wifi_hal: Fix KW issue" [Michael Bestas]
+
+* vendor/codeaurora/telephony
+522eeb1 Merge tag 'LA.QSSI.16.0.r1-10300-qssi.0' into staging/lineage-23.0_merge-LA.QSSI.16.0.r1-10300-qssi.0 [Michael Bestas]
+
+* vendor/lineage
+52a3abe1 vars: Update qcom tags [Michael Bestas]
+d40f38d6 release: Bump Security String to 2025-11-01 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/audio
+7d983f8 Merge tag 'LA.QSSI.16.0.r1-10300-qssi.0' into staging/lineage-23.0_merge-LA.QSSI.16.0.r1-10300-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/display
+7cbc3cb7 Merge tag 'LA.QSSI.16.0.r1-10300-qssi.0' into staging/lineage-23.0_merge-LA.QSSI.16.0.r1-10300-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+827db65 Merge tag 'LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0' into staging/lineage-23.0_merge-LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0 [Michael Bestas]
+
+* device/xiaomi/msm8998-common
+556f5c8a msm8998-common: Set WIFI_DRIVER_DEFAULT to qca_cld3 [Sebastiano Barezzi]
+dcda709c msm8998-common: rootdir: Add missing restore command for ufs sleep [Alcatraz323]
+
+====================
+     2025-11-08    
+====================
+* external/chromium-webview/patches
+5cb676d Update Chromium Webview to 142.0.7444.138 [Kevin F. Haggerty]
+
+* lineage/scripts
+137c96c build-webview: Update default webview to 142.0.7444.138 [Kevin F. Haggerty]
+
+* lineage/wiki
+3d8f6bec wiki: lemonades: Update maintainers [Thomas Turner]
+1ebd2751 wiki: Correct vermeer's ram specifications to LPDDR5X [Leviscape]
+
+* vendor/lineage
+0f3d6ea1 config: Set ro.debuggable=0 for userdebug builds [LuK1337]
+c84fb58d Revert "overlay: Don't allow toggling camera" [Aryan]
+
+====================
+     2025-11-07    
+====================
+* bootable/recovery
+c9d9b516 fixup! recovery: Get a proper shell environment in recovery [LuK1337]
+
+* external/vim
+129616c3a Merge tag 'v9.1.1896' of https://github.com/vim/vim into lineage-23.0 [Thomas Turner]
+
+* lineage/crowdin
+70783f1 config: Add OplusEsimSwitcher [Bruno Martins]
+
+* lineage/wiki
+ad5d6279 aston/waffle: Remove eSIM quirk [Bruno Martins]
+49347c5d salami/dodge: Remove eSIM quirk [Bruno Martins]
+
+* packages/apps/LineageParts
+3c69df4 Regenerate contributors cloud (2025-11-05) [Kevin F. Haggerty]
+
+* vendor/lineage
+5216d728 apns: Revert US Mobile Warp changes [_]
+4339301f overlay: Don't allow toggling camera [Hridaya Prajapati]
+
+====================
+     2025-11-06    
+====================
+* build/make
+083aa4a444 Merge commit 'cda08bfbf55aed1e4c79efe6a66bb930d19a8a13' into lineage-23.0 [Michael Bestas]
+
+* lineage/wiki
+13276f2b wiki: Update maintainer list for guacamole [Nick Reuter]
+fb603bed wiki: Update maintainer list for dre [Nick Reuter]
+e56f46d5 wiki: Sync upgrade with download instructions [LuK1337]
+
+* packages/apps/Launcher3
+47681de972 Launcher3: Add resource to enable rotation by default [AnierinB]
+
+* system/apex
+740076ae Merge branch 'android16-security-release' of https://android.googlesource.com/platform/system/apex into lineage-23.0 [Michael Bestas]
 
