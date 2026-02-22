@@ -1,366 +1,161 @@
 ====================
-     2026-01-22    
-====================
-* device/xiaomi/msm8998-common
-6264a37f msm8998-common: Disable PSI for LMKD [Vladimir Mikhailov]
-
-* kernel/xiaomi/msm8998
-489a2c710502 Merge tag 'v4.4.302-cip106' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-23.1 [Nanhumly]
-0f18d2bded0f treewide: Squashed revert of psi backports [Nanhumly]
-
-====================
-     2026-01-21    
+     2026-02-22    
 ====================
 * art
-1c32702c1a Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+72b00e7fda Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
-* hardware/interfaces
-2484cfb52b compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
-268c09b162 Restore q/android-4.9 again [Michael Bestas]
-
-* hardware/qcom-caf/msm8998/media
-ddf28fa95 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
-
-* kernel/configs
-1060a27 p/android-4.4: Bump min LTS version [Bruno Martins]
-84a961b p/android-4.4: Enforce eBPF configs [Bruno Martins]
-7d28b44 Revert "Delete p/android-4.4." [Bruno Martins]
-5a67bf6 Remove usb dependency on rtl8152 on q/android-4.9 [Aaron Kling]
-d0a708f Restore q/android-4.9 [LuK1337]
-
-* lineage/mirror
-7413912 Updated to 20-Jan-2026 23:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-ebcd894 dev: rro: Ignore pseudolocale directories [Michael Bestas]
-9e30a53 dev: rro: Map more google packages [Michael Bestas]
-7e55c6a dev: rro: Use apk file name as the RRO package name [Leviscape]
-
-* vendor/lineage
-63c04252 Sign Build [Nanhumly]
-
-* device/xiaomi/msm8998-common
-3db166f5 msm8998-common: caf-ims-adapter: Run clang-format [Nanhumly]
-7c8bcac7 msm8998-common: overlay: Update config_safe_media_volume_index overlay [Michael Bestas]
-481ac566 msm8998-common: overlay-lineage: Disable blurs by default [basamaryan]
-0a4cad82 msm8998-common: overlay: Reduce blur radius [basamaryan]
-
-* kernel/xiaomi/msm8998
-3b8c06805605 fixup! net: usb: rtl8150: Fix frame padding [Thomas Turner]
-cb8555f4b993 Merge tag 'v4.4.302-cip105' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-23.1 [Nanhumly]
-68e3b3c8a75e BACKPORT: bpf: undo prog rejection on read-only lock failure [Daniel Borkmann]
-a2fd8ba088a3 UPSTREAM: bpf: enforce correct alignment for instructions [Eric Dumazet]
-f02572873a26 UPSTREAM: bpf: reject any prog that failed read-only lock [Daniel Borkmann]
-f2cd0f39edf8 UPSTREAM: bpf: improve read-only handling [Daniel Borkmann]
-ef040236f34d UPSTREAM: bpf: Support replacing cgroup-bpf program in MULTI mode [Andrey Ignatov]
-43d507421e46 UPSTREAM: bpf: Remove unused new_flags in hierarchy_allows_attach() [Andrey Ignatov]
-2fc29cdbb3a4 UPSTREAM: bpf: Simplify __cgroup_bpf_attach [Andrey Ignatov]
-464b12b372eb UPSTREAM: bpf: Verifier, refine 32bit bound in do_refine_retval_range [John Fastabend]
-f4d090504666 BACKPORT: bpf: Verifier, do explicit ALU32 bounds tracking [John Fastabend]
-36b17aacb189 BACKPORT: bpf: Verifier, do_refine_retval_range may clamp umin to 0 incorrectly [John Fastabend]
-24a0302be05d BACKPORT: bpf: Verifer, refactor adjust_scalar_min_max_vals [John Fastabend]
-580785ef54f0 UPSTREAM: bpf: fix buggy r0 retval refinement for tracing helpers [Daniel Borkmann]
-8c71b7b0fb0e BACKPORT: bpf/verifier: refine retval R0 state for bpf_get_stack helper [Yonghong Song]
-302330263dba UPSTREAM: bpf: Simplify reg_set_min_max_inv handling [Jann Horn]
-c4d8856ec8cf UPSTREAM: bpf: Fix precision tracking for unbounded scalars [Daniel Borkmann]
-29b86f574f16 UPSTREAM: bpf: fix precision tracking in presence of bpf2bpf calls [Alexei Starovoitov]
-9c30be8970d4 UPSTREAM: bpf: extend is_branch_taken to registers [Alexei Starovoitov]
-5edb14691ced UPSTREAM: bpf: Account for insn->off when doing bpf_probe_read_kernel [Martin KaFai Lau]
-1ce12a50b683 UPSTREAM: bpf: Switch BPF probe insns to bpf_probe_read_kernel [Daniel Borkmann]
-55d969a8641b UPSTREAM: bpf: Fix bpf_put_raw_tracepoint()'s use of __module_address() [Andrii Nakryiko]
-76c068875b2c UPSTREAM: bpf: mark bpf_event_notify and bpf_event_init as static [Stanislav Fomichev]
-12e23ac76141 BACKPORT: bpf: Replace prog_raw_tp+btf_id with prog_tracing [Alexei Starovoitov]
-41ade89065dc UPSTREAM: bpf: Enforce 'return 0' in BTF-enabled raw_tp programs [Alexei Starovoitov]
-04fc7af143e6 UPSTREAM: bpf: Prepare btf_ctx_access for non raw_tp use case [Martin KaFai Lau]
-38eddf35cb8f UPSTREAM: bpf: Fix bpf_attr.attach_btf_id check [Alexei Starovoitov]
-75892b0e1f52 BACKPORT: bpf: Check types of arguments passed into helpers [Alexei Starovoitov]
-b11955ab47fb BACKPORT: bpf: Add support for BTF pointers to x86 JIT [Alexei Starovoitov]
-aab31e070deb BACKPORT: bpf: Add support for BTF pointers to interpreter [Alexei Starovoitov]
-9374f474777f UPSTREAM: bpf: Attach raw_tp program with BTF via type name [Alexei Starovoitov]
-02193d1a4073 UPSTREAM: bpf: Implement accurate raw_tp context access via BTF [Alexei Starovoitov]
-4625763a97e3 BACKPORT: bpf: Add attach_btf_id attribute to program load [Alexei Starovoitov]
-132f0f20909d UPSTREAM: bpf: Process in-kernel BTF [Alexei Starovoitov]
-43428f96af68 UPSTREAM: seccomp, bpf: disable preemption before calling into bpf prog [Alexei Starovoitov]
-dd1dfafbdea6 UPSTREAM: bpf: Fix precision tracking for BPF_ALU | BPF_TO_BE | BPF_END [Shung-Hsi Yu]
-d46ab19485db UPSTREAM: bpf: Fix incorrect verifier pruning due to missing register precision taints [Daniel Borkmann]
-37b7491d8120 UPSTREAM: bpf: propagate precision in ALU/ALU64 operations [Andrii Nakryiko]
-72c6a4c11451 UPSTREAM: bpf: Track contents of read-only maps as scalars [Andrii Nakryiko]
-006954254a77 UPSTREAM: bpf: Fix incorrect verifier simulation of ARSH under ALU32 [Daniel Borkmann]
-7caf37d6494b UPSTREAM: bpf/verifier: improve register value range tracking with ARSH [Yonghong Song]
-3691d99eb046 UPSTREAM: bpf: remove never-hit branches in verifier adjust_scalar_min_max_vals [Yonghong Song]
-d42d7acd2837 bpf: Align __sk_buff layout with k5.4 [Nanhumly]
-34ec7b8115b7 fixup! bpf: fix pointer offsets in context for 32 bit [Nanhumly]
-7d61800b1bad UPSTREAM: bpf: Add BPF_CGROUP_INET_SOCK_RELEASE hook [Stanislav Fomichev]
-2b4afc5cd5fa UPSTREAM: bpf: Introduce BPF_PROG_TYPE_SK_REUSEPORT [Martin KaFai Lau]
-85199c04e796 UPSTREAM: bpf: Introduce BPF_MAP_TYPE_REUSEPORT_SOCKARRAY [Martin KaFai Lau]
-1ddef5cb81c7 UPSTREAM: net: Add ID (if needed) to sock_reuseport and expose reuseport_lock [Martin KaFai Lau]
-59fc17ca002d UPSTREAM: tcp: Avoid TCP syncookie rejected by SO_REUSEPORT socket [Martin KaFai Lau]
-e24bb9c78faa Revert "tcp: tighten acceptance of ACKs not matching a child socket" [Nanhumly]
-87db2bd308d2 Revert "tcp: Protect accesses to .ts_recent_stamp with {READ,WRITE}_ONCE()" [Nanhumly]
-a333b1a5d960 UPSTREAM: udp: include addrconf.h [Eric Dumazet]
-50b6e825806e UPSTREAM: inet: fix warning about missing prototype [stephen hemminger]
-c5dada680aec UPSTREAM: bpf: Extend bpf_base_func_proto helpers with probe_* and *current_task* [John Fastabend]
-53ea132333bc UPSTREAM: bpf, capability: Introduce CAP_BPF [Alexei Starovoitov]
-4b9106f520cb UPSTREAM: capabilities: Introduce CAP_PERFMON to kernel and user space [Alexey Budankov]
-22bfb2681dc2 BACKPORT: maccess: rename strncpy_from_unsafe_user to strncpy_from_user_nofault [Christoph Hellwig]
-2c876e6818a1 BACKPORT: bpf: Add probe_read_{user, kernel} and probe_read_{user, kernel}_str helpers [Daniel Borkmann]
-833f6341d30f UPSTREAM: uaccess: Add strict non-pagefault kernel-space read function [Daniel Borkmann]
-6f73b327b33f BACKPORT: bpf: Make use of probe_user_write in probe write helper [Daniel Borkmann]
-29e4a0b38311 UPSTREAM: bpf: Check address length before reading address family [Tetsuo Handa]
-e29c0afc4366 UPSTREAM: bpf: add skb->queue_mapping write access from tc clsact [Jesper Dangaard Brouer]
-577cba6387e8 UPSTREAM: net: sock: Change tx_queue_mapping in sock_common to unsigned short [Amritha Nambiar]
-0469943483bb UPSTREAM: bpf: add BPF_PROG_TEST_RUN support for flow dissector [Stanislav Fomichev]
-68df0632d725 UPSTREAM: net/flow_dissector: move bpf case into __skb_flow_bpf_dissect [Stanislav Fomichev]
-3af8dad43c5f UPSTREAM: net/flow_dissector: correctly cap nhoff and thoff in case of BPF [Stanislav Fomichev]
-db76344134c5 UPSTREAM: selftests/bpf: use thoff instead of nhoff in BPF flow dissector [Stanislav Fomichev]
-fff12e255b33 UPSTREAM: flow_dissector: lookup netns by skb->sk if skb->dev is NULL [Willem de Bruijn]
-5dc006da6ae7 UPSTREAM: bpf: fix wrong helper enablement in cgroup local storage [Daniel Borkmann]
-8f66c0a250bb BACKPORT: bpf: sk_msg program helper bpf_msg_push_data [John Fastabend]
-261abc0dd47e UPSTREAM: bpf: fix potential error return [Anton Protopopov]
-ef3b21540e06 UPSTREAM: bpf: Handle BPF_EXIST and BPF_NOEXIST for LPM trie [Hou Tao]
-651a971946ff UPSTREAM: bpf: Fix bpf_strtol and bpf_strtoul helpers for 32bit [Daniel Borkmann]
-54330a042e26 UPSTREAM: bpf: Mark bpf_spin_{lock,unlock}() helpers with notrace correctly [Yonghong Song]
-5ad911b6b4bb UPSTREAM: bpf: Add typecast to bpf helpers to help BTF generation [Alexei Starovoitov]
-5f79b8243b39 UPSTREAM: bpf: Factor out bpf_spin_lock into helpers. [Alexei Starovoitov]
-52afb14fdcec UPSTREAM: btf: fix resolving BTF_KIND_VAR after ARRAY, STRUCT, UNION, PTR [Lorenz Bauer]
-c5eba3e63c9a UPSTREAM: bpf: Prevent decl_tag from being referenced in func_proto arg [Stanislav Fomichev]
-821c20a34d3f UPSTREAM: bpf: Fix integer overflow in argument calculation for bpf_map_area_alloc [Bui Quang Minh]
-1b825e8d2e09 UPSTREAM: bpf: Add oversize check before call kvcalloc() [Bixuan Cui]
-77b01b7d37d2 UPSTREAM: bpf: Fix possible out of bound write in narrow load handling [Andrey Ignatov]
-276ff4cd1d9c UPSTREAM: bpf: Clear zext_dst of dead insns [Ilya Leoshkevich]
-e9bb618f5517 UPSTREAM: bpf: Fix leakage under speculation on mispredicted branches [Daniel Borkmann]
-8358eb20df08 UPSTREAM: bpf: Fix up register-based shifts in interpreter to silence KUBSAN [Daniel Borkmann]
-bda06c819449 UPSTREAM: bpf: Zero-fill re-used per-cpu map element [David Verbeiren]
-6714db7ad81e UPSTREAM: bpf: Permit map_ptr arithmetic with opcode add and offset 0 [Yonghong Song]
-8407b0534f6f UPSTREAM: bpf: Limit caller's stack depth 256 for subprogs with tailcalls [Maciej Fijalkowski]
-e774ccd503b6 UPSTREAM: bpf: Fix sysfs export of empty BTF section [Tony Ambardar]
-52a7c8ebb03b UPSTREAM: bpf: sockmap: Require attach_bpf_fd when detaching a program [Lorenz Bauer]
-32124b94061c UPSTREAM: bpf: Fix map permissions check [Anton Protopopov]
-dab3cb6587cb BACKPORT: bpf: Support llvm-objcopy for vmlinux BTF [Fangrui Song]
-fc8fc8c1977c UPSTREAM: bpf: Fix error return code in map_lookup_and_delete_elem() [Wei Yongjun]
-de24b4e14a94 UPSTREAM: bpf: Fix tnum constraints for 32-bit comparisons [Jann Horn]
-4cc6177280de UPSTREAM: bpf: Undo incorrect __reg_bound_offset32 handling [Daniel Borkmann]
-7902e65dbee7 UPSTREAM: bpf: Initialize storage pointers to NULL to prevent freeing garbage pointer [Andrii Nakryiko]
-ca97d7d741b4 UPSTREAM: bpf: Provide better register bounds after jmp32 instructions [Yonghong Song]
-2117a22eded9 UPSTREAM: bpf: Allow narrow loads of bpf_sysctl fields with offset > 0 [Ilya Leoshkevich]
-db971942595b UPSTREAM: bpf: Clean up indentation issue in BTF kflag processing [Colin Ian King]
-e387a38bc3f5 UPSTREAM: bpf: fix BTF verification of enums [Alexei Starovoitov]
-e84ecc6bf68a UPSTREAM: bpf: fix accessing bpf_sysctl.file_pos on s390 [Ilya Leoshkevich]
-2852b89b299a UPSTREAM: bpf: introduce verifier internal test flag [Alexei Starovoitov]
-f36a4948884b UPSTREAM: bpf: handle 32-bit zext during constant blinding [Naveen N. Rao]
-e4b26851c4b3 UPSTREAM: bpf: add new BPF_BTF_GET_NEXT_ID syscall command [Quentin Monnet]
-facf5c609ca0 UPSTREAM: bpf: add BTF ids in procfs for file descriptors to BTF objects [Quentin Monnet]
-8a3c4ba16abc UPSTREAM: btf: fix return value check in btf_vmlinux_init() [Wei Yongjun]
-1bad95a5d68d UPSTREAM: btf: rename /sys/kernel/btf/kernel into /sys/kernel/btf/vmlinux [Andrii Nakryiko]
-db59a9a7660c BACKPORT: btf: expose BTF info through sysfs [Andrii Nakryiko]
-4075f318b8c6 UPSTREAM: kbuild: handle old pahole more gracefully when generating BTF [Andrii Nakryiko]
-e77b375f3709 UPSTREAM: kbuild: tolerate missing pahole when generating BTF [Andrii Nakryiko]
-576e9f7a1ec6 BACKPORT: kbuild: add ability to generate BTF type info for vmlinux [Andrii Nakryiko]
-2d0739165091 UPSTREAM: bpf: fix narrower loads on s390 [Ilya Leoshkevich]
-9c8ba6652557 UPSTREAM: bpf: fix BPF_ALU32 | BPF_ARSH on BE arches [Jiong Wang]
-78b605dc1c33 UPSTREAM: bpf: fix NULL deref in btf_type_is_resolve_source_only [Stanislav Fomichev]
-59def7f8be92 BACKPORT: bpf: precise scalar_value tracking [Alexei Starovoitov]
-babc1118ddb1 UPSTREAM: bpf: track spill/fill of constants [Alexei Starovoitov]
-9230c55b072b UPSTREAM: bpf: introduce bounded loops [Alexei Starovoitov]
-a79f8646a324 UPSTREAM: bitmap: introduce BITMAP_FROM_U64() [Yury Norov]
-13643c61401e UPSTREAM: bitmap.h, perf/core: Fix the mask in perf_output_sample_regs() [Madhavan Srinivasan]
-22da859cc765 BACKPORT: sysctl: define proc_do_static_key() [Eric Dumazet]
-70b6b175e184 UPSTREAM: bpf: remove __rcu annotations from bpf_prog_array [Stanislav Fomichev]
-c5fe65add9e5 UPSTREAM: bpf: verifier: randomize high 32-bit when BPF_F_TEST_RND_HI32 is set [Jiong Wang]
-425c39963058 UPSTREAM: bpf: introduce new bpf prog load flags "BPF_F_TEST_RND_HI32" [Jiong Wang]
-a6611bf89a91 UPSTREAM: bpf: verifier: insert zero extension according to analysis result [Jiong Wang]
-84146262852b UPSTREAM: bpf: introduce new mov32 variant for doing explicit zero extension [Jiong Wang]
-d2a1db34d487 BACKPORT: bpf: verifier: mark patched-insn with sub-register zext flag [Jiong Wang]
-0c4355dd825f BACKPORT: bpf: verifier: mark verified-insn with sub-register zext flag [Jiong Wang]
-18c323e02f10 bpf: Inherit expanded/patched seen count from old aux data [Daniel Borkmann]
-1c9d59ef23ae UPSTREAM: bpf: convert explored_states to hash table [Alexei Starovoitov]
-7582a9b684ee UPSTREAM: bpf: split explored_states [Alexei Starovoitov]
-a29a8c775129 UPSTREAM: bpf: cleanup explored_states [Alexei Starovoitov]
-28d4076f1cab UPSTREAM: bpf: bump jmp sequence limit [Alexei Starovoitov]
-1c3a90e84524 UPSTREAM: bpf: fix out of bounds backwards jmps due to dead code removal [Daniel Borkmann]
-8f993d125f1e UPSTREAM: bpf: switch to ->free_inode() [Al Viro]
-785ec8b6a67a UPSTREAM: new inode method: ->free_inode() [Al Viro]
-4f6ef952b66d fixup! bpf: Introduce bpf sk local storage [Nanhumly]
-9e30323863cc UPSTREAM: bpf: support BPF_PROG_QUERY for BPF_FLOW_DISSECTOR attach_type [Stanislav Fomichev]
-5474feca6eab UPSTREAM: flow_dissector: fix build failure without CONFIG_NET [Willem de Bruijn]
-1dbcaabcdaea UPSTREAM: bpf: drop bpf_verifier_lock [Alexei Starovoitov]
-04e66d42c1e2 UPSTREAM: bpf: remove global variables [Alexei Starovoitov]
-ebb498733dc8 BACKPORT: bpf: verifier: Allocate idmap scratch in verifier env [Lorenz Bauer]
-c82a796c2bf1 UPSTREAM: bpf: refactor "check_reg_arg" to eliminate code redundancy [Jiong Wang]
-4e9cf8896dec UPSTREAM: bpf: factor out reg and stack slot propagation into "propagate_liveness_reg" [Jiong Wang]
-d17952e0a461 UPSTREAM: bpf: refactor propagate_liveness to eliminate code redundance [Jiong Wang]
-007a3a91b2e2 UPSTREAM: bpf: refactor propagate_liveness to eliminate duplicated for loop [Jiong Wang]
-ffb0f43e652f UPSTREAM: bpf: support input __sk_buff context in BPF_PROG_TEST_RUN [Stanislav Fomichev]
-ce0ab66c5eca UPSTREAM: bpf: refactor bpf_test_run() to separate own failures and test program result [Roman Gushchin]
-617ee81b3679 fixup! bpf: extend cgroup bpf core to allow multiple cgroup storage types [Nanhumly]
-25fe2458be06 bpf/test_run: support cgroup local storage [Roman Gushchin]
-522f49cfd6e0 UPSTREAM: bpf: add tests for direct packet access from CGROUP_SKB [Song Liu]
-c9d41034db23 bpf, test_run: Fix alignment problem in bpf_prog_test_run_skb() [Baisong Zhong]
-6b305f11f735 bpf: fix panic due to oob in bpf_prog_test_run_skb [Daniel Borkmann]
-1065839cdd5e bpf: making bpf_prog_test run aware of possible data_end ptr change [Nikita V. Shirokov]
-4425821562c5 bpf: Align packet data properly in program testing framework. [David Miller]
-88ef915b23e5 bpf: Do not dereference user pointer in bpf_test_finish(). [David Miller]
-52e584303f51 UPSTREAM: bpf: allow for key-less BTF in array map [Daniel Borkmann]
-6ae299580877 UPSTREAM: bpf: allow . char as part of the object name [Daniel Borkmann]
-03d2f7480914 UPSTREAM: bpf: move BPF_F_QUERY_EFFECTIVE after map flags [Lorenz Bauer]
-3f9343636873 UPSTREAM: bpf: do not retain flags that are not tied to map lifetime [Daniel Borkmann]
-e24effcd9e5a UPSTREAM: bpf: implement lookup-free direct value access for maps [Daniel Borkmann]
-ec05d7b9f65f UPSTREAM: bpf: increase verifier log limit [Alexei Starovoitov]
-4dbb15b1bf31 UPSTREAM: bpf: increase complexity limit and maximum program size [Alexei Starovoitov]
-ac894cfe0161 UPSTREAM: bpf: verbose jump offset overflow check [Alexei Starovoitov]
-6e08384324b1 UPSTREAM: bpf: improve verification speed by not remarking live_read [Alexei Starovoitov]
-649da33579bc UPSTREAM: bpf: improve verification speed by droping states [Alexei Starovoitov]
-5115f429c84e UPSTREAM: bpf: add verifier stats and log_level bit 2 [Alexei Starovoitov]
-043191d4babd UPSTREAM: bpf: remove incorrect 'verifier bug' warning [Paul Chaignon]
-d2e90c8ebf6d UPSTREAM: bpf: expose program stats via bpf_prog_info [Alexei Starovoitov]
-6eb5912f49ad UPSTREAM: bpf: enable program stats [Alexei Starovoitov]
-37df7dddb4ad UPSTREAM: bpf: check that BPF programs run with preemption disabled [Peter Zijlstra]
-85d373c8db16 BACKPORT: bpf: offload: add priv field for drivers [Jakub Kicinski]
-454c2fb938a3 UPSTREAM: bpf: Fix IPv6 dport byte-order in bpf_sk_lookup [Joe Stringer]
-d9b56c782d52 UPSTREAM: bpf: Allow sk_lookup with IPv6 module [Joe Stringer]
-0bded8db3601 UPSTREAM: bpf: Add gso_size to __sk_buff [Willem de Bruijn]
-5db27d107fa2 UPSTREAM: bpf: fix access to skb_shared_info->gso_segs [Eric Dumazet]
-39adf668fea2 UPSTREAM: bpf: allow BPF programs access skb_shared_info->gso_segs field [Eric Dumazet]
-f16e73c652db UPSTREAM: bpf: add skb->tstamp r/w access from tc clsact and cg skb progs [Vlad Dumitrescu]
-fbd1c75a2973 UPSTREAM: bpf, cgroups: clean up kerneldoc warnings [Valdis Kletnieks]
-5d9958218e43 UPSTREAM: bpf: fix bitrotted kerneldoc [Valdis Kletnieks]
-b0f3689a89c3 UPSTREAM: bpf: btf: allow typedef func_proto [Yonghong Song]
-a0449babcf4e UPSTREAM: bpf: JIT blinds support JMP32 [Jiong Wang]
-9ef478792878 BACKPORT: bpf: interpreter support for JMP32 [Jiong Wang]
-66e2a8608604 UPSTREAM: bpf: disassembler support JMP32 [Jiong Wang]
-6c37d8e7c847 BACKPORT: bpf: verifier support JMP32 [Jiong Wang]
-c0687a62f6d6 UPSTREAM: bpf: allocate 0x06 to new eBPF instruction class JMP32 [Jiong Wang]
-3258ee8a6056 UPSTREAM: bpf: refactor verifier min/max code for condition jump [Jiong Wang]
-21fda04c9026 UPSTREAM: bpf: notify offload JITs about optimizations [Jakub Kicinski]
-7f4f613eb68a UPSTREAM: bpf: verifier: record original instruction index [Jakub Kicinski]
-326a04a3a356 UPSTREAM: bpf: verifier: remove unconditional branches by 0 [Jakub Kicinski]
-c66fa3d7fa73 UPSTREAM: bpf: verifier: remove dead code [Jakub Kicinski]
-06020f44c3ef UPSTREAM: bpf: verifier: hard wire branches to dead code [Jakub Kicinski]
-7374674c9e37 UPSTREAM: bpf: change parameters of call/branch offset adjustment [Jakub Kicinski]
-6bc3820bee81 bpf: fix truncated jump targets on heavy expansions [Daniel Borkmann]
-d55662d4d8ae UPSTREAM: bpf: fix a (false) compiler warning [Peter Oskolkov]
-336d1b28557d UPSTREAM: bpf: btf: support 128 bit integer type [Yonghong Song]
-7f09fddccb92 UPSTREAM: bpf: verifier: reorder stack size check with dead code sanitization [Jakub Kicinski]
-e0c9e8c123f6 UPSTREAM: bpf: verifier: teach the verifier to reason about the BPF_JSET instruction [Jakub Kicinski]
-e8bed0c9540f UPSTREAM: bpf: Ensure line_info.insn_off cannot point to insn with zero code [Martin KaFai Lau]
-a4c1fd1b9994 UPSTREAM: bpf: log struct/union attribute for forward type [Yonghong Song]
-ff6290ecbba1 UPSTREAM: bpf: support raw tracepoints in modules [Matt Mullins]
-f25e39e4d580 UPSTREAM: bpf: include sub program tags in bpf_prog_info [Song Liu]
-261c17e1316a UPSTREAM: bpf: verifier remove the rejection on BPF_ALU | BPF_ARSH [Jiong Wang]
-55b4ea873103 UPSTREAM: bpf: interpreter support BPF_ALU | BPF_ARSH [Jiong Wang]
-688d4d949600 UPSTREAM: bpf: allow zero-initializing hash map seed [Lorenz Bauer]
-0f8efcce32f7 bpf: use per htab salt for bucket hash [Daniel Borkmann]
-ecc13246e266 UPSTREAM: bpf: fix null pointer dereference on pointer offload [Colin Ian King]
-ce14bcc400f0 BACKPORT: bpf: do not pass netdev to translate() and prepare() offload callbacks [Quentin Monnet]
-22894dec7edd UPSTREAM: bpf: pass prog instead of env to bpf_prog_offload_verifier_prep() [Quentin Monnet]
-ff5ba524e7bb UPSTREAM: bpf: pass destroy() as a callback and remove its ndo_bpf subcommand [Quentin Monnet]
-40203aa181d9 BACKPORT: bpf: pass translate() as a callback and remove its ndo_bpf subcommand [Quentin Monnet]
-3abd828af71f BACKPORT: bpf: call verifier_prep from its callback in struct bpf_offload_dev [Quentin Monnet]
-49d193b7a546 UPSTREAM: bpf: call finalize() from its callback in struct bpf_offload_dev [Quentin Monnet]
-53977434b05d UPSTREAM: bpf: call verify_insn from its callback in struct bpf_offload_dev [Quentin Monnet]
-a4bfc1ea9db6 BACKPORT: bpf: pass a struct with offload callbacks to bpf_offload_dev_create() [Quentin Monnet]
-621ca2d4eb26 UPSTREAM: bpf: fix direct packet access for flow dissector progs [Daniel Borkmann]
-6b40db4b528e UPSTREAM: bpf, btf: fix a missing check bug in btf_parse [Martin Lau]
-c2690bc876fe UPSTREAM: bpf, verifier: avoid retpoline for map push/pop/peek operation [Daniel Borkmann]
-4e6573ff20a4 UPSTREAM: bpf, verifier: remove unneeded flow key in check_helper_mem_access [Daniel Borkmann]
-ff0482d91003 UPSTREAM: bpf, verifier: reject xadd on flow key memory [Daniel Borkmann]
-c1ec9220af28 bpf, offload: Replace bitwise AND by logical AND in bpf_prog_offload_info_fill [Johannes Krude]
-bcfc1bcec4e9 bpf, offload: Unlock on error in bpf_offload_dev_create() [Dan Carpenter]
-a0894b0d44b5 bpf: offload: allow program and map sharing per-ASIC [Jakub Kicinski]
-2cbe69335f53 bpf: offload: keep the offload state per-ASIC [Jakub Kicinski]
-b290086af28e bpf: offload: aggregate offloads per-device [Jakub Kicinski]
-38c8308e7e42 bpf: offload: rename bpf_offload_dev_match() to bpf_offload_prog_map_match() [Jakub Kicinski]
-4e7f7208282c bpf: offload: allow offloaded programs to use perf event arrays [Jakub Kicinski]
-c8ec28a51e72 UPSTREAM: bpf, sockmap: convert to generic sk_msg interface [Daniel Borkmann]
-d9ed5bc51f10 BACKPORT: tcp, ulp: remove ulp bits from sockmap [Daniel Borkmann]
-1fe519267885 lib/scatterlist: add sg_init_marker() helper [Prashant Bhole]
-fe131587fa0a [iov_iter] new privimitive: iov_iter_revert() [Al Viro]
-a1c07b2e3086 fix a fencepost error in pipe_advance() [Al Viro]
-42500735d7c8 fix iov_iter_advance() for ITER_PIPE [Abhi Das]
-36f6446d4ce5 pipe: add pipe_buf_release() helper [Miklos Szeredi]
-4779c133693d new iov_iter flavour: pipe-backed [Al Viro]
-454e7641b97c do "fold checks into iterate_and_advance()" right [Al Viro]
-831a983ae726 fold checks into iterate_and_advance() [Al Viro]
-209b2ee09458 iov_iter: export import_single_range() [Al Viro]
-0a3d27336689 iov_iter: constify {csum_and_,}copy_to_iter() [Al Viro]
-303eb832d09d UPSTREAM: bpf: allow offload of programs with BPF-to-BPF function calls [Quentin Monnet]
-767dd081256b UPSTREAM: bpf: add verifier callback to get stack usage info for offloaded progs [Quentin Monnet]
-c3ca9ca06712 UPSTREAM: bpf: remove redundant null pointer check before consume_skb [zhong jiang]
-8e398247498f UPSTREAM: bpf/verifier: display non-spill stack slot types in print_verifier_state [Edward Cree]
-4e504b435c78 UPSTREAM: bpf: remove duplicated include from syscall.c [YueHaibing]
-5362af35e8bc BACKPORT: bpf, lpm: fix lookup bug in map_delete_elem [Alban Crequy]
-2343a433e284 UPSTREAM: bpf: Optimize lpm trie delete [Craig Gallek]
-fd976d511f0a fixup! bpf: Implement map_delete_elem for BPF_MAP_TYPE_LPM_TRIE [Nanhumly]
-
-====================
-     2026-01-20    
-====================
-* vendor/apn
-f606483 BY: Fix Life:) configuration [Alexandr Primak]
-
-====================
-     2026-01-19    
-====================
-* frameworks/base
-ce05f32c7e34 UdfpsHelper: Track brightness mirror to hide/show dim layer [pjgowtham]
-
-* lineage/hudson
-5dad587 Regenerate device dependency mappings [LuK1337]
-
-* lineage/scripts
-4bd08c7 key-migration: Bypass SELinux during abx conversion [Nicholas Lim]
-
-====================
-     2026-01-18    
-====================
-* device/lineage/car
-d1c70d2 car: Add missing copyright headers [Michael Bestas]
+* bootable/recovery
+8c765fbe allowing spl downgrade by default [rmp22]
+59a9aacd install: Do not check ro.build.tags on user builds [Pranav Vashi]
+d9404ad0 install: Keep all spaces in "ui_print" [TH779]
+6a116da1 recovery: Always consider builds to be debuggable [Pranav Vashi]
+c52cd4c7 recovery: Skip verifying packages altogether [Pranav Vashi]
+b6824022 recovery: Make recovery usable on user builds [Pranav Vashi]
+054b8b42 recovery: allow formatting & mounting system on user builds [Joker-V2]
 
 * external/chromium-webview/prebuilt/arm
-6cf941d Update Chromium Webview arm to 144.0.7559.76 [Kevin F. Haggerty]
+f547731 Update Chromium Webview arm to 145.0.7632.109 [Kevin F. Haggerty]
 
 * external/chromium-webview/prebuilt/arm64
-0bc4821 Update Chromium Webview arm64 to 144.0.7559.76 [Kevin F. Haggerty]
+8ea09e0 Update Chromium Webview arm64 to 145.0.7632.109 [Kevin F. Haggerty]
 
 * external/chromium-webview/prebuilt/x86
-827c503 Update Chromium Webview x86 to 144.0.7559.76 [Kevin F. Haggerty]
+2005a53 Update Chromium Webview x86 to 145.0.7632.109 [Kevin F. Haggerty]
 
 * external/chromium-webview/prebuilt/x86_64
-fceff90 Update Chromium Webview x86_64 to 144.0.7559.76 [Kevin F. Haggerty]
+0baf207 Update Chromium Webview x86_64 to 145.0.7632.109 [Kevin F. Haggerty]
 
 * frameworks/base
-6ef425b851c8 VolumeDialog: Fix layout issues with left gravity [Dmitrii]
+261304c8eede Allow signature spoofing on user builds [Pranav Vashi]
 
-* lineage/mirror
-88573a4 Updated lineage-minimal to 17-Jan-2026 23:01 UTC [Tim Schumacher]
+* hardware/interfaces
+8b70d1ce80 compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
+a90aaa37d3 Restore q/android-4.9 again [Michael Bestas]
 
-* lineage/scripts
-bf00364 dev: rro: Remove extra first line space [Leviscape]
+* hardware/qcom-caf/msm8998/media
+3d25b472b mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+
+* kernel/configs
+ddf732e p/android-4.4: Bump min LTS version [Bruno Martins]
+69928fb p/android-4.4: Enforce eBPF configs [Bruno Martins]
+cb86063 Revert "Delete p/android-4.4." [Bruno Martins]
+97f50bb Remove usb dependency on rtl8152 on q/android-4.9 [Aaron Kling]
+98d14be Restore q/android-4.9 [LuK1337]
+
+* vendor/apn
+1d75099 apn: CN: Set 3gnet as default apn for China Unicom [Nanhumly]
+
+* vendor/lineage
+41346b73 Sign Build [Nanhumly]
+
+* device/xiaomi/msm8998-common
+a665f746 msm8998-common: Downgrade Radio IMS blobs to LA.QSSI.15.0.r1-15400-qssi.0 [Nanhumly]
+
+* vendor/xiaomi/msm8998-common
+d078fc6 msm8998-common: Downgrade Radio IMS blobs to LA.QSSI.15.0.r1-15400-qssi.0 [Nanhumly]
 
 ====================
-     2026-01-17    
+     2026-02-21    
 ====================
 * external/chromium-webview/patches
-b988df5 Update Chromium Webview to 144.0.7559.76 [Kevin F. Haggerty]
+a268fe6 Update Chromium Webview to 145.0.7632.109 [Kevin F. Haggerty]
 
-* frameworks/base
-db693af94507 Add gravity end to the volume dialog root view [Anton Potapov]
-128f60c4fc6d Fix volume dialog ringer drawer rtl expansion [Michael Mikhail]
-30417ef5e436 Add missing margin to landscape collapsed constraint set [Anton Potapov]
-cbe1c1e84a42 Change how the ringer drawer background is aligned [Anton Potapov]
+* lineage/hudson
+4eddd23 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-5e0410a Updated to 17-Jan-2026 11:01 UTC [Tim Schumacher]
+f975644 Updated to 20-Feb-2026 23:01 UTC [Tim Schumacher]
 
-* lineage/wiki
-7772f420 wiki: Add Sony Xperia 1 IV/5 IV [Tuan Anh]
-
-====================
-     2026-01-16    
-====================
 * lineage/scripts
-6b2f980 build-webview: Update default webview to 144.0.7559.76 [Kevin F. Haggerty]
+2d92096 build-webview: Update default webview to 145.0.7632.109 [Kevin F. Haggerty]
+
+====================
+     2026-02-20    
+====================
+* lineage/mirror
+644f44d Updated aosp-minimal to 19-Feb-2026 11:02 UTC [Tim Schumacher]
 
 * lineage/wiki
-61b7f13b wiki: Update hotdogb maintainer list [Onelots]
+3292a6aa wiki: Update storage info for socrates [WenHao2130]
+
+* kernel/xiaomi/msm8998
+e3ebf6b3eeeb kgsl: Prevent sign extension on alignments [Harsh Kant]
+
+====================
+     2026-02-19    
+====================
+* lineage/mirror
+e0b2c0a Updated to 18-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3f69d1af wiki: Update contributors and groups [Inhishonor]
+
+* packages/apps/LineageParts
+d1cc261 LineageParts: Remove unsupported camera button preferences the right way [LuK1337]
+
+====================
+     2026-02-18    
+====================
+* device/qcom/sepolicy_vndr/sm8750
+711e0a3dc parrot: Label ucsi-source-psy-soc:qcom,pmic_glink:qcom,ucsi1 node [LuK1337]
+
+* lineage/hudson
+095b846 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+2f9f9178 wiki: pdx225/pdx235: Require vendor_boot flash [LuK1337]
+
+====================
+     2026-02-17    
+====================
+* lineage/mirror
+dffa805 Updated to 16-Feb-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+757d8afb wiki: Require dtbo flash for alioth [Nicholas Lim]
+
+* packages/apps/ExactCalculator
+f80bf9c fixup! ExactCalculator: Clean up unused and redundant code [LuK1337]
+
+* packages/services/Car
+8beca5caa5 car_dewd_common: Fix EPPE violations [Akash Suresh]
+
+====================
+     2026-02-16    
+====================
+* frameworks/base
+60a0325b151d Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+570f692 hudson: Promote earth to 23.2 [Matsvei Niaverau]
+
+* lineage/wiki
+392c215d wiki: Promote earth to 23.2 [Matsvei Niaverau]
+
+* packages/apps/FMRadio
+e03adbb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+49ca2e2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+e581dc3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+f1215425 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+6099895 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+fbece7c Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+87e162b Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+adda498 Automatic translation import [LineageOS Infra]
+
+* device/xiaomi/chiron
+8e67a91 chiron: Set ultrasound sensor via soong config [Nanhumly]
 
