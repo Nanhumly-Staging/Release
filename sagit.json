@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1774166109,
-      "filename": "lineage-23.2-20260322-UNOFFICIAL-sagit-signed.zip",
-      "id": "b959953601604902124e358d3f7b7b454e97238dda3bd9274f1a134e946de2dd",
+      "datetime": 1775982477,
+      "filename": "lineage-23.2-20260412-UNOFFICIAL-sagit-signed.zip",
+      "id": "7bf6bebdc42fe39fd8c4e243df50b18371eb04a82fa68fbd88e4a41b9bf8cf42",
       "romtype": "UNOFFICIAL",
-      "size": 1130569677,
-      "url": "https://down.warbler.cc/d/XiaoMi-6/LineageOS/23.2/lineage-23.2-20260322-UNOFFICIAL-sagit-signed.zip",
+      "size": 1131648109,
+      "url": "https://down.warbler.cc/d/XiaoMi-6/LineageOS/23.2/lineage-23.2-20260412-UNOFFICIAL-sagit-signed.zip",
       "version": "23.2"
     }
   ]
