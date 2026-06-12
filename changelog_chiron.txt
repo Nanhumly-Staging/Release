@@ -1,132 +1,170 @@
 ====================
-     2026-05-26    
-====================
-====================
-     2026-05-25    
+     2026-06-12    
 ====================
 * art
-515fdd49f0 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+88d16a1c4a Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
 
 * bootable/recovery
-249a0740 allowing spl downgrade by default [rmp22]
-caf13936 install: Do not check ro.build.tags on user builds [Pranav Vashi]
-649ec42c install: Keep all spaces in "ui_print" [TH779]
-3af91de2 recovery: Always consider builds to be debuggable [Pranav Vashi]
-abfe7c7c recovery: Skip verifying packages altogether [Pranav Vashi]
-45de097f recovery: Make recovery usable on user builds [Pranav Vashi]
-fa3710a8 recovery: allow formatting & mounting system on user builds [Joker-V2]
+e876d359 allowing spl downgrade by default [rmp22]
+3ad212f6 install: Do not check ro.build.tags on user builds [Pranav Vashi]
+b0abbaf6 install: Keep all spaces in "ui_print" [TH779]
+784e12d6 recovery: Always consider builds to be debuggable [Pranav Vashi]
+2b16380a recovery: Skip verifying packages altogether [Pranav Vashi]
+dfa0eda5 recovery: Make recovery usable on user builds [Pranav Vashi]
+000c0007 recovery: allow formatting & mounting system on user builds [Joker-V2]
 
 * frameworks/base
-04f77e05eee1 Allow signature spoofing on user builds [Pranav Vashi]
+4556805e5a32 Allow signature spoofing on user builds [Pranav Vashi]
 
 * hardware/interfaces
-69d74077df compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
-68eb970200 Restore q/android-4.9 again [Michael Bestas]
+ecb2d5840d compatibility_matrices: Add p/android-4.4 into FCM 5 [Michael Bestas]
+009c6a4b93 Restore q/android-4.9 again [Michael Bestas]
 
 * hardware/qcom-caf/msm8998/media
-9586d222b mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
+d6dc8c541 mm-video-v4l2: Disable OMX_BUFFERFLAG_DECODEONLY support [LuK1337]
 
 * kernel/configs
-bd35133 p/android-4.4: Bump min LTS version [Bruno Martins]
-8a13323 p/android-4.4: Enforce eBPF configs [Bruno Martins]
-1a7e68a Revert "Delete p/android-4.4." [Bruno Martins]
-69eac01 Remove usb dependency on rtl8152 on q/android-4.9 [Aaron Kling]
-e19bcac Restore q/android-4.9 [LuK1337]
-
-* lineage/crowdin
-12cc9a8 crowdin: Normalize Joey's name everywhere [Tim Schumacher]
-b924043 crowdin: Adjust generate_wiki_list() output to match lineage/wiki [LuK1337]
+e11b9c0 p/android-4.4: Bump min LTS version [Bruno Martins]
+570294c p/android-4.4: Enforce eBPF configs [Bruno Martins]
+acd9262 Revert "Delete p/android-4.4." [Bruno Martins]
+9d2493b Remove usb dependency on rtl8152 on q/android-4.9 [Aaron Kling]
+e481ff5 Restore q/android-4.9 [LuK1337]
 
 * lineage/hudson
-9db6306 can't kill the almost fully FOSS phone(s) [Nolen Johnson]
+e36b84a Regenerate device dependency mappings [LineageOS Infra]
 
-* lineage/wiki
-51f9b039 wiki: Normalize Joey's name everywhere [Tim Schumacher]
-ee6dfde9 wiki: Add myself to infrastructure managers [LuK1337]
-2720b8bf wiki: Regenerate proofreaders [LuK1337]
-140cc9c6 devices: Promote troika/kane to 23.2 [Nolen Johnson]
-29b4e193 wiki: Fix device filter overflow on mobile [Nicholas Lim]
-8097ed24 wiki: bugsreporting: Link ETA glossary [Michael W]
-3693be10 wiki: glossary: Add ETA [Michael W]
-dd77df84 wiki: bugreporting: Clarify more things [Michael W]
+* lineage/mirror
+8e883b1 Updated to 11-Jun-2026 22:01 UTC [Tim Schumacher]
+fab3b12 Updated aosp-minimal to 11-Jun-2026 10:02 UTC [Tim Schumacher]
 
 * vendor/lineage
-0cd18484 Sign Build [Nanhumly]
+512c05cf Sign Build [Nanhumly]
+
+* kernel/xiaomi/msm8998
+15e2687e40a47 Merge tag 'v4.4.302-cip112' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-23.2 [Nanhumly]
 
 ====================
-     2026-05-24    
+     2026-06-11    
 ====================
+* device/lineage/sepolicy
+ebc3e00 common: Label ro.config.force_multi_window prop [Thomas Makin]
+
+* device/qcom/sepolicy_vndr/sm8550
+8f57f3c91 kalama: vendor: Simplify read_ahead_kb labeling [Nolen Johnson]
+
+* frameworks/base
+299aa25d5817 wm: don't disable rot hint on low_ram [Thomas Makin]
+
 * lineage/hudson
-dca7888 Regenerate device dependency mappings [LineageOS Infra]
+18236e4 Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+01eef7f3 kernel: Ensure output modules.load file is present [Yumi Yukimura]
+
+* kernel/xiaomi/msm8998
+56627e4054266 CIP: Bump version suffix to -cip112 after merge from cip/linux-4.4.y-st tree [Ulrich Hecht]
+d1ef704ce874e Merge branch 'linux-4.4.y-st' into linux-4.4.y-cip [Ulrich Hecht]
+5d9b5ca756004 Update localversion-st, tree is up-to-date with 4.19-st17. [Ulrich Hecht]
+f78c3baf22881 x86/CPU/AMD: Prevent improper isolation of shared resources in Zen2's op cache [Prathyushi Nangia]
+4e13c9453bdbd x86/CPU/AMD: Add X86_FEATURE_ZEN1 [Borislav Petkov (AMD)]
+872a1d11f53d0 x86/CPU/AMD: Rename init_amd_zn() to init_amd_zen_common() [Borislav Petkov (AMD)]
+795694ce3578a x86/CPU/AMD: Add ZenX generations flags [Borislav Petkov (AMD)]
+a5d6d84903ee6 ptrace: slightly saner 'get_dumpable()' logic [Linus Torvalds]
+
+====================
+     2026-06-10    
+====================
+* device/qcom/sepolicy_vndr/sm8550
+668af8021 kalama: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
+f86e763a9 kalama: vendor: Handle TEE luns [Nolen Johnson]
+
+* device/qcom/sepolicy_vndr/sm8750
+39d4b1bf3 sun: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
+35766024b sun: vendor: Match SDHCI read_ahead_kb nodes are well [Nolen Johnson]
+a0dc8c7e6 sun: vendor: Handle TEE luns [Nolen Johnson]
+
+* lineage/hudson
+e91ea2c Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/wiki
-f2ab2ba9 wiki: fastboot_path: Add a missing period [Tuan Anh]
-
-* device/xiaomi/msm8998-common
-e124d2c87 msm8998-common: powerhint: Add UclampTAMin Hint for GAME_LOADING [Flicker372]
-ad0b0a782 msm8998-common: powerhint: Decrease foreground launch boost to 60 [Flicker372]
-c92207573 msm8998-common: powerhint: Add UclampSysMin Hint for INTERACTION [Flicker372]
-3013844af msm8998-common: powerhint: Increase cpu.uclamp.min for INTERACTION [Flicker372]
-0cc877323 msm8998-common: powerhint: boost foreground and foreground_windows during interaction [Flicker372]
-66d03cd4c msm8998-common: powerhint: Add DownRateLimitUs Hint for DISPLAY_UPDATE_IMMINENT [Flicker372]
-534c37fa1 msm8998-common: powerhint: Limit uclamp.max for background during LAUNCH [Flicker372]
-dd220364a msm8998-common: powerhint: Limit uclamp.max for dex2oat during LAUNCH [Flicker372]
-e0be1eb0d msm8998-common: powerhint: Add Uclamp Hint for GAME [Flicker372]
-27d3ea88e msm8998-common: powerhint: Remove hard-locked CPU MinFreq for INTERACTION scenario [Flicker372]
-f1e7030ff msm8998-common: powerhint: Relax CPU frequency limits for SUSTAINED_PERFORMANCE [Flicker372]
-27fd73550 msm8998-common: powerhint: Boost gpu on LAUNCH [bheatleyyy]
-0f1190676 msm8998-common: powerhint: Decrease GPUIdleTimer to 2000ms [Flicker372]
-07e0c7ff9 msm8998-common: rootdir: Set uclamp.min to 0 for dex2oat [Flicker372]
-82fcccffe msm8998-common: powerhint: avoid always-on latency_sensitive for top-app [Flicker372]
-
-* kernel/xiaomi/msm8998
-9ce9edd274623 ARM64: defconfig: mi8998: enable CONFIG_MEMBARRIER [Petri Gynther]
+67eab3dd devices: wade: I guess some Android 12 firmwares are locked [Nolen Johnson]
+cae76f87 wiki: deviceinfo: Display device.yml URL [LuK1337]
 
 ====================
-     2026-05-23    
+     2026-06-09    
 ====================
-* packages/apps/Aperture
-ddd313e Aperture: De Morgan never fails [Luca Stefani]
+* lineage/scripts
+555516d shipper: Add comment with used git hashes [LuK1337]
 
-* kernel/xiaomi/msm8998
-189283a88cae0 ARM64: defconfig: mi8998: Disable ThinLTO for performance impact [Wilson Sung]
+* lineage/wiki
+330cecd6 wiki: Add wiki->gh mapping for pdx224 maintainer [LuK1337]
+
+* packages/apps/ExactCalculator
+af4a939 ExactCalculator: Auto scale button text size programatically [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+6f6d91c FM: Request POST_NOTIFICATIONS permission [Alexis Borovik]
 
 ====================
-     2026-05-22    
+     2026-06-08    
 ====================
-====================
-     2026-05-21    
-====================
+* device/lineage/sepolicy
+2e6e60f libperfmgr: Allow powerhal to access thermal service [armdebug]
+
 * frameworks/base
-8151f8ffe6c1 fixup! SystemUI: Clock position customization [LuK1337]
-
-* lineage-sdk
-8973ea94 sdk: fix javadoc warnings [Alexander Martinz]
-
-* system/core
-e99d3d82b libsnapshot: Hide /metadata/ota open fail in recovery [LuK1337]
-
-* kernel/xiaomi/msm8998
-fe15f3a78d08e Merge tag 'v4.4.302-cip111' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip into lineage-23.2 [Nanhumly]
-
-====================
-     2026-05-20    
-====================
-* android
-611ced8 manifest: Add bazel kernel platform 6.18 [Aaron Kling]
-e0b37d0 manifest: Add bazel kernel platform 6.12 [Aaron Kling]
-cda1014 manifest: Add bazel kernel platform 6.6 [Aaron Kling]
-
-* bootable/recovery
-f1d5e39d fixup! recovery: Return reboot recovery install code [Nicholas Lim]
-
-* build/make
-10a1fcb5ef fixup! core & tools: system_dlkm: add dynamic partition [Aaron Kling]
+20590ca55ca6 fixup! Implement click to take partial screenshot [1/3] [LuK1337]
 
 * lineage/hudson
-6510f14 Regenerate device dependency mappings [LineageOS Infra]
+139ea8b Regenerate device dependency mappings [LineageOS Infra]
 
-* packages/apps/Dialer
-e7de48179 Dialer: Handle unicode search results properly [Michael W]
-7257eb531 Dialer: Bolden search results properly [Michael W]
+* lineage/mirror
+394398d Updated lineage-minimal to 07-Jun-2026 22:01 UTC [Tim Schumacher]
+921fb96 Updated to 07-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+8b213ad5 wiki: Add wiki->gh mapping for Q25 maintainer [LuK1337]
+4ccd1852 wiki: Add wiki->gh mapping for nio maintainer [LuK1337]
+b015df8f wiki: Add wiki->gh mapping for gauguin maintainer [LuK1337]
+11002099 fixup! wiki: makinbacon github username mapping [LuK1337]
+5ec8000b wiki: makinbacon github username mapping [Nolen Johnson]
+
+* packages/apps/SetupWizard
+46ff92a SetupWizard: Convert resource switch statements to if-else [Michael Bestas]
+
+====================
+     2026-06-07    
+====================
+* lineage/mirror
+d7ec83b Updated aosp-minimal to 06-Jun-2026 10:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+0dc42653 wiki: Provide universal binary for macOS Heimdall [LuK1337]
+837e47c1 wiki: Document Gerrit gh oauth [LuK1337]
+
+* packages/apps/Aperture
+87b7443 Aperture: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Camelot
+03d0096 Camelot: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/DeskClock
+0256948e3 DeskClock: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Glimpse
+5f78ee9 Glimpse: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Jelly
+3d2c7aa Jelly: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Recorder
+8f15cb3 Recorder: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Twelve
+3961c5c Twelve: Upload non-zipped artifact [LuK1337]
+
+====================
+     2026-06-06    
+====================
+* lineage/mirror
+6554b05 Updated to 05-Jun-2026 22:01 UTC [Tim Schumacher]
 
